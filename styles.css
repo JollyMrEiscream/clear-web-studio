@@ -672,15 +672,6 @@ ol {
   color: var(--color-accent);
 }
 
-.footer-admin-link {
-  opacity: 0.45;
-  font-size: 0.8em;
-}
-
-.footer-admin-link:hover {
-  opacity: 0.85;
-}
-
 /* Mobile nav */
 
 @media (max-width: 719px) {
