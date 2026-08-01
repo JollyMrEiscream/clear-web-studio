@@ -171,7 +171,20 @@
               <span class="price-label">for maintenance, small changes, and domain upkeep</span>
             </li>
           </ul>
-          <a class="btn btn-primary" href="#contact">Start Your Project</a>
+          <div class="pricing-actions">
+            <a class="btn btn-primary" href="#contact">Start Your Project</a>
+            <a
+              class="btn btn-secondary"
+              id="paypal-deposit-btn"
+              href="#contact"
+              target="_blank"
+              rel="noopener"
+              hidden
+            >Pay $250 deposit with PayPal</a>
+          </div>
+          <p class="pricing-pay-note" id="paypal-setup-note">
+            Prefer PayPal? Email or call me and I’ll send a secure payment link.
+          </p>
         </div>
       </div>
     </section>
@@ -230,6 +243,7 @@
     </div>
   </footer>
 
+  <script src="site-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

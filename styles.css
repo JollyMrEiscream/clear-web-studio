@@ -516,6 +516,19 @@ ol {
   padding: var(--space-xl);
 }
 
+.pricing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.pricing-pay-note {
+  margin: var(--space-md) 0 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
 .pricing-breakdown {
   display: grid;
   gap: var(--space-lg);

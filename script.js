@@ -58,4 +58,23 @@
       }
     });
   }
+
+  // PayPal deposit button (username from site-config.js)
+  const cfg = window.CWS_SITE || {};
+  const paypalBtn = document.getElementById("paypal-deposit-btn");
+  const paypalNote = document.getElementById("paypal-setup-note");
+  const paypalUser = (cfg.paypalMeUsername || "").trim();
+  if (paypalBtn && paypalUser) {
+    const amount = Number(cfg.depositAmount) || 250;
+    paypalBtn.href =
+      "https://www.paypal.me/" +
+      encodeURIComponent(paypalUser) +
+      "/" +
+      encodeURIComponent(amount.toFixed(2));
+    paypalBtn.hidden = false;
+    if (paypalNote) {
+      paypalNote.textContent =
+        "You can pay the $250 deposit securely with PayPal using the button above.";
+    }
+  }
 })();
