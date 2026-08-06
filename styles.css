@@ -166,6 +166,8 @@ ol {
 
 .logo {
   display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.55rem;
   font-family: var(--font-display);
@@ -179,7 +181,11 @@ ol {
 .logo-mark {
   width: 1.75rem;
   height: 1.75rem;
-  flex-shrink: 0;
+  max-width: 1.75rem;
+  flex: 0 0 1.75rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .logo:hover {
