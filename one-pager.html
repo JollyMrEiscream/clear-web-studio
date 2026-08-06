@@ -163,6 +163,20 @@
       color: var(--color-text-muted);
     }
 
+    .site-url {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-url:hover {
+      text-decoration: underline;
+    }
+
     .contact-stack {
       display: flex;
       flex-direction: column;
@@ -550,6 +564,13 @@
         -webkit-print-color-adjust: exact;
       }
 
+      .site-url {
+        color: var(--color-accent);
+        text-decoration: none !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
       a[href]::after {
         content: none !important;
       }
@@ -571,6 +592,7 @@
         <div>
           <p class="brand">Clear Web Studio</p>
           <p class="tagline">Clean websites for small businesses</p>
+          <a class="site-url" href="https://jollymreiscream.github.io/clear-web-studio/">jollymreiscream.github.io/clear-web-studio</a>
         </div>
       </header>
 
@@ -678,6 +700,7 @@
           <p>Email or call to get started — I’ll send a secure deposit link when you’re ready.</p>
         </div>
         <div class="contact-stack cta-contacts">
+          <a class="contact-line" href="https://jollymreiscream.github.io/clear-web-studio/">jollymreiscream.github.io/clear-web-studio</a>
           <a class="contact-line" href="mailto:levi@srqcoding.club">levi@srqcoding.club</a>
           <a class="contact-line" href="tel:+19412781096">(941) 278-1096</a>
         </div>
