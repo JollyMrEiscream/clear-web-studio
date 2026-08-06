@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clear Web Studio — clean, modern websites for small businesses. $500 flat project fee, $75/mo maintenance.">
+  <meta name="robots" content="noindex">
+  <title>Clear Web Studio — Client One-Pager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f7f8f6;
+      --color-surface: #ffffff;
+      --color-text: #141816;
+      --color-text-muted: #5c6560;
+      --color-border: #d8ddd9;
+      --color-accent: #0f766e;
+      --color-accent-soft: rgba(15, 118, 110, 0.1);
+      --color-sage: #e8efe9;
+      --font-display: "Outfit", sans-serif;
+      --font-body: "Source Sans 3", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--color-text);
+      background: #e5e8e4;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .screen-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.75rem 1.25rem;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: 0 1px 8px rgba(20, 24, 22, 0.06);
+    }
+
+    .screen-bar p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    .screen-bar-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1rem;
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--color-accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #0d5f59;
+    }
+
+    .btn-secondary {
+      background: var(--color-sage);
+      color: var(--color-accent);
+    }
+
+    .btn-secondary:hover {
+      background: #dce8de;
+    }
+
+    .sheet-wrap {
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .sheet {
+      width: min(100%, 8.5in);
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.55in 0.6in 0.5in;
+      background: var(--color-surface);
+      box-shadow: 0 8px 40px rgba(20, 24, 22, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sheet::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--color-accent), #14b8a6 60%, #99f6e4);
+    }
+
+    .sheet::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: 120px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--color-accent-soft), transparent 70%);
+      pointer-events: none;
+    }
+
+    header.op-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.35rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--color-border);
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--color-accent);
+      margin: 0 0 0.2rem;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    .site-url {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .site-url:hover {
+      text-decoration: underline;
+    }
+
+    .contact-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex-shrink: 0;
+      gap: 0.15rem;
+    }
+
+    .contact-stack .contact-line {
+      display: block;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      text-decoration: none;
+      line-height: 1.35;
+    }
+
+    .contact-mini {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    .contact-mini .contact-line {
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .hero-block {
+      margin-bottom: 1.25rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-block h1 {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin: 0 0 0.5rem;
+      max-width: 22rem;
+    }
+
+    .hero-block p {
+      margin: 0;
+      max-width: 28rem;
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1.1rem;
+      margin-bottom: 1.15rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .panel {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 0.95rem 1rem;
+    }
+
+    .panel h2 {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin: 0 0 0.7rem;
+    }
+
+    .services {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .service {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.55rem;
+      align-items: start;
+    }
+
+    .service-dot {
+      width: 0.45rem;
+      height: 0.45rem;
+      margin-top: 0.4rem;
+      border-radius: 50%;
+      background: var(--color-accent);
+      flex-shrink: 0;
+    }
+
+    .service h3 {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 0 0 0.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    .service p {
+      margin: 0;
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    .pricing-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .pricing-list li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .pricing-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .price {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--color-accent);
+      line-height: 1;
+    }
+
+    .price span {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .price-label {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      line-height: 1.35;
+    }
+
+    .price-total {
+      margin-top: 0.15rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .process {
+      margin-bottom: 1.15rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .process h2 {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin: 0 0 0.75rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.65rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .steps li {
+      background: var(--color-sage);
+      border-radius: 8px;
+      padding: 0.75rem 0.7rem;
+    }
+
+    .step-num {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .steps h3 {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+
+    .steps p {
+      margin: 0;
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      line-height: 1.35;
+    }
+
+    .why {
+      margin-bottom: 1.15rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .why h2 {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin: 0 0 0.55rem;
+    }
+
+    .why-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.35rem 1.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .why-list li {
+      font-size: 0.875rem;
+      padding-left: 1rem;
+      position: relative;
+      color: var(--color-text);
+    }
+
+    .why-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: var(--color-accent);
+      border-radius: 1px;
+    }
+
+    footer.op-footer {
+      margin-top: auto;
+      padding-top: 0.9rem;
+      border-top: 2px solid var(--color-accent);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-block h2 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.2rem;
+    }
+
+    .cta-block p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .cta-contacts {
+      font-size: 0.9rem;
+    }
+
+    .cta-contacts .contact-line {
+      color: var(--color-accent);
+      font-weight: 600;
+      font-family: var(--font-display);
+    }
+
+    @media screen and (max-width: 700px) {
+      .sheet {
+        min-height: auto;
+        padding: 1.5rem 1.25rem;
+      }
+
+      .grid-2,
+      .steps,
+      .why-list {
+        grid-template-columns: 1fr;
+      }
+
+      header.op-header,
+      footer.op-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-stack {
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.4in;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .screen-bar {
+        display: none !important;
+      }
+
+      .sheet-wrap {
+        padding: 0;
+      }
+
+      .sheet {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        overflow: visible;
+      }
+
+      .sheet::before {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .sheet::after {
+        display: none;
+      }
+
+      .panel,
+      .steps li {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      header.op-header,
+      footer.op-footer {
+        flex-direction: row !important;
+        align-items: flex-start;
+      }
+
+      footer.op-footer {
+        align-items: flex-end;
+      }
+
+      .contact-stack {
+        align-items: flex-end !important;
+      }
+
+      .contact-stack .contact-line {
+        color: inherit;
+        text-decoration: none !important;
+      }
+
+      .contact-mini .contact-line {
+        color: var(--color-text);
+      }
+
+      .cta-contacts .contact-line {
+        color: var(--color-accent);
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .site-url {
+        color: var(--color-accent);
+        text-decoration: none !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      a[href]::after {
+        content: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-bar no-print">
+    <p>Client one-pager · Print or Save as PDF to send</p>
+    <div class="screen-bar-actions">
+      <a class="btn btn-secondary" href="index.html">Back to site</a>
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save PDF</button>
+    </div>
+  </div>
+
+  <div class="sheet-wrap">
+    <article class="sheet" aria-label="Clear Web Studio one-pager">
+      <header class="op-header">
+        <div>
+          <p class="brand">Clear Web Studio</p>
+          <p class="tagline">Clean websites for small businesses</p>
+          <a class="site-url" href="https://jollymreiscream.github.io/clear-web-studio/">jollymreiscream.github.io/clear-web-studio</a>
+        </div>
+      </header>
+
+      <div class="hero-block">
+        <h1>I build clean, modern websites for small businesses.</h1>
+        <p>
+          Custom sites — not cookie-cutter templates — with simple pricing and ongoing support so you’re never stuck after launch.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <section class="panel" aria-labelledby="services-h">
+          <h2 id="services-h">What you get</h2>
+          <div class="services">
+            <div class="service">
+              <span class="service-dot" aria-hidden="true"></span>
+              <div>
+                <h3>New website from scratch</h3>
+                <p>A professional site built around your business — clear, modern, and uniquely yours.</p>
+              </div>
+            </div>
+            <div class="service">
+              <span class="service-dot" aria-hidden="true"></span>
+              <div>
+                <h3>Redesign for outdated sites</h3>
+                <p>Refresh what you have so it feels current, trustworthy, and easy to use.</p>
+              </div>
+            </div>
+            <div class="service">
+              <span class="service-dot" aria-hidden="true"></span>
+              <div>
+                <h3>Mobile-friendly &amp; fast</h3>
+                <p>Looks great on phones, loads quickly, and is ready for search engines.</p>
+              </div>
+            </div>
+            <div class="service">
+              <span class="service-dot" aria-hidden="true"></span>
+              <div>
+                <h3>Ongoing maintenance</h3>
+                <p>Small updates, domain upkeep, and peace of mind after launch.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="pricing-h">
+          <h2 id="pricing-h">Simple pricing</h2>
+          <ul class="pricing-list">
+            <li>
+              <span class="price">$250</span>
+              <span class="price-label">Deposit to start your project</span>
+            </li>
+            <li>
+              <span class="price">$250</span>
+              <span class="price-label">Due when your site is ready to launch</span>
+              <span class="price-total">Project total: $500 · No hidden fees</span>
+            </li>
+            <li>
+              <span class="price">$75<span>/mo</span></span>
+              <span class="price-label">Maintenance, small changes &amp; domain upkeep</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="process" aria-labelledby="process-h">
+        <h2 id="process-h">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Discovery</h3>
+            <p>We talk about your business, goals, and any existing site.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>Design &amp; Build</h3>
+            <p>I design and build your site, sharing previews along the way.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Launch</h3>
+            <p>We review, finalize, and publish your site live.</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <h3>Support</h3>
+            <p>Ongoing updates and maintenance as you need them.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="why" aria-labelledby="why-h">
+        <h2 id="why-h">Why work with me</h2>
+        <ul class="why-list">
+          <li>Custom design — not a lookalike template</li>
+          <li>Transparent pricing with no surprises</li>
+          <li>Built for busy owners who want it simple</li>
+          <li>You work directly with me, start to finish</li>
+        </ul>
+      </section>
+
+      <footer class="op-footer">
+        <div class="cta-block">
+          <h2>Ready for a better website?</h2>
+          <p>Email or call to get started — I’ll send a secure deposit link when you’re ready.</p>
+        </div>
+        <div class="contact-stack cta-contacts">
+          <a class="contact-line" href="https://jollymreiscream.github.io/clear-web-studio/">jollymreiscream.github.io/clear-web-studio</a>
+          <a class="contact-line" href="mailto:levi@srqcoding.club">levi@srqcoding.club</a>
+          <a class="contact-line" href="tel:+19412781096">(941) 278-1096</a>
+        </div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
