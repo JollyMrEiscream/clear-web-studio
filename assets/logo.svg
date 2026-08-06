@@ -1,15 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="logoTitle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle">
   <title id="logoTitle">Clear Web Studio</title>
+  <rect width="64" height="64" rx="16" fill="#0f766e"/>
   <path
-    stroke="#0f766e"
-    stroke-width="8"
+    stroke="#f7f8f6"
+    stroke-width="9"
     stroke-linecap="round"
-    d="M12 40c0-14 9-26 20-26s20 12 20 26"
-  />
-  <path
-    stroke="#0f766e"
-    stroke-width="8"
-    stroke-linecap="round"
-    d="M10 46h44"
+    fill="none"
+    d="M45 18.5a18.5 18.5 0 1 0 0 27"
   />
 </svg>
