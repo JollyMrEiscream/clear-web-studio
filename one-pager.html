@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Clear Web Studio — clean, modern websites for small businesses. $500 flat project fee, $75/mo maintenance.">
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0f766e">
   <title>Clear Web Studio — Client One-Pager</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
@@ -149,12 +152,21 @@
     }
 
     .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
       font-family: var(--font-display);
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: -0.03em;
       color: var(--color-accent);
       margin: 0 0 0.2rem;
+    }
+
+    .brand-mark {
+      width: 1.75rem;
+      height: 1.75rem;
+      flex-shrink: 0;
     }
 
     .tagline {
@@ -590,7 +602,10 @@
     <article class="sheet" aria-label="Clear Web Studio one-pager">
       <header class="op-header">
         <div>
-          <p class="brand">Clear Web Studio</p>
+          <p class="brand">
+            <img class="brand-mark" src="assets/logo.svg" alt="" width="28" height="28">
+            Clear Web Studio
+          </p>
           <p class="tagline">Clean websites for small businesses</p>
           <a class="site-url" href="https://jollymreiscream.github.io/clear-web-studio/">jollymreiscream.github.io/clear-web-studio</a>
         </div>
