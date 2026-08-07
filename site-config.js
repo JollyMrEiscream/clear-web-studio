@@ -2,5 +2,5 @@
 window.CWS_SITE = {
   // Example: if your link is https://paypal.me/ClearWebStudio use "ClearWebStudio"
   paypalMeUsername: "",
-  depositAmount: 250,
+  projectFeeAmount: 500,
 };
