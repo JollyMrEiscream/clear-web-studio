@@ -1,4 +1,4 @@
-# Private local-only admin dashboard (not published to GitHub Pages)
-admin.html
-admin.css
-admin.js
+# Keep secrets / local overrides out of git
+.env
+.env.*
+*.local
