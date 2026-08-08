@@ -297,9 +297,7 @@
   }
 
   function storageMessage() {
-    return getGithubToken()
-      ? "Data saved locally and synced to GitHub when connected."
-      : "Data saved locally. Connect GitHub sync to back it up.";
+    return "Data saved locally and synced to GitHub when connected.";
   }
 
   function getGithubToken() {
@@ -398,7 +396,7 @@
       setSyncStatus("Not connected", "");
       return null;
     }
-    setSyncStatus("Syncing...", "badge-warn");
+    setSyncStatus("Syncing…", "badge-warn");
     const response = await fetch(githubUrl() + "?ref=" + encodeURIComponent(CONFIG.github.branch), {
       method: "GET",
       headers: githubHeaders(token),
@@ -429,7 +427,7 @@
       setSyncStatus("Not connected", "");
       return false;
     }
-    setSyncStatus("Syncing...", "badge-warn");
+    setSyncStatus("Syncing…", "badge-warn");
     const body = {
       message: "Update admin dashboard data",
       content: encodeBase64Utf8(JSON.stringify(remoteSafeState(), null, 2) + "\n"),
@@ -471,7 +469,7 @@
       return;
     }
     window.clearTimeout(githubPushTimer);
-    setSyncStatus("Syncing...", "badge-warn");
+    setSyncStatus("Syncing…", "badge-warn");
     githubPushTimer = window.setTimeout(function () {
       pushToGitHub().catch(function (error) {
         setSyncStatus("Error: " + getErrorMessage(error), "badge-danger");
@@ -604,6 +602,13 @@
       valueKey: "name",
       labelKey: "name",
     });
+    const websiteFilter = $("prospect-website-filter");
+    if (websiteFilter && websiteFilter.options.length === 0) {
+      websiteFilter.innerHTML =
+        '<option value="">All websites</option>' +
+        '<option value="no-website">No website</option>' +
+        '<option value="outdated">No website or outdated</option>';
+    }
   }
 
   function projectLabel(project) {
