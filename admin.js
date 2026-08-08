@@ -682,7 +682,14 @@
     if (!modal) return;
     modal.removeAttribute("hidden");
     modal.classList.add("is-open");
-    const focusable = modal.querySelector("input, select, textarea, button");
+    if (typeof modal.showModal === "function") {
+      if (!modal.open) modal.showModal();
+    } else {
+      modal.setAttribute("open", "");
+    }
+    const focusable = modal.querySelector(
+      'input:not([type="hidden"]), select, textarea, button:not(.modal-close)'
+    );
     if (focusable) focusable.focus();
   }
 
@@ -691,17 +698,21 @@
       typeof target === "string"
         ? $(target)
         : target && target.closest
-          ? target.closest("[id$='-modal'], .modal")
+          ? target.closest("dialog.modal, [id$='-modal'], .modal")
           : null;
     if (!modal) return;
-    modal.setAttribute("hidden", "hidden");
     modal.classList.remove("is-open");
+    if (typeof modal.close === "function") {
+      if (modal.open) modal.close();
+    } else {
+      modal.removeAttribute("open");
+    }
+    modal.setAttribute("hidden", "hidden");
   }
 
   function closeAllModals() {
-    $all("[id$='-modal'], .modal").forEach(function (modal) {
-      modal.setAttribute("hidden", "hidden");
-      modal.classList.remove("is-open");
+    $all("dialog.modal, [id$='-modal'], .modal").forEach(function (modal) {
+      closeModal(modal);
     });
   }
 
