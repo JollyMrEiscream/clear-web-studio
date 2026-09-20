@@ -1,122 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Koi Cafe — family Vietnamese food and boba in Venice, FL. Pho, plates, drinks, and a cozy spot to sit.">
-  <meta name="theme-color" content="#0f766e">
-  <title>Koi Cafe — Vietnamese &amp; Boba · Venice, FL</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Koi Cafe — family Vietnamese food and boba in Venice, FL.">
+<meta name="theme-color" content="#9a3412">
+<title>Koi Cafe — Vietnamese &amp; Boba · Venice, FL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1810;--muted:#7a5c4e;--cream:#fff7ef;--paper:#ffe8d2;--chili:#9a3412;--chili-deep:#7c2d12;--card:#fffaf4}
+*{box-sizing:border-box}body{margin:0;font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--chili)}a:hover{color:var(--chili-deep)}
+.banner{background:#fde8d0;color:var(--chili-deep);text-align:center;font-size:.9rem;padding:.55rem 1rem;border-bottom:1px solid #f0d2b0}
+.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;max-width:70rem;margin:0 auto;gap:1rem}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.35rem;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--chili)}.nav{display:flex;gap:1.1rem;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted);font-weight:600}.nav a:hover{color:var(--chili)}
+.hero{max-width:70rem;margin:0 auto;padding:2.5rem 1.25rem 2rem;display:grid;gap:1.75rem;grid-template-columns:1.2fr .8fr;align-items:center}
+.kicker{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;color:var(--chili);margin:0 0 .5rem}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.1;margin:0 0 1rem;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:1.12rem;margin:0 0 1.25rem;max-width:34rem}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}
+.btn-main{background:var(--chili);color:#fff}.btn-main:hover{background:var(--chili-deep);color:#fff}
+.btn-ghost{background:transparent;border-color:#e6c4a4;color:var(--ink)}.btn-ghost:hover{border-color:var(--chili);color:var(--chili)}
+.hero-card{background:linear-gradient(160deg,#c2410c,#9a3412 55%,#7c2d12);border-radius:1.25rem;min-height:16rem;padding:1.5rem;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 40px rgba(154,52,18,.25)}
+.hero-card strong{font-family:Fraunces,Georgia,serif;font-size:1.5rem}.hero-card span{opacity:.9}
+.section{padding:3rem 1.25rem}.section-inner{max-width:70rem;margin:0 auto}
+.alt{background:var(--paper)}
+h2{font-family:Fraunces,Georgia,serif;font-size:clamp(1.7rem,3vw,2.2rem);margin:0 0 .75rem}
+.lead{color:var(--muted);max-width:40rem;margin:0 0 1.5rem}
+.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+.ph{aspect-ratio:1;border-radius:1rem;display:flex;align-items:flex-end;padding:.85rem;color:#fff;font-weight:700;font-family:Fraunces,Georgia,serif;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.ph1{background:linear-gradient(160deg,rgba(0,0,0,.15),rgba(0,0,0,.45)),linear-gradient(135deg,#d6a57a,#8b4513)}
+.ph2{background:linear-gradient(160deg,rgba(0,0,0,.1),rgba(0,0,0,.4)),linear-gradient(135deg,#f0d7b0,#c08457)}
+.ph3{background:linear-gradient(160deg,rgba(0,0,0,.15),rgba(0,0,0,.45)),linear-gradient(135deg,#b45309,#7c2d12)}
+.ph4{background:linear-gradient(160deg,rgba(0,0,0,.1),rgba(0,0,0,.4)),linear-gradient(135deg,#78716c,#44403c)}
+.note{font-size:.9rem;color:var(--muted);margin-top:.75rem}
+.menu-grid{display:grid;gap:1.25rem;grid-template-columns:repeat(3,1fr)}
+.menu-card{background:var(--card);border:1px solid #f0d2b0;border-radius:1rem;padding:1.25rem}
+.menu-card h3{font-family:Fraunces,Georgia,serif;margin:0 0 .75rem;color:var(--chili)}
+.menu-card li{list-style:none;padding:.55rem 0;border-bottom:1px dashed #ecd5b8}.menu-card li:last-child{border:0}
+.menu-card ul{margin:0;padding:0}.item{font-weight:700}.desc{display:block;color:var(--muted);font-size:.92rem}
+.notice{background:#fff1e0;border:1px solid #f0d2b0;border-radius:.85rem;padding:1rem 1.15rem;color:var(--chili-deep);margin-bottom:1.25rem}
+.info{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
+.box{background:var(--card);border:1px solid #f0d2b0;border-radius:1rem;padding:1.2rem}.box strong{display:block;font-family:Fraunces,Georgia,serif;margin-bottom:.35rem}
+footer{text-align:center;padding:2rem 1.25rem;color:var(--muted);font-size:.95rem;border-top:1px solid #f0d2b0}
+footer a{font-weight:700}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr}.menu-grid,.info{grid-template-columns:1fr}.nav{display:none}}
+</style>
 </head>
 <body>
-  <div class="draft-banner">Draft site by Clear Web Studio — review copy and photos; we’ll swap in your final images and any menu updates you send.</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span><span>Koi Cafe</span></a>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#hours">Hours</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<div class="banner">Draft by Clear Web Studio — review menu, hours, and swap in your real food photos before final.</div>
+<header class="top">
+  <a class="brand" href="#top">Koi <span>Cafe</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#about">About</a><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="top">
+  <section class="hero">
+    <div>
+      <p class="kicker">Venice · Vietnamese &amp; boba</p>
+      <h1>Warm bowls, fresh rolls, and boba worth the trip.</h1>
+      <p>Family Vietnamese cooking on Pinebrook Road — pho, Bun Bo Hue, vermicelli, and drinks in a cozy neighborhood spot.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="tel:+19419469841">Call (941) 946-9841</a>
+        <a class="btn btn-ghost" href="#menu">Browse the menu</a>
+      </div>
     </div>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <span class="hero-kicker">Venice · Vietnamese &amp; boba</span>
-      <h1>Family Vietnamese food, fresh boba, and a cozy table.</h1>
-      <p>Koi Cafe serves pho, vermicelli bowls, spring rolls, and drinks in a warm neighborhood spot on Pinebrook Road. Come hungry — stay for the boba.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="tel:+19419469841">Call (941) 946-9841</a>
-        <a class="btn btn-secondary" href="#menu">See the menu</a>
+    <div class="hero-card" role="img" aria-label="Vietnamese food mood">
+      <strong>Pho · Boba · Fresh rolls</strong>
+      <span>Made for hungry locals</span>
+    </div>
+  </section>
+  <section class="section alt" id="about">
+    <div class="section-inner">
+      <h2>About Koi Cafe</h2>
+      <p class="lead">A family-run Vietnamese cafe known for generous bowls, friendly service, and drinks that keep people coming back. Guests rave about the pho, Bun Bo Hue, and fresh spring rolls with peanut sauce.</p>
+      <div class="photos" aria-label="Food highlights">
+        <div class="ph ph1">Pho</div>
+        <div class="ph ph2">Fresh rolls</div>
+        <div class="ph ph3">Bun bowls</div>
+        <div class="ph ph4">Boba</div>
       </div>
-    </section>
-
-    <section class="section section-alt" id="about">
-      <div class="section-inner">
-        <h2>About Koi Cafe</h2>
-        <p class="section-lead">A family-run Vietnamese cafe known for generous bowls, friendly service, and drinks worth the trip. Locals come back for the pho, Bun Bo Hue, and fresh rolls with peanut sauce.</p>
-        <div class="photo-grid" aria-label="Food highlights">
-          <div class="photo-frame p1" role="img" aria-label="Pho bowl">Pho</div>
-          <div class="photo-frame p2" role="img" aria-label="Spring rolls">Fresh rolls</div>
-          <div class="photo-frame p3" role="img" aria-label="Vermicelli plate">Bun bowls</div>
-          <div class="photo-frame p4" role="img" aria-label="Boba drink">Boba</div>
-        </div>
-        <p class="muted" style="margin-top:1rem;margin-bottom:0">Photo frames are placeholders styled for layout — drop in your real food photos and we’ll lock them.</p>
+      <p class="note">Styled photo frames for layout — drop in your real food shots and we will lock them.</p>
+    </div>
+  </section>
+  <section class="section" id="menu">
+    <div class="section-inner">
+      <h2>Menu highlights</h2>
+      <p class="lead">What guests ask for most. Send prices and daily specials anytime and we will expand the full board.</p>
+      <div class="menu-grid">
+        <article class="menu-card"><h3>Pho &amp; noodles</h3><ul>
+          <li><span class="item">Pho</span><span class="desc">Classic bowls — delivery-style when available</span></li>
+          <li><span class="item">Bun Bo Hue</span><span class="desc">Spicy Hue-style beef noodle soup</span></li>
+          <li><span class="item">Bun / vermicelli</span><span class="desc">Rice noodles with your toppings</span></li>
+        </ul></article>
+        <article class="menu-card"><h3>Plates &amp; rolls</h3><ul>
+          <li><span class="item">Fresh spring rolls</span><span class="desc">With peanut sauce</span></li>
+          <li><span class="item">Egg rolls</span><span class="desc">Crispy, shareable</span></li>
+          <li><span class="item">Sauteed beef &amp; rice</span><span class="desc">Hearty lunch or dinner plate</span></li>
+        </ul></article>
+        <article class="menu-card"><h3>Drinks</h3><ul>
+          <li><span class="item">Vietnamese coffee</span><span class="desc">Strong, sweet, classic</span></li>
+          <li><span class="item">Boba &amp; specialty drinks</span><span class="desc">Cold drinks with any plate</span></li>
+        </ul></article>
       </div>
-    </section>
-
-    <section class="section" id="menu">
-      <div class="section-inner">
-        <h2>Menu highlights</h2>
-        <p class="section-lead">Favorites guests ask for most. Full board can expand once you send prices and daily specials.</p>
-
-        <div class="menu-block">
-          <h3>Pho &amp; noodles</h3>
-          <ul class="menu-list">
-            <li><div><div class="item">Pho</div><div class="note">Classic bowls — including delivery-style orders when available</div></div></li>
-            <li><div><div class="item">Bun Bo Hue</div><div class="note">Spicy Hue-style beef noodle soup</div></div></li>
-            <li><div><div class="item">Bun / vermicelli bowls</div><div class="note">Rice noodles with your choice of toppings</div></div></li>
-          </ul>
-        </div>
-
-        <div class="menu-block">
-          <h3>Plates &amp; rolls</h3>
-          <ul class="menu-list">
-            <li><div><div class="item">Fresh spring rolls</div><div class="note">With peanut sauce</div></div></li>
-            <li><div><div class="item">Egg rolls</div><div class="note">Crispy, shareable</div></div></li>
-            <li><div><div class="item">Sauteed beef &amp; rice</div><div class="note">Hearty plate for lunch or dinner</div></div></li>
-          </ul>
-        </div>
-
-        <div class="menu-block">
-          <h3>Drinks</h3>
-          <ul class="menu-list">
-            <li><div><div class="item">Vietnamese coffee</div><div class="note">Strong, sweet, classic</div></div></li>
-            <li><div><div class="item">Boba &amp; specialty drinks</div><div class="note">Cold drinks to go with any plate</div></div></li>
-          </ul>
-        </div>
+    </div>
+  </section>
+  <section class="section alt" id="hours">
+    <div class="section-inner">
+      <h2>Hours &amp; location</h2>
+      <div class="notice">Online hours have conflicted and some listings show temporary closures. Please call before you go so we can confirm today&apos;s hours.</div>
+      <div class="info">
+        <div class="box"><strong>Address</strong>806 Pinebrook Rd, Suite 806<br>Venice, FL</div>
+        <div class="box"><strong>Hours</strong>Call to confirm before you visit<br>(941) 946-9841</div>
       </div>
-    </section>
-
-    <section class="section section-alt" id="hours">
-      <div class="section-inner">
-        <h2>Hours &amp; location</h2>
-        <div class="notice">Hours have varied online and some listings show temporary closures. Please call before you go so we can confirm today’s hours.</div>
-        <div class="contact-box">
-          <div class="contact-item">
-            <strong>Address</strong>
-            806 Pinebrook Rd, Suite 806<br>
-            Venice, FL
-          </div>
-          <div class="contact-item">
-            <strong>Hours</strong>
-            Call to confirm before you visit<br>
-            <span class="muted">(941) 946-9841</span>
-          </div>
-        </div>
+    </div>
+  </section>
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2>Contact</h2>
+      <p class="lead">Pickup questions or just checking if we are open? Call — happy to help.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="tel:+19419469841">(941) 946-9841</a>
+        <a class="btn btn-ghost" href="https://maps.google.com/?q=806+Pinebrook+Rd+Suite+806+Venice+FL" target="_blank" rel="noopener">Open in Maps</a>
       </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="section-inner">
-        <h2>Contact</h2>
-        <p class="section-lead">Questions, pickup, or just want to know if we’re open today? Call — we’re happy to help.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+19419469841">(941) 946-9841</a>
-          <a class="btn btn-secondary" href="https://maps.google.com/?q=806+Pinebrook+Rd+Suite+806+Venice+FL" target="_blank" rel="noopener">Open in Maps</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <p>Draft site by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — nearly final; send photo and hour updates anytime.</p>
-    <p>Koi Cafe · (941) 946-9841 · 806 Pinebrook Rd, Suite 806, Venice</p>
-  </footer>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Draft by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — warm food-first design for Koi Cafe.</p>
+  <p>Koi Cafe · (941) 946-9841 · 806 Pinebrook Rd, Suite 806, Venice</p>
+</footer>
 </body>
 </html>

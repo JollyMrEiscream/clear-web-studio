@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Plumber 941 — licensed Sarasota plumbing by Dirk Hoogland. Repairs, water heaters, drains, filtration, and emergencies.">
-  <meta name="theme-color" content="#0f766e">
-  <title>Plumber 941 — Licensed Plumbing · Sarasota</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Plumber 941 — licensed Sarasota plumbing by Dirk Hoogland.">
+<meta name="theme-color" content="#1e3a5f">
+<title>Plumber 941 — Licensed Plumbing · Sarasota</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1e3a5f;--navy-deep:#142849;--steel:#3d5a80;--bg:#f4f6f8;--panel:#ffffff;--ink:#0f172a;--muted:#5b6b7c;--line:#d7dee7;--accent:#2563eb}
+*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.banner{background:#e8eef6;color:var(--navy);text-align:center;font-size:.9rem;padding:.55rem 1rem;border-bottom:1px solid var(--line)}
+.bar{background:var(--navy);color:#fff}
+.bar-inner{max-width:72rem;margin:0 auto;padding:.85rem 1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.02em}.logo small{display:block;font-family:"IBM Plex Mono",monospace;font-size:.72rem;opacity:.8;font-weight:500}
+.nav a{color:#dbe7f5;text-decoration:none;margin-left:1rem;font-weight:500}.nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 60%,#0b1c33 100%);color:#fff;padding:3.25rem 1.25rem 3rem}
+.hero-inner{max-width:72rem;margin:0 auto;display:grid;gap:1.5rem;grid-template-columns:1.4fr .8fr;align-items:end}
+.badge{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.78rem;font-weight:600;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:.35rem .65rem;border-radius:.35rem;margin-bottom:1rem}
+h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.15;margin:0 0 1rem;letter-spacing:-.02em}
+.hero p{color:#c9d7ea;max-width:38rem;margin:0 0 1.35rem;font-size:1.08rem}
+.actions{display:flex;flex-wrap:wrap;gap:.65rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 1.2rem;border-radius:.4rem;font-weight:700;text-decoration:none;border:1px solid transparent}
+.btn-call{background:#fff;color:var(--navy)}.btn-call:hover{background:#e8eef6;color:var(--navy)}
+.btn-mail{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}.btn-mail:hover{border-color:#fff}
+.license-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:.6rem;padding:1.2rem}
+.license-card .label{font-family:"IBM Plex Mono",monospace;font-size:.75rem;opacity:.8;margin-bottom:.35rem}
+.license-card strong{font-size:1.35rem;display:block}.license-card span{opacity:.85;font-size:.95rem}
+.section{padding:3rem 1.25rem}.inner{max-width:72rem;margin:0 auto}
+h2{font-size:clamp(1.6rem,3vw,2rem);margin:0 0 .6rem;letter-spacing:-.02em}
+.lead{color:var(--muted);max-width:42rem;margin:0 0 1.5rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr);margin-top:1.25rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:.5rem;padding:1.2rem;box-shadow:0 1px 0 rgba(15,23,42,.03)}
+.card h3{margin:0 0 .4rem;font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.98rem}
+.why{background:#eef3f8}.why .card{border-left:4px solid var(--navy)}
+.split{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:.5rem;padding:1.15rem}.box strong{display:block;margin-bottom:.3rem;font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:var(--steel);text-transform:uppercase;letter-spacing:.04em}
+footer{background:var(--navy-deep);color:#b8c7da;padding:2rem 1.25rem;text-align:center;font-size:.92rem}
+footer a{color:#fff;font-weight:600}footer p{margin:.35rem 0}
+@media(max-width:860px){.hero-inner,.grid,.split{grid-template-columns:1fr}.nav{display:none}}
+</style>
 </head>
 <body>
-  <div class="draft-banner">Draft redesign by Clear Web Studio — cleaner than the current plumber941.com; same business, clearer site.</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span><span>Plumber 941</span></a>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#why">Why call</a></li>
-          <li><a href="#hours">Hours</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<div class="banner">Draft redesign by Clear Web Studio — cleaner than the current plumber941.com; same business, clearer site.</div>
+<header class="bar">
+  <div class="bar-inner">
+    <a class="logo" href="#top">PLUMBER 941<small>Licensed · CFC1427129</small></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a><a href="#why">Why call</a><a href="#hours">Hours</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">SARASOTA RESIDENTIAL PLUMBING</div>
+        <h1>Straight answers. Solid work. A plumber you can reach.</h1>
+        <p>Dirk Hoogland — Navy veteran and master plumber with 25–30+ years on the job. Estimates before work starts. Local Sarasota service you can trust.</p>
+        <div class="actions">
+          <a class="btn btn-call" href="tel:+19412530242">Call (941) 253-0242</a>
+          <a class="btn btn-mail" href="mailto:dirk@plumber941.com">Email Dirk</a>
+        </div>
+      </div>
+      <aside class="license-card">
+        <div class="label">FLORIDA LICENSE</div>
+        <strong>CFC1427129</strong>
+        <span>Active · Licensed &amp; insured</span>
+      </aside>
     </div>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <span class="hero-kicker">Licensed Sarasota plumbing</span>
-      <h1>Straight answers. Solid work. A plumber you can reach.</h1>
-      <p>Plumber 941 is Dirk Hoogland — Navy veteran, master plumber with 25–30+ years on the job. Residential plumbing done right across the Sarasota area, with estimates before work starts.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="tel:+19412530242">Call (941) 253-0242</a>
-        <a class="btn btn-secondary" href="mailto:dirk@plumber941.com">Email Dirk</a>
+  </section>
+  <section class="section" id="services">
+    <div class="inner">
+      <h2>Services</h2>
+      <p class="lead">From everyday fixes to water heaters and filtration — listed clearly so you know who to call.</p>
+      <div class="grid">
+        <article class="card"><h3>Leaks &amp; faucets</h3><p>Supply lines, valves, fixtures, and drip fixes before they become damage.</p></article>
+        <article class="card"><h3>Drains &amp; clogs</h3><p>Kitchen, bath, and laundry drains cleared the right way.</p></article>
+        <article class="card"><h3>Water heaters</h3><p>Tank and tankless — repair or replacement when you are ready.</p></article>
+        <article class="card"><h3>Disposals &amp; dishwashers</h3><p>Installs and troubleshooting for common kitchen plumbing.</p></article>
+        <article class="card"><h3>Filtration</h3><p>Water filtration options for cleaner water at home.</p></article>
+        <article class="card"><h3>Emergency calls</h3><p>When something cannot wait — call and we will sort next steps.</p></article>
       </div>
-    </section>
-
-    <section class="section section-alt" id="services">
-      <div class="section-inner">
-        <h2>Services</h2>
-        <p class="section-lead">Everything from everyday fixes to water heaters and filtration — listed clearly so you know who to call.</p>
-        <div class="grid">
-          <article class="card"><h3>Leaks &amp; faucets</h3><p>Supply lines, valves, fixtures, and drip fixes before they become damage.</p></article>
-          <article class="card"><h3>Drains &amp; clogs</h3><p>Kitchen, bath, and laundry drains cleared the right way.</p></article>
-          <article class="card"><h3>Water heaters</h3><p>Tank and tankless — repair or replacement when you’re ready.</p></article>
-          <article class="card"><h3>Disposals &amp; dishwashers</h3><p>Installs and troubleshooting for common kitchen plumbing.</p></article>
-          <article class="card"><h3>Filtration</h3><p>Water filtration options for cleaner water at home.</p></article>
-          <article class="card"><h3>Emergency calls</h3><p>When something can’t wait — call and we’ll sort next steps.</p></article>
-        </div>
+    </div>
+  </section>
+  <section class="section why" id="why">
+    <div class="inner">
+      <h2>Why homeowners call</h2>
+      <div class="grid">
+        <article class="card"><h3>Licensed &amp; insured</h3><p>Florida license CFC1427129 — active and listed on every page.</p></article>
+        <article class="card"><h3>Estimate before work</h3><p>You know the plan and cost direction before tools come out.</p></article>
+        <article class="card"><h3>Hometown Sarasota</h3><p>Shows up, explains the issue, and stands behind the work.</p></article>
       </div>
-    </section>
-
-    <section class="section" id="why">
-      <div class="section-inner">
-        <h2>Why homeowners call</h2>
-        <div class="grid">
-          <article class="card"><h3>Licensed &amp; insured</h3><p>Florida license CFC1427129 — active, verified, and listed on every page.</p></article>
-          <article class="card"><h3>Estimate before work</h3><p>You know the plan and the cost direction before tools come out.</p></article>
-          <article class="card"><h3>Hometown Sarasota</h3><p>Local plumber who shows up, explains the issue, and stands behind the work.</p></article>
-        </div>
+    </div>
+  </section>
+  <section class="section" id="hours">
+    <div class="inner">
+      <h2>Hours &amp; service area</h2>
+      <div class="split">
+        <div class="box"><strong>Hours</strong>Monday–Sunday · 9:00 AM – 5:00 PM</div>
+        <div class="box"><strong>Service area</strong>Sarasota and surrounding communities</div>
+        <div class="box"><strong>Shop address</strong>6173 Anise Dr<br>Sarasota, FL 34238</div>
       </div>
-    </section>
-
-    <section class="section section-alt" id="hours">
-      <div class="section-inner">
-        <h2>Hours &amp; service area</h2>
-        <div class="contact-box">
-          <div class="contact-item">
-            <strong>Hours</strong>
-            Monday–Sunday · 9:00 AM – 5:00 PM
-          </div>
-          <div class="contact-item">
-            <strong>Service area</strong>
-            Sarasota and surrounding communities
-          </div>
-          <div class="contact-item">
-            <strong>Shop address</strong>
-            6173 Anise Dr<br>
-            Sarasota, FL 34238
-          </div>
-        </div>
+    </div>
+  </section>
+  <section class="section" id="contact" style="padding-top:0">
+    <div class="inner">
+      <h2>Request service</h2>
+      <p class="lead">Call or email with what is going on — leaks, no hot water, a clog, or a bigger project.</p>
+      <div class="split">
+        <div class="box"><strong>Phone</strong><a href="tel:+19412530242">(941) 253-0242</a></div>
+        <div class="box"><strong>Email</strong><a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a></div>
+        <div class="box"><strong>Address</strong>6173 Anise Dr, Sarasota, FL 34238</div>
       </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="section-inner">
-        <h2>Request service</h2>
-        <p class="section-lead">Call or email with what’s going on — leaks, no hot water, a clog, or a bigger project. We’ll help you figure out the next step.</p>
-        <div class="contact-box">
-          <div class="contact-item">
-            <strong>Phone</strong>
-            <a href="tel:+19412530242">(941) 253-0242</a>
-          </div>
-          <div class="contact-item">
-            <strong>Email</strong>
-            <a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a>
-          </div>
-          <div class="contact-item">
-            <strong>Address</strong>
-            6173 Anise Dr, Sarasota, FL 34238
-          </div>
-        </div>
-        <div class="hero-actions" style="margin-top:1.5rem">
-          <a class="btn btn-primary" href="tel:+19412530242">Call now</a>
-          <a class="btn btn-secondary" href="mailto:dirk@plumber941.com">Email Dirk</a>
-        </div>
+      <div class="actions" style="margin-top:1.35rem">
+        <a class="btn btn-call" href="tel:+19412530242" style="background:var(--navy);color:#fff">Call now</a>
+        <a class="btn" href="mailto:dirk@plumber941.com" style="border:1px solid var(--line);color:var(--navy)">Email Dirk</a>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <p>Draft redesign by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — built to replace the thin current site with something clearer.</p>
-    <p>Plumber 941 · Dirk Hoogland · License CFC1427129 · (941) 253-0242 · dirk@plumber941.com</p>
-  </footer>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Draft redesign by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — contractor-first layout for Plumber 941.</p>
+  <p>Plumber 941 · Dirk Hoogland · License CFC1427129 · (941) 253-0242 · dirk@plumber941.com</p>
+</footer>
 </body>
 </html>

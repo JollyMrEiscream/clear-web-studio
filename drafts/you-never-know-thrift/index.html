@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="You Never Know Thrift — family-owned thrift in Bradenton. Furniture, home decor, clothing, gifts, and delivery.">
-  <meta name="theme-color" content="#0f766e">
-  <title>You Never Know Thrift — Bradenton</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="You Never Know Thrift — family-owned thrift shop in Bradenton.">
+<meta name="theme-color" content="#6b4f3a">
+<title>You Never Know Thrift — Bradenton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2c241c;--muted:#6f6256;--cream:#f7f1e8;--paper:#efe6d8;--wood:#6b4f3a;--wood-deep:#523c2c;--rose:#8c5a4a;--card:#fffcf7;--line:#ddd0bf}
+*{box-sizing:border-box}body{margin:0;font-family:Karla,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+a{color:var(--wood)}
+.banner{background:#ebe0d0;color:var(--wood-deep);text-align:center;font-size:.9rem;padding:.55rem 1rem;border-bottom:1px solid var(--line)}
+.frame{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+.header{padding:1.35rem 0 1rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;border-bottom:2px solid var(--wood)}
+.brand{text-decoration:none;color:var(--ink)}.brand em{display:block;font-style:normal;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;line-height:1}
+.brand small{color:var(--muted);font-size:.85rem}
+.nav{display:flex;gap:1rem;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.hero{padding:3rem 0 2.25rem;text-align:center}
+.tag{display:inline-block;border:1px solid var(--line);padding:.3rem .75rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem;background:var(--card)}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:600;line-height:1.05;margin:0 auto 1rem;max-width:18ch}
+.hero p{max-width:36rem;margin:0 auto 1.5rem;color:var(--muted);font-size:1.1rem}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.65rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.25rem;border-radius:.2rem;font-weight:700;text-decoration:none;border:1.5px solid transparent}
+.btn-main{background:var(--wood);color:#fff}.btn-ghost{border-color:var(--wood);color:var(--wood)}
+.section{padding:2.75rem 0}.paper{background:var(--paper);margin-left:-1.25rem;margin-right:-1.25rem;padding-left:1.25rem;padding-right:1.25rem}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.9rem,3vw,2.4rem);font-weight:600;margin:0 0 .65rem;text-align:center}
+.lead{text-align:center;color:var(--muted);max-width:40rem;margin:0 auto 1.75rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);padding:1.35rem 1.2rem}
+.card h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;margin:0 0 .4rem}.card p{margin:0;color:var(--muted)}
+.find{grid-template-columns:repeat(2,1fr)}
+.hours{display:grid;gap:1rem;grid-template-columns:1fr 1fr;max-width:46rem;margin:0 auto}
+.box{background:var(--card);border:1px solid var(--line);padding:1.25rem;text-align:center}
+.box strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;margin-bottom:.35rem}
+.quiet{text-align:center;color:var(--muted);font-size:.92rem;margin-top:1rem}
+footer{border-top:2px solid var(--wood);text-align:center;padding:2rem 1.25rem;color:var(--muted)}
+@media(max-width:760px){.grid,.find,.hours{grid-template-columns:1fr}.nav{display:none}}
+</style>
 </head>
 <body>
-  <div class="draft-banner">Draft site by Clear Web Studio — clean layout for hours, location, and what you’ll find; we’ll add your latest FB photos on request.</div>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span><span>You Never Know Thrift</span></a>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#find">What you’ll find</a></li>
-          <li><a href="#hours">Hours</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <span class="hero-kicker">Bradenton thrift · family-owned</span>
-      <h1>You never know what you’ll find.</h1>
-      <p>Furniture, home decor, clothing, and gifts in a clean, organized shop. Stop in often — inventory turns, and Fred’s crew keeps it friendly.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="tel:+19417945200">Call (941) 794-5200</a>
-        <a class="btn btn-secondary" href="#hours">Hours &amp; address</a>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="about">
-      <div class="section-inner">
-        <h2>About the shop</h2>
-        <p class="section-lead">You Never Know Thrift is a family-owned Bradenton shop known for being clean, organized, and full of surprises. Delivery is available when you need help getting bigger finds home. New pieces show up regularly — follow the shop on Facebook for photo updates of what’s just landed.</p>
-        <div class="grid">
-          <article class="card"><h3>Family-owned</h3><p>A local shop with a name regulars know — including owner Fred, often mentioned in reviews.</p></article>
-          <article class="card"><h3>Delivery available</h3><p>Ask in-store about delivery when you’re taking home furniture or larger pieces.</p></article>
-          <article class="card"><h3>Fresh inventory</h3><p>Photo updates on Facebook so you can peek at new finds between visits.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="find">
-      <div class="section-inner">
-        <h2>What you’ll find</h2>
-        <p class="section-lead">A little of everything worth hunting for — without the chaos.</p>
-        <div class="grid">
-          <article class="card"><h3>Furniture &amp; home</h3><p>Tables, chairs, decor, and housewares that turn over often.</p></article>
-          <article class="card"><h3>Clothing</h3><p>Everyday wear and seasonal pieces for browsing.</p></article>
-          <article class="card"><h3>Gifts &amp; finds</h3><p>The “you never know” aisle — curios, gifts, and one-offs.</p></article>
-          <article class="card"><h3>Facebook updates</h3><p>New inventory photos posted so you can plan your next stop.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="hours">
-      <div class="section-inner">
-        <h2>Hours &amp; location</h2>
-        <div class="contact-box">
-          <div class="contact-item">
-            <strong>Address</strong>
-            5529 Manatee Ave W<br>
-            Bradenton, FL 34209
-          </div>
-          <div class="contact-item">
-            <strong>Hours</strong>
-            Monday–Saturday · 9:00 AM – 5:00 PM<br>
-            Sunday · Closed
-          </div>
-        </div>
-        <p class="muted" style="margin-top:1rem;margin-bottom:0">Draft uses 5529 Manatee Ave W. If you’ve moved or opened a second spot, tell us and we’ll update before final.</p>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="section-inner">
-        <h2>Visit or call</h2>
-        <p class="section-lead">Questions about hours, delivery, or what’s in stock? Call the shop — or just stop by.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+19417945200">(941) 794-5200</a>
-          <a class="btn btn-secondary" href="https://maps.google.com/?q=5529+Manatee+Ave+W+Bradenton+FL+34209" target="_blank" rel="noopener">Open in Maps</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <p>Draft site by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — ready for your FB photos and any address confirmation.</p>
-    <p>You Never Know Thrift · (941) 794-5200 · 5529 Manatee Ave W, Bradenton</p>
-  </footer>
+<div class="banner">Draft by Clear Web Studio — friendly thrift look; add Facebook inventory photos on request.</div>
+<div class="frame">
+<header class="header">
+<a class="brand" href="#top"><em>You Never Know Thrift</em><small>Bradenton · Family-owned</small></a>
+<nav class="nav"><a href="#about">About</a><a href="#find">Finds</a><a href="#hours">Hours</a><a href="#contact">Visit</a></nav>
+</header>
+<main id="top">
+<section class="hero">
+<div class="tag">Thrift · Gifts · Surprises</div>
+<h1>You never know what you will find.</h1>
+<p>Furniture, home decor, clothing, and gifts in a clean, organized shop. Stop in often — inventory turns, and Fred's crew keeps it friendly.</p>
+<div class="actions">
+<a class="btn btn-main" href="tel:+19417945200">Call (941) 794-5200</a>
+<a class="btn btn-ghost" href="#hours">Hours and address</a>
+</div>
+</section>
+<section class="section paper" id="about">
+<h2>About the shop</h2>
+<p class="lead">A family-owned Bradenton thrift known for being clean, organized, and full of surprises. Delivery is available for bigger finds. New pieces show up regularly — follow Facebook for photo updates.</p>
+<div class="grid">
+<article class="card"><h3>Family-owned</h3><p>A local shop regulars know — including owner Fred, often named in reviews.</p></article>
+<article class="card"><h3>Delivery available</h3><p>Ask in-store when you are taking home furniture or larger pieces.</p></article>
+<article class="card"><h3>Fresh inventory</h3><p>Photo updates on Facebook so you can peek between visits.</p></article>
+</div>
+</section>
+<section class="section" id="find">
+<h2>What you will find</h2>
+<p class="lead">A little of everything worth hunting for — without the chaos.</p>
+<div class="grid find">
+<article class="card"><h3>Furniture and home</h3><p>Tables, chairs, decor, and housewares that turn over often.</p></article>
+<article class="card"><h3>Clothing</h3><p>Everyday wear and seasonal pieces for browsing.</p></article>
+<article class="card"><h3>Gifts and finds</h3><p>The you-never-know aisle — curios, gifts, and one-offs.</p></article>
+<article class="card"><h3>Facebook updates</h3><p>New inventory photos posted so you can plan your next stop.</p></article>
+</div>
+</section>
+<section class="section paper" id="hours">
+<h2>Hours and location</h2>
+<div class="hours">
+<div class="box"><strong>Address</strong>5529 Manatee Ave W<br>Bradenton, FL 34209</div>
+<div class="box"><strong>Hours</strong>Mon-Sat · 9:00 AM – 5:00 PM<br>Sunday · Closed</div>
+</div>
+<p class="quiet">Draft uses 5529 Manatee Ave W. Confirm address before final if needed.</p>
+</section>
+<section class="section" id="contact">
+<h2>Visit or call</h2>
+<p class="lead">Questions about hours, delivery, or stock? Call the shop — or just stop by.</p>
+<div class="actions">
+<a class="btn btn-main" href="tel:+19417945200">(941) 794-5200</a>
+<a class="btn btn-ghost" href="https://maps.google.com/?q=5529+Manatee+Ave+W+Bradenton+FL+34209" target="_blank" rel="noopener">Open in Maps</a>
+</div>
+</section>
+</main>
+</div>
+<footer>
+<p>Draft by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — vintage-friendly look for You Never Know Thrift.</p>
+<p>You Never Know Thrift · (941) 794-5200 · 5529 Manatee Ave W, Bradenton</p>
+</footer>
 </body>
 </html>
