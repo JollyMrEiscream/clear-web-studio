@@ -1,139 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Koi Cafe — family Vietnamese food and boba in Venice, FL.">
-<meta name="theme-color" content="#9a3412">
-<title>Koi Cafe — Vietnamese &amp; Boba · Venice, FL</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#2a1810;--muted:#7a5c4e;--cream:#fff7ef;--paper:#ffe8d2;--chili:#9a3412;--chili-deep:#7c2d12;--card:#fffaf4}
-*{box-sizing:border-box}body{margin:0;font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:var(--chili)}a:hover{color:var(--chili-deep)}
-.banner{background:#fde8d0;color:var(--chili-deep);text-align:center;font-size:.9rem;padding:.55rem 1rem;border-bottom:1px solid #f0d2b0}
-.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;max-width:70rem;margin:0 auto;gap:1rem}
-.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.35rem;text-decoration:none;color:var(--ink)}
-.brand span{color:var(--chili)}.nav{display:flex;gap:1.1rem;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted);font-weight:600}.nav a:hover{color:var(--chili)}
-.hero{max-width:70rem;margin:0 auto;padding:2.5rem 1.25rem 2rem;display:grid;gap:1.75rem;grid-template-columns:1.2fr .8fr;align-items:center}
-.kicker{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;color:var(--chili);margin:0 0 .5rem}
-h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.1;margin:0 0 1rem;letter-spacing:-.02em}
-.hero p{color:var(--muted);font-size:1.12rem;margin:0 0 1.25rem;max-width:34rem}
-.actions{display:flex;flex-wrap:wrap;gap:.6rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.2rem;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}
-.btn-main{background:var(--chili);color:#fff}.btn-main:hover{background:var(--chili-deep);color:#fff}
-.btn-ghost{background:transparent;border-color:#e6c4a4;color:var(--ink)}.btn-ghost:hover{border-color:var(--chili);color:var(--chili)}
-.hero-card{background:linear-gradient(160deg,#c2410c,#9a3412 55%,#7c2d12);border-radius:1.25rem;min-height:16rem;padding:1.5rem;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 18px 40px rgba(154,52,18,.25)}
-.hero-card strong{font-family:Fraunces,Georgia,serif;font-size:1.5rem}.hero-card span{opacity:.9}
-.section{padding:3rem 1.25rem}.section-inner{max-width:70rem;margin:0 auto}
-.alt{background:var(--paper)}
-h2{font-family:Fraunces,Georgia,serif;font-size:clamp(1.7rem,3vw,2.2rem);margin:0 0 .75rem}
-.lead{color:var(--muted);max-width:40rem;margin:0 0 1.5rem}
-.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-.ph{aspect-ratio:1;border-radius:1rem;display:flex;align-items:flex-end;padding:.85rem;color:#fff;font-weight:700;font-family:Fraunces,Georgia,serif;text-shadow:0 1px 6px rgba(0,0,0,.35)}
-.ph1{background:linear-gradient(160deg,rgba(0,0,0,.15),rgba(0,0,0,.45)),linear-gradient(135deg,#d6a57a,#8b4513)}
-.ph2{background:linear-gradient(160deg,rgba(0,0,0,.1),rgba(0,0,0,.4)),linear-gradient(135deg,#f0d7b0,#c08457)}
-.ph3{background:linear-gradient(160deg,rgba(0,0,0,.15),rgba(0,0,0,.45)),linear-gradient(135deg,#b45309,#7c2d12)}
-.ph4{background:linear-gradient(160deg,rgba(0,0,0,.1),rgba(0,0,0,.4)),linear-gradient(135deg,#78716c,#44403c)}
-.note{font-size:.9rem;color:var(--muted);margin-top:.75rem}
-.menu-grid{display:grid;gap:1.25rem;grid-template-columns:repeat(3,1fr)}
-.menu-card{background:var(--card);border:1px solid #f0d2b0;border-radius:1rem;padding:1.25rem}
-.menu-card h3{font-family:Fraunces,Georgia,serif;margin:0 0 .75rem;color:var(--chili)}
-.menu-card li{list-style:none;padding:.55rem 0;border-bottom:1px dashed #ecd5b8}.menu-card li:last-child{border:0}
-.menu-card ul{margin:0;padding:0}.item{font-weight:700}.desc{display:block;color:var(--muted);font-size:.92rem}
-.notice{background:#fff1e0;border:1px solid #f0d2b0;border-radius:.85rem;padding:1rem 1.15rem;color:var(--chili-deep);margin-bottom:1.25rem}
-.info{display:grid;gap:1rem;grid-template-columns:repeat(2,1fr)}
-.box{background:var(--card);border:1px solid #f0d2b0;border-radius:1rem;padding:1.2rem}.box strong{display:block;font-family:Fraunces,Georgia,serif;margin-bottom:.35rem}
-footer{text-align:center;padding:2rem 1.25rem;color:var(--muted);font-size:.95rem;border-top:1px solid #f0d2b0}
-footer a{font-weight:700}
-@media(max-width:820px){.hero{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr}.menu-grid,.info{grid-template-columns:1fr}.nav{display:none}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Koi Cafe — Homestyle Vietnamese &amp; Boba · Venice, FL</title>
+  <meta name="description" content="Koi Cafe — family Vietnamese cuisine and boba tea in Venice, FL. Pho, Bún Bò Huế, rolls, rice plates, and fusion surprises. Call (941) 946-9841." />
+  <meta name="theme-color" content="#b91c1c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --lacquer: #b91c1c;
+      --lacquer-deep: #9f1239;
+      --ivory: #fff8f0;
+      --ivory-soft: #fff1e4;
+      --charcoal: #1c1917;
+      --charcoal-soft: #44403c;
+      --gold: #c9a227;
+      --gold-light: #e4c65a;
+      --jade: #3d6b5a;
+      --shadow: 0 14px 36px rgba(28, 25, 23, 0.12);
+      --shadow-soft: 0 6px 18px rgba(28, 25, 23, 0.08);
+      --font-display: "Literata", "Noto Serif", Georgia, serif;
+      --font-body: "DM Sans", "Nunito Sans", system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--ivory);
+      color: var(--charcoal);
+      line-height: 1.6;
+      font-weight: 500;
+      background-image:
+        radial-gradient(ellipse 70% 45% at 100% 0%, rgba(185, 28, 28, 0.07), transparent 55%),
+        radial-gradient(ellipse 50% 40% at 0% 30%, rgba(61, 107, 90, 0.04), transparent 50%);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 2.25rem));
+      margin-inline: auto;
+    }
+
+    .draft-banner {
+      background: var(--ivory-soft);
+      color: var(--lacquer-deep);
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid rgba(185, 28, 28, 0.12);
+    }
+
+    .draft-banner a {
+      color: var(--lacquer);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Brand */
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .brand-mark {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #000;
+      box-shadow: 0 4px 12px rgba(28, 25, 23, 0.18);
+    }
+
+    .brand-mark.lg {
+      width: 88px;
+      height: 88px;
+      box-shadow: 0 8px 20px rgba(28, 25, 23, 0.2);
+    }
+
+    .brand-mark.sm {
+      width: 42px;
+      height: 42px;
+      box-shadow: 0 3px 8px rgba(28, 25, 23, 0.18);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.12rem;
+      line-height: 1.1;
+    }
+
+    .brand-text strong {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--charcoal);
+    }
+
+    .brand-text em {
+      font-style: normal;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--lacquer-deep);
+    }
+
+    .brand.hero-brand .brand-text strong {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+    }
+
+    .brand.hero-brand .brand-text em { font-size: 0.78rem; }
+
+    /* Header */
+    .site-header {
+      padding: 0.95rem 0;
+      border-bottom: 1px solid rgba(28, 25, 23, 0.08);
+      background: rgba(255, 248, 240, 0.95);
+    }
+
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem 1.35rem;
+      list-style: none;
+      flex-wrap: wrap;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--charcoal-soft);
+    }
+
+    .header-nav a:hover { color: var(--lacquer); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 999px;
+      padding: 0.7rem 1.35rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-call {
+      background: linear-gradient(160deg, var(--lacquer), var(--lacquer-deep));
+      color: var(--ivory);
+    }
+
+    .btn-call:hover {
+      box-shadow: var(--shadow);
+      background: linear-gradient(160deg, #dc2626, var(--lacquer-deep));
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--lacquer-deep);
+      border: 1.5px solid rgba(159, 18, 57, 0.35);
+      box-shadow: none;
+    }
+
+    .btn-ghost:hover {
+      background: var(--ivory-soft);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-lg {
+      font-size: 1.2rem;
+      padding: 1.05rem 2rem;
+    }
+
+    /* Hero */
+    .hero { padding: 2.5rem 0 3rem; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-copy .brand { margin-bottom: 1.25rem; }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.15rem, 5vw, 3.15rem);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    .hero h1 span { color: var(--lacquer); }
+
+    .hero-lead {
+      font-size: 1.1rem;
+      color: var(--charcoal-soft);
+      max-width: 40ch;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-story {
+      font-size: 1rem;
+      color: var(--charcoal-soft);
+      max-width: 44ch;
+      margin-bottom: 1.6rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--gold);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      border-radius: 1.35rem;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 420px;
+      background: var(--charcoal);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      object-position: center 40%;
+    }
+
+    .hero-visual-caption {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: rgba(28, 25, 23, 0.82);
+      color: var(--ivory);
+      border-radius: 999px;
+      padding: 0.55rem 0.85rem 0.55rem 0.55rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-visual-caption img {
+      width: 40px;
+      height: 40px;
+      min-height: 0;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .hero-visual-caption strong {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      display: block;
+      line-height: 1.2;
+    }
+
+    .hero-visual-caption span {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    /* Sections */
+    section { padding: 3rem 0; }
+
+    .section-kicker {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--jade);
+      margin-bottom: 0.55rem;
+    }
+
+    .section-kicker.red { color: var(--lacquer-deep); }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3.2vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.65rem;
+    }
+
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--charcoal-soft);
+      max-width: 52ch;
+      margin-bottom: 1.75rem;
+    }
+
+    /* About */
+    .about {
+      background: linear-gradient(180deg, transparent, var(--ivory-soft) 20%, transparent 90%);
+    }
+
+    .about-card {
+      background: #fff;
+      border: 1px solid rgba(28, 25, 23, 0.08);
+      border-radius: 1.35rem;
+      padding: clamp(1.5rem, 3vw, 2.25rem);
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    .about-card > div > p { color: var(--charcoal-soft); }
+    .about-card > div > p + p { margin-top: 0.9rem; }
+
+    .about-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+
+    .about-points li {
+      background: var(--ivory);
+      border-radius: 1rem;
+      padding: 1rem 1.1rem;
+      border-left: 4px solid var(--lacquer);
+    }
+
+    .about-points li:nth-child(2) { border-left-color: var(--gold); }
+    .about-points li:nth-child(3) { border-left-color: var(--jade); }
+
+    .about-points strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+      color: var(--charcoal);
+    }
+
+    .about-points span {
+      font-size: 0.92rem;
+      color: var(--charcoal-soft);
+    }
+
+    .about-photo {
+      border-radius: 1.1rem;
+      overflow: hidden;
+      min-height: 220px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 220px;
+      object-fit: cover;
+      object-position: left center;
+    }
+
+    /* Menu board */
+    .menu { padding-top: 2.25rem; }
+
+    .menu-board {
+      background: var(--charcoal);
+      color: var(--ivory);
+      border-radius: 1.35rem;
+      padding: clamp(1.5rem, 3vw, 2.25rem);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-board::before {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(201, 162, 39, 0.35);
+      border-radius: 1.1rem;
+      pointer-events: none;
+    }
+
+    .menu-board-head {
+      text-align: center;
+      margin-bottom: 1.75rem;
+      position: relative;
+    }
+
+    .menu-board-head .brand {
+      justify-content: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .menu-board-head .brand-text strong,
+    .menu-board-head .brand-text em { color: var(--ivory); }
+
+    .menu-board-head .brand-text em { color: var(--gold-light); }
+
+    .menu-board-head h2 {
+      color: var(--ivory);
+      margin-bottom: 0.35rem;
+    }
+
+    .menu-board-head p {
+      color: rgba(255, 248, 240, 0.72);
+      font-size: 0.95rem;
+      max-width: 42ch;
+      margin-inline: auto;
+    }
+
+    .menu-sections {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .menu-section {
+      background: rgba(255, 248, 240, 0.05);
+      border: 1px solid rgba(255, 248, 240, 0.08);
+      border-radius: 1rem;
+      padding: 1.35rem 1.25rem 1.5rem;
+    }
+
+    .menu-section h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+      letter-spacing: -0.01em;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem 1.5rem;
+    }
+
+    .menu-item strong {
+      display: block;
+      font-size: 1.02rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      color: var(--ivory);
+    }
+
+    .menu-item span {
+      font-size: 0.88rem;
+      color: rgba(255, 248, 240, 0.68);
+      line-height: 1.45;
+    }
+
+    .menu-note {
+      margin-top: 1.25rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: rgba(255, 248, 240, 0.65);
+      position: relative;
+    }
+
+    /* Visit */
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.25rem;
+    }
+
+    .visit-card {
+      border-radius: 1.35rem;
+      padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .visit-card.hours {
+      background: var(--ivory-soft);
+      border: 1px solid rgba(28, 25, 23, 0.08);
+    }
+
+    .visit-card.address {
+      background: linear-gradient(155deg, var(--lacquer), var(--lacquer-deep));
+      color: var(--ivory);
+    }
+
+    .visit-card.address h2 { color: var(--ivory); }
+
+    .visit-card.address p {
+      font-size: 1.1rem;
+      line-height: 1.55;
+      opacity: 0.95;
+    }
+
+    .visit-card.address a {
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      border-bottom: 1px solid rgba(228, 198, 90, 0.5);
+    }
+
+    .visit-card.address a:hover { color: var(--ivory); }
+
+    .hours-note {
+      font-size: 1.05rem;
+      color: var(--charcoal-soft);
+      margin-bottom: 1.15rem;
+    }
+
+    .hours-note strong {
+      color: var(--lacquer-deep);
+      font-weight: 700;
+    }
+
+    /* Phone CTA */
+    .phone-cta { padding: 2.5rem 0 3rem; }
+
+    .phone-cta-inner {
+      text-align: center;
+      background: #fff;
+      border: 2px solid rgba(185, 28, 28, 0.15);
+      border-radius: 1.5rem;
+      padding: clamp(2rem, 5vw, 3rem) 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .phone-cta-inner .brand {
+      justify-content: center;
+      margin-bottom: 1.15rem;
+    }
+
+    .phone-cta-inner h2 { margin-bottom: 0.5rem; }
+
+    .phone-cta-inner > p {
+      color: var(--charcoal-soft);
+      margin-bottom: 1.35rem;
+      font-size: 1.05rem;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .phone-number {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 5vw, 2.75rem);
+      font-weight: 700;
+      color: var(--lacquer);
+      letter-spacing: -0.02em;
+      margin-top: 1rem;
+      line-height: 1.2;
+    }
+
+    .phone-number:hover { color: var(--lacquer-deep); }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(28, 25, 23, 0.1);
+      padding: 1.75rem 0 2.25rem;
+      background: var(--charcoal);
+      color: rgba(255, 248, 240, 0.75);
+    }
+
+    .site-footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .site-footer .brand-text strong,
+    .site-footer .brand-text em { color: var(--ivory); }
+
+    .site-footer .brand-text em { color: var(--gold-light); }
+
+    .site-footer p { font-size: 0.9rem; }
+
+    .site-footer .studio-note {
+      width: 100%;
+      margin-top: 0.75rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid rgba(255, 248, 240, 0.12);
+      font-size: 0.82rem;
+      color: rgba(255, 248, 240, 0.55);
+    }
+
+    .site-footer .studio-note a {
+      color: var(--gold-light);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-card,
+      .visit-grid,
+      .menu-grid { grid-template-columns: 1fr; }
+
+      .hero-visual,
+      .hero-visual img { min-height: 300px; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 1.35rem, 1080px); }
+      .brand-mark { width: 48px; height: 48px; }
+      .brand-text strong { font-size: 1.25rem; }
+    }
+  </style>
 </head>
 <body>
-<div class="banner">Draft by Clear Web Studio — review menu, hours, and swap in your real food photos before final.</div>
-<header class="top">
-  <a class="brand" href="#top">Koi <span>Cafe</span></a>
-  <nav class="nav" aria-label="Primary">
-    <a href="#about">About</a><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#contact">Contact</a>
-  </nav>
-</header>
-<main id="top">
-  <section class="hero">
-    <div>
-      <p class="kicker">Venice · Vietnamese &amp; boba</p>
-      <h1>Warm bowls, fresh rolls, and boba worth the trip.</h1>
-      <p>Family Vietnamese cooking on Pinebrook Road — pho, Bun Bo Hue, vermicelli, and drinks in a cozy neighborhood spot.</p>
-      <div class="actions">
-        <a class="btn btn-main" href="tel:+19419469841">Call (941) 946-9841</a>
-        <a class="btn btn-ghost" href="#menu">Browse the menu</a>
+  <p class="draft-banner">Client draft by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — review menu wording with the owners before going live.</p>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Koi Cafe home">
+        <img class="brand-mark" src="assets/koi-cafe-logo.png" width="56" height="56" alt="Koi Cafe logo" />
+        <span class="brand-text">
+          <strong>Koi Cafe</strong>
+          <em>Venice, FL</em>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="header-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a class="btn btn-call" href="tel:+19419469841">Call</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="brand hero-brand">
+            <img class="brand-mark lg" src="assets/koi-cafe-logo.png" width="88" height="88" alt="" />
+            <span class="brand-text">
+              <strong>Koi Cafe</strong>
+              <em>Homestyle Vietnamese · Boba</em>
+            </span>
+          </div>
+          <h1>Come for the welcome.<br /><span>Stay for the pho.</span></h1>
+          <p class="hero-lead">
+            A small family business specializing in homestyle Vietnamese cuisine and boba tea — with the occasional fusion surprise.
+          </p>
+          <p class="hero-story">
+            Friendly owners who take time to walk you through the sauces, show how to wrap an egg roll in lettuce, and make sure your first bowl feels like home.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19419469841">Call (941) 946-9841</a>
+            <a class="btn btn-ghost" href="#menu">See the menu</a>
+          </div>
+        </div>
+
+        <aside class="hero-visual">
+          <img src="assets/koi-cafe-hero-food.png" width="865" height="377" alt="Crispy egg rolls with fresh lettuce, tomato, and cucumber from Koi Cafe" />
+          <div class="hero-visual-caption">
+            <img src="assets/koi-cafe-logo.png" width="40" height="40" alt="" />
+            <div>
+              <strong>Egg rolls, plated with care</strong>
+              <span>Fresh greens · house dipping sauce</span>
+            </div>
+          </div>
+        </aside>
       </div>
-    </div>
-    <div class="hero-card" role="img" aria-label="Vietnamese food mood">
-      <strong>Pho · Boba · Fresh rolls</strong>
-      <span>Made for hungry locals</span>
-    </div>
-  </section>
-  <section class="section alt" id="about">
-    <div class="section-inner">
-      <h2>About Koi Cafe</h2>
-      <p class="lead">A family-run Vietnamese cafe known for generous bowls, friendly service, and drinks that keep people coming back. Guests rave about the pho, Bun Bo Hue, and fresh spring rolls with peanut sauce.</p>
-      <div class="photos" aria-label="Food highlights">
-        <div class="ph ph1">Pho</div>
-        <div class="ph ph2">Fresh rolls</div>
-        <div class="ph ph3">Bun bowls</div>
-        <div class="ph ph4">Boba</div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap">
+        <p class="section-kicker">About us</p>
+        <h2>Homestyle Vietnamese — and boba when you want something cold</h2>
+        <p class="section-lead">
+          From our Facebook family at <strong>koicafefla</strong>: we’re a small family kitchen. Most days it’s the classics. Sometimes we throw in fusion or untraditional surprises.
+        </p>
+
+        <div class="about-card">
+          <div>
+            <p>
+              Guests come back for aromatic pho, spicy Bún Bò Huế, customizable bún bowls, fresh rolls with peanut sauce, and rice plates — including fusion favorites like Korean marinated beef and our house 7 Cơm G Roti.
+            </p>
+            <p>
+              Reviewers often mention the same thing: staff explain the sauces, help you wrap egg rolls in lettuce, and make the meal feel welcoming — not rushed.
+            </p>
+            <ul class="about-points">
+              <li>
+                <strong>Homestyle bowls</strong>
+                <span>Pho, Bún Bò Huế, and vermicelli — cooked the way we cook for family.</span>
+              </li>
+              <li>
+                <strong>Fusion surprises</strong>
+                <span>Bao sliders, Korean marinated beef, roti plates — ask what’s on when you call.</span>
+              </li>
+              <li>
+                <strong>Boba &amp; coffee</strong>
+                <span>A great selection of boba teas plus strong Vietnamese coffee.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-photo">
+            <img src="assets/koi-cafe-hero-food.png" width="865" height="377" alt="Koi Cafe egg rolls and fresh vegetables" />
+          </div>
+        </div>
       </div>
-      <p class="note">Styled photo frames for layout — drop in your real food shots and we will lock them.</p>
-    </div>
-  </section>
-  <section class="section" id="menu">
-    <div class="section-inner">
-      <h2>Menu highlights</h2>
-      <p class="lead">What guests ask for most. Send prices and daily specials anytime and we will expand the full board.</p>
-      <div class="menu-grid">
-        <article class="menu-card"><h3>Pho &amp; noodles</h3><ul>
-          <li><span class="item">Pho</span><span class="desc">Classic bowls — delivery-style when available</span></li>
-          <li><span class="item">Bun Bo Hue</span><span class="desc">Spicy Hue-style beef noodle soup</span></li>
-          <li><span class="item">Bun / vermicelli</span><span class="desc">Rice noodles with your toppings</span></li>
-        </ul></article>
-        <article class="menu-card"><h3>Plates &amp; rolls</h3><ul>
-          <li><span class="item">Fresh spring rolls</span><span class="desc">With peanut sauce</span></li>
-          <li><span class="item">Egg rolls</span><span class="desc">Crispy, shareable</span></li>
-          <li><span class="item">Sauteed beef &amp; rice</span><span class="desc">Hearty lunch or dinner plate</span></li>
-        </ul></article>
-        <article class="menu-card"><h3>Drinks</h3><ul>
-          <li><span class="item">Vietnamese coffee</span><span class="desc">Strong, sweet, classic</span></li>
-          <li><span class="item">Boba &amp; specialty drinks</span><span class="desc">Cold drinks with any plate</span></li>
-        </ul></article>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="menu-board">
+          <div class="menu-board-head">
+            <div class="brand">
+              <img class="brand-mark sm" src="assets/koi-cafe-logo.png" width="42" height="42" alt="" />
+              <span class="brand-text">
+                <strong>Koi Cafe</strong>
+                <em>Menu board</em>
+              </span>
+            </div>
+            <h2>What’s cooking</h2>
+            <p>Favorites guests talk about — ask us what’s available today. Prices: ask us.</p>
+          </div>
+
+          <div class="menu-sections">
+            <div class="menu-section">
+              <h3>Appetizers &amp; rolls</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <strong>Fresh Spring Rolls / Shrimp Summer Rolls (Gỏi cuốn)</strong>
+                  <span>Herbs, shrimp, and vermicelli — with peanut sauce.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Vegetable Spring Rolls</strong>
+                  <span>Rice paper wraps with peanut dipping sauce.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Egg Rolls</strong>
+                  <span>Crispy and golden — staff often explain wrapping them in lettuce.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Sampler Platter</strong>
+                  <span>A guest-favorite mix to share and taste around the table.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Bao Sliders</strong>
+                  <span>Fusion appetizer — soft bao with savory filling. Ask us for today’s price.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h3>Pho &amp; noodle soups</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <strong>Pho with Beef</strong>
+                  <span>Aromatic broth, rice noodles, and traditional sides — basil, jalapeños, lime, and more. Delivery often packs noodles and broth separately.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Pho Tái</strong>
+                  <span>Rare beef pho.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Beef Brisket Pho</strong>
+                  <span>Slow, comforting brisket in fragrant broth.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Bún Bò Huế</strong>
+                  <span>Spicy Hue-style beef noodle soup — a must-try per guests.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h3>Bún / vermicelli bowls</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <strong>Bún (Vermicelli Bowls)</strong>
+                  <span>Cool rice noodles with herbs and your choice of proteins — customizable house bowls guests return for.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h3>Rice plates &amp; fusion</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <strong>Sautéed Beef &amp; Rice</strong>
+                  <span>A guest favorite — savory, simple, and filling.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Korean Marinated Beef with Rice</strong>
+                  <span>Fusion surprise — served with cucumbers.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Marinated Beef with Onions, Peppers &amp; Rice</strong>
+                  <span>Peppery, aromatic beef over rice.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>7 Cơm G Roti</strong>
+                  <span>House specialty — seasoned chicken and rice with roti (fusion).</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section">
+              <h3>Drinks</h3>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <strong>Vietnamese Coffee</strong>
+                  <span>Strong, sweet, and slow — the way it should be.</span>
+                </div>
+                <div class="menu-item">
+                  <strong>Boba Tea</strong>
+                  <span>A great selection of boba — ask what’s pouring when you visit. Specific flavors TBD with the kitchen.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="menu-note">Menu availability can change — call ahead. No prices listed here; ask us when you order.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section alt" id="hours">
-    <div class="section-inner">
-      <h2>Hours &amp; location</h2>
-      <div class="notice">Online hours have conflicted and some listings show temporary closures. Please call before you go so we can confirm today&apos;s hours.</div>
-      <div class="info">
-        <div class="box"><strong>Address</strong>806 Pinebrook Rd, Suite 806<br>Venice, FL</div>
-        <div class="box"><strong>Hours</strong>Call to confirm before you visit<br>(941) 946-9841</div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-card hours">
+          <p class="section-kicker red">Hours</p>
+          <h2>Call to confirm before you visit</h2>
+          <p class="hours-note">
+            We’re a small family kitchen — hours can shift, and some listings have shown temporary closures.
+            <strong>Please call ahead</strong> so we can welcome you when we’re open.
+          </p>
+          <a class="btn btn-call" href="tel:+19419469841">Call (941) 946-9841</a>
+        </div>
+        <div class="visit-card address">
+          <p class="section-kicker" style="color: var(--gold-light);">Find us</p>
+          <h2>Venice</h2>
+          <p>
+            806 Pinebrook Rd<br />
+            Suite 806<br />
+            Venice, FL 34285
+          </p>
+          <a href="https://maps.google.com/?q=806+Pinebrook+Rd+Suite+806+Venice+FL+34285" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section" id="contact">
-    <div class="section-inner">
-      <h2>Contact</h2>
-      <p class="lead">Pickup questions or just checking if we are open? Call — happy to help.</p>
-      <div class="actions">
-        <a class="btn btn-main" href="tel:+19419469841">(941) 946-9841</a>
-        <a class="btn btn-ghost" href="https://maps.google.com/?q=806+Pinebrook+Rd+Suite+806+Venice+FL" target="_blank" rel="noopener">Open in Maps</a>
+    </section>
+
+    <section class="phone-cta">
+      <div class="wrap">
+        <div class="phone-cta-inner">
+          <div class="brand">
+            <img class="brand-mark" src="assets/koi-cafe-logo.png" width="56" height="56" alt="" />
+            <span class="brand-text">
+              <strong>Koi Cafe</strong>
+              <em>Ready when you are</em>
+            </span>
+          </div>
+          <h2>Hungry? Call the kitchen.</h2>
+          <p>Pho, rolls, boba — or ask what’s surprising us this week.</p>
+          <div class="cta-actions">
+            <a class="btn btn-call btn-lg" href="tel:+19419469841">Call (941) 946-9841</a>
+            <a class="btn btn-ghost" href="https://maps.google.com/?q=806+Pinebrook+Rd+Suite+806+Venice+FL+34285" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+          </div>
+          <a class="phone-number" href="tel:+19419469841">(941) 946-9841</a>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="brand">
+        <img class="brand-mark sm" src="assets/koi-cafe-logo.png" width="42" height="42" alt="" />
+        <span class="brand-text">
+          <strong>Koi Cafe</strong>
+          <em>koicafefla</em>
+        </span>
+      </div>
+      <p>806 Pinebrook Rd, Suite 806 · Venice, FL 34285</p>
+      <p><a href="tel:+19419469841">(941) 946-9841</a></p>
+      <p class="studio-note">Draft site by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — not the live restaurant website until the owners approve.</p>
     </div>
-  </section>
-</main>
-<footer>
-  <p>Draft by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a> — warm food-first design for Koi Cafe.</p>
-  <p>Koi Cafe · (941) 946-9841 · 806 Pinebrook Rd, Suite 806, Venice</p>
-</footer>
+  </footer>
 </body>
 </html>
