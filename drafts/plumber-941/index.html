@@ -1,456 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Plumber 941 — Dirk Hoogland, Navy veteran and master plumber with 30+ years experience. Licensed CFC1427129. Sarasota hometown plumbing. Call (941) 253-0242.">
-<meta name="theme-color" content="#1e3a8a">
-<title>Plumber 941 — Dirk Hoogland · Sarasota</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --blue: #1d4ed8;
-  --blue-mid: #1e40af;
-  --blue-deep: #1e3a8a;
-  --amber: #f59e0b;
-  --bg: #f1f5f9;
-  --white: #fff;
-  --ink: #0f172a;
-  --muted: #64748b;
-  --line: #e2e8f0;
-  --r: 0.35rem;
-}
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-img { display: block; max-width: 100%; height: auto; }
-a { color: var(--blue-mid); }
-a:hover { color: var(--blue); }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plumber 941 — Dirk Hoogland · Sarasota, FL</title>
+  <meta name="description" content="When you call, you get Dirk. Licensed plumber CFC1427129 serving Sarasota. Navy vet, 30+ years. Call (941) 253-0242.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1e293b;
+      --steel: #334155;
+      --slate: #475569;
+      --light: #f1f5f9;
+      --white: #ffffff;
+      --red: #c41e1e;
+      --red-dark: #9b1515;
+      --border: #cbd5e1;
+      --ink: #0f172a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--red); }
+    a:hover { color: var(--red-dark); }
+    h1, h2, h3 {
+      font-family: "IBM Plex Serif", Georgia, serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
 
-.draft {
-  background: #e2e8f0;
-  color: #334155;
-  text-align: center;
-  font-size: 0.82rem;
-  font-weight: 500;
-  padding: 0.4rem 1rem;
-}
+    /* Utility bar */
+    .utility-bar {
+      background: var(--navy);
+      color: #e2e8f0;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 0.45rem 0;
+    }
+    .utility-bar .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.25rem;
+      text-align: center;
+    }
+    .utility-bar strong { color: #fff; font-weight: 700; }
 
-.utility {
-  background: var(--blue-deep);
-  color: #bfdbfe;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.utility-inner {
-  max-width: 68rem;
-  margin: 0 auto;
-  padding: 0.4rem 1.15rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1rem;
-}
-.utility strong { color: #fff; }
+    /* Header */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 0;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    }
+    .logo-link { text-decoration: none; }
+    .logo-link img {
+      height: 88px; width: auto;
+      object-fit: contain;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.75rem 1.4rem; border-radius: 6px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-call {
+      background: var(--red);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(196, 30, 30, 0.3);
+    }
+    .btn-call:hover { background: var(--red-dark); color: #fff; }
+    .btn-ghost {
+      background: var(--light); color: var(--navy); border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { background: #e2e8f0; color: var(--ink); }
 
-.header {
-  background: var(--white);
-  border-bottom: 1px solid var(--line);
-}
-.header-inner {
-  max-width: 68rem;
-  margin: 0 auto;
-  padding: 0.75rem 1.15rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.logo-link {
-  display: block;
-  text-decoration: none;
-  line-height: 0;
-}
-.logo-link img {
-  height: 4.5rem;
-  width: auto;
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 1.1rem;
-  border-radius: var(--r);
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-decoration: none;
-  border: 2px solid transparent;
-}
-.btn:hover { text-decoration: none; }
-.btn-call {
-  background: var(--amber);
-  color: #422006;
-  border-color: var(--amber);
-}
-.btn-call:hover { background: #d97706; border-color: #d97706; color: #fff; }
-.btn-outline {
-  background: transparent;
-  color: #fff;
-  border-color: rgba(255,255,255,.5);
-}
-.btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); color: #fff; }
-.btn-blue {
-  background: var(--blue-mid);
-  color: #fff;
-  border-color: var(--blue-mid);
-}
-.btn-blue:hover { background: var(--blue-deep); border-color: var(--blue-deep); color: #fff; }
+    /* Hero */
+    .hero {
+      padding: 3rem 0 2.75rem;
+      background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .badge-license {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      background: var(--navy); color: #fff;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.4rem 0.75rem; border-radius: 4px; margin-bottom: 1rem;
+    }
+    .badge-license span { color: #94a3b8; font-weight: 500; }
+    .hero h1 {
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      margin-bottom: 0.85rem;
+    }
+    .hero h1 .accent { color: var(--red); }
+    .hero-lead {
+      font-size: 1.12rem; color: var(--slate); max-width: 40ch; margin-bottom: 1.5rem;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+    .hero-meta {
+      font-size: 0.92rem; color: var(--steel);
+      display: flex; flex-direction: column; gap: 0.35rem;
+    }
+    .hero-meta a { font-weight: 600; text-decoration: none; }
+    .hero-meta a:hover { text-decoration: underline; }
 
-.hero {
-  background: linear-gradient(160deg, var(--blue) 0%, var(--blue-mid) 50%, var(--blue-deep) 100%);
-  color: #fff;
-  padding: 2.5rem 1.15rem;
-}
-.hero-inner {
-  max-width: 68rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 1.5rem;
-  align-items: center;
-}
-.hero h1 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(1.75rem, 3.8vw, 2.5rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-}
-.hero-lead {
-  margin: 0 0 1.25rem;
-  color: #dbeafe;
-  font-size: 1.02rem;
-  max-width: 34rem;
-}
-.hero-lead strong { color: #fff; }
-.actions { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    /* Pending photo card */
+    .photo-slot {
+      background: var(--light);
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      min-height: 340px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 2rem 1.5rem;
+      position: relative;
+    }
+    .photo-slot::before {
+      content: "";
+      position: absolute; inset: 10px;
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      border-radius: 6px; pointer-events: none;
+    }
+    .photo-slot .frame-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;
+      font-family: "IBM Plex Serif", serif;
+    }
+    .photo-slot h3 {
+      font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--navy);
+    }
+    .photo-slot p { font-size: 0.88rem; color: var(--slate); max-width: 22ch; }
+    .license-chip {
+      margin-top: 1.25rem;
+      background: var(--white);
+      border: 2px solid var(--navy);
+      padding: 0.55rem 0.9rem;
+      border-radius: 4px;
+      font-size: 0.82rem; font-weight: 700;
+      color: var(--navy); letter-spacing: 0.04em;
+    }
+    .license-chip span { display: block; font-size: 0.7rem; font-weight: 500; color: var(--slate); letter-spacing: 0.02em; }
 
-.card-id {
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.22);
-  border-radius: var(--r);
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: 0.9rem;
-  align-items: center;
-}
-.photo-pending {
-  width: 5.5rem;
-  height: 5.5rem;
-  border-radius: var(--r);
-  background: rgba(15,23,42,.28);
-  border: 1px dashed rgba(255,255,255,.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0.4rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  line-height: 1.3;
-  color: #bfdbfe;
-}
-.card-id .label {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: #93c5fd;
-  margin-bottom: 0.2rem;
-}
-.card-id .license {
-  margin: 0 0 0.25rem;
-  font-size: 1.3rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-}
-.card-id .who {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #dbeafe;
-}
-.card-id .who strong { color: #fff; }
+    /* Services */
+    .services { padding: 3rem 0; background: var(--white); }
+    .section-head { margin-bottom: 1.75rem; }
+    .section-head h2 { font-size: clamp(1.55rem, 2.8vw, 2rem); margin-bottom: 0.4rem; }
+    .section-head p { color: var(--slate); max-width: 48ch; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+    }
+    .service-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.15rem 1.2rem;
+      border-top: 3px solid var(--navy);
+    }
+    .service-card h3 {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 1rem; font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .service-card p { font-size: 0.88rem; color: var(--slate); }
 
-.section { padding: 2.5rem 1.15rem; }
-.inner { max-width: 68rem; margin: 0 auto; }
-.section h2 {
-  margin: 0 0 0.35rem;
-  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-.lead {
-  margin: 0 0 1.2rem;
-  color: var(--muted);
-  max-width: 38rem;
-}
+    /* Why Dirk */
+    .why {
+      padding: 3rem 0;
+      background: var(--navy);
+      color: #e2e8f0;
+    }
+    .why h2 { color: #fff; margin-bottom: 1.5rem; font-size: clamp(1.55rem, 2.8vw, 2rem); }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 1.4rem 1.3rem;
+    }
+    .why-card .num {
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.75rem; font-weight: 700; color: #f87171;
+      margin-bottom: 0.5rem; line-height: 1;
+    }
+    .why-card h3 { color: #fff; font-size: 1.1rem; margin-bottom: 0.45rem; }
+    .why-card p { font-size: 0.92rem; color: #94a3b8; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.65rem;
-}
-.svc {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  padding: 0.95rem 1rem;
-}
-.svc h3 { margin: 0 0 0.25rem; font-size: 0.98rem; font-weight: 700; }
-.svc p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    /* Contact */
+    .contact { padding: 3rem 0 3.5rem; }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+    .contact h2 { margin-bottom: 1rem; }
+    .contact dl { display: grid; gap: 0.85rem; }
+    .contact dt {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--slate); margin-bottom: 0.15rem;
+    }
+    .contact dd { font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+    .contact dd a { text-decoration: none; color: var(--red); }
+    .contact dd a:hover { text-decoration: underline; }
+    .contact-cta {
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1rem;
+    }
+    .contact-cta .phone-xl {
+      font-family: "IBM Plex Serif", serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700; color: var(--ink); text-decoration: none;
+    }
+    .contact-cta .phone-xl:hover { color: var(--red); }
+    .license-banner {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+      padding: 0.75rem;
+      border: 2px solid var(--navy);
+      border-radius: 6px;
+      background: var(--white);
+    }
 
-.why-wrap {
-  background: var(--white);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.why .grid { gap: 0.75rem; }
-.why-card {
-  background: var(--bg);
-  border-left: 4px solid var(--blue-mid);
-  border-radius: 0 var(--r) var(--r) 0;
-  padding: 1rem 1.05rem;
-}
-.why-card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
-.why-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    /* Footer */
+    .site-footer {
+      background: var(--ink);
+      color: #94a3b8;
+      padding: 2.25rem 0;
+      text-align: center;
+    }
+    .site-footer img {
+      height: 72px; width: auto; margin: 0 auto 1rem;
+      filter: brightness(1.05);
+      background: #fff;
+      border-radius: 6px;
+      padding: 0.35rem 0.5rem;
+    }
+    .site-footer p { font-size: 0.88rem; margin-bottom: 0.35rem; }
+    .site-footer .lic { color: #fff; font-weight: 700; letter-spacing: 0.05em; margin-top: 0.75rem; }
+    .site-footer a { color: #fca5a5; }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.65rem;
-}
-.box {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  padding: 1rem 1.05rem;
-}
-.box .k {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.3rem;
-}
-.box .v { font-weight: 700; font-size: 1rem; line-height: 1.4; }
-.box a { color: var(--blue-mid); text-decoration: none; font-weight: 700; }
-.box a:hover { text-decoration: underline; }
-.cta-row { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.55rem; }
-
-footer {
-  background: var(--blue-deep);
-  color: #93c5fd;
-  padding: 1.75rem 1.15rem;
-  text-align: center;
-}
-.footer-inner { max-width: 68rem; margin: 0 auto; }
-.footer-logo {
-  height: 3.75rem;
-  width: auto;
-  margin: 0 auto 0.75rem;
-  background: #fff;
-  border-radius: var(--r);
-  padding: 0.35rem 0.5rem;
-}
-.footer-license {
-  display: inline-block;
-  margin: 0 0 0.5rem;
-  padding: 0.35rem 0.7rem;
-  border: 1px solid rgba(147,197,253,.35);
-  border-radius: var(--r);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.88rem;
-}
-footer p { margin: 0.3rem 0; font-size: 0.88rem; }
-footer a { color: #fff; font-weight: 600; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-.draft-note { opacity: .85; font-size: 0.8rem; }
-
-@media (max-width: 820px) {
-  .hero-inner, .grid, .contact-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 560px) {
-  .hero-inner, .grid, .contact-grid { grid-template-columns: 1fr; }
-  .header-inner { flex-wrap: wrap; }
-  .logo-link img { height: 3.75rem; }
-  .card-id { grid-template-columns: 5rem 1fr; }
-  .btn { width: 100%; }
-  .actions, .cta-row { width: 100%; }
-}
-</style>
+    @media (max-width: 800px) {
+      .hero-grid, .contact-grid, .why-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .logo-link img { height: 68px; }
+      .photo-slot { min-height: 260px; }
+    }
+    @media (max-width: 480px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .utility-bar .wrap { gap: 0.25rem 0.75rem; font-size: 0.72rem; }
+    }
+  </style>
 </head>
 <body>
-  <div class="draft">Draft redesign by Clear Web Studio — cleaner layout for Plumber 941, same business.</div>
-
-  <div class="utility">
-    <div class="utility-inner">
-      <span><strong>Licensed &amp; Insured</strong></span>
+  <div class="utility-bar" role="complementary" aria-label="License and hours">
+    <div class="wrap">
+      <span><strong>Licensed</strong></span>
       <span>CFC1427129</span>
-      <span>Mon–Sun · 9:00 AM – 5:00 PM</span>
+      <span>Mon–Sun 9–5</span>
+      <span>Sarasota, FL</span>
     </div>
   </div>
 
-  <header class="header">
-    <div class="header-inner">
-      <a class="logo-link" href="#top">
-        <img src="plumber941-logo.png" width="864" height="504" alt="Plumber 941 — Your Hometown Plumbing Experts">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo-link" href="#top" aria-label="Plumber 941 home">
+        <img src="images/plumber941-logo.png" alt="Plumber 941 logo — arched PLUMBER over 941 with crossed red-handle wrenches" width="200" height="200">
       </a>
-      <a class="btn btn-call" href="tel:+19412530242">Call (941) 253-0242</a>
+      <a class="btn btn-call" href="tel:+19412530242">Call Now · (941) 253-0242</a>
     </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
+      <div class="wrap hero-grid">
         <div>
-          <h1 id="hero-heading">When you call, you get Dirk.</h1>
-          <p class="hero-lead">
-            <strong>Dirk Hoogland</strong> — Navy veteran and master plumber with 30+ years on the job.
-            Estimates before work starts. Licensed, insured, hometown Sarasota.
-          </p>
-          <div class="actions">
+          <div class="badge-license" aria-label="Florida plumbing license">
+            License <span>·</span> CFC1427129
+          </div>
+          <h1 id="hero-heading">When you call,<br><span class="accent">you get Dirk.</span></h1>
+          <p class="hero-lead">Dirk Hoogland — Navy veteran, 30+ years of plumbing experience, serving homeowners across Sarasota. No call center. No runaround. Just Dirk.</p>
+          <div class="hero-actions">
             <a class="btn btn-call" href="tel:+19412530242">Call (941) 253-0242</a>
-            <a class="btn btn-outline" href="mailto:dirk@plumber941.com">Email Dirk</a>
+            <a class="btn btn-ghost" href="#services">View services</a>
+          </div>
+          <div class="hero-meta">
+            <span>6173 Anise Dr, Sarasota, FL 34238</span>
+            <span><a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a></span>
+            <span>Hours: Monday–Sunday, 9:00 AM – 5:00 PM</span>
           </div>
         </div>
-
-        <aside class="card-id" aria-label="Owner and license">
-          <div class="photo-pending" role="img" aria-label="Dirk Hoogland photo — pending">Dirk Hoogland photo — pending</div>
-          <div>
-            <div class="label">Florida license</div>
-            <p class="license">CFC1427129</p>
-            <p class="who"><strong>Dirk Hoogland</strong><br>Owner · Master plumber</p>
+        <aside class="photo-slot" aria-label="Owner photo placeholder">
+          <div class="frame-icon" aria-hidden="true">DH</div>
+          <h3>Dirk Hoogland photo — pending</h3>
+          <p>Owner portrait will appear here. No stock models — Dirk is the brand.</p>
+          <div class="license-chip">
+            CFC1427129
+            <span>Florida Certified Plumbing Contractor</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="services" aria-labelledby="services-heading">
-      <div class="inner">
-        <h2 id="services-heading">Services</h2>
-        <p class="lead">Residential plumbing for Sarasota homeowners — repair, maintenance, and installs.</p>
-        <div class="grid">
-          <article class="svc">
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="services-heading">Plumbing services in Sarasota</h2>
+          <p>Residential work done right — from everyday fixes to water heaters and filtration.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
             <h3>General plumbing</h3>
-            <p>Everyday repairs, fixtures, and troubleshooting.</p>
+            <p>Repairs, installs, and the everyday work that keeps your home running.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Drains</h3>
-            <p>Kitchen, bath, and laundry clogs cleared the right way.</p>
+            <p>Clogs, slow drains, and clearing lines before they become a bigger problem.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Leaks &amp; faucets</h3>
-            <p>Stop drips and leaks before they cause damage.</p>
+            <p>Dripping fixtures, shutoffs, and leak tracing without the guesswork.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Garbage disposals</h3>
-            <p>Installs, resets, and replacements.</p>
+            <p>Installs, replacements, and troubleshooting when the disposal stops.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Dishwashers</h3>
-            <p>Hookups, leaks, and drain-line issues.</p>
+            <p>Hookups, supply lines, and drainage so your dishwasher works cleanly.</p>
           </article>
-          <article class="svc">
-            <h3>Water heaters — tank</h3>
-            <p>Repair or replacement when the tank fails.</p>
+          <article class="service-card">
+            <h3>Water heaters</h3>
+            <p>Tank and tankless — repair, replace, and keep hot water reliable.</p>
           </article>
-          <article class="svc">
-            <h3>Water heaters — tankless</h3>
-            <p>Service and installs for tankless systems.</p>
-          </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Water filtration</h3>
-            <p>Cleaner drinking and shower water at home.</p>
+            <p>Whole-home and point-of-use filtration options for Sarasota water.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Emergency</h3>
-            <p>When something cannot wait — call and we’ll sort next steps.</p>
+            <p>Urgent leaks and no-water situations — call and talk to Dirk directly.</p>
           </article>
-          <article class="svc">
+          <article class="service-card">
             <h3>Residential</h3>
-            <p>Full-service plumbing for Sarasota homes.</p>
+            <p>Focused on Sarasota homes — clear communication and accountable work.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section why-wrap" id="why" aria-labelledby="why-heading">
-      <div class="inner why">
-        <h2 id="why-heading">Why call Plumber 941</h2>
-        <p class="lead">Dirk answers. Clear estimates. Local work you can trust.</p>
-        <div class="grid">
+    <section class="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">Why homeowners call Dirk</h2>
+        <div class="why-grid">
           <article class="why-card">
-            <h3>When you call, you get me</h3>
-            <p>Navy vet. Master plumber. 30+ years — not a call center.</p>
+            <div class="num">01</div>
+            <h3>Navy veteran</h3>
+            <p>Discipline, accountability, and a no-drama approach to every job.</p>
           </article>
           <article class="why-card">
-            <h3>Estimates before work</h3>
-            <p>You know the plan and cost direction before tools come out.</p>
+            <div class="num">02</div>
+            <h3>30+ years</h3>
+            <p>Decades of hands-on plumbing — experience you can hear on the phone.</p>
           </article>
           <article class="why-card">
-            <h3>Licensed &amp; insured</h3>
-            <p>Florida license <strong>CFC1427129</strong> — hometown Sarasota service.</p>
+            <div class="num">03</div>
+            <h3>You get Dirk</h3>
+            <p>When you call Plumber 941, you talk to Dirk — not a dispatcher script.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-heading">
-      <div class="inner">
-        <h2 id="contact-heading">Contact</h2>
-        <p class="lead">Call or email with what’s going on — leak, clog, no hot water, or a bigger job.</p>
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
         <div class="contact-grid">
-          <div class="box">
-            <span class="k">Address</span>
-            <div class="v">6173 Anise Dr<br>Sarasota, FL 34238</div>
+          <div>
+            <h2 id="contact-heading">Contact</h2>
+            <dl>
+              <div>
+                <dt>Address</dt>
+                <dd>6173 Anise Dr<br>Sarasota, FL 34238</dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19412530242">(941) 253-0242</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Monday–Sunday · 9:00 AM – 5:00 PM</dd>
+              </div>
+            </dl>
           </div>
-          <div class="box">
-            <span class="k">Phone</span>
-            <div class="v"><a href="tel:+19412530242">(941) 253-0242</a></div>
-          </div>
-          <div class="box">
-            <span class="k">Email · Hours</span>
-            <div class="v"><a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a><br><span style="font-weight:600;color:var(--muted);font-size:0.92rem;">Mon–Sun 9AM–5PM</span></div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19412530242">(941) 253-0242</a>
+            <a class="btn btn-call" href="tel:+19412530242">Call Dirk now</a>
+            <a class="btn btn-ghost" href="mailto:dirk@plumber941.com">Email dirk@plumber941.com</a>
           </div>
         </div>
-        <div class="cta-row">
-          <a class="btn btn-call" href="tel:+19412530242">Call now</a>
-          <a class="btn btn-blue" href="mailto:dirk@plumber941.com">Email Dirk</a>
-        </div>
+        <p class="license-banner">Licensed Florida Plumbing Contractor · CFC1427129</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <img class="footer-logo" src="plumber941-logo.png" width="864" height="504" alt="Plumber 941">
-      <div class="footer-license">License CFC1427129 · Licensed &amp; Insured</div>
-      <p>Dirk Hoogland · 6173 Anise Dr, Sarasota, FL 34238</p>
-      <p><a href="tel:+19412530242">(941) 253-0242</a> · <a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a> · Mon–Sun 9AM–5PM</p>
-      <p class="draft-note">Draft redesign by Clear Web Studio</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/plumber941-logo.png" alt="Plumber 941 logo" width="160" height="160">
+      <p>Dirk Hoogland · Sarasota, Florida</p>
+      <p><a href="tel:+19412530242">(941) 253-0242</a> · <a href="mailto:dirk@plumber941.com">dirk@plumber941.com</a></p>
+      <p class="lic">CFC1427129</p>
     </div>
   </footer>
 </body>

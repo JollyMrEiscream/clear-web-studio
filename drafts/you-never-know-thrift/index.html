@@ -1,576 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="You Never Know Thrift — family-owned Bradenton thrift. Furniture, clothing, gifts. Delivery available. (941) 794-5200.">
-<meta name="theme-color" content="#0b0b12">
-<title>You Never Know Thrift — Bradenton</title>
-<link rel="icon" href="assets/logo.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --night: #0b0b12;
-  --night-2: #12121c;
-  --glass: #161622;
-  --ink: #f4f0ea;
-  --muted: #9a96a8;
-  --pink: #ff2bd6;
-  --blue: #2ee6ff;
-  --warm: #fff6e8;
-  --line: rgba(255, 255, 255, 0.09);
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You Never Know Thrift — Bradenton, FL</title>
+  <meta name="description" content="Family-owned thrift in Bradenton. Furniture, finds, and delivery available. You never know what you'll walk into. Call (941) 794-5200.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night: #0a0a12;
+      --night-2: #12121c;
+      --panel: #161622;
+      --pink: #ff2d95;
+      --pink-soft: #ff6bb5;
+      --blue: #00d4ff;
+      --blue-dim: #0099bb;
+      --text: #f0f0f8;
+      --muted: #9a9ab0;
+      --line: rgba(255, 45, 149, 0.25);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Outfit, system-ui, sans-serif;
+      background: var(--night);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 1.05rem;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:hover { color: var(--pink-soft); }
+    h1, h2, h3 {
+      font-family: "Space Grotesk", Outfit, sans-serif;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #fff;
+    }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+    /* Glow helpers */
+    .glow-pink {
+      text-shadow:
+        0 0 8px rgba(255, 45, 149, 0.8),
+        0 0 24px rgba(255, 45, 149, 0.45),
+        0 0 48px rgba(255, 45, 149, 0.25);
+    }
+    .glow-blue {
+      text-shadow:
+        0 0 8px rgba(0, 212, 255, 0.7),
+        0 0 22px rgba(0, 212, 255, 0.4);
+    }
 
-body {
-  margin: 0;
-  font-family: "DM Sans", system-ui, sans-serif;
-  background:
-    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(255, 43, 214, 0.16), transparent 55%),
-    radial-gradient(ellipse 50% 35% at 90% 40%, rgba(46, 230, 255, 0.08), transparent 50%),
-    var(--night);
-  color: var(--ink);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(10, 10, 18, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; padding: 0.65rem 0;
+    }
+    .logo-mini {
+      width: 48px; height: 48px; border-radius: 50%;
+      box-shadow:
+        0 0 0 2px var(--pink),
+        0 0 16px rgba(255, 45, 149, 0.55),
+        0 0 28px rgba(0, 212, 255, 0.25);
+    }
+    .brand-name {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700; font-size: 0.95rem; color: #fff;
+      text-decoration: none; display: flex; align-items: center; gap: 0.7rem;
+    }
+    .brand-name span { color: var(--pink); font-size: 0.72rem; font-weight: 600; display: block; letter-spacing: 0.06em; text-transform: uppercase; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.7rem 1.3rem; border-radius: 999px; font-weight: 700; font-size: 0.92rem;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+      font-family: inherit;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-neon {
+      background: var(--pink);
+      color: #fff;
+      box-shadow:
+        0 0 12px rgba(255, 45, 149, 0.55),
+        0 0 28px rgba(255, 45, 149, 0.3);
+    }
+    .btn-neon:hover {
+      background: var(--pink-soft); color: #fff;
+      box-shadow: 0 0 18px rgba(255, 45, 149, 0.7), 0 0 40px rgba(0, 212, 255, 0.25);
+    }
+    .btn-outline {
+      background: transparent; color: var(--blue);
+      border: 2px solid var(--blue);
+      box-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
+    }
+    .btn-outline:hover { background: rgba(0, 212, 255, 0.12); color: #fff; }
 
-a { color: var(--blue); }
-a:hover { color: var(--warm); }
+    /* Hero */
+    .hero {
+      padding: 3.5rem 0 3rem;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 20%, rgba(255, 45, 149, 0.18), transparent 55%),
+        radial-gradient(ellipse 50% 40% at 80% 70%, rgba(0, 212, 255, 0.12), transparent 50%),
+        radial-gradient(ellipse 40% 35% at 15% 80%, rgba(255, 45, 149, 0.08), transparent 45%),
+        var(--night);
+    }
+    .hero-logo {
+      width: min(280px, 70vw); height: auto; margin: 0 auto 1.75rem;
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 3px var(--pink),
+        0 0 0 6px rgba(0, 212, 255, 0.35),
+        0 0 40px rgba(255, 45, 149, 0.55),
+        0 0 80px rgba(0, 212, 255, 0.3);
+      animation: pulse-glow 3.5s ease-in-out infinite;
+    }
+    @keyframes pulse-glow {
+      0%, 100% {
+        box-shadow:
+          0 0 0 3px var(--pink),
+          0 0 0 6px rgba(0, 212, 255, 0.35),
+          0 0 40px rgba(255, 45, 149, 0.55),
+          0 0 80px rgba(0, 212, 255, 0.3);
+      }
+      50% {
+        box-shadow:
+          0 0 0 3px var(--pink),
+          0 0 0 7px rgba(0, 212, 255, 0.5),
+          0 0 55px rgba(255, 45, 149, 0.7),
+          0 0 100px rgba(0, 212, 255, 0.4);
+      }
+    }
+    .hero h1 {
+      font-size: clamp(1.9rem, 5vw, 3.1rem);
+      margin-bottom: 0.75rem;
+    }
+    .hero h1 .pink { color: var(--pink); }
+    .hero h1 .blue { color: var(--blue); }
+    .tagline {
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      color: var(--muted);
+      max-width: 36ch;
+      margin: 0 auto 1.75rem;
+    }
+    .tagline strong { color: var(--pink-soft); font-weight: 600; }
+    .hero-actions {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .hours-pill {
+      display: inline-block;
+      background: rgba(0, 212, 255, 0.1);
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      color: var(--blue);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.88rem; font-weight: 600;
+      box-shadow: 0 0 16px rgba(0, 212, 255, 0.15);
+    }
 
-.draft {
-  text-align: center;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
-  padding: 0.65rem 1rem;
-  border-bottom: 1px solid var(--line);
-  background: rgba(0, 0, 0, 0.45);
-}
-.draft span { color: var(--pink); }
+    /* About */
+    .about {
+      padding: 3rem 0;
+      background: var(--night-2);
+      border-top: 1px solid rgba(255, 45, 149, 0.12);
+      border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;
+    }
+    .about h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 1rem; }
+    .about p { color: var(--muted); margin-bottom: 0.9rem; }
+    .about .highlight { color: #fff; }
+    .about-points {
+      display: flex; flex-direction: column; gap: 0.85rem;
+    }
+    .point {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--pink);
+      border-radius: 0.5rem;
+      padding: 1rem 1.15rem;
+    }
+    .point h3 { font-size: 1rem; margin-bottom: 0.25rem; color: var(--pink-soft); }
+    .point p { font-size: 0.9rem; margin: 0; color: var(--muted); }
 
-.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.35rem; }
-.wrap-wide { max-width: 56rem; margin: 0 auto; padding: 0 1.35rem; }
+    /* Inventory grid */
+    .inventory { padding: 3.5rem 0 2.5rem; }
+    .section-head { text-align: center; margin-bottom: 2rem; }
+    .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.15rem); margin-bottom: 0.5rem; }
+    .section-head p { color: var(--muted); max-width: 42ch; margin-inline: auto; }
+    .inv-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+    .inv-card {
+      grid-column: span 2;
+      background: var(--panel);
+      border-radius: 0.85rem;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .inv-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 45, 149, 0.4);
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(255, 45, 149, 0.15);
+    }
+    .inv-card:nth-child(4), .inv-card:nth-child(5) { grid-column: span 3; }
+    .inv-card .frame {
+      aspect-ratio: 4/3; overflow: hidden; background: #08080e;
+    }
+    .inv-card img { width: 100%; height: 100%; object-fit: cover; }
+    .inv-card figcaption {
+      padding: 0.75rem 1rem 0.95rem;
+      font-size: 0.88rem; font-weight: 600; color: #ddd;
+    }
+    .inv-card figcaption small {
+      display: block; font-weight: 500; font-size: 0.75rem;
+      color: var(--muted); margin-top: 0.15rem;
+    }
 
-/* Header */
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  max-width: 56rem;
-  margin: 0 auto;
-  padding: 0.9rem 1.35rem;
-  border-bottom: 1px solid var(--line);
-}
+    /* Lit-window hours card */
+    .visit { padding: 2rem 0 3.5rem; }
+    .window-card {
+      background:
+        linear-gradient(160deg, #1a1020 0%, #0e1420 50%, #12101a 100%);
+      border: 2px solid transparent;
+      border-radius: 1.15rem;
+      padding: 2.25rem 2.5rem;
+      position: relative;
+      box-shadow:
+        0 0 0 1px rgba(255, 45, 149, 0.35),
+        0 0 0 1px rgba(0, 212, 255, 0.2) inset,
+        0 0 40px rgba(255, 45, 149, 0.2),
+        0 0 60px rgba(0, 212, 255, 0.12),
+        0 20px 50px rgba(0, 0, 0, 0.5);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+      overflow: hidden;
+    }
+    .window-card::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--pink), var(--blue), var(--pink));
+      opacity: 0.9;
+    }
+    .window-card h2 { margin-bottom: 1rem; }
+    .window-card address {
+      font-style: normal; color: var(--text); margin-bottom: 0.75rem; font-size: 1.1rem;
+    }
+    .window-card .footnote {
+      font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem;
+    }
+    .hours-block {
+      background: rgba(0, 212, 255, 0.06);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.4rem;
+    }
+    .hours-block h3 {
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 0.75rem;
+    }
+    .hours-block ul { list-style: none; }
+    .hours-block li {
+      display: flex; justify-content: space-between; gap: 1rem;
+      padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.95rem;
+    }
+    .hours-block li:last-child { border-bottom: none; }
+    .hours-block .closed { color: var(--pink-soft); }
 
-.top-mark {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  text-decoration: none;
-  color: inherit;
-}
+    /* Contact strip */
+    .contact-strip {
+      padding: 2.5rem 0;
+      background: var(--panel);
+      text-align: center;
+      border-top: 1px solid rgba(255, 45, 149, 0.15);
+    }
+    .contact-strip h2 { margin-bottom: 0.75rem; font-size: 1.5rem; }
+    .contact-strip .phone {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .contact-strip .phone:hover { color: var(--pink); }
+    .contact-strip .fb {
+      display: inline-block; margin-top: 0.75rem;
+      color: var(--blue); font-weight: 600;
+    }
 
-.top-mark img {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  background: #000;
-  box-shadow:
-    0 0 12px rgba(255, 43, 214, 0.55),
-    0 0 22px rgba(46, 230, 255, 0.25);
-}
+    /* Footer */
+    .site-footer {
+      background: #050508;
+      padding: 2.5rem 0 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(0, 212, 255, 0.12);
+    }
+    .site-footer img {
+      width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem;
+      box-shadow:
+        0 0 0 2px var(--pink),
+        0 0 24px rgba(255, 45, 149, 0.45),
+        0 0 40px rgba(0, 212, 255, 0.25);
+    }
+    .site-footer p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .site-footer a { color: var(--pink-soft); }
+    .site-footer .fine { font-size: 0.75rem; color: #55556a; margin-top: 1.1rem; }
 
-.top-mark .word {
-  font-family: "Bebas Neue", Impact, sans-serif;
-  font-size: 1.15rem;
-  letter-spacing: 0.08em;
-  color: var(--warm);
-  line-height: 1.05;
-}
-
-.top-mark .word em {
-  display: block;
-  font-family: Pacifico, cursive;
-  font-style: normal;
-  font-size: 0.95rem;
-  letter-spacing: 0;
-  color: var(--pink);
-  text-shadow: 0 0 12px rgba(255, 43, 214, 0.6);
-}
-
-.nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
-.nav a {
-  text-decoration: none;
-  color: var(--muted);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-.nav a:hover { color: var(--blue); }
-
-/* Hero — logo leads */
-.hero {
-  text-align: center;
-  padding: 3.75rem 1.35rem 3.25rem;
-  min-height: min(82vh, 42rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-hero {
-  display: block;
-  width: min(20rem, 78vw);
-  height: auto;
-  margin: 0 auto 1.6rem;
-  border-radius: 50%;
-  background: #000;
-  box-shadow:
-    0 0 0 2px rgba(46, 230, 255, 0.45),
-    0 0 32px rgba(255, 43, 214, 0.65),
-    0 0 75px rgba(255, 43, 214, 0.4),
-    0 0 50px rgba(46, 230, 255, 0.25),
-    0 20px 48px rgba(0, 0, 0, 0.55);
-  animation: glow-pulse 4.8s ease-in-out infinite;
-}
-
-@keyframes glow-pulse {
-  0%, 100% {
-    box-shadow:
-      0 0 0 2px rgba(46, 230, 255, 0.4),
-      0 0 30px rgba(255, 43, 214, 0.6),
-      0 0 70px rgba(255, 43, 214, 0.35),
-      0 0 45px rgba(46, 230, 255, 0.22),
-      0 20px 48px rgba(0, 0, 0, 0.55);
-  }
-  50% {
-    box-shadow:
-      0 0 0 2px rgba(46, 230, 255, 0.6),
-      0 0 40px rgba(255, 43, 214, 0.75),
-      0 0 90px rgba(255, 43, 214, 0.45),
-      0 0 60px rgba(46, 230, 255, 0.32),
-      0 20px 48px rgba(0, 0, 0, 0.55);
-  }
-}
-
-.tagline {
-  margin: 0 auto 0.5rem;
-  font-family: Pacifico, cursive;
-  font-size: clamp(1.35rem, 3.4vw, 1.9rem);
-  color: var(--blue);
-  text-shadow: 0 0 10px rgba(46, 230, 255, 0.7), 0 0 24px rgba(46, 230, 255, 0.35);
-  line-height: 1.25;
-}
-
-.lede {
-  margin: 0 auto 1.7rem;
-  max-width: 28rem;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-.lede strong { color: var(--ink); font-weight: 600; }
-
-.ctas {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.82rem 1.35rem;
-  border-radius: 0.3rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-decoration: none;
-  border: 1.5px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-.btn:hover { transform: translateY(-2px); }
-
-.btn-call {
-  background: var(--pink);
-  color: #14010f;
-  border-color: var(--pink);
-  box-shadow: 0 0 18px rgba(255, 43, 214, 0.5), 0 0 36px rgba(255, 43, 214, 0.22);
-}
-.btn-call:hover { background: #ff4d6d; border-color: #ff4d6d; color: #14010f; }
-
-.btn-ghost {
-  background: transparent;
-  color: var(--blue);
-  border-color: rgba(46, 230, 255, 0.55);
-  box-shadow: 0 0 14px rgba(46, 230, 255, 0.18);
-}
-.btn-ghost:hover {
-  color: var(--warm);
-  background: rgba(46, 230, 255, 0.08);
-  border-color: var(--blue);
-}
-
-/* Sections */
-.section { padding: 3rem 0; }
-.section-alt {
-  background: linear-gradient(180deg, rgba(18, 18, 28, 0.95), rgba(11, 11, 18, 0.55));
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-h2 {
-  margin: 0 0 0.5rem;
-  text-align: center;
-  font-family: "Bebas Neue", Impact, sans-serif;
-  font-size: clamp(1.85rem, 4vw, 2.4rem);
-  letter-spacing: 0.08em;
-  font-weight: 400;
-  color: var(--warm);
-  text-shadow: 0 0 18px rgba(255, 43, 214, 0.28);
-}
-
-.intro {
-  text-align: center;
-  color: var(--muted);
-  max-width: 34rem;
-  margin: 0 auto 1.65rem;
-  font-size: 1.02rem;
-}
-
-.about-copy {
-  text-align: center;
-  max-width: 36rem;
-  margin: 0 auto;
-  font-size: 1.05rem;
-}
-.about-copy p { margin: 0 0 1rem; }
-.about-copy p:last-child { margin: 0; }
-.about-copy strong { color: var(--blue); font-weight: 700; }
-
-/* Inventory photo grid — lit windows */
-.inventory {
-  display: grid;
-  gap: 0.85rem;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.shot {
-  position: relative;
-  margin: 0;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  border: 1px solid rgba(46, 230, 255, 0.22);
-  background: var(--glass);
-  box-shadow: 0 0 18px rgba(255, 43, 214, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.shot::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--pink), var(--blue), transparent);
-  z-index: 1;
-  opacity: 0.85;
-}
-
-.shot:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 43, 214, 0.5);
-  box-shadow: 0 0 28px rgba(255, 43, 214, 0.22), 0 14px 28px rgba(0, 0, 0, 0.4);
-}
-
-.shot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
-}
-
-.shot figcaption {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 0.55rem 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--warm);
-  background: linear-gradient(transparent, rgba(8, 8, 14, 0.92));
-}
-
-.shot:nth-child(1) { grid-column: span 3; }
-.shot:nth-child(2) { grid-column: span 3; }
-.shot:nth-child(3) { grid-column: span 2; }
-.shot:nth-child(4) { grid-column: span 2; }
-.shot:nth-child(5) { grid-column: span 2; }
-
-.fb-link {
-  text-align: center;
-  margin: 1.25rem 0 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-.fb-link a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--blue);
-  text-shadow: 0 0 10px rgba(46, 230, 255, 0.35);
-  border-bottom: 1px solid rgba(46, 230, 255, 0.45);
-}
-.fb-link a:hover { color: var(--warm); }
-
-/* Hours lit-window */
-.visit-grid {
-  display: grid;
-  gap: 0.9rem;
-  grid-template-columns: 1fr 1fr;
-  max-width: 36rem;
-  margin: 0 auto;
-}
-
-.box {
-  background: var(--glass);
-  border: 1px solid rgba(255, 43, 214, 0.28);
-  border-radius: 0.35rem;
-  padding: 1.35rem 1.1rem;
-  text-align: center;
-  box-shadow: 0 0 22px rgba(255, 43, 214, 0.1);
-}
-.box:nth-child(2) {
-  border-color: rgba(46, 230, 255, 0.32);
-  box-shadow: 0 0 22px rgba(46, 230, 255, 0.1);
-}
-.box strong {
-  display: block;
-  font-family: "Bebas Neue", Impact, sans-serif;
-  font-size: 1.35rem;
-  letter-spacing: 0.08em;
-  font-weight: 400;
-  color: var(--warm);
-  margin-bottom: 0.4rem;
-}
-.box span { color: var(--muted); font-size: 0.96rem; }
-
-.footnote {
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.85rem;
-  margin: 1.15rem 0 0;
-  opacity: 0.9;
-}
-
-.contact { text-align: center; }
-
-.fb-note {
-  margin: 1.6rem auto 0;
-  max-width: 30rem;
-  padding: 1rem 1.15rem;
-  text-align: left;
-  background: var(--glass);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--blue);
-  border-radius: 0.3rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-  box-shadow: 0 0 18px rgba(46, 230, 255, 0.08);
-}
-.fb-note a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--blue);
-  text-shadow: 0 0 10px rgba(46, 230, 255, 0.35);
-}
-.fb-note a:hover { color: var(--warm); }
-
-.site-footer {
-  margin-top: 1rem;
-  padding: 2.1rem 1.35rem 2.5rem;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
-  border-top: 2px solid transparent;
-  border-image: linear-gradient(90deg, transparent, var(--pink), var(--blue), transparent) 1;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.site-footer .footer-logo {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  margin: 0 auto 0.85rem;
-  display: block;
-  background: #000;
-  box-shadow: 0 0 20px rgba(255, 43, 214, 0.5), 0 0 30px rgba(46, 230, 255, 0.22);
-}
-
-.site-footer p { margin: 0.25rem 0; }
-.site-footer .credit { margin-top: 0.9rem; font-size: 0.78rem; opacity: 0.75; }
-.site-footer .credit a { color: var(--muted); font-weight: 600; text-decoration: none; }
-.site-footer .credit a:hover { color: var(--blue); }
-
-@media (max-width: 720px) {
-  .nav { display: none; }
-  .hero { padding: 2.75rem 1.1rem 2.4rem; min-height: auto; }
-  .logo-hero { width: min(16rem, 82vw); }
-  .inventory { grid-template-columns: 1fr 1fr; }
-  .shot:nth-child(n) { grid-column: span 1; }
-  .shot:nth-child(5) { grid-column: span 2; }
-  .visit-grid { grid-template-columns: 1fr; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logo-hero { animation: none; }
-}
-</style>
+    @media (max-width: 860px) {
+      .about-grid, .window-card { grid-template-columns: 1fr; }
+      .inv-grid { grid-template-columns: 1fr 1fr; }
+      .inv-card, .inv-card:nth-child(4), .inv-card:nth-child(5) { grid-column: span 1; }
+      .window-card { padding: 1.75rem; }
+      .brand-name .hide-sm { display: none; }
+    }
+    @media (max-width: 480px) {
+      .inv-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <aside class="draft" role="note">
-    Draft · using their clean neon badge — <span>YOU NEVER KNOW Thrift</span>
-  </aside>
-
-  <header class="top">
-    <a class="top-mark" href="#top">
-      <img src="assets/logo.png" width="160" height="160" alt="">
-      <span class="word">YOU NEVER KNOW<em>Thrift</em></span>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#finds">Finds</a>
-      <a href="#hours">Hours</a>
-      <a href="#contact">Visit</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand-name" href="#top" aria-label="You Never Know Thrift home">
+        <img class="logo-mini" src="images/you-never-know-logo.png" width="48" height="48" alt="You Never Know Thrift neon circular logo">
+        <div class="hide-sm">You Never Know<span>Thrift · Bradenton</span></div>
+      </a>
+      <a class="btn btn-neon" href="tel:+19417945200">Call (941) 794-5200</a>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <img
-        class="logo-hero"
-        src="assets/logo.png"
-        width="512"
-        height="512"
-        alt="You Never Know Thrift neon storefront logo"
-      >
-      <p class="tagline">You never know what’s in today.</p>
-      <p class="lede">
-        <strong>Discovery under the neon.</strong>
-        Quality furniture &amp; home, clothing, gifts — family-owned Bradenton thrift.
-      </p>
-      <div class="ctas">
-        <a class="btn btn-call" href="tel:+19417945200">Call (941) 794-5200</a>
-        <a class="btn btn-ghost" href="#hours">Hours &amp; address</a>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="about">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap">
-        <h2>About the shop</h2>
-        <p class="intro">Family-owned · clean · organized · full of surprises</p>
-        <div class="about-copy">
-          <p>
-            <strong>You Never Know Thrift</strong> is a family-owned Bradenton shop —
-            friendly to browse, stocked for discovery. Inventory turns often, so stop in
-            and see what’s glowing tonight.
-          </p>
-          <p>
-            <strong>Delivery is available</strong> for bigger finds. Ask in-store when
-            you’re taking home furniture or something that won’t fit in the car.
-          </p>
+        <img class="hero-logo" src="images/you-never-know-logo.png" width="280" height="280" alt="You Never Know Thrift — hot pink and electric blue neon badge">
+        <h1 id="hero-heading" class="glow-pink">
+          <span class="pink">You Never Know</span><br>
+          <span class="blue glow-blue">what you’ll walk into.</span>
+        </h1>
+        <p class="tagline">Family-owned thrift on Manatee Ave — furniture, finds, and that <strong>discovery</strong> feeling every visit.</p>
+        <div class="hero-actions">
+          <a class="btn btn-neon" href="tel:+19417945200">Call the store</a>
+          <a class="btn btn-outline" href="#inventory">See recent finds</a>
         </div>
+        <p class="hours-pill">Mon–Sat 9–5 · Sunday closed</p>
       </div>
     </section>
 
-    <section class="section" id="finds">
-      <div class="wrap-wide">
-        <h2>What’s in lately</h2>
-        <p class="intro">Real inventory photos — furniture &amp; home finds from the floor.</p>
-        <div class="inventory">
-          <figure class="shot">
-            <img src="assets/thrift-01-white-sofa.png" width="800" height="600" alt="Cream tufted sofa with patterned pillows" loading="lazy">
-            <figcaption>Sofa · home</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/thrift-02-sectional.png" width="800" height="600" alt="Sectional sofa on the showroom floor" loading="lazy">
-            <figcaption>Sectional</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/thrift-03-loveseat.png" width="800" height="600" alt="Loveseat furniture find" loading="lazy">
-            <figcaption>Loveseat</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/thrift-04-chairs-decor.png" width="800" height="600" alt="Chairs, decor, and gallery wall in the shop" loading="lazy">
-            <figcaption>Chairs &amp; decor</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/thrift-05-recliner-sofa.png" width="800" height="600" alt="Recliner sofa find" loading="lazy">
-            <figcaption>Recliner sofa</figcaption>
-          </figure>
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="about-heading">A neon storefront for real finds</h2>
+          <p class="highlight">You Never Know Thrift is family-owned in Bradenton — the kind of shop where the floor changes, the sofas surprise you, and “just browsing” turns into a haul.</p>
+          <p>We keep inventory moving. Follow us on Facebook for what’s new on the floor, and ask about <strong style="color:#fff;">delivery</strong> when something’s too good to leave behind.</p>
         </div>
-        <p class="fb-link">
-          More photos &amp; new drops on Facebook —
-          <a href="https://www.facebook.com/YouNeverKnowThrift" target="_blank" rel="noopener noreferrer">YouNeverKnowThrift</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="hours">
-      <div class="wrap">
-        <h2>Hours &amp; location</h2>
-        <p class="intro">Lights on when we’re open — come browse.</p>
-        <div class="visit-grid">
-          <div class="box">
-            <strong>Address</strong>
-            <span>5529 Manatee Ave W<br>Bradenton, FL 34209</span>
+        <div class="about-points">
+          <div class="point">
+            <h3>Family-owned</h3>
+            <p>Local thrift with a discovery vibe — not a boutique, not a warehouse maze.</p>
           </div>
-          <div class="box">
-            <strong>Hours</strong>
-            <span>Mon–Sat · 9:00 AM – 5:00 PM<br>Sunday · Closed</span>
+          <div class="point">
+            <h3>Delivery available</h3>
+            <p>Ask in-store or call — we’ll talk through getting your find home.</p>
+          </div>
+          <div class="point">
+            <h3>Facebook inventory</h3>
+            <p>Scroll the latest pieces before you drive over — new stuff lands often.</p>
           </div>
         </div>
-        <p class="footnote">
-          Draft uses <strong style="color:var(--warm);font-weight:600">5529 Manatee Ave W</strong>.
-          Some listings mention 6033 26th — confirm before launch; don’t switch unless you say so.
-        </p>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="wrap contact">
-        <h2>Hit the lights</h2>
-        <p class="intro">
-          Questions about hours, delivery, or a piece you saw online? Call the shop —
-          or just walk in.
-        </p>
-        <div class="ctas">
-          <a class="btn btn-call" href="tel:+19417945200">(941) 794-5200</a>
-          <a class="btn btn-ghost" href="https://maps.google.com/?q=5529+Manatee+Ave+W+Bradenton+FL+34209" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+    <section class="inventory" id="inventory" aria-labelledby="inventory-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="inventory-heading">On the floor (recent)</h2>
+          <p>A peek at sofas, seating, and décor — inventory turns over, so call if something catches your eye.</p>
         </div>
-        <p class="fb-note">
-          Inventory photos go up on Facebook —
-          <a href="https://www.facebook.com/YouNeverKnowThrift" target="_blank" rel="noopener noreferrer">YouNeverKnowThrift</a>
-          — so you can peek between visits.
+        <div class="inv-grid">
+          <figure class="inv-card">
+            <div class="frame"><img src="images/thrift-01-white-sofa.png" alt="White sofa available at You Never Know Thrift" width="640" height="480"></div>
+            <figcaption>White sofa<small>Clean lines — ask about delivery</small></figcaption>
+          </figure>
+          <figure class="inv-card">
+            <div class="frame"><img src="images/thrift-02-sectional.png" alt="Sectional sofa on the thrift floor" width="640" height="480"></div>
+            <figcaption>Sectional<small>Room-filling seating</small></figcaption>
+          </figure>
+          <figure class="inv-card">
+            <div class="frame"><img src="images/thrift-03-loveseat.png" alt="Loveseat find at You Never Know Thrift" width="640" height="480"></div>
+            <figcaption>Loveseat<small>Compact cozy</small></figcaption>
+          </figure>
+          <figure class="inv-card">
+            <div class="frame"><img src="images/thrift-04-chairs-decor.png" alt="Chairs and home décor at the thrift store" width="640" height="480"></div>
+            <figcaption>Chairs &amp; décor<small>Mix-and-match finds</small></figcaption>
+          </figure>
+          <figure class="inv-card">
+            <div class="frame"><img src="images/thrift-05-recliner-sofa.png" alt="Recliner sofa on display" width="640" height="480"></div>
+            <figcaption>Recliner sofa<small>Kick-back comfort</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <div class="window-card">
+          <div>
+            <h2 id="visit-heading">Come by the lit window</h2>
+            <address>
+              5529 Manatee Ave W<br>
+              Bradenton, FL 34209
+            </address>
+            <p style="color:var(--muted);margin-bottom:0.5rem;">
+              <a href="tel:+19417945200">(941) 794-5200</a>
+            </p>
+            <p class="footnote">Address confirmation may update — this draft keeps 5529 Manatee Ave W as the listed location.</p>
+          </div>
+          <div class="hours-block">
+            <h3>Hours</h3>
+            <ul>
+              <li><span>Monday–Saturday</span><span>9:00 AM – 5:00 PM</span></li>
+              <li><span>Sunday</span><span class="closed">Closed</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <h2 id="contact-heading">Call · visit · follow</h2>
+        <a class="phone" href="tel:+19417945200">(941) 794-5200</a>
+        <div>
+          <a class="btn btn-neon" href="tel:+19417945200">Call You Never Know</a>
+        </div>
+        <p>
+          <a class="fb" href="https://www.facebook.com/search/top?q=you%20never%20know%20thrift" rel="noopener noreferrer" target="_blank">Find us on Facebook — inventory updates</a>
         </p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <img class="footer-logo" src="assets/logo.png" width="512" height="512" alt="">
-    <p>You Never Know Thrift · (941) 794-5200</p>
-    <p>5529 Manatee Ave W, Bradenton, FL 34209</p>
-    <p>Mon–Sat 9–5 · Sunday closed</p>
-    <p class="credit">Draft by <a href="https://jollymreiscream.github.io/clear-web-studio/">Clear Web Studio</a></p>
+    <div class="wrap">
+      <img src="images/you-never-know-logo.png" width="80" height="80" alt="You Never Know Thrift neon logo">
+      <p><strong style="color:#fff;">You Never Know Thrift</strong></p>
+      <p>5529 Manatee Ave W · Bradenton, FL 34209</p>
+      <p><a href="tel:+19417945200">(941) 794-5200</a> · Mon–Sat 9–5 · Sun closed</p>
+      <p class="fine">Draft neon storefront · Family-owned · Delivery available</p>
+    </div>
   </footer>
 </body>
 </html>
