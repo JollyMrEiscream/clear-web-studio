@@ -122,33 +122,18 @@
     .hero-meta a { font-weight: 600; text-decoration: none; }
     .hero-meta a:hover { text-decoration: underline; }
 
-    /* Pending photo card */
-    .photo-slot {
-      background: var(--light);
-      border: 2px dashed var(--border);
-      border-radius: 10px;
-      min-height: 340px;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center; padding: 2rem 1.5rem;
-      position: relative;
+    .hero-brand {
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
+      background: #0b1220; border: 2px solid #1e293b; border-radius: 12px;
+      padding: 1.5rem 1.25rem 1.35rem; text-align: center;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
     }
-    .photo-slot::before {
-      content: "";
-      position: absolute; inset: 10px;
-      border: 1px solid rgba(30, 41, 59, 0.08);
-      border-radius: 6px; pointer-events: none;
+    .hero-brand img {
+      width: min(100%, 280px); height: auto; background: #fff; border-radius: 8px;
+      padding: 0.65rem;
     }
-    .photo-slot .frame-icon {
-      width: 64px; height: 64px; border-radius: 50%;
-      background: var(--navy); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;
-      font-family: "IBM Plex Serif", serif;
-    }
-    .photo-slot h3 {
-      font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--navy);
-    }
-    .photo-slot p { font-size: 0.88rem; color: var(--slate); max-width: 22ch; }
+    .hero-brand .license-chip { margin-top: 0; width: 100%; box-sizing: border-box; }
+
     .license-chip {
       margin-top: 1.25rem;
       background: var(--white);
@@ -270,7 +255,6 @@
       .hero-grid, .contact-grid, .why-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .logo-link img { height: 68px; }
-      .photo-slot { min-height: 260px; }
     }
     @media (max-width: 480px) {
       .services-grid { grid-template-columns: 1fr; }
@@ -316,10 +300,8 @@
             <span>Hours: Monday–Sunday, 9:00 AM – 5:00 PM</span>
           </div>
         </div>
-        <aside class="photo-slot" aria-label="Owner photo placeholder">
-          <div class="frame-icon" aria-hidden="true">DH</div>
-          <h3>Dirk Hoogland photo — pending</h3>
-          <p>Owner portrait will appear here. No stock models — Dirk is the brand.</p>
+        <aside class="hero-brand" aria-label="Plumber 941 logo and license">
+          <img src="images/plumber941-logo.png" alt="Plumber 941 — black arched logo with crossed red-handle wrenches" width="280" height="280">
           <div class="license-chip">
             CFC1427129
             <span>Florida Certified Plumbing Contractor</span>
