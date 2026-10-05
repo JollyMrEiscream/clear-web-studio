@@ -1,0 +1,11 @@
+{
+  "projects": [],
+  "payments": [],
+  "hosting": [],
+  "prospects": [],
+  "settings": {
+    "paypalMeUsername": "",
+    "googlePlacesApiKey": ""
+  },
+  "updatedAt": null
+}
