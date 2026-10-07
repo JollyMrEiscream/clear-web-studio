@@ -42,6 +42,9 @@
   .wm-sub{grid-area:sub;justify-self:end;font-family:"Courier Prime",monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#cdb894}
   .wm-main{grid-area:main;font-family:"Alfa Slab One",Georgia,serif;font-size:clamp(1.65rem,2.6vw,2.15rem);letter-spacing:.01em;margin-top:.2rem;text-shadow:0 3px 0 rgba(0,0,0,.35)}
   .wordmark:hover .wm-main{color:var(--yolk)}
+  .brand{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;text-decoration:none;line-height:1}
+  .brand img{width:clamp(260px,27vw,340px);height:auto}
+  .brand .wm-sub{padding-left:.35rem;color:#cdb894}
   .nav{display:flex;align-items:center;gap:1.4rem}
   .nav a{text-decoration:none;font-weight:700;font-size:.95rem;letter-spacing:.04em;text-transform:uppercase;color:var(--cream);opacity:.88}
   .nav a:hover{opacity:1;color:var(--yolk)}
@@ -99,6 +102,13 @@
   .stamp-top,.stamp-bot{font-family:"Courier Prime",monospace;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;color:var(--yolk);max-width:22ch;line-height:1.35}
   .stamp-year{font-family:"Alfa Slab One",Georgia,serif;font-size:clamp(4.5rem,11vw,7.5rem);line-height:.9;color:var(--cream)}
   .facts{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 0;padding:0;list-style:none}
+  .story-art{position:relative;justify-self:center;width:min(100%,440px);padding:0 0 3.5rem 4.5rem}
+  .sign{margin:0;background:var(--paper);padding:.6rem;border-radius:6px;transform:rotate(2.5deg);box-shadow:0 18px 36px rgba(42,24,16,.25)}
+  .sign img{width:100%;aspect-ratio:600/902;object-fit:cover;border-radius:3px}
+  .sign figcaption{font-family:"Courier Prime",monospace;font-size:.85rem;color:var(--muted);padding:.45rem .1rem 0;text-align:center}
+  .story-art .stamp{position:absolute;left:0;bottom:0;width:min(52%,220px);padding:1rem;gap:.15rem;box-shadow:0 0 0 7px var(--cream),0 0 0 10px var(--espresso),0 16px 30px rgba(42,24,16,.3)}
+  .story-art .stamp-top,.story-art .stamp-bot{font-size:.62rem;letter-spacing:.12em;max-width:14ch}
+  .story-art .stamp-year{font-size:clamp(2.6rem,5vw,3.6rem)}
   .facts li{background:var(--paper);border:2px solid var(--line);border-radius:999px;padding:.45rem 1rem;font-weight:700;font-size:.95rem}
   .facts b{color:#9a5b00}
 
@@ -106,7 +116,7 @@
   .board-sec{background:var(--roast);color:var(--cream);position:relative}
   .board-sec h2{color:var(--cream)}
   .board-sec .eyebrow{color:var(--yolk)}
-  .board-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(1.5rem,4vw,3rem);align-items:stretch;margin-top:2rem}
+  .board-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(1.5rem,4vw,3rem);align-items:stretch;margin-top:2rem}
   .letterboard{background:#17100c;border:10px solid #6b4a2f;border-radius:10px;padding:clamp(1.3rem,3vw,2.2rem);
     background-image:repeating-linear-gradient(to bottom,#17100c 0 10px,#0e0907 10px 12px);box-shadow:inset 0 0 0 2px #000,0 18px 40px rgba(0,0,0,.35)}
   .letterboard ul{list-style:none;margin:0;padding:0;display:grid;gap:1.15rem}
@@ -114,8 +124,26 @@
   .letterboard .item{font-family:"Courier Prime",monospace;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:clamp(1rem,1.8vw,1.18rem);color:#fff}
   .letterboard .rule{border-bottom:2px dotted rgba(255,255,255,.28);transform:translateY(-.3em)}
   .letterboard .desc{grid-column:1/-1;color:#d9c9ad;font-size:.98rem;margin-top:.15rem}
+  .letterboard li.with-photo{grid-template-columns:auto 1fr minmax(0,36%);grid-template-rows:auto 1fr}
+  .letterboard li.with-photo .desc{grid-column:1/3;grid-row:2;align-self:start}
+  .board-snap{grid-column:3;grid-row:1/3;align-self:center;margin:0;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 45%;border:5px solid var(--cream);border-radius:6px;transform:rotate(2deg);box-shadow:0 10px 22px rgba(0,0,0,.45)}
   .board-note{margin-top:1.6rem;font-family:"Courier Prime",monospace;color:var(--yolk);font-size:.95rem}
   .board-note a{color:var(--yolk);font-weight:700}
+  /* order rail gallery */
+  .rail-head{display:flex;align-items:baseline;gap:1rem;margin:clamp(3rem,6vw,4.5rem) 0 0}
+  .rail-head .eyebrow{margin:0}
+  .rail-head::after{content:"";flex:1;border-bottom:2px dotted rgba(255,255,255,.25)}
+  .rail{position:relative;list-style:none;margin:1.2rem 0 0;padding:1.6rem 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2rem clamp(1rem,2.5vw,2rem)}
+  .rail::before{content:"";position:absolute;left:-.6rem;right:-.6rem;top:0;height:14px;border-radius:7px;background:linear-gradient(#e9e4dc,#a39d94 55%,#6f6a63);box-shadow:0 4px 8px rgba(0,0,0,.4)}
+  .rail li{margin:-1.6rem 0 0;padding-top:.9rem;position:relative}
+  .rail li:nth-child(odd) .chit{transform:rotate(-1.2deg)}
+  .rail li:nth-child(even) .chit{transform:rotate(1.4deg)}
+  .chit{margin:0;background:var(--paper);color:var(--ink);padding:.55rem .55rem 1.4rem;border-radius:2px 2px 0 0;box-shadow:0 14px 26px rgba(0,0,0,.35);transform-origin:50% 0;
+    -webkit-mask:radial-gradient(8px at 50% 100%,#0000 98%,#000) 50% 100%/16px 100% repeat-x;
+            mask:radial-gradient(8px at 50% 100%,#0000 98%,#000) 50% 100%/16px 100% repeat-x}
+  .chit img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+  .chit figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;font-family:"Courier Prime",monospace;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;padding:.6rem .15rem 0;border-top:2px dashed var(--ink);margin-top:.6rem}
+  .chit figcaption small{font-weight:400;color:var(--muted);letter-spacing:.04em;flex:none}
   .plate{margin:0;display:flex;flex-direction:column;gap:1rem}
   .plate-photos{position:relative;flex:1;display:flex;padding-bottom:3.2rem}
   .plate-main{width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:var(--radius);border:6px solid var(--cream)}
@@ -168,12 +196,25 @@
     .front img{aspect-ratio:16/10}
     .plate-main{min-height:0;aspect-ratio:3/2;height:auto}
     .plate-inset{left:-.4rem;width:46%}
+    .rail{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .story-art{width:min(100%,400px)}
+  }
+  @media (max-width:520px){
+    .letterboard li.with-photo{grid-template-columns:auto 1fr;grid-template-rows:auto}
+    .letterboard li.with-photo .desc{grid-column:1/-1;grid-row:auto}
+    .board-snap{grid-column:1/-1;grid-row:auto;margin-top:.7rem;max-width:340px;transform:rotate(1deg)}
+    .rail{gap:1.8rem .9rem}
+    .chit{padding:.4rem .4rem 1.2rem}
+    .chit figcaption{font-size:.74rem;letter-spacing:.04em;flex-direction:column;gap:.1rem}
+    .story-art{padding:0 0 3rem 3rem}
   }
   @media (max-width:600px){
     footer{padding-bottom:5.6rem}
     .nav .btn{display:none}
     .top .wrap{justify-content:center}
     .wm-main{font-size:1.9rem}
+    .brand{align-items:center}
+    .brand img{width:min(80vw,310px)}
     .hero h1{font-size:clamp(2.4rem,11.5vw,3.4rem)}
     .hero-actions .btn{flex:1 1 100%;justify-content:center}
     .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--espresso);border-top:3px solid var(--yolk)}
@@ -189,9 +230,8 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="wordmark" href="#top" aria-label="Coffee Carrousel, back to top">
-      <span class="wm-top">Coffee</span>
-      <span class="wm-main">Carrousel</span>
+    <a class="brand" href="#top" aria-label="Coffee Carrousel, back to top">
+      <img src="images/coffee-carrousel-logo.png" width="840" height="132" alt="Coffee Carrousel">
       <span class="wm-sub">Main St &middot; Since 1987</span>
     </a>
     <nav class="nav" aria-label="Main">
@@ -214,7 +254,7 @@
       <div class="hero-copy">
       <p class="kicker">Main Street, Sarasota &middot; Family-run since 1987</p>
       <h1 id="hero-title">Coffee&rsquo;s on at <span class="num">6:30.</span> Grill&rsquo;s off at <span class="num">11:30.</span></h1>
-      <p class="hero-lede">Home-style breakfast at the long counter on Main Street. Come early &mdash; the regulars always do.</p>
+      <p class="hero-lede">Home-style breakfast at the long counter on Main Street.</p>
       <div class="hero-actions">
         <a class="btn btn-yolk" href="tel:+19413652826">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
@@ -252,19 +292,24 @@
     <div class="wrap story">
       <div>
         <p class="eyebrow">The counter</p>
-        <h2 id="counter-title">Pull up a stool. They&rsquo;ll remember your order.</h2>
-        <p>Coffee Carrousel has been a Main Street breakfast stop for generations, and it&rsquo;s been family-run since 1987. Julie and the crew still open the doors to a line of longtime regulars who know exactly where they like to sit.</p>
-        <p>Not much has changed, and that&rsquo;s the charm: a long counter with low stools, tables for two or for the whole family, servers who learn your name on the first visit and a pot of coffee that&rsquo;s always on.</p>
+        <h2 id="counter-title">Pull up a stool. The coffee&rsquo;s already on.</h2>
+        <p>Coffee Carrousel has been a Main Street breakfast stop since 1987, family-run from the start. Julie and the crew still open the doors early, Tuesday through Saturday.</p>
+        <p>Inside: a long counter with low stools, tables for two or for the whole family, and a pot of coffee that&rsquo;s always on.</p>
         <ul class="facts">
           <li><b>Since 1987</b> &middot; same family</li>
           <li>Home-style breakfast</li>
           <li>Dine-in &middot; outdoor seating</li>
         </ul>
       </div>
-      <div class="stamp" aria-hidden="true">
-        <span class="stamp-top">Family-run on Main Street</span>
-        <span class="stamp-year">1987</span>
-        <span class="stamp-bot">Same family behind the counter</span>
+      <div class="story-art">
+        <figure class="sign">
+          <img src="images/welcome-breakfast-lunch-sign.jpg" width="600" height="902" loading="lazy" alt="Hand-painted sign on an orange stucco wall reading &ldquo;Welcome! Breakfast and Lunch, Sarasota Florida, Est. 1987&rdquo;">
+        </figure>
+        <div class="stamp" aria-hidden="true">
+          <span class="stamp-top">Family-run on Main Street</span>
+          <span class="stamp-year">1987</span>
+          <span class="stamp-bot">Same family behind the counter</span>
+        </div>
       </div>
     </div>
   </section>
@@ -278,10 +323,12 @@
         <div class="letterboard">
           <ul>
             <li><span class="item">Hot coffee</span><span class="rule"></span><span class="desc">Plain, honest diner coffee, poured early and topped off often.</span></li>
-            <li><span class="item">Eggs &amp; plates</span><span class="rule"></span><span class="desc">Eggs your way with hash browns or grits and toast.</span></li>
-            <li><span class="item">Off the griddle</span><span class="rule"></span><span class="desc">Pancakes &mdash; the blueberry ones have a loyal following.</span></li>
-            <li><span class="item">Biscuits &amp; gravy</span><span class="rule"></span><span class="desc">A regulars&rsquo; favorite on the breakfast board.</span></li>
+            <li><span class="item">Eggs &amp; plates</span><span class="rule"></span><span class="desc">Eggs your way, with sides.</span></li>
+            <li class="with-photo"><span class="item">Croissant sandwiches</span><span class="rule"></span><span class="desc">A fried egg and melted American cheese on a toasted croissant, with sausage or another breakfast meat.</span><img class="board-snap" src="images/croissant-egg-sandwich.jpg" width="1008" height="756" loading="lazy" alt="A croissant breakfast sandwich with a fried egg, melted American cheese and grilled meat, served with fried potatoes on a white plate"></li>
+            <li><span class="item">English muffin &amp; eggs</span><span class="rule"></span><span class="desc">Poached eggs with a toasted English muffin and sliced tomato.</span></li>
+            <li><span class="item">Off the griddle</span><span class="rule"></span><span class="desc">Pancakes, cooked on the griddle.</span></li>
             <li><span class="item">Daily specials</span><span class="rule"></span><span class="desc">Breakfast specials change day to day &mdash; ask what&rsquo;s on today.</span></li>
+            <li><span class="item">Saturday brunch</span><span class="rule"></span><span class="desc">Saturday brunch specials. Ask at the counter what&rsquo;s on this week.</span></li>
             <li><span class="item">Cakes &amp; pies</span><span class="rule"></span><span class="desc">Ask what's in the case today.</span></li>
           </ul>
         </div>
@@ -293,6 +340,15 @@
           <figcaption>Made to order, right off the grill.<span>Croissant sandwiches, poached eggs, plates built your way.</span></figcaption>
         </figure>
       </div>
+      <div class="rail-head"><p class="eyebrow">Order up</p></div>
+      <ul class="rail" aria-label="Breakfast plates">
+            <li><figure class="chit"><img src="images/eggs-benedict-tomato.jpg" width="1000" height="784" loading="lazy" alt="Eggs Benedict on an English muffin with sliced tomato and spinach under hollandaise and paprika, with hash browns behind"><figcaption>Eggs Benedict<small>No. 01</small></figcaption></figure></li>
+            <li><figure class="chit"><img src="images/french-toast-sausage.jpg" width="713" height="540" loading="lazy" alt="French toast dusted with powdered sugar and topped with butter, with two sausage links on a white plate"><figcaption>French toast &amp; sausage<small>No. 02</small></figcaption></figure></li>
+            <li><figure class="chit"><img src="images/smoked-salmon-bagel.jpg" width="719" height="593" loading="lazy" alt="Two bagel halves with cream cheese, smoked salmon, diced red onion and capers on a white oval plate"><figcaption>Smoked salmon bagel<small>No. 03</small></figcaption></figure></li>
+            <li><figure class="chit"><img src="images/egg-white-omelet.jpg" width="800" height="963" loading="lazy" style="object-position:50% 62%" alt="An egg-white omelet with spinach, topped with a tomato half and served with sweet potato slices and toast"><figcaption>Egg-white omelet<small>No. 04</small></figcaption></figure></li>
+            <li><figure class="chit"><img src="images/corned-beef-hash-eggs.jpg" width="1000" height="750" loading="lazy" alt="Two fried eggs beside corned beef hash on a white plate, with a bowl of grits"><figcaption>Corned beef hash &amp; eggs<small>No. 05</small></figcaption></figure></li>
+            <li><figure class="chit"><img src="images/eggs-benedict-ham.jpg" width="1000" height="750" loading="lazy" alt="Two eggs Benedict with ham on English muffins under hollandaise and paprika, with diced potatoes on an oval plate"><figcaption>Eggs Benedict<small>No. 06</small></figcaption></figure></li>
+      </ul>
       <p class="board-note">Full menu &rarr; <a href="https://www.facebook.com/CoffeeCarrousel/menu/" target="_blank" rel="noopener">see it on our Facebook page</a>, or just ask at the counter.</p>
     </div>
   </section>
