@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edward Ross Construction Services, Inc. | Venice, FL General Contractor</title>
+<meta name="description" content="Edward Ross Construction Services, Inc. is a Venice, FL Certified General Contractor (CGC1523858) building screen rooms, carports, hurricane protection, remodels and mobile home repairs from Englewood to Longboat Key.">
+<meta name="theme-color" content="#0C1A54">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0C1A54;
+  --navy-2:#16266B;
+  --char:#231F20;
+  --ink:#1E2129;
+  --muted:#545A66;
+  --paper:#F4F4EF;
+  --alum:#DFE3E6;
+  --line:#C9CED6;
+  --signal:#C7361F;
+  --sky:#9DB8D3;
+  --white:#FFFFFF;
+  --head:"Archivo",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,sans-serif;
+  --mono:"DM Mono",ui-monospace,monospace;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--navy)}
+h1,h2,h3{font-family:var(--head);font-stretch:118%;line-height:1.08;margin:0;color:var(--navy);letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.skip{position:absolute;left:-999px;top:0;background:var(--white);padding:8px 12px;z-index:50}
+.skip:focus{left:12px}
+
+/* utility strip */
+.strip{background:var(--char);color:#E9E7E2}
+.strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:38px}
+.strip span{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase}
+.strip a{color:#fff;text-decoration:none}
+
+/* header */
+.site-head{background:var(--white);border-bottom:4px solid var(--navy);position:sticky;top:0;z-index:20}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:12px;padding-bottom:12px}
+.brand img{width:280px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-weight:600;font-size:.95rem;color:var(--char);text-decoration:none}
+.nav a:hover{color:var(--navy);text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:700;text-decoration:none;border-radius:2px;padding:13px 22px;font-size:1rem;line-height:1.2;border:2px solid transparent;transition:background .15s,color .15s}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--char)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+.nav .btn{color:#fff;padding:11px 18px}
+.nav .btn:hover{text-decoration:none}
+
+/* hero */
+.hero{position:relative;background:
+  linear-gradient(var(--paper),var(--paper)) padding-box;
+  overflow:hidden}
+.hero .wrap{display:grid;grid:none / 1fr 1.12fr;gap:56px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero .kicker{color:var(--signal);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.hero .kicker::before{content:"";width:28px;height:2px;background:var(--signal)}
+.hero h1{font-size:clamp(2.2rem,3.7vw,3.05rem);font-weight:850;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--char)}
+.hero .lede{font-size:1.12rem;color:#333845;max-width:31em;margin-bottom:28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .fine{margin-top:26px;color:var(--muted)}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+.hero-photo::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1.5px solid var(--navy);opacity:.35;z-index:-1}
+.tag{position:absolute;left:-1px;bottom:-1px;background:var(--navy);color:#fff;padding:12px 16px 12px 16px;max-width:78%}
+.tag b{display:block;font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sky);margin-bottom:2px}
+.tag span{font-size:.92rem;line-height:1.35}
+
+/* owner band */
+.owner{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.owner .wrap{display:grid;grid:none / repeat(3,1fr)}
+.owner .wrap>div{padding:28px 28px 26px;border-left:1px solid var(--line)}
+.owner .wrap>div:first-child{border-left:0;padding-left:0}
+.owner .mono{color:var(--signal);display:block;margin-bottom:6px}
+.owner p{margin:0;font-weight:600;color:var(--char);line-height:1.4}
+
+/* section scaffolding */
+section{scroll-margin-top:96px}
+.sec{padding:96px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(1.9rem,3.2vw,2.7rem);font-weight:800}
+.sec-head p{max-width:34em;margin:0;color:var(--muted)}
+.eyebrow{color:var(--signal);margin-bottom:12px;display:block}
+
+/* spec sheet */
+.spec{background-color:#EEF1F4;background-image:
+  linear-gradient(rgba(12,26,84,.07) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(12,26,84,.07) 1px,transparent 1px);
+  background-size:24px 24px}
+.sheet{background:var(--white);border:2px solid var(--navy);outline:1px solid var(--navy);outline-offset:6px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.sheet-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 24px;border-bottom:2px solid var(--navy);color:var(--navy)}
+.row{display:grid;grid:none / 96px 1.05fr 1.25fr;border-bottom:1px solid var(--line)}
+.row:last-of-type{border-bottom:0}
+.row .code{font-family:var(--mono);font-weight:500;color:var(--navy);font-size:1.05rem;padding:26px 0 26px 24px;border-right:1px solid var(--line)}
+.row .what{padding:24px 28px;border-right:1px dashed var(--line)}
+.row h3{font-size:1.28rem;font-weight:780;margin-bottom:8px}
+.row .what p{margin:0;color:#3A3F4B;font-size:.98rem}
+.row ul{list-style:none;margin:0;padding:22px 28px;display:flex;flex-wrap:wrap;gap:8px 8px;align-content:flex-start}
+.row li{font-size:.86rem;background:var(--paper);border:1px solid var(--line);padding:4px 10px;border-radius:2px;color:var(--char)}
+.titleblock{display:grid;grid:none / 1.6fr 1fr 1fr 1.2fr;border-top:2px solid var(--navy)}
+.titleblock div{padding:14px 20px;border-left:1px solid var(--line)}
+.titleblock div:first-child{border-left:0}
+.titleblock .mono{display:block;color:var(--muted);font-size:.66rem;margin-bottom:2px}
+.titleblock strong{font-family:var(--head);font-stretch:110%;color:var(--navy);font-size:.98rem;font-weight:700}
+.titleblock a{text-decoration:none}
+
+/* gallery */
+.jobs{background:var(--paper)}
+.grid{display:grid;grid:none / repeat(6,1fr);gap:20px}
+.job{margin:0;background:var(--white);border:1px solid var(--line)}
+.job img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.job figcaption{padding:14px 16px 16px;font-size:.93rem;color:#3A3F4B;line-height:1.45}
+.job figcaption .mono{display:block;color:var(--navy);font-size:.7rem;margin-bottom:4px}
+.job.a{grid-column:span 4}
+.job.a img{aspect-ratio:16/10;object-position:50% 60%}
+.job.b{grid-column:span 2;display:flex;flex-direction:column}
+.job.b img{flex:1;aspect-ratio:auto;min-height:0;height:100%}
+.job.c{grid-column:span 2}
+.job.c.porch img{object-position:30% 50%}
+.trio-label{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin-top:24px;color:var(--navy)}
+.trio-label::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* hurricane */
+.storm{background:var(--navy);color:#E6EAF3;position:relative;overflow:hidden}
+.storm::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:60px solid rgba(255,255,255,.035);border-radius:50%}
+.storm .wrap{display:grid;grid:none / 4fr 7fr;gap:64px;align-items:center;position:relative;z-index:1}
+.storm h2{color:#fff;font-size:clamp(1.9rem,3.2vw,2.6rem);font-weight:820;margin-bottom:18px}
+.storm .eyebrow{color:#F0A08F}
+.storm p{color:#C9D2E4}
+.flags{display:flex;gap:0;margin-bottom:28px;align-items:flex-start}
+.pole{width:4px;height:118px;background:#B9C2CF;border-radius:2px}
+.flagset{display:flex;flex-direction:column;gap:8px;padding-top:4px}
+.flag{width:46px;height:46px;background:var(--signal);position:relative}
+.flag::after{content:"";position:absolute;inset:14px;background:#111}
+.flags figcaption{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#9FB0CF;align-self:flex-end;margin-left:14px;max-width:12em;line-height:1.4}
+.storm-list{display:grid;grid:none / 1fr 1fr;gap:2px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12)}
+.storm-item{background:var(--navy-2);padding:26px 26px 24px}
+.storm-item .mono{color:#F0A08F;display:block;margin-bottom:10px;font-size:.7rem}
+.storm-item h3{color:#fff;font-size:1.2rem;font-weight:760;margin-bottom:10px}
+.storm-item p{margin:0;font-size:.95rem;color:#C9D2E4}
+.swatches{display:flex;gap:6px;margin-top:12px}
+.swatches i{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.4)}
+.storm .btn{margin-top:8px}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--paper)}
+
+/* kitchen & bath */
+.kb .wrap{display:grid;grid:none / 5fr 6fr;gap:56px;align-items:center}
+.kb h2{font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;margin-bottom:16px}
+.kb dl{margin:24px 0 0;display:grid;grid:none / auto 1fr;gap:10px 18px}
+.kb dt{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);padding-top:3px}
+.kb dd{margin:0;color:#3A3F4B;font-size:.97rem}
+.baths{display:grid;grid:none / repeat(3,1fr);gap:14px;max-width:640px;justify-self:end}
+.baths figure{margin:0}
+.baths img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);background:var(--white)}
+.baths figcaption{font-size:.8rem;color:var(--muted);margin-top:8px;line-height:1.35}
+
+/* area */
+.area{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.area .wrap{padding-top:64px;padding-bottom:64px}
+.area h2{font-size:clamp(1.6rem,2.6vw,2.1rem);font-weight:800;margin-bottom:8px}
+.area p.sub{color:var(--muted);margin-bottom:34px}
+.route{list-style:none;margin:0;padding:0;display:flex;justify-content:space-between;position:relative}
+.route::before{content:"";position:absolute;left:8px;right:8px;top:8px;height:2px;background:repeating-linear-gradient(90deg,var(--navy) 0 10px,transparent 10px 16px)}
+.route li{position:relative;padding-top:28px;font-weight:600;font-size:.95rem;color:var(--char);text-align:center;flex:1}
+.route li::before{content:"";position:absolute;top:2px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--white);border:2px solid var(--navy)}
+.route li.home::before{background:var(--signal);border-color:var(--signal);width:18px;height:18px;top:0}
+.route li.home{color:var(--navy)}
+.route li small{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);font-weight:500}
+
+/* contact */
+.contact .wrap{display:grid;grid:none / 6fr 5fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(2rem,3.4vw,2.8rem);font-weight:850;margin-bottom:16px}
+.bigtel{display:inline-block;font-family:var(--head);font-stretch:112%;font-weight:800;font-size:clamp(2rem,4vw,3rem);color:var(--navy);text-decoration:none;border-bottom:4px solid var(--signal);line-height:1.15;margin:8px 0 24px}
+.contact .lede{color:#3A3F4B;max-width:30em}
+.card{background:var(--white);border:2px solid var(--navy)}
+.card dl{margin:0}
+.card .r{display:grid;grid:none / 96px 1fr;gap:12px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.card .r:last-child{border-bottom:0}
+.card dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.card dd{margin:0;font-weight:600;color:var(--char);overflow-wrap:anywhere}
+.card dd a{color:var(--navy)}
+.card dd .small{display:block;font-weight:500;font-size:.88rem;margin-top:4px}
+.card-head{background:var(--navy);color:#fff;padding:12px 22px;display:flex;justify-content:space-between;gap:12px}
+
+/* footer */
+.foot{background:var(--char);color:#BDB8B0;font-size:.88rem}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:26px;padding-bottom:26px}
+.foot a{color:#fff}
+
+/* responsive */
+@media (max-width:1060px){
+  .nav a:not(.btn){display:none}
+  .hero .wrap{grid:none / 1fr 1fr;gap:40px}
+  .storm .wrap{grid:none / 1fr;gap:36px}
+  .kb .wrap{grid:none / 1fr}
+  .baths{justify-self:start}
+}
+@media (max-width:820px){
+  body{font-size:16px}
+  .strip .hide-s{display:none}
+  .site-head .wrap{padding-top:10px;padding-bottom:10px}
+  .brand img{width:196px}
+  .hero .wrap{grid:none / 1fr;padding-top:36px;padding-bottom:56px;gap:40px}
+  .hero-photo::before{inset:-10px 10px 10px -10px}
+  .owner .wrap{grid:none / 1fr}
+  .owner .wrap>div{border-left:0;border-top:1px solid var(--line);padding:18px 0}
+  .owner .wrap>div:first-child{border-top:0}
+  .sec{padding:68px 0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:28px}
+  .row{grid:none / 64px 1fr}
+  .row .code{padding:22px 0 0 18px;border-right:0;font-size:.95rem}
+  .row .what{padding:20px 18px 6px 0;border-right:0}
+  .row ul{grid-column:1/-1;padding:4px 18px 22px}
+  .titleblock{grid:none / 1fr 1fr}
+  .titleblock div{border-left:0;border-top:1px solid var(--line)}
+  .titleblock div:nth-child(even){border-left:1px solid var(--line)}
+  .titleblock div:nth-child(-n+2){border-top:0}
+  .grid{grid:none / 1fr;gap:18px}
+  .job.a,.job.b,.job.c{grid-column:auto}
+  .job.a img{aspect-ratio:4/3}
+  .job.b img{aspect-ratio:4/3;height:auto;flex:none}
+  .storm-list{grid:none / 1fr}
+  .contact .wrap{grid:none / 1fr;gap:36px}
+  .route{flex-direction:column;gap:14px}
+  .route::before{left:8px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--navy) 0 10px,transparent 10px 16px)}
+  .route li{padding:0 0 0 34px;text-align:left}
+  .route li::before{top:4px;left:1px;transform:none}
+  .route li.home::before{left:-1px;top:2px}
+  .route li small{display:inline;margin-left:8px}
+}
+@media (max-width:480px){
+  .wrap{padding:0 20px}
+  .strip .wrap{justify-content:center}
+  .hide-xs{display:none}
+  .nav .btn{padding:10px 14px;font-size:.92rem}
+  .brand img{width:170px}
+  .tag{position:static;max-width:none;display:block;padding:10px 14px}
+  .titleblock{grid:none / 1fr}
+  .titleblock div,.titleblock div:nth-child(even){border-left:0;border-top:1px solid var(--line)}
+  .titleblock div:first-child{border-top:0}
+  .baths{gap:10px}
+  .card .r{grid:none / 1fr;gap:2px}
+  .hero .ctas .btn{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="hide-s">Certified General Contractor CGC1523858</span>
+    <span class="hide-s">Venice, FL &middot; Mon&ndash;Fri 8&ndash;5</span>
+    <span><a href="tel:+19414088500">(941) 408-8500</a></span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Edward Ross Construction Services, Inc. home">
+      <img src="images/ercs-logo.png" width="1200" height="356" alt="Edward Ross Construction Services, Inc. logo with the ERCS tile mark">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#storm">Storm protection</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-navy" href="tel:+19414088500" aria-label="Call (941) 408-8500">Call<span class="hide-xs">(941) 408-8500</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <p class="kicker mono">Venice, FL general contractor</p>
+      <h1 id="hero-title">Screen rooms, carports and storm protection, <em>built for Gulf Coast weather.</em></h1>
+      <p class="lede">Edward Ross Construction Services, Inc. is a full-service remodeling and aluminum contractor working from Englewood to Longboat Key: aluminum and screen rooms, carports, hurricane protection, remodels, mobile home repairs and new custom homes.</p>
+      <div class="ctas">
+        <a class="btn btn-navy" href="tel:+19414088500">Call for a free estimate</a>
+        <a class="btn btn-line" href="#work">See recent work</a>
+      </div>
+      <p class="fine mono">Certified General Contractor CGC1523858</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="images/screen-room-bronze.jpg" width="1600" height="1200" alt="Dark bronze aluminum screen room with a solid roof and downspouts, built off the side of a home with a green lawn and blue sky">
+      <figcaption class="tag"><b>Aluminum</b><span>Bronze screen room with a solid roof, kick panels and gutters.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="owner" role="region" aria-label="How the work is run">
+  <div class="wrap">
+    <div><span class="mono">Owner-operated</span><p>The owner is on the job site every day.</p></div>
+    <div><span class="mono">Checked before it&rsquo;s done</span><p>Every project is inspected by the owner before it&rsquo;s called complete.</p></div>
+    <div><span class="mono">State certified</span><p>Certified General Contractor CGC1523858.</p></div>
+  </div>
+</div>
+
+<section class="sec spec" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow mono">Services</span>
+        <h2 id="services-title">Scope of work</h2>
+      </div>
+      <p>From a rescreen or a new carport to a full kitchen, a room addition or a new home on your lot. Every estimate is free.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet-top mono"><span>Sheet S-1 &middot; Services</span><span>Englewood to Longboat Key</span></div>
+
+      <div class="row">
+        <div class="code">A-1</div>
+        <div class="what"><h3>Aluminum &amp; screen rooms</h3><p>Screen rooms, pool cages, rescreens and carports, plus sunrooms, acrylic rooms, siding and soffit work.</p></div>
+        <ul aria-label="Aluminum work"><li>Screen rooms</li><li>Pool cages</li><li>Rescreens</li><li>Carports</li><li>Sunrooms</li><li>Acrylic rooms</li><li>Commercial handrails</li><li>Siding</li><li>Composite roofs</li><li>Soffit &amp; fascia</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">H-1</div>
+        <div class="what"><h3>Hurricane protection</h3><p>Impact openings and custom-cut shutters and panels, built to the Florida Building Code.</p></div>
+        <ul aria-label="Hurricane protection"><li>Impact doors</li><li>Impact windows</li><li>Storm panels</li><li>Bahama shutters</li><li>Accordion shutters</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">R-1</div>
+        <div class="what"><h3>Remodeling &amp; additions</h3><p>Redo a room, replace windows and doors, or add a whole new room to the house.</p></div>
+        <ul aria-label="Remodeling work"><li>Room additions</li><li>Windows</li><li>Doors</li><li>Flooring</li><li>Concrete slabs</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">K-1</div>
+        <div class="what"><h3>Kitchens</h3><p>Anything from a custom sink installation to new cabinets, counters and floors.</p></div>
+        <ul aria-label="Kitchen work"><li>Cabinets</li><li>Granite countertops</li><li>Islands</li><li>Backsplashes</li><li>Custom sinks</li><li>Fixtures</li><li>Flooring</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">B-1</div>
+        <div class="what"><h3>Bathrooms</h3><p>Complete bathroom remodels, from the shower and tub to the lighting.</p></div>
+        <ul aria-label="Bathroom work"><li>New showers</li><li>New tubs</li><li>Cabinets</li><li>Fixtures</li><li>Lighting</li><li>Toilets</li><li>Flooring</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">M-1</div>
+        <div class="what"><h3>Mobile home repairs</h3><p>Repairs and renovations for mobile and manufactured homes, inside and out.</p></div>
+        <ul aria-label="Mobile home work"><li>Vinyl rooms</li><li>Vinyl siding</li><li>Shower doors</li><li>Kitchen &amp; bath</li><li>Flooring</li><li>Sunrooms &amp; acrylic rooms</li><li>Screen rooms &amp; patios</li></ul>
+      </div>
+
+      <div class="row">
+        <div class="code">N-1</div>
+        <div class="what"><h3>Custom homes</h3><p>A new home built on your piece of land, designed around your requirements or custom-designed from your ideas, and suited to local needs.</p></div>
+        <ul aria-label="Custom home work"><li>Built on your lot</li><li>Custom design</li><li>Suited to local needs</li></ul>
+      </div>
+
+      <div class="titleblock">
+        <div><span class="mono">Contractor</span><strong>Edward Ross Construction Services, Inc.</strong></div>
+        <div><span class="mono">License</span><strong>CGC1523858</strong></div>
+        <div><span class="mono">Office</span><strong>Venice, FL</strong></div>
+        <div><span class="mono">Free estimate</span><strong><a href="tel:+19414088500">(941) 408-8500</a></strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec jobs" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow mono">Our work</span>
+        <h2 id="work-title">Recent projects</h2>
+      </div>
+      <p>Photos from finished Edward Ross Construction Services jobs: aluminum carports, screen rooms, enclosed porches and exterior siding.</p>
+    </div>
+
+    <div class="grid">
+      <figure class="job a">
+        <img src="images/carport-aluminum-cover.jpg" width="1600" height="1200" loading="lazy" alt="White aluminum carport cover running the length of a driveway beside a manufactured home, sheltering an SUV and a golf cart, with a gutter and downspout at the corner post">
+        <figcaption><span class="mono">01 &middot; Aluminum carport</span>A white aluminum carport running the length of the driveway, with room for the car and the golf cart and a gutter and downspout at the corner post.</figcaption>
+      </figure>
+      <figure class="job b">
+        <img src="images/enclosed-porch-interior.jpg" width="1600" height="1200" loading="lazy" alt="Long enclosed porch interior with a wall of windows facing the yard, wood-look plank tile floor and a ceiling fan">
+        <figcaption><span class="mono">02 &middot; Enclosed porch</span>A porch closed in and finished as a bright room: a full run of windows, wood-look plank tile floor and a ceiling fan.</figcaption>
+      </figure>
+
+      <p class="trio-label mono">One house &middot; three views</p>
+
+      <figure class="job c">
+        <img src="images/siding-metal-roof-front.jpg" width="1600" height="1200" loading="lazy" alt="Small single-story house with tan lap siding, brown trim around the door and windows, and a metal roof">
+        <figcaption><span class="mono">03 &middot; Siding</span>Tan lap siding with brown door and window trim, under a metal roof.</figcaption>
+      </figure>
+      <figure class="job c">
+        <img src="images/siding-side-elevation.jpg" width="1600" height="1200" loading="lazy" alt="Side wall of the same house showing tan lap siding, shingle-style siding in the gable and trimmed windows">
+        <figcaption><span class="mono">04 &middot; Side elevation</span>The side wall: lap siding below, shingle-style siding up in the gable, and trim boxed around each window.</figcaption>
+      </figure>
+      <figure class="job c porch">
+        <img src="images/screen-porch-rear.jpg" width="1600" height="1200" loading="lazy" alt="Back of the same house with a screened porch set under the roofline, framed with trim that matches the tan siding">
+        <figcaption><span class="mono">05 &middot; Screen porch</span>Out back, a screened porch tucked under the roofline, framed to match the siding.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec storm" id="storm" aria-labelledby="storm-title">
+  <div class="wrap">
+    <div>
+      <figure class="flags" aria-hidden="true">
+        <div class="pole"></div>
+        <div class="flagset"><div class="flag"></div><div class="flag"></div></div>
+        <figcaption>Two red flags, black centers: hurricane warning</figcaption>
+      </figure>
+      <span class="eyebrow mono">Hurricane protection</span>
+      <h2 id="storm-title">Get covered before the storm is in the forecast.</h2>
+      <p>Atlantic hurricane season runs June 1 through November 30. Shutters and panels are custom cut for your openings, so the time to set them up is before a storm is on the way.</p>
+      <a class="btn btn-white" href="tel:+19414088500">Call (941) 408-8500</a>
+    </div>
+    <div class="storm-list">
+      <div class="storm-item">
+        <span class="mono">Panels</span>
+        <h3>Storm panels</h3>
+        <p>Mill finish aluminum, white painted aluminum, clear polycarbonate or galvanized steel. Built to the Florida Building Code and custom cut.</p>
+      </div>
+      <div class="storm-item">
+        <span class="mono">Shutters</span>
+        <h3>Bahama shutters</h3>
+        <p>Impact and wind-pressure rated, with a powder-coated finish.</p>
+      </div>
+      <div class="storm-item">
+        <span class="mono">Shutters</span>
+        <h3>Accordion shutters</h3>
+        <p>Choose a key lock or an inside egress lock.</p>
+        <div class="swatches" role="img" aria-label="Available in white, bronze, beige and ivory"><i style="background:#F7F7F4"></i><i style="background:#5A4632"></i><i style="background:#D8C7A6"></i><i style="background:#EFE6CF"></i></div>
+      </div>
+      <div class="storm-item">
+        <span class="mono">Openings</span>
+        <h3>Impact doors &amp; windows</h3>
+        <p>Impact-rated doors and windows for full-time protection, with nothing to put up when a storm comes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec kb" aria-labelledby="kb-title">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow mono">Kitchens &amp; baths</span>
+      <h2 id="kb-title">Inside work, done to the same standard.</h2>
+      <p>Redo a kitchen or bathroom, or add a whole new room to the house. Interested in a sunroom too? Ask about the aluminum work as well.</p>
+      <dl>
+        <dt>Kitchen</dt><dd>Cabinets, granite countertops, islands, backsplashes, custom sinks, fixtures and flooring.</dd>
+        <dt>Bath</dt><dd>New showers and tubs, cabinets, fixtures, lighting, toilets and flooring.</dd>
+      </dl>
+    </div>
+    <div class="baths">
+      <figure>
+        <img src="images/bath-walk-in-shower.jpg" width="480" height="640" loading="lazy" alt="Walk-in shower with a pebble tile floor and accent stripe, a tiled bench and grab bars, next to a toilet">
+        <figcaption>Walk-in shower with pebble tile, bench and grab bars.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bath-double-vanity.jpg" width="640" height="480" loading="lazy" alt="Double vanity with white cabinets, a granite top, two vessel sinks and framed mirrors">
+        <figcaption>Double vanity with granite top and vessel sinks.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bath-freestanding-tub.jpg" width="480" height="640" loading="lazy" alt="Freestanding soaking tub under a chandelier, beneath a window that looks out on a pond">
+        <figcaption>Freestanding tub under a window and chandelier.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="area" aria-labelledby="area-title">
+  <div class="wrap">
+    <span class="eyebrow mono">Service area</span>
+    <h2 id="area-title">Englewood to Longboat Key</h2>
+    <p class="sub">Based in Venice and serving these communities along the coast.</p>
+    <ol class="route">
+      <li>Bradenton</li>
+      <li>Longboat Key</li>
+      <li>Sarasota</li>
+      <li>Osprey</li>
+      <li>Nokomis</li>
+      <li class="home">Venice<small>Home base</small></li>
+      <li>North Port</li>
+      <li>Englewood</li>
+      <li>Port Charlotte</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow mono">Contact</span>
+      <h2 id="contact-title">Call for a free estimate.</h2>
+      <a class="bigtel" href="tel:+19414088500">(941) 408-8500</a>
+      <p class="lede">Tell us what you&rsquo;re planning, whether it&rsquo;s a carport, a screen room, storm shutters or a full remodel, and we&rsquo;ll set up a time to look at the job.</p>
+      <a class="btn btn-line" href="mailto:edrossconstruction@gmail.com?subject=Estimate%20request">Email edrossconstruction@gmail.com</a>
+    </div>
+    <div class="card">
+      <div class="card-head mono"><span>Edward Ross Construction Services, Inc.</span></div>
+      <dl>
+        <div class="r"><dt>Phone</dt><dd><a href="tel:+19414088500">(941) 408-8500</a></dd></div>
+        <div class="r"><dt>Email</dt><dd><a href="mailto:edrossconstruction@gmail.com">edrossconstruction@gmail.com</a></dd></div>
+        <div class="r"><dt>Office</dt><dd><address style="font-style:normal">125 Corporation Way, Suite B<br>Venice, FL 34285</address><a class="small" href="https://www.google.com/maps/search/?api=1&amp;query=125+Corporation+Way+Suite+B+Venice+FL+34285" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></dd></div>
+        <div class="r"><dt>Hours</dt><dd>Monday&ndash;Friday, 8:00 am &ndash; 5:00 pm<span class="small">Closed Saturday and Sunday</span></dd></div>
+        <div class="r"><dt>License</dt><dd>Certified General Contractor CGC1523858</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; 2026 Edward Ross Construction Services, Inc. &middot; 125 Corporation Way, Suite B, Venice, FL 34285 &middot; CGC1523858</span>
+    <span>Draft site by Clear Web Studio</span>
+  </div>
+</footer>
+</body>
+</html>
