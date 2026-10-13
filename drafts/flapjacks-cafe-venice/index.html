@@ -70,6 +70,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  .menu{grid:none / 1fr}
  section{padding:56px 0}
 }
+.plates{display:grid;grid:auto-flow / repeat(auto-fill,minmax(min(280px,100%),1fr));gap:22px;margin-top:26px}
+.plates figure{margin:0;background:#fff;border:4px solid var(--teal);border-radius:22px;overflow:hidden;box-shadow:6px 6px 0 var(--coral)}
+.plates figure:nth-child(3n+2){border-color:var(--pine);box-shadow:6px 6px 0 var(--teal)}
+.plates img{display:block;width:100%;height:260px;object-fit:cover}
+.plates figcaption{font-family:'Lilita One';font-size:21px;padding:10px 16px;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -84,7 +89,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  <div>
   <span class="kicker">Breakfast &amp; lunch · Venice Ave</span>
   <h1>Meet &amp; eat in Venice<span>with Jersey &amp; Philly flair.</span></h1>
-  <p class="lede">Breakfast and lunch comfort food served up with warm, friendly service, just off Venice island on the main road in and out of downtown.</p>
+  <p class="lede">Breakfast and lunch comfort food, just off Venice island on the main road in and out of downtown.</p>
   <div class="btns"><a class="b1" href="tel:+19414801020">Call 941-480-1020</a><a class="b2" href="https://www.google.com/maps/search/?api=1&amp;query=Flapjacks+Cafe+810+E+Venice+Ave+Venice+FL+34285">Get directions</a></div>
  </div>
  <figure class="arch">
@@ -93,14 +98,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  </figure>
 </div>
 </div>
-<div class="hash" aria-label="We serve corned beef hash"><div aria-hidden="true">!! We serve corned beef hash !! &nbsp;🍍&nbsp; !! We serve corned beef hash !! &nbsp;🍍&nbsp; !! We serve corned beef hash !! &nbsp;🍍&nbsp; !! We serve corned beef hash !! &nbsp;🍍&nbsp; !! We serve corned beef hash !! &nbsp;🍍&nbsp; !! We serve corned beef hash !! &nbsp;🍍&nbsp; </div></div>
+<div class="hash" aria-label="Corned beef hash, breakfast open to close"><div aria-hidden="true">Corned beef hash &nbsp;🍍&nbsp; Breakfast open to close &nbsp;🍍&nbsp; Corned beef hash &nbsp;🍍&nbsp; Breakfast open to close &nbsp;🍍&nbsp; Corned beef hash &nbsp;🍍&nbsp; Breakfast open to close &nbsp;🍍&nbsp; Corned beef hash &nbsp;🍍&nbsp; Breakfast open to close &nbsp;🍍&nbsp; </div></div>
 
 <section id="menu"><div class="wrap">
  <span class="kicker">On the menu</span>
  <h2>Classic comfort food,<br>breakfast open to close.</h2>
  <div class="menu">
   <div class="card"><h3>Breakfast all day</h3><p>Breakfast is served open to close, with lunch on the menu alongside it.</p></div>
-  <div class="card"><h3>Corned beef hash</h3><p>Corned beef hash is on the menu.</p></div>
+  <div class="card"><h3>On the menu</h3><p>Corned beef hash</p></div>
   <div class="card"><h3>Daily features</h3><p>Come in and check out what's on the board today. There's a kids menu too.</p></div>
  </div>
  <p class="note">Eat in or carry out. Ask for the printable menu to keep at your office or home.</p>
@@ -116,6 +121,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <p class="big">New owners took over in March 2023.</p>
   <p>Flapjacks specializes in classic, authentic comfort style food for locals and visitors alike.</p>
   <ul><li>Breakfast and lunch all day</li><li>Small to medium catering events</li><li>Host your small event at the restaurant</li></ul>
+ </div>
+</div></section>
+
+<section id="plates"><div class="wrap">
+ <h2>From the kitchen</h2>
+ <div class="plates">
+  <figure><img src="images/cheesecake-berry-waffle.jpg" width="1170" height="1059" loading="lazy" alt="A waffle topped with berries and whipped cream"><figcaption>Cheesecake berry waffle</figcaption></figure>
+  <figure><img src="images/western-burger.jpg" width="1200" height="675" loading="lazy" alt="A burger stacked with onion rings and sauce"><figcaption>Western burger with onion rings</figcaption></figure>
+  <figure><img src="images/avocado-toast.jpg" width="1200" height="900" loading="lazy" alt="Two slices of avocado toast on a plate by the window"><figcaption>Avocado toast</figcaption></figure>
+  <figure><img src="images/crew-storefront.jpg" width="1200" height="900" loading="lazy" alt="The Flapjacks crew in matching shirts outside the cafe under the sign"><figcaption>The Flapjacks crew</figcaption></figure>
+  <figure><img src="images/strawberry-french-toast.jpg" width="1200" height="918" loading="lazy" alt="French toast topped with strawberries and whipped cream"><figcaption>Strawberry French toast</figcaption></figure>
+  <figure><img src="images/quiche-fruit-cup.jpg" width="1200" height="942" loading="lazy" alt="A slice of quiche with a cup of fresh fruit"><figcaption>Quiche with fruit cup</figcaption></figure>
+  <figure><img src="images/egg-cheese-sandwich.jpg" width="1200" height="826" loading="lazy" alt="An egg and cheese sandwich on a fish-shaped plate"><figcaption>Egg and cheese breakfast sandwich</figcaption></figure>
+  <figure><img src="images/turkey-club.jpg" width="1200" height="954" loading="lazy" alt="A turkey club sandwich cut in half"><figcaption>Turkey club</figcaption></figure>
+  <figure><img src="images/banana-pancakes.jpg" width="1150" height="1200" loading="lazy" alt="A pancake topped with banana slices, chocolate drizzle and whipped cream"><figcaption>Banana pancakes</figcaption></figure>
  </div>
 </div></section>
 
