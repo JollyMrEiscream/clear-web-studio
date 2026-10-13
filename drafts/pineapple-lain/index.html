@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pineapple Lain Boutique | Women's Boutique on Main Street, Sarasota</title>
+<meta name="description" content="Pineapple Lain Boutique is a female-owned women's boutique at 1451 Main St in downtown Sarasota, FL. Beachy-boho clothing, Risen denim and Final Touch basics. Est. 2018.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400;1,6..96,500&family=Archivo+Narrow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141414;--gold:#efbf5e;--honey:#d6a32c;--leaf:#4a6219;--frond:#7b9147;--paper:#fbf7ee;--straw:#e9dcc0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Archivo Narrow',system-ui,sans-serif;font-size:18px;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:'Bodoni Moda',Georgia,serif}
+.kick{font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-weight:600}
+/* masthead */
+.mast{display:flex;align-items:center;justify-content:space-between;padding:18px 5vw;border-bottom:1px solid var(--ink)}
+.mast .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mast .brand img{width:52px;height:auto}
+.mast .brand span{font-family:'Bodoni Moda',serif;font-size:22px;font-style:italic}
+.mast nav{display:flex;gap:26px}
+.mast nav a{text-decoration:none;font-size:14px;letter-spacing:.2em;text-transform:uppercase}
+.mast nav a:hover{color:var(--leaf)}
+.ticker{background:var(--ink);color:var(--gold);overflow:hidden;white-space:nowrap;padding:9px 0}
+.ticker div{display:inline-block;animation:roll 38s linear infinite}
+.ticker span{margin:0 22px;font-size:13px;letter-spacing:.3em;text-transform:uppercase}
+@keyframes roll{to{transform:translateX(-50%)}}
+/* cover */
+.cover{display:grid;grid:auto-flow / 1.05fr .95fr;min-height:640px;border-bottom:1px solid var(--ink)}
+.cover-copy{padding:64px 5vw 56px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.cover h1{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(54px,7.4vw,112px);line-height:.92;letter-spacing:-.02em}
+.cover h1 em{color:var(--leaf)}
+.cover h1 b{display:block;font-weight:700;font-style:normal}
+.cover p.lede{max-width:430px;margin-top:28px;font-size:20px}
+.cover .meta{display:flex;gap:34px;margin-top:40px;flex-wrap:wrap}
+.cover .meta div{border-top:2px solid var(--ink);padding-top:8px;min-width:130px}
+.cover .meta small{display:block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--leaf);font-weight:600}
+.btns{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;text-decoration:none;font-size:14px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;border:1.5px solid var(--ink)}
+.btn.solid{background:var(--ink);color:var(--gold)}
+.btn.solid:hover{background:var(--leaf);border-color:var(--leaf);color:#fff}
+.btn.line:hover{background:var(--gold)}
+.cover-photo{position:relative;background:var(--gold);overflow:hidden;border-left:1px solid var(--ink)}
+.cover-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.seal{position:absolute;right:5vw;top:36px;width:150px;height:150px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px var(--ink);padding:6px;z-index:2;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cover-photo figcaption{position:absolute;left:18px;bottom:18px;background:var(--paper);padding:6px 12px;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+/* hat wall */
+.wall{padding:110px 5vw 90px;background:var(--straw);position:relative;overflow:hidden}
+.wall::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 12% 18%,rgba(214,163,44,.35) 0 58px,transparent 59px),radial-gradient(circle at 88% 12%,rgba(214,163,44,.28) 0 72px,transparent 73px),radial-gradient(circle at 94% 82%,rgba(74,98,25,.18) 0 64px,transparent 65px),radial-gradient(circle at 6% 88%,rgba(20,20,20,.12) 0 50px,transparent 51px)}
+.wall-head{position:relative;padding-right:150px;display:grid;grid:auto-flow / 1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.wall h2{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1}
+.wall h2 em{color:var(--leaf)}
+.pegs{position:relative;display:grid;grid:auto-flow / repeat(4,1fr);gap:28px}
+.peg{text-align:center}
+.peg .pin{width:14px;height:14px;border-radius:50%;background:var(--ink);margin:0 auto 10px;box-shadow:0 2px 0 rgba(0,0,0,.25)}
+.peg .frame{aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:0 14px 30px -14px rgba(0,0,0,.45);transition:transform .4s}
+.peg:nth-child(odd) .frame{transform:rotate(-3deg)}
+.peg:nth-child(even){margin-top:46px}
+.peg:nth-child(even) .frame{transform:rotate(3deg)}
+.peg:hover .frame{transform:rotate(0) scale(1.03)}
+.peg .frame img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.peg p{margin-top:14px;font-family:'Bodoni Moda',serif;font-style:italic;font-size:19px}
+/* carry */
+.carry{display:grid;grid:auto-flow / .9fr 1.1fr;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.carry figure{border-right:1px solid var(--ink);background:var(--leaf);padding:48px}
+.carry figure img{width:100%;aspect-ratio:3/4;object-fit:cover;outline:1px solid var(--gold);outline-offset:12px}
+.carry .txt{padding:72px 5vw}
+.carry h2{font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(38px,4.4vw,64px);line-height:1.02;margin:14px 0 26px}
+.carry ol{list-style:none;counter-reset:c;margin-top:30px}
+.carry li{counter-increment:c;display:grid;grid:auto-flow / 70px 1fr;padding:22px 0;border-top:1px solid rgba(20,20,20,.25)}
+.carry li::before{content:counter(c,upper-roman);font-family:'Bodoni Moda',serif;font-size:30px;color:var(--honey)}
+.carry li strong{display:block;font-family:'Bodoni Moda',serif;font-size:26px;font-weight:400}
+.shop small{font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+/* small */
+.quote{padding:96px 5vw;text-align:center;background:var(--ink);color:var(--paper)}
+.quote p{font-family:'Bodoni Moda',serif;font-size:clamp(34px,5vw,74px);line-height:1.05;max-width:1050px;margin:0 auto}
+.quote p em{color:var(--gold)}
+.quote .kick{color:var(--frond);margin-top:26px;display:block}
+/* visit */
+.visit{display:grid;grid:auto-flow / 1fr 1fr 1fr;border-bottom:1px solid var(--ink)}
+.visit > div{padding:64px 4vw;border-right:1px solid var(--ink)}
+.visit > div:last-child{border-right:0}
+.visit h3{font-family:'Bodoni Moda',serif;font-weight:400;font-size:34px;margin:12px 0 22px}
+.hrs{width:100%;border-collapse:collapse;font-size:17px}
+.hrs td{padding:9px 0;border-bottom:1px dotted rgba(20,20,20,.4)}
+.hrs td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.season{display:inline-block;background:var(--gold);padding:3px 10px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.season.in{background:var(--leaf);color:#fff}
+.visit address{font-style:normal;font-size:22px;line-height:1.4;font-family:'Bodoni Moda',serif}
+.visit .links a{display:block;margin-top:14px;font-size:19px}
+.visit .note{margin-top:22px;font-size:15px;color:#555}
+footer{padding:40px 5vw;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:14px}
+footer img{width:70px}
+@media (max-width:900px){
+ .mast nav{display:none}
+ .cover{grid:auto-flow / 1fr}
+ .cover-copy{padding:44px 6vw 40px}
+ .cover-photo{border-left:0;border-top:1px solid var(--ink);height:520px}
+ .seal{width:110px;height:110px;bottom:auto;top:-55px;right:6vw}
+ .wall{padding:72px 6vw 64px}
+ .wall-head{grid:auto-flow / 1fr;gap:16px;padding-right:0}
+ .seal{display:none}
+ .pegs{grid:auto-flow / repeat(2,1fr);gap:22px}
+ .carry{grid:auto-flow / 1fr}
+ .carry figure{border-right:0;border-bottom:1px solid var(--ink);padding:36px}
+ .carry .txt{padding:52px 6vw}
+ .visit{grid:auto-flow / 1fr}
+ .visit > div{border-right:0;border-bottom:1px solid var(--ink);padding:48px 6vw}
+ .visit > div:last-child{border-bottom:0}
+}
+@media (max-width:420px){.cover .meta{gap:18px}.cover .meta div{min-width:0;flex:1}.carry li{grid:auto-flow / 52px 1fr}}
+@media (prefers-reduced-motion:reduce){.ticker div,.seal{animation:none}}
+</style>
+</head>
+<body>
+<header class="mast">
+ <a class="brand" href="#top"><img src="images/logo.png" alt="Pineapple Lain Boutique logo"><span>Pineapple Lain</span></a>
+ <nav><a href="#wall">The Wall</a><a href="#carry">What We Carry</a><a href="#visit">Visit</a><a href="https://www.pineapplelain.com/">Shop Online</a></nav>
+</header>
+<div class="ticker" aria-hidden="true"><div>
+<span>1451 Main St</span><span>&#10022;</span><span>Sarasota, Florida</span><span>&#10022;</span><span>Shop Small</span><span>&#10022;</span><span>Female Owned</span><span>&#10022;</span><span>Est. 2018</span><span>&#10022;</span><span>Beachy-Boho</span><span>&#10022;</span>
+<span>1451 Main St</span><span>&#10022;</span><span>Sarasota, Florida</span><span>&#10022;</span><span>Shop Small</span><span>&#10022;</span><span>Female Owned</span><span>&#10022;</span><span>Est. 2018</span><span>&#10022;</span><span>Beachy-Boho</span><span>&#10022;</span>
+</div></div>
+<main id="top">
+<section class="cover">
+ <div class="cover-copy">
+  <div>
+   <p class="kick">Women's Boutique &middot; Downtown Sarasota</p>
+   <h1 style="margin-top:22px">Beachy, <em>boho</em> <b>&amp; on Main.</b></h1>
+   <p class="lede">Pineapple Lain Boutique is a female-owned shop on Main Street in Sarasota, Florida, dressing women in beachy-boho clothing since 2018.</p>
+   <div class="btns"><a class="btn solid" href="#visit">Plan a visit</a><a class="btn line" href="https://www.pineapplelain.com/">Shop online</a></div>
+  </div>
+  <div class="meta">
+   <div><small>Find us</small>1451 Main St</div>
+   <div><small>Call</small><a href="tel:+19413308771">(941) 330-8771</a></div>
+   <div><small>Since</small>2018</div>
+  </div>
+ </div>
+ <figure class="cover-photo">
+  <img src="images/instore-04.jpg" alt="A striped knit mini dress modeled in the Pineapple Lain shop in front of the wall of straw hats">
+  <figcaption>In store, Main St</figcaption>
+ </figure>
+</section>
+
+<section class="wall" id="wall">
+ <img class="seal" src="images/logo.png" alt="Pineapple Lain Boutique Est. 2018 seal">
+ <div class="wall-head">
+  <div><p class="kick">The Hat Wall</p><h2>Hung up on <em>the hats</em>.</h2></div>
+  <p>Inside, a wall of wide-brim hats. Here's a look from the shop floor.</p>
+ </div>
+ <div class="pegs">
+  <div class="peg"><div class="pin"></div><div class="frame"><img src="images/instore-01.jpg" alt="Light denim sleeveless mini dress shown in the shop against the hat wall" loading="lazy"></div><p>Denim, front</p></div>
+  <div class="peg"><div class="pin"></div><div class="frame"><img src="images/instore-02.jpg" alt="Side view of a striped knit mini dress in front of tan straw hats" loading="lazy"></div><p>Stripes, side</p></div>
+  <div class="peg"><div class="pin"></div><div class="frame"><img src="images/instore-03.jpg" alt="Side view of the light denim mini dress by the hat wall" loading="lazy"></div><p>Denim, side</p></div>
+  <div class="peg"><div class="pin"></div><div class="frame"><img src="images/instore-04.jpg" alt="Striped knit mini dress shown head-on in front of the hats" loading="lazy"></div><p>Stripes, front</p></div>
+ </div>
+</section>
+
+<section class="carry" id="carry">
+ <figure><img src="images/instore-01.jpg" alt="Denim mini dress on the Pineapple Lain shop floor" loading="lazy"></figure>
+ <div class="txt">
+  <p class="kick">What We Carry</p>
+  <h2>Sarasota women's clothing, <em class="serif">beachy-boho</em> at heart.</h2>
+  <p>New arrivals land in store and online, so you can try them on at 1451 Main St or shop from home.</p>
+  <ol>
+   <li><div><strong>Dresses &amp; sets</strong>Mini dresses, knits, tanks, skirts and shorts.</div></li>
+   <li><div><strong>Risen Jeans denim shop</strong>High-rise, wide-leg, barrel, flare and straight-leg jeans, plus denim jackets.</div></li>
+   <li><div><strong>Final Touch basics</strong>Double-layer tanks and tops in a long run of colors.</div></li>
+  </ol>
+  <div class="btns"><a class="btn solid" href="https://www.pineapplelain.com/">Shop online</a></div>
+ </div>
+</section>
+
+<section class="quote">
+ <p>&ldquo;<em>Shop small.</em> We are a female owned boutique based in Sarasota, Florida.&rdquo;</p>
+ <span class="kick">Pineapple Lain Boutique &middot; Est. 2018</span>
+</section>
+
+<section class="visit" id="visit">
+ <div>
+  <span class="season">Off-season &middot; June&ndash;Oct.</span>
+  <h3>Off-season hours</h3>
+  <table class="hrs">
+   <tr><td>Sunday</td><td>12:00 &ndash; 5:00</td></tr>
+   <tr><td>Monday &ndash; Friday</td><td>11:00 &ndash; 6:00</td></tr>
+   <tr><td>Saturday</td><td>10:00 &ndash; 7:00</td></tr>
+  </table>
+ </div>
+ <div>
+  <span class="season in">In-season &middot; Nov.&ndash;May</span>
+  <h3>Hours in season</h3>
+  <table class="hrs">
+   <tr><td>Sunday</td><td>12:00 &ndash; 5:00</td></tr>
+   <tr><td>Monday &ndash; Friday</td><td>10:00 &ndash; 6:00</td></tr>
+   <tr><td>Saturday</td><td>10:00 &ndash; 7:00</td></tr>
+  </table>
+ </div>
+ <div>
+  <p class="kick">Visit &amp; Contact</p>
+  <h3>Come see the wall.</h3>
+  <address>1451 Main St.<br>Sarasota, FL 34236</address>
+  <div class="links">
+   <a href="https://www.google.com/maps/search/?api=1&amp;query=Pineapple+Lain+Boutique+1451+Main+St+Sarasota+FL+34236">Get directions &rarr;</a>
+   <a href="tel:+19413308771">(941) 330-8771</a>
+   <a href="mailto:pineapplelainboutique@gmail.com">pineapplelainboutique@gmail.com</a>
+  </div>
+  <p class="note">Questions? Call or email any time, or stop in during business hours.</p>
+ </div>
+</section>
+</main>
+<footer>
+ <img src="images/logo.png" alt="Pineapple Lain Boutique logo">
+ <span>&copy; 2026 Pineapple Lain Boutique &middot; 1451 Main St, Sarasota, FL 34236</span>
+ <span>Draft site by Clear Web Studio</span>
+</footer>
+</body>
+</html>
