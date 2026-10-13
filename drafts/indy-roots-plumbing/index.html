@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indy Roots Plumbing, LLC | Family-Owned Plumbing in Sarasota, FL</title>
+<meta name="description" content="Indy Roots Plumbing is a family-owned plumbing contractor in Sarasota, FL. Fixtures, pipe and repiping, drains and sewer lines, water heaters, gas lines and more. State-certified CFC1434468.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Montserrat:wght@700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#14213a;--deep:#0d172b;--gold:#d9a653;--husk:#7e5b34;--cream:#f7efe0;--paper:#fffaf1;--ink:#1c1f26;--soft:#5b5246}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Manrope",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.label{font-family:"Montserrat",sans-serif;font-weight:800;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--husk)}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1}
+/* top bar */
+.bar{background:var(--deep);color:var(--cream);font-size:14px}
+.bar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.bar a{text-decoration:none;color:var(--gold);font-weight:700}
+/* hero */
+.hero{background:var(--night);color:var(--cream);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid:auto/1.1fr .9fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:110px;position:relative;z-index:1}
+.hero .label{color:var(--gold)}
+.hero h1{font-size:clamp(40px,5.6vw,70px);margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:30em;color:#d9d3c6;font-size:18px}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{font-family:"Montserrat",sans-serif;font-weight:800;font-size:15px;letter-spacing:.04em;text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid var(--gold)}
+.btn.fill{background:var(--gold);color:var(--deep)}
+.btn.line{color:var(--gold)}
+.logo-disc{justify-self:center;width:min(420px,100%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 45%,#1d2d4d 0,#14213a 70%);border:2px solid rgba(217,166,83,.35);box-shadow:0 0 0 14px rgba(217,166,83,.06),0 0 0 28px rgba(217,166,83,.04);display:grid;place-items:center}
+.logo-disc img{width:72%;height:auto}
+/* roots: wavy soil line + roots under hero */
+.soil{position:absolute;left:0;right:0;bottom:0;height:70px;background:var(--paper);clip-path:polygon(0 60%,8% 48%,17% 58%,27% 44%,38% 56%,49% 42%,60% 55%,71% 43%,82% 57%,91% 46%,100% 55%,100% 100%,0 100%)}
+/* pipe run */
+.run{position:relative}
+.run::before{content:"";position:absolute;left:46px;top:0;bottom:0;width:14px;background:linear-gradient(90deg,#b8863d,#e8bf72 45%,#a87732);border-radius:7px;z-index:2}
+.sec{position:relative;padding:80px 0 80px 120px}
+.sec::before{content:"";position:absolute;left:34px;top:86px;width:38px;height:22px;border-radius:5px;background:var(--husk);box-shadow:inset 0 -4px 0 rgba(0,0,0,.2);z-index:3}
+.sec h2{font-size:clamp(32px,4vw,48px);margin:12px 0 20px;max-width:16em}
+.lead{font-size:19px;max-width:36em;color:var(--soft)}
+/* about */
+.about{display:grid;grid:auto/1fr 360px;gap:56px;align-items:start}
+.about p+p{margin-top:16px}
+.about figure{background:var(--cream);padding:12px 12px 14px;border-radius:4px;transform:rotate(1.5deg);box-shadow:0 18px 40px -20px rgba(20,33,58,.45)}
+.about img{width:100%;height:auto;display:block;border-radius:2px}
+.about figcaption{font-size:14px;color:var(--soft);padding-top:10px;text-align:center}
+.motto{margin-top:30px;font-family:"Young Serif",serif;font-size:24px;color:var(--night);border-left:5px solid var(--gold);padding-left:18px}
+/* services */
+.svc{background:var(--cream)}
+.grid{display:grid;grid:auto/repeat(3,1fr);gap:22px;margin-top:36px}
+.card{background:var(--paper);border-radius:14px;padding:26px 24px 24px;border-top:6px solid var(--gold);position:relative}
+.card h3{font-size:23px;color:var(--night);margin-bottom:12px}
+.card ul{list-style:none}
+.card li{padding:7px 0 7px 22px;border-bottom:1px dashed #e2d6bf;position:relative;font-size:16px}
+.card li:last-child{border-bottom:0}
+.card li::before{content:"";position:absolute;left:2px;top:15px;width:10px;height:10px;border:3px solid var(--husk);border-radius:50%}
+/* contact */
+.contact{background:var(--night);color:var(--cream)}
+.contact .label{color:var(--gold)}
+.contact .lead{color:#d9d3c6}
+.tags{display:grid;grid:auto/repeat(2,1fr);gap:18px;margin-top:36px;max-width:820px}
+.tag{border:2px solid rgba(217,166,83,.45);border-radius:14px;padding:20px 22px;text-decoration:none;display:block}
+.tag small{display:block;font-family:"Montserrat",sans-serif;font-weight:800;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.tag b{font-size:21px;font-weight:700;word-break:break-word}
+a.tag:hover{background:rgba(217,166,83,.1)}
+.run .contact::before{background:var(--gold)}
+footer{background:var(--deep);color:#a9a395;font-size:14px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:900px){
+ .hero .wrap{grid:auto/1fr;padding-top:48px;gap:36px}
+ .logo-disc{width:min(300px,80%);order:-1}
+ .about{grid:auto/1fr}
+ .about figure{max-width:340px}
+ .grid{grid:auto/1fr 1fr}
+}
+@media(max-width:600px){
+ body{font-size:16px}
+ .wrap{padding:0 20px}
+ .run::before{left:18px;width:8px}
+ .sec{padding:60px 0 60px 44px}
+ .sec::before{left:11px;top:66px;width:22px;height:14px}
+ .grid,.tags{grid:auto/1fr}
+ .bar .wrap{justify-content:center}
+ .btn{flex:1 1 100%;text-align:center}
+ .tag b{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap"><span>Family-owned plumbing · Sarasota, FL</span><a href="tel:+19417264547">(941) 726-4547</a></div></div>
+
+<header class="hero">
+ <div class="wrap">
+  <div>
+   <span class="label">Indy Roots Plumbing, LLC</span>
+   <h1>From the roots <em>to the roof.</em></h1>
+   <p>A family-owned and operated plumbing business serving Sarasota. Whether it's a small repair or a full installation, every project is handled with care, precision and attention to detail.</p>
+   <div class="btns"><a class="btn fill" href="tel:+19417264547">Call (941) 726-4547</a><a class="btn line" href="mailto:indyrootsplumbing@gmail.com">Send a quick note</a></div>
+  </div>
+  <div class="logo-disc"><img src="images/logo.png" width="900" height="629" alt="Indy Roots Plumbing logo: a golden ear of corn above the words Indy Roots Plumbing"></div>
+ </div>
+ <div class="soil" aria-hidden="true"></div>
+</header>
+
+<main class="run">
+ <section class="sec" id="about"><div class="wrap about">
+  <div>
+   <span class="label">All about our roots</span>
+   <h2>Plumbing with Sarasota roots.</h2>
+   <p class="lead">A family-owned plumbing company in Sarasota, FL.</p>
+   <p style="margin-top:18px">Family-owned and run. They work on homes and businesses around Sarasota.</p>
+   <p>At Indy Roots, you're not just another job. You're part of the community they're proud to serve.</p>
+   <p class="motto">"From the roots to the roof, we've got your plumbing covered."</p>
+  </div>
+  <figure><img src="images/owners.jpg" width="900" height="1110" loading="lazy" alt="The two owners of Indy Roots Plumbing standing together outdoors"><figcaption>The family behind Indy Roots</figcaption></figure>
+ </div></section>
+
+ <section class="sec svc" id="services"><div class="wrap">
+  <span class="label">What we work on</span>
+  <h2>Every line in the house, inside and out.</h2>
+  <div class="grid">
+   <div class="card"><h3>Fixtures</h3><ul><li>Faucet, sink and fixture installation and repair</li><li>Garbage disposals</li><li>Showers and tubs</li></ul></div>
+   <div class="card"><h3>Pipe</h3><ul><li>Pipe repair and replacement</li><li>Whole-home repiping</li><li>Slab leak repair</li></ul></div>
+   <div class="card"><h3>Drain &amp; sewer</h3><ul><li>Drain cleaning</li><li>Camera sewer inspection</li><li>Sewer line repair and replacement</li></ul></div>
+   <div class="card"><h3>Water heaters</h3><ul><li>Water heater repair</li><li>Tank and tankless installation</li><li>Water heater flushing</li></ul></div>
+   <div class="card"><h3>Water &amp; gas</h3><ul><li>Water filtration and softeners</li><li>Gas line installation and repair</li><li>Outdoor plumbing</li></ul></div>
+   <div class="card"><h3>Upkeep</h3><ul><li>Plumbing system inspections</li><li>Drain maintenance</li><li>Water heater tune-ups</li></ul></div>
+  </div>
+ </div></section>
+
+ <section class="sec contact" id="contact"><div class="wrap">
+  <span class="label">Questions?</span>
+  <h2>Send a quick note and let's make plumbing magic together.</h2>
+  <p class="lead">Call or email Indy Roots Plumbing. Serving Sarasota, FL.</p>
+  <div class="tags">
+   <a class="tag" href="tel:+19417264547"><small>Call</small><b>(941) 726-4547</b></a>
+   <a class="tag" href="mailto:indyrootsplumbing@gmail.com"><small>Email</small><b>indyrootsplumbing@gmail.com</b></a>
+   <div class="tag"><small>Serving</small><b>Sarasota, FL</b></div>
+   <div class="tag"><small>License</small><b>State-certified plumbing contractor CFC1434468</b></div>
+  </div>
+ </div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Indy Roots Plumbing, LLC · Sarasota, FL · LIC # CFC1434468</span><span>Draft site by Clear Web Studio</span></div></footer>
+</body>
+</html>
