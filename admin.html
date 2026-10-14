@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f766e">
+  <title>Clear Web Studio – Admin Dashboard</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <a class="skip-link" href="#overview">Skip to dashboard overview</a>
+
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <div class="admin-brand-wrap">
+        <a class="admin-brand" href="#overview" aria-label="Clear Web Studio Admin Dashboard">
+          <img class="logo-mark" src="assets/logo.svg" alt="" width="28" height="28">
+          <span>Clear Web Studio – Admin Dashboard</span>
+        </a>
+        <p class="admin-note">Private – for internal use only</p>
+      </div>
+
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <a href="#overview">Overview</a>
+        <a href="#prospects">Prospects</a>
+        <a href="#projects">Projects</a>
+        <a href="#payments">Payments</a>
+        <a href="#billing">PayPal</a>
+        <a href="#sync">Sync</a>
+        <a href="#hosting">Hosting &amp; Domains</a>
+        <a class="admin-back" href="https://jollymreiscream.github.io/clear-web-studio/">← Public site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="admin-section" id="overview" aria-labelledby="overview-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h1 id="overview-heading">Overview</h1>
+          <p class="admin-section-sub">At-a-glance status across clients, cash flow, and renewals.</p>
+        </div>
+      </div>
+      <div class="stat-grid" id="overview-stats" aria-live="polite"></div>
+    </section>
+
+    <section class="admin-section" id="prospects" aria-labelledby="prospects-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Pipeline</p>
+          <h2 id="prospects-heading">Prospects</h2>
+          <p class="admin-section-sub">Find opportunities with Google Places, then save outreach notes. Saved data syncs to GitHub when connected.</p>
+        </div>
+        <button class="btn btn-secondary" type="button" id="btn-prospect-settings">API key</button>
+      </div>
+
+      <div class="stat-grid stat-grid-compact" id="prospect-stats" aria-live="polite"></div>
+
+      <form class="prospect-search-panel" id="prospect-search-form">
+        <div class="form-grid">
+          <label class="form-field" for="prospect-category">
+            <span>Category</span>
+            <select class="select" id="prospect-category" name="prospect-category">
+              <option value="restaurant">Restaurants</option>
+              <option value="coffee shop">Coffee shops</option>
+              <option value="landscaper">Landscapers</option>
+              <option value="contractor">Contractors</option>
+              <option value="salon">Salons</option>
+              <option value="dentist">Dentists</option>
+              <option value="custom">Custom search</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="prospect-area">
+            <span>Area</span>
+            <input class="input" id="prospect-area" name="prospect-area" type="text" placeholder="City, region, or ZIP">
+          </label>
+
+          <label class="form-field" for="prospect-custom-query">
+            <span>Custom query</span>
+            <input class="input" id="prospect-custom-query" name="prospect-custom-query" type="text" placeholder="Optional search phrase">
+          </label>
+
+          <label class="form-field" for="prospect-website-filter">
+            <span>Website filter</span>
+            <select class="select" id="prospect-website-filter" name="prospect-website-filter">
+              <option value="no-website">No website</option>
+              <option value="outdated">Outdated website</option>
+              <option value="any-opportunity">Any opportunity</option>
+              <option value="all">All results</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="toolbar toolbar-between">
+          <div class="toolbar-actions">
+            <button class="btn btn-primary" type="submit" id="btn-prospect-search">Search Places</button>
+            <button class="btn btn-secondary" type="button" id="btn-prospect-maps">Open in Maps</button>
+          </div>
+          <p class="status-text" id="prospect-search-status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <div class="admin-section-head admin-section-head-tight">
+        <div>
+          <h3>Saved prospects</h3>
+          <p class="admin-section-sub">Track outreach status and website opportunities.</p>
+        </div>
+        <button class="btn btn-secondary" type="button" id="btn-add-prospect-manual">Add prospect</button>
+      </div>
+
+      <div class="toolbar">
+        <label class="sr-only" for="prospect-list-search">Search saved prospects</label>
+        <input class="input" id="prospect-list-search" type="search" placeholder="Search saved prospects">
+
+        <label class="sr-only" for="prospect-status-filter">Filter prospect status</label>
+        <select class="select" id="prospect-status-filter">
+          <option value="all">All statuses</option>
+          <option value="new">New</option>
+          <option value="contacted">Contacted</option>
+          <option value="follow-up">Follow-up</option>
+          <option value="qualified">Qualified</option>
+          <option value="not-fit">Not a fit</option>
+        </select>
+
+        <label class="sr-only" for="prospect-opportunity-filter">Filter opportunity</label>
+        <select class="select" id="prospect-opportunity-filter">
+          <option value="all">All opportunities</option>
+          <option value="no-website">No website</option>
+          <option value="outdated">Outdated website</option>
+          <option value="maintenance">Maintenance</option>
+          <option value="redesign">Redesign</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table" id="prospects-table">
+          <caption class="sr-only">Saved prospects</caption>
+          <thead>
+            <tr>
+              <th scope="col">Business</th>
+              <th scope="col">Category</th>
+              <th scope="col">Area</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Website</th>
+              <th scope="col">Status</th>
+              <th scope="col">Opportunity</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="prospects-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="admin-section-head admin-section-head-tight">
+        <div>
+          <h3>Latest search results</h3>
+          <p class="admin-section-sub">Review Google Places matches before saving them to your list.</p>
+        </div>
+        <button class="btn btn-secondary" type="button" id="btn-prospect-save-filtered">Save filtered</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Latest prospect search results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Business</th>
+              <th scope="col">Category</th>
+              <th scope="col">Area</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Website</th>
+              <th scope="col">Opportunity</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="prospect-results-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-section" id="projects" aria-labelledby="projects-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Client work</p>
+          <h2 id="projects-heading">Projects</h2>
+          <p class="admin-section-sub">Track active builds, launch status, payment milestones, and maintenance handoff.</p>
+        </div>
+        <button class="btn btn-primary" type="button" id="btn-add-project">Add project</button>
+      </div>
+
+      <div class="toolbar">
+        <label class="sr-only" for="project-search">Search projects</label>
+        <input class="input" id="project-search" type="search" placeholder="Search clients, businesses, domains">
+
+        <label class="sr-only" for="project-status-filter">Filter project status</label>
+        <select class="select" id="project-status-filter">
+          <option value="all">All statuses</option>
+          <option value="lead">Lead</option>
+          <option value="proposal">Proposal</option>
+          <option value="active">Active</option>
+          <option value="review">Review</option>
+          <option value="launched">Launched</option>
+          <option value="paused">Paused</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Projects</caption>
+          <thead>
+            <tr>
+              <th scope="col">Client</th>
+              <th scope="col">Business</th>
+              <th scope="col">Status</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Deposit</th>
+              <th scope="col">Final</th>
+              <th scope="col">Maintenance</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="projects-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-section" id="payments" aria-labelledby="payments-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Cash flow</p>
+          <h2 id="payments-heading">Payments</h2>
+          <p class="admin-section-sub">Create payment records and use Email invoice to send PayPal payment requests.</p>
+        </div>
+        <button class="btn btn-primary" type="button" id="btn-add-payment">Add payment</button>
+      </div>
+
+      <div class="stat-grid stat-grid-compact" id="payment-stats" aria-live="polite"></div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Payments</caption>
+          <thead>
+            <tr>
+              <th scope="col">Client</th>
+              <th scope="col">Type</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Due</th>
+              <th scope="col">Paid</th>
+              <th scope="col">Date paid</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="payments-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="admin-section" id="billing" aria-labelledby="billing-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Billing</p>
+          <h2 id="billing-heading">PayPal &amp; Invoices</h2>
+          <p class="admin-section-sub">Save the PayPal username used when generating invoice email links.</p>
+        </div>
+      </div>
+
+      <form class="billing-panel" id="billing-settings-form">
+        <div class="form-grid">
+          <label class="form-field" for="settings-paypal-username">
+            <span>PayPal username</span>
+            <input class="input" id="settings-paypal-username" name="settings-paypal-username" type="text" autocomplete="username" placeholder="your-paypal-username">
+            <span class="field-hint">Use the username or PayPal.me slug for payment links.</span>
+          </label>
+
+          <div class="form-field">
+            <span>PayPal link preview</span>
+            <output class="input input-output" id="settings-paypal-link">https://paypal.me/</output>
+            <span class="field-hint">This preview updates from the saved billing username.</span>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <button class="btn btn-primary" type="submit">Save PayPal Settings</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="admin-section" id="sync" aria-labelledby="sync-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Portable data</p>
+          <h2 id="sync-heading">Cloud sync</h2>
+          <p class="admin-section-sub">Saves dashboard data to your private GitHub repo so it follows you across browsers and URLs.</p>
+        </div>
+      </div>
+
+      <form class="sync-panel" id="sync-settings-form">
+        <label class="form-field form-field-full" for="settings-github-token">
+          <span>GitHub token</span>
+          <input class="input" id="settings-github-token" name="settings-github-token" type="password" autocomplete="off" placeholder="ghp_...">
+          <span class="field-hint">Create a classic PAT with <code>repo</code> scope (or fine-grained Contents read/write on JollyMrEiscream/clear-web-studio-admin). Token stays in this browser only — never written to the repo.</span>
+        </label>
+
+        <p class="sync-status-idle" id="sync-status" aria-live="polite">Sync is not connected yet.</p>
+
+        <div class="toolbar">
+          <button class="btn btn-primary" type="submit">Save token</button>
+          <button class="btn btn-secondary" type="button" id="btn-sync-now">Sync now</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="admin-section" id="hosting" aria-labelledby="hosting-heading">
+      <div class="admin-section-head">
+        <div>
+          <p class="eyebrow">Renewals</p>
+          <h2 id="hosting-heading">Hosting &amp; Domains</h2>
+          <p class="admin-section-sub">Monitor hosting plans, registrar details, auto-renewal status, and upcoming domain dates.</p>
+        </div>
+        <button class="btn btn-primary" type="button" id="btn-add-hosting">Add hosting</button>
+      </div>
+
+      <div class="stat-grid stat-grid-compact" id="hosting-stats" aria-live="polite"></div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Hosting and domain renewals</caption>
+          <thead>
+            <tr>
+              <th scope="col">Client</th>
+              <th scope="col">Domain</th>
+              <th scope="col">Provider</th>
+              <th scope="col">Plan</th>
+              <th scope="col">Hosting renewal</th>
+              <th scope="col">Registrar</th>
+              <th scope="col">Domain renewal</th>
+              <th scope="col">Auto-renew</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="hosting-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="project-modal">
+    <form class="modal-form" id="project-form" method="dialog">
+      <div class="modal-header">
+        <h3>Project details</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close project dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <input id="project-id" name="project-id" type="hidden">
+        <div class="form-grid">
+          <label class="form-field" for="project-clientName">
+            <span>Client name</span>
+            <input class="input" id="project-clientName" name="project-clientName" type="text" autocomplete="name" required>
+          </label>
+
+          <label class="form-field" for="project-businessName">
+            <span>Business name</span>
+            <input class="input" id="project-businessName" name="project-businessName" type="text" required>
+          </label>
+
+          <label class="form-field" for="project-clientEmail">
+            <span>Client email</span>
+            <input class="input" id="project-clientEmail" name="project-clientEmail" type="email" autocomplete="email">
+          </label>
+
+          <label class="form-field" for="project-status">
+            <span>Status</span>
+            <select class="select" id="project-status" name="project-status">
+              <option value="lead">Lead</option>
+              <option value="proposal">Proposal</option>
+              <option value="active">Active</option>
+              <option value="review">Review</option>
+              <option value="launched">Launched</option>
+              <option value="paused">Paused</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="project-domain">
+            <span>Domain</span>
+            <input class="input" id="project-domain" name="project-domain" type="text" placeholder="example.com">
+          </label>
+
+          <label class="form-field" for="project-siteGround">
+            <span>SiteGround account</span>
+            <input class="input" id="project-siteGround" name="project-siteGround" type="text">
+          </label>
+
+          <label class="form-field form-field-check" for="project-depositPaid">
+            <input id="project-depositPaid" name="project-depositPaid" type="checkbox">
+            <span>Deposit paid</span>
+          </label>
+
+          <label class="form-field" for="project-depositDate">
+            <span>Deposit date</span>
+            <input class="input" id="project-depositDate" name="project-depositDate" type="date">
+          </label>
+
+          <label class="form-field" for="project-finalDue">
+            <span>Final due</span>
+            <input class="input" id="project-finalDue" name="project-finalDue" type="date">
+          </label>
+
+          <label class="form-field form-field-check" for="project-finalPaid">
+            <input id="project-finalPaid" name="project-finalPaid" type="checkbox">
+            <span>Final paid</span>
+          </label>
+
+          <label class="form-field" for="project-finalPaidDate">
+            <span>Final paid date</span>
+            <input class="input" id="project-finalPaidDate" name="project-finalPaidDate" type="date">
+          </label>
+
+          <label class="form-field form-field-check" for="project-maintenance">
+            <input id="project-maintenance" name="project-maintenance" type="checkbox">
+            <span>Maintenance active</span>
+          </label>
+
+          <label class="form-field" for="project-maintenanceStart">
+            <span>Maintenance start</span>
+            <input class="input" id="project-maintenanceStart" name="project-maintenanceStart" type="date">
+          </label>
+
+          <label class="form-field" for="project-nextMaintenance">
+            <span>Next maintenance</span>
+            <input class="input" id="project-nextMaintenance" name="project-nextMaintenance" type="date">
+          </label>
+
+          <label class="form-field form-field-full" for="project-notes">
+            <span>Notes</span>
+            <textarea class="input" id="project-notes" name="project-notes" rows="4"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="payment-modal">
+    <form class="modal-form" id="payment-form" method="dialog">
+      <div class="modal-header">
+        <h3>Payment details</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close payment dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <input id="payment-id" name="payment-id" type="hidden">
+        <div class="form-grid">
+          <label class="form-field" for="payment-clientId">
+            <span>Client</span>
+            <select class="select" id="payment-clientId" name="payment-clientId" required>
+              <option value="">Select a project</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="payment-type">
+            <span>Type</span>
+            <select class="select" id="payment-type" name="payment-type">
+              <option value="Deposit">Deposit</option>
+              <option value="Final">Final</option>
+              <option value="Maintenance">Maintenance</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="payment-amount">
+            <span>Amount</span>
+            <input class="input" id="payment-amount" name="payment-amount" type="number" min="0" step="0.01" inputmode="decimal">
+          </label>
+
+          <label class="form-field" for="payment-dueDate">
+            <span>Due date</span>
+            <input class="input" id="payment-dueDate" name="payment-dueDate" type="date">
+          </label>
+
+          <label class="form-field form-field-check" for="payment-paid">
+            <input id="payment-paid" name="payment-paid" type="checkbox">
+            <span>Paid</span>
+          </label>
+
+          <label class="form-field" for="payment-datePaid">
+            <span>Date paid</span>
+            <input class="input" id="payment-datePaid" name="payment-datePaid" type="date">
+          </label>
+
+          <label class="form-field form-field-full" for="payment-notes">
+            <span>Notes</span>
+            <textarea class="input" id="payment-notes" name="payment-notes" rows="4"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="hosting-modal">
+    <form class="modal-form" id="hosting-form" method="dialog">
+      <div class="modal-header">
+        <h3>Hosting &amp; domain details</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close hosting dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <input id="hosting-id" name="hosting-id" type="hidden">
+        <div class="form-grid">
+          <label class="form-field" for="hosting-clientId">
+            <span>Client</span>
+            <select class="select" id="hosting-clientId" name="hosting-clientId" required>
+              <option value="">Select a project</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="hosting-domain">
+            <span>Domain</span>
+            <input class="input" id="hosting-domain" name="hosting-domain" type="text" placeholder="example.com">
+          </label>
+
+          <label class="form-field" for="hosting-provider">
+            <span>Hosting provider</span>
+            <input class="input" id="hosting-provider" name="hosting-provider" type="text" value="SiteGround">
+          </label>
+
+          <label class="form-field" for="hosting-plan">
+            <span>Hosting plan</span>
+            <input class="input" id="hosting-plan" name="hosting-plan" type="text">
+          </label>
+
+          <label class="form-field" for="hosting-renewal">
+            <span>Hosting renewal</span>
+            <input class="input" id="hosting-renewal" name="hosting-renewal" type="date">
+          </label>
+
+          <label class="form-field" for="hosting-registrar">
+            <span>Registrar</span>
+            <input class="input" id="hosting-registrar" name="hosting-registrar" type="text">
+          </label>
+
+          <label class="form-field" for="hosting-domainRenewal">
+            <span>Domain renewal</span>
+            <input class="input" id="hosting-domainRenewal" name="hosting-domainRenewal" type="date">
+          </label>
+
+          <label class="form-field form-field-check" for="hosting-autoRenew">
+            <input id="hosting-autoRenew" name="hosting-autoRenew" type="checkbox">
+            <span>Auto-renew enabled</span>
+          </label>
+
+          <label class="form-field form-field-full" for="hosting-notes">
+            <span>Notes</span>
+            <textarea class="input" id="hosting-notes" name="hosting-notes" rows="4"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="prospect-settings-modal">
+    <form class="modal-form" id="prospect-settings-form" method="dialog">
+      <div class="modal-header">
+        <h3>Google Places API key</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close prospect settings dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <label class="form-field form-field-full" for="settings-places-key">
+          <span>Places API key</span>
+          <input class="input" id="settings-places-key" name="settings-places-key" type="password" autocomplete="off">
+          <span class="field-hint">Enable Google Places API for your key. The key is stored in this browser only.</span>
+        </label>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="prospect-modal">
+    <form class="modal-form" id="prospect-form" method="dialog">
+      <div class="modal-header">
+        <h3>Prospect details</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close prospect dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <input id="prospect-id" name="prospect-id" type="hidden">
+        <div class="form-grid">
+          <label class="form-field" for="prospect-name">
+            <span>Business name</span>
+            <input class="input" id="prospect-name" name="prospect-name" type="text" required>
+          </label>
+
+          <label class="form-field" for="prospect-category-input">
+            <span>Category</span>
+            <input class="input" id="prospect-category-input" name="prospect-category-input" type="text">
+          </label>
+
+          <label class="form-field" for="prospect-area-input">
+            <span>Area</span>
+            <input class="input" id="prospect-area-input" name="prospect-area-input" type="text">
+          </label>
+
+          <label class="form-field" for="prospect-phone">
+            <span>Phone</span>
+            <input class="input" id="prospect-phone" name="prospect-phone" type="tel">
+          </label>
+
+          <label class="form-field form-field-full" for="prospect-address">
+            <span>Address</span>
+            <input class="input" id="prospect-address" name="prospect-address" type="text">
+          </label>
+
+          <label class="form-field" for="prospect-website">
+            <span>Website</span>
+            <input class="input" id="prospect-website" name="prospect-website" type="url" placeholder="https://">
+          </label>
+
+          <label class="form-field" for="prospect-maps-url">
+            <span>Google Maps URL</span>
+            <input class="input" id="prospect-maps-url" name="prospect-maps-url" type="url" placeholder="https://maps.google.com/...">
+          </label>
+
+          <label class="form-field" for="prospect-status-input">
+            <span>Status</span>
+            <select class="select" id="prospect-status-input" name="prospect-status-input">
+              <option value="new">New</option>
+              <option value="contacted">Contacted</option>
+              <option value="follow-up">Follow-up</option>
+              <option value="qualified">Qualified</option>
+              <option value="not-fit">Not a fit</option>
+            </select>
+          </label>
+
+          <label class="form-field" for="prospect-opportunity-input">
+            <span>Opportunity</span>
+            <select class="select" id="prospect-opportunity-input" name="prospect-opportunity-input">
+              <option value="no-website">No website</option>
+              <option value="outdated">Outdated website</option>
+              <option value="maintenance">Maintenance</option>
+              <option value="redesign">Redesign</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </label>
+
+          <label class="form-field form-field-full" for="prospect-notes-input">
+            <span>Notes</span>
+            <textarea class="input" id="prospect-notes-input" name="prospect-notes-input" rows="4"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="invoice-modal">
+    <form class="modal-form" id="invoice-form" method="dialog">
+      <div class="modal-header">
+        <h3>Email invoice</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close invoice dialog">×</button>
+      </div>
+
+      <div class="modal-body">
+        <input id="invoice-payment-id" name="invoice-payment-id" type="hidden">
+        <div class="form-grid">
+          <label class="form-field" for="invoice-to">
+            <span>To</span>
+            <input class="input" id="invoice-to" name="invoice-to" type="email" autocomplete="email">
+          </label>
+
+          <label class="form-field" for="invoice-subject">
+            <span>Subject</span>
+            <input class="input" id="invoice-subject" name="invoice-subject" type="text">
+          </label>
+
+          <label class="form-field form-field-full" for="invoice-body">
+            <span>Email body</span>
+            <textarea class="input" id="invoice-body" name="invoice-body" rows="8"></textarea>
+          </label>
+
+          <div class="form-field form-field-full">
+            <span>PayPal preview</span>
+            <output class="input input-output" id="invoice-paypal-preview"></output>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer modal-footer-wrap">
+        <button class="btn btn-secondary" type="button" id="btn-invoice-refresh">Refresh preview</button>
+        <button class="btn btn-secondary" type="button" id="btn-invoice-copy">Copy email</button>
+        <a class="btn btn-primary" id="btn-invoice-mailto" href="mailto:">Open email</a>
+        <button class="btn btn-secondary" type="button" data-close>Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="admin.js"></script>
+</body>
+</html>
