@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Deli Cafe &amp; Catering | Paninis, Sandwiches &amp; Catering in Downtown Bradenton</title>
+  <meta name="description" content="Family-owned downtown Bradenton deli: pressed paninis, specialty sandwiches and breakfast all day at 531 13th St W. Catering for 5 to 100+ with free delivery to local businesses. Order online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Albert+Sans:wght@400;500;600;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sweet Deli Cafe & Catering",
+    "servesCuisine": "Deli, Sandwiches, Breakfast",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "531 13th St W",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL",
+      "postalCode": "34205",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-941-330-6509",
+    "email": "sweetdelicafe@gmail.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:30",
+        "closes": "15:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "hasMenu": "https://sweet-deli-cafe-catering.square.site/",
+    "acceptsReservations": false,
+    "sameAs": "https://facebook.com/110197851577958"
+  }
+  </script>
+  <style>
+    :root {
+      --mustard: #F2C230;
+      --mustard-dk: #D9A814;
+      --deli: #FFF6D6;
+      --paper: #FFFDF7;
+      --pickle: #4E7D3A;
+      --pickle-dk: #3A5F2B;
+      --rye: #5A3420;
+      --tomato: #D9452B;
+      --tomato-ink: #9E2E1C;
+      --ink: #24201C;
+      --muted: #6B6158;
+      --line: #EADFC4;
+      --display: "Bagel Fat One", "Arial Rounded MT Bold", system-ui, sans-serif;
+      --sans: "Albert Sans", system-ui, sans-serif;
+      --ticket: "Courier Prime", ui-monospace, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 1.05rem; line-height: 1.55; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--pickle-dk); }
+    :focus-visible { outline: 3px solid var(--pickle); outline-offset: 3px; }
+    h1, h2 { font-family: var(--display); font-weight: 400; color: var(--rye); line-height: 1.15; margin: 0; letter-spacing: 0.01em; }
+    h1 { font-size: clamp(2.1rem, 6vw, 3.5rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    h3 { font-family: var(--sans); font-weight: 800; margin: 0; font-size: 1.15rem; }
+    .skip { position: absolute; left: 12px; top: -48px; z-index: 80; background: var(--mustard); color: var(--rye); font-weight: 800; padding: 0.7rem 1rem; text-decoration: none; }
+    .skip:focus { top: 12px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    section[id] { scroll-margin-top: 5.4rem; }
+    .checks { height: 14px; background: conic-gradient(var(--mustard) 25%, var(--deli) 0 50%, var(--mustard) 0 75%, var(--deli) 0) 0 0 / 28px 28px; }
+
+    .utility { background: var(--rye); color: var(--deli); font-size: 0.92rem; }
+    .utility .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.1rem; padding: 0.5rem 0; text-align: center; }
+    .utility a { color: var(--mustard); font-weight: 700; }
+
+    .site-header { position: sticky; top: 0; z-index: 40; background: var(--paper); }
+    .header-inner { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0; }
+    .brand { font-family: var(--display); color: var(--rye); text-decoration: none; font-size: 1.35rem; line-height: 1; flex: none; }
+    .nav { display: flex; gap: 0.1rem; overflow-x: auto; flex: 1; min-width: 0; }
+    .nav a { flex: none; color: var(--rye); text-decoration: none; font-weight: 600; padding: 0.55rem 0.6rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .nav a:hover { color: var(--pickle-dk); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.05rem;
+      border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid transparent; font-family: var(--sans); font-size: 1rem;
+    }
+    .btn-order { background: var(--mustard); color: var(--rye); }
+    .btn-order:hover { background: var(--mustard-dk); color: var(--rye); }
+    .btn-call { background: var(--pickle); color: #fff; }
+    .btn-call:hover { background: var(--pickle-dk); color: #fff; }
+    .btn-line { background: transparent; color: var(--pickle-dk); border-color: var(--pickle); }
+    .btn-line:hover { background: var(--pickle); color: #fff; }
+    .header-order { flex: none; }
+
+    .hero { padding: 1.6rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "copy visual" "actions visual"; gap: 0.4rem 1.6rem; align-items: center; }
+    .hero-copy { grid-area: copy; }
+    .hero-visual { grid-area: visual; }
+    .hero-actions { grid-area: actions; align-self: start; }
+    .eyebrow { font-family: var(--ticket); font-weight: 700; letter-spacing: 0.08em; color: var(--pickle-dk); margin: 0 0 0.55rem; font-size: 0.85rem; }
+    .lede { font-size: 1.08rem; max-width: 46ch; margin: 0.75rem 0 1rem; }
+    .ticket {
+      display: inline-block; font-family: var(--ticket); background: #fff; border: 1px dashed var(--rye);
+      padding: 0.45rem 0.7rem; margin: 0 0 1rem; font-weight: 700;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+    .text-link { font-weight: 800; color: var(--pickle-dk); }
+    .hero-visual { position: relative; }
+    .hero-main { width: 100%; border-radius: 16px; object-fit: cover; aspect-ratio: 16/9; }
+    .hero-frame { position: relative; }
+    .hero-frame::after {
+      content: ""; position: absolute; top: 0; right: 0; width: 56px; height: 56px;
+      background: conic-gradient(var(--mustard) 25%, var(--deli) 0 50%, var(--mustard) 0 75%, var(--deli) 0) 0 0 / 14px 14px;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+    .sticker {
+      position: absolute; left: 12px; bottom: 12px; background: var(--mustard); color: var(--rye);
+      font-family: var(--ticket); font-weight: 700; font-size: 0.78rem; padding: 0.45rem 0.6rem; border-radius: 4px;
+      max-width: 16rem; transform: rotate(-2deg);
+    }
+    .hero-secondary {
+      position: absolute; width: 42%; right: -4%; bottom: -10%; border-radius: 12px; border: 4px solid var(--paper);
+      box-shadow: 0 10px 24px rgba(90,52,32,0.18); object-fit: cover; aspect-ratio: 1;
+    }
+
+    .band { padding: 2.8rem 0; }
+    .intro { max-width: 62ch; margin: 0.7rem 0 0; }
+    .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 1.3rem; }
+    .plate { background: var(--deli); border-radius: 14px; overflow: hidden; position: relative; display: flex; flex-direction: column; }
+    .plate::before {
+      content: ""; position: absolute; top: 0; right: 0; width: 36px; height: 36px; z-index: 1;
+      background: conic-gradient(var(--mustard) 25%, var(--deli) 0 50%, var(--mustard) 0 75%, var(--deli) 0) 0 0 / 12px 12px;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+    .plate img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .plate .body { padding: 0.85rem 0.9rem 1rem; display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .tag { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; border-radius: 999px; padding: 0.15rem 0.45rem; }
+    .tag.top { background: var(--pickle); color: #fff; }
+    .tag.hot { background: #fff; color: var(--tomato-ink); border: 1px solid var(--tomato-ink); }
+    .order-this { margin-top: auto; font-weight: 800; min-height: 44px; display: inline-flex; align-items: center; }
+    .pills { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.1rem 0 0; padding: 0; list-style: none; }
+    .pills li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 0.75rem; font-weight: 600; }
+    .strip { display: grid; grid-template-columns: 180px 1fr; gap: 1rem; align-items: center; background: var(--deli); border-radius: 14px; overflow: hidden; margin-top: 0.9rem; }
+    .strip img { width: 100%; height: 100%; object-fit: cover; min-height: 120px; }
+    .strip p { margin: 0; padding: 0.9rem 1rem 0.9rem 0; }
+    .drinks { grid-template-columns: 110px 1fr; background: #fff; border: 1px solid var(--line); }
+    .menu-cta { margin-top: 1.1rem; }
+
+    .cater { padding-top: 0; }
+    .spec { font-family: var(--ticket); background: #fff; border: 1px dashed var(--rye); padding: 0.9rem 1rem; margin: 0; }
+    .spec div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.35rem 0; border-bottom: 1px dotted var(--line); }
+    .spec div:last-child { border-bottom: 0; }
+    .spec dt { font-weight: 700; letter-spacing: 0.04em; }
+    .spec dd { margin: 0; text-align: right; }
+    .cater-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1.2rem; align-items: center; }
+    .cater-grid img { width: 100%; border-radius: 14px; object-fit: cover; aspect-ratio: 4/3; }
+    .cater-quote { margin: 1rem 0 0; font-size: 1.05rem; }
+    .cater-quote footer { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+    .cater-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.9rem; }
+
+    .story-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1.2rem; align-items: center; margin-top: 1rem; }
+    .pull { font-family: var(--display); font-size: clamp(1.4rem, 3vw, 1.9rem); color: var(--rye); margin: 1rem 0; line-height: 1.25; }
+    .pull footer { font-family: var(--sans); font-size: 1rem; color: var(--muted); margin-top: 0.4rem; }
+    .stats { display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 0; margin: 0.6rem 0 0; list-style: none; }
+    .stats li { background: var(--deli); border-radius: 10px; padding: 0.55rem 0.7rem; font-weight: 700; }
+    .stat-num { color: var(--tomato-ink); font-family: var(--display); font-size: 1.4rem; }
+    .story-grid img { width: 100%; border-radius: 14px; object-fit: cover; aspect-ratio: 4/3; }
+
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1.1rem; }
+    .facts { display: grid; gap: 0.75rem; margin: 0; }
+    .facts dt { font-family: var(--ticket); font-size: 0.75rem; letter-spacing: 0.06em; color: var(--muted); }
+    .facts dd { margin: 0.15rem 0 0; font-weight: 600; }
+    .hours-note { color: var(--muted); font-weight: 500; font-size: 0.92rem; }
+    .map { width: 100%; height: 250px; border: 0; border-radius: 12px; }
+    .also { color: var(--muted); font-size: 0.92rem; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1.2rem; }
+    .quotes blockquote { margin: 0; background: var(--deli); border-radius: 12px; padding: 0.9rem; }
+    .quotes footer { color: var(--muted); font-size: 0.88rem; }
+
+    .site-footer { background: var(--rye); color: var(--deli); padding: 0 0 1.8rem; }
+    .site-footer .wrap { padding-top: 1.3rem; }
+    .site-footer a { color: var(--mustard); }
+    .credit { color: #e6d3b8; font-size: 0.88rem; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .menu-grid, .cater-grid, .story-grid, .visit-grid, .quotes { grid-template-columns: 1fr; }
+      .menu-grid { grid-template-columns: 1fr 1fr; }
+      .hero-secondary { position: static; width: 46%; margin-top: -2.2rem; margin-left: auto; }
+    }
+    @media (max-width: 600px) {
+      .menu-grid, .strip, .drinks { grid-template-columns: 1fr; }
+      .strip p { padding: 0.85rem 1rem 1rem; }
+      .hero-grid { display: flex; flex-direction: column; }
+      .hero-copy { order: 1; }
+      .hero-visual { order: 2; width: 100%; }
+      .hero-actions { order: 3; }
+      .hero-main { aspect-ratio: 4/3; }
+      .hero-secondary { display: none; }
+      .header-order { display: none; }
+      .dock {
+        display: grid; grid-template-columns: 3fr 2fr; position: fixed; inset: auto 0 0 0; z-index: 50;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock a { min-height: 52px; display: flex; align-items: center; justify-content: center; font-weight: 800; text-decoration: none; }
+      .dock .go-order { background: var(--mustard); color: var(--rye); }
+      .dock .go-call { background: var(--pickle); color: #fff; }
+      body { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 480px) {
+      .spec div { flex-direction: column; gap: 0.1rem; }
+      .spec dd { text-align: left; }
+      .utility .wrap { font-size: 0.8rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="utility">
+    <div class="wrap">
+      <span>Mon–Fri 7:30–3 · Sat 8–2</span>
+      <span>531 13th St W, Downtown Bradenton</span>
+      <a href="tel:+19413306509">(941) 330-6509</a>
+      <a href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order online →<span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Sweet Deli</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#story">Our story</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-order header-order" href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order online<span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+    <div class="checks" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Downtown Bradenton · 13th St W</p>
+          <h1 id="hero-heading">The local, downtown deli.</h1>
+          <p class="lede">Pressed paninis, stacked sandwiches and breakfast all day, made to order a few blocks from the courthouse. Family-owned by Kristen &amp; James. Order ahead and skip the lunch line.</p>
+          <p class="ticket" id="today-ticket">Mon–Fri 7:30–3 · Sat 8–2</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-order" href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order online<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn-call" href="tel:+19413306509">Call (941) 330-6509</a>
+          <a class="text-link" href="#catering">Catering for 5 to 100+ →</a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img class="hero-main" src="images/chipotle-chicken-cheddar.jpg" width="1200" height="563" alt="Chipotle Chicken Cheddar Panini, made to order at Sweet Deli Cafe in downtown Bradenton" fetchpriority="high">
+            <p class="sticker">Top seller · one regular has ordered it 74 times</p>
+          </div>
+          <img class="hero-secondary" src="images/bacon-guacamole-cheese-melt.jpg" width="1200" height="900" alt="Bacon Guacamole Cheese Melt, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="menu" aria-labelledby="menu-heading">
+      <div class="wrap">
+        <h2 id="menu-heading">What everybody orders</h2>
+        <p class="intro">Everything's made to order. Here are the regulars' favorites. The full live menu (and prices) is on our online ordering page. Their line for the Bacon Guacamole Cheese Melt: “It's not just a sandwich; it's a lifestyle choice.”</p>
+        <div class="menu-grid">
+          <article class="plate">
+            <img src="images/chipotle-chicken-cheddar.jpg" width="1200" height="563" alt="Chipotle Chicken Cheddar Panini, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <div class="tags"><span class="tag top">Top seller</span><span class="tag hot">Spicy</span></div>
+              <h3>Chipotle Chicken Cheddar Panini</h3>
+              <p>Chicken breast tossed in chipotle sauce with cheddar, pressed until melty. Fair warning: it's spicy.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/chipotle-chicken-cheddar-panini/YORRGNUHZX44I47W5UMKPJSZ" target="_blank" rel="noopener">Order this →<span class="sr-only"> Chipotle Chicken Cheddar Panini (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="plate">
+            <img src="images/chicken-pesto.jpg" width="1200" height="900" alt="Chicken Pesto Panini, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <div class="tags"><span class="tag top">Top seller</span></div>
+              <h3>Chicken Pesto Panini</h3>
+              <p>Grilled chicken, Swiss and our pesto, pressed golden.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/chicken-pesto-panini/CJRL7O6DMD6LGVFPHRAPIW33" target="_blank" rel="noopener">Order this →<span class="sr-only"> Chicken Pesto Panini (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="plate">
+            <img src="images/turkey-bacon-avocado.jpg" width="1200" height="900" alt="Turkey Bacon Avocado Panini, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <div class="tags"><span class="tag top">Top seller</span></div>
+              <h3>Turkey Bacon Avocado Panini</h3>
+              <p>Turkey, bacon, avocado and melty American, pressed to a crispy crunch.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/turkey-bacon-avocado-panini/E4MUUOYZJT6BY4CFSVGPXARH" target="_blank" rel="noopener">Order this →<span class="sr-only"> Turkey Bacon Avocado Panini (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="plate">
+            <img src="images/jammin-roast-beef.jpg" width="1200" height="800" alt="Jammin' Roast Beef, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <h3>Jammin' Roast Beef</h3>
+              <p>Roast beef, bacon jam, blue cheese, provolone, romaine and horseradish sauce on toasted sourdough.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/jammin-roast-beef/T5DAC64NM2JUIQYR36PY5HG5" target="_blank" rel="noopener">Order this →<span class="sr-only"> Jammin' Roast Beef (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="plate">
+            <img src="images/cuban.jpg" width="1200" height="912" alt="Cuban, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <h3>Cuban</h3>
+              <p>Roasted pork, ham, Swiss, pickles and yellow mustard on Cuban bread, pressed crisp.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/cuban/DZ7FZ7PPO7FQLSEWD5XRCMMD" target="_blank" rel="noopener">Order this →<span class="sr-only"> Cuban (opens in a new tab)</span></a>
+            </div>
+          </article>
+          <article class="plate">
+            <img src="images/bacon-guacamole-cheese-melt.jpg" width="1200" height="900" alt="Bacon Guacamole Cheese Melt, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+            <div class="body">
+              <h3>Bacon Guacamole Cheese Melt</h3>
+              <p>Guacamole, tomato, sharp cheddar and four slices of bacon, grilled on thick sourdough.</p>
+              <a class="order-this" href="https://sweet-deli-cafe-catering.square.site/product/bacon-guacamole-cheese-melt/BGYQM4RMYLO2Z2IZ6WMLW7RQ" target="_blank" rel="noopener">Order this →<span class="sr-only"> Bacon Guacamole Cheese Melt (opens in a new tab)</span></a>
+            </div>
+          </article>
+        </div>
+        <ul class="pills">
+          <li>Classic sandwiches: Reuben · BLT · Hot pastrami · Chicken salad · Egg salad</li>
+          <li>Wraps</li>
+          <li>Flatbread pizza</li>
+          <li>Soups &amp; salads</li>
+        </ul>
+        <div class="strip">
+          <img src="images/avocado-toast.jpg" width="1200" height="832" alt="Avocado toast, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+          <p><strong>Breakfast all day.</strong> Egg croissants, the breakfast burrito, avocado toast and the Big Breakfast Sandwich, whenever you want them.</p>
+        </div>
+        <div class="strip drinks">
+          <img src="images/iced-latte.jpg" width="659" height="1000" alt="Iced latte, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+          <p>Hot coffee &amp; tea, iced and frozen drinks (regulars swear by the vanilla frappé), smoothies, plus beer &amp; wine.</p>
+        </div>
+        <p class="menu-cta"><a class="btn btn-order" href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">See the full menu &amp; order<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+    </section>
+
+    <section class="band cater" id="catering" aria-labelledby="catering-heading">
+      <div class="checks" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 id="catering-heading">Catering for 5 to 100+</h2>
+        <p class="intro">Breakfast meetings, office lunches, trainings and parties. We cater groups from five to more than a hundred, and <strong>delivery is free to local businesses</strong>. Courthouse, county building, law office down the block: we've got you.</p>
+        <div class="cater-grid">
+          <dl class="spec">
+            <div><dt>Guests</dt><dd>5 to 100+</dd></div>
+            <div><dt>Delivery</dt><dd>Free to local businesses</dd></div>
+            <div><dt>Coffee</dt><dd>Box of Joffrey's coffee, serves 10</dd></div>
+            <div><dt>Order by</dt><dd>Call for lead times.</dd></div>
+          </dl>
+          <img src="images/catering-spread.jpg" width="1200" height="837" alt="Croissant platter, fruit cup, and a box of coffee, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+        </div>
+        <blockquote class="cater-quote">
+          <p>Sweet Deli Cafe exceeded our expectations when catering our company meeting. The food was perfectly prepared &amp; organized with everything that we needed to make our breakfast sensational!</p>
+          <footer>Google review, Feb 2026</footer>
+        </blockquote>
+        <div class="cater-actions">
+          <a class="btn btn-call" href="tel:+19413306509">Call about catering</a>
+          <a class="btn btn-line" href="mailto:sweetdelicafe@gmail.com?subject=Catering%20request&amp;body=Date%3A%0AHeadcount%3A%0ADelivery%20address%3A%0AWhat%20you%27re%20thinking%3A">Email a catering request</a>
+          <a class="btn btn-order" href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order catering items online<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="story" aria-labelledby="story-heading" style="padding-top:0">
+      <div class="wrap">
+        <h2 id="story-heading">Proudly family owned</h2>
+        <div class="story-grid">
+          <div>
+            <p class="intro">Kristen and James Balderrama both came up in restaurants, then spent years as mortgage processors, until a corporate downsizing sent them looking for something new. Searching online, they found Sweet Deli for sale. “We stumbled upon it,” Kristen says. They bought it in July 2023, rebuilt the menu with friends and neighbors as taste-testers, and kept the cookies, muffins and Danishes regulars loved.</p>
+            <blockquote class="pull">
+              <p>We want to be known as the local, downtown deli.</p>
+              <footer>Kristen Balderrama</footer>
+            </blockquote>
+            <ul class="stats">
+              <li>Family owned since 2023 (current owners)</li>
+              <li><span class="stat-num">74×</span> one regular's Chipotle panini count</li>
+              <li>★ 4.7 · 180+ Google reviews</li>
+            </ul>
+          </div>
+          <img src="images/cookies.jpg" width="1200" height="900" alt="Chocolate chip cookies, made to order at Sweet Deli Cafe in downtown Bradenton" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="visit" aria-labelledby="visit-heading" style="padding-top:0">
+      <div class="wrap">
+        <h2 id="visit-heading">Find us on 13th Street</h2>
+        <div class="visit-grid">
+          <dl class="facts">
+            <div>
+              <dt>Address</dt>
+              <dd>531 13th St W<br>Bradenton, FL 34205<br>ground floor, below Lombardo Law Office</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+19413306509">(941) 330-6509</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:sweetdelicafe@gmail.com">sweetdelicafe@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Mon–Fri 7:30 AM–3:00 PM<br>Sat 8:00 AM–2:00 PM<br>Sun closed</dd>
+            </div>
+            <div>
+              <dt>Note</dt>
+              <dd class="hours-note">Saturday hours can change seasonally. Call to check.</dd>
+            </div>
+            <div>
+              <dt>Facebook</dt>
+              <dd><a href="https://facebook.com/110197851577958" target="_blank" rel="noopener">Sweet Deli on Facebook<span class="sr-only"> (opens in a new tab)</span></a></dd>
+            </div>
+          </dl>
+          <div>
+            <iframe class="map" title="Map to Sweet Deli Cafe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sweet+Deli+Cafe+531+13th+St+W+Bradenton+FL+34205&amp;output=embed"></iframe>
+            <p><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Sweet+Deli+Cafe+531+13th+St+W+Bradenton+FL+34205" style="margin-top:0.7rem">Get directions</a></p>
+            <p class="also">Also on <a href="https://www.grubhub.com/restaurant/sweet-deli-cafe-531-13th-st-w-bradenton/6593768" target="_blank" rel="noopener">Grubhub<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+          </div>
+        </div>
+        <div class="quotes">
+          <blockquote>
+            <p>Sweet Deli is hands down the best lunch spot for anyone working downtown.</p>
+            <footer>Google review, Aug 2025</footer>
+          </blockquote>
+          <blockquote>
+            <p>the chicken pesto panini was sooo good! My husband got the Cuban sandwich and he loved it too.</p>
+            <footer>Google review, Sept 2025</footer>
+          </blockquote>
+          <blockquote>
+            <p>Family owned and they have amazing customer service… They make everything fresh to order.</p>
+            <footer>Google review, Mar 2025</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="checks" aria-hidden="true"></div>
+    <div class="wrap">
+      <p>Sweet Deli Cafe &amp; Catering · 531 13th St W, Bradenton, FL 34205 · <a href="tel:+19413306509">(941) 330-6509</a> · <a href="mailto:sweetdelicafe@gmail.com">sweetdelicafe@gmail.com</a></p>
+      <p><a href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order online<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p class="credit">Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+
+  <div class="dock" aria-label="Quick actions">
+    <a class="go-order" href="https://sweet-deli-cafe-catering.square.site/" target="_blank" rel="noopener">Order</a>
+    <a class="go-call" href="tel:+19413306509">Call</a>
+  </div>
+
+  <script>
+    (function () {
+      var el = document.getElementById("today-ticket");
+      if (!el) return;
+      var day = new Date().getDay();
+      if (day === 0) el.textContent = "Closed Sundays";
+      else if (day === 6) el.textContent = "Open today 8 AM–2 PM";
+      else el.textContent = "Open today 7:30 AM–3 PM";
+    })();
+  </script>
+</body>
+</html>
