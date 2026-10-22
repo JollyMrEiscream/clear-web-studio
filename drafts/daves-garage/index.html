@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dave's Garage | Honest Auto Repair &amp; Tires in Venice, FL</title>
+  <meta name="description" content="Owner-run auto repair and tire shop at 305 Warfield Ave, Venice. Dave explains what's wrong and fixes what needs fixing. Mon–Fri 8–5. Call (941) 485-3787.">
+  <meta name="theme-color" content="#17181B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Dave's Garage",
+    "description": "Owner-run auto repair and tire shop in Venice, Florida.",
+    "telephone": "+1-941-485-3787",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "305 Warfield Ave",
+      "addressLocality": "Venice",
+      "addressRegion": "FL",
+      "postalCode": "34285",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.09631,
+      "longitude": -82.434809
+    },
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "member": {
+      "@type": "Person",
+      "name": "David Dore",
+      "jobTitle": "Owner"
+    },
+    "sameAs": "https://www.facebook.com/149717165071058"
+  }
+  </script>
+  <style>
+    :root {
+      --grease: #17181B;
+      --steel: #2B2E33;
+      --concrete: #E9E7E2;
+      --paper: #FFFDF8;
+      --shopred: #C8372D;
+      --shopred-dk: #A12A22;
+      --caution: #F2C230;
+      --ink: #1C1D20;
+      --muted: #5E6168;
+      --line: #CFCBC2;
+      --wrap: 1080px;
+      --sans: "IBM Plex Sans", system-ui, sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, monospace;
+      --display: Anton, Impact, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--concrete);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: var(--shopred-dk); }
+    a:hover { color: var(--shopred); }
+    h1, h2 {
+      font-family: var(--display);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      line-height: 1.02;
+      margin: 0;
+    }
+    h3 { font-family: var(--sans); font-size: 1.15rem; margin: 0 0 0.35rem; line-height: 1.25; }
+    p { margin: 0; }
+    .wrap { width: min(var(--wrap), calc(100% - 2rem)); margin-inline: auto; }
+    .mono { font-family: var(--mono); font-weight: 500; }
+    .skip {
+      position: absolute; left: 0.75rem; top: -3rem; z-index: 80;
+      background: var(--paper); color: var(--ink); padding: 0.6rem 0.9rem;
+      font-weight: 700; text-decoration: none;
+    }
+    .skip:focus { top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--shopred); outline-offset: 3px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    .utility {
+      background: var(--grease);
+      color: #E7E4DE;
+      font-family: var(--mono);
+      font-weight: 500;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+    }
+    .utility .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 0.35rem 1.25rem; padding: 0.5rem 0; text-align: center;
+    }
+    .utility a { color: #fff; text-decoration: none; font-weight: 600; }
+    .utility a:hover { text-decoration: underline; }
+
+    .site-header {
+      background: var(--steel);
+      color: #fff;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 0.75rem 1.25rem; padding: 0.75rem 0; flex-wrap: wrap;
+    }
+    .brand {
+      color: #fff; text-decoration: none; font-family: var(--display);
+      letter-spacing: 0.04em; font-size: 1.65rem; line-height: 1;
+    }
+    .brand small {
+      display: block; font-family: var(--mono); font-size: 0.68rem;
+      letter-spacing: 0.14em; color: #D5D2CB; margin-top: 0.25rem;
+    }
+    .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.35rem; }
+    .nav a {
+      color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+      padding: 0.55rem 0.7rem; min-height: 44px; display: inline-flex; align-items: center;
+    }
+    .nav a:hover { color: var(--caution); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      min-height: 44px; padding: 0.7rem 1.15rem; border-radius: 4px;
+      font-family: var(--sans); font-weight: 700; font-size: 1rem; line-height: 1.2;
+      text-decoration: none; border: 2px solid transparent; cursor: pointer;
+    }
+    .btn-primary { background: var(--shopred); color: #fff; }
+    .btn-primary:hover { background: var(--shopred-dk); color: #fff; }
+    .btn-ghost {
+      background: transparent; color: var(--ink); border-color: var(--grease);
+    }
+    .btn-ghost:hover { background: var(--grease); color: #fff; }
+    .nav .btn { color: #fff; }
+    .nav .btn:hover { color: #fff; background: var(--shopred-dk); }
+
+    .hazard {
+      height: 6px;
+      background: repeating-linear-gradient(45deg, var(--caution) 0 14px, var(--grease) 14px 28px);
+    }
+
+    .hero { position: relative; padding: 3.2rem 0 3.5rem; overflow: hidden; }
+    .noise { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.06; pointer-events: none; }
+    .hero-grid {
+      position: relative;
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center;
+    }
+    .eyebrow {
+      font-family: var(--mono); font-weight: 600; color: var(--shopred);
+      letter-spacing: 0.06em; font-size: 0.82rem; margin-bottom: 0.85rem;
+    }
+    .hero h1 { font-size: clamp(2.35rem, 4.6vw, 3.7rem); max-width: 14ch; margin-bottom: 1rem; }
+    .lede { font-size: 1.12rem; max-width: 42ch; margin-bottom: 1.4rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 1.25rem; }
+    .meta-row {
+      display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem;
+      font-family: var(--mono); font-weight: 500; font-size: 0.82rem; color: var(--muted);
+    }
+    .meta-row .star { color: var(--shopred); }
+
+    .ticket {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 8px 14px 0 rgba(23, 24, 27, 0.12);
+      transform: rotate(-2deg);
+      position: relative;
+      max-width: 420px;
+      justify-self: end;
+      width: 100%;
+    }
+    .ticket-band { height: 3px; background: var(--grease); }
+    .ticket-body { padding: 1rem 1.15rem 6.2rem; position: relative; }
+    .ticket-kicker {
+      font-family: var(--mono); font-weight: 600; font-size: 0.72rem;
+      letter-spacing: 0.16em; color: var(--muted); margin-bottom: 0.2rem;
+    }
+    .ticket .ro {
+      font-family: var(--mono); font-weight: 600; font-size: 1.35rem; margin-bottom: 0.85rem;
+    }
+    .ticket dl { margin: 0; display: grid; gap: 0.65rem; }
+    .ticket dt {
+      font-family: var(--mono); font-weight: 600; font-size: 0.68rem;
+      letter-spacing: 0.08em; color: var(--muted);
+    }
+    .ticket dd {
+      margin: 0.15rem 0 0;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--line);
+      font-family: var(--mono); font-weight: 500; font-size: 0.95rem;
+    }
+    .stamp {
+      width: 118px; height: 118px; color: var(--shopred);
+      position: absolute; right: 0.7rem; bottom: 0.55rem;
+      transform: rotate(8deg);
+      animation: thunk 0.45s cubic-bezier(.2, 1.4, .3, 1) both;
+    }
+    @keyframes thunk {
+      0% { transform: rotate(8deg) scale(1.4); opacity: 0; }
+      65% { transform: rotate(5deg) scale(0.96); opacity: 1; }
+      100% { transform: rotate(8deg) scale(1); opacity: 1; }
+    }
+
+    section { padding: 3.25rem 0; }
+    .sec-num {
+      font-family: var(--mono); font-weight: 600; color: var(--shopred);
+      letter-spacing: 0.08em; font-size: 0.85rem; margin-bottom: 0.45rem;
+    }
+    .section-head { margin-bottom: 1.5rem; max-width: 40rem; }
+    .section-head h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); margin-bottom: 0.6rem; }
+    .section-head p { color: var(--muted); }
+
+    .case {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--shopred);
+      padding: 1.5rem 1.4rem 1.4rem;
+      box-shadow: 0 10px 24px rgba(23, 24, 27, 0.05);
+    }
+    .case h2 { margin-bottom: 0.75rem; }
+    .case .frame { margin-bottom: 1rem; max-width: 62ch; }
+    blockquote {
+      margin: 0; padding: 0.2rem 0 0 1rem;
+      border-left: 3px solid var(--line);
+    }
+    blockquote p { font-size: 1.15rem; font-weight: 600; }
+    blockquote footer { margin-top: 0.55rem; color: var(--muted); font-size: 0.88rem; }
+
+    .cards {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 1.15rem 1.1rem 1.2rem;
+    }
+    .card svg { width: 42px; height: 42px; color: var(--grease); margin-bottom: 0.7rem; }
+    .tag {
+      font-family: var(--mono); font-weight: 600; font-size: 0.72rem;
+      letter-spacing: 0.1em; color: var(--shopred); margin-bottom: 0.35rem;
+    }
+    .card p { color: var(--muted); font-size: 0.98rem; }
+    .ask { margin-top: 1.1rem; }
+    .ask h3 { font-size: 0.95rem; margin-bottom: 0.55rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .chips span {
+      border: 1px dashed var(--line); background: var(--paper);
+      padding: 0.35rem 0.7rem; font-size: 0.9rem;
+    }
+
+    .why { background: var(--grease); color: #E7E4DE; }
+    .why h2 { color: #fff; font-size: clamp(1.9rem, 3.5vw, 2.7rem); margin-bottom: 1.4rem; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    .why-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 1.25rem 1.15rem 1.3rem;
+    }
+    .why-card .num {
+      font-family: var(--mono); font-weight: 600; color: var(--shopred);
+      font-size: 1.35rem; margin-bottom: 0.45rem;
+    }
+    .why-card h3 { color: #fff; }
+    .why-card p { color: #C8C5BE; font-size: 0.98rem; }
+    .why-card a { color: #fff; }
+    .rating-strip {
+      margin-top: 1.25rem;
+      font-family: var(--mono); font-weight: 600; letter-spacing: 0.04em; color: #fff;
+    }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .quote {
+      background: var(--paper); border: 1px solid var(--line); padding: 1.15rem 1.15rem 1rem;
+    }
+    .quote p { font-size: 1.02rem; }
+    .quote footer { margin-top: 0.7rem; color: var(--muted); font-size: 0.85rem; }
+    .more { margin-top: 1.1rem; font-weight: 700; }
+
+    .visit-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start;
+    }
+    .garage {
+      height: 84px; border: 2px solid var(--grease); background: var(--concrete);
+      position: relative; overflow: hidden; margin-bottom: 1rem;
+    }
+    .garage .door {
+      position: absolute; left: 0; right: 0; top: 0; height: 50%;
+      display: grid; grid-template-rows: repeat(6, 1fr); gap: 1px;
+      background: var(--line);
+    }
+    .garage .door span { background: var(--steel); }
+    .contact-panel {
+      background: var(--paper); border: 1px solid var(--line); padding: 1.4rem 1.3rem;
+    }
+    .contact-panel dl { margin: 0.4rem 0 0; display: grid; gap: 0.85rem; }
+    .contact-panel dt {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .contact-panel dd { margin: 0.12rem 0 0; font-weight: 600; }
+    .contact-panel dd.phone {
+      font-family: var(--display); font-size: clamp(1.8rem, 3vw, 2.4rem);
+      letter-spacing: 0.02em; font-weight: 400;
+    }
+    .contact-panel dd.phone a { color: var(--ink); text-decoration: none; }
+    .contact-panel dd.phone a:hover { color: var(--shopred); }
+    .contact-panel .note { color: var(--muted); font-weight: 500; font-size: 0.92rem; }
+    .visit-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.1rem; }
+    .map { aspect-ratio: 4 / 3; background: var(--steel); border: 1px solid var(--line); }
+    .map iframe { width: 100%; height: 100%; border: 0; }
+
+    .site-footer {
+      background: var(--grease); color: #C8C5BE; padding: 2rem 0 2.2rem; font-size: 0.92rem;
+    }
+    .site-footer .wrap { display: grid; gap: 0.45rem; }
+    .site-footer a { color: #fff; }
+    .credit { color: #A7A49C; }
+
+    .dock { display: none; }
+
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .hero-grid, .why-grid, .visit-grid, .quotes { grid-template-columns: 1fr; }
+      .ticket { justify-self: start; }
+      .hero { padding-top: 2.2rem; }
+    }
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr; }
+      .dock {
+        display: grid; grid-template-columns: 60% 40%;
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        min-height: 56px; padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock a {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 56px; text-decoration: none; font-weight: 700; color: #fff;
+      }
+      .dock .go { background: var(--shopred); }
+      .dock .go:hover { background: var(--shopred-dk); }
+      .dock .dir { background: var(--steel); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+      .site-footer { padding-bottom: 1.2rem; }
+    }
+    @media (max-width: 480px) {
+      .noise { display: none; }
+      .ticket { transform: none; width: 90%; }
+      .stamp { animation: none; }
+      .map { aspect-ratio: auto; height: 220px; }
+      .utility .wrap { font-size: 0.72rem; gap: 0.25rem 0.75rem; }
+      .hero h1 { font-size: clamp(2rem, 10vw, 2.5rem); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .stamp { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="utility">
+    <div class="wrap">
+      <span>Mon–Fri 8 AM–5 PM · Closed weekends</span>
+      <span>305 Warfield Ave, Venice</span>
+      <a href="tel:+19414853787">(941) 485-3787</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">DAVE'S GARAGE<small>VENICE · AUTO REPAIR</small></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why">Why Dave</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-primary" href="tel:+19414853787">Call</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- swap in Dave's own shop/bay photos when provided -->
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <svg class="noise" aria-hidden="true">
+        <filter id="speckle">
+          <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#speckle)"/>
+      </svg>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">305 WARFIELD AVE · VENICE · MON–FRI 8–5</p>
+          <h1 id="hero-heading">Honest auto repair in Venice. You talk to Dave.</h1>
+          <p class="lede">Dave's Garage is a small, owner-run shop. Dave looks at your car himself, tells you what's actually wrong, and explains it in plain English. No upsell, no runaround.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414853787">Call Dave (941) 485-3787</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dave%27s+Garage+305+Warfield+Ave+Venice+FL+34285">Get directions</a>
+          </div>
+          <p class="meta-row">
+            <span class="star">★ 5.0 on Google</span>
+            <span>Mon–Fri 8 AM–5 PM</span>
+            <span>FDACS reg. MV50850</span>
+          </p>
+        </div>
+
+        <!-- Illustrative repair order. Not a real customer. No price is shown. -->
+        <aside class="ticket" aria-label="Illustrative repair order, not a real customer">
+          <div class="ticket-band"></div>
+          <div class="ticket-body">
+            <p class="ticket-kicker">REPAIR ORDER</p>
+            <p class="ro">RO# 0001</p>
+            <dl>
+              <div>
+                <dt>CUSTOMER COMPLAINT</dt>
+                <dd>"Tire keeps losing air."</dd>
+              </div>
+              <div>
+                <dt>FOUND</dt>
+                <dd>screw in tread</dd>
+              </div>
+              <div>
+                <dt>RECOMMENDED</dt>
+                <dd>patch &amp; re-check</dd>
+              </div>
+              <div>
+                <dt>REPLACE TIRE?</dt>
+                <dd>NO</dd>
+              </div>
+            </dl>
+            <svg class="stamp" viewBox="0 0 160 160" aria-hidden="true">
+              <circle cx="80" cy="80" r="70" fill="none" stroke="currentColor" stroke-width="4"/>
+              <circle cx="80" cy="80" r="60" fill="none" stroke="currentColor" stroke-width="2"/>
+              <text x="80" y="74" text-anchor="middle" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600">TOLD THE</text>
+              <text x="80" y="98" text-anchor="middle" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600">TRUTH</text>
+            </svg>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="story" aria-labelledby="story-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <article class="case">
+          <h2 id="story-heading">A slow leak nobody could find.</h2>
+          <p class="frame">One customer's tire kept losing air, and another shop told them it couldn't be repaired. Their review of Dave starts like this:</p>
+          <blockquote>
+            <p>Dave is just one honest mechanic. I had a tire that was giving me fits...it had a slow leak that I could not locate for the life of me.</p>
+            <footer>Google review, Feb 2026</footer>
+          </blockquote>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="sec-num">02</p>
+          <h2 id="services-heading">What I work on</h2>
+          <p>Cars and trucks, everyday repairs and tires. Not sure if it's something I do? Call and ask.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4.2 4.2M32.8 32.8 37 37M37 11l-4.2 4.2M15.2 32.8 11 37" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <p class="tag">TIRES</p>
+            <h3>Flat &amp; slow-leak repair</h3>
+            <p>Can't find the leak? I'll track it down and repair it if it can be repaired.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M30 8c6 6 6 14 0 18l-8 8-4-4 8-8c2-2 2-6 0-8l-10 10-6-6 10-10c-2-2-6-2-8 0l-8 8-4-4 8-8c6-6 14-6 22 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <p class="tag">TIRES &amp; WHEELS</p>
+            <h3>Tires &amp; rims installed</h3>
+            <p>Mounting and installing tires and wheels.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="26" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 26l7-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 8v4M18 12l2 3M12 18l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p class="tag">REPAIR</p>
+            <h3>Diagnosis &amp; repair</h3>
+            <p>I'll find out what's really wrong and walk you through it before any work starts.</p>
+          </article>
+          <!-- Maintenance wording is from a directory that could not be re-verified. Confirm with Dave. -->
+          <article class="card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M18 8h12l-1 6h-10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M16 14h16l2 8c1 6-2 18-10 18s-11-12-10-18z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M20 28h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p class="tag">MAINTENANCE</p>
+            <h3>Maintenance</h3>
+            <p>Oil changes and scheduled service.</p>
+          </article>
+        </div>
+        <!-- Confirm with Dave before showing. Hidden in the pitch draft. -->
+        <div class="ask" data-confirm="true" hidden>
+          <h3>Also ask about</h3>
+          <div class="chips">
+            <span>Brakes</span>
+            <span>A/C</span>
+            <span>Alignment</span>
+            <span>Electrical</span>
+            <span>Exhaust</span>
+            <span>GM &amp; domestic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">Why people keep coming back</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="num">01</div>
+            <h3>You talk to the owner.</h3>
+            <p>Dave answers questions himself and explains what's going on with your car.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">02</div>
+            <h3>Straight answers.</h3>
+            <p>He tells you what needs fixing and doesn't sell you what you don't need.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">03</div>
+            <h3>Registered with the State of Florida.</h3>
+            <p>Dave's Garage is a registered motor vehicle repair shop with the Florida Department of Agriculture and Consumer Services (FDACS), registration MV50850. Confirm it on the <a href="https://csapp.fdacs.gov/cspublicapp/businesssearch/businesssearch.aspx">FDACS Business Lookup</a> (search MV50850).</p>
+          </article>
+        </div>
+        <p class="rating-strip">★ 5.0 on Google</p>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="sec-num">03</p>
+          <h2 id="reviews-heading">What customers say</h2>
+        </div>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Dave is honest, knowledgeable, and takes the time to explain exactly what's going on without any pressure or upselling. The work was done quickly, correctly, and at a fair price.</p>
+            <footer>Google review, Dec 2025</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Dave, the owner, is very knowledgeable and takes the time to explain everything clearly. The work was done in a timely manner without cutting corners, and I appreciated how efficient the whole process was.</p>
+            <footer>Google review, Sep 2025</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Go to this man as he is as honest as they get, fair, extremely knowledgeable…</p>
+            <footer>Google review, Dec 2024</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>I drive 2+ hours just to have my car serviced at his garage.</p>
+            <footer>Google review, Mar 2023</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Dave was honest and explained the process to me. Treated me and other customers with a great deal of respect.</p>
+            <footer>Google review, May 2020</footer>
+          </blockquote>
+        </div>
+        <p class="more"><a href="https://www.google.com/maps/search/?api=1&amp;query=Dave%27s+Garage+305+Warfield+Ave+Venice+FL+34285">Read more reviews on Google</a></p>
+      </div>
+    </section>
+
+    <section id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <!-- swap in Dave's own shop/bay photos when provided -->
+        <p class="sec-num">04</p>
+        <div class="garage" aria-hidden="true">
+          <div class="door"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="visit-grid">
+          <div class="contact-panel">
+            <h2 id="visit-heading">Come by the shop</h2>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd class="phone"><a href="tel:+19414853787">(941) 485-3787</a></dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>305 Warfield Ave, Venice, FL 34285</dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd class="mono">Mon–Fri 8:00 AM–5:00 PM · Sat–Sun closed</dd>
+              </div>
+              <div>
+                <dt>Note</dt>
+                <dd class="note">Hours can change, call ahead.</dd>
+              </div>
+            </dl>
+            <div class="visit-actions">
+              <a class="btn btn-primary" href="tel:+19414853787">Call Dave</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dave%27s+Garage+305+Warfield+Ave+Venice+FL+34285">Get directions</a>
+            </div>
+          </div>
+          <div class="map">
+            <iframe loading="lazy" title="Map to Dave's Garage" src="https://www.google.com/maps?q=305+Warfield+Ave,+Venice,+FL+34285&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Dave's Garage · 305 Warfield Ave, Venice, FL 34285 · <a href="tel:+19414853787">(941) 485-3787</a> · FDACS MV50850</p>
+      <p><a href="https://www.facebook.com/149717165071058" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p class="credit"><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Call or get directions">
+    <a class="go" href="tel:+19414853787">Call Dave</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Dave%27s+Garage+305+Warfield+Ave+Venice+FL+34285">Directions</a>
+  </nav>
+</body>
+</html>
