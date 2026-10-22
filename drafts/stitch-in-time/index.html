@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stitch In Time | Wedding Dress &amp; Bridal Alterations in North Port, FL</title>
+  <meta name="description" content="Bridal and formal alterations by Pam in North Port: hems, bustles, straps and something blue, plus everyday alterations and memory blankets. By appointment. Text (941) 405-0460.">
+  <meta name="theme-color" content="#4A2C3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stitch In Time",
+    "description": "Bridal and formal alterations and dressmaking in North Port, by appointment.",
+    "telephone": "+1-941-405-0460",
+    "email": "pamfrisk@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "North Port",
+      "addressRegion": "FL",
+      "postalCode": "34288",
+      "addressCountry": "US"
+    },
+    "areaServed": "North Port, FL",
+    "founder": "Pam Frisk",
+    "sameAs": "https://www.facebook.com/332473963559638"
+  }
+  </script>
+  <style>
+    :root {
+      --ivory: #FBF8F3;
+      --silk: #FFFFFF;
+      --blush: #EBCFC8;
+      --rose: #B5656A;
+      --plum: #4A2C3A;
+      --plum-dk: #361F2A;
+      --gold: #C2A161;
+      --ink: #2E2A2B;
+      --muted: #6F6668;
+      --line: #E7DED6;
+      --wrap: 1040px;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: Jost, system-ui, sans-serif;
+      --mono: "Space Mono", ui-monospace, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--ivory); color: var(--ink);
+      font-family: var(--sans); font-size: 17px; line-height: 1.6;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: var(--plum); }
+    h1, h2 {
+      font-family: var(--serif); font-weight: 500; color: var(--plum);
+      line-height: 1.05; margin: 0;
+    }
+    h3 { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; margin: 0 0 0.3rem; }
+    p { margin: 0; }
+    .wrap { width: min(var(--wrap), calc(100% - 2rem)); margin-inline: auto; }
+    .skip {
+      position: absolute; left: 0.75rem; top: -3rem; z-index: 80;
+      background: var(--silk); color: var(--plum); padding: 0.55rem 0.8rem; font-weight: 600; text-decoration: none;
+    }
+    .skip:focus { top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--plum); outline-offset: 3px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    .utility { background: var(--plum); color: var(--ivory); font-weight: 500; }
+    .utility .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem;
+      padding: 0.5rem 0; text-align: center; font-size: 0.95rem;
+    }
+    .utility a { color: var(--ivory); }
+
+    .site-header { background: var(--ivory); border-bottom: 1px solid var(--line); }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 0.75rem 1rem; padding: 0.7rem 0; flex-wrap: wrap;
+    }
+    .wordmark {
+      font-family: var(--serif); font-weight: 500; font-size: 2rem; color: var(--plum);
+      text-decoration: none; letter-spacing: 0.01em; line-height: 1;
+    }
+    .wordmark em { font-style: italic; font-weight: 500; }
+    .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.1rem 0.2rem; }
+    .nav a {
+      color: var(--ink); text-decoration: none; font-weight: 500;
+      min-height: 44px; padding: 0.45rem 0.6rem; display: inline-flex; align-items: center;
+    }
+    .nav a:hover { color: var(--plum); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 44px; padding: 0.7rem 1.15rem; text-decoration: none;
+      font-weight: 600; font-family: var(--sans); border: 2px solid transparent;
+    }
+    .btn-primary { background: var(--plum); color: var(--ivory); }
+    .btn-primary:hover { background: var(--plum-dk); color: var(--ivory); }
+    .btn-line { background: transparent; color: var(--plum); border-color: var(--plum); }
+    .btn-line:hover { background: var(--plum); color: var(--ivory); }
+    .btn-rose { background: var(--rose); color: var(--ivory); font-weight: 700; font-size: 1.125rem; }
+    .btn-rose:hover { background: var(--plum); color: var(--ivory); }
+    .text-link { font-weight: 600; }
+
+    .tape {
+      position: relative; height: 18px;
+      background:
+        repeating-linear-gradient(90deg, var(--gold) 0 1px, transparent 1px 50px),
+        repeating-linear-gradient(90deg, var(--gold) 0 1px, transparent 1px 10px),
+        #F3E9D2;
+    }
+    .tape-nums {
+      display: flex; justify-content: space-between;
+      font-family: var(--mono); font-size: 10px; color: var(--plum);
+      width: min(var(--wrap), calc(100% - 2rem)); margin: -16px auto 0; position: relative;
+      pointer-events: none;
+    }
+
+    .hero { padding: 2.4rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; align-items: center; }
+    .badge {
+      display: inline-block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+      border: 1px solid var(--gold); color: var(--plum); border-radius: 999px;
+      padding: 0.4rem 0.75rem; margin-bottom: 0.9rem;
+    }
+    .hero h1 { font-size: clamp(2.5rem, 5vw, 4.1rem); margin-bottom: 0.7rem; max-width: 16ch; }
+    .lede { max-width: 42ch; margin-bottom: 1.15rem; font-size: 1.05rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin-bottom: 0.9rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; color: var(--muted); }
+    .hero-panel {
+      background: #F6E4DF;
+      padding: 1.2rem 1rem 0.6rem; border: 1px solid var(--line);
+    }
+    .stitch {
+      stroke-dasharray: 6 5;
+      animation: sew 1.6s ease-out both;
+    }
+    @keyframes sew { from { stroke-dashoffset: 140; } to { stroke-dashoffset: 0; } }
+
+    section { padding: 2.6rem 0; }
+    .sec-num { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.12em; color: var(--rose); margin-bottom: 0.4rem; }
+    h2 { font-size: clamp(2.1rem, 4vw, 3.1rem); margin-bottom: 0.55rem; }
+    .intro { max-width: 46ch; margin-bottom: 1.1rem; color: var(--ink); }
+
+    .checks {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1.5rem; list-style: none; margin: 0; padding: 0;
+    }
+    .checks li { display: grid; grid-template-columns: auto 1fr; gap: 0.55rem; align-items: start; padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
+    .lbl { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--rose); padding-top: 0.25rem; }
+    .timing { margin-top: 1rem; color: var(--muted); }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .card { background: var(--silk); border: 1px solid var(--line); padding: 1.1rem 1rem 1.15rem; }
+    .card svg { width: 36px; height: 36px; color: var(--plum); margin-bottom: 0.55rem; }
+    .tag { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; color: var(--rose); margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); }
+
+    .memory { background: #F7EBE8; }
+    .memory-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem; align-items: center; }
+    .quilt { display: grid; grid-template-columns: repeat(4, 1fr); aspect-ratio: 1; max-width: 320px; }
+    .quilt span { outline: 1px dashed var(--rose); outline-offset: -4px; }
+    .quilt span:nth-child(4n+1) { background: var(--ivory); }
+    .quilt span:nth-child(4n+2) { background: var(--blush); }
+    .quilt span:nth-child(4n+3) { background: #F3E9D2; }
+    .quilt span:nth-child(4n) { background: var(--line); }
+
+    .featured {
+      font-family: var(--serif); font-style: italic; font-weight: 500;
+      font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.25; color: var(--plum);
+      margin: 0 0 0.6rem; max-width: 28ch;
+    }
+    .featured footer, .quote footer { font-family: var(--sans); font-style: normal; font-size: 0.88rem; color: var(--muted); margin-top: 0.55rem; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 1.2rem; }
+    .quote { margin: 0; background: var(--silk); border: 1px solid var(--line); padding: 1rem; }
+    .rating { margin-top: 1rem; font-family: var(--mono); font-size: 0.8rem; color: var(--plum); }
+
+    .book-card { background: var(--silk); border: 1px solid var(--line); padding: 1.4rem 1.2rem; }
+    .steps { margin: 0.8rem 0 1rem; padding-left: 1.2rem; }
+    .steps li { margin: 0.3rem 0; }
+    .book-card dl { margin: 0.4rem 0 0; display: grid; gap: 0.75rem; }
+    .book-card dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    .book-card dd { margin: 0.1rem 0 0; font-weight: 500; }
+    .book-card dd.phone { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; }
+    .book-card dd.phone a { color: var(--plum); text-decoration: none; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.1rem; align-items: center; }
+    .mail { overflow-wrap: anywhere; }
+
+    .site-footer { background: var(--plum); color: var(--ivory); padding: 2rem 0; }
+    .site-footer a { color: var(--ivory); }
+    .site-footer .wrap { display: grid; gap: 0.45rem; }
+    .site-footer .wordmark { color: var(--ivory); }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .cards, .memory-grid, .quotes { grid-template-columns: 1fr; }
+      .tape-nums { display: none; }
+      .checks { grid-template-columns: 1fr; }
+      .hero h1 { font-size: clamp(2.25rem, 9vw, 3rem); }
+    }
+    @media (max-width: 480px) {
+      .hero-panel { max-width: 260px; margin-inline: auto; }
+      .hero h1 { font-size: 2.25rem; }
+      .utility .wrap { font-size: 0.85rem; }
+      .checks { gap: 0.35rem; }
+    }
+    @media (max-width: 600px) {
+      .hero-actions .btn-primary { flex: 1 1 100%; }
+      .hero-panel { max-width: 260px; }
+      .dock {
+        display: grid; grid-template-columns: 1fr 1fr;
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        min-height: 56px; padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock a {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 56px; text-decoration: none; font-weight: 700; font-size: 1.125rem;
+      }
+      .dock .sms { background: var(--plum); color: var(--ivory); }
+      .dock .call { background: var(--rose); color: var(--ivory); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .stitch { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility">
+    <div class="wrap">
+      <span>By appointment · North Port</span>
+      <a href="tel:+19414050460">Call or text (941) 405-0460</a>
+      <span>Closed Memorial Day–Labor Day</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">Stitch <em>In</em> Time</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#bridal">Bridal</a>
+        <a href="#alterations">Alterations</a>
+        <a href="#memory">Memory blankets</a>
+        <a href="#reviews">Brides say</a>
+        <a href="#book">Book</a>
+        <a class="btn btn-primary" href="sms:+19414050460">Text Pam</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <!-- seasonal: she closes Memorial Day–Labor Day; swap text each season -->
+          <p class="badge">NOW BOOKING FALL &amp; WINTER APPOINTMENTS</p>
+          <h1 id="hero-heading">Wedding dress &amp; formal alterations in North Port, by Pam.</h1>
+          <p class="lede">Hems, bustles, straps, a little extra support, and your something blue, sewn in. I work by appointment from my home studio, and I'll make your dress fit like it was made for you.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sms:+19414050460">Text Pam (941) 405-0460</a>
+            <a class="btn btn-line" href="tel:+19414050460">Call</a>
+            <a class="text-link" href="mailto:pamfrisk@gmail.com">or email pamfrisk@gmail.com</a>
+          </div>
+          <p class="meta-row">
+            <span>By appointment</span>
+            <span>North Port, FL</span>
+            <span>★ 5.0 on Google</span>
+          </p>
+        </div>
+        <div class="hero-panel">
+          <svg viewBox="0 0 280 420" aria-hidden="true">
+            <path d="M118 36h44v18c12 8 20 22 20 38v8H98v-8c0-16 8-30 20-38z" fill="#EBCFC8" fill-opacity="0.4" stroke="#4A2C3A" stroke-width="2"/>
+            <path d="M96 104c-22 32-24 64-12 98 8 24 2 48-10 78l22 20h88l22-20c-12-30-18-54-10-78 12-34 10-66-12-98-16-12-46-18-66-12-8 2-16 6-22 12z" fill="#EBCFC8" fill-opacity="0.4" stroke="#4A2C3A" stroke-width="2"/>
+            <path class="stitch" d="M86 286h108" fill="none" stroke="#B5656A" stroke-width="2"/>
+            <path class="stitch" d="M176 196c36 12 48 52 22 90" fill="none" stroke="#B5656A" stroke-width="2"/>
+            <g transform="translate(198 270)" stroke="#4A2C3A" fill="none" stroke-width="1.6">
+              <path d="M0 0l18-28"/>
+              <path d="M16-30l6 4-8 2z" fill="#4A2C3A"/>
+              <path d="M2 2c8 10 6 16-2 18" stroke="#B5656A"/>
+            </g>
+            <line x1="140" y1="306" x2="140" y2="368" stroke="#4A2C3A" stroke-width="2"/>
+            <path d="M96 368h88l10 16H86z" fill="none" stroke="#4A2C3A" stroke-width="2"/>
+            <g transform="translate(78 360)">
+              <ellipse cx="28" cy="22" rx="26" ry="14" fill="#EBCFC8" fill-opacity="0.85" stroke="#4A2C3A" stroke-width="2"/>
+              <circle cx="18" cy="18" r="2" fill="#B5656A"/>
+              <circle cx="30" cy="16" r="2" fill="#4A2C3A"/>
+              <circle cx="36" cy="24" r="2" fill="#C2A161"/>
+              <circle cx="22" cy="26" r="2" fill="#4A2C3A"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="tape" aria-hidden="true"></div>
+    <div class="tape-nums" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+
+    <section id="bridal" aria-labelledby="bridal-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="bridal-heading">Your dress, fitted for the day</h2>
+        <p class="intro">Bridal and formal wear is what I love most. Bring your gown and we'll talk through everything it needs.</p>
+        <ul class="checks">
+          <li><span class="lbl">HEM</span><span>Hems, including fixing hems that went wrong elsewhere</span></li>
+          <li><span class="lbl">BUSTLE</span><span>Bustles</span></li>
+          <li><span class="lbl">STRAPS</span><span>Strap tightening and adjustments</span></li>
+          <li><span class="lbl">BACK</span><span>Back changes (like taking a back into a "V")</span></li>
+          <li><span class="lbl">FIT</span><span>Added bust padding for comfort</span></li>
+          <li><span class="lbl">BELT</span><span>Belts and embellishments</span></li>
+          <li><span class="lbl">BLUE</span><span>Your "something blue", sewn in</span></li>
+          <li><span class="lbl">PARTY</span><span>Bridesmaid &amp; formal dresses</span></li>
+        </ul>
+        <p class="timing">Book early. Text me your wedding date and I'll let you know what fits my schedule.</p>
+      </div>
+    </section>
+
+    <div class="tape" aria-hidden="true"></div>
+
+    <section id="alterations" aria-labelledby="alt-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="alt-heading">If it needs sewing, I can do it</h2>
+        <div class="cards">
+          <article class="card">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="10" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="10" cy="26" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14l16 12M14 24l16-12" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <p class="tag">ALTERATIONS</p>
+            <h3>Everyday alterations</h3>
+            <p>All types of alterations on any type of clothing: hems, taking in, letting out, and more.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="14" rx="8" ry="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 16c0 10 4 16 8 16s8-6 8-16" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 6v4" stroke="currentColor" stroke-width="1.8"/></svg>
+            <p class="tag">CUSTOM</p>
+            <h3>Custom pieces</h3>
+            <p>Have an idea? I once turned a favorite wool blanket into a coat.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 12h24l-4 20H12z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 12c0-4 8-4 8 0" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <p class="tag">FORMAL</p>
+            <h3>Men's &amp; formal</h3>
+            <p>Formal shirts and the little fixes, like converting buttons so cuff links fit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="tape" aria-hidden="true"></div>
+
+    <section class="memory" id="memory" aria-labelledby="memory-heading">
+      <div class="wrap memory-grid">
+        <div>
+          <p class="sec-num">03</p>
+          <svg viewBox="0 0 40 40" aria-hidden="true" style="width:36px;height:36px;color:var(--plum);margin-bottom:0.4rem"><path d="M20 34s-12-7.2-12-15.2A6.8 6.8 0 0 1 20 14a6.8 6.8 0 0 1 12 4.8C32 26.8 20 34 20 34z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h2 id="memory-heading">Memory blankets</h2>
+          <p>Old college t-shirts, a graduate's team shirts, or a loved one's shirts, sewn into a blanket you'll keep. It's a meaningful gift.</p>
+          <p style="margin-top:1rem"><a class="btn btn-primary" href="sms:+19414050460">Text Pam about a memory blanket</a></p>
+        </div>
+        <div class="quilt" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="tape" aria-hidden="true"></div>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <!-- add Pam's own before/after photos here -->
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">Brides say</h2>
+        <blockquote class="featured">
+          Pam is the Fairy Godmother to our Cinderella Day! She's truly a talented person and absolutely wonderful to work with.
+          <footer>Google review, Jun 2025</footer>
+        </blockquote>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Pam was great as was her price for making my wedding dress fit perfectly.</p>
+            <footer>Google review, Feb 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>She was able to do some adjustments, add the bustle and sew in my something blue! Pam did a fabulous job!</p>
+            <footer>Google review, Mar 2023</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Pam is amazing! She 100% saved my botched wedding dress!</p>
+            <footer>Google review, Nov 2021</footer>
+          </blockquote>
+        </div>
+        <p class="rating">★ 5.0 on Google</p>
+        <p style="margin-top:0.7rem"><a href="https://www.google.com/maps/search/?api=1&amp;query=Stitch+In+Time+North+Port+FL">Read reviews on Google</a></p>
+      </div>
+    </section>
+
+    <div class="tape" aria-hidden="true"></div>
+
+    <section id="book" aria-labelledby="book-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <div class="book-card">
+          <h2 id="book-heading">How to book</h2>
+          <ol class="steps">
+            <li>Text or call to set up a time.</li>
+            <!-- Standard hemming practice, not Pam's words. Cut this step if she prefers. -->
+            <li>Bring your dress (and your shoes, for hems).</li>
+            <li>I'll pin, quote and let you know when it'll be ready.</li>
+          </ol>
+          <dl>
+            <div>
+              <dt>Call or text</dt>
+              <dd class="phone"><a href="tel:+19414050460">(941) 405-0460</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a class="mail" href="mailto:pamfrisk@gmail.com">pamfrisk@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Where</dt>
+              <dd>North Port, FL, in my non-smoking home studio. I'll share the address when you book.</dd>
+            </div>
+            <div>
+              <dt>When</dt>
+              <dd>By appointment. Walk-ins are OK if you text or call first.</dd>
+            </div>
+            <div>
+              <dt>Season</dt>
+              <dd>Booking fall &amp; winter. <strong>Closed Memorial Day through Labor Day.</strong></dd>
+            </div>
+            <div>
+              <dt>Good to know</dt>
+              <dd>I have 2 friendly cats. If you have allergies, let me know.</dd>
+            </div>
+          </dl>
+          <div class="actions">
+            <a class="btn btn-primary" href="sms:+19414050460">Text Pam</a>
+            <a class="btn btn-line" href="tel:+19414050460">Call</a>
+            <a class="btn btn-line" href="mailto:pamfrisk@gmail.com?subject=Alterations%20appointment">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="wordmark" href="#top">Stitch <em>In</em> Time</a>
+      <p>Stitch In Time · Pam Frisk · North Port, FL · By appointment · <a href="tel:+19414050460">(941) 405-0460</a> · <a class="mail" href="mailto:pamfrisk@gmail.com">pamfrisk@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/332473963559638" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Text or call">
+    <a class="sms" href="sms:+19414050460">Text Pam</a>
+    <a class="call" href="tel:+19414050460">Call</a>
+  </nav>
+</body>
+</html>
