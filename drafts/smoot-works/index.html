@@ -62,8 +62,9 @@
 
     .site-header { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--line); }
     .header-inner { display: flex; align-items: center; gap: 0.8rem; padding: 0.55rem 0; }
-    .brand { flex: none; background: #fff; }
-    .brand img { height: 52px; width: auto; }
+    .brand { flex: none; display: flex; flex-direction: column; justify-content: center; text-decoration: none; line-height: 0.95; padding: 0.1rem 0; }
+    .wordmark { font-family: var(--display); font-size: 1.02rem; letter-spacing: -0.01em; text-transform: uppercase; color: var(--smoot); }
+    .wordmark-sub { font-family: var(--sans); font-weight: 700; font-size: 0.62rem; letter-spacing: 0.22em; color: var(--smoot); margin-top: 0.14rem; }
     .nav { display: flex; gap: 0.15rem; overflow-x: auto; flex: 1; min-width: 0; }
     .nav a { flex: none; color: var(--navy); text-decoration: none; font-weight: 600; padding: 0.55rem 0.6rem; min-height: 44px; display: inline-flex; align-items: center; }
     .nav a:hover { color: var(--smoot); }
@@ -145,8 +146,7 @@
 
     .site-footer { background: var(--navy); color: #d5d8e2; padding: 1.8rem 0 2rem; }
     .foot { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
-    .logo-chip { background: #fff; border-radius: 6px; padding: 0.35rem 0.5rem; }
-    .logo-chip img { height: 48px; width: auto; }
+    .logo-chip { background: #fff; border-radius: 6px; padding: 0.45rem 0.7rem 0.4rem; display: flex; flex-direction: column; line-height: 0.95; }
     .site-footer a { color: var(--pencil); }
     .credit { width: 100%; color: #aeb4c4; font-size: 0.88rem; margin: 0.3rem 0 0; }
     .dock { display: none; }
@@ -174,7 +174,7 @@
     }
     @media (max-width: 480px) {
       .utility .wrap { font-size: 0.78rem; }
-      .brand img { height: 42px; }
+      .wordmark { font-size: 0.92rem; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
@@ -193,7 +193,8 @@
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top">
-        <img src="images/logo.jpg" width="720" height="280" alt="Smoot Works LLC logo">
+        <span class="wordmark">Smoot Works</span>
+        <span class="wordmark-sub">LLC</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#work">Recent work</a>
@@ -391,7 +392,10 @@
 
   <footer class="site-footer">
     <div class="wrap foot">
-      <div class="logo-chip"><img src="images/logo.jpg" width="720" height="280" alt="Smoot Works LLC logo"></div>
+      <div class="logo-chip" aria-hidden="true">
+        <span class="wordmark">Smoot Works</span>
+        <span class="wordmark-sub">LLC</span>
+      </div>
       <div>
         <p>Smoot Works LLC · Shane Smoot · Serving Bradenton &amp; Manatee County</p>
         <p><a href="tel:+19415679922">(941) 567-9922</a> · <a href="mailto:smootworksllc@gmail.com">smootworksllc@gmail.com</a></p>
