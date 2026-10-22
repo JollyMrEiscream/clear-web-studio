@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smoot Works LLC | Handyman, Carpentry &amp; Remodeling in Bradenton, FL</title>
+  <meta name="description" content="Kitchen and bath remodels, board &amp; batten and accent walls, cabinets, tile, floors and fixture installs across Bradenton &amp; Manatee County. Call or text Shane at (941) 567-9922 for a free estimate.">
+  <link rel="icon" href="images/favicon.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Smoot Works LLC",
+    "telephone": "+1-941-567-9922",
+    "email": "smootworksllc@gmail.com",
+    "areaServed": ["Bradenton, FL", "Manatee County, FL"],
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "sameAs": [
+      "https://www.facebook.com/SmootWorks/",
+      "https://nextdoor.com/pages/smoot-works-llc-bradenton-fl/"
+    ],
+    "founder": "Shane Smoot"
+  }
+  </script>
+  <style>
+    :root {
+      --smoot: #3B56A5;
+      --smoot-dk: #273C7A;
+      --navy: #18213D;
+      --pencil: #F2B632;
+      --pencil-dk: #D49A17;
+      --batten: #FAFAF7;
+      --panel: #FFFFFF;
+      --pine: #E8D6B2;
+      --ink: #1A1D24;
+      --muted: #5B6270;
+      --line: #D9DCE3;
+      --display: "Archivo Black", Impact, sans-serif;
+      --sans: Barlow, system-ui, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--batten); color: var(--ink); font-family: var(--sans); font-size: 1.06rem; line-height: 1.6; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--smoot-dk); }
+    :focus-visible { outline: 3px solid var(--pencil); outline-offset: 3px; }
+    h1, h2 { font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.05; margin: 0; }
+    h3 { font-family: var(--sans); font-weight: 700; margin: 0; }
+    .skip { position: absolute; left: 12px; top: -48px; z-index: 80; background: var(--pencil); color: var(--navy); font-weight: 700; padding: 0.7rem 1rem; text-decoration: none; }
+    .skip:focus { top: 12px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    section[id] { scroll-margin-top: 5.2rem; }
+
+    .utility { background: var(--smoot-dk); color: #fff; font-size: 0.92rem; }
+    .utility .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; padding: 0.5rem 0; text-align: center; }
+    .utility a { color: var(--pencil); font-weight: 700; text-decoration: none; }
+
+    .site-header { position: sticky; top: 0; z-index: 40; background: #fff; border-bottom: 1px solid var(--line); }
+    .header-inner { display: flex; align-items: center; gap: 0.8rem; padding: 0.55rem 0; }
+    .brand { flex: none; background: #fff; }
+    .brand img { height: 52px; width: auto; }
+    .nav { display: flex; gap: 0.15rem; overflow-x: auto; flex: 1; min-width: 0; }
+    .nav a { flex: none; color: var(--navy); text-decoration: none; font-weight: 600; padding: 0.55rem 0.6rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .nav a:hover { color: var(--smoot); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.05rem;
+      border-radius: 6px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: var(--sans); font-size: 1rem;
+    }
+    .btn-pencil { background: var(--pencil); color: var(--navy); }
+    .btn-pencil:hover { background: var(--pencil-dk); color: var(--navy); }
+    .btn-smoot { background: transparent; color: var(--smoot); border-color: var(--smoot); }
+    .btn-smoot:hover { background: var(--smoot); color: #fff; }
+    .header-call { flex: none; }
+    .desktop-only { display: inline-flex; }
+    .mobile-only { display: none; }
+
+    .batten {
+      background:
+        linear-gradient(#d5d8df, #d5d8df) 0 0 / 100% 14px no-repeat,
+        repeating-linear-gradient(90deg, var(--batten) 0 118px, #EDEEF0 118px 122px);
+    }
+    .hero { padding: 2.4rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; align-items: center; }
+    .eyebrow { font-family: var(--mono); font-weight: 700; letter-spacing: 0.08em; color: var(--smoot); font-size: 0.78rem; margin: 0 0 0.7rem; }
+    h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+    .lede { font-size: 1.08rem; max-width: 48ch; margin: 0.9rem 0 1.15rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.45rem 0.9rem; list-style: none; padding: 0; margin: 1rem 0 0; color: var(--muted); font-family: var(--mono); font-size: 0.78rem; }
+    .meta-row a { color: var(--navy); }
+    .frame { background: #fff; padding: 0.55rem 0.55rem 0; border-radius: 4px; box-shadow: 0 10px 28px rgba(24,33,61,0.08); max-width: 480px; margin-inline: auto; }
+    .frame img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center 40%; }
+    .frame figcaption { font-family: var(--mono); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.08em; padding: 0.55rem 0.2rem; border-bottom: 6px solid var(--pencil); }
+
+    .band { padding: 3rem 0; }
+    .s-num { font-family: var(--mono); font-weight: 700; color: var(--pencil-dk); letter-spacing: 0.08em; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); max-width: 22ch; }
+    h2 em { font-style: normal; color: var(--smoot); }
+    .intro { max-width: 58ch; margin: 0.7rem 0 0; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 1.3rem; }
+    .shot { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    .shot img { width: 100%; height: auto; max-width: 480px; }
+    .shot figcaption { padding: 0.75rem 0.85rem 0.9rem; }
+    .shot h3 { font-size: 1.05rem; }
+    .shot p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.95rem; }
+    .cap { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em; color: var(--smoot); font-weight: 700; }
+
+    .slider-title { margin: 1.3rem 0 0.6rem; }
+    .compare { position: relative; max-width: 720px; aspect-ratio: 4/3; background: var(--line); overflow: hidden; --pos: 50%; border: 1px solid var(--line); }
+    .panel { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 1rem; font-family: var(--mono); font-weight: 700; letter-spacing: 0.04em; }
+    .panel.before { background: repeating-linear-gradient(135deg, #eceff3 0 10px, #e2e5ea 10px 20px); }
+    .panel.after { background: repeating-linear-gradient(45deg, #f7f4ea 0 10px, #efe8d6 10px 20px); clip-path: inset(0 0 0 var(--pos)); }
+    .compare .divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: var(--smoot); pointer-events: none; }
+    .handle {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; border-radius: 50%;
+      background: #fff; border: 3px solid var(--smoot); box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .compare input[type="range"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+    .tag { position: absolute; top: 12px; font-family: var(--mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; background: #fff; padding: 0.25rem 0.45rem; pointer-events: none; }
+    .tag.b { left: 12px; } .tag.a { right: 12px; }
+
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 1.2rem; }
+    .service { background: var(--panel); border: 1px solid var(--line); border-top: 4px solid var(--smoot); border-radius: 8px; padding: 1rem; }
+    .service h3 { font-size: 1.08rem; }
+    .service p { margin: 0.35rem 0 0.6rem; color: var(--ink); }
+    .note { margin: 1rem 0 0; }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1rem; }
+    .quotes blockquote { margin: 0; background: var(--pine); border-radius: 10px; padding: 1rem; }
+    .quotes p { margin: 0 0 0.6rem; }
+    .quotes footer { color: var(--muted); font-size: 0.9rem; }
+    .rating { display: inline-flex; margin: 0.85rem 0 0; background: var(--navy); color: var(--pencil); font-weight: 700; border-radius: 999px; padding: 0.35rem 0.75rem; }
+
+    .estimate { padding-bottom: 3.2rem; }
+    .contact-card { margin-top: 1.2rem; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1rem; }
+    .facts { display: grid; gap: 0.75rem; margin: 0; }
+    .facts dt { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--muted); }
+    .facts dd { margin: 0.12rem 0 0; font-weight: 600; }
+    .stack { display: flex; flex-direction: column; gap: 0.55rem; }
+    .stack .btn { width: 100%; }
+
+    .site-footer { background: var(--navy); color: #d5d8e2; padding: 1.8rem 0 2rem; }
+    .foot { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+    .logo-chip { background: #fff; border-radius: 6px; padding: 0.35rem 0.5rem; }
+    .logo-chip img { height: 48px; width: auto; }
+    .site-footer a { color: var(--pencil); }
+    .credit { width: 100%; color: #aeb4c4; font-size: 0.88rem; margin: 0.3rem 0 0; }
+    .dock { display: none; }
+
+    @media (max-width: 900px) {
+      .services { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .hero-grid, .gallery, .quotes, .contact-card { grid-template-columns: 1fr; }
+      .frame img { max-height: 60vh; width: 100%; aspect-ratio: 3/4; }
+    }
+    @media (max-width: 600px) {
+      .services { grid-template-columns: 1fr; }
+      .desktop-only { display: none; }
+      .mobile-only { display: inline-flex; }
+      .header-call { display: none; }
+      .dock {
+        display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 50;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock a { min-height: 52px; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none; }
+      .dock .go-call { background: var(--pencil); color: var(--navy); }
+      .dock .go-text { background: var(--smoot); color: #fff; }
+      body { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 480px) {
+      .utility .wrap { font-size: 0.78rem; }
+      .brand img { height: 42px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="utility">
+    <div class="wrap">
+      <span>Serving Bradenton &amp; Manatee County</span>
+      <span>Mon–Fri 8–5</span>
+      <a href="tel:+19415679922">Call or text (941) 567-9922</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.jpg" width="720" height="280" alt="Smoot Works LLC logo">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Recent work</a>
+        <a href="#services">What I do</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#estimate">Free estimate</a>
+      </nav>
+      <a class="btn btn-pencil header-call" href="tel:+19415679922">Call or text</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero batten" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Bradenton &amp; Manatee County · Free estimates</p>
+          <h1 id="hero-heading">Kitchens, baths &amp; custom carpentry, done right the first time.</h1>
+          <p class="lede">I'm Shane. I build accent walls, redo kitchens and baths, hang the fan, swap the faucet, and handle the projects that have been on your list for a while. Quality work for a fair price. Look at the work below, then call or text me for a free estimate.</p>
+          <div class="hero-actions">
+            <a class="btn btn-pencil desktop-only" href="tel:+19415679922">Call or text (941) 567-9922</a>
+            <a class="btn btn-pencil mobile-only" href="tel:+19415679922">Call</a>
+            <a class="btn btn-smoot mobile-only" href="sms:+19415679922">Text</a>
+            <a class="btn btn-smoot" href="#work">See recent work</a>
+          </div>
+          <ul class="meta-row">
+            <li>Mon–Fri 8 AM–5 PM</li>
+            <li><a href="mailto:smootworksllc@gmail.com">smootworksllc@gmail.com</a></li>
+            <li>★ 5.0 on Google</li>
+          </ul>
+        </div>
+        <figure class="frame">
+          <img src="images/work-accent-wall.jpg" width="720" height="960" alt="White herringbone accent wall with LED backlighting behind a mounted TV">
+          <figcaption>Recent job · Accent wall</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="s-num">01</p>
+        <h2 id="work-heading">Don't take my word for it. Look at the walls.</h2>
+        <p class="intro">Real jobs from my own posts. Board and batten, wainscoting, accent walls and custom doors, built and finished by hand.</p>
+        <div class="gallery">
+          <figure class="shot">
+            <img src="images/work-accent-wall.jpg" width="720" height="960" alt="White herringbone accent wall with LED backlighting behind a mounted TV" loading="lazy">
+            <figcaption>
+              <p class="cap">Accent wall</p>
+              <h3>Herringbone accent wall</h3>
+              <p>A white herringbone feature wall framed out behind the TV, with backlighting.</p>
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/work-wainscoting.jpg" width="960" height="720" alt="White raised-panel wainscoting and chair rail in a dining room" loading="lazy">
+            <figcaption>
+              <p class="cap">Wainscoting</p>
+              <h3>Wainscoting / picture-frame molding</h3>
+              <p>Raised-panel wainscoting with a chair rail around a dining room, fresh vinyl plank floor.</p>
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="images/work-barn-door.jpg" width="720" height="960" alt="Custom white sliding barn door with black hardware, built by Smoot Works" loading="lazy">
+            <figcaption>
+              <p class="cap">Barn door</p>
+              <h3>Sliding barn door</h3>
+              <p>A custom white barn door on black hardware, with trim to match.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- swap in FB kitchen before/after (Apr/Jul 2026 posts) once Shane provides originals -->
+        <div id="kitchen-compare" hidden>
+          <h3 class="slider-title">Kitchen renovation · before &amp; after</h3>
+          <div class="compare">
+            <div class="panel before"><span>BEFORE: photo from Shane's Facebook post</span></div>
+            <div class="panel after"><span>AFTER: photo from Shane's Facebook post</span></div>
+            <span class="tag b">Before</span>
+            <span class="tag a">After</span>
+            <div class="divider" aria-hidden="true"><span class="handle"></span></div>
+            <input type="range" min="0" max="100" value="50" aria-label="Slide to compare the kitchen before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="services" aria-labelledby="services-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="s-num">02</p>
+        <h2 id="services-heading">What I do</h2>
+        <p class="intro">Big remodel or a small fix, call and tell me what's going on.</p>
+        <div class="services">
+          <article class="service">
+            <p class="cap">Kitchens</p>
+            <h3>Kitchen remodels &amp; refreshes</h3>
+            <p>Cabinets, counters, backsplash, sink, lighting, crown molding and new floors, or just a refresh.</p>
+          </article>
+          <article class="service">
+            <p class="cap">Baths</p>
+            <h3>Bathroom renovations</h3>
+            <p>Full bath makeovers and glass shower enclosures.</p>
+          </article>
+          <article class="service">
+            <p class="cap">Board &amp; batten</p>
+            <h3>Custom walls &amp; trim</h3>
+            <p>Board and batten, wainscoting, accent walls, crown molding and baseboards.</p>
+          </article>
+          <article class="service">
+            <p class="cap">Woodworking</p>
+            <h3>Cabinets, closets &amp; pantries</h3>
+            <p>Built to fit the space, including custom pieces like a pet feeding and watering cabinet.</p>
+          </article>
+          <article class="service">
+            <p class="cap">Installs</p>
+            <h3>Fixtures &amp; installs</h3>
+            <p>Ceiling fans, light fixtures, faucets and garbage disposals, plus smart-home devices.</p>
+          </article>
+          <article class="service">
+            <p class="cap">Tile · Vinyl</p>
+            <h3>Tile &amp; floors</h3>
+            <p>Backsplash tile, stone backsplashes and vinyl flooring.</p>
+          </article>
+          <article class="service">
+            <p class="cap">&amp; much more</p>
+            <h3>Ramps, landscaping &amp; odd jobs</h3>
+            <p>Wheelchair ramps, landscaping, and hanging heavy art and mirrors.</p>
+          </article>
+        </div>
+        <p class="note">Not sure if it's my kind of job? <a href="sms:+19415679922">Text me a photo.</a></p>
+      </div>
+    </section>
+
+    <section class="band" id="reviews" aria-labelledby="reviews-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="s-num">03</p>
+        <h2 id="reviews-heading">What customers say about Shane</h2>
+        <p class="rating">★ 5.0 · 7 Google reviews</p>
+        <div class="quotes">
+          <blockquote>
+            <p>The transformation of my home was astonishing! It was a big project for me and Shane was holding my hand all the way through the process.</p>
+            <footer>Google review, Mar 2022</footer>
+          </blockquote>
+          <blockquote>
+            <p>I hired Shane to renovate my bathroom. I am still in awe at my new bathroom! Shane did an amazing job!</p>
+            <footer>Google review, Jan 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>Constructed a wheelchair ramp which is both pleasing to the eye and very serviceable.</p>
+            <footer>Google review, Mar 2022</footer>
+          </blockquote>
+          <blockquote>
+            <p>Board and Batten done in hallway and dining area and stone backsplash in kitchen looks very professional and sure makes a statement when you walk in through front door!</p>
+            <footer>Google review, Sept 2022</footer>
+          </blockquote>
+        </div>
+        <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=Smoot+Works+Bradenton+FL">Worked with Shane? Leave a Google review</a></p>
+      </div>
+    </section>
+
+    <section class="band estimate batten" id="estimate" aria-labelledby="estimate-heading">
+      <div class="wrap">
+        <p class="s-num">04</p>
+        <h2 id="estimate-heading">Call or text for a free estimate</h2>
+        <p class="intro">Tell me what you're thinking about. A photo of the space helps. I'll get back to you and set up a time to look at it.</p>
+        <div class="contact-card">
+          <dl class="facts">
+            <div>
+              <dt>Phone (call or text)</dt>
+              <dd><a href="tel:+19415679922">(941) 567-9922</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:smootworksllc@gmail.com">smootworksllc@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Mon–Fri, 8:00 AM–5:00 PM</dd>
+            </div>
+            <div>
+              <dt>Area</dt>
+              <dd>Bradenton &amp; Manatee County</dd>
+            </div>
+            <div>
+              <dt>Facebook</dt>
+              <dd><a href="https://www.facebook.com/SmootWorks/" target="_blank" rel="noopener">See more projects on Facebook<span class="sr-only"> (opens in a new tab)</span></a></dd>
+            </div>
+          </dl>
+          <div class="stack">
+            <a class="btn btn-pencil" href="tel:+19415679922">Call Shane</a>
+            <a class="btn btn-smoot" href="sms:+19415679922">Text Shane</a>
+            <a class="btn btn-smoot" href="mailto:smootworksllc@gmail.com?subject=Free%20estimate%20request">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div class="logo-chip"><img src="images/logo.jpg" width="720" height="280" alt="Smoot Works LLC logo"></div>
+      <div>
+        <p>Smoot Works LLC · Shane Smoot · Serving Bradenton &amp; Manatee County</p>
+        <p><a href="tel:+19415679922">(941) 567-9922</a> · <a href="mailto:smootworksllc@gmail.com">smootworksllc@gmail.com</a></p>
+      </div>
+      <p class="credit">Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+
+  <div class="dock" aria-label="Quick actions">
+    <a class="go-call" href="tel:+19415679922">Call</a>
+    <a class="go-text" href="sms:+19415679922">Text</a>
+  </div>
+
+  <script>
+    document.querySelectorAll(".compare").forEach(function (box) {
+      var range = box.querySelector("input[type=range]");
+      if (!range) return;
+      var set = function () {
+        box.style.setProperty("--pos", range.value + "%");
+        range.setAttribute("aria-valuenow", range.value);
+      };
+      range.addEventListener("input", set);
+      set();
+    });
+  </script>
+</body>
+</html>

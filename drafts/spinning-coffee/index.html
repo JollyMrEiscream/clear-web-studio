@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spinning Coffee | Vietnamese Coffee &amp; Vinyl in Bradenton, FL</title>
+  <meta name="description" content="Vietnamese iced coffee made with beans from the owners' family farm in Vietnam, records on the turntable, open daily 7 AM–7 PM at 515 36th St W, Suite E, Bradenton.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Spinning Coffee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "515 36th St W, Suite E",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL",
+      "postalCode": "34205",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-941-297-9295",
+    "openingHours": "Mo-Su 07:00-19:00",
+    "sameAs": "https://facebook.com/1010586622130750"
+  }
+  </script>
+  <style>
+    :root {
+      --vinyl: #16110E;
+      --roast: #3A2418;
+      --wood: #B4773F;
+      --wood-ink: #7A4E28;
+      --cream: #F6EEDF;
+      --paper: #FFFAF1;
+      --leaf: #3E6B4A;
+      --leaf-soft: #DCE8D6;
+      --label: #D9542B;
+      --label-dk: #B23F1B;
+      --condensed: #F1D9A7;
+      --muted: #6E5A4B;
+      --line: #E4D6BE;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "DM Sans", system-ui, sans-serif;
+      --mono: "Space Mono", ui-monospace, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      background: var(--cream);
+      color: var(--roast);
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--label-dk); }
+    :focus-visible { outline: 3px solid var(--label); outline-offset: 3px; }
+    h1, h2 { font-family: var(--serif); font-weight: 800; font-optical-sizing: auto; letter-spacing: -0.01em; line-height: 1.12; margin: 0; }
+    h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; margin: 0; }
+    .skip {
+      position: absolute; left: 12px; top: -48px; z-index: 80;
+      background: var(--label); color: #fff; font-weight: 700; padding: 0.7rem 1rem; text-decoration: none;
+    }
+    .skip:focus { top: 12px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    section[id] { scroll-margin-top: 5.25rem; }
+
+    .utility {
+      background: var(--vinyl); color: var(--cream);
+      font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.02em;
+    }
+    .utility .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.25rem;
+      padding: 0.5rem 0; text-align: center;
+    }
+    .utility a { color: #fff; text-decoration: none; font-weight: 700; }
+    .utility a:hover { text-decoration: underline; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(246, 238, 223, 0.94);
+      backdrop-filter: blur(10px);
+    }
+    .header-inner {
+      display: flex; align-items: center; gap: 1rem; padding: 0.7rem 0;
+    }
+    .brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; color: var(--roast); flex: none; }
+    .brand-disc {
+      width: 28px; height: 28px; border-radius: 50%; flex: none;
+      background:
+        radial-gradient(circle at 50% 50%, var(--label) 0 34%, #3a2418 35% 42%, transparent 43%),
+        repeating-radial-gradient(circle at 50% 50%, #221a16 0 1px, var(--vinyl) 1px 3px);
+      box-shadow: inset 0 0 0 2px #0c0908;
+    }
+    .brand-name { font-family: var(--serif); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; }
+    .nav {
+      display: flex; gap: 0.35rem; overflow-x: auto; flex: 1; min-width: 0;
+      scrollbar-width: thin;
+    }
+    .nav a {
+      flex: none; color: var(--roast); text-decoration: none;
+      font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+      padding: 0.55rem 0.65rem; min-height: 44px; display: inline-flex; align-items: center;
+      border-bottom: 2px solid transparent;
+    }
+    .nav a:hover { border-bottom-color: var(--wood); color: var(--roast); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      min-height: 48px; padding: 0.75rem 1.15rem; border-radius: 999px;
+      font-family: var(--sans); font-weight: 700; font-size: 1rem; text-decoration: none;
+      border: 2px solid transparent; cursor: pointer; line-height: 1.1;
+    }
+    .btn-call { background: var(--label-dk); color: #fff; }
+    .btn-call:hover { background: #8E3014; color: #fff; }
+    .btn-leaf { background: transparent; color: var(--leaf); border-color: var(--leaf); }
+    .btn-leaf:hover { background: var(--leaf); color: #fff; }
+    .header-call { flex: none; }
+    .woodbar { height: 7px; background: repeating-linear-gradient(90deg, #8d5a2b 0 10px, var(--wood) 10px 18px, #c4894e 18px 24px, #9a6233 24px 34px); }
+
+    .hero { padding: 2.6rem 0 2.2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center; }
+    .eyebrow, .track, .chip, figcaption, .footnote, .amenity {
+      font-family: var(--mono); letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .eyebrow { color: var(--wood-ink); font-size: 0.78rem; font-weight: 700; margin: 0 0 0.8rem; }
+    h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); max-width: 16ch; }
+    .lede { font-size: 1.12rem; max-width: 42ch; margin: 1rem 0 1.3rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; margin-bottom: 1.2rem; }
+    .text-link { font-weight: 700; color: var(--roast); }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 0; margin: 0; list-style: none; }
+    .chip {
+      background: var(--paper); border: 1px solid var(--line); color: var(--roast);
+      font-size: 0.68rem; padding: 0.4rem 0.6rem; border-radius: 999px;
+    }
+
+    .stage { position: relative; width: min(100%, 360px); margin-inline: auto; aspect-ratio: 1; }
+    .record {
+      width: 78%; aspect-ratio: 1; margin: 11% auto 0; border-radius: 50%; position: relative;
+      background:
+        radial-gradient(circle at 50% 50%, transparent 0 27%, #2a211c 27.4% 28.6%, transparent 29%),
+        repeating-radial-gradient(circle at 50% 50%, #221a16 0 1.5px, var(--vinyl) 1.5px 4px);
+      box-shadow: 0 22px 46px rgba(22, 17, 14, 0.4), inset 0 0 0 8px #0c0908;
+      animation: spin 6s linear infinite;
+    }
+    .record-label {
+      position: absolute; inset: 29%; border-radius: 50%;
+      background: radial-gradient(circle at 38% 32%, #e36a3e, var(--label) 46%, var(--label-dk));
+      color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em;
+      text-transform: uppercase; line-height: 1.25; padding: 0.4rem;
+      animation: spin 6s linear infinite reverse;
+    }
+    .tonearm { position: absolute; top: 6%; right: 7%; width: 120px; height: 160px; }
+    .pivot {
+      position: absolute; top: 0; right: 18px; width: 18px; height: 18px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #f3efe8, #8d877e 60%, #4a453f);
+      box-shadow: 0 2px 0 #2a2622;
+    }
+    .arm {
+      position: absolute; top: 8px; right: 25px; width: 5px; height: 128px; border-radius: 4px;
+      background: linear-gradient(#ece7df, #7d776e); transform-origin: top center; transform: rotate(28deg);
+    }
+    .arm::after {
+      content: ""; position: absolute; left: -4px; bottom: -6px; width: 14px; height: 10px; border-radius: 2px;
+      background: #c5bfb6; transform: rotate(-28deg);
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .band { padding: 3.2rem 0; }
+    .track { color: var(--wood-ink); font-size: 0.75rem; font-weight: 700; margin: 0 0 0.55rem; }
+    .band h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); max-width: 20ch; }
+    .intro { max-width: 58ch; margin: 0.8rem 0 0; }
+    .story-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1.5rem; margin-top: 1.6rem; align-items: start; }
+    .pull {
+      margin: 0; padding: 0.2rem 0 0.2rem 1rem; border-left: 4px solid var(--wood);
+      font-family: var(--serif); font-weight: 600; font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.35;
+    }
+    .pull footer { font-family: var(--sans); font-style: normal; text-transform: none; letter-spacing: 0; font-size: 0.92rem; color: var(--muted); margin-top: 0.7rem; }
+    .side-card { background: var(--condensed); border-radius: 16px; padding: 1.3rem 1.25rem 1.4rem; }
+    .side-card h3 { font-size: 1.35rem; margin-bottom: 0.45rem; }
+    .opened { display: inline-block; margin: 1rem 0 0; }
+
+    .feature {
+      display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center;
+      background: var(--condensed); border-radius: 16px; padding: 1.15rem 1.25rem; margin: 1.4rem 0 1rem;
+    }
+    .phin { width: 48px; height: 64px; color: var(--roast); }
+    .boards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.85rem; }
+    .board {
+      background: var(--paper); border: 3px solid var(--roast); border-radius: 4px; padding: 1rem 0.95rem 1.05rem;
+    }
+    .board h3 { font-size: 1.2rem; margin-bottom: 0.55rem; }
+    .board ul { list-style: none; margin: 0; padding: 0; }
+    .board li { font-family: var(--serif); font-weight: 600; padding: 0.28rem 0; border-bottom: 1px solid var(--line); }
+    .board li:last-child { border-bottom: 0; }
+    .milks { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: 1rem; }
+    .milks span, .milk {
+      background: var(--leaf-soft); color: var(--leaf); font-weight: 700;
+      border-radius: 999px; padding: 0.4rem 0.75rem; min-height: 44px; display: inline-flex; align-items: center;
+    }
+    .milks p { margin: 0; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--wood-ink); }
+    .footnote { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.03em; margin: 1rem 0 0; }
+
+    .space { background: var(--vinyl); color: var(--cream); }
+    .space .track { color: var(--wood); }
+    .space h2, .space .intro { color: var(--cream); }
+    .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 1.5rem; }
+    .tile { margin: 0; background: #221a16; border-radius: 14px; overflow: hidden; }
+    .tile figcaption { color: var(--cream); font-size: 0.68rem; padding: 0.7rem 0.8rem 0.85rem; }
+    .sleeves { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 12px; aspect-ratio: 4/3; background: #2a211c; }
+    .sleeves span { border-radius: 3px; position: relative; box-shadow: inset 0 0 0 6px rgba(255,255,255,0.08); }
+    .sleeves span::after {
+      content: ""; position: absolute; inset: 32%; border-radius: 50%; background: #1a1410; box-shadow: inset 0 0 0 3px rgba(255,255,255,0.25);
+    }
+    .plants { background: var(--leaf); aspect-ratio: 4/3; }
+    .plants svg { width: 100%; height: 100%; display: block; }
+    .patio { background: var(--cream); aspect-ratio: 4/3; display: grid; place-items: center; }
+    .patio svg { width: 72%; height: auto; }
+    .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 1.2rem; }
+    .review { background: var(--leaf-soft); color: var(--roast); border-radius: 14px; padding: 1rem 1rem 1.05rem; margin: 0; }
+    .stars { color: var(--label-dk); letter-spacing: 0.12em; font-size: 0.95rem; }
+    .review p { margin: 0.4rem 0 0.7rem; }
+    .review footer { font-size: 0.88rem; color: var(--muted); }
+    .rating { margin: 1.1rem 0 0; }
+    .rating .chip { background: transparent; color: var(--cream); border-color: rgba(246,238,223,0.35); }
+
+    .visit-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.4rem;
+      background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 1.4rem;
+    }
+    dl.facts { display: grid; gap: 0.85rem; margin: 0; }
+    .facts dt { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--wood-ink); }
+    .facts dd { margin: 0.15rem 0 0; font-weight: 600; }
+    .facts a { color: var(--label-dk); font-weight: 700; }
+    .visit-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .phone-xl { font-family: var(--serif); font-weight: 800; font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--roast); text-decoration: none; letter-spacing: -0.01em; }
+    .phone-xl:hover { color: var(--label-dk); }
+    .visit-cta .btn { align-self: stretch; text-align: center; }
+    .map { width: 100%; height: 240px; border: 0; border-radius: 12px; }
+    .amenity { font-size: 0.72rem; color: var(--muted); margin: 0.9rem 0 0; }
+
+    .site-footer { background: var(--vinyl); color: var(--cream); padding: 2rem 0 2.2rem; text-align: center; }
+    .site-footer p { margin: 0.3rem 0; }
+    .site-footer a { color: #fff; }
+    .credit { margin-top: 0.8rem; font-size: 0.85rem; color: #cbbba6; }
+
+    .dock { display: none; }
+
+    @media (max-width: 900px) {
+      .boards { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .hero-grid, .story-grid, .visit-grid, .tiles, .reviews { grid-template-columns: 1fr; }
+      .stage { width: 260px; }
+      .hero { padding-top: 1.8rem; }
+    }
+    @media (max-width: 600px) {
+      .boards { grid-template-columns: 1fr; }
+      .header-call { display: none; }
+      .dock {
+        display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+        padding-bottom: env(safe-area-inset-bottom); background: var(--vinyl);
+      }
+      .dock a {
+        min-height: 52px; display: flex; align-items: center; justify-content: center;
+        font-weight: 700; text-decoration: none; color: #fff;
+      }
+      .dock .go-call { background: var(--label-dk); }
+      .dock .go-dir { background: var(--leaf); }
+      body { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 480px) {
+      .tonearm { display: none; }
+      .stage { width: 220px; }
+      .utility .wrap { font-size: 0.7rem; }
+      .feature { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .record, .record-label { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="utility">
+    <div class="wrap">
+      <span>Open daily 7 AM–7 PM</span>
+      <span>515 36th St W, Suite E · Bradenton</span>
+      <a href="tel:+19412979295">(941) 297-9295</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Spinning Coffee, back to top">
+        <span class="brand-disc" aria-hidden="true"></span>
+        <span class="brand-name">Spinning Coffee</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#story">A1 Beans</a>
+        <a href="#menu">A2 Menu</a>
+        <a href="#space">B1 The space</a>
+        <a href="#visit">B2 Visit</a>
+      </nav>
+      <a class="btn btn-call header-call" href="tel:+19412979295">Call</a>
+    </div>
+    <div class="woodbar" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Now spinning · Bradenton, FL</p>
+          <h1 id="hero-heading">Vietnamese coffee, vinyl on the turntable.</h1>
+          <p class="lede">Beans from our own family farm in Vietnam, records on the wall, and plants over your head. Pull up a chair on 36th Street, just off Manatee Ave.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19412979295">Call (941) 297-9295</a>
+            <a class="btn btn-leaf" href="https://www.google.com/maps/search/?api=1&amp;query=Spinning+Coffee+515+36th+St+W+Suite+E+Bradenton+FL+34205">Get directions</a>
+            <a class="text-link" href="#menu">See the menu</a>
+          </div>
+          <ul class="meta-row">
+            <li class="chip">Open daily 7AM–7PM</li>
+            <li class="chip">515 36th St W, Suite E</li>
+            <li class="chip">Indoor + outdoor seating</li>
+          </ul>
+        </div>
+        <div class="stage" aria-hidden="true">
+          <div class="record">
+            <div class="record-label"><span>Spinning Coffee</span><span>· Side A</span></div>
+          </div>
+          <div class="tonearm">
+            <div class="pivot"></div>
+            <div class="arm"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="story" aria-labelledby="story-heading">
+      <div class="wrap">
+        <p class="track">Side A · 01</p>
+        <h2 id="story-heading">Two best friends. One family farm. Really strong coffee.</h2>
+        <p class="intro">Spinning Coffee is Vincent Truyen and Mohd Hasan, best friends and neighbors who wanted a small shop where people could slow down, listen to music, and talk. Vincent has a coffee farm in Vietnam, so the beans in your cup come straight from it.</p>
+        <p class="opened chip">Opened March 2026</p>
+        <div class="story-grid">
+          <blockquote class="pull">
+            <p>We want a relaxing vibe … we want people to come here to listen to music and relax and talking to friends.</p>
+            <footer>Vincent Truyen, co-owner (Bradenton Herald, Apr 2026)</footer>
+          </blockquote>
+          <aside class="side-card">
+            <h3>Why the beans matter</h3>
+            <p>Our Vietnamese iced coffee is condensed milk and very strong coffee, dripped slowly through a phin filter. Grocery-store beans don't come out right, which is why we bring ours in from Vietnam.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="menu" aria-labelledby="menu-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="track">Side A · 02</p>
+        <h2 id="menu-heading">On the board</h2>
+        <p class="intro">No prices here. The board in the shop is the real one. Ask what's new.</p>
+        <article class="feature">
+          <svg class="phin" viewBox="0 0 48 64" aria-hidden="true">
+            <rect x="8" y="4" width="32" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M12 12h24v16a12 12 0 0 1-24 0V12z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M24 40v12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="24" cy="56" r="3.2" fill="currentColor"/>
+          </svg>
+          <div>
+            <h3>Vietnamese iced coffee</h3>
+            <p>The house favorite: strong drip coffee over sweet condensed milk and ice.</p>
+          </div>
+        </article>
+        <div class="boards">
+          <article class="board">
+            <h3>Espresso classics</h3>
+            <ul>
+              <li>Cappuccino</li>
+              <li>Double espresso</li>
+              <li>Macchiato</li>
+              <li>Cortado</li>
+              <li>Americano</li>
+              <li>Mocha</li>
+              <li>Lattes</li>
+              <li>Cold brew</li>
+            </ul>
+          </article>
+          <article class="board">
+            <h3>Matcha &amp; specialty</h3>
+            <ul>
+              <li>Japanese Ceremonial Matcha</li>
+              <li>Strawberry matcha latte</li>
+              <li>Rotating specialty drinks</li>
+            </ul>
+          </article>
+          <article class="board">
+            <h3>Teas &amp; smoothies</h3>
+            <ul>
+              <li>Hot and iced teas</li>
+              <li>Smoothies</li>
+            </ul>
+          </article>
+          <article class="board">
+            <h3>Food</h3>
+            <ul>
+              <li>Breakfast sandwiches</li>
+              <li>Avocado toast platter</li>
+              <li>Pastries</li>
+              <li>House salad</li>
+            </ul>
+          </article>
+        </div>
+        <div class="milks">
+          <p>Milk</p>
+          <span class="milk">Skim</span>
+          <span class="milk">Almond</span>
+          <span class="milk">Oat</span>
+          <span class="milk">Coconut</span>
+        </div>
+        <p class="footnote">Menu items from the Bradenton Herald (Apr 2026). Availability changes.</p>
+      </div>
+    </section>
+
+    <section class="band space" id="space" aria-labelledby="space-heading">
+      <div class="wrap">
+        <p class="track">Side B · 01</p>
+        <h2 id="space-heading">Stay for a whole album.</h2>
+        <p class="intro">1,200 square feet of records, vintage music gear, warm wood and plants hanging from the ceiling. A turntable that actually plays. Tables inside and out, room for a laptop, and nobody rushing you.</p>
+        <div class="tiles">
+          <!-- future photo: images/space-records.jpg -->
+          <figure class="tile">
+            <div class="sleeves" aria-hidden="true">
+              <span style="background:var(--label)"></span>
+              <span style="background:var(--leaf)"></span>
+              <span style="background:var(--wood)"></span>
+              <span style="background:var(--condensed)"></span>
+              <span style="background:var(--condensed)"></span>
+              <span style="background:var(--label)"></span>
+              <span style="background:var(--wood)"></span>
+              <span style="background:var(--leaf)"></span>
+              <span style="background:#8d5a2b"></span>
+              <span style="background:var(--leaf)"></span>
+              <span style="background:var(--condensed)"></span>
+              <span style="background:var(--label)"></span>
+            </div>
+            <figcaption>Records on the wall<span class="sr-only">. Wall of vinyl records and vintage music gear at Spinning Coffee</span></figcaption>
+          </figure>
+          <!-- future photo: images/space-plants.jpg -->
+          <figure class="tile">
+            <div class="plants" aria-hidden="true">
+              <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="220" fill="#3E6B4A"/>
+                <g fill="none" stroke="#DCE8D6" stroke-width="3" stroke-linecap="round">
+                  <path d="M30 0c8 28-6 40 4 78"/>
+                  <path d="M78 0c-6 34 14 42 2 86"/>
+                  <path d="M130 0c10 26-8 48 6 90"/>
+                  <path d="M186 0c-8 30 12 44 0 84"/>
+                  <path d="M240 0c8 32-10 46 4 88"/>
+                  <path d="M292 0c-6 28 8 40-2 76"/>
+                </g>
+                <g fill="#DCE8D6">
+                  <ellipse cx="34" cy="86" rx="16" ry="8" transform="rotate(-30 34 86)"/>
+                  <ellipse cx="78" cy="96" rx="18" ry="8" transform="rotate(24 78 96)"/>
+                  <ellipse cx="138" cy="100" rx="17" ry="8" transform="rotate(-18 138 100)"/>
+                  <ellipse cx="184" cy="92" rx="16" ry="7" transform="rotate(32 184 92)"/>
+                  <ellipse cx="246" cy="98" rx="18" ry="8" transform="rotate(-26 246 98)"/>
+                  <ellipse cx="288" cy="84" rx="15" ry="7" transform="rotate(20 288 84)"/>
+                  <ellipse cx="52" cy="48" rx="13" ry="6" transform="rotate(18 52 48)"/>
+                  <ellipse cx="160" cy="54" rx="14" ry="6" transform="rotate(-22 160 54)"/>
+                  <ellipse cx="214" cy="46" rx="12" ry="6" transform="rotate(16 214 46)"/>
+                </g>
+              </svg>
+            </div>
+            <figcaption>Plants overhead<span class="sr-only">. Greenery draped from the ceiling over the coffee bar</span></figcaption>
+          </figure>
+          <!-- future photo: images/space-patio.jpg -->
+          <figure class="tile">
+            <div class="patio" aria-hidden="true">
+              <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#3A2418" stroke-width="3" stroke-linecap="round">
+                <path d="M40 78h120"/>
+                <path d="M58 78c0-22 84-22 84 0"/>
+                <path d="M70 78v34M130 78v34"/>
+                <path d="M58 112h24M118 112h24"/>
+                <path d="M28 96c8-16 8-28 0-40"/>
+                <circle cx="28" cy="50" r="7"/>
+                <path d="M168 70v42M168 92h18"/>
+              </svg>
+            </div>
+            <figcaption>Outside seating<span class="sr-only">. Outdoor seating at Spinning Coffee</span></figcaption>
+          </figure>
+        </div>
+        <div class="reviews">
+          <blockquote class="review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>I loved the turntable and old albums. Great place to just sit and sip your coffee.</p>
+            <footer>Jeff M., Google</footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>I loved the plant ceiling and the lighting it was very aesthetic and instagram worthy!</p>
+            <footer>Cheyanne Z., Google</footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>One of the strongest coffees I've had since I was in Viet Nam.</p>
+            <footer>Mike Z., Google</footer>
+          </blockquote>
+        </div>
+        <p class="rating"><span class="chip" title="Google rating as of October 2026">★ 5.0 · 96 Google reviews</span></p>
+      </div>
+    </section>
+
+    <section class="band" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <p class="track">Side B · 02</p>
+        <h2 id="visit-heading">Come by. We're open every day.</h2>
+        <div class="visit-grid">
+          <dl class="facts">
+            <div>
+              <dt>Address</dt>
+              <dd>515 36th St W, <strong>Suite E</strong><br>Bradenton, FL 34205<br><span style="font-weight:500">just off Manatee Ave</span></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Every day, 7:00 AM – 7:00 PM</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+19412979295">(941) 297-9295</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:spinningcoffeellc@gmail.com">spinningcoffeellc@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Facebook</dt>
+              <dd><a href="https://facebook.com/1010586622130750" target="_blank" rel="noopener">Follow on Facebook<span class="sr-only"> (opens in a new tab)</span></a></dd>
+            </div>
+          </dl>
+          <div class="visit-cta">
+            <a class="phone-xl" href="tel:+19412979295">(941) 297-9295</a>
+            <a class="btn btn-call" href="tel:+19412979295">Call (941) 297-9295</a>
+            <a class="btn btn-leaf" href="https://www.google.com/maps/search/?api=1&amp;query=Spinning+Coffee+515+36th+St+W+Suite+E+Bradenton+FL+34205">Get directions</a>
+            <iframe class="map" title="Map to Spinning Coffee" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=515+36th+St+W+Suite+E+Bradenton+FL+34205&amp;output=embed"></iframe>
+          </div>
+        </div>
+        <p class="amenity">Indoor &amp; outdoor seating.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Spinning Coffee · 515 36th St W, Suite E, Bradenton, FL 34205 · <a href="tel:+19412979295">(941) 297-9295</a></p>
+      <p class="credit">Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+
+  <div class="dock" aria-label="Quick actions">
+    <a class="go-call" href="tel:+19412979295">Call</a>
+    <a class="go-dir" href="https://www.google.com/maps/search/?api=1&amp;query=Spinning+Coffee+515+36th+St+W+Suite+E+Bradenton+FL+34205">Directions</a>
+  </div>
+</body>
+</html>
