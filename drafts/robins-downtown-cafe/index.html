@@ -111,23 +111,17 @@
       font-weight: 800; border-radius: 999px; padding: 0.35rem 0.75rem; min-height: 36px;
     }
 
-    .facade { border-radius: 12px; overflow: hidden; box-shadow: 0 16px 36px rgba(31, 45, 92, 0.16); aspect-ratio: 4/3; display: flex; flex-direction: column; background: var(--facade); }
-    .sign { background: var(--awning); color: var(--yolk); text-align: center; padding: 0.85rem 0.6rem 0.7rem; }
-    .sign-script { font-family: var(--script); font-size: clamp(2rem, 4vw, 2.8rem); display: block; line-height: 1; }
-    .sign-sub { font-weight: 700; letter-spacing: 0.04em; text-transform: lowercase; color: #fff; }
-    .windows { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding: 8% 10% 4%; }
-    .window { background: linear-gradient(180deg, #d7f4f6, #8fd4db); border: 6px solid #f4efe4; border-radius: 4px; box-shadow: inset 0 0 0 3px rgba(31,45,92,0.25); }
-    .sidewalk { height: 28%; background: repeating-linear-gradient(90deg, var(--brick) 0 18px, #a34834 18px 20px); position: relative; }
-    .table-set { position: absolute; left: 18%; bottom: 18%; width: 34%; height: 55%; }
-    .tabletop { position: absolute; left: 0; right: 22%; top: 28%; height: 10px; background: #f4efe4; border-radius: 3px; }
-    .tleg { position: absolute; top: 38%; bottom: 0; width: 4px; background: #1c2130; }
-    .tleg.l { left: 12%; } .tleg.r { right: 34%; }
-    .chair { position: absolute; right: 0; bottom: 0; width: 28%; height: 70%; border: 4px solid #1c2130; border-bottom: 0; border-radius: 6px 6px 0 0; }
+    .hero-photos { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 0.65rem; margin: 0; }
+    .hero-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 16px 36px rgba(31, 45, 92, 0.16); }
+    .hero-photos .store { aspect-ratio: 4/3; }
+    .hero-photos .sign { aspect-ratio: 1; align-self: end; }
 
     .band { padding: 3rem 0; }
     .intro { max-width: 58ch; margin: 0.7rem 0 0; }
-    .feature { margin-top: 1.3rem; background: var(--board); border-left: 8px solid var(--yolk); border-radius: 10px; padding: 1.15rem 1.2rem; box-shadow: 0 1px 0 var(--line); }
+    .feature { margin-top: 1.3rem; background: var(--board); border-left: 8px solid var(--yolk); border-radius: 10px; padding: 0.7rem; box-shadow: 0 1px 0 var(--line); display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 0.9rem; align-items: center; }
+    .feature img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; aspect-ratio: 1; }
     .feature h3 { font-size: 1.45rem; margin-bottom: 0.35rem; }
+    .feature div { padding: 0.4rem 0.5rem 0.4rem 0; }
     .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 0.9rem; }
     .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.05rem 1.1rem; }
     .card h3 { font-size: 1.2rem; margin-bottom: 0.55rem; }
@@ -136,7 +130,10 @@
     .drinks { margin: 1rem 0 0; font-weight: 700; }
     .footnote { color: var(--muted); font-size: 0.92rem; margin: 0.8rem 0 0; }
 
-    .board-wrap { margin-top: 1.2rem; max-width: 640px; }
+    .board-wrap { margin-top: 1.2rem; display: grid; grid-template-columns: 1fr 1.15fr; gap: 1rem; align-items: start; }
+    .real-board { margin: 0; }
+    .real-board img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+    .real-board figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.45rem; }
     .whiteboard { background: var(--frame); border-radius: 10px; padding: 10px; box-shadow: inset 0 0 0 1px #b7bec8, 0 12px 24px rgba(28,33,48,0.08); aspect-ratio: 4/3; display: flex; flex-direction: column; }
     .board-surface { background: var(--board); flex: 1; border-radius: 4px; padding: 1.2rem 1.15rem; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04); }
     .marker { font-family: var(--hand); line-height: 1.35; margin: 0 0 0.45rem; }
@@ -182,11 +179,12 @@
     .dock { display: none; }
 
     @media (max-width: 800px) {
-      .hero-grid, .cards, .quotes, .visit-grid, .icons { grid-template-columns: 1fr; }
-      .facade { max-width: 520px; }
+      .hero-grid, .cards, .quotes, .visit-grid, .icons, .board-wrap, .feature { grid-template-columns: 1fr; }
+      .hero-photos { max-width: 560px; }
     }
     @media (max-width: 600px) {
-      .cards { grid-template-columns: 1fr; }
+      .cards, .hero-photos { grid-template-columns: 1fr; }
+      .hero-photos .sign { aspect-ratio: 16/9; }
       .header-call { display: none; }
       .dock {
         display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 50;
@@ -248,24 +246,11 @@
             <a class="text-link" href="#specials">See today's specials →</a>
           </div>
         </div>
-        <div class="facade" aria-hidden="true">
-          <div class="sign">
-            <span class="sign-script">Robin's</span>
-            <span class="sign-sub">downtown cafe</span>
-          </div>
-          <div class="windows">
-            <div class="window"></div>
-            <div class="window"></div>
-          </div>
-          <div class="sidewalk">
-            <div class="table-set">
-              <div class="tabletop"></div>
-              <div class="tleg l"></div>
-              <div class="tleg r"></div>
-              <div class="chair"></div>
-            </div>
-          </div>
-        </div>
+        <!-- Restaurantji aggregator photos (storefront and sign panels). Replace with owner photos at handoff. -->
+        <figure class="hero-photos">
+          <img class="store" src="images/storefront.jpg" width="305" height="247" alt="Robin's Downtown Cafe storefront on Old Main Street with the navy and yellow sign">
+          <img class="sign" src="images/sign.jpg" width="305" height="246" alt="Navy sign with yellow lettering reading Robin's downtown cafe">
+        </figure>
       </div>
     </section>
 
@@ -273,9 +258,13 @@
       <div class="wrap">
         <h2 id="menu-heading">The menu, the short version</h2>
         <p class="intro">Breakfast all morning, lunch alongside it. Big plates, homemade, made to order.</p>
+        <!-- Restaurantji aggregator photo (omelet panel). Replace with an owner photo at handoff. -->
         <article class="feature">
-          <h3>Our omelets</h3>
-          <p>Not your usual omelet. We cook a thin egg 'crepe,' fold it over several times and fill it with your choice of vegetables or meats, so it comes out light and fluffy. Try the <strong>Classic Greek 3-egg</strong>: sausage, tomato, onion, spinach and feta, with toast or a biscuit and home fries, hash browns or grits.</p>
+          <img src="images/omelet.jpg" width="540" height="500" alt="Folded omelet with hash browns and an English muffin" loading="lazy">
+          <div>
+            <h3>Our omelets</h3>
+            <p>Not your usual omelet. We cook a thin egg 'crepe,' fold it over several times and fill it with your choice of vegetables or meats, so it comes out light and fluffy. Try the <strong>Classic Greek 3-egg</strong>: sausage, tomato, onion, spinach and feta, with toast or a biscuit and home fries, hash browns or grits.</p>
+          </div>
         </article>
         <div class="cards">
           <article class="card">
@@ -331,8 +320,13 @@
             </div>
             <div class="tray" aria-hidden="true"></div>
           </div>
-          <p class="board-cta"><a class="btn btn-yolk" href="https://www.facebook.com/Robinsdowntowncafe/" target="_blank" rel="noopener">See today's specials on Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+          <!-- Restaurantji photo of the café's own specials boards. Replace with an owner photo at handoff. -->
+          <figure class="real-board">
+            <img src="images/specials-board.jpg" width="1200" height="429" alt="Daily specials whiteboards at Robin's Downtown Cafe" loading="lazy">
+            <figcaption>The board in the café. Specials change, so call or check Facebook before you come for a specific plate.</figcaption>
+          </figure>
         </div>
+        <p class="board-cta"><a class="btn btn-yolk" href="https://www.facebook.com/Robinsdowntowncafe/" target="_blank" rel="noopener">See today's specials on Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
       </div>
     </section>
 
