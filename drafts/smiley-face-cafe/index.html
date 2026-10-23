@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smiley Face Cafe | Coffee, Breakfast &amp; Lunch in Palmetto, FL</title>
+  <meta name="description" content="Espresso, specialty lattes, smoothies and scratch-made breakfast and lunch at 923 10th St E, Palmetto. Kids zone, Studio Saturdays, and online ordering for pickup.">
+  <meta name="theme-color" content="#1B1340">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Manrope:wght@400;600;800&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Smiley Face Cafe",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "923 10th St E",
+      "addressLocality": "Palmetto",
+      "addressRegion": "FL",
+      "postalCode": "34221",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.520716,
+      "longitude": -82.554492
+    },
+    "openingHours": ["Mo 08:00-15:00", "We-Sa 08:00-15:00", "Su 08:00-13:00"],
+    "servesCuisine": ["Coffee", "Breakfast", "Lunch"],
+    "menu": "https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e",
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": "https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e"
+    },
+    "sameAs": [
+      "https://www.instagram.com/smileyfacecoffee",
+      "https://www.facebook.com/671719622701123"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --cream: #FFF8EC;
+      --ink: #1B1340;
+      --pink: #FF60C6;
+      --pink-dk: #C4006B;
+      --sky: #0083C2;
+      --sky-dk: #006A9E;
+      --sky-lt: #BFE8F7;
+      --sun: #FFD23F;
+      --chrome: #D9DDE3;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Manrope, system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--pink-dk); }
+    h1, h2, .bagel { font-family: "Bagel Fat One", system-ui, sans-serif; font-weight: 400; line-height: 1.05; }
+    h1 { font-size: clamp(2.2rem, 8vw, 4.5rem); margin: 0 0 0.6rem; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 0.8rem; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sun); color: var(--ink); padding: 0.6rem 1rem; font-weight: 800; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .mono { font-family: "Martian Mono", ui-monospace, monospace; }
+
+    .utility-bar { background: var(--ink); color: var(--cream); font-size: 0.75rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1rem; text-align: center; }
+    .utility-bar a { color: var(--sun); font-weight: 600; }
+
+    .site-header { background: var(--cream); border-bottom: 2px solid var(--ink); padding: 0.6rem 0; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; flex-wrap: wrap; }
+    .logo { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid var(--ink); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; font-weight: 600; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 44px; padding: 0.7rem 1.15rem; border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid var(--ink); font-family: inherit; }
+    .btn-primary { background: var(--pink-dk); color: #fff; border-color: var(--pink-dk); min-height: 56px; }
+    .btn-primary:hover { background: #9d0056; color: #fff; }
+    .btn-ghost { background: transparent; color: var(--ink); }
+    .btn-ghost:hover { background: var(--ink); color: var(--cream); }
+    .face { width: 1.1em; height: 1.1em; border-radius: 50%; background: var(--sun); display: inline-grid; place-items: center; color: var(--ink); font-size: 0.85em; }
+
+    .hero { padding: 2rem 0 2.2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { color: var(--sky-dk); font-size: 0.75rem; letter-spacing: 0.04em; margin: 0 0 0.55rem; }
+    .hero-lead { font-size: 1.08rem; margin: 0 0 1rem; max-width: 42ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.8rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; font-size: 0.78rem; margin: 0; }
+    .sheet { position: relative; min-height: 420px; }
+    .sticker { position: absolute; filter: drop-shadow(0 8px 0 rgba(27,19,64,0.08)); transition: transform 0.15s ease; }
+    .sticker:hover { transform: translateY(-4px) rotate(var(--r, 0deg)); }
+    .shot { width: min(280px, 70%); border: 10px solid #fff; border-radius: 22px; left: 18%; top: 18%; --r: -4deg; transform: rotate(-4deg); }
+    .logo-sticker { width: 140px; left: 0; top: 0; --r: 6deg; transform: rotate(6deg); border-radius: 18px; border: 6px solid #fff; }
+    .css-smiley {
+      width: 92px; height: 92px; border-radius: 50%; right: 6%; top: 8%; --r: 8deg; transform: rotate(8deg);
+      background: radial-gradient(circle at 35% 30%, #FFFFFF 0 12%, #D9DDE3 30%, #9AA3AE 62%, #E9ECF0 80%, #B9C0C9 100%);
+      box-shadow: inset 0 0 0 3px var(--pink-dk);
+    }
+    .css-smiley .eyes { position: absolute; inset: 28% 22% auto; display: flex; justify-content: space-between; }
+    .css-smiley .eyes i { width: 12px; height: 18px; background: var(--ink); border-radius: 50%; display: block; }
+    .css-smiley svg { position: absolute; left: 18%; right: 18%; bottom: 22%; width: 64%; }
+    .burst {
+      right: 0; bottom: 18%; width: 120px; height: 120px; --r: 6deg; transform: rotate(6deg);
+      background: var(--sun); color: var(--ink);
+      clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      display: grid; place-items: center; text-align: center; font-weight: 800; font-size: 0.78rem; padding: 1.4rem;
+    }
+    .pill { left: 4%; bottom: 8%; background: var(--pink); color: var(--ink); font-weight: 800; border-radius: 999px; padding: 0.45rem 0.7rem; --r: -6deg; transform: rotate(-6deg); }
+    .wavy { left: 34%; bottom: 0; background: var(--sky); color: #fff; font-weight: 800; font-size: 1.6rem; padding: 0.4rem 0.75rem; border-radius: 12px; --r: 2deg; transform: rotate(2deg); }
+
+    section { padding: 2.8rem 0; }
+    .sec-num { font-size: 0.75rem; color: var(--pink-dk); letter-spacing: 0.12em; margin: 0 0 0.25rem; }
+    .favs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .fav { background: #fff; border: 2px solid var(--chrome); border-radius: 16px; padding: 0.95rem 1rem 0.8rem; position: relative; }
+    .dot { width: 16px; height: 16px; border-radius: 50%; position: absolute; top: 12px; right: 12px; }
+    .fav h3 { font-family: Manrope, sans-serif; font-weight: 600; font-size: 1.05rem; margin: 0 1.4rem 0.3rem 0; }
+    .fav p { margin: 0; }
+    .price { font-weight: 600; margin-top: 0.45rem; }
+    .gf { display: inline-block; background: var(--sun); color: var(--ink); font-size: 0.72rem; font-weight: 600; border-radius: 999px; padding: 0.15rem 0.45rem; }
+    .order-link { font-weight: 800; }
+    .price-note { font-size: 0.82rem; }
+
+    .menu { background: var(--sky-lt); }
+    .menu-board { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.4rem; }
+    .menu-cat { background: #fff; border-radius: 16px; padding: 0.4rem 0.9rem 0.8rem; }
+    .menu-cat summary { font-family: "Bagel Fat One", system-ui, sans-serif; font-size: 1.75rem; cursor: pointer; min-height: 44px; display: flex; align-items: center; }
+    .menu-cat ul { list-style: none; margin: 0; padding: 0; }
+    .menu-cat li { display: flex; justify-content: space-between; gap: 0.8rem; padding: 0.28rem 0; border-bottom: 1px dashed var(--chrome); }
+    .menu-cat li span { color: #3a3358; }
+    .coffee-line { margin-top: 0.9rem; font-size: 0.82rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem; align-items: center; }
+    .about-photo { border: 10px solid #fff; border-radius: 22px; transform: rotate(2deg); box-shadow: 0 10px 0 rgba(27,19,64,0.06); }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .chips span { background: var(--sun); border-radius: 999px; padding: 0.35rem 0.7rem; font-weight: 800; }
+
+    .why { background: var(--ink); color: var(--cream); }
+    .why h2 { color: var(--cream); }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .why-card { border: 1px solid rgba(255,96,198,0.45); border-radius: 16px; padding: 1rem; }
+    .why-card .num { font-family: "Bagel Fat One", system-ui, sans-serif; color: var(--pink); font-size: 1.6rem; }
+    .why-card h3 { margin: 0.2rem 0; color: #fff; font-family: Manrope, sans-serif; }
+    .why-card p { margin: 0; }
+
+    .flyer { width: min(320px, 100%); border: 8px solid #fff; border-radius: 12px; transform: rotate(2deg); }
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    blockquote.review { margin: 0; background: #fff; border-radius: 16px; padding: 1rem; }
+    blockquote.review:nth-child(1) { background: #ffe6f6; transform: rotate(-1deg); }
+    blockquote.review:nth-child(2) { background: var(--sky-lt); transform: rotate(1deg); }
+    blockquote.review:nth-child(3) { background: #fff4cc; transform: rotate(-0.5deg); }
+    blockquote.review:nth-child(4) { background: #fff; transform: rotate(0.8deg); }
+    blockquote.review p { margin: 0; }
+    blockquote.review footer { margin-top: 0.55rem; font-size: 0.8rem; font-weight: 800; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.65rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 800; }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    .order-xl { font-size: clamp(2rem, 5vw, 3.2rem); color: var(--pink-dk); text-decoration: none; display: inline-block; }
+    .map { border: 3px solid var(--ink); border-radius: 16px; overflow: hidden; min-height: 280px; }
+    .map iframe { width: 100%; height: 100%; min-height: 280px; border: 0; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.7rem; }
+
+    .site-footer { background: var(--ink); color: var(--cream); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: var(--sun); }
+    .foot-logo { width: 80px; height: 80px; border-radius: 18px; margin: 0 auto 0.6rem; border: 4px solid #fff; }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (min-width: 481px) {
+      .menu-cat summary { pointer-events: none; list-style: none; }
+      .menu-cat summary::-webkit-details-marker { display: none; }
+    }
+    @media (max-width: 900px) {
+      .favs { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 800px) {
+      .hero-grid, .about-grid, .why-grid, .quotes, .contact-grid, .menu-board { grid-template-columns: 1fr; }
+      .sheet { min-height: 380px; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .favs { grid-template-columns: 1fr; }
+      .burst, .wavy { display: none; }
+      .shot { width: 68%; left: 16%; }
+      .dock { display: grid; grid-template-columns: 2fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 40; padding-bottom: env(safe-area-inset-bottom); }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 800; text-decoration: none; }
+      .dock .go { background: var(--pink-dk); color: #fff; }
+      .dock .dir { background: var(--cream); color: var(--ink); border-top: 2px solid var(--ink); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .sticker, .sticker:hover, .about-photo, .flyer, blockquote.review { transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap mono">
+      <span>mon 8–3 · tue closed · wed–sat 8–3 · sun 8–1</span>
+      <span>923 10th st e, palmetto</span>
+      <a href="https://www.instagram.com/smileyfacecoffee" target="_blank" rel="noopener noreferrer">@smileyfacecoffee<span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" aria-label="Smiley Face Cafe home">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp">
+          <img class="logo" src="images/logo.jpg" alt="Smiley Face Cafe logo: a chrome smiley and pink lettering, Palmetto, Florida" width="500" height="500">
+        </picture>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#menu">menu</a>
+        <a class="nav-link" href="#about">about</a>
+        <a class="nav-link" href="#studio">studio saturdays</a>
+        <a class="nav-link" href="#visit">visit</a>
+        <a class="btn btn-primary" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e"><span class="face" aria-hidden="true">☺</span> order online</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow mono">PALMETTO, FL · ESPRESSO · BREAKFAST · LUNCH · SWEETS</p>
+          <h1 id="hero-heading">really good coffee &amp; a quick fresh bite.</h1>
+          <p class="hero-lead">Scratch-made eats, house-made syrups and specialty drinks, right on 10th St E. Grab and go, or stay and chill for a minute.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e"><span class="face" aria-hidden="true">☺</span> Order online</a>
+            <a class="btn btn-ghost" href="#menu">See the menu</a>
+          </div>
+          <p class="meta mono">
+            <span id="open-today">Open today: …</span>
+            <span>923 10th St E, Palmetto</span>
+            <span>★ 5.0 on Google</span>
+          </p>
+        </div>
+        <div class="sheet" aria-hidden="false">
+          <picture>
+            <source srcset="images/logo.webp" type="image/webp">
+            <img class="sticker logo-sticker" src="images/logo.jpg" alt="" width="500" height="500">
+          </picture>
+          <picture>
+            <source srcset="images/drinks.webp" type="image/webp">
+            <img class="sticker shot" src="images/drinks.jpg" alt="Four iced drinks from above at Smiley Face Cafe, one topped with matcha" width="960" height="1200">
+          </picture>
+          <div class="sticker css-smiley" role="img" aria-label="Chrome smiley sticker">
+            <span class="eyes" aria-hidden="true"><i></i><i></i></span>
+            <svg viewBox="0 0 64 24" aria-hidden="true"><path d="M6 6c8 14 44 14 52 0" fill="none" stroke="#C4006B" stroke-width="4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="sticker burst">house-made syrups</div>
+          <div class="sticker pill">kids zone ✓</div>
+          <div class="sticker wavy bagel">keep palmetto local</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="favorites" aria-labelledby="favorites-heading">
+      <div class="wrap">
+        <p class="sec-num mono">01</p>
+        <h2 id="favorites-heading">what people keep ordering</h2>
+        <div class="favs">
+          <article class="fav"><span class="dot" style="background:#FF60C6" aria-hidden="true"></span><h3>honey lavender latte</h3><p>espresso, choice of milk, local honey, lavender syrup</p><p class="price mono">$7.00+</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+          <article class="fav"><span class="dot" style="background:#FFD23F" aria-hidden="true"></span><h3>honey cinnamon latte</h3><p>espresso, local honey, choice of milk, dash of cinnamon</p><p class="price mono">$7.00+</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+          <article class="fav"><span class="dot" style="background:#0083C2" aria-hidden="true"></span><h3>ceremonial matcha latte</h3><p>ceremonial matcha hand whisked to order… hot or iced, unsweetened</p><p class="price mono">$7.00+</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+          <article class="fav"><span class="dot" style="background:#FF60C6" aria-hidden="true"></span><h3>ham and swiss croissant</h3><p>deli ham, swiss cheese, on a toasted croissant</p><p class="price mono">$8.00</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+          <article class="fav"><span class="dot" style="background:#FFD23F" aria-hidden="true"></span><h3>Breakfast Toastada</h3><p>crispy corn tortilla, refried beans, fried egg, avocado, pickled jalapeno, cheddar cheese</p><p><span class="gf mono">gluten free</span></p><p class="price mono">$8.00</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+          <article class="fav"><span class="dot" style="background:#006A9E" aria-hidden="true"></span><h3>spicy tuna bowl</h3><p>jasmine rice, spicy tuna salad, cucumber, furikake rice seasoning, avocado, crispy onion, nori handroll sheets</p><p class="price mono">$9.00</p><a class="order-link" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order this →</a></article>
+        </div>
+        <p class="price-note mono">Prices from our online menu; check Toast for today’s prices.</p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu" aria-labelledby="menu-heading">
+      <div class="wrap">
+        <p class="sec-num mono">02</p>
+        <h2 id="menu-heading">the menu (fall 2026)</h2>
+        <div class="menu-board">
+          <details class="menu-cat" open>
+            <summary>coffee &amp; drinks</summary>
+            <ul>
+              <li>espresso</li><li>latte</li><li>cortado</li><li>mocha</li>
+              <li>cold brew <span>18 hour cold brew, housemade</span></li>
+              <li>chai latte</li><li>golden milk latte</li>
+              <li>lemonades <span>classic, strawberry, lavender</span></li>
+            </ul>
+          </details>
+          <details class="menu-cat" open>
+            <summary>fall lattes</summary>
+            <ul>
+              <li>pumpkin pie latte</li><li>cherry vanilla latte</li><li>Caramel Apple Latte</li>
+              <li>salted maple matcha</li><li>hot date cappuccino</li><li>pumpkin shaken espresso</li>
+            </ul>
+          </details>
+          <details class="menu-cat" open>
+            <summary>smoothies</summary>
+            <ul>
+              <li>smiley face smoothie <span>banana, apple, strawberry</span></li>
+              <li>sunny days</li><li>hi honey</li><li>matcha-cado smoothie</li>
+            </ul>
+          </details>
+          <details class="menu-cat" open>
+            <summary>breakfast all day</summary>
+            <ul>
+              <li>bacon egg and cheese</li><li>avocado toast</li>
+              <li>japanese breakfast <span>jasmine rice… jammy egg, served with miso soup</span></li>
+              <li>bagel and lox</li><li>Breakfast Toastada</li>
+            </ul>
+          </details>
+          <details class="menu-cat" open>
+            <summary>lunch anytime</summary>
+            <ul>
+              <li>tuna verde</li><li>kimchi cheddar melt</li><li>Palmetto Turkey Melt</li>
+              <li>tree hugger</li><li>smiley face club</li>
+            </ul>
+          </details>
+          <details class="menu-cat" open>
+            <summary>kids meals</summary>
+            <ul>
+              <li>egg and cheese</li><li>turkey and swiss</li><li>lil avo toast</li>
+              <li>ham and cheese on a martins roll</li>
+            </ul>
+          </details>
+        </div>
+        <p class="coffee-line mono">coffee: Look Alive Coffee "West Side Blend" · espresso, drip &amp; cold brew</p>
+        <p><a class="btn btn-primary" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">see the full menu &amp; order</a></p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <div>
+          <p class="sec-num mono">03</p>
+          <h2 id="about-heading">palmetto needed a spot like this</h2>
+          <p>We started Smiley Face Cafe because Palmetto needed a spot like this! A place to grab REALLY GOOD coffee, a quick fresh bite, and just chill for a minute. After living and working in the food industry in Austin, we were spoiled with amazing options on every corner. We’ve been missing that so we decided to create it ourselves :) Now we’re here, serving up scratch-made eats, delicious drinks and a place for the community to hang. Whether you’re heading to work, wrangling kids, or just need a minute to yourself, we’ve got your back.</p>
+          <div class="chips"><span>scratch-made</span><span>house-made syrups</span><span>kids zone</span></div>
+        </div>
+        <picture>
+          <source srcset="images/drinks.webp" type="image/webp">
+          <img class="about-photo" src="images/drinks.jpg" alt="Four iced drinks from above at Smiley Face Cafe, one topped with matcha" width="960" height="1200">
+        </picture>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">why people come back</h2>
+        <div class="why-grid">
+          <article class="why-card"><div class="num">01</div><h3>Made here.</h3><p>Scratch-made food and house-made vanilla, strawberry and lemon syrups.</p></article>
+          <article class="why-card"><div class="num">02</div><h3>Bring the kids.</h3><p>There’s a kids zone and a kids menu, so grown-ups can actually drink their coffee.</p></article>
+          <article class="why-card"><div class="num">03</div><h3>Order ahead.</h3><p>Order on Toast for pickup and skip the wait.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Saturdays: last listed dates are Nov 2025. No upcoming date is printed in the copy. Hide this section if they no longer run. -->
+    <section id="studio" aria-labelledby="studio-heading">
+      <div class="wrap">
+        <p class="sec-num mono">04</p>
+        <h2 id="studio-heading">smiley studio saturdays</h2>
+        <p>A place to sip, create and connect. Drop-in craft days with things like giant painted paper leaves, friendship bracelets and paper chains. Grab a coffee, breakfast, hang out, make something, and meet new people.</p>
+        <picture>
+          <source srcset="images/studio-saturdays.webp" type="image/webp">
+          <img class="flyer" src="images/studio-saturdays.jpg" alt="Smiley Studio Saturdays flyer for drop-in craft days, 11am to 2pm" width="927" height="1200">
+        </picture>
+        <p class="mono">11am–2pm · check instagram for the next date</p>
+        <p><a class="btn btn-ghost" href="https://www.instagram.com/smileyfacecoffee" target="_blank" rel="noopener noreferrer">follow @smileyfacecoffee<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num mono">05</p>
+        <h2 id="reviews-heading">kind words</h2>
+        <div class="quotes">
+          <blockquote class="review"><p>Everything at our table was fresh, well made, beautifully presented, and delicious.</p><footer>Google review, Feb 2026</footer></blockquote>
+          <blockquote class="review"><p>I had gotten the honey lavender latte and honey cinnamon latte. I rarely find any lavender drink flavor so I am very pleased with just how good it taste.</p><footer>Google review, Jan 2026</footer></blockquote>
+          <blockquote class="review"><p>A diversity of breakfast and lunch with a fusion of Mexican or Japanese twist.</p><footer>Google review, Dec 2025</footer></blockquote>
+          <blockquote class="review"><p>The shop is very kid-friendly, which makes it a huge plus for families, and the owners are extremely kind and welcoming.</p><footer>Google review, Sep 2025</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <p class="sec-num mono">06</p>
+        <h2 id="visit-heading">come say hi</h2>
+        <p>We’re at 923 10th St E, back in the corner of the plaza.</p>
+        <!-- phone: (713) 419-7648 from Toast — confirm with owner before showing -->
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Address</dt><dd>923 10th St E, Palmetto, FL 34221</dd></div>
+              <div><dt>Hours</dt><dd>Mon 8 AM–3 PM · Tue closed · Wed–Sat 8 AM–3 PM · Sun 8 AM–1 PM</dd></div>
+              <div><dt>Online ordering</dt><dd>Ordering hours can end earlier than the café; Toast shows live times.</dd></div>
+              <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/smileyfacecoffee" target="_blank" rel="noopener noreferrer">@smileyfacecoffee<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+            </dl>
+            <a class="order-xl bagel" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order online</a>
+            <div class="row">
+              <a class="btn btn-primary" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">Order online</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Smiley+Face+Cafe+923+10th+St+E+Palmetto+FL+34221">Get directions</a>
+              <a class="btn btn-ghost" href="https://www.instagram.com/smileyfacecoffee" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="btn btn-ghost" href="https://www.facebook.com/671719622701123" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+          <div class="map">
+            <iframe loading="lazy" title="Map to Smiley Face Cafe, 923 10th St E, Palmetto" src="https://www.google.com/maps?q=Smiley+Face+Cafe,+923+10th+St+E,+Palmetto,+FL+34221&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img class="foot-logo" src="images/logo.jpg" alt="" width="500" height="500">
+      </picture>
+      <p>smiley face cafe · 923 10th st e, palmetto, fl 34221 · keep palmetto local</p>
+      <p>
+        <a href="https://www.instagram.com/smileyfacecoffee" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a>
+        ·
+        <a href="https://www.facebook.com/671719622701123" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+        ·
+        <a href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">order online</a>
+      </p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Order or get directions">
+    <a class="go" href="https://order.toasttab.com/online/smiley-face-cafe-923-10th-st-e">Order online</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Smiley+Face+Cafe+923+10th+St+E+Palmetto+FL+34221">Directions</a>
+  </nav>
+  <script>
+    (function () {
+      var el = document.getElementById("open-today");
+      var wd = new Intl.DateTimeFormat("en-US", { weekday: "short", timeZone: "America/New_York" }).format(new Date());
+      var hours = { Mon: "8 AM–3 PM", Wed: "8 AM–3 PM", Thu: "8 AM–3 PM", Fri: "8 AM–3 PM", Sat: "8 AM–3 PM", Sun: "8 AM–1 PM" };
+      el.textContent = hours[wd] ? "Open today: " + hours[wd] : "Closed today";
+      var narrow = window.matchMedia("(max-width: 480px)");
+      function layout() {
+        document.querySelectorAll(".menu-cat").forEach(function (d, i) {
+          if (narrow.matches) {
+            d.open = i === 0;
+            d.setAttribute("name", "menu");
+          } else {
+            d.open = true;
+            d.removeAttribute("name");
+          }
+        });
+      }
+      layout();
+      narrow.addEventListener("change", layout);
+    })();
+  </script>
+</body>
+</html>

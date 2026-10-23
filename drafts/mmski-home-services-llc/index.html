@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MMSKI Home Services | Glass Showers, Handyman &amp; Pressure Washing in Englewood, FL</title>
+  <meta name="description" content="Husband-and-wife handyman and glass team serving all of Englewood: glass shower enclosures, window and door glass reglazing, shelves, mailboxes, fence repairs and pressure washing. Call or text Mike at (941) 270-7457.">
+  <meta name="theme-color" content="#2F6F62">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Work+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "MMSKI Home Services LLC",
+    "telephone": "+1-941-270-7457",
+    "email": "mmskihome@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Englewood",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": "Englewood, FL",
+    "openingHours": ["Mo 09:00-18:00","Tu 08:30-18:00","We 08:30-18:00","Fr 08:30-18:00","Sa 09:00-17:00"],
+    "sameAs": "https://nextdoor.com/pages/mmski-home-services-llc-englewood-fl-1/"
+  }
+  </script>
+  <style>
+    :root {
+      --frost: #EEF4F2;
+      --ink: #1D2624;
+      --seaglass: #2F6F62;
+      --seaglass-lt: #CFE3DC;
+      --brass: #B8862B;
+      --brass-dk: #8A6420;
+      --gulf: #3E8FB0;
+      --white: #FFFFFF;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Work Sans", system-ui, sans-serif; background: var(--frost); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--seaglass); }
+    h1, h2 { font-family: "Zilla Slab", Georgia, serif; font-weight: 700; line-height: 1.15; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--brass); color: var(--ink); padding: 0.6rem 1rem; font-weight: 700; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; }
+
+    .utility-bar { background: var(--ink); color: var(--frost); font-size: 0.78rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1rem; text-align: center; }
+    .utility-bar a { color: var(--seaglass-lt); text-decoration: none; font-weight: 500; }
+
+    .site-header { background: var(--white); border-bottom: 1px solid #d5e4de; padding: 0.7rem 0; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; flex-wrap: wrap; }
+    .wordmark { text-decoration: none; color: var(--ink); }
+    .wordmark strong { font-family: "Zilla Slab", serif; font-size: 1.6rem; font-weight: 700; letter-spacing: 0.04em; border-bottom: 3px solid var(--brass); }
+    .wordmark span { display: block; font-weight: 600; font-size: 0.68rem; letter-spacing: 0.16em; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.88rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 6px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--seaglass); color: #fff; }
+    .btn-primary:hover { background: #25594e; color: #fff; }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn-ghost:hover { background: var(--ink); color: var(--frost); }
+
+    .hero { padding: 2.4rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; grid-template-areas: "copy visual" "meta visual"; gap: 0.8rem 1.6rem; align-items: center; }
+    .hero-copy { grid-area: copy; } .hero-visual { grid-area: visual; } .hero-meta { grid-area: meta; }
+    .eyebrow { color: var(--seaglass); letter-spacing: 0.06em; font-size: 0.78rem; margin: 0 0 0.55rem; }
+    .hero h1 { font-size: clamp(1.9rem, 3.8vw, 2.8rem); margin: 0 0 0.65rem; }
+    .hero-lead { margin: 0 0 1rem; max-width: 48ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 0.45rem 0.9rem; margin: 0; font-size: 0.85rem; }
+    .scene { background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid #d5e4de; }
+    .glint { animation: glint 1.2s ease 0.3s both; }
+    .sealed { opacity: 0; animation: pop 0.3s ease 1.4s forwards; }
+    @keyframes glint { from { transform: translateX(-80px); opacity: 0; } to { transform: translateX(40px); opacity: 0.85; } }
+    @keyframes pop { to { opacity: 1; } }
+
+    section { padding: 3rem 0; }
+    .sec-num { font-family: "IBM Plex Mono", monospace; color: var(--brass-dk); letter-spacing: 0.12em; margin: 0 0 0.3rem; font-size: 0.8rem; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 1rem; }
+    .glass-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+    .gcard { background: var(--white); border-left: 5px solid var(--seaglass); padding: 1rem 1rem 1.1rem; border-radius: 0 12px 12px 0; }
+    .gcard h3 { font-family: "Zilla Slab", serif; margin: 0.3rem 0; font-size: 1.25rem; }
+    .gcard p { margin: 0; }
+    .gcard .tag { color: var(--brass-dk); font-size: 0.75rem; letter-spacing: 0.08em; margin: 0.5rem 0 0; }
+    .ico { width: 32px; height: 32px; color: var(--brass); }
+    .also { margin: 0.9rem 0 0; font-weight: 600; }
+
+    .clip {
+      background: #f7f3ea;
+      background-image: repeating-linear-gradient(0deg, rgba(29,38,36,0.03) 0 1px, transparent 1px 28px);
+      border-radius: 4px 4px 12px 12px; padding: 1.2rem 1.2rem 1.3rem;
+      box-shadow: 0 8px 0 rgba(29,38,36,0.06);
+      position: relative; max-width: 720px;
+    }
+    .clip-top { display: flex; justify-content: center; margin: -1.7rem 0 0.4rem; }
+    .clip-top svg { width: 84px; height: 28px; }
+    .list { list-style: none; margin: 0; padding: 0; }
+    .list li { display: grid; grid-template-columns: 28px 1fr; gap: 0.55rem; align-items: start; padding: 0.45rem 0; border-bottom: 1px dashed #d9d0c0; }
+    .box { width: 18px; height: 18px; border: 2px solid var(--ink); border-radius: 3px; margin-top: 0.15rem; }
+    .price { margin-top: 1rem; border: 2px solid var(--brass); background: var(--white); padding: 0.8rem 0.9rem; border-radius: 8px; }
+    .foot { margin: 0.8rem 0 0; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .chips span { background: var(--seaglass-lt); color: var(--ink); border-radius: 999px; padding: 0.4rem 0.75rem; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+
+    .why { background: var(--ink); color: var(--frost); }
+    .why h2 { color: #fff; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+    .why-card { border: 1px solid rgba(184,134,43,0.45); border-radius: 12px; padding: 1rem; }
+    .why-card .num { font-family: "Zilla Slab", serif; color: var(--brass); font-size: 1.6rem; }
+    .why-card h3 { color: #fff; margin: 0.2rem 0; font-family: "Zilla Slab", serif; }
+    .why-card p { margin: 0; color: #d5e0dc; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem; background: var(--white); border-radius: 14px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--brass-dk); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    .hours { width: 100%; border-collapse: collapse; margin-top: 0.8rem; font-size: 0.92rem; }
+    .hours th, .hours td { text-align: left; padding: 0.35rem 0.4rem; border-bottom: 1px solid #e3ece8; }
+    .hours tr.is-today { background: var(--seaglass-lt); }
+    .hours tr.closed td { color: var(--brass-dk); font-weight: 700; }
+    .phone-xl { font-family: "Zilla Slab", serif; font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--ink); text-decoration: none; font-weight: 700; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.55rem; justify-content: center; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--ink); color: #d5e0dc; text-align: center; padding: 2.2rem 0; }
+    .site-footer a { color: var(--seaglass-lt); }
+    .site-footer .wordmark { color: #fff; }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+    .thu-note { display: none; margin: 0; background: var(--brass); color: var(--ink); text-align: center; font-weight: 700; padding: 0.35rem 0.6rem; }
+
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "visual" "meta"; }
+      .hero-visual svg { max-height: 260px; margin-inline: auto; }
+      .glass-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: block; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock-row { display: grid; grid-template-columns: 1fr 1fr; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--seaglass); color: #fff; }
+      .dock .text { background: var(--frost); color: var(--ink); border-top: 2px solid var(--ink); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+      body.thu .thu-note { display: block; }
+      body.thu { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .glint, .sealed { animation: none; }
+      .glint { opacity: 0; }
+      .sealed { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap mono">
+      <span>Mon 9–6 · Tue/Wed/Fri 8:30–6 · Thu closed · Sat 9–5</span>
+      <span>Englewood, FL</span>
+      <span>Call or text <a href="tel:+19412707457">(941) 270-7457</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top"><strong>MMSKI</strong><span>HOME SERVICES</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#glass">Glass</a>
+        <a class="nav-link" href="#services">Handyman</a>
+        <a class="nav-link" href="#pressure">Pressure washing</a>
+        <a class="nav-link" href="#contact">Hours</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19412707457">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow mono">ENGLEWOOD, FL · GLASS · HANDYMAN · PRESSURE WASHING</p>
+          <h1 id="hero-heading">Glass showers, window glass &amp; your whole to-do list.</h1>
+          <!-- Names: Mike is named in their posts. His wife is not named on this page until "Mike & Mary" is confirmed. -->
+          <p class="hero-lead">We’re a small husband-and-wife handyman business serving all of Englewood. Make your list and give Mike a call or text — we answer within one day.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19412707457">Call or text Mike (941) 270-7457</a>
+            <a class="btn btn-ghost" href="#services">See what we do</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="scene">
+            <!-- "✓ sealed" tag is illustrative, not a claim about a finished job. -->
+            <svg viewBox="0 0 420 280" role="img" aria-label="A frameless glass shower enclosure with a brass handle and hinges. A light glint crosses the glass.">
+              <rect width="420" height="280" fill="#EEF4F2"/>
+              <g stroke="#c5d4ce" stroke-width="2">
+                <path d="M0 40h420M0 80h420M0 120h420M0 160h420M0 200h420M0 240h420"/>
+                <path d="M40 0v280M100 0v280M160 0v280M220 0v280M280 0v280M340 0v280M400 0v280"/>
+              </g>
+              <rect x="90" y="40" width="100" height="200" fill="#CFE3DC" fill-opacity="0.45" stroke="#2F6F62" stroke-width="3"/>
+              <rect x="190" y="40" width="90" height="200" fill="#CFE3DC" fill-opacity="0.45" stroke="#2F6F62" stroke-width="3"/>
+              <rect x="280" y="40" width="70" height="200" fill="#CFE3DC" fill-opacity="0.35" stroke="#2F6F62" stroke-width="3"/>
+              <rect x="188" y="120" width="8" height="36" rx="2" fill="#B8862B"/>
+              <circle cx="100" cy="48" r="5" fill="#B8862B"/>
+              <circle cx="180" cy="48" r="5" fill="#B8862B"/>
+              <circle cx="276" cy="48" r="5" fill="#B8862B"/>
+              <g class="glint">
+                <polygon points="120,40 150,40 210,240 180,240" fill="#fff" opacity="0.7"/>
+              </g>
+              <g class="sealed">
+                <rect x="300" y="150" width="78" height="22" rx="4" fill="#fff" stroke="#2F6F62"/>
+                <text x="339" y="165" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#1D2624">✓ sealed</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <p class="hero-meta mono">
+          <span>Closed Thursdays</span>
+          <span>Englewood, FL</span>
+          <span>Call or text</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="glass" aria-labelledby="glass-heading" style="background:#fff">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <!-- "Specialty" is positioning from how their posts lead with glass, not a credential. -->
+        <h2 id="glass-heading">Glass is our specialty</h2>
+        <div class="glass-grid">
+          <article class="gcard">
+            <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="4" width="14" height="24"/><rect x="20" y="4" width="6" height="24"/></svg>
+            <h3>Glass shower enclosures</h3>
+            <p>Installation and repairs.</p>
+            <p class="tag mono">SHOWERS</p>
+          </article>
+          <article class="gcard">
+            <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="6" width="22" height="18"/><path d="M5 14h22"/></svg>
+            <h3>Window &amp; door glass reglazing</h3>
+            <p>Re-seating and resealing glass in windows and doors.</p>
+            <p class="tag mono">REGLAZING</p>
+          </article>
+          <article class="gcard">
+            <svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 10h20M6 18h20M8 10v12M24 10v12"/></svg>
+            <h3>Glass, mirrored &amp; other shelves</h3>
+            <p>Wood, glass, mirrored, metal — what else you got?</p>
+            <p class="tag mono">SHELVES</p>
+          </article>
+        </div>
+        <p class="also">Exterior window cleaning, too. <span class="mono">WINDOWS</span></p>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="services-heading">Make your list. We’ll handle it.</h2>
+        <div class="clip">
+          <div class="clip-top" aria-hidden="true">
+            <svg viewBox="0 0 84 28"><rect x="22" y="6" width="40" height="16" rx="3" fill="#B8862B"/><rect x="34" y="0" width="16" height="10" rx="2" fill="#8A6420"/></svg>
+          </div>
+          <ul class="list">
+            <li><span class="box" aria-hidden="true"></span><span>Minor home repairs</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Mailbox installation</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Wood fence repairs</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Sliding-door and cabinet handle swaps</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Shelves, hung right</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Pressure washing: driveways, curbing and more</span></li>
+            <li><span class="box" aria-hidden="true"></span><span>Exterior window cleaning</span></li>
+          </ul>
+        </div>
+        <!-- $75 handle price hidden until confirmed. Source: their Sep 2026 Nextdoor reply. -->
+        <p class="price mono" hidden>Sliding-door handle swap: no more than $75 to install, plus the handles you pick.</p>
+        <p class="foot">Not sure if it’s on our list? Text a photo and ask.</p>
+      </div>
+    </section>
+
+    <section id="pressure" aria-labelledby="pressure-heading" style="background:#fff">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="pressure-heading">Pressure washing</h2>
+        <p>Driveways, curbing and more.</p>
+        <div class="chips">
+          <span>driveways</span>
+          <span>curbing</span>
+          <span>sidewalks</span>
+          <span>fences</span>
+          <span>sheds</span>
+          <!-- confirm single-story homes before showing -->
+          <span hidden>single-story homes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">Why call us</h2>
+        <div class="why-grid">
+          <article class="why-card"><div class="num">01</div><h3>A husband-and-wife team.</h3><p>Small, local, and you know who’s showing up.</p></article>
+          <article class="why-card"><div class="num">02</div><h3>We answer within a day.</h3><p>Calls and texts answered within one day.</p></article>
+          <!-- "Straight pricing" wording: confirm. Backed by their public price replies. -->
+          <article class="why-card"><div class="num">03</div><h3>Straight pricing.</h3><p>Ask and we’ll tell you up front what a job should cost.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="contact-heading">Call or text Mike</h2>
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Call or text</dt><dd><a href="tel:+19412707457">(941) 270-7457</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:mmskihome@gmail.com?subject=Handyman%20%2F%20glass%20job">mmskihome@gmail.com</a></dd></div>
+              <div><dt>Service area</dt><dd>All of Englewood, FL</dd></div>
+              <div><dt>Hours</dt><dd>Mon 9 AM–6 PM · Tue–Wed 8:30 AM–6 PM · <strong>Thu closed</strong> · Fri 8:30 AM–6 PM · Sat 9 AM–5 PM · Sun closed</dd></div>
+            </dl>
+            <table class="hours mono">
+              <caption class="sr-only">Weekly hours. Thursday and Sunday are closed.</caption>
+              <tbody>
+                <tr data-day="1"><th scope="row">Monday</th><td>9 AM–6 PM</td></tr>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>8:30 AM–6 PM</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>8:30 AM–6 PM</td></tr>
+                <tr data-day="4" class="closed"><th scope="row">Thursday</th><td>closed</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>8:30 AM–6 PM</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>9 AM–5 PM</td></tr>
+                <tr data-day="0" class="closed"><th scope="row">Sunday</th><td>closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19412707457">(941) 270-7457</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19412707457">Call</a>
+              <a class="btn btn-ghost" href="sms:+19412707457?&amp;body=Hi%20Mike%2C%20I%20have%20a%20job%20for%20you%3A%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:mmskihome@gmail.com?subject=Handyman%20%2F%20glass%20job">Email</a>
+              <a class="btn btn-ghost" href="https://nextdoor.com/pages/mmski-home-services-llc-englewood-fl-1/" target="_blank" rel="noopener noreferrer">Nextdoor<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="wordmark" href="#top"><strong>MMSKI</strong><span>HOME SERVICES</span></a>
+      <p>MMSKI Home Services LLC · husband-and-wife handyman &amp; glass · Englewood, FL · <a href="tel:+19412707457">(941) 270-7457</a></p>
+      <p><a href="https://nextdoor.com/pages/mmski-home-services-llc-englewood-fl-1/" target="_blank" rel="noopener noreferrer">Nextdoor<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Call or text">
+    <p class="thu-note">Closed today — text us</p>
+    <div class="dock-row">
+      <a class="go" href="tel:+19412707457">Call</a>
+      <a class="text" href="sms:+19412707457?&amp;body=Hi%20Mike%2C%20I%20have%20a%20job%20for%20you%3A%20">Text</a>
+    </div>
+  </nav>
+  <script>
+    (function () {
+      var wd = new Intl.DateTimeFormat("en-US", { weekday: "short", timeZone: "America/New_York" }).format(new Date());
+      var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      var day = map[wd];
+      var row = document.querySelector('tr[data-day="' + day + '"]');
+      if (row) row.classList.add("is-today");
+      if (day === 4) document.body.classList.add("thu");
+    })();
+  </script>
+</body>
+</html>

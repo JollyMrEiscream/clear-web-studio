@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Hair of the Dog Grooming | One-on-One Dog &amp; Cat Grooming in Palmetto, FL</title>
+  <meta name="description" content="Cage-free, one-on-one dog and cat grooming in Palmetto with Adriana. One pet at a time, breaks during the groom and photo updates by text. Call or text (941) 812-1474.">
+  <meta name="theme-color" content="#1F6F6B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "additionalType": "https://en.wikipedia.org/wiki/Dog_grooming",
+    "name": "A Hair of the Dog Grooming",
+    "telephone": "+1-941-812-1474",
+    "email": "asipe123@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Palmetto",
+      "addressRegion": "FL",
+      "postalCode": "34221",
+      "addressCountry": "US"
+    },
+    "areaServed": "Palmetto, FL",
+    "sameAs": "https://www.facebook.com/114596635061311"
+  }
+  </script>
+  <style>
+    :root {
+      --cream: #FBF6EC;
+      --ink: #1E2A2B;
+      --teal: #1F6F6B;
+      --teal-lt: #D6ECE8;
+      --butter: #F4C95D;
+      --blush: #F2C4B8;
+      --muted: #5B6B6C;
+      --white: #FFFFFF;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Nunito Sans", system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--teal); }
+    a:hover { color: #164e4b; }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.15; font-weight: 800; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip {
+      position: absolute; left: -999px; top: 0; background: var(--butter); color: var(--ink);
+      padding: 0.6rem 1rem; font-weight: 700; z-index: 80;
+    }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--butter); outline-offset: 3px; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    .utility-bar {
+      background: var(--ink); color: var(--cream);
+      font-size: 0.82rem; font-weight: 600; padding: 0.45rem 0;
+    }
+    .utility-bar .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.25rem; text-align: center;
+    }
+    .utility-bar a { color: var(--butter); text-decoration: none; font-weight: 700; }
+    .utility-bar a:hover { text-decoration: underline; }
+
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid #eadfce;
+      padding: 0.75rem 0;
+      position: sticky; top: 0; z-index: 30;
+    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .wordmark {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      text-decoration: none; color: var(--ink);
+      font-family: Fraunces, Georgia, serif; font-weight: 800; font-size: 1.25rem; line-height: 1.1;
+    }
+    .wordmark svg { width: 28px; height: 28px; flex: none; }
+    .wordmark small { display: block; font-family: "Nunito Sans", sans-serif; font-weight: 700; font-size: 0.68rem; letter-spacing: 0.08em; color: var(--teal); text-transform: uppercase; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    nav.site-nav a.nav-link:hover { color: var(--teal); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      min-height: 44px; padding: 0.7rem 1.25rem; border-radius: 999px;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; line-height: 1.1;
+    }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: #185955; color: var(--white); }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn-ghost:hover { background: var(--ink); color: var(--cream); }
+    .btn-text { background: none; border: none; color: var(--teal); text-decoration: underline; min-height: 44px; padding-inline: 0.4rem; }
+
+    .hero { padding: 2.5rem 0 2rem; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-areas: "copy visual" "meta visual";
+      gap: 1.25rem 2.25rem;
+      align-items: center;
+    }
+    .hero-copy { grid-area: copy; }
+    .hero-visual { grid-area: visual; }
+    .hero-meta { grid-area: meta; }
+    .eyebrow {
+      font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--teal); font-size: 0.78rem; margin: 0 0 0.75rem;
+    }
+    .hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.3rem); margin: 0 0 0.75rem; }
+    .hero-lead { font-size: 1.12rem; color: var(--muted); margin: 0 0 1.25rem; max-width: 42ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; align-items: center; }
+    .hero-meta {
+      display: flex; flex-wrap: wrap; gap: 0.45rem 1rem;
+      font-size: 0.92rem; font-weight: 700; color: var(--ink); margin: 0;
+    }
+    .hero-meta span { background: var(--white); border-radius: 999px; padding: 0.35rem 0.75rem; }
+
+    .scene { position: relative; background: var(--white); border-radius: 24px; padding: 0.5rem; border: 1px solid #eadfce; }
+    .scene svg { width: 100%; height: auto; }
+    .hand-note {
+      position: absolute; right: 4%; bottom: 6%;
+      font-family: "Gochi Hand", cursive; font-size: 22px; color: var(--teal);
+      margin: 0; max-width: 12ch; line-height: 1.15; transform: rotate(-4deg);
+    }
+    .glow { transform-origin: 210px 78px; animation: glow 2.8s ease-in-out infinite; }
+    .tail { transform-origin: 292px 214px; animation: wag 2s ease-in-out infinite; }
+    @keyframes wag { 0%, 100% { transform: rotate(-12deg); } 50% { transform: rotate(16deg); } }
+    @keyframes glow { 0%, 100% { opacity: 0.45; } 50% { opacity: 0.95; } }
+
+    section { padding: 3rem 0; }
+    .sec-num {
+      font-family: "Nunito Sans", sans-serif; font-weight: 700; letter-spacing: 0.14em;
+      color: var(--teal); font-size: 0.78rem; margin: 0 0 0.4rem;
+    }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin: 0 0 1.25rem; }
+
+    .how { background: var(--white); }
+    .steps {
+      list-style: none; margin: 0; padding: 0;
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.85rem;
+      position: relative;
+    }
+    .steps li { text-align: center; }
+    .step-icon {
+      width: 64px; height: 64px; margin: 0 auto 0.7rem; border-radius: 50%;
+      background: var(--teal); color: var(--white);
+      display: grid; place-items: center; position: relative; z-index: 1;
+    }
+    .step-icon svg { width: 30px; height: 30px; }
+    .steps h3 { font-family: "Nunito Sans", sans-serif; font-size: 1rem; margin: 0 0 0.35rem; }
+    .steps p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .svc {
+      background: var(--white); border-radius: 18px; padding: 1.25rem 1.3rem 1.4rem;
+      position: relative; border: 1px solid #eadfce; overflow: hidden;
+    }
+    .svc .tile {
+      width: 56px; height: 56px; border-radius: 14px; background: var(--teal-lt); color: var(--teal);
+      display: grid; place-items: center; margin-bottom: 0.75rem;
+    }
+    .svc .tile svg { width: 34px; height: 34px; }
+    .svc h3 { margin: 0 0 0.4rem; font-size: 1.45rem; }
+    .svc p { margin: 0; color: var(--muted); }
+    .corner-note {
+      position: absolute; top: 1rem; right: 1rem;
+      font-family: "Gochi Hand", cursive; font-size: 22px; color: var(--teal); margin: 0;
+    }
+    .reassure {
+      margin-top: 1rem; background: var(--teal-lt); border-radius: 14px; padding: 1rem 1.15rem;
+      font-weight: 700;
+    }
+    .quote-line { margin: 0.85rem 0 0; color: var(--muted); }
+
+    .why { background: var(--ink); color: var(--cream); }
+    .why h2 { color: var(--cream); }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .why-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px; padding: 1.3rem;
+    }
+    .why-card .num { font-family: Fraunces, serif; font-size: 1.8rem; color: var(--butter); font-weight: 800; }
+    .why-card h3 { color: var(--cream); font-size: 1.2rem; margin: 0.3rem 0; }
+    .why-card p { margin: 0; color: #d5e4e2; }
+
+    .reviews { background: var(--teal-lt); }
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    .quotes blockquote:last-child { grid-column: 1 / -1; }
+    blockquote.review {
+      margin: 0; background: var(--cream); border-radius: 16px; padding: 1.15rem 1.2rem 1rem;
+      position: relative;
+    }
+    .paw { width: 28px; height: 28px; color: var(--blush); margin-bottom: 0.45rem; }
+    blockquote.review p { margin: 0; }
+    blockquote.review footer { margin-top: 0.7rem; color: var(--muted); font-size: 0.85rem; font-weight: 700; }
+
+    .book { background: var(--white); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem;
+      background: var(--cream); border-radius: 18px; padding: 1.5rem;
+    }
+    .book dl { display: grid; gap: 0.85rem; margin: 1rem 0 0; }
+    .book dt { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .book dd { margin: 0.1rem 0 0; font-weight: 700; }
+    .book dd a { text-decoration: none; }
+    .phone-xl {
+      font-family: Fraunces, serif; font-weight: 800;
+      font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--ink); text-decoration: none; display: block;
+    }
+    .phone-xl:hover { color: var(--teal); }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .contact-cta .row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+
+    .site-footer { background: var(--ink); color: #d5e4e2; padding: 2.25rem 0 2.5rem; text-align: center; }
+    .site-footer .wordmark { color: var(--cream); justify-content: center; margin-bottom: 0.6rem; }
+    .site-footer p { margin: 0.3rem 0; font-size: 0.92rem; }
+    .site-footer a { color: var(--butter); }
+
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "visual" "meta"; }
+      .hero-visual svg { max-height: 260px; width: auto; margin-inline: auto; }
+      .steps { grid-template-columns: 1fr; gap: 0; margin-left: 0.25rem; }
+      .steps li {
+        display: grid; grid-template-columns: 64px 1fr; gap: 0.75rem; text-align: left;
+        padding: 0.65rem 0; position: relative;
+      }
+      .steps li::before {
+        content: ""; position: absolute; left: 31px; top: 0; bottom: 0; width: 2px; background: var(--teal);
+      }
+      .steps li:first-child::before { top: 32px; }
+      .steps li:last-child::before { bottom: auto; height: 32px; }
+      .step-icon { margin: 0; }
+      .why-grid, .quotes, .contact-grid, .cards-2 { grid-template-columns: 1fr; }
+      .quotes blockquote:last-child { grid-column: auto; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock {
+        display: grid; grid-template-columns: 60% 40%;
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .dock a {
+        display: flex; align-items: center; justify-content: center;
+        min-height: 56px; font-weight: 700; text-decoration: none;
+      }
+      .dock .go { background: var(--teal); color: var(--white); }
+      .dock .call { background: var(--cream); color: var(--ink); border-top: 2px solid var(--ink); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 480px) {
+      .hand-note { display: none; }
+      .utility-bar { font-size: 0.75rem; }
+      .corner-note { position: static; display: block; margin-top: 0.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .tail, .glow { animation: none; }
+      .glow { opacity: 0.75; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>By appointment, Tue–Sat</span>
+      <span>Palmetto, FL</span>
+      <span>Call or text <a href="tel:+19418121474">(941) 812-1474</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="A Hair of the Dog Grooming home">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="10" cy="8" r="3.2" fill="#F2C4B8"/>
+          <circle cx="22" cy="8" r="3.2" fill="#F2C4B8"/>
+          <circle cx="6" cy="16" r="2.6" fill="#F2C4B8"/>
+          <circle cx="26" cy="16" r="2.6" fill="#F2C4B8"/>
+          <ellipse cx="16" cy="20" rx="7" ry="6" fill="#1F6F6B"/>
+        </svg>
+        <span>A Hair of the Dog<small>Grooming · Palmetto</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#book">Book</a>
+        <a class="btn btn-primary" href="sms:+19418121474?&amp;body=Hi%20Adriana%2C%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20...">Text Adriana</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Palmetto, FL · Dog &amp; cat grooming · One-on-one</p>
+          <h1 id="hero-heading">One pet at a time. No cages.</h1>
+          <p class="hero-lead">I’m Adriana. I groom dogs and cats one-on-one in my home salon in Palmetto, with breaks during the groom so your pet stays calm. I’ll text you photo updates along the way.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sms:+19418121474?&amp;body=Hi%20Adriana%2C%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20...">Text Adriana</a>
+            <a class="btn btn-ghost" href="tel:+19418121474">Call (941) 812-1474</a>
+            <a class="btn btn-text" href="#how">How it works</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="scene">
+            <svg viewBox="0 0 440 340" role="img" aria-label="A single dog standing on a grooming table under a warm pendant lamp. A tag on the lamp reads 1 of 1.">
+              <rect width="440" height="340" rx="20" fill="#FBF6EC"/>
+              <ellipse class="glow" cx="210" cy="150" rx="120" ry="90" fill="#F4C95D" opacity="0.55"/>
+              <line x1="210" y1="8" x2="210" y2="52" stroke="#1E2A2B" stroke-width="3"/>
+              <path d="M168 52 h84 l-12 36 h-60 z" fill="#F4C95D" stroke="#1E2A2B" stroke-width="3"/>
+              <rect x="188" y="92" width="36" height="22" rx="4" fill="#F4C95D" stroke="#1E2A2B" stroke-width="2" transform="rotate(8 206 103)"/>
+              <text x="206" y="107" text-anchor="middle" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700" fill="#1E2A2B">1 of 1</text>
+              <rect x="118" y="228" width="196" height="16" rx="6" fill="#1F6F6B"/>
+              <path d="M140 244 v48 M292 244 v48" stroke="#1E2A2B" stroke-width="4" stroke-linecap="round"/>
+              <path d="M150 276 h160" stroke="#1E2A2B" stroke-width="3" opacity="0.35"/>
+              <g>
+                <ellipse cx="214" cy="206" rx="58" ry="34" fill="#F2C4B8"/>
+                <ellipse cx="168" cy="188" rx="26" ry="22" fill="#F2C4B8"/>
+                <ellipse cx="150" cy="168" rx="8" ry="12" fill="#F2C4B8"/>
+                <ellipse cx="176" cy="164" rx="8" ry="12" fill="#F2C4B8"/>
+                <circle cx="158" cy="186" r="2.2" fill="#1E2A2B"/>
+                <circle cx="172" cy="186" r="2.2" fill="#1E2A2B"/>
+                <ellipse cx="164" cy="196" rx="6" ry="4" fill="#FBF6EC"/>
+                <ellipse cx="248" cy="198" rx="16" ry="12" fill="#FBF6EC"/>
+                <path class="tail" d="M268 198c28-8 36-28 28-40" fill="none" stroke="#F2C4B8" stroke-width="10" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <p class="hand-note">no cages, just breaks &amp; belly rubs</p>
+          </div>
+        </div>
+        <p class="hero-meta">
+          <span>By appointment · Tue–Sat</span>
+          <span>Palmetto, FL</span>
+          <span>★ 5.0 on Google</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Steps 1–5 are from Google reviews Oct 2025–Jan 2026 and her FB/Nextdoor text. Confirm the 2-hour window is still typical. -->
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="how-heading">How a groom works here</h2>
+        <ol class="steps">
+          <li>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="4" width="16" height="24" rx="3"/><path d="M12 22h8M14 8h4"/></svg>
+            </div>
+            <div>
+              <h3>Text me.</h3>
+              <p>Text (941) 812-1474 to check open times. New clients fill out the paperwork by text, too.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="5" width="18" height="22" rx="2"/><path d="M11 11h10M11 16h10M11 21h6"/></svg>
+            </div>
+            <div>
+              <h3>Tell me about your pet.</h3>
+              <p>Handling preferences, allergies, temperament, the cut you want. I ask a lot of questions.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22h20M9 22V14h14v8"/><circle cx="16" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <h3>One-on-one time.</h3>
+              <p>Your pet is the only one in the salon. No cages, no other dogs, and breaks during the groom.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="9" width="22" height="16" rx="2"/><circle cx="16" cy="17" r="4"/><path d="M12 9l2-3h4l2 3"/></svg>
+            </div>
+            <div>
+              <h3>Photo updates.</h3>
+              <p>I’ll send pictures while I work.</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="currentColor"><circle cx="10" cy="8" r="2.4"/><circle cx="22" cy="8" r="2.4"/><circle cx="6.5" cy="14" r="2"/><circle cx="25.5" cy="14" r="2"/><ellipse cx="16" cy="20" rx="6" ry="5"/></svg>
+            </div>
+            <div>
+              <h3>Pickup.</h3>
+              <p>Plan on about a 2-hour window.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="services-heading">Dogs and cats</h2>
+        <!-- Doodles welcome is left off until Adriana confirms. -->
+        <div class="cards-2">
+          <article class="svc">
+            <p class="corner-note">full-size tub</p>
+            <div class="tile" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4">
+                <ellipse cx="24" cy="30" rx="14" ry="8"/>
+                <circle cx="14" cy="22" r="6"/>
+                <path d="M10 16c0-3 2-5 4-5M18 16c0-3-2-5-4-5"/>
+                <path d="M36 28c4-1 7 2 6 6"/>
+              </svg>
+            </div>
+            <h3>Dog grooming</h3>
+            <p>Bath, haircut and nails, small dogs to big ones. Big or matted coats just get a little more time.</p>
+          </article>
+          <article class="svc">
+            <p class="corner-note">yes, kitties</p>
+            <div class="tile" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4">
+                <path d="M14 20 L18 10 L22 18 L26 10 L30 18 L34 12 L34 32c0 6-4 8-10 8s-10-2-10-8z"/>
+                <circle cx="20" cy="26" r="1.2" fill="currentColor"/>
+                <circle cx="28" cy="26" r="1.2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Cat grooming</h3>
+            <p>Yes, cats too. Including shave-downs.</p>
+          </article>
+        </div>
+        <p class="reassure">Nervous or first-time groomer? That’s what one-on-one is for.</p>
+        <p class="quote-line">Text me your pet’s breed and coat for a quote.</p>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">Why one-on-one</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="num">01</div>
+            <h3>No cages.</h3>
+            <p>Your pet never waits in a crate.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">02</div>
+            <h3>Only one pet at a time.</h3>
+            <p>No barking room, no other dogs nearby.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">03</div>
+            <h3>Breaks built in.</h3>
+            <p>We stop for breaks during the groom, so it stays calm.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="reviews-heading">What pet parents say</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="8" r="3" fill="currentColor"/><circle cx="22" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="16" r="2.4" fill="currentColor"/><circle cx="26" cy="16" r="2.4" fill="currentColor"/><ellipse cx="16" cy="21" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>Adrianna asked all the right questions about Max—his handling preferences, allergies, and temperament—which made me feel very confident leaving him in her care.</p>
+            <footer>Google review, Nov 2025</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="8" r="3" fill="currentColor"/><circle cx="22" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="16" r="2.4" fill="currentColor"/><circle cx="26" cy="16" r="2.4" fill="currentColor"/><ellipse cx="16" cy="21" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>I got multiple updates and pictures throughout the appointment. Adriana really listened and showed she really cared about my dog.</p>
+            <footer>Google review, Oct 2025</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="8" r="3" fill="currentColor"/><circle cx="22" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="16" r="2.4" fill="currentColor"/><circle cx="26" cy="16" r="2.4" fill="currentColor"/><ellipse cx="16" cy="21" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>She works out of her garage, don’t let that stop you from calling her.</p>
+            <footer>Google review, Oct 2025</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="8" r="3" fill="currentColor"/><circle cx="22" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="16" r="2.4" fill="currentColor"/><circle cx="26" cy="16" r="2.4" fill="currentColor"/><ellipse cx="16" cy="21" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>No cages, no stressed barking dogs. This was my girls first grooming experience and she was welcomed, loved and comfortable as soon as we walked in the door.</p>
+            <footer>Google review, Jan 2025</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="8" r="3" fill="currentColor"/><circle cx="22" cy="8" r="3" fill="currentColor"/><circle cx="6" cy="16" r="2.4" fill="currentColor"/><circle cx="26" cy="16" r="2.4" fill="currentColor"/><ellipse cx="16" cy="21" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>Adriana is a great groomer and a wonderful person. The dogs instantly like her and feel comfortable with her.</p>
+            <footer>Nextdoor recommendation, Feb 2025</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home salon: city only. Street address is not published. No map. -->
+    <section class="book" id="book" aria-labelledby="book-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="book-heading">Book a groom</h2>
+        <div class="contact-grid">
+          <div>
+            <p>Texting is the fastest way to reach me. Tell me your pet’s name, breed, and what you’d like done.</p>
+            <dl>
+              <div>
+                <dt>Call or text</dt>
+                <dd><a href="tel:+19418121474">(941) 812-1474</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:asipe123@gmail.com?subject=Grooming%20appointment">asipe123@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Where</dt>
+                <dd>Palmetto, FL (home salon; I’ll send the address when you book)</dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>By appointment, Tuesday–Saturday</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19418121474">(941) 812-1474</a>
+            <div class="row">
+              <a class="btn btn-primary" href="sms:+19418121474?&amp;body=Hi%20Adriana%2C%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20...">Text Adriana</a>
+              <a class="btn btn-ghost" href="tel:+19418121474">Call</a>
+              <a class="btn btn-ghost" href="mailto:asipe123@gmail.com?subject=Grooming%20appointment">Email</a>
+              <a class="btn btn-ghost" href="https://www.facebook.com/114596635061311" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="wordmark" href="#top">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="10" cy="8" r="3.2" fill="#F2C4B8"/>
+          <circle cx="22" cy="8" r="3.2" fill="#F2C4B8"/>
+          <circle cx="6" cy="16" r="2.6" fill="#F2C4B8"/>
+          <circle cx="26" cy="16" r="2.6" fill="#F2C4B8"/>
+          <ellipse cx="16" cy="20" rx="7" ry="6" fill="#F4C95D"/>
+        </svg>
+        <span>A Hair of the Dog</span>
+      </a>
+      <p>A Hair of the Dog Grooming · one-on-one dog &amp; cat grooming · Palmetto, FL · <a href="tel:+19418121474">(941) 812-1474</a></p>
+      <p><a href="https://www.facebook.com/114596635061311" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Text or call">
+    <a class="go" href="sms:+19418121474?&amp;body=Hi%20Adriana%2C%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20...">Text</a>
+    <a class="call" href="tel:+19418121474">Call</a>
+  </nav>
+</body>
+</html>
