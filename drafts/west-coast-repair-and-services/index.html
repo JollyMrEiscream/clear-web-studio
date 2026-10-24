@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>West Coast Auto Repair | Brakes, Suspension, AC &amp; 4x4 in Palmetto, FL</title>
+  <meta name="description" content="Family-owned auto repair at 1120 13th Ave E, Palmetto (formerly West Coast Repair and Services). Brakes, suspension, steering, AC, cooling, batteries, tires and lift kits. Call Jason at (941) 746-2022.">
+  <meta name="theme-color" content="#111111">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Barlow:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "West Coast Auto Repair LLC",
+    "alternateName": "West Coast Repair and Services",
+    "telephone": "+1-941-746-2022",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1120 13th Ave E",
+      "addressLocality": "Palmetto",
+      "addressRegion": "FL",
+      "postalCode": "34221",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.522968,
+      "longitude": -82.55095
+    },
+    "openingHours": ["Mo-Th 08:00-17:00", "Fr 08:00-15:00"],
+    "sameAs": "https://www.facebook.com/110997620677233"
+  }
+  </script>
+  <style>
+    :root {
+      --black: #111111;
+      --steel: #2B2E33;
+      --gold: #F2B705;
+      --gold-hi: #FFC62B;
+      --paper: #F4F2EC;
+      --bone: #E9E6DE;
+      --muted: #9AA0A8;
+      --rust: #B3261E;
+      --gold-dk: #8A5A00;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Barlow, system-ui, sans-serif; background: var(--paper); color: var(--black); line-height: 1.55; font-size: 1.05rem; }
+    svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--gold-dk); }
+    h1, h2, .sign { font-family: "Big Shoulders Display", Impact, sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; line-height: 0.92; }
+    h1, h2 { text-shadow: 0 2px 0 #6B4E00; }
+    .paper h1, .paper h2, .site-footer h2 { text-shadow: none; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--gold); color: var(--black); padding: 0.6rem 1rem; font-weight: 700; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+    .grain { background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 2px, transparent 2px 9px); }
+
+    .utility-bar { background: #000; color: var(--muted); font-size: 0.78rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1rem; text-align: center; }
+    .utility-bar a { color: var(--gold); text-decoration: none; font-weight: 700; }
+
+    .site-header { background: var(--black); color: var(--bone); padding: 0.65rem 0; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; flex-wrap: wrap; }
+    .wordmark { text-decoration: none; color: var(--gold); line-height: 0.85; }
+    .wordmark strong { font-family: "Big Shoulders Display", sans-serif; font-weight: 900; font-size: 1.7rem; letter-spacing: 0.04em; display: block; border-bottom: 2px solid var(--gold); }
+    .wordmark span { font-family: Barlow, sans-serif; font-weight: 700; letter-spacing: 0.18em; font-size: 0.68rem; color: var(--bone); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--bone); text-decoration: none; font-weight: 600; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.7rem 1.1rem; border-radius: 4px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--gold); color: var(--black); }
+    .btn-primary:hover { background: var(--gold-hi); color: var(--black); }
+    .btn-ghost { background: transparent; color: var(--bone); border-color: var(--bone); }
+    .btn-ghost:hover { background: var(--bone); color: var(--black); }
+    .btn-ink { background: transparent; color: var(--black); border-color: var(--black); }
+    .btn-ink:hover { background: var(--black); color: var(--paper); }
+
+    .hero { background: var(--black); color: var(--bone); padding: 2.4rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; grid-template-areas: "copy visual" "meta visual"; gap: 0.8rem 1.4rem; align-items: center; }
+    .hero-copy { grid-area: copy; } .hero-visual { grid-area: visual; } .hero-meta { grid-area: meta; }
+    .eyebrow { color: var(--gold); letter-spacing: 0.06em; font-size: 0.78rem; margin: 0 0 0.5rem; }
+    .hero h1 { font-size: clamp(2.4rem, 9vw, 5rem); color: var(--bone); margin: 0 0 0.6rem; text-shadow: none; }
+    .hero h1 .gold { color: var(--gold); text-shadow: 0 2px 0 #6B4E00; }
+    .hero-lead { margin: 0 0 1rem; max-width: 48ch; color: var(--bone); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; color: var(--muted); font-size: 0.78rem; margin: 0; }
+    .open-dot { color: var(--rust); font-weight: 700; }
+    .scene { background: var(--steel); border: 2px solid var(--gold); border-radius: 6px; overflow: hidden; }
+    .truck { animation: lift 800ms ease-out forwards; }
+    @keyframes lift { from { transform: translateY(12px); } to { transform: translateY(0); } }
+
+    section { padding: 3rem 0; }
+    .paper { background: var(--paper); }
+    .sec-num { color: var(--gold-dk); letter-spacing: 0.12em; font-size: 0.78rem; margin: 0 0 0.25rem; }
+    .dark .sec-num, .dark h2 { color: var(--gold); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 1rem; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .card { background: #fff; border: 1px solid #DDD8CC; border-top: 4px solid var(--gold); padding: 0.85rem 0.85rem 1rem; border-radius: 4px; }
+    .card h3 { font-family: Barlow, sans-serif; font-weight: 700; text-transform: none; letter-spacing: 0; text-shadow: none; font-size: 1.05rem; margin: 0.3rem 0; line-height: 1.2; }
+    .card p { margin: 0; font-size: 0.95rem; }
+    .card .tag { color: var(--rust); font-size: 0.72rem; letter-spacing: 0.08em; margin: 0.45rem 0 0; }
+    .card svg { width: 32px; height: 32px; color: var(--black); }
+
+    .dark { background: var(--black); color: var(--bone); }
+    .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .tile { background: var(--steel); padding: 1rem; border-radius: 6px; }
+    .tile h3 { margin: 0 0 0.35rem; font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; color: var(--gold); text-transform: none; text-shadow: none; }
+    .tile p { margin: 0; }
+
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .why-card { border: 1px solid rgba(242,183,5,0.4); padding: 1rem; border-radius: 6px; }
+    .why-card .num { font-family: "Big Shoulders Display", sans-serif; font-weight: 900; color: var(--gold); font-size: 2rem; line-height: 1; }
+    .why-card h3 { color: #fff; font-family: Barlow, sans-serif; text-transform: none; text-shadow: none; letter-spacing: 0; margin: 0.3rem 0; }
+    .why-card p { margin: 0; color: var(--bone); }
+
+    .slips { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+    .slip { background: #fff; border: 1px dashed #c8c2b4; padding: 0.9rem 1rem; }
+    .slip .head { color: var(--rust); font-size: 0.72rem; letter-spacing: 0.1em; margin: 0 0 0.4rem; }
+    .slip p { margin: 0; }
+    .slip footer { margin-top: 0.55rem; font-size: 0.82rem; color: #5c574e; font-weight: 600; }
+    .slips .slip:last-child { grid-column: 1 / -1; }
+
+    .leroy { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1rem; background: #fff; border-radius: 10px; padding: 1rem; max-width: 820px; }
+    .leroy blockquote { margin: 0.4rem 0 0; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; color: var(--bone); }
+    dd a { color: var(--gold); }
+    .phone-xl { font-family: "Big Shoulders Display", sans-serif; font-weight: 900; font-size: clamp(2.2rem, 5vw, 3.4rem); color: var(--gold); text-decoration: none; letter-spacing: 0.03em; line-height: 0.9; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.7rem; }
+    .map { border-radius: 8px; overflow: hidden; min-height: 260px; filter: grayscale(1) contrast(1.1); }
+    .map iframe { width: 100%; height: 100%; min-height: 260px; border: 0; }
+
+    .site-footer { background: #000; color: var(--muted); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: var(--gold); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 900px) { .cards { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "visual" "meta"; }
+      .hero-visual svg { max-height: 280px; margin-inline: auto; }
+      .tiles, .why-grid, .slips, .leroy, .contact-grid { grid-template-columns: 1fr; }
+      .slips .slip:last-child { grid-column: auto; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr; }
+      .dock { display: grid; grid-template-columns: 65% 35%; position: fixed; inset: auto 0 0 0; z-index: 40; padding-bottom: env(safe-area-inset-bottom); }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--gold); color: var(--black); }
+      .dock .dir { background: var(--steel); color: var(--bone); }
+      body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .truck { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap mono">
+      <span>Mon–Thu 8 AM–5 PM · Fri 8 AM–3 PM</span>
+      <span>1120 13th Ave E, Palmetto</span>
+      <span>Call <a href="tel:+19417462022">(941) 746-2022</a></span>
+    </div>
+  </div>
+  <header class="site-header grain">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top"><strong>WEST COAST</strong><span>AUTO REPAIR</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#trucks">Trucks &amp; 4x4</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#leroy">Leroy</a>
+        <a class="nav-link" href="#visit">Visit</a>
+        <a class="btn btn-primary" href="tel:+19417462022">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero grain" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow mono">PALMETTO, FL · AUTOMOTIVE · OFFROAD · 4X4</p>
+          <h1 id="hero-heading">Honest repairs. <span class="gold">Straight answers.</span> Ask for Jason.</h1>
+          <p class="hero-lead">Brakes, suspension, steering, AC, cooling, batteries and tires for cars, trucks, Jeeps and work vans. We’ll show you what’s wrong, explain it in plain English, and keep you in the loop until it’s done.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19417462022">Call (941) 746-2022</a>
+            <a class="btn btn-ghost" href="#services">What we fix</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="scene">
+            <svg viewBox="0 0 440 280" role="img" aria-label="A lifted four-by-four on a shop lift, under a painted sign for West Coast Auto Repair.">
+              <rect width="440" height="280" fill="#2B2E33"/>
+              <rect x="70" y="16" width="300" height="58" fill="none" stroke="#F2B705" stroke-width="3"/>
+              <text x="220" y="40" text-anchor="middle" fill="#F2B705" font-family="Big Shoulders Display, sans-serif" font-size="22" font-weight="900">WEST COAST AUTO REPAIR</text>
+              <text x="220" y="62" text-anchor="middle" fill="#F2B705" font-family="JetBrains Mono, monospace" font-size="14">941-746-2022</text>
+              <g class="truck">
+                <path d="M40 70 v150 M400 70 v150" stroke="#F2B705" stroke-width="6"/>
+                <path d="M40 150 h360" stroke="#F2B705" stroke-width="4"/>
+                <path d="M90 168 h150 l28-28 h70 v28 h20" fill="none" stroke="#E9E6DE" stroke-width="4" stroke-linejoin="round"/>
+                <circle cx="130" cy="176" r="22" fill="none" stroke="#E9E6DE" stroke-width="6"/>
+                <circle cx="300" cy="176" r="22" fill="none" stroke="#E9E6DE" stroke-width="6"/>
+                <path d="M118 176 h24 M288 176 h24 M130 164 v24 M300 164 v24" stroke="#E9E6DE" stroke-width="2"/>
+                <rect x="250" y="148" width="36" height="16" fill="none" stroke="#E9E6DE" stroke-width="3"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <p class="hero-meta mono">
+          <!-- Friday hours: Google says 8–3; an older Facebook mirror says 8–5. This page uses the Google hours. -->
+          <span>Mon–Thu 8–5 · Fri 8–3</span>
+          <span>1120 13th Ave E</span>
+          <span>★ 5.0 on Google</span>
+          <span>FDACS MV105518</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="paper" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num mono">01</p>
+        <h2 id="services-heading">What we fix</h2>
+        <div class="cards">
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="16" r="8"/><circle cx="16" cy="16" r="3" stroke="#B3261E"/></svg><h3>Brakes</h3><p>Brake problems diagnosed and fixed.</p><p class="tag mono">BRAKES</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22c4-8 6-8 10 0s6 8 10 0"/><path d="M8 10v6M24 10v6"/></svg><h3>Suspension</h3><p>Shocks, struts and suspension work, from daily drivers to lifted trucks.</p><p class="tag mono">SUSPENSION</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="16" r="8"/><circle cx="16" cy="16" r="2"/><path d="M16 4v4M16 24v4M4 16h4M24 16h4"/></svg><h3>Steering</h3><p>Steering problems, found and fixed.</p><p class="tag mono">STEERING</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 6v8M10 16a6 6 0 1 0 12 0"/></svg><h3>AC</h3><p>Get your AC blowing cold again.</p><p class="tag mono">A/C</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="8" width="20" height="16"/><path d="M10 12h12M10 16h12M10 20h8"/></svg><h3>Cooling system</h3><p>Overheating, leaks and cooling-system repairs.</p><p class="tag mono">COOLING</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="8" width="16" height="16" rx="2"/><path d="M13 8V5h6v3M13 24v3h6v-3"/></svg><h3>Batteries</h3><p>Dead or dying battery? We replace it.</p><p class="tag mono">BATTERY</p></article>
+          <!-- Tires: their Facebook post in Sep 2023 said they sell major brand tires. Confirm this is still true. -->
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="4"/></svg><h3>Tires</h3><p>We sell major brand tires.</p><p class="tag mono">TIRES</p></article>
+          <article class="card"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="14" cy="14" r="7"/><path d="M19 19l7 7"/></svg><h3>Diagnosis you can understand</h3><p>We’ll show you the problem and explain it so it makes sense.</p><p class="tag mono">DIAG</p></article>
+        </div>
+        <p>Don’t see it? Call and ask — <a href="tel:+19417462022">(941) 746-2022</a>.</p>
+      </div>
+    </section>
+
+    <section class="dark grain" id="trucks" aria-labelledby="trucks-heading">
+      <div class="wrap">
+        <p class="sec-num mono">02</p>
+        <h2 id="trucks-heading">Trucks, Jeeps &amp; work vehicles</h2>
+        <p>Leveling and lift kits, bigger tires, and the suspension work that goes with them. We also keep work trucks, box trucks and vans on the road.</p>
+        <div class="tiles">
+          <!-- Leveling caption cites their Sep 2023 build. Confirm. Brand name is text only. -->
+          <article class="tile"><h3>LEVELING &amp; LIFT KITS</h3><p>Like a coil leveling kit and 35s on a new Ram.</p></article>
+          <article class="tile"><h3>OFFROAD / 4X4</h3><p>Offroad and 4x4, as on the shop sign.</p></article>
+          <article class="tile"><h3>FLEET &amp; WORK TRUCKS</h3><p>Work trucks, box trucks and vans.</p></article>
+          <!-- FABRICATION hidden until Jason confirms what it covers. The shop sign says FABRICATION. -->
+          <article class="tile" hidden><h3>FABRICATION</h3><p>Hidden until the shop confirms what this covers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark grain" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">Why people come back</h2>
+        <div class="why-grid">
+          <article class="why-card"><div class="num">01</div><h3>Straight answers.</h3><p>We show you the issue and tell you what does and doesn’t need fixing.</p></article>
+          <article class="why-card"><div class="num">02</div><h3>You stay in the loop.</h3><p>Updates while we work, so you’re never guessing.</p></article>
+          <!-- FDACS registration MV105518 is still listed under the former name, West Coast Repair and Services LLC. -->
+          <article class="why-card"><div class="num">03</div><h3>Registered with the State of Florida.</h3><p>Registered motor vehicle repair shop with FDACS, registration MV105518. <a href="https://csapp.fdacs.gov/cspublicapp/businesssearch/businesssearch.aspx" target="_blank" rel="noopener noreferrer">FDACS Business Lookup<span class="sr-only"> (opens in a new tab)</span></a></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num mono">03</p>
+        <h2 id="reviews-heading">What customers say about Jason</h2>
+        <div class="slips">
+          <blockquote class="slip"><p class="head mono">CUSTOMER NOTE</p><p>Jason and his team went above and beyond with repairing our daughter’s Jeep! Great communication, speedy repair time and a great experience over all!</p><footer>Google review, Jan 2026</footer></blockquote>
+          <blockquote class="slip"><p class="head mono">CUSTOMER NOTE</p><p>They are very thorough and explain all issues so the average person can understand.</p><footer>Google review, Oct 2025</footer></blockquote>
+          <blockquote class="slip"><p class="head mono">CUSTOMER NOTE</p><p>Jason was great to work with, honest and fair pricing. They helped me fix my box truck very quickly and kept me in the loop the whole time.</p><footer>Google review, Aug 2025</footer></blockquote>
+          <blockquote class="slip"><p class="head mono">CUSTOMER NOTE</p><p>Was headed home across country when a wheel bearing went out. Jason was able to get my vehicle in, diagnosed and fixed the next business day.</p><footer>Google review, Apr 2025</footer></blockquote>
+          <blockquote class="slip"><p class="head mono">CUSTOMER NOTE</p><p>I was treated like a friend, Jason took the time to answer all of my questions.</p><footer>Google review, Nov 2024</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirm Leroy is still at the shop; otherwise hide this section. -->
+    <section class="paper" id="leroy" aria-labelledby="leroy-heading">
+      <div class="wrap">
+        <p class="sec-num mono">04</p>
+        <h2 id="leroy-heading">Say hi to Leroy</h2>
+        <div class="leroy">
+          <div>
+            <p>Leroy is our shop dog. He’ll probably come say hello while you wait.</p>
+            <blockquote>
+              <p>Even the shop dog -Leroy Brown- was sweet and happy to see us.</p>
+              <footer>Google review, Nov 2024</footer>
+            </blockquote>
+          </div>
+          <!-- swap for a real Leroy photo from Jason -->
+          <svg viewBox="0 0 280 200" role="img" aria-label="A simple friendly dog wearing a gold bandana that says shop dog. Not a portrait of Leroy.">
+            <rect width="280" height="200" rx="12" fill="#F4F2EC"/>
+            <ellipse cx="150" cy="120" rx="70" ry="40" fill="#E9E6DE" stroke="#111" stroke-width="3"/>
+            <circle cx="90" cy="100" r="28" fill="#E9E6DE" stroke="#111" stroke-width="3"/>
+            <ellipse cx="78" cy="78" rx="10" ry="16" fill="#E9E6DE" stroke="#111" stroke-width="3"/>
+            <ellipse cx="102" cy="78" rx="10" ry="16" fill="#E9E6DE" stroke="#111" stroke-width="3"/>
+            <circle cx="82" cy="100" r="3" fill="#111"/>
+            <circle cx="98" cy="100" r="3" fill="#111"/>
+            <path d="M120 130c30 10 50-20 70-10" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+            <path d="M70 118 l20 8 8-16z" fill="#F2B705" stroke="#111" stroke-width="2"/>
+            <text x="168" y="150" font-family="JetBrains Mono, monospace" font-size="12" fill="#111">SHOP DOG</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark grain" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <p class="sec-num mono">05</p>
+        <h2 id="visit-heading">Find the shop</h2>
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Phone</dt><dd><a href="tel:+19417462022">(941) 746-2022</a></dd></div>
+              <div><dt>Address</dt><dd>1120 13th Ave E, Palmetto, FL 34221</dd></div>
+              <div><dt>Hours</dt><dd>Mon–Thu 8:00 AM–5:00 PM · Fri 8:00 AM–3:00 PM · Sat–Sun closed</dd></div>
+              <div><dt>Note</dt><dd>Call to schedule an appointment.</dd></div>
+              <div><dt>FDACS</dt><dd>MV105518 (Registered)</dd></div>
+            </dl>
+            <a class="phone-xl" href="tel:+19417462022">(941) 746-2022</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19417462022">Call</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=West+Coast+Repair+and+Services+1120+13th+Ave+E+Palmetto+FL+34221">Get directions</a>
+              <a class="btn btn-ghost" href="https://www.facebook.com/110997620677233" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+          <div class="map">
+            <iframe loading="lazy" title="Map to 1120 13th Ave E, Palmetto" src="https://www.google.com/maps?q=1120+13th+Ave+E,+Palmetto,+FL+34221&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="sign" style="color:#F2B705;font-size:2rem;margin:0">WEST COAST</p>
+      <p>West Coast Auto Repair LLC (formerly West Coast Repair and Services) · family owned and operated · 1120 13th Ave E, Palmetto, FL 34221 · <a href="tel:+19417462022">(941) 746-2022</a> · FDACS MV105518</p>
+      <p><a href="https://www.facebook.com/110997620677233" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Call or get directions">
+    <a class="go" href="tel:+19417462022">Call</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=West+Coast+Repair+and+Services+1120+13th+Ave+E+Palmetto+FL+34221">Directions</a>
+  </nav>
+</body>
+</html>
