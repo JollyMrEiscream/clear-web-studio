@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DC Painting Pro | Interior &amp; Exterior Painting in Port Charlotte, FL</title>
+  <meta name="description" content="Residential interior and exterior painting in Port Charlotte, North Port, Punta Gorda and Rotonda West. Call (941) 800-6900 for a free estimate.">
+  <meta name="theme-color" content="#0F5E63">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Source+Sans+3:wght@400;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HousePainter",
+    "name": "DC Painting Pro LLC",
+    "telephone": "+1-941-800-6900",
+    "email": "dcpaintingprollc1988@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Port Charlotte",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Port Charlotte, FL", "North Port, FL", "Punta Gorda, FL", "Rotonda West, FL", "Southwest Florida"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/110735625465886",
+      "https://nextdoor.com/pages/dc-painting-pro-llc-port-charlotte-fl/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --white: #FAFAF7;
+      --ink: #1E2526;
+      --teal: #0F5E63;
+      --coral: #B8432F;
+      --aqua: #7FD1CF;
+      --cream: #F3D9A4;
+      --muted: #5B6466;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Source Sans 3", system-ui, sans-serif; background: var(--white); color: var(--ink); line-height: 1.55; font-size: 1.06rem; }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--teal); }
+    h1, h2, h3 { font-family: Sora, system-ui, sans-serif; margin: 0; line-height: 1.12; }
+    h1, h2 { font-weight: 800; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--teal); color: #fff; padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+
+    .utility-bar { background: var(--teal); color: #fff; font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+    .site-header { background: #fff; border-bottom: 1px solid #e6e8e4; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; flex-wrap: wrap; }
+    .wordmark { text-decoration: none; color: var(--teal); font-family: Sora, sans-serif; font-weight: 800; font-size: 1.25rem; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 6px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--teal); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #0c4c50; color: #fff; }
+    .btn-line { background: transparent; color: var(--coral); border-color: var(--coral); }
+    .btn-line:hover { background: var(--coral); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { padding: 2.2rem 0 0.4rem; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 0.95fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { font-family: "Space Mono", monospace; color: var(--coral); font-size: 0.74rem; margin: 0 0 0.65rem; }
+    .hero h1 { font-size: clamp(2.1rem, 4.2vw, 3.2rem); margin-bottom: 0.7rem; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.85rem; }
+    .meta { font-family: "Space Mono", monospace; font-size: 0.72rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; }
+
+    .compare { position: relative; overflow: hidden; border-radius: 12px; background: #ddd; --pos: 48%; }
+    .compare.half { aspect-ratio: 3 / 2; }
+    .compare.third { aspect-ratio: 675 / 400; }
+    .compare .panel { position: absolute; inset: 0; overflow: hidden; }
+    .compare .panel.after { clip-path: inset(0 0 0 var(--pos)); }
+    .compare .half-img { position: absolute; width: 100%; height: 200%; max-width: none; object-fit: cover; left: 0; }
+    .compare .panel.before .half-img { top: 0; object-position: center top; }
+    .compare .panel.after .half-img { bottom: 0; object-position: center bottom; }
+    .compare .third-img { position: absolute; width: 100%; height: 300%; max-width: none; object-fit: cover; left: 0; }
+    .compare .panel.before .third-img { top: 0; object-position: center top; }
+    .compare .panel.after .third-img { bottom: 0; object-position: center bottom; }
+    .compare .lbl { position: absolute; top: 10px; font-family: "Space Mono", monospace; font-size: 0.7rem; padding: 0.22rem 0.45rem; z-index: 2; }
+    .compare .lbl.b { left: 10px; background: var(--cream); color: var(--ink); }
+    .compare .lbl.a { right: 10px; background: var(--coral); color: #fff; }
+    .compare input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; z-index: 3; }
+    .compare .divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: #fff; pointer-events: none; z-index: 2; }
+    .compare .divider::after { content: "↔"; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--teal); color: #fff; display: grid; place-items: center; font-weight: 700; }
+    .chips { display: flex; height: 18px; margin: 1.1rem 0 0; }
+    .chips span { flex: 1; }
+    .caption { font-family: "Space Mono", monospace; font-size: 0.75rem; color: var(--muted); margin-top: 0.45rem; }
+
+    section { padding: 2.7rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: "Space Mono", monospace; color: var(--coral); font-size: 0.75rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 56ch; margin-bottom: 0.8rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .card { background: #fff; border: 1px solid #eceee8; border-radius: 10px; overflow: hidden; }
+    .swatch { height: 10px; }
+    .card .pad { padding: 0.9rem 0.9rem 1rem; }
+    .card h3 { font-size: 1.02rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); }
+    .aside-line { margin-top: 0.8rem; font-weight: 700; }
+
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .how { background: var(--ink); color: #f4f7f6; }
+    .how h2 { color: #fff; }
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .how-card { border: 1px solid rgba(127,209,207,0.35); border-radius: 10px; padding: 1rem; }
+    .how-card .num { font-family: "Space Mono", monospace; color: var(--aqua); }
+    .how-card h3 { color: #fff; font-size: 1.05rem; margin: 0.25rem 0; }
+
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.65rem; }
+    .tile { display: block; width: 100%; padding: 0; border: 0; background: #fff; border-radius: 8px; overflow: hidden; cursor: pointer; text-align: left; color: inherit; position: relative; }
+    .tile img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .tile.wide img { aspect-ratio: 4/3; }
+    .tile .cap { position: absolute; left: 0.4rem; bottom: 0.4rem; font-family: "Space Mono", monospace; font-size: 0.64rem; background: var(--white); padding: 0.2rem 0.35rem; }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .quote { background: #fff; border: 1px solid #eceee8; border-radius: 10px; padding: 1rem; margin: 0; }
+    .quote footer, .plain-note { color: var(--muted); margin-top: 0.55rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: #fff; border: 1px solid #eceee8; border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-family: "Space Mono", monospace; font-size: 0.68rem; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "Space Mono", monospace; font-size: clamp(1.15rem, 2.4vw, 1.5rem); color: var(--ink); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .site-footer { background: var(--ink); color: #e7eeee; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--aqua); }
+    .site-footer p { margin: 0.3rem 0; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(920px, 94vw); }
+    dialog::backdrop { background: rgba(30,37,38,0.86); }
+    .lb img { max-height: 80vh; margin: 0 auto; border-radius: 8px; }
+    .lb .cap { color: var(--white); text-align: center; font-family: "Space Mono", monospace; margin-top: 0.45rem; }
+    .lb-close { min-width: 44px; min-height: 44px; border: 0; border-radius: 6px; background: var(--cream); font-weight: 700; cursor: pointer; margin-bottom: 0.4rem; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services-grid, .pair, .how-grid, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--teal); color: #fff; }
+      .dock .text { background: var(--coral); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .gallery { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Residential painting in Port Charlotte &amp; Southwest Florida</span>
+      <span>Free estimates · <a href="tel:+19418006900">(941) 800-6900</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">DC Painting Pro</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#before-after">Before &amp; after</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19418006900">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PORT CHARLOTTE · NORTH PORT · PUNTA GORDA · ROTONDA WEST</p>
+          <h1 id="hero-heading">A fresh coat, inside and out.</h1>
+          <p class="hero-lead">Residential interior and exterior painting across Port Charlotte and Southwest Florida — houses, doors, trim, cabinets and more.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19418006900">Call for a free estimate</a>
+            <a class="btn btn-line" href="sms:+19418006900?&amp;body=Hi%20DC%20Painting%20Pro%2C%20I%27d%20like%20an%20estimate%20for%20">Text a photo</a>
+          </div>
+          <p class="meta"><span>Mon–Fri 8–6 · Sat 9–3</span><span>Free estimates</span><span>Interior + exterior</span></p>
+        </div>
+        <div>
+          <!-- Confirm which half is before. Top half shown as Before. -->
+          <div class="compare half" data-slider>
+            <div class="panel before"><img class="half-img" src="images/exterior-ba.jpg" alt="" width="901" height="1200"></div>
+            <div class="panel after"><img class="half-img" src="images/exterior-ba.jpg" alt="House exterior, before and after paint" width="901" height="1200"></div>
+            <span class="lbl b">BEFORE</span>
+            <span class="lbl a">AFTER</span>
+            <input type="range" min="0" max="100" value="48" aria-valuemin="0" aria-valuemax="100" aria-valuenow="48" aria-label="Compare the exterior before and after">
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="chips" aria-hidden="true">
+          <span style="background:#f7f4ee"></span>
+          <span style="background:#e6d3b4"></span>
+          <span style="background:#8aa0a6"></span>
+          <span style="background:#0F5E63"></span>
+          <span style="background:#1d3550"></span>
+          <span style="background:#F3D9A4"></span>
+          <span style="background:#B8432F"></span>
+          <span style="background:#d7ddd8"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">What we paint</h2>
+        <div class="services-grid">
+          <article class="card"><div class="swatch" style="background:#8aa0a6"></div><div class="pad"><h3>Exteriors</h3><p>Whole-house repaints, with prep and masking first.</p></div></article>
+          <article class="card"><div class="swatch" style="background:#0F5E63"></div><div class="pad"><h3>Doors &amp; trim</h3><p>Front doors, exterior doors, trim and porch rails.</p></div></article>
+          <article class="card"><div class="swatch" style="background:#F3D9A4"></div><div class="pad"><h3>Interiors</h3><p>Bedrooms, bathrooms, living areas and ceilings.</p></div></article>
+          <article class="card"><div class="swatch" style="background:#1d3550"></div><div class="pad"><h3>Cabinets &amp; built-ins</h3><p>Kitchen cabinets, vanities and entertainment centers.</p></div></article>
+        </div>
+        <p class="aside-line">Pool decks too.</p>
+      </div>
+    </section>
+
+    <section id="before-after" aria-labelledby="ba-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="ba-heading">Before &amp; after</h2>
+        <div class="pair">
+          <figure style="margin:0">
+            <div class="compare half" data-slider>
+              <div class="panel before"><img class="half-img" src="images/kitchen-ba.jpg" alt="" width="901" height="1200"></div>
+              <div class="panel after"><img class="half-img" src="images/kitchen-ba.jpg" alt="Kitchen cabinets, before and after" width="901" height="1200"></div>
+              <span class="lbl b">BEFORE</span>
+              <span class="lbl a">AFTER</span>
+              <input type="range" min="0" max="100" value="50" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare kitchen cabinets before and after">
+              <div class="divider"></div>
+            </div>
+            <figcaption class="caption">Kitchen cabinets, before and after.</figcaption>
+          </figure>
+          <figure style="margin:0">
+            <div class="compare third" data-slider>
+              <div class="panel before"><img class="third-img" src="images/cabinet-ba.jpg" alt="" width="675" height="1200"></div>
+              <div class="panel after"><img class="third-img" src="images/cabinet-ba.jpg" alt="Cabinets masked, then painted" width="675" height="1200"></div>
+              <span class="lbl b">BEFORE</span>
+              <span class="lbl a">AFTER</span>
+              <input type="range" min="0" max="100" value="50" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare cabinets before and after, skipping the masked middle">
+              <div class="divider"></div>
+            </div>
+            <figcaption class="caption">Prep matters: masked, then painted.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How a job goes</h2>
+        <div class="how-grid">
+          <article class="how-card"><div class="num">01</div><h3>Free estimate.</h3><p>We look at the job, go over colors and give you a price.</p></article>
+          <article class="how-card"><div class="num">02</div><h3>Prep &amp; protect.</h3><p>Masking, covering and protecting what can't be moved.</p></article>
+          <article class="how-card"><div class="num">03</div><h3>Paint &amp; clean up.</h3><p>We finish the work and leave the space clean.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="work-heading">Recent projects</h2>
+        <div class="gallery">
+          <button class="tile" type="button" data-full="images/exterior-prep.jpg" data-alt="Exterior prep with a ladder and masking" data-cap="EXTERIOR PREP"><img src="images/exterior-prep.jpg" alt="Exterior prep with a ladder and masking" width="910" height="1200" loading="lazy"><span class="cap">EXTERIOR PREP</span></button>
+          <button class="tile" type="button" data-full="images/pool-deck.jpg" data-alt="Painted pool deck" data-cap="POOL DECK"><img src="images/pool-deck.jpg" alt="Painted pool deck" width="900" height="1200" loading="lazy"><span class="cap">POOL DECK</span></button>
+          <button class="tile wide" type="button" data-full="images/cabinets.jpg" data-alt="Painted cabinets side by side" data-cap="CABINETS"><img src="images/cabinets.jpg" alt="Painted cabinets side by side" width="1200" height="901" loading="lazy"><span class="cap">CABINETS</span></button>
+          <button class="tile" type="button" data-full="images/front-door.jpg" data-alt="Teal front door" data-cap="FRONT DOOR"><img src="images/front-door.jpg" alt="Teal front door" width="675" height="1200" loading="lazy"><span class="cap">FRONT DOOR</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">From neighbors</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Painted some doors, trim, and porch rails. Meticulous work and exceeded all expectations. Did some repair work I was not expecting (and was super thrilled about). Will definitely hire again.</p>
+            <footer>A.G., Port Charlotte, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>He went above and beyond to protect everything on the house that couldn't be removed, ensuring a spotless, flawless finish.</p>
+            <footer>L.R., Port Charlotte, Nextdoor, Oct 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2024 and 2025.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="contact-heading">Get your free estimate</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lede">Call or text DC Painting Pro with the rooms or areas you want painted. Photos help.</p>
+            <dl>
+              <div><dt>Phone</dt><dd><a href="tel:+19418006900">(941) 800-6900</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:dcpaintingprollc1988@gmail.com">dcpaintingprollc1988@gmail.com</a></dd></div>
+              <div><dt>Hours</dt><dd>Mon–Fri 8 AM–6 PM · Sat 9 AM–3 PM · Sun closed</dd></div>
+              <div><dt>Area</dt><dd>Port Charlotte, North Port, Punta Gorda, Rotonda West &amp; Southwest Florida</dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19418006900">(941) 800-6900</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19418006900">Call</a>
+              <a class="btn btn-line" href="sms:+19418006900?&amp;body=Hi%20DC%20Painting%20Pro%2C%20I%27d%20like%20an%20estimate%20for%20">Text</a>
+              <a class="btn btn-line" href="mailto:dcpaintingprollc1988@gmail.com?subject=Free%20painting%20estimate">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>DC Painting Pro LLC · Port Charlotte, FL · <a href="tel:+19418006900">(941) 800-6900</a></p>
+      <p>
+        <a href="https://www.facebook.com/110735625465886" target="_blank" rel="noopener">Facebook</a>
+        ·
+        <a href="https://nextdoor.com/pages/dc-painting-pro-llc-port-charlotte-fl/" target="_blank" rel="noopener">Nextdoor</a>
+      </p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19418006900">Call</a>
+    <a class="text" href="sms:+19418006900?&amp;body=Hi%20DC%20Painting%20Pro%2C%20I%27d%20like%20an%20estimate%20for%20">Text</a>
+  </div>
+  <dialog id="lightbox" aria-label="Project photo">
+    <div class="lb">
+      <button class="lb-close" type="button">Close</button>
+      <img alt="">
+      <p class="cap"></p>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      document.querySelectorAll("[data-slider]").forEach(function (cmp) {
+        var range = cmp.querySelector("input");
+        function setPos(v) { cmp.style.setProperty("--pos", v + "%"); range.setAttribute("aria-valuenow", v); }
+        range.addEventListener("input", function () { setPos(range.value); });
+        setPos(range.value);
+      });
+      var dlg = document.getElementById("lightbox");
+      var img = dlg.querySelector("img");
+      var cap = dlg.querySelector(".cap");
+      var closeBtn = dlg.querySelector(".lb-close");
+      document.querySelectorAll(".tile").forEach(function (tile) {
+        tile.addEventListener("click", function () {
+          img.src = tile.getAttribute("data-full");
+          img.alt = tile.getAttribute("data-alt");
+          cap.textContent = tile.getAttribute("data-cap");
+          dlg.showModal();
+          closeBtn.focus();
+        });
+      });
+      closeBtn.addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("close", function () { img.removeAttribute("src"); });
+    })();
+  </script>
+</body>
+</html>

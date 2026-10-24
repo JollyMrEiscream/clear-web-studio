@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dryer Vent Rescue | Dryer Vent Cleaning in Parrish &amp; Manatee County, FL</title>
+  <meta name="description" content="Dryer vent cleaning in Parrish and Manatee County: lint trap, dryer, vent line and roof cap. Call Drew and Michael at (941) 224-0378.">
+  <meta name="theme-color" content="#1F1F1F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Dryer Vent Rescue LLC",
+    "telephone": "+1-941-224-0378",
+    "email": "dryerventrescuellc@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Parrish",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Parrish, FL", "Manatee County, FL"],
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "logo": "https://us1-photo.nextdoor.com/business_cover/c5/2a/c52af72cd79c9fc9bbc242f32fab31f8.png",
+    "sameAs": [
+      "https://www.facebook.com/DryerVentRescueLLC",
+      "https://nextdoor.com/pages/dryer-vent-rescue-parrish-fl/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --lint: #F4F4F2;
+      --char: #1F1F1F;
+      --red: #C8102E;
+      --amber: #FFC72C;
+      --ember: #FF6B6B;
+      --muted: #5E5E5E;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--lint); color: var(--char); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--red); }
+    h1, h2 { font-family: Anton, Impact, sans-serif; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; line-height: 0.98; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+
+    .utility-bar { background: var(--char); color: var(--lint); font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--lint); font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--white); border-bottom: 3px solid var(--char); position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; flex-wrap: wrap; }
+    img.wordmark { height: 56px; width: auto; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--char); text-decoration: none; font-weight: 700; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.7rem 1.15rem; border-radius: 4px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--red); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #a10d25; color: #fff; }
+    .btn-line { background: transparent; color: var(--char); border-color: var(--char); }
+    .btn-line:hover { background: var(--char); color: var(--lint); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { padding: 2.2rem 0 1.4rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { font-family: "Roboto Mono", monospace; color: var(--red); font-weight: 500; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: 0.75rem; }
+    .hero-lead { font-size: 1.06rem; max-width: 42ch; margin-bottom: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta { font-family: "Roboto Mono", monospace; font-size: 0.78rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; }
+    .scene { background: var(--white); border: 2px solid var(--char); border-radius: 8px; }
+
+    .plug { offset-path: path("M78 250 L78 150 L250 150 L250 48"); animation: climb 1.6s ease forwards; }
+    .puff { opacity: 0; animation: puff 1.6s ease forwards; }
+    .arrow-bad { opacity: 1; animation: hidebad 1.6s ease forwards; }
+    .arrow-good { opacity: 0; animation: showgood 1.6s ease forwards; }
+    @keyframes climb { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+    @keyframes puff { 0%, 55% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes hidebad { 0%, 60% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes showgood { 0%, 60% { opacity: 0; } 100% { opacity: 1; } }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 88px; }
+    .sec-num { font-family: "Roboto Mono", monospace; color: var(--red); letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin-bottom: 1rem; }
+
+    .steps { display: grid; grid-template-columns: 28px 1fr; gap: 0 1rem; position: relative; }
+    .duct { position: relative; }
+    .duct::before { content: ""; position: absolute; left: 12px; top: 8px; bottom: 8px; width: 4px; background: #d0d0cc; border-radius: 4px; }
+    .step { display: contents; }
+    .step .n {
+      font-family: "Roboto Mono", monospace; font-weight: 500; width: 28px; height: 28px; border-radius: 50%;
+      background: var(--char); color: var(--lint); display: grid; place-items: center; font-size: 0.78rem; position: relative; z-index: 1; margin-top: 0.7rem;
+    }
+    .step p { background: var(--white); border: 1px solid #e2e2de; border-radius: 8px; padding: 0.85rem 1rem; margin: 0.35rem 0; }
+
+    .warn { background: var(--amber); color: var(--char); border-radius: 12px; padding: 1.3rem 1.3rem 1.4rem; }
+    .warn h2 { margin-bottom: 0.7rem; }
+    .warn ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; font-weight: 600; }
+
+    .tips { background: var(--char); color: var(--lint); }
+    .tips h2 { color: var(--amber); }
+    .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .tip { border: 1px solid rgba(255,199,44,0.35); border-radius: 8px; padding: 1rem; }
+    .tip .num { font-family: "Roboto Mono", monospace; color: var(--amber); margin-bottom: 0.35rem; }
+    .tip p { color: #f4f4f2; }
+
+    .work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .work-grid figure { margin: 0; background: var(--white); border-radius: 8px; overflow: hidden; border: 1px solid #e2e2de; }
+    .work-grid img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .work-grid figcaption { font-family: "Roboto Mono", monospace; font-size: 0.68rem; padding: 0.45rem 0.5rem 0.6rem; letter-spacing: 0.03em; }
+
+    blockquote.theirs { margin: 0.8rem 0 0; padding: 1rem; background: var(--white); border-left: 4px solid var(--red); }
+    .quote { background: var(--white); border-radius: 10px; padding: 1.1rem 1.15rem; margin: 0; }
+    .quote footer { margin-top: 0.6rem; color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+    .plain-note { margin-top: 0.9rem; color: var(--muted); }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: var(--white); border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-family: "Roboto Mono", monospace; font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--char); text-decoration: none; }
+    .phone-xl { font-family: "Roboto Mono", monospace; font-size: clamp(1.25rem, 2.6vw, 1.7rem); color: var(--char); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.65rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .lede { color: var(--muted); margin: 0.4rem 0 0.6rem; }
+
+    .site-footer { background: var(--char); color: var(--lint); text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer img { height: 88px; width: auto; margin: 0 auto 0.7rem; }
+    .site-footer a { color: var(--amber); }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .tips-grid, .contact-grid { grid-template-columns: 1fr; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: block; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; background: var(--red); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .work-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .plug, .puff, .arrow-bad, .arrow-good { animation: none; }
+      .plug { offset-distance: 100%; }
+      .puff, .arrow-good { opacity: 1; }
+      .arrow-bad { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Dryer vent cleaning in Parrish &amp; Manatee County</span>
+      <span>Mon–Fri 8–5</span>
+      <a href="tel:+19412240378">(941) 224-0378</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top"><img class="wordmark" src="images/wordmark.jpg" width="1200" height="485" alt="Dryer Vent Rescue — Fire Prevention Cleaning"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#included">What's included</a>
+        <a class="nav-link" href="#signs">Warning signs</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19412240378">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PARRISH · MANATEE COUNTY · DRYER VENT CLEANING</p>
+          <h1 id="hero-heading">Clean dryer vents, from the dryer to the roof.</h1>
+          <p class="hero-lead">We clean the whole run — the lint trap, the dryer, the vent line and the roof cap — and show you what came out.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19412240378">Call (941) 224-0378</a>
+            <a class="btn btn-line" href="#included">What's included</a>
+          </div>
+          <p class="meta"><span>Mon–Fri 8–5</span><span>Dryer + vent + roof</span><span>Parrish &amp; Manatee County</span></p>
+        </div>
+        <div class="scene" aria-hidden="true">
+          <svg viewBox="0 0 360 300">
+            <rect width="360" height="300" fill="#F4F4F2"/>
+            <path d="M40 40 L220 40 L300 90 L300 270 L40 270 Z" fill="#fff" stroke="#1F1F1F" stroke-width="2"/>
+            <path d="M40 40 L150 40 L180 70 L40 70 Z" fill="#e8e8e4" stroke="#1F1F1F" stroke-width="2"/>
+            <rect x="48" y="210" width="70" height="48" rx="4" fill="#C8102E" stroke="#1F1F1F"/>
+            <circle cx="83" cy="234" r="12" fill="#F4F4F2" stroke="#1F1F1F"/>
+            <path class="ductline" d="M78 210 L78 150 L250 150 L250 55" fill="none" stroke="#9a9a94" stroke-width="16" stroke-linejoin="round"/>
+            <path d="M78 210 L78 150 L250 150 L250 55" fill="none" stroke="#c8c8c2" stroke-width="8" stroke-linejoin="round"/>
+            <rect class="plug" x="-14" y="-8" width="28" height="16" rx="3" fill="#6d6d66"/>
+            <g class="puff">
+              <circle cx="268" cy="40" r="8" fill="#bdbdb6"/>
+              <circle cx="286" cy="28" r="6" fill="#d0d0c8"/>
+              <circle cx="300" cy="42" r="5" fill="#c4c4bc"/>
+            </g>
+            <path class="arrow-bad" d="M300 80 l28 -8 l-6 14 z" fill="#C8102E"/>
+            <path class="arrow-good" d="M300 80 l28 -8 l-6 14 z" fill="#1f8a3b"/>
+            <rect x="236" y="36" width="28" height="16" fill="#1F1F1F"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="included" aria-labelledby="included-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="included-heading">What's included</h2>
+        <!-- Near-verbatim from their own services graphic -->
+        <div class="steps duct">
+          <div class="step"><span class="n">1</span><p>Inspect and clean the lint trap</p></div>
+          <div class="step"><span class="n">2</span><p>Clean the vent from the dryer to the point of termination</p></div>
+          <div class="step"><span class="n">3</span><p>Clean inside the dryer</p></div>
+          <div class="step"><span class="n">4</span><p>Clean the dryer vent on the roof</p></div>
+          <div class="step"><span class="n">5</span><p>Clean up the dryer and the area around it</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signs" aria-labelledby="signs-heading">
+      <div class="wrap">
+        <div class="warn">
+          <p class="sec-num" style="color:var(--char)">02</p>
+          <h2 id="signs-heading">Time for a cleaning?</h2>
+          <!-- General homeowner cues, not claims about the business. No fire statistics. -->
+          <ul>
+            <li>Clothes take longer than one cycle to dry</li>
+            <li>The dryer or laundry room feels hot</li>
+            <li>You see lint around the vent cap outside or on the roof</li>
+            <li>It's been a year or more since the vent was cleaned</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips" id="tips" aria-labelledby="tips-heading">
+      <div class="wrap">
+        <h2 id="tips-heading">Tips from the guys who clean them</h2>
+        <div class="tips-grid">
+          <article class="tip"><div class="num">01</div><p>Clean the lint trap after every load.</p></article>
+          <article class="tip"><div class="num">02</div><p>Try wool dryer balls instead of dryer sheets.</p></article>
+          <article class="tip"><div class="num">03</div><p>If you use dryer sheets, wash the lint screen with soap and water now and then to remove the film.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="work-heading">What comes out of a vent</h2>
+        <div class="work-grid">
+          <figure>
+            <img src="images/lint-pile.jpg" width="900" height="1200" alt="Pile of lint removed from a dryer vent" loading="lazy">
+            <figcaption>LINT FROM ONE VENT</figcaption>
+          </figure>
+          <figure>
+            <img src="images/lint-mat.jpg" width="900" height="1200" alt="Lint mat pulled from inside a dryer" loading="lazy">
+            <figcaption>PULLED FROM THE DRYER</figcaption>
+          </figure>
+          <figure>
+            <img src="images/lint-duct.jpg" width="900" height="1200" alt="Looking down a dryer duct lined with lint" loading="lazy">
+            <figcaption>LINT-LINED DUCT</figcaption>
+          </figure>
+          <figure>
+            <img src="images/roof-cap.jpg" width="554" height="764" alt="Lint stuck in a roof vent cap" loading="lazy">
+            <figcaption>LINT AT THE ROOF CAP</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="about-heading">Meet Drew &amp; Michael</h2>
+        <!-- Confirm both names and the firefighter line before launch. Quote only. -->
+        <blockquote class="theirs">
+          <p>Owned &amp; operated by Drew Clark &amp; Michael Dunn, local Manatee County firefighters. Who's goal is to not only clean your dryer vent but to provide peace of mind for your family &amp; educate you along the way.</p>
+          <footer style="margin-top:0.5rem;color:var(--muted)">— Dryer Vent Rescue, Nextdoor</footer>
+        </blockquote>
+        <p class="lede">We look forward to serving you, helping to make your home safer, &amp; your dryer more efficient.</p>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="reviews-heading">From a neighbor</h2>
+        <blockquote class="quote">
+          <p>Great guys who are fire fighters! Very reasonable and will take good care of you</p>
+          <footer>J.D., Nextdoor, Oct 2026</footer>
+        </blockquote>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2021 and 2023.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="contact-heading">Call to schedule</h2>
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Phone</dt><dd><a href="tel:+19412240378">(941) 224-0378</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:dryerventrescuellc@gmail.com">dryerventrescuellc@gmail.com</a></dd></div>
+              <div><dt>Hours</dt><dd>Mon–Fri 8 AM–5 PM</dd></div>
+              <div><dt>Area</dt><dd>Parrish &amp; Manatee County, FL</dd></div>
+              <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/DryerVentRescueLLC" target="_blank" rel="noopener">facebook.com/DryerVentRescueLLC</a></dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19412240378">(941) 224-0378</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19412240378">Call</a>
+              <a class="btn btn-line" href="mailto:dryerventrescuellc@gmail.com?subject=Dryer%20vent%20cleaning">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/logo.jpg" width="720" height="666" alt="Dryer Vent Rescue Cleaning Service">
+      <p>Dryer Vent Rescue LLC · Parrish, FL · <a href="tel:+19412240378">(941) 224-0378</a></p>
+      <p>
+        <a href="https://www.facebook.com/DryerVentRescueLLC" target="_blank" rel="noopener">Facebook</a>
+        ·
+        <a href="https://nextdoor.com/pages/dryer-vent-rescue-parrish-fl/" target="_blank" rel="noopener">Nextdoor</a>
+      </p>
+      <p>Serving Parrish and Manatee County, Florida.</p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Call to schedule">
+    <a href="tel:+19412240378">Call (941) 224-0378</a>
+  </div>
+</body>
+</html>

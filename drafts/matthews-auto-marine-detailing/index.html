@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matthew’s Auto &amp; Marine Detailing | Mobile Detailing in Sarasota &amp; Venice, FL</title>
+  <meta name="description" content="Mobile car, truck and boat detailing in Sarasota, Venice, Nokomis and Osprey: full details, interior details and regular washes. Call or text Matthew at (941) 961-0684.">
+  <meta name="theme-color" content="#0B0B0F">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=Inter:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "Matthew’s Auto and Marine Detailing",
+    "telephone": "+1-941-961-0684",
+    "email": "Redgravematthew@yahoo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nokomis",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Sarasota, FL", "Venice, FL", "Nokomis, FL", "Osprey, FL"],
+    "logo": "https://us1-photo.nextdoor.com/business_cover/27/26/27263eff6cca758a5b3331e52852306d.jpeg",
+    "sameAs": "https://nextdoor.com/pages/matthews-professional-car-washing-osprey-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --black: #0B0B0F;
+      --chrome-text: #F2F4F7;
+      --red: #C8102E;
+      --red-hi: #FF4D5E;
+      --chrome: #C0C5CC;
+      --marine: #0B5FA5;
+      --muted: #9AA3AE;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--black); color: var(--chrome-text); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--red-hi); }
+    h1, h2 { font-family: "Saira Condensed", Impact, sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; line-height: 0.95; margin: 0; color: var(--chrome); }
+    h3 { font-family: "Saira Condensed", sans-serif; font-weight: 600; text-transform: uppercase; margin: 0; color: var(--chrome); letter-spacing: 0.03em; }
+    p { margin: 0; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--red-hi); outline-offset: 3px; }
+
+    .utility-bar { background: var(--red); color: #fff; font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+    .site-header { background: var(--black); border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.45rem 0; flex-wrap: wrap; }
+    img.wordmark { height: 48px; width: auto; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--chrome); text-decoration: none; font-weight: 700; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 4px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--red); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #a50d26; color: #fff; }
+    .btn-line { background: transparent; color: var(--chrome); border-color: var(--chrome); }
+    .btn-line:hover { background: var(--chrome); color: var(--black); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; min-height: 78vh; display: flex; align-items: center; overflow: hidden; background: #111 center/cover no-repeat; }
+    .hero .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,11,15,0.9), rgba(11,11,15,0.15)); z-index: 1; }
+    .sweep { position: absolute; inset: 0; z-index: 1; background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.08) 48%, transparent 60%); transform: translateX(-60%); animation: sweep 1.8s ease 0.3s 1 forwards; pointer-events: none; }
+    @keyframes sweep { to { transform: translateX(60%); } }
+    .hero .wrap { position: relative; z-index: 2; padding: 3rem 0; }
+    .eyebrow { font-family: "Share Tech Mono", monospace; color: var(--red-hi); font-size: 0.82rem; margin: 0 0 0.6rem; }
+    .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); color: #fff; max-width: 14ch; margin-bottom: 0.7rem; }
+    .hero-lead { max-width: 40ch; margin-bottom: 1rem; color: var(--chrome-text); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.85rem; }
+    .meta { font-family: "Share Tech Mono", monospace; font-size: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.45rem 0.9rem; color: var(--chrome); }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 80px; }
+    .sec-num { font-family: "Share Tech Mono", monospace; color: var(--red-hi); font-size: 0.78rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 56ch; margin-bottom: 0.8rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .card { background: #141418; border-top: 2px solid var(--chrome); border-radius: 8px; padding: 1rem; }
+    .card .ico { width: 32px; height: 32px; color: var(--chrome); margin-bottom: 0.4rem; }
+    .card p { color: var(--muted); }
+    .boats { margin-top: 0.7rem; background: var(--marine); color: #fff; border-radius: 8px; padding: 1rem 1.1rem; }
+    .boats h3 { color: #fff; margin-bottom: 0.3rem; }
+    .boats p { color: #e7f1fb; }
+
+    .bugs { border: 2px solid var(--red); border-radius: 12px; padding: 1.1rem 1.15rem 1.2rem; }
+    .bugs h2 { color: #fff; }
+    .bug-ico { width: 42px; height: 28px; color: var(--red-hi); margin-bottom: 0.4rem; }
+    .bugs a.inline { color: var(--chrome); }
+
+    .tabs { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; }
+    .tabs button { font-family: "Share Tech Mono", monospace; min-height: 44px; flex: 1; background: #141418; color: var(--chrome); border: 1px solid #2a2a32; cursor: pointer; }
+    .tabs button[aria-selected="true"] { background: var(--red); border-color: var(--red); color: #fff; }
+    .tabs button[data-tab="boats"][aria-selected="true"] { background: var(--marine); border-color: var(--marine); }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.65rem; }
+    [hidden] { display: none !important; }
+    .tile { display: block; width: 100%; padding: 0; border: 0; background: #111; border-radius: 8px; overflow: hidden; cursor: pointer; text-align: left; color: inherit; position: relative; }
+    .tile img { width: 100%; aspect-ratio: 3/4; object-fit: cover; transition: transform 0.25s ease; }
+    .tile:hover img { transform: rotate(-0.4deg) scale(1.02); }
+    .tile .cap { position: absolute; left: 0.4rem; bottom: 0.4rem; font-family: "Share Tech Mono", monospace; font-size: 0.68rem; background: rgba(11,11,15,0.8); color: var(--chrome); padding: 0.2rem 0.4rem; }
+
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .how-card { border-top: 1px solid var(--chrome); padding-top: 0.7rem; }
+    .how-card .num { font-family: "Share Tech Mono", monospace; color: var(--red-hi); }
+    .how-card p { color: var(--muted); margin-top: 0.3rem; }
+
+    .quotes { display: grid; gap: 0.7rem; }
+    .quote { background: #141418; border-radius: 10px; padding: 1rem; margin: 0; }
+    .quote footer, .plain-note { color: var(--muted); margin-top: 0.5rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: #141418; border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-family: "Share Tech Mono", monospace; font-size: 0.72rem; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--chrome-text); text-decoration: none; }
+    .phone-xl { font-family: "Share Tech Mono", monospace; font-size: clamp(1.2rem, 2.6vw, 1.6rem); color: #fff; text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .site-footer { text-align: center; padding: 2rem 0 2.5rem; border-top: 1px solid #222; }
+    .site-footer img { height: 64px; width: auto; margin: 0 auto 0.6rem; }
+    .site-footer a { color: var(--chrome); }
+    .site-footer p { margin: 0.3rem 0; color: var(--muted); }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(920px, 94vw); }
+    dialog::backdrop { background: rgba(0,0,0,0.86); }
+    .lb img { max-height: 80vh; margin: 0 auto; border-radius: 8px; }
+    .lb .cap { color: var(--chrome); text-align: center; font-family: "Share Tech Mono", monospace; margin-top: 0.45rem; }
+    .lb-close { min-width: 44px; min-height: 44px; border: 0; border-radius: 4px; background: var(--red); color: #fff; font-weight: 700; cursor: pointer; margin-bottom: 0.4rem; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .services-grid, .how-grid, .contact-grid { grid-template-columns: 1fr 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .hero::before { background: linear-gradient(180deg, rgba(11,11,15,0.2), rgba(11,11,15,0.92)); }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--red); color: #fff; }
+      .dock .text { background: #141418; color: var(--chrome); border-top: 1px solid #333; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .services-grid, .how-grid, .gallery, .contact-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .sweep { animation: none; opacity: 0; }
+      .tile img, .tile:hover img { transition: none; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Mobile auto &amp; boat detailing in Sarasota &amp; Venice</span>
+      <a href="tel:+19419610684">Call or text (941) 961-0684</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top"><img class="wordmark" src="images/logo.jpg" width="1200" height="800" alt="Matthew's Auto Detailing"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#lovebugs">Love bugs</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19419610684">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <img class="bg" src="images/gto-side.jpg" width="1200" height="900" alt="Freshly detailed classic red GTO">
+      <div class="sweep" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow">MOBILE DETAILING · SARASOTA · VENICE · NOKOMIS</p>
+        <h1 id="hero-heading">Mobile detailing for cars and boats.</h1>
+        <p class="hero-lead">Full details, interior details and regular washes — Matthew comes to you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+19419610684">Call or text (941) 961-0684</a>
+          <a class="btn btn-line" href="sms:+19419610684?&amp;body=Hi%20Matthew%2C%20I%27d%20like%20a%20detail%20for%20my%20">Text Matthew</a>
+        </div>
+        <p class="meta"><span>Cars, trucks &amp; boats</span><span>Comes to you</span><span>Sarasota &amp; Venice</span></p>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Details and washes</h2>
+        <div class="services-grid">
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20h24l-2 4H6l-2-4zM7 20l2-6h14l2 6"/></svg><h3>Full detail</h3><p>Inside and out.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="10" width="20" height="12" rx="2"/><path d="M10 16h12"/></svg><h3>Interior detail</h3><p>Seats, carpets, dash and glass.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 22c4-8 12-8 16 0M16 8v6"/></svg><h3>Maintenance wash</h3><p>Keep a detailed car looking that way.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 8c6 6 6 10 0 16M18 8c6 6 6 10 0 16"/></svg><h3>Routine wash</h3><p>A regular hand wash at your place.</p></article>
+        </div>
+        <div class="boats">
+          <h3>Boats</h3>
+          <p>Boat details too — on the trailer, at your place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lovebugs" aria-labelledby="bugs-heading">
+      <div class="wrap">
+        <div class="bugs">
+          <p class="sec-num">02</p>
+          <svg class="bug-ico" viewBox="0 0 42 28" aria-hidden="true"><ellipse cx="16" cy="14" rx="8" ry="5" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="26" cy="14" rx="8" ry="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="21" cy="14" r="2" fill="currentColor"/></svg>
+          <h2 id="bugs-heading">Love bug season</h2>
+          <p class="lede">Love bugs can stick to your car’s paint and cause damage if they aren’t properly removed. Regular car washes don’t cut it.</p>
+          <p><a class="inline" href="#reviews">A neighbor called it “the dreaded task of getting the love bug residue off.”</a></p>
+          <p style="margin-top:0.9rem"><a class="btn btn-primary" href="sms:+19419610684?&amp;body=Hi%20Matthew%2C%20I%20need%20a%20love-bug%20detail%20for%20">Book a love-bug detail</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="gallery-heading">Recent details</h2>
+        <div class="tabs" role="tablist" aria-label="Cars or boats">
+          <button type="button" role="tab" aria-selected="true" data-tab="cars">Cars</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="boats">Boats</button>
+        </div>
+        <div class="gallery">
+          <button class="tile" type="button" data-cat="cars" data-full="images/gto-front.jpg" data-alt="Classic red GTO, front view" data-cap="CLASSIC GTO"><img src="images/gto-front.jpg" alt="Classic red GTO, front view" width="900" height="1200" loading="lazy"><span class="cap">CLASSIC GTO</span></button>
+          <button class="tile" type="button" data-cat="cars" data-full="images/corvette.jpg" data-alt="Silver Corvette" data-cap="CORVETTE"><img src="images/corvette.jpg" alt="Silver Corvette" width="900" height="1200" loading="lazy"><span class="cap">CORVETTE</span></button>
+          <button class="tile" type="button" data-cat="cars" data-full="images/pickup.jpg" data-alt="Red pickup truck" data-cap="PICKUP"><img src="images/pickup.jpg" alt="Red pickup truck" width="900" height="1200" loading="lazy"><span class="cap">PICKUP</span></button>
+          <button class="tile" type="button" data-cat="cars" data-full="images/sedan.jpg" data-alt="Dark sedan" data-cap="SEDAN"><img src="images/sedan.jpg" alt="Dark sedan" width="900" height="1200" loading="lazy"><span class="cap">SEDAN</span></button>
+          <button class="tile" type="button" data-cat="cars" data-full="images/foam-wash.jpg" data-alt="Foam wash in progress" data-cap="FOAM WASH"><img src="images/foam-wash.jpg" alt="Foam wash in progress" width="900" height="1200" loading="lazy"><span class="cap">FOAM WASH</span></button>
+          <button class="tile" type="button" data-cat="boats" data-full="images/boat-trailer.jpg" data-alt="Boat on a trailer" data-cap="BOAT ON TRAILER"><img src="images/boat-trailer.jpg" alt="Boat on a trailer" width="900" height="1200" loading="lazy"><span class="cap">BOAT ON TRAILER</span></button>
+          <button class="tile" type="button" data-cat="boats" data-full="images/boat-gear.jpg" data-alt="Boat with detailing gear" data-cap="BOAT + GEAR"><img src="images/boat-gear.jpg" alt="Boat with detailing gear" width="900" height="1200" loading="lazy"><span class="cap">BOAT + GEAR</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How it works</h2>
+        <div class="how-grid">
+          <article class="how-card"><div class="num">01</div><h3>Call or text.</h3><p>Tell me the vehicle and what it needs.</p></article>
+          <article class="how-card"><div class="num">02</div><h3>I come to you.</h3><p>Mobile service at your home or work.</p></article>
+          <article class="how-card"><div class="num">03</div><h3>Drive off clean.</h3><p>Inside, outside, or both.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">From neighbors</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>I gave Matthew the dreaded task of getting the love bug residue off of my car that had been on there for a while. He rose to the challenge and went above and beyond with my detail service. He was focused and thorough, not to mention as meticulous as I am. I highly recommend Matthew and will use him regularly for my car detailing needs.</p>
+            <footer>C.B., Sarasota, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>He is mature, polite, meticulous…</p>
+            <footer>J.T., Nokomis, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Polite, fair, professional. Great young Man.</p>
+            <footer>J.T., Nokomis, Nextdoor, Sep 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2023 and 2024.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="contact-heading">Book a detail</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lede">Call or text with your vehicle or boat and where it'll be.</p>
+            <dl>
+              <div><dt>Call or text</dt><dd><a href="tel:+19419610684">(941) 961-0684</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:Redgravematthew@yahoo.com">Redgravematthew@yahoo.com</a></dd></div>
+              <div><dt>Area</dt><dd>Sarasota, Venice, Nokomis &amp; Osprey</dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19419610684">(941) 961-0684</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19419610684">Call</a>
+              <a class="btn btn-line" href="sms:+19419610684?&amp;body=Hi%20Matthew%2C%20I%27d%20like%20a%20detail%20for%20my%20">Text</a>
+              <a class="btn btn-line" href="mailto:Redgravematthew@yahoo.com?subject=Detail%20booking">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/logo.jpg" width="1200" height="800" alt="">
+      <p>Matthew’s Auto and Marine Detailing · Mobile · Nokomis, FL · <a href="tel:+19419610684">(941) 961-0684</a></p>
+      <p><a href="https://nextdoor.com/pages/matthews-professional-car-washing-osprey-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19419610684">Call</a>
+    <a class="text" href="sms:+19419610684?&amp;body=Hi%20Matthew%2C%20I%27d%20like%20a%20detail%20for%20my%20">Text</a>
+  </div>
+  <dialog id="lightbox" aria-label="Detail photo">
+    <div class="lb">
+      <button class="lb-close" type="button">Close</button>
+      <img alt="">
+      <p class="cap"></p>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll(".tabs button");
+      var tiles = document.querySelectorAll(".tile");
+      function show(cat) {
+        tabs.forEach(function (t) { t.setAttribute("aria-selected", t.getAttribute("data-tab") === cat ? "true" : "false"); });
+        tiles.forEach(function (tile) { tile.hidden = tile.getAttribute("data-cat") !== cat; });
+      }
+      tabs.forEach(function (tab) { tab.addEventListener("click", function () { show(tab.getAttribute("data-tab")); }); });
+      show("cars");
+      var dlg = document.getElementById("lightbox");
+      var img = dlg.querySelector("img");
+      var cap = dlg.querySelector(".cap");
+      var closeBtn = dlg.querySelector(".lb-close");
+      tiles.forEach(function (tile) {
+        tile.addEventListener("click", function () {
+          img.src = tile.getAttribute("data-full");
+          img.alt = tile.getAttribute("data-alt");
+          cap.textContent = tile.getAttribute("data-cap");
+          dlg.showModal();
+          closeBtn.focus();
+        });
+      });
+      closeBtn.addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("close", function () { img.removeAttribute("src"); });
+    })();
+  </script>
+</body>
+</html>

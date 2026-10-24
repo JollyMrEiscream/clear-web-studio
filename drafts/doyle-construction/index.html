@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doyle Construction | Carpentry, Tile, Drywall &amp; Repairs in Bradenton &amp; Sarasota</title>
+  <meta name="description" content="Patrick at Doyle Construction handles carpentry, doors, tile and shower repair, drywall and texture in Bradenton, Sarasota and Tampa Bay. Free estimates: (941) 225-0630.">
+  <meta name="theme-color" content="#2F5D50">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;800&family=Libre+Franklin:wght@400;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Doyle Construction LLC",
+    "telephone": "+1-941-225-0630",
+    "email": "doyleconstruction@protonmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Bradenton, FL", "Sarasota, FL", "Tampa Bay, FL"],
+    "logo": "https://us1-photo.nextdoor.com/business_logo/a0/0c/a00cd1ca8c38417a97c3f73b0765ef82.jpeg",
+    "sameAs": "https://nextdoor.com/pages/doyle-construction-llc-bradenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --paper: #F7F7F4;
+      --ink: #22302B;
+      --sage: #2F5D50;
+      --cedar: #9A5B26;
+      --mint: #A8D5C2;
+      --muted: #5B6661;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Libre Franklin", system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--sage); }
+    h1, h2, h3 { font-family: "Roboto Slab", Georgia, serif; margin: 0; line-height: 1.15; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sage); color: #fff; padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--cedar); outline-offset: 3px; }
+
+    .utility-bar { background: var(--sage); color: #fff; font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+    .site-header { background: var(--white); border-bottom: 1px solid #e3e6e2; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; flex-wrap: wrap; }
+    .wordmark { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--ink); font-family: "Roboto Slab", serif; font-weight: 800; font-size: 1.2rem; }
+    .wordmark img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 6px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--sage); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #244a40; color: #fff; }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line-dark { background: transparent; color: var(--cedar); border-color: var(--cedar); }
+    .btn-line-dark:hover { background: var(--cedar); color: #fff; }
+    .btn-cedar { background: var(--cedar); color: #fff; }
+    .btn-cedar:hover { color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; color: #fff; background: var(--ink) center/cover no-repeat; min-height: 520px; display: flex; align-items: center; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(34,48,43,0.85), rgba(34,48,43,0.2)); }
+    .hero .wrap { position: relative; z-index: 1; padding: 3rem 0; }
+    .eyebrow { font-family: "Roboto Mono", monospace; color: var(--mint); font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2rem, 4.4vw, 3.15rem); font-weight: 800; color: #fff; max-width: 16ch; margin-bottom: 0.75rem; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1.1rem; color: #f3f6f4; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.9rem; }
+    .meta { font-family: "Roboto Mono", monospace; font-size: 0.78rem; display: flex; flex-wrap: wrap; gap: 0.45rem 0.9rem; color: var(--mint); }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: "Roboto Mono", monospace; color: var(--cedar); font-size: 0.76rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 58ch; margin-bottom: 0.9rem; }
+
+    .tags { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .tag { background: var(--white); border-radius: 999px 12px 12px 999px; padding: 0.9rem 1rem 1rem 0.85rem; border: 1px solid #e4e2da; display: grid; grid-template-columns: 28px 1fr; gap: 0.55rem; align-items: start; }
+    .hole { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--cedar); margin-top: 0.2rem; box-shadow: inset 0 0 0 4px var(--paper); }
+    .tag h3 { font-family: "Libre Franklin", sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.2rem; }
+    .tag p { color: var(--muted); font-size: 0.95rem; }
+    .quoted-list { margin-top: 1rem; font-family: "Roboto Mono", monospace; font-size: 0.85rem; color: var(--muted); }
+
+    .masonry { columns: 3; column-gap: 0.7rem; }
+    .masonry figure { break-inside: avoid; margin: 0 0 0.7rem; background: var(--white); border-radius: 8px; overflow: hidden; }
+    .masonry img { width: 100%; height: auto; }
+    .masonry figcaption { font-family: "Roboto Mono", monospace; font-size: 0.7rem; padding: 0.4rem 0.55rem 0.55rem; }
+    .masonry .small { max-width: 320px; }
+    .masonry .small img { width: 100%; max-width: 320px; }
+
+    .shower { background: var(--ink); color: #f4f7f5; }
+    .shower h2 { color: #fff; }
+    .shower-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; align-items: center; }
+    .shower .lede { color: #d5e0db; }
+    .compare { position: relative; aspect-ratio: 4/3; overflow: hidden; border-radius: 10px; background: #1a2420; --pos: 62%; }
+    .compare .panel { position: absolute; inset: 0; }
+    .compare svg { width: 100%; height: 100%; }
+    .compare .after { clip-path: inset(0 0 0 var(--pos)); }
+    .compare .lbl { position: absolute; top: 10px; font-family: "Roboto Mono", monospace; font-size: 0.72rem; background: var(--paper); color: var(--ink); padding: 0.2rem 0.4rem; }
+    .compare .lbl.b { left: 10px; }
+    .compare .lbl.a { right: 10px; }
+    .compare input[type=range] { position: absolute; inset: 0; width: 100%; margin: 0; opacity: 0; cursor: ew-resize; height: 100%; }
+    .compare .divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: var(--mint); pointer-events: none; }
+    .compare .divider::after { content: "↔"; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--mint); color: var(--ink); display: grid; place-items: center; font-weight: 700; }
+    .caption { font-family: "Roboto Mono", monospace; font-size: 0.75rem; color: var(--mint); margin-top: 0.5rem; }
+
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .why-card { background: var(--white); border-radius: 10px; padding: 1rem; }
+    .why-card .num { font-family: "Roboto Mono", monospace; color: var(--cedar); margin-bottom: 0.3rem; }
+    .why-card h3 { font-family: "Libre Franklin", sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .quotes { display: grid; gap: 0.75rem; }
+    .quote { background: var(--white); border-radius: 10px; padding: 1rem 1.1rem; margin: 0; }
+    .quote footer, .plain-note { color: var(--muted); margin-top: 0.55rem; }
+    blockquote.theirs { margin: 0.8rem 0 0; padding: 0.8rem 1rem; border-left: 3px solid var(--cedar); background: var(--white); font-size: 0.98rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: var(--white); border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-family: "Roboto Mono", monospace; font-size: 0.7rem; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "Roboto Mono", monospace; font-size: clamp(1.2rem, 2.5vw, 1.6rem); color: var(--ink); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .site-footer { background: var(--ink); color: #e7eeeb; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer img { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 0.6rem; object-fit: cover; }
+    .site-footer a { color: var(--mint); }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .tags, .why-grid, .shower-grid, .contact-grid { grid-template-columns: 1fr; }
+      .masonry { columns: 2; }
+      .hero::before { background: linear-gradient(180deg, rgba(34,48,43,0.25), rgba(34,48,43,0.88)); }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--sage); color: #fff; }
+      .dock .text { background: var(--ink); color: var(--mint); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .tags, .masonry { columns: 1; grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .masonry img { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Free estimates · Bradenton &amp; Sarasota</span>
+      <a href="tel:+19412250630">Call or text (941) 225-0630</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top"><img src="images/logo.jpg" width="48" height="48" alt="Doyle Construction turtle logo">Doyle Construction</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#shower">Shower repair</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19412250630">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading" style="background-image:url('images/hero-ceiling.jpg')">
+      <div class="wrap">
+        <p class="eyebrow">BRADENTON · SARASOTA · TAMPA BAY</p>
+        <h1 id="hero-heading">Carpentry, tile, drywall and repairs — done by Patrick.</h1>
+        <p class="hero-lead">A small local contractor for the jobs around the house: doors, showers, trim, texture, lighting and more. Free estimates.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+19412250630">Call Patrick (941) 225-0630</a>
+          <a class="btn btn-line" href="sms:+19412250630?&amp;body=Hi%20Patrick%2C%20here%27s%20the%20job%3A%20">Text a photo</a>
+        </div>
+        <p class="meta"><span>Free estimates</span><span>Small local contractor</span><span>Bradenton-based</span></p>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">What Patrick handles</h2>
+        <div class="tags">
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Carpentry</h3><p>Trim, shelving, pantries and wood ceilings.</p></div></article>
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Doors</h3><p>Entry and interior doors, glass doors, and pet door inserts for sliders — even 8-foot ones.</p></div></article>
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Tile &amp; showers</h3><p>Tile work, shower repairs, grout and silicone.</p></div></article>
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Drywall &amp; texture</h3><p>Patches, repairs and matching texture.</p></div></article>
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Lighting</h3><p>Fixtures and lighting updates.</p></div></article>
+          <article class="tag"><span class="hole" aria-hidden="true"></span><div><h3>Handyman</h3><p>The list of small jobs that keep piling up.</p></div></article>
+        </div>
+        <!-- His own list, quoted. Electrical and plumbing stay inside the quote, not as headline services. -->
+        <p class="quoted-list">“Carpentry, Handyman, Tile, Drywall, Texture, Lighting, Electrical Upgrades, Plumbing &amp; more.”</p>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="work-heading">Recent work</h2>
+        <div class="masonry">
+          <figure>
+            <img src="images/hero-ceiling.jpg" width="1200" height="900" alt="Tongue-and-groove wood ceiling" loading="lazy">
+            <figcaption>WOOD CEILING</figcaption>
+          </figure>
+          <figure>
+            <img src="images/shower.jpg" width="900" height="1200" alt="Shower repair" loading="lazy">
+            <figcaption>SHOWER</figcaption>
+          </figure>
+          <figure>
+            <img src="images/glass-door.jpg" width="900" height="1200" alt="Glass entry door" loading="lazy">
+            <figcaption>GLASS DOOR</figcaption>
+          </figure>
+          <figure>
+            <img src="images/bathroom.jpg" width="900" height="1200" alt="Bathroom remodel" loading="lazy">
+            <figcaption>BATHROOM</figcaption>
+          </figure>
+          <figure class="small">
+            <img src="images/mosaic-shower.jpg" width="360" height="480" alt="Mosaic tile shower" loading="lazy">
+            <figcaption>MOSAIC SHOWER</figcaption>
+          </figure>
+          <figure>
+            <img src="images/pantry.jpg" width="900" height="1200" alt="Pantry shelving" loading="lazy">
+            <figcaption>PANTRY SHELVING</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="shower" id="shower" aria-labelledby="shower-heading">
+      <div class="wrap shower-grid">
+        <div>
+          <h2 id="shower-heading">Leaking shower? It can often be repaired.</h2>
+          <p class="lede">Patrick waterproofs and repairs leaking showers: re-grouting and caulking the base, replacing old moldy silicone around the door, and stain-blocking water marks on the baseboard.</p>
+          <a class="btn btn-primary" href="tel:+19412250630">Get a free shower estimate</a>
+        </div>
+        <div>
+          <div class="compare" id="grout-compare">
+            <div class="panel before" aria-hidden="true">
+              <svg viewBox="0 0 400 300">
+                <rect width="400" height="300" fill="#cfc8be"/>
+                <g stroke="#6b6258" stroke-width="6">
+                  <path d="M0 60h400M0 140h400M0 220h400M80 0v300M180 0v300M280 0v300"/>
+                </g>
+                <path d="M20 250 C80 240 140 270 220 248 C280 232 340 260 390 246" fill="none" stroke="#4a4038" stroke-width="10" stroke-linecap="round"/>
+                <path d="M30 258 C90 268 150 240 230 262" fill="none" stroke="#2c261f" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="panel after" aria-hidden="true">
+              <svg viewBox="0 0 400 300">
+                <rect width="400" height="300" fill="#f3f1ec"/>
+                <g stroke="#d9d4cc" stroke-width="4">
+                  <path d="M0 60h400M0 140h400M0 220h400M80 0v300M180 0v300M280 0v300"/>
+                </g>
+                <path d="M16 252 H384" fill="none" stroke="#f7f7f4" stroke-width="8" stroke-linecap="round"/>
+                <path d="M16 252 H384" fill="none" stroke="#c8c2b8" stroke-width="2"/>
+              </svg>
+            </div>
+            <span class="lbl b">Before</span>
+            <span class="lbl a">After</span>
+            <input type="range" min="0" max="100" value="62" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" aria-label="Compare cracked grout and old silicone with clean grout lines">
+            <div class="divider"></div>
+          </div>
+          <p class="caption">Illustration</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="why-heading">What neighbors mention</h2>
+        <div class="why-grid">
+          <article class="why-card"><div class="num">01</div><h3>On time.</h3><p>Shows up when he says, sometimes the next day.</p></article>
+          <article class="why-card"><div class="num">02</div><h3>Figures it out.</h3><p>Handles the odd fit — like hinges that don't line up with the frame.</p></article>
+          <article class="why-card"><div class="num">03</div><h3>Cleans up.</h3><p>Leaves the job clean when he's done.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">From neighbors</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Excellent experience! He was professional, knowledgeable, and did a great job installing our glass office door. The hinges didn’t line up with the existing frame, but he knew exactly how to handle it and made sure everything was installed correctly. He was able to come out the next day and arrived on time, communicated well, worked efficiently, and cleaned up afterward. The finished door looks fantastic and operates perfectly. He wasn’t done until it was perfect! I would definitely hire him again for future projects! Thank you again, Patrick!!</p>
+            <footer>D.B., Nextdoor, Aug 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Excellent worker. On time Reasonable…knew what he was doing. Grateful won’t hesitate to call him again.</p>
+            <footer>E.J., Nextdoor, Aug 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2023, 2024 and 2025.</p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <h2 id="about-heading">About Patrick</h2>
+        <p class="lede" style="margin-top:0.7rem">Doyle Construction is Patrick — a small local contractor working across Bradenton, Sarasota and Tampa Bay. You call him, he comes out and gives you a free estimate.</p>
+        <!-- Confirm before launch. Quote only; not a badge. -->
+        <blockquote class="theirs"><p>Veteran owned business.</p><footer style="margin-top:0.4rem;color:var(--muted)">— Patrick, on Nextdoor</footer></blockquote>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="contact-heading">Get a free estimate</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lede">Call or text Patrick with what needs fixing. A photo helps.</p>
+            <dl>
+              <div><dt>Call or text</dt><dd><a href="tel:+19412250630">(941) 225-0630</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:doyleconstruction@protonmail.com">doyleconstruction@protonmail.com</a></dd></div>
+              <div><dt>Area</dt><dd>Bradenton, Sarasota &amp; Tampa Bay</dd></div>
+              <div><dt>Hours</dt><dd>Call or text to set a time</dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19412250630">(941) 225-0630</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19412250630">Call</a>
+              <a class="btn btn-cedar" href="sms:+19412250630?&amp;body=Hi%20Patrick%2C%20here%27s%20the%20job%3A%20">Text</a>
+              <a class="btn btn-line-dark" href="mailto:doyleconstruction@protonmail.com?subject=Free%20estimate">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/logo.jpg" width="64" height="64" alt="">
+      <p>Doyle Construction LLC · Bradenton, FL · <a href="tel:+19412250630">(941) 225-0630</a></p>
+      <p><a href="https://nextdoor.com/pages/doyle-construction-llc-bradenton-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19412250630">Call Patrick</a>
+    <a class="text" href="sms:+19412250630?&amp;body=Hi%20Patrick%2C%20here%27s%20the%20job%3A%20">Text</a>
+  </div>
+  <script>
+    (function () {
+      var cmp = document.getElementById("grout-compare");
+      var range = cmp.querySelector("input");
+      function setPos(v) { cmp.style.setProperty("--pos", v + "%"); range.setAttribute("aria-valuenow", v); }
+      range.addEventListener("input", function () { setPos(range.value); });
+    })();
+  </script>
+</body>
+</html>
