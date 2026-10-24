@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omni Builds, LLC | Remodeling, Flooring, Pavers &amp; Turf in Bradenton &amp; Sarasota</title>
+  <meta name="description" content="Home improvement in Bradenton, Lakewood Ranch and Sarasota: remodeling, flooring, pavers, artificial turf, welding &amp; fabrication and landscape lighting. Call or text (941) 315-6920 for a free quote.">
+  <meta name="theme-color" content="#14233C">
+  <meta property="og:image" content="images/logo.jpg">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Omni Builds, LLC",
+    "telephone": "+1-941-315-6920",
+    "email": "omnibuildssrq@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Bradenton, FL", "Lakewood Ranch, FL", "Sarasota, FL"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+    ],
+    "logo": "https://us1-photo.nextdoor.com/business_cover/69/93/6993165e487fbd439f8c7d23e43d2d98.png",
+    "sameAs": "https://nextdoor.com/pages/omni-builds-llc-bradenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --stone: #F2F0EC;
+      --navy: #14233C;
+      --gold: #C9A86A;
+      --turf: #2F7A3B;
+      --bronze: #8A6A2F;
+      --muted: #5A6270;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--stone); color: var(--navy); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--bronze); }
+    h1, h2, h3 { font-family: Outfit, system-ui, sans-serif; margin: 0; line-height: 1.08; }
+    h1, h2 { font-weight: 800; }
+    p { margin: 0; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--gold); color: var(--navy); padding: 0.6rem 1rem; font-weight: 700; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+    .utility-bar { background: var(--navy); color: #fff; font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+    .site-header { background: var(--white); border-bottom: 1px solid #e4e0d8; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; flex-wrap: wrap; }
+    .wordmark { text-decoration: none; color: var(--navy); display: inline-flex; flex-direction: column; gap: 2px; }
+    .wordmark svg { width: 72px; height: 10px; }
+    .wordmark strong { font-family: Outfit, sans-serif; font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--navy); text-decoration: none; font-weight: 600; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 6px; font-weight: 600; text-decoration: none; border: 2px solid transparent; font-family: inherit; cursor: pointer; }
+    .btn-primary { background: var(--gold); color: var(--navy); min-height: 56px; }
+    .btn-primary:hover { filter: brightness(0.95); color: var(--navy); }
+    .btn-line { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-line:hover { background: var(--navy); color: #fff; }
+    .btn-bronze { background: var(--bronze); color: #fff; }
+    .btn-bronze:hover { color: #fff; filter: brightness(1.05); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { padding: 2.3rem 0 1.6rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.5rem; align-items: center; }
+    .eyebrow { font-family: "JetBrains Mono", monospace; color: var(--bronze); font-size: 0.76rem; margin: 0 0 0.65rem; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.7rem; }
+    .hero-lead { max-width: 46ch; margin-bottom: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.9rem; }
+    .meta { font-family: "JetBrains Mono", monospace; font-size: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0.85rem; }
+    .mosaic { position: relative; display: grid; grid-template-columns: 1.25fr 1fr; gap: 6px; }
+    .mosaic::before { content: ""; position: absolute; inset: 8px -8px -8px 8px; border: 1.5px solid var(--gold); border-radius: 8px; z-index: 0; }
+    .mosaic img { position: relative; z-index: 1; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; }
+    .mosaic .big { aspect-ratio: 1; }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: "JetBrains Mono", monospace; color: var(--bronze); font-size: 0.76rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 58ch; margin-bottom: 0.9rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .card { background: var(--white); border-radius: 10px; padding: 1rem 1rem 1.1rem; border-top: 3px solid var(--gold); }
+    .card.small { border-top-color: var(--turf); }
+    .card .ico { width: 32px; height: 32px; color: var(--navy); margin-bottom: 0.4rem; }
+    .card h3 { font-weight: 700; font-size: 1.08rem; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); }
+
+    .tabs { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; }
+    .tabs button { font-family: "JetBrains Mono", monospace; min-height: 44px; padding: 0.35rem 0.75rem; border: 0; border-bottom: 3px solid transparent; background: transparent; cursor: pointer; color: var(--navy); }
+    .tabs button[aria-selected="true"] { border-bottom-color: var(--gold); font-weight: 500; }
+    .tabs button[data-tab="outdoor"][aria-selected="true"] { border-bottom-color: var(--turf); color: var(--turf); }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    [hidden] { display: none !important; }
+    .tile { display: block; width: 100%; padding: 0; border: 0; background: var(--white); border-radius: 8px; overflow: hidden; cursor: pointer; text-align: left; color: inherit; position: relative; }
+    .tile img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .tile.wide img { aspect-ratio: 4/3; }
+    .tile .cap { position: absolute; left: 0.45rem; bottom: 0.45rem; font-family: "JetBrains Mono", monospace; font-size: 0.66rem; background: var(--stone); padding: 0.22rem 0.4rem; }
+
+    .ba { background: var(--navy); color: #fff; }
+    .ba h2 { color: #fff; }
+    .compare { position: relative; max-width: 420px; aspect-ratio: 1/2; overflow: hidden; border-radius: 8px; --pos: 50%; background: #0c1728; }
+    .compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .compare .after { clip-path: inset(0 0 0 var(--pos)); }
+    .compare .lbl { position: absolute; top: 10px; font-family: "JetBrains Mono", monospace; font-size: 0.72rem; background: var(--gold); color: var(--navy); padding: 0.22rem 0.4rem; }
+    .compare .lbl.b { left: 10px; }
+    .compare .lbl.a { right: 10px; }
+    .compare input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+    .compare .divider { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: var(--gold); pointer-events: none; }
+    .compare .divider::after { content: "↔"; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--gold); color: var(--navy); display: grid; place-items: center; font-weight: 700; }
+    .caption { font-family: "JetBrains Mono", monospace; font-size: 0.75rem; color: var(--gold); margin-top: 0.55rem; }
+
+    .weld { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem; align-items: center; }
+    .weld-panel { background: var(--bronze); color: #fff; border-radius: 12px; overflow: hidden; }
+    .weld-panel img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .weld-panel p { padding: 0.7rem 0.9rem 0.9rem; font-family: "JetBrains Mono", monospace; font-size: 0.75rem; }
+
+    .why { background: var(--navy); color: #fff; }
+    .why h2 { color: #fff; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .why-card { border: 1px solid rgba(201,168,106,0.4); border-radius: 10px; padding: 1rem; }
+    .why-card .num { font-family: "JetBrains Mono", monospace; color: var(--gold); margin-bottom: 0.3rem; }
+    .why-card h3 { color: #fff; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.3rem; }
+    .quote { background: var(--white); border-radius: 10px; padding: 1.1rem; margin: 0; }
+    .quote footer, .plain-note { color: var(--muted); margin-top: 0.55rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: var(--white); border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-family: "JetBrains Mono", monospace; font-size: 0.7rem; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--navy); text-decoration: none; }
+    .phone-xl { font-family: "JetBrains Mono", monospace; font-size: clamp(1.2rem, 2.5vw, 1.55rem); color: var(--navy); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { text-align: center; padding: 2rem 0 2.5rem; }
+    .site-footer img { width: 88px; height: 88px; margin: 0 auto 0.6rem; border-radius: 8px; }
+    .site-footer p { margin: 0.3rem 0; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(920px, 94vw); }
+    dialog::backdrop { background: rgba(20,35,60,0.86); }
+    .lb img { max-height: 80vh; margin: 0 auto; border-radius: 6px; }
+    .lb .cap { color: var(--stone); text-align: center; font-family: "JetBrains Mono", monospace; margin-top: 0.5rem; }
+    .lb-close { min-width: 44px; min-height: 44px; border: 0; border-radius: 6px; background: var(--gold); color: var(--navy); font-weight: 700; cursor: pointer; margin-bottom: 0.4rem; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services-grid, .weld, .why-grid, .contact-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .mosaic { grid-template-columns: 1fr 1fr; }
+      .mosaic .big { aspect-ratio: 1; }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--gold); color: var(--navy); }
+      .dock .text { background: var(--navy); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .gallery { grid-template-columns: 1fr; }
+      .tabs { overflow-x: auto; flex-wrap: nowrap; }
+      .tabs button { flex: 0 0 auto; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .tile img { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Home improvement in Bradenton, Lakewood Ranch &amp; Sarasota</span>
+      <a href="tel:+19413156920">Call or text (941) 315-6920</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <svg viewBox="0 0 72 10" aria-hidden="true"><path d="M2 8 L20 2 L36 8 L52 2 L70 8" fill="none" stroke="#C9A86A" stroke-width="1.6"/></svg>
+        <strong>Omni Builds, LLC</strong>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#before-after">Before &amp; after</a>
+        <a class="nav-link" href="#welding">Welding</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19413156920">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">BRADENTON · LAKEWOOD RANCH · SARASOTA</p>
+          <h1 id="hero-heading">Bettering our neighborhoods one project at a time.</h1>
+          <p class="hero-lead">Remodeling, flooring, pavers, artificial turf, welding &amp; fabrication, and landscape lighting — high quality work at a fair price.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19413156920">Call or text for a free quote</a>
+            <a class="btn btn-line" href="#work">See our work</a>
+          </div>
+          <p class="meta"><span>Mon–Fri 8–5 · Sat 10–2</span><span>Free quotes</span><span>Mobile welding</span></p>
+        </div>
+        <div class="mosaic" aria-hidden="true">
+          <img class="big" src="images/turf-paver.jpg" alt="" width="900" height="1200">
+          <img src="images/kitchen.jpg" alt="" width="900" height="1200">
+          <img src="images/checker-floor.jpg" alt="" width="1200" height="900">
+          <img src="images/wood-gate.jpg" alt="" width="765" height="1020">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">What we do</h2>
+        <div class="services-grid">
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 26V12l12-8 12 8v14H4z"/></svg><h3>Remodeling</h3><p>Kitchens, bathrooms, saunas and interior upgrades.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 26V8h8v18M16 26V14h8v12"/></svg><h3>Flooring</h3><p>New floors, from tile to patterned layouts.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 22h24M8 22l4-10h8l4 10"/></svg><h3>Pavers</h3><p>Paths, patios and walkways.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 24c4-8 16-8 20 0M16 8v6"/></svg><h3>Artificial turf</h3><p>Bold color, zero maintenance, all-season green.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 24l8-16 8 16M10 20h12"/></svg><h3>Welding &amp; fabrication</h3><p>A mobile division for a wide variety of work.</p></article>
+          <article class="card"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="14" r="5"/><path d="M16 19v7"/></svg><h3>Landscape lighting</h3><p>Light up paths and yards.</p></article>
+          <article class="card small"><h3>Storage ideas</h3><p>Like a low-budget closet under the stairs for holiday decor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="work-heading">Recent projects</h2>
+        <div class="tabs" role="tablist" aria-label="Project types">
+          <button type="button" role="tab" id="tab-all" aria-selected="true" aria-controls="panel-work" data-tab="all">All</button>
+          <button type="button" role="tab" id="tab-interiors" aria-selected="false" aria-controls="panel-work" data-tab="interiors">Interiors</button>
+          <button type="button" role="tab" id="tab-outdoor" aria-selected="false" aria-controls="panel-work" data-tab="outdoor">Outdoor &amp; Turf</button>
+        </div>
+        <div class="gallery" id="panel-work" role="tabpanel">
+          <button class="tile" type="button" data-cat="outdoor" data-full="images/turf-paver.jpg" data-alt="Artificial turf beside a paver path" data-cap="TURF + PAVER PATH"><img src="images/turf-paver.jpg" alt="Artificial turf beside a paver path" width="900" height="1200" loading="lazy"><span class="cap">TURF + PAVER PATH</span></button>
+          <button class="tile wide" type="button" data-cat="outdoor" data-full="images/turf-side.jpg" data-alt="Artificial turf along a side yard" data-cap="TURF SIDE YARD"><img src="images/turf-side.jpg" alt="Artificial turf along a side yard" width="1200" height="900" loading="lazy"><span class="cap">TURF SIDE YARD</span></button>
+          <button class="tile" type="button" data-cat="interiors" data-full="images/sauna.jpg" data-alt="Interior sauna upgrade" data-cap="SAUNA"><img src="images/sauna.jpg" alt="Interior sauna upgrade" width="1102" height="1200" loading="lazy"><span class="cap">SAUNA</span></button>
+          <button class="tile wide" type="button" data-cat="interiors" data-full="images/checker-floor.jpg" data-alt="Checkerboard floor" data-cap="CHECKERBOARD FLOOR"><img src="images/checker-floor.jpg" alt="Checkerboard floor" width="1200" height="900" loading="lazy"><span class="cap">CHECKERBOARD FLOOR</span></button>
+          <button class="tile" type="button" data-cat="outdoor" data-full="images/paver-path.jpg" data-alt="Paver path" data-cap="PAVER PATH"><img src="images/paver-path.jpg" alt="Paver path" width="900" height="1200" loading="lazy"><span class="cap">PAVER PATH</span></button>
+          <button class="tile" type="button" data-cat="outdoor" data-full="images/wood-gate.jpg" data-alt="Wood gate" data-cap="WOOD GATE"><img src="images/wood-gate.jpg" alt="Wood gate" width="765" height="1020" loading="lazy"><span class="cap">WOOD GATE</span></button>
+          <button class="tile" type="button" data-cat="interiors" data-full="images/kitchen.jpg" data-alt="Remodeled kitchen" data-cap="KITCHEN"><img src="images/kitchen.jpg" alt="Remodeled kitchen" width="900" height="1200" loading="lazy"><span class="cap">KITCHEN</span></button>
+          <button class="tile" type="button" data-cat="interiors" data-full="images/stair-closet.jpg" data-alt="Closet built under a staircase" data-cap="UNDER-STAIR CLOSET"><img src="images/stair-closet.jpg" alt="Closet built under a staircase" width="900" height="1200" loading="lazy"><span class="cap">UNDER-STAIR CLOSET</span></button>
+          <button class="tile" type="button" data-cat="outdoor" data-full="images/fence.jpg" data-alt="Wood privacy fence" data-cap="WOOD PRIVACY FENCE"><img src="images/fence.jpg" alt="Wood privacy fence" width="900" height="1200" loading="lazy"><span class="cap">WOOD PRIVACY FENCE</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="ba" id="before-after" aria-labelledby="ba-heading">
+      <div class="wrap">
+        <h2 id="ba-heading">Before &amp; after: screen enclosure</h2>
+        <!-- Confirm which panel is before and the job type with the owner. Left half shown as Before. -->
+        <div class="compare" id="screen-compare">
+          <img class="before" src="images/screen-before.jpg" alt="" width="510" height="1020">
+          <img class="after" src="images/screen-after.jpg" alt="Screen enclosure, before and after" width="510" height="1020">
+          <span class="lbl b">Before</span>
+          <span class="lbl a">After</span>
+          <input type="range" min="0" max="100" value="50" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Slide to compare the screen enclosure before and after">
+          <div class="divider"></div>
+        </div>
+        <p class="caption">Before / After</p>
+      </div>
+    </section>
+
+    <section id="welding" aria-labelledby="welding-heading">
+      <div class="wrap weld">
+        <div class="weld-panel">
+          <img src="images/weld.jpg" width="900" height="1200" alt="Weld on a pipe fitting" loading="lazy">
+          <p>WELD ON A PIPE FITTING</p>
+        </div>
+        <div>
+          <p class="sec-num">03</p>
+          <h2 id="welding-heading">Welding &amp; fabrication — we come to you</h2>
+          <p class="lede">We have a division that specializes in welding and fabrication. We are mobile and can handle a wide variety of work!</p>
+          <a class="btn btn-bronze" href="sms:+19413156920?&amp;body=Hi%20Omni%20Builds%2C%20I%20have%20a%20welding%20job%3A%20">Ask about a welding job</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">How we work</h2>
+        <div class="why-grid">
+          <article class="why-card"><div class="num">01</div><h3>Craftsmanship.</h3><p>We take pride in our craftsmanship.</p></article>
+          <article class="why-card"><div class="num">02</div><h3>Fair price.</h3><p>High quality work at a fair price, with a free quote first.</p></article>
+          <article class="why-card"><div class="num">03</div><h3>One crew, many trades.</h3><p>Floors, pavers, turf, remodeling, welding and lighting from one company.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <h2 id="reviews-heading">From a neighbor</h2>
+        <blockquote class="quote">
+          <p>Omni Builds, LLC  does exceptional work</p>
+          <footer>L.W., Nextdoor, Aug 2026</footer>
+        </blockquote>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2025.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="contact-heading">Get a free quote</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lede">Call or text with what you're planning. Photos of the space help us quote it.</p>
+            <dl>
+              <div><dt>Call or text</dt><dd><a href="tel:+19413156920">(941) 315-6920</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:omnibuildssrq@gmail.com">omnibuildssrq@gmail.com</a></dd></div>
+              <div><dt>Hours</dt><dd>Mon–Fri 8 AM–5 PM · Sat 10 AM–2 PM · Sun closed</dd></div>
+              <div><dt>Area</dt><dd>Bradenton, Lakewood Ranch &amp; Sarasota</dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19413156920">(941) 315-6920</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19413156920">Call</a>
+              <a class="btn btn-line" href="sms:+19413156920?&amp;body=Hi%20Omni%20Builds%2C%20I%27d%20like%20a%20quote%20for%20">Text</a>
+              <a class="btn btn-line" href="mailto:omnibuildssrq@gmail.com?subject=Free%20quote">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/logo.jpg" width="1000" height="1000" alt="Omni Builds, LLC — Construction and Maintenance">
+      <p>Omni Builds, LLC · Bradenton, FL · <a href="tel:+19413156920">(941) 315-6920</a></p>
+      <p><a href="https://nextdoor.com/pages/omni-builds-llc-bradenton-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19413156920">Call</a>
+    <a class="text" href="sms:+19413156920?&amp;body=Hi%20Omni%20Builds%2C%20I%27d%20like%20a%20quote%20for%20">Text</a>
+  </div>
+  <dialog id="lightbox" aria-label="Project photo">
+    <div class="lb">
+      <button class="lb-close" type="button">Close</button>
+      <img alt="">
+      <p class="cap"></p>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll(".tabs button");
+      var tiles = document.querySelectorAll(".tile");
+      tabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          var cat = tab.getAttribute("data-tab");
+          tabs.forEach(function (t) { t.setAttribute("aria-selected", t === tab ? "true" : "false"); });
+          tiles.forEach(function (tile) { tile.hidden = cat !== "all" && tile.getAttribute("data-cat") !== cat; });
+        });
+      });
+      var cmp = document.getElementById("screen-compare");
+      var range = cmp.querySelector("input");
+      function setPos(v) { cmp.style.setProperty("--pos", v + "%"); range.setAttribute("aria-valuenow", v); }
+      range.addEventListener("input", function () { setPos(range.value); });
+      var dlg = document.getElementById("lightbox");
+      var img = dlg.querySelector("img");
+      var cap = dlg.querySelector(".cap");
+      var closeBtn = dlg.querySelector(".lb-close");
+      tiles.forEach(function (tile) {
+        tile.addEventListener("click", function () {
+          img.src = tile.getAttribute("data-full");
+          img.alt = tile.getAttribute("data-alt");
+          cap.textContent = tile.getAttribute("data-cap");
+          dlg.showModal();
+          closeBtn.focus();
+        });
+      });
+      closeBtn.addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.addEventListener("close", function () { img.removeAttribute("src"); });
+    })();
+  </script>
+</body>
+</html>

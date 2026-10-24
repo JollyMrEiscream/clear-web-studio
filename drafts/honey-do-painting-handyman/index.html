@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Honey Do Painting &amp; Handyman | Port Charlotte, Punta Gorda &amp; North Port, FL</title>
+  <meta name="description" content="Painting and handyman services in Port Charlotte, Punta Gorda, North Port and Venice. Text or call (941) 875-4445 for a free consultation.">
+  <meta name="theme-color" content="#3B2A1A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Honey Do Painting and Handyman Services LLC",
+    "telephone": "+1-941-875-4445",
+    "email": "honeydohandymanservices22@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Port Charlotte",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Port Charlotte, FL", "Punta Gorda, FL", "North Port, FL", "Venice, FL"],
+    "sameAs": "https://nextdoor.com/pages/honey-do-handyman-services-port-charlotte-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --cream: #FFF8E7;
+      --brown: #3B2A1A;
+      --honey: #F2A900;
+      --amber: #8A4B00;
+      --muted: #6B5A48;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Nunito, system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.55;
+      font-size: 1.05rem;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='84' height='48' viewBox='0 0 84 48'><path d='M21 2 L41 12 V32 L21 42 L1 32 V12 Z M63 26 L83 36 V56 L63 66 L43 56 V36 Z' fill='none' stroke='%23F2A900' stroke-opacity='0.18' stroke-width='1.4'/></svg>");
+    }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--amber); }
+    h1, h2 { font-family: "Lilita One", system-ui, sans-serif; font-weight: 400; line-height: 1.05; margin: 0; }
+    h3 { font-family: Nunito, sans-serif; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--honey); color: var(--brown); padding: 0.6rem 1rem; font-weight: 800; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    .utility-bar { background: var(--brown); color: var(--cream); font-size: 0.82rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--honey); font-weight: 800; text-decoration: none; }
+    .site-header { background: rgba(255,248,231,0.94); border-bottom: 1px solid #f0e2c4; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; flex-wrap: wrap; }
+    .wordmark { text-decoration: none; color: var(--brown); display: flex; align-items: center; gap: 0.55rem; }
+    .hex-mark { width: 46px; height: 46px; flex: none; }
+    .wordmark strong { font-family: "Lilita One", sans-serif; font-size: 1.7rem; font-weight: 400; display: block; line-height: 0.9; }
+    .wordmark span { font-family: Nunito, sans-serif; font-weight: 800; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--brown); text-decoration: none; font-weight: 800; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.65rem 1.05rem; border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid transparent; font-family: inherit; }
+    .btn-primary { background: var(--honey); color: var(--brown); min-height: 56px; }
+    .btn-primary:hover { filter: brightness(0.96); color: var(--brown); }
+    .btn-line { background: transparent; color: var(--amber); border-color: var(--amber); }
+    .btn-line:hover { background: var(--amber); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { padding: 2.2rem 0 1.6rem; position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { font-weight: 800; color: var(--amber); letter-spacing: 0.04em; font-size: 0.82rem; margin: 0 0 0.6rem; }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); margin-bottom: 0.6rem; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-bottom: 0.85rem; }
+    .meta { font-weight: 800; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; color: var(--muted); }
+
+    .paper {
+      background: #fffdf6;
+      background-image: repeating-linear-gradient(transparent, transparent 31px, #f3d7a4 32px);
+      border: 1px solid #efd7a4;
+      border-radius: 12px;
+      padding: 1rem 1.1rem 1.2rem 1.2rem;
+      box-shadow: 6px 8px 0 rgba(59,42,26,0.08);
+      transform: rotate(-1deg);
+    }
+    .paper h2 { font-family: Caveat, cursive; font-size: 2rem; margin-bottom: 0.2rem; }
+    .paper ol { list-style: none; margin: 0; padding: 0; }
+    .paper li {
+      font-family: Caveat, cursive;
+      font-size: 1.7rem;
+      min-height: 32px;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      position: relative;
+    }
+    .paper li .check { width: 22px; height: 22px; flex: none; }
+    .paper li .check path { stroke-dasharray: 24; stroke-dashoffset: 24; animation: draw 0.3s ease forwards; }
+    .paper li:nth-child(1) .check path { animation-delay: 0.2s; }
+    .paper li:nth-child(2) .check path { animation-delay: 0.5s; }
+    .paper li:nth-child(3) .check path { animation-delay: 0.8s; }
+    .paper li:nth-child(4) .check path { animation-delay: 1.1s; }
+    .paper li:nth-child(5) .check path { animation-delay: 1.4s; }
+    .paper li.done::after {
+      content: ""; position: absolute; left: 30px; right: 8px; height: 2px; background: var(--brown);
+      transform: scaleX(0); transform-origin: left; animation: strike 0.3s ease forwards;
+    }
+    .paper li.done:nth-child(1)::after { animation-delay: 0.45s; }
+    .paper li.done:nth-child(2)::after { animation-delay: 0.75s; }
+    .paper li.done:nth-child(3)::after { animation-delay: 1.05s; }
+    .paper li.done:nth-child(4)::after { animation-delay: 1.35s; }
+    .paper li.stay { animation: pulse 0.6s ease 1.7s 1; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes strike { to { transform: scaleX(1); } }
+    @keyframes pulse { 50% { transform: scale(1.03); } }
+
+    section { padding: 2.7rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-weight: 800; color: var(--amber); letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0.9rem; }
+    .paint-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .hex-tile {
+      background: #fff;
+      clip-path: polygon(12% 0, 88% 0, 100% 50%, 88% 100%, 12% 100%, 0 50%);
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1.6rem 2.4rem;
+    }
+    .hex-tile.a { background: #f6d98a; }
+    .hex-tile.b { background: #f3c15a; }
+    .hex-tile h3 { font-family: "Lilita One", sans-serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 0.3rem; }
+
+    .hex-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .hex-card {
+      background: #fff;
+      clip-path: polygon(10% 0, 90% 0, 100% 18%, 100% 82%, 90% 100%, 10% 100%, 0 82%, 0 18%);
+      padding: 1.3rem 1.1rem 1.2rem;
+      text-align: center;
+      border: 0;
+    }
+    .hex-card .ico { width: 36px; height: 36px; margin: 0 auto 0.35rem; color: var(--amber); }
+    .hex-card h3 { font-weight: 800; margin-bottom: 0.25rem; }
+    .hex-card p { color: var(--muted); font-size: 0.95rem; }
+
+    .how { background: var(--brown); color: var(--cream); }
+    .how h2 { color: var(--honey); }
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .how-card { border: 1px solid rgba(242,169,0,0.4); border-radius: 12px; padding: 1rem; }
+    .how-card .num { font-family: "Lilita One", sans-serif; color: var(--honey); font-size: 1.4rem; }
+    .how-card h3 { color: var(--cream); margin: 0.2rem 0 0.3rem; }
+
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .quote { background: #fff; margin: 0; padding: 1rem; border-radius: 18px 18px 8px 18px; }
+    .quote footer, .plain-note { color: var(--muted); margin-top: 0.55rem; font-weight: 700; font-size: 0.9rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: #fff; border-radius: 16px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 800; }
+    dd a { color: var(--brown); text-decoration: none; }
+    .phone-xl { font-family: "Lilita One", sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--brown); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .lede { color: var(--muted); margin-bottom: 0.6rem; }
+    .site-footer { background: var(--brown); color: var(--cream); text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--honey); }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .paint-grid, .how-grid, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .hex-grid { grid-template-columns: 1fr 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .hero-actions .btn-primary { width: 100%; }
+      .paper { transform: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 800; text-decoration: none; }
+      .dock .go { background: var(--honey); color: var(--brown); }
+      .dock .call { background: var(--brown); color: var(--cream); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .hex-grid { grid-template-columns: 1fr; }
+      .hex-tile, .hex-card { clip-path: none; border-radius: 16px; }
+      .utility-bar { font-size: 0.75rem; }
+      .paper li { font-size: 1.45rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .paper li .check path { animation: none; stroke-dashoffset: 0; }
+      .paper li.done::after { animation: none; transform: scaleX(1); }
+      .paper li.stay { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Painting &amp; handyman in Port Charlotte &amp; Punta Gorda</span>
+      <a href="sms:+19418754445?&amp;body=Hi%20Honey%20Do%2C%20here%27s%20my%20list%3A%20">Text or call (941) 875-4445</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <svg class="hex-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <polygon points="24,3 43,14 43,34 24,45 5,34 5,14" fill="#F2A900"/>
+          <path d="M18 30c2-8 6-12 10-16" fill="none" stroke="#3B2A1A" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M28 14l2 4-4 1" fill="none" stroke="#3B2A1A" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span><strong>Honey Do</strong><span>Painting &amp; Handyman</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#painting">Painting</a>
+        <a class="nav-link" href="#handyman">Handyman</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-line" href="tel:+19418754445">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PORT CHARLOTTE · PUNTA GORDA · NORTH PORT · VENICE</p>
+          <h1 id="hero-heading">Hand us your honey-do list.</h1>
+          <p class="hero-lead">Interior and exterior painting plus the handyman jobs in between — seals, repairs, trimming and the rest of the list.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sms:+19418754445?&amp;body=Hi%20Honey%20Do%2C%20here%27s%20my%20list%3A%20">Text or call (941) 875-4445</a>
+            <a class="btn btn-line" href="tel:+19418754445">Call</a>
+          </div>
+          <p class="meta"><span>Free consultation</span><span>Painting + handyman</span><span>Charlotte County &amp; Venice</span></p>
+        </div>
+        <div>
+          <ul class="sr-only">
+            <li>paint the front door</li>
+            <li>touch up the hallway</li>
+            <li>fix the garage door seal</li>
+            <li>trim the palms</li>
+            <li>call Honey Do</li>
+          </ul>
+          <div class="paper" aria-hidden="true">
+            <h2>Honey, can you…</h2>
+            <ol>
+              <li class="done"><svg class="check" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11l5 5 9-10" fill="none" stroke="#F2A900" stroke-width="2.6" stroke-linecap="round"/></svg>paint the front door</li>
+              <li class="done"><svg class="check" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11l5 5 9-10" fill="none" stroke="#F2A900" stroke-width="2.6" stroke-linecap="round"/></svg>touch up the hallway</li>
+              <li class="done"><svg class="check" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11l5 5 9-10" fill="none" stroke="#F2A900" stroke-width="2.6" stroke-linecap="round"/></svg>fix the garage door seal</li>
+              <li class="done"><svg class="check" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11l5 5 9-10" fill="none" stroke="#F2A900" stroke-width="2.6" stroke-linecap="round"/></svg>trim the palms</li>
+              <li class="stay"><svg class="check" viewBox="0 0 22 22" aria-hidden="true"><path d="M4 11l5 5 9-10" fill="none" stroke="#F2A900" stroke-width="2.6" stroke-linecap="round"/></svg>call Honey Do</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="painting" aria-labelledby="painting-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="painting-heading">Painting</h2>
+        <!-- Confirm interior and exterior scope with the owner. -->
+        <div class="paint-grid">
+          <article class="hex-tile a"><div><h3>Interior</h3><p>Walls, ceilings, trim and doors.</p></div></article>
+          <article class="hex-tile b"><div><h3>Exterior</h3><p>Doors, trim and the outside of the house.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="handyman" aria-labelledby="handyman-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="handyman-heading">Handyman jobs</h2>
+        <div class="hex-grid">
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="6" y="14" width="24" height="12" rx="2"/><path d="M6 20h24"/></svg><h3>Garage door seals</h3><p>Worn bottom seal? We replace it.</p></article>
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M18 30V10M12 16c4-6 8-6 12 0M10 22c5-6 11-6 16 0"/></svg><h3>Palm trimming</h3><p>Small palms trimmed and the mess cleaned up.</p></article>
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 24l8-14 4 6 8-10"/></svg><h3>Small repairs</h3><p>The fixes that keep getting pushed to next weekend.</p></article>
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 26c6-2 8-10 16-14"/><path d="M22 10l6 2-2 6"/></svg><h3>Touch-ups</h3><p>Patch, prime and paint.</p></article>
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="22" r="4"/><path d="M15 19l12-10 3 3-12 10"/></svg><h3>Odd jobs</h3><p>If it's on the list, ask.</p></article>
+          <article class="hex-card"><svg class="ico" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 26V14l10-6 10 6v12H8z"/></svg><h3>Bigger projects</h3><p>Tell us what you're planning.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How it works</h2>
+        <div class="how-grid">
+          <article class="how-card"><div class="num">01</div><h3>Text your list.</h3><p>Send a few lines and photos to (941) 875-4445.</p></article>
+          <article class="how-card"><div class="num">02</div><h3>Free consultation.</h3><p>We'll talk through it and give you a price.</p></article>
+          <article class="how-card"><div class="num">03</div><h3>Check it off.</h3><p>We do the work and clean up after.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="reviews-heading">From neighbors</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>They did such an amazing job, and you cant beat ther prices.</p>
+            <footer>C.B., Port Charlotte, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>…to replace Garage Door Seal. He was prompt and did a good job.</p>
+            <footer>A.V., Venice, Nextdoor, Jan 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>he trimmed up 3 pigmy palms, very nicely done and cleaned up everything</p>
+            <footer>M.H., Punta Gorda, Nextdoor, Jun 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2024, 2025 and 2026 — in 15 neighborhoods this year.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="contact-heading">Send us your list</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lede">Text or call to set up a free consultation. Photos of the job help.</p>
+            <dl>
+              <div><dt>Text or call</dt><dd><a href="tel:+19418754445">(941) 875-4445</a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:honeydohandymanservices22@gmail.com">honeydohandymanservices22@gmail.com</a></dd></div>
+              <div><dt>Area</dt><dd>Port Charlotte, Punta Gorda, North Port &amp; Venice</dd></div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="sms:+19418754445?&amp;body=Hi%20Honey%20Do%2C%20here%27s%20my%20list%3A%20">(941) 875-4445</a>
+            <div class="row">
+              <a class="btn btn-primary" href="sms:+19418754445?&amp;body=Hi%20Honey%20Do%2C%20here%27s%20my%20list%3A%20">Text</a>
+              <a class="btn btn-line" href="tel:+19418754445">Call</a>
+              <a class="btn btn-line" href="mailto:honeydohandymanservices22@gmail.com?subject=Honey-do%20list">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Honey Do Painting and Handyman Services LLC · Port Charlotte, FL · <a href="tel:+19418754445">(941) 875-4445</a></p>
+      <p><a href="https://nextdoor.com/pages/honey-do-handyman-services-port-charlotte-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="sms:+19418754445?&amp;body=Hi%20Honey%20Do%2C%20here%27s%20my%20list%3A%20">Text</a>
+    <a class="call" href="tel:+19418754445">Call</a>
+  </div>
+</body>
+</html>
