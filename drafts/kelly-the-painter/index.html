@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelly The Painter | Interior &amp; Exterior Painting in Bradenton, FL</title>
+  <meta name="description" content="Interior and exterior house painting plus limewash and faux finishes in Bradenton and Palmetto. Call (813) 924-5566 for a free estimate.">
+  <meta name="theme-color" content="#C8321F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HousePainter",
+    "name": "Kelly The Painter LLC",
+    "url": "https://kellythepainter.co/",
+    "telephone": "+1-813-924-5566",
+    "email": "info@kellythepainter.co",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Bradenton, FL", "Palmetto, FL"],
+    "sameAs": "https://nextdoor.com/pages/kelly-the-painter-llc-bradenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --white: #FFFCF7;
+      --ink: #231F2B;
+      --red: #C8321F;
+      --orange: #B85A00;
+      --green: #2E7D32;
+      --blue: #1F4FB8;
+      --cream: #F6E7C8;
+      --muted: #5D5866;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--blue); }
+    h1, h2, .wordmark {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-weight: 400;
+      line-height: 1.12;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--ink); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--white); border-bottom: 1px solid #efe4d4; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.7rem 0; flex-wrap: wrap; }
+    .wordmark { color: var(--ink); text-decoration: none; font-size: 1.45rem; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.15rem; border-radius: 999px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--red); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #a42818; color: #fff; }
+    .btn-line { background: transparent; color: var(--blue); border-color: var(--blue); }
+    .btn-line:hover { background: var(--blue); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; padding: 0 0 2.4rem; overflow: hidden; }
+    .drips {
+      display: flex; gap: 18px; align-items: flex-start; height: 150px;
+      margin-bottom: 0.4rem;
+    }
+    .drip {
+      width: 26px; height: 110px; border-radius: 0 0 18px 18px;
+      position: relative; transform-origin: top center;
+      animation: drip 0.8s ease forwards;
+    }
+    .drip::after {
+      content: ""; position: absolute; left: 50%; bottom: -12px;
+      width: 14px; height: 14px; border-radius: 50%; background: inherit; transform: translateX(-50%);
+    }
+    .d1 { background: var(--red); animation-delay: 0s; }
+    .d2 { background: var(--orange); height: 86px; animation-delay: 0.08s; }
+    .d3 { background: var(--green); height: 124px; animation-delay: 0.14s; }
+    .d4 { background: var(--blue); height: 74px; animation-delay: 0.2s; }
+    @keyframes drip { from { transform: scaleY(0.12); } to { transform: scaleY(1); } }
+    .hero-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.6rem; align-items: start; padding-top: 0; }
+    .eyebrow { color: var(--blue); font-weight: 700; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.65rem; }
+    .hero h1 { font-size: clamp(2.2rem, 4.6vw, 3.5rem); margin-bottom: 0.75rem; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1.1rem; color: var(--ink); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--muted); font-weight: 600; }
+    .hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; box-shadow: 0 18px 40px rgba(35, 31, 43, 0.16); }
+
+    section.block { padding: 3rem 0; }
+    .sec-num { color: var(--red); font-weight: 700; letter-spacing: 0.14em; font-size: 0.78rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin-bottom: 1rem; }
+    .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+    .swatch { background: var(--cream); border-radius: 16px; overflow: hidden; }
+    .swatch-name {
+      min-height: 96px; display: flex; align-items: flex-end; padding: 0.8rem 1rem;
+      color: #fff; font-weight: 700; letter-spacing: 0.14em; font-size: 0.85rem; text-transform: uppercase;
+    }
+    .swatch .pad { padding: 0.95rem 1rem 1.15rem; }
+    .swatch h3 { margin: 0 0 0.3rem; font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 1.2rem; }
+    .limewash {
+      margin-top: 1.1rem; border-radius: 16px; min-height: 110px;
+      background:
+        radial-gradient(circle at 20% 40%, rgba(246, 231, 200, 0.95), transparent 42%),
+        radial-gradient(circle at 60% 30%, rgba(232, 214, 176, 0.85), transparent 46%),
+        radial-gradient(circle at 80% 70%, rgba(214, 190, 150, 0.8), transparent 40%),
+        linear-gradient(180deg, #f8efdc, #e7d3ae);
+      display: flex; align-items: flex-end; padding: 0.8rem 1rem;
+      font-weight: 600; color: var(--ink);
+    }
+
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+    .features img, .thumbs img { width: 100%; border-radius: 12px; object-fit: cover; }
+    .features img { aspect-ratio: 3 / 4; }
+    .features figure:last-child img { aspect-ratio: 4 / 3; }
+    figcaption, .thumbs span {
+      display: block; margin-top: 0.4rem; font-weight: 700; letter-spacing: 0.08em;
+      font-size: 0.75rem; color: var(--muted);
+    }
+    .thumbs { display: grid; grid-template-columns: repeat(4, minmax(0, 320px)); gap: 0.7rem; margin-top: 0.9rem; }
+    .thumbs button {
+      padding: 0; border: 0; background: transparent; text-align: left; cursor: pointer;
+      color: inherit; font: inherit; max-width: 320px;
+    }
+    .thumbs img { max-width: 320px; height: auto; }
+
+    .how { background: var(--ink); color: #fff; }
+    .how h2 { color: #fff; }
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+    .how-card { border: 1px solid rgba(246, 231, 200, 0.35); border-radius: 14px; padding: 1.1rem; }
+    .how-card .num { color: var(--cream); font-family: "DM Serif Display", Georgia, serif; font-size: 1.7rem; }
+    .how-card h3 { margin: 0.25rem 0; font-family: "DM Sans", sans-serif; font-weight: 700; font-size: 1.15rem; }
+    .how-card p { color: #efe8dc; }
+
+    .cream { background: var(--cream); }
+    .big-quote { text-align: center; padding: 1.5rem 1rem; }
+    .big-quote p {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      line-height: 1.15;
+    }
+    .big-quote footer { margin-top: 0.7rem; font-weight: 700; }
+    .support, .plain-note { margin-top: 0.9rem; text-align: center; max-width: 52ch; margin-inline: auto; }
+    .plain-note { font-weight: 700; }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.3rem;
+      background: #fff; border-radius: 16px; padding: 1.3rem;
+    }
+    .lede { color: var(--muted); margin-bottom: 0.7rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "DM Serif Display", Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--ink); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    form { display: grid; gap: 0.55rem; width: min(100%, 360px); }
+    label { font-weight: 700; font-size: 0.85rem; }
+    input, textarea {
+      font: inherit; padding: 0.65rem 0.7rem; border-radius: 8px;
+      border: 1px solid #d9d0c4; background: var(--white); color: var(--ink); width: 100%;
+    }
+    textarea { min-height: 90px; resize: vertical; }
+
+    .site-footer { background: var(--ink); color: #f6efe6; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--cream); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(920px, 94vw); }
+    dialog::backdrop { background: rgba(35, 31, 43, 0.88); }
+    .lb img { max-height: 78vh; width: auto; margin: 0 auto; border-radius: 8px; }
+    .lb .cap { text-align: center; color: #fff; letter-spacing: 0.08em; font-size: 0.78rem; font-weight: 700; margin-top: 0.5rem; }
+    .lb-close { position: absolute; top: 0; right: 0; min-width: 44px; min-height: 44px; border: 0; border-radius: 8px; background: #fff; font-weight: 700; cursor: pointer; }
+    .lb { position: relative; }
+
+    @media (max-width: 800px) {
+      .drips { height: 60px; }
+      .drip { height: 40px; }
+      .d2, .d3, .d4 { height: 34px; }
+      .hero-grid, .swatches, .features, .how-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-photo img { aspect-ratio: 4 / 5; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; color: #fff; }
+      .dock .go { background: var(--red); }
+      .dock .text { background: var(--blue); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .thumbs { display: flex; overflow-x: auto; gap: 0.6rem; padding-bottom: 0.3rem; }
+      .thumbs button { flex: 0 0 220px; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .drip { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>House painting in Bradenton &amp; Palmetto</span>
+      <a href="tel:+18139245566">(813) 924-5566</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">Kelly The Painter</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#neighbors">Neighbors</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+18139245566">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="drips" aria-hidden="true">
+            <span class="drip d1"></span>
+            <span class="drip d2"></span>
+            <span class="drip d3"></span>
+            <span class="drip d4"></span>
+          </div>
+          <p class="eyebrow">Bradenton · Palmetto · Interior &amp; exterior</p>
+          <h1 id="hero-heading">Transforming spaces with color.</h1>
+          <p class="hero-lead">Interior and exterior house painting in Bradenton and Palmetto, plus limewash and soft-edge faux finishes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+18139245566">Call for a free estimate</a>
+            <a class="btn btn-line" href="sms:+18139245566?&amp;body=Hi%2C%20I%27d%20like%20a%20painting%20estimate%20for%20">Text a photo</a>
+          </div>
+          <p class="meta-row">
+            <span>Interior · Exterior · Faux finishes</span>
+            <span>Nextdoor Neighborhood Favorite 2021–2025</span>
+          </p>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/dining-room.jpg" alt="Deep navy dining room with white wainscot and a drop cloth on the floor" width="900" height="1200">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">What we paint</h2>
+        <div class="swatches">
+          <article class="swatch">
+            <div class="swatch-name" style="background:var(--red)">Red</div>
+            <div class="pad">
+              <h3>Interiors</h3>
+              <p>Living rooms, dining rooms, bedrooms, high walls and ceilings.</p>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="swatch-name" style="background:var(--blue)">Blue</div>
+            <div class="pad">
+              <h3>Exteriors</h3>
+              <p>Siding, trim, porches and lanais. Give your home a fresh look.</p>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="swatch-name" style="background:var(--green)">Green</div>
+            <div class="pad">
+              <h3>Faux finishes</h3>
+              <p>Limewash painting and soft-edge effects for walls with character.</p>
+            </div>
+          </article>
+        </div>
+        <div class="limewash">Limewash, for a soft, chalky, hand-brushed look.</div>
+      </div>
+    </section>
+
+    <section class="block cream" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="work-heading">Recent rooms and homes</h2>
+        <div class="features">
+          <figure>
+            <img src="images/teal-wall.jpg" alt="Two-story teal accent wall with transom windows" width="900" height="1200">
+            <figcaption>TWO-STORY ACCENT WALL</figcaption>
+          </figure>
+          <figure>
+            <img src="images/exterior.jpg" alt="Blue-gray house siding with white trim" width="960" height="720">
+            <figcaption>EXTERIOR REPAINT</figcaption>
+          </figure>
+        </div>
+        <div class="thumbs">
+          <button type="button" class="shot" data-full="images/pool-lanai.jpg" data-alt="Pool lanai elevation" data-cap="POOL LANAI" data-max="320">
+            <img src="images/pool-lanai.jpg" alt="Pool lanai elevation" width="320" height="240">
+            <span>Pool lanai</span>
+          </button>
+          <button type="button" class="shot" data-full="images/porch-siding.jpg" data-alt="Porch floor and blue siding" data-cap="PORCH &amp; SIDING" data-max="320">
+            <img src="images/porch-siding.jpg" alt="Porch floor and blue siding" width="320" height="240">
+            <span>Porch &amp; siding</span>
+          </button>
+          <button type="button" class="shot" data-full="images/screened-porch.jpg" data-alt="Yellow screened porch" data-cap="SCREENED PORCH" data-max="320">
+            <img src="images/screened-porch.jpg" alt="Yellow screened porch" width="320" height="240">
+            <span>Screened porch</span>
+          </button>
+          <button type="button" class="shot" data-full="images/front-elevation.jpg" data-alt="Front elevation with an arched entry" data-cap="FRONT ELEVATION" data-max="320">
+            <img src="images/front-elevation.jpg" alt="Front elevation with an arched entry" width="320" height="240">
+            <span>Front elevation</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How a job goes</h2>
+        <div class="how-grid">
+          <article class="how-card">
+            <div class="num">01</div>
+            <h3>Call or text</h3>
+            <p>Tell us the rooms or areas and send a photo or two.</p>
+          </article>
+          <article class="how-card">
+            <div class="num">02</div>
+            <h3>Free estimate</h3>
+            <p>We come out, talk colors and finishes, and give you a price.</p>
+          </article>
+          <article class="how-card">
+            <div class="num">03</div>
+            <h3>Paint</h3>
+            <p>Your satisfaction is our main goal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="neighbors" aria-labelledby="neighbors-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="neighbors-heading">Neighbors keep recommending us</h2>
+        <div class="big-quote cream" style="border-radius:18px">
+          <p>Highly recommend!</p>
+          <footer>L.R. · Bradenton · Nextdoor, Nov 2025</footer>
+        </div>
+        <p class="support">In October 2026, a Bradenton neighbor recommended Kelly The Painter in three separate Nextdoor threads asking for a painter.</p>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2021, 2022, 2023, 2024 and 2025.</p>
+      </div>
+    </section>
+
+    <section class="block cream" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Get a free painting estimate</h2>
+            <p class="lede">Call or text with what you'd like painted. Photos help. Prefer email? Use the form or write to us.</p>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+18139245566">(813) 924-5566</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:info@kellythepainter.co">info@kellythepainter.co</a></dd>
+              </div>
+              <div>
+                <dt>Days</dt>
+                <dd>Monday–Saturday. Call or text to set a time.</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Bradenton, Palmetto &amp; nearby Manatee County</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+18139245566">(813) 924-5566</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+18139245566">Call</a>
+              <a class="btn btn-line" href="sms:+18139245566?&amp;body=Hi%2C%20I%27d%20like%20a%20painting%20estimate%20for%20">Text</a>
+              <a class="btn btn-line" href="mailto:info@kellythepainter.co?subject=Painting%20estimate">Email</a>
+            </div>
+            <form id="estimate">
+              <div>
+                <label for="who">Name</label>
+                <input id="who" name="who" autocomplete="name">
+              </div>
+              <div>
+                <label for="job">What should be painted</label>
+                <textarea id="job" name="job"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Email this note</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Kelly The Painter LLC · Bradenton, FL · <a href="tel:+18139245566">(813) 924-5566</a></p>
+      <p><a href="https://nextdoor.com/pages/kelly-the-painter-llc-bradenton-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+18139245566">Call</a>
+    <a class="text" href="sms:+18139245566?&amp;body=Hi%2C%20I%27d%20like%20a%20painting%20estimate%20for%20">Text</a>
+  </div>
+  <dialog id="lightbox" aria-label="Project photo">
+    <div class="lb">
+      <button class="lb-close" type="button">Close</button>
+      <img alt="">
+      <p class="cap"></p>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      var form = document.getElementById("estimate");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var who = document.getElementById("who").value.trim();
+        var job = document.getElementById("job").value.trim();
+        var body = "Name: " + who + "\n\nWhat should be painted:\n" + job;
+        window.location.href = "mailto:info@kellythepainter.co?subject=" + encodeURIComponent("Painting estimate") + "&body=" + encodeURIComponent(body);
+      });
+      var dlg = document.getElementById("lightbox");
+      var img = dlg.querySelector("img");
+      var cap = dlg.querySelector(".cap");
+      var closeBtn = dlg.querySelector(".lb-close");
+      document.querySelectorAll(".shot").forEach(function (tile) {
+        tile.addEventListener("click", function () {
+          img.src = tile.getAttribute("data-full");
+          img.alt = tile.getAttribute("data-alt");
+          img.style.maxWidth = tile.getAttribute("data-max") ? tile.getAttribute("data-max") + "px" : "";
+          cap.textContent = tile.getAttribute("data-cap");
+          dlg.showModal();
+          closeBtn.focus();
+        });
+      });
+      closeBtn.addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    })();
+  </script>
+</body>
+</html>
