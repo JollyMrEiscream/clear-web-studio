@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hammerhead Home Works | Handyman &amp; Home Projects in Sarasota, FL</title>
+  <meta name="description" content="Affordable handyman help in Sarasota: repairs, painting, pressure washing, bath updates, screen repair and hauling. Call or text Zack at (941) 330-4547 for a free quote.">
+  <meta name="theme-color" content="#0E4F7A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Hammerhead Home Works, LLC",
+    "telephone": "+1-941-330-4547",
+    "email": "zack.nolan@icloud.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": "Sarasota, FL",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    },
+    "sameAs": "https://nextdoor.com/pages/hammerhead-home-works-sarasota-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --white: #F5F8FA;
+      --ink: #0B1D2A;
+      --ocean: #0E4F7A;
+      --teal: #1FA3B8;
+      --aqua: #7ED6E3;
+      --steel: #D6E2EA;
+      --orange: #C2410C;
+      --muted: #52616B;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Archivo, system-ui, sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--ocean); }
+    h1, h2, .wordmark, .sec-num, .tag, .cap {
+      font-family: "Archivo Black", Impact, sans-serif;
+      font-weight: 400;
+      line-height: 1.08;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--aqua); color: var(--ink); padding: 0.6rem 1rem; z-index: 80; font-weight: 600; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--aqua); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--ink); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 600; text-decoration: none; }
+
+    .site-header { background: var(--white); border-bottom: 1px solid var(--steel); position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.6rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: var(--ocean); }
+    .brand img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+    .wordmark { font-size: 1.05rem; max-width: 12ch; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 8px;
+      font-weight: 600; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: #fff; color: var(--ocean); min-height: 56px; }
+    .btn-primary:hover { background: var(--aqua); color: var(--ink); }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--ocean); }
+    .btn-solid { background: var(--ocean); color: #fff; }
+    .btn-solid:hover { background: #0b3d5e; color: #fff; }
+    .btn-ghost { background: #fff; color: var(--ocean); border-color: var(--ocean); }
+    .btn-ghost:hover { background: var(--ocean); color: #fff; }
+    .header-inner .btn-solid { min-height: 44px; }
+
+    .hero { background: var(--ocean); color: #fff; padding: 2.4rem 0 0; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.6rem; align-items: center; padding-bottom: 1.4rem; }
+    .eyebrow { color: var(--aqua); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2rem, 4.2vw, 3.1rem); color: #fff; margin-bottom: 0.75rem; }
+    .hero-lead { max-width: 46ch; margin-bottom: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--aqua); font-weight: 600; }
+    .collage { position: relative; }
+    .collage img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; }
+    .tag {
+      position: absolute; left: 12px; bottom: 12px; background: var(--orange); color: #fff;
+      padding: 0.35rem 0.55rem; font-size: 0.85rem; letter-spacing: 0.04em; border-radius: 4px;
+    }
+    .wave { display: block; width: 100%; height: 72px; margin-top: -1px; }
+    .wave svg { width: 100%; height: 72px; }
+
+    section.block { padding: 3rem 0; }
+    .sec-num { color: var(--orange); font-size: 0.95rem; letter-spacing: 0.08em; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); color: var(--ocean); margin-bottom: 1rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .card { background: #fff; border: 1px solid var(--steel); border-radius: 12px; padding: 1rem; }
+    .ico { width: 44px; height: 44px; background: var(--steel); color: var(--ocean); border-radius: 8px; display: grid; place-items: center; margin-bottom: 0.55rem; }
+    .ico svg { width: 26px; height: 26px; }
+    .card h3 { margin: 0 0 0.25rem; font-family: Archivo, sans-serif; font-weight: 600; font-size: 1.05rem; }
+    .card p { color: var(--muted); }
+    .ask { margin-top: 0.85rem; color: var(--muted); }
+
+    .pair { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.8rem; align-items: center; margin-bottom: 1.1rem; }
+    .pair img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; }
+    .arrow { width: 54px; height: 54px; border-radius: 50%; background: var(--orange); color: #fff; display: grid; place-items: center; font-size: 1.6rem; }
+    .pair-cap { font-weight: 600; margin: -0.4rem 0 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .tile { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: pointer; text-align: left; color: inherit; font: inherit; position: relative; }
+    .tile img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; }
+    .tile .cap {
+      position: absolute; left: 0.45rem; bottom: 0.45rem; background: var(--ink); color: #fff;
+      font-size: 0.68rem; letter-spacing: 0.06em; padding: 0.28rem 0.4rem; border-radius: 3px;
+    }
+
+    .why { background: var(--ink); color: #e7f2f6; }
+    .why h2 { color: #fff; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .why-card { border: 1px solid rgba(126, 214, 227, 0.4); border-radius: 12px; padding: 1.05rem; }
+    .why-card .num { color: var(--aqua); font-family: "Archivo Black", sans-serif; font-size: 1.4rem; }
+    .why-card h3 { margin: 0.25rem 0; color: #fff; font-family: Archivo, sans-serif; font-weight: 600; }
+    .why-card p { color: #d5e4ea; }
+    .plain-note { margin-top: 1rem; font-weight: 600; color: var(--ink); }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem;
+      background: #fff; border: 1px solid var(--steel); border-radius: 14px; padding: 1.3rem;
+    }
+    .lede { color: var(--muted); margin-bottom: 0.7rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "Archivo Black", sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--ocean); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--ocean); color: #e7f4f8; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--aqua); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(960px, 94vw); }
+    dialog::backdrop { background: rgba(11, 29, 42, 0.88); }
+    .lb { position: relative; }
+    .lb img { max-height: 80vh; width: auto; margin: 0 auto; border-radius: 8px; }
+    .lb .cap { text-align: center; color: #fff; font-family: "Archivo Black", sans-serif; letter-spacing: 0.06em; font-size: 0.8rem; margin-top: 0.5rem; }
+    .lb-close, .lb-nav { min-width: 44px; min-height: 44px; border: 0; border-radius: 6px; background: #fff; color: var(--ink); font-weight: 600; cursor: pointer; font-family: inherit; }
+    .lb-close { position: absolute; top: 0; right: 0; }
+    .lb-navs { display: flex; justify-content: space-between; margin-top: 0.5rem; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .svc-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .pair { grid-template-columns: 1fr; }
+      .arrow { transform: rotate(90deg); margin-inline: auto; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; }
+      .dock .go { background: var(--ocean); color: #fff; }
+      .dock .text { background: var(--teal); color: var(--ink); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid, .grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+      .wordmark { font-size: 0.95rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Handyman &amp; home projects in Sarasota · Mon–Fri 7–7</span>
+      <a href="tel:+19413304547">(941) 330-4547</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.jpg" alt="Hammerhead shark mascot" width="800" height="800">
+        <span class="wordmark">Hammerhead Home Works</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#why">Why Hammerhead</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-solid" href="tel:+19413304547">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Sarasota handyman &amp; home projects</p>
+          <h1 id="hero-heading">Fair and honest handyman. On time and done right.</h1>
+          <p class="hero-lead">I'm Zack. I started Hammerhead Home Works to provide an affordable handyman service and to help my community: repairs, painting, pressure washing, bath updates and hauling.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19413304547">Call or text Zack</a>
+            <a class="btn btn-line" href="sms:+19413304547?&amp;body=Hi%20Zack%2C%20I%27d%20like%20a%20free%20quote%20for%20">Get a free quote</a>
+          </div>
+          <p class="meta-row">
+            <span>Mon–Fri 7 AM–7 PM</span>
+            <span>Free quotes</span>
+            <span>Nextdoor Neighborhood Favorite 2024–2026</span>
+          </p>
+        </div>
+        <div class="collage">
+          <img src="images/bath-collage.jpg" alt="Bathroom remodel collage, from the gutted room to the finished vanity and shower" width="919" height="1200">
+          <span class="tag">Before → After</span>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true">
+        <svg viewBox="0 0 1200 72" preserveAspectRatio="none">
+          <path d="M0 36 C150 8 250 8 400 34 C550 60 680 10 840 32 C980 50 1080 20 1200 28 V72 H0 Z" fill="#F5F8FA"/>
+          <path d="M560 34 L620 4 L668 36" fill="none" stroke="#1FA3B8" stroke-width="8" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="block" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">One call for the odd jobs and the big ones</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 22 L14 14 L19 19 L11 27 Z M18 13 L25 6 L28 9 L21 16 Z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Handyman repairs</h3>
+            <p>Fans, doors, fixtures, drywall and the honey-do list.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 20 V10 h8 v10 M16 22 V8 h8 v14 M6 24 h20" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Bath &amp; kitchen updates</h3>
+            <p>Tub-to-shower conversions, tile, vanities and cabinets.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="6" width="18" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 14 v8 M8 26 h10" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Painting</h3>
+            <p>Interior rooms, exterior touch-ups and pool decks.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4 s7 8 7 13 a7 7 0 0 1-14 0 c0-5 7-13 7-13z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Pressure washing</h3>
+            <p>Driveways, lanais and pool decks.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 22 V10 h24 v12 M4 14 h24 M10 10 v12 M18 10 v12" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Screen rooms</h3>
+            <p>Screen repair and porch rescreening.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="8" y="6" width="16" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 12 h8 M12 17 h8" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Appliance help</h3>
+            <p>Repairs and swap-outs.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 20 h16 l4-6 h4 M8 20 v4 M20 20 v4" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3>Junk removal &amp; hauling</h3>
+            <p>Demo debris, yard waste and clean-outs.</p>
+          </article>
+        </div>
+        <p class="ask">Not sure if it's a fit? Text a photo and ask.</p>
+      </div>
+    </section>
+
+    <section class="block" id="projects" aria-labelledby="projects-heading" style="background:var(--steel)">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="projects-heading">From demo to done</h2>
+        <div class="pair">
+          <img src="images/demo.jpg" alt="Demo collage of a gutted bathroom" width="760" height="1200">
+          <div class="arrow" aria-hidden="true">→</div>
+          <img src="images/vanity-done.jpg" alt="Finished vanity with a navy cabinet and brick-red tile" width="900" height="1200">
+        </div>
+        <p class="pair-cap">Gutted, then rebuilt.</p>
+        <div class="grid">
+          <button class="tile" type="button" data-full="images/finished-bath.jpg" data-alt="Finished white tub and shower bathroom" data-cap="FINISHED BATH"><img src="images/finished-bath.jpg" alt="Finished white tub and shower bathroom" width="1200" height="900"><span class="cap">Finished bath</span></button>
+          <button class="tile" type="button" data-full="images/shower-tile.jpg" data-alt="Tub surround tile in progress" data-cap="SHOWER TILE IN PROGRESS"><img src="images/shower-tile.jpg" alt="Tub surround tile in progress" width="900" height="1200"><span class="cap">Shower tile in progress</span></button>
+          <button class="tile" type="button" data-full="images/cabinet-tile.jpg" data-alt="Navy wall cabinet over brick-red tile" data-cap="CABINET &amp; ACCENT TILE"><img src="images/cabinet-tile.jpg" alt="Navy wall cabinet over brick-red tile" width="900" height="1200"><span class="cap">Cabinet &amp; accent tile</span></button>
+          <button class="tile" type="button" data-full="images/pool-deck.jpg" data-alt="Pool deck coating in progress" data-cap="POOL DECK COATING"><img src="images/pool-deck.jpg" alt="Pool deck coating in progress" width="900" height="1200"><span class="cap">Pool deck coating</span></button>
+          <button class="tile" type="button" data-full="images/screen-porch.jpg" data-alt="Screen porch and deck" data-cap="SCREEN PORCH"><img src="images/screen-porch.jpg" alt="Screen porch and deck" width="1020" height="765"><span class="cap">Screen porch</span></button>
+          <button class="tile" type="button" data-full="images/haul-away.jpg" data-alt="Trailer loaded with debris for haul-away" data-cap="HAUL-AWAY"><img src="images/haul-away.jpg" alt="Trailer loaded with debris for haul-away" width="900" height="1200"><span class="cap">Haul-away</span></button>
+          <button class="tile" type="button" data-full="images/screen-repair.jpg" data-alt="Screen enclosure beside a pool" data-cap="SCREEN ENCLOSURE"><img src="images/screen-repair.jpg" alt="Screen enclosure beside a pool" width="900" height="1200"><span class="cap">Screen enclosure</span></button>
+          <button class="tile" type="button" data-full="images/floor-prep.jpg" data-alt="Room with new floor prep" data-cap="FLOOR PREP"><img src="images/floor-prep.jpg" alt="Room with new floor prep" width="900" height="1200"><span class="cap">Floor prep</span></button>
+          <button class="tile" type="button" data-full="images/tub-rebuild.jpg" data-alt="Tub area mid-rebuild" data-cap="TUB MID-REBUILD"><img src="images/tub-rebuild.jpg" alt="Tub area mid-rebuild" width="900" height="1200"><span class="cap">Tub mid-rebuild</span></button>
+          <button class="tile" type="button" data-full="images/kitchen-sink.jpg" data-alt="Kitchen sink and counter" data-cap="KITCHEN SINK"><img src="images/kitchen-sink.jpg" alt="Kitchen sink and counter" width="900" height="1200"><span class="cap">Kitchen sink</span></button>
+          <button class="tile" type="button" data-full="images/window-siding.jpg" data-alt="Window set in yellow siding" data-cap="WINDOW &amp; SIDING"><img src="images/window-siding.jpg" alt="Window set in yellow siding" width="900" height="1200"><span class="cap">Window &amp; siding</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block why" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <h2 id="why-heading">How I work</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="num">01</div>
+            <h3>Affordable</h3>
+            <p>I started this business to provide an affordable handyman service.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">02</div>
+            <h3>Local</h3>
+            <p>I love this area and consider everyone family.</p>
+          </article>
+          <article class="why-card">
+            <div class="num">03</div>
+            <h3>Free quotes</h3>
+            <p>Call or text today for your free quote.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="wrap" style="padding-bottom:2rem">
+      <p class="plain-note">Nextdoor Neighborhood Favorite 2024, 2025 and 2026 — in 23 neighborhoods this year.</p>
+    </div>
+    <!-- add 2–3 customer quotes once supplied -->
+
+    <section class="block" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Get your free quote</h2>
+            <p class="lede">Call or text Zack with what needs doing. A couple of photos help.</p>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19413304547">(941) 330-4547</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:zack.nolan@icloud.com">zack.nolan@icloud.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Fri 7 AM–7 PM</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Sarasota &amp; nearby</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19413304547">(941) 330-4547</a>
+            <div class="row">
+              <a class="btn btn-solid" href="tel:+19413304547">Call</a>
+              <a class="btn btn-ghost" href="sms:+19413304547?&amp;body=Hi%20Zack%2C%20I%27d%20like%20a%20free%20quote%20for%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:zack.nolan@icloud.com?subject=Free%20quote%20request">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Hammerhead Home Works, LLC · Sarasota, FL · <a href="tel:+19413304547">(941) 330-4547</a></p>
+      <p><a href="https://nextdoor.com/pages/hammerhead-home-works-sarasota-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19413304547">Call</a>
+    <a class="text" href="sms:+19413304547?&amp;body=Hi%20Zack%2C%20I%27d%20like%20a%20free%20quote%20for%20">Text</a>
+  </div>
+  <dialog id="lightbox" aria-label="Project photo">
+    <div class="lb">
+      <button class="lb-close" type="button">Close</button>
+      <img alt="">
+      <p class="cap"></p>
+      <div class="lb-navs">
+        <button class="lb-nav" type="button" data-dir="-1">Previous</button>
+        <button class="lb-nav" type="button" data-dir="1">Next</button>
+      </div>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      var tiles = Array.prototype.slice.call(document.querySelectorAll(".tile"));
+      var dlg = document.getElementById("lightbox");
+      var img = dlg.querySelector("img");
+      var cap = dlg.querySelector(".cap");
+      var closeBtn = dlg.querySelector(".lb-close");
+      var index = 0;
+      function show(i) {
+        index = (i + tiles.length) % tiles.length;
+        var tile = tiles[index];
+        img.src = tile.getAttribute("data-full");
+        img.alt = tile.getAttribute("data-alt");
+        cap.textContent = tile.getAttribute("data-cap");
+        if (!dlg.open) dlg.showModal();
+      }
+      tiles.forEach(function (tile, i) {
+        tile.addEventListener("click", function () { show(i); closeBtn.focus(); });
+      });
+      closeBtn.addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+      dlg.querySelectorAll(".lb-nav").forEach(function (btn) {
+        btn.addEventListener("click", function () { show(index + Number(btn.getAttribute("data-dir"))); });
+      });
+    })();
+  </script>
+</body>
+</html>
