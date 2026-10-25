@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antonelli Auto &amp; Tire | Auto Repair &amp; Tires on US 41, Port Charlotte FL</title>
+  <meta name="description" content="Family-run auto repair and tire shop at 59 Tamiami Trail, Port Charlotte. Tires, inspections and repairs, weekdays 8–5. Call (941) 743-2777 and ask for Mike.">
+  <meta name="theme-color" content="#16181B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Antonelli Auto & Tire",
+    "telephone": "+1-941-743-2777",
+    "email": "info@antonelliautoandtire.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "59 Tamiami Trail",
+      "addressLocality": "Port Charlotte",
+      "addressRegion": "FL",
+      "postalCode": "33953"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "sameAs": "https://nextdoor.com/pages/antonelli-auto-tire/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F3F1EC;
+      --paper: #E4E1D8;
+      --ink: #16181B;
+      --steel: #2A2E33;
+      --red: #C8102E;
+      --yellow: #F2B705;
+      --chrome: #B9BEC5;
+      --muted: #5A5F66;
+      --white: #fff;
+      --head: "Barlow Condensed", "Arial Narrow", sans-serif;
+      --body: "Barlow", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--body); background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--red); }
+    h1, h2, h3 { font-family: var(--head); font-weight: 800; line-height: 1.05; margin: 0; letter-spacing: 0.01em; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--yellow); color: var(--ink); padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+    .utility-bar { background: var(--steel); color: var(--white); font-size: 0.84rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--white); font-weight: 600; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #d4d0c6; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.65rem 0; }
+    .wordmark { text-decoration: none; color: var(--ink); display: flex; align-items: center; gap: 0.55rem; }
+    .wordmark .name { display: block; }
+    .wordmark strong { font-family: var(--head); font-weight: 800; font-size: 1.55rem; letter-spacing: 0.04em; line-height: 0.9; display: block; color: var(--ink); }
+    .wordmark .sub { font-family: var(--head); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.16em; color: var(--red); }
+    .lug { width: 28px; height: 28px; flex: none; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.7rem 1.15rem; border-radius: 6px; font-weight: 600; text-decoration: none; border: 2px solid transparent; font-family: inherit; cursor: pointer; font-size: 1rem; }
+    .btn-primary { background: var(--red); color: var(--white); min-height: 56px; }
+    .btn-primary:hover { background: #a50d26; color: var(--white); }
+    .btn-line { background: transparent; color: var(--white); border-color: var(--white); }
+    .btn-line:hover { background: var(--white); color: var(--ink); }
+    .btn-ink { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn-ink:hover { background: var(--ink); color: var(--white); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { background: var(--ink); color: var(--white); position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.5rem; align-items: center; padding: 2.6rem 0 2.2rem; }
+    .eyebrow { font-family: var(--head); font-weight: 600; letter-spacing: 0.12em; color: var(--yellow); font-size: 0.95rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); color: var(--white); margin-bottom: 0.75rem; }
+    .hero-lead { color: var(--chrome); font-size: 1.08rem; max-width: 42ch; margin-bottom: 1.2rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1.1rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.86rem; color: var(--white); }
+    .hero-art { display: grid; justify-items: center; gap: 0.4rem; }
+    .hero-art svg.shield { width: min(180px, 46vw); height: auto; }
+    .hero-art svg.tire { width: min(220px, 54vw); height: auto; }
+    .tread { width: 100%; height: 46px; display: block; }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: var(--head); font-weight: 800; color: var(--red); letter-spacing: 0.08em; font-size: 1rem; margin: 0 0 0.2rem; }
+    h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); margin-bottom: 1rem; }
+    .lede { color: var(--muted); max-width: 62ch; margin-top: 0.8rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .card { background: var(--paper); border-radius: 12px; padding: 1.05rem 1.05rem 1.15rem; }
+    .card:hover { background: var(--steel); color: var(--white); }
+    .card:hover p { color: var(--chrome); }
+    .card .ico { width: 36px; height: 36px; color: var(--red); margin-bottom: 0.45rem; }
+    .card:hover .ico { color: var(--yellow); }
+    .card h3 { font-size: 1.35rem; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); font-size: 0.98rem; }
+
+    .warranty { background: var(--yellow); color: var(--ink); }
+    .warranty .sec-num, .warranty h2 { color: var(--ink); }
+    .warranty-num { font-family: var(--head); font-weight: 800; font-size: 72px; line-height: 0.9; letter-spacing: 0.01em; margin: 0 0 0.4rem; }
+    .warranty p { max-width: 46ch; font-size: 1.08rem; }
+    .fine { font-size: 0.88rem; margin-top: 0.7rem; }
+
+    .how { background: var(--ink); color: var(--white); }
+    .how h2 { color: var(--white); }
+    .how .sec-num { color: var(--yellow); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .step .num { font-family: var(--head); font-weight: 800; font-size: 2.4rem; color: var(--yellow); line-height: 1; }
+    .step h3 { color: var(--white); font-size: 1.45rem; margin: 0.25rem 0; }
+    .step p { color: var(--chrome); }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .quote { background: var(--white); border-radius: 12px; padding: 1.15rem 1.15rem 1.1rem 1.2rem; border-left: 4px solid var(--red); }
+    .quote p { font-size: 1.02rem; }
+    .quote footer { margin-top: 0.75rem; color: var(--muted); font-size: 0.88rem; font-weight: 600; }
+    .fave { margin-top: 1rem; font-weight: 600; }
+
+    .visit-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.4rem; align-items: center; }
+    .road { background: var(--paper); border-radius: 12px; padding: 0.6rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
+    th, td { text-align: left; padding: 0.45rem 0; border-bottom: 1px solid #d4d0c6; font-weight: 400; }
+    th { font-weight: 600; width: 46%; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.3rem; background: var(--white); border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.75rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.12rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    dd a:hover { color: var(--red); }
+    .phone-xl { font-family: var(--head); font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--ink); text-decoration: none; font-weight: 800; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .contact-cta .btn-ink { color: var(--ink); }
+
+    .site-footer { background: var(--ink); color: var(--chrome); text-align: center; padding: 2rem 0 2.3rem; }
+    .site-footer a { color: var(--yellow); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services-grid, .steps, .quotes, .visit-grid, .contact-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .hero-art { order: -1; }
+      nav.site-nav a.nav-link { display: none; }
+      .hero-art svg.shield { width: 120px; }
+      .hero-art svg.tire { width: 150px; }
+      .hero-actions .btn { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 65% 35%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; }
+      .dock .go { background: var(--red); color: var(--white); }
+      .dock .alt { background: var(--steel); color: var(--white); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .services-grid, .steps { grid-template-columns: 1fr; }
+      .utility-bar .hours-bit { display: none; }
+      .warranty-num { font-size: 44px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Auto repair &amp; tires · Port Charlotte</span>
+      <span class="hours-bit">Mon–Fri 8–5</span>
+      <a href="tel:+19417432777">Call (941) 743-2777</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <svg class="lug" viewBox="0 0 36 36" aria-hidden="true">
+          <polygon points="18,2 32,10 32,26 18,34 4,26 4,10" fill="#C8102E"/>
+          <circle cx="18" cy="18" r="5" fill="#F3F1EC"/>
+        </svg>
+        <span class="name">
+          <strong>ANTONELLI</strong>
+          <span class="sub">AUTO &amp; TIRE</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#warranty">Warranty</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#visit">Visit</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19417432777">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">AUTO REPAIR · TIRES · PORT CHARLOTTE · ON US 41</p>
+          <h1 id="hero-heading">Honest auto repair and tires on US 41.</h1>
+          <p class="hero-lead">A family-run Port Charlotte shop for tires, inspections and repairs. Call the shop and ask for Mike.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19417432777">Call (941) 743-2777</a>
+            <a class="btn btn-line" href="mailto:info@antonelliautoandtire.com?subject=Service%20request">Email the shop</a>
+          </div>
+          <p class="meta">
+            <span>Mon–Fri 8–5</span>
+            <span>59 Tamiami Trail</span>
+            <span>Nextdoor Neighborhood Favorite 2022 &amp; 2023</span>
+          </p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg class="shield" viewBox="0 0 140 168">
+            <path d="M12 10 h116 v78 c0 42-58 70-58 70S12 130 12 88z" fill="#fff" stroke="#16181B" stroke-width="6"/>
+            <text x="70" y="92" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="64" font-weight="800" fill="#16181B">41</text>
+          </svg>
+          <svg class="tire" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="88" fill="none" stroke="#B9BEC5" stroke-width="16"/>
+            <circle cx="100" cy="100" r="62" fill="none" stroke="#B9BEC5" stroke-width="3"/>
+            <circle cx="100" cy="100" r="28" fill="none" stroke="#B9BEC5" stroke-width="6"/>
+            <circle cx="100" cy="100" r="8" fill="#B9BEC5"/>
+            <g stroke="#2A2E33" stroke-width="4">
+              <path d="M100 18 v16 M100 166 v16 M18 100 h16 M166 100 h16 M40 40 l12 12 M148 148 l12 12 M160 40 l-12 12 M52 148 l-12 12"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <svg class="tread" aria-hidden="true">
+        <defs>
+          <pattern id="tread" width="72" height="46" patternUnits="userSpaceOnUse">
+            <rect width="72" height="46" fill="#2A2E33"/>
+            <path d="M0 12 H22 L34 22 H50 L62 12 H72" fill="none" stroke="#B9BEC5" stroke-width="3"/>
+            <path d="M0 30 H18 L32 38 H52 L64 30 H72" fill="none" stroke="#B9BEC5" stroke-width="3"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="46" fill="url(#tread)"/>
+      </svg>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">What we work on</h2>
+        <div class="services-grid">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="12" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Tires</h3>
+            <p>New tires, mounting and balancing.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 4 v6 M18 26 v6 M4 18 h6 M26 18 h6" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Brakes</h3>
+            <p>Pads, rotors and brake checks.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 22 h14 a6 6 0 0 0 0-12 H12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 18 h6" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Oil changes &amp; maintenance</h3>
+            <p>Keep it running between trips.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="6" width="20" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 14 h12 M12 20 h12 M12 26 h8" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Inspections</h3>
+            <p>A routine look before something breaks.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 24 l6-14 h8 l6 14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 24 v4 M22 24 v4" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Repairs</h3>
+            <p>From check-engine lights to the radiator.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M6 22 h8 l4-8 h12" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="26" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Exhaust &amp; mufflers</h3>
+            <p>Rattles, leaks and replacements.</p>
+          </article>
+        </div>
+        <p class="lede">Not sure what it is? Call and describe it — we'll tell you straight.</p>
+      </div>
+    </section>
+
+    <section class="warranty" id="warranty" aria-labelledby="warranty-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <p class="warranty-num">36 MONTHS / 36,000 MILES</p>
+        <h2 id="warranty-heading">Warranty on most of our services</h2>
+        <p>We provide up to 36-month/36K-mile warranties with most of our services for your peace of mind.</p>
+        <p class="fine">Ask the shop which services are covered.</p>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="how-heading">Getting your car in</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3>Call</h3>
+            <p>(941) 743-2777, weekdays 8–5. Ask for Mike.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3>Bring it to US 41</h3>
+            <p>59 Tamiami Trail, Port Charlotte.</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3>Straight answers</h3>
+            <p>We tell you what it needs and what it costs before we start.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>I've been here for 5 years now and the most honest mechanic I've ever met is Antonelli on 41… Ask for Mike. Just a quick story I took my car in for a repair can't remember what for now, but I do remember Mike walking in and stating the fact the mechanic just damaged my radiator and the garage was replacing on their dime. Very Honest.</p>
+            <footer>B.R. · North Port · Nextdoor · Aug 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Great service, really kind and considerate staff, very clean waiting area, convenient location, very reasonable prices. Love them!</p>
+            <footer>C.P. · North Port · Nextdoor · Aug 2026</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2022 and 2023.</p>
+      </div>
+    </section>
+
+    <section id="visit" aria-labelledby="visit-heading">
+      <div class="wrap visit-grid">
+        <div>
+          <p class="sec-num">05</p>
+          <h2 id="visit-heading">Find the shop</h2>
+          <p>59 Tamiami Trail, Port Charlotte, FL 33953 — on US 41.</p>
+          <table>
+            <tbody>
+              <tr><th scope="row">Monday–Friday</th><td>8:00 AM–5:00 PM</td></tr>
+              <tr><th scope="row">Saturday–Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p class="lede"><a href="https://www.google.com/maps/search/?api=1&amp;query=59+Tamiami+Trail+Port+Charlotte+FL+33953">Get directions</a></p>
+        </div>
+        <div class="road" aria-hidden="true">
+          <svg viewBox="0 0 420 220">
+            <rect width="420" height="220" fill="#E4E1D8"/>
+            <path d="M40 180 C120 160 160 40 380 50" fill="none" stroke="#16181B" stroke-width="18" stroke-linecap="round"/>
+            <path d="M40 180 C120 160 160 40 380 50" fill="none" stroke="#F2B705" stroke-width="2" stroke-dasharray="8 10"/>
+            <g transform="translate(250 28)">
+              <path d="M8 6 h48 v32 c0 18-24 30-24 30S8 56 8 38z" fill="#fff" stroke="#16181B" stroke-width="2"/>
+              <text x="32" y="36" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="18" font-weight="800" fill="#16181B">41</text>
+            </g>
+            <circle cx="168" cy="108" r="8" fill="#C8102E"/>
+            <text x="182" y="104" font-family="Barlow, sans-serif" font-size="14" font-weight="600" fill="#16181B">Shop</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="sec-num">06</p>
+            <h2 id="contact-heading">Call the shop</h2>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19417432777">(941) 743-2777</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:info@antonelliautoandtire.com">info@antonelliautoandtire.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Fri, 8:00 AM–5:00 PM</dd>
+              </div>
+              <div>
+                <dt>Shop</dt>
+                <dd>59 Tamiami Trail, Port Charlotte, FL 33953</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19417432777">(941) 743-2777</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19417432777">Call</a>
+              <a class="btn btn-ink" href="mailto:info@antonelliautoandtire.com?subject=Service%20request">Email</a>
+            </div>
+            <a href="https://nextdoor.com/pages/antonelli-auto-tire/">See us on Nextdoor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Antonelli Auto &amp; Tire · 59 Tamiami Trail, Port Charlotte, FL · <a href="tel:+19417432777">(941) 743-2777</a> · Mon–Fri 8–5</p>
+      <p><a href="https://nextdoor.com/pages/antonelli-auto-tire/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19417432777">Call</a>
+    <a class="alt" href="https://www.google.com/maps/search/?api=1&amp;query=59+Tamiami+Trail+Port+Charlotte+FL+33953">Directions</a>
+  </div>
+</body>
+</html>
