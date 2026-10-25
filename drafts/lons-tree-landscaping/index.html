@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lon's Tree Services &amp; Landscape Design | Tree Trimming &amp; Removal in Sarasota, FL</title>
+  <meta name="description" content="Tree trimming, tree and stump removal, palm trimming and landscape design in Sarasota. Free estimates. Call or text Lon at (941) 565-9115.">
+  <meta name="theme-color" content="#141613">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Lon's Tree Services & Landscape Design",
+    "telephone": "+1-941-565-9115",
+    "email": "lonslandscapeandtreeservices@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": "Sarasota, FL",
+    "sameAs": "https://nextdoor.com/pages/lons-tree-and-landscaping-sarasota-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F4F1EA;
+      --tint: #E6EBDC;
+      --ink: #1A1A17;
+      --green: #2F6B2A;
+      --black: #141613;
+      --leaf: #9CCB5A;
+      --bark: #7A4E2D;
+      --muted: #5A5A50;
+      --head: "Zilla Slab", Georgia, serif;
+      --body: "Source Sans 3", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--body); background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.06rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--green); }
+    h1, h2, .step-num { font-family: var(--head); font-weight: 700; line-height: 1.08; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--leaf); color: var(--black); padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--leaf); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--black); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 600; text-decoration: none; }
+
+    .site-header { background: var(--black); color: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 1px solid #2a2e28; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.45rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: #fff; }
+    .brand img { height: 72px; width: auto; }
+    .wordmark { font-family: var(--head); font-weight: 700; font-size: 1.25rem; line-height: 1.05; }
+    .wordmark small { display: block; font-family: var(--body); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; color: var(--leaf); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; text-align: center;
+      min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 6px;
+      font-weight: 600; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; font-size: 1rem;
+    }
+    .btn-primary { background: var(--green); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #255422; color: #fff; }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--black); }
+    .btn-ghost { background: #fff; color: var(--green); border-color: var(--green); }
+    .btn-ghost:hover { background: var(--green); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { background: var(--black); color: #fff; position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.85fr; gap: 1.5rem; align-items: center; padding: 2.4rem 0 2.6rem; position: relative; z-index: 1; }
+    .branch { position: absolute; left: -20px; top: 10px; width: min(520px, 70%); height: auto; color: var(--leaf); opacity: 0.35; pointer-events: none; }
+    .eyebrow { color: var(--leaf); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.05rem, 4.2vw, 3.15rem); color: #fff; margin-bottom: 0.75rem; }
+    .hero-lead { max-width: 38ch; margin-bottom: 1.1rem; font-size: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.95rem; }
+    .fave-line { color: var(--leaf); font-weight: 600; }
+    .hero-photo { margin: 0; }
+    .hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; }
+
+    section.block { padding: 3rem 0; }
+    .tint { background: var(--tint); }
+    .sec-num { color: var(--bark); font-family: var(--head); font-weight: 700; letter-spacing: 0.12em; font-size: 0.95rem; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(1.85rem, 3.4vw, 2.55rem); color: var(--green); margin-bottom: 1.1rem; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    blockquote { margin: 0; background: #fff; border-top: 4px solid var(--green); border-radius: 10px; padding: 1rem; }
+    blockquote footer { margin-top: 0.75rem; font-weight: 600; font-size: 0.88rem; color: var(--muted); }
+    .plain-note { margin-top: 1rem; font-weight: 600; }
+
+    .groups { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1rem; }
+    .group { background: #fff; border-radius: 12px; padding: 1rem 1.1rem 1.15rem; }
+    .group h3 { margin: 0 0 0.6rem; font-family: var(--head); color: var(--bark); font-size: 1.35rem; }
+    .svc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+    .svc-list li { display: grid; grid-template-columns: 28px 1fr; gap: 0.45rem; align-items: center; font-weight: 600; }
+    .svc-list svg { width: 26px; height: 26px; color: var(--green); }
+    .svc-note { margin-top: 0.9rem; font-weight: 600; }
+
+    .banner { margin: 0 0 0.85rem; }
+    .banner img { width: 100%; height: auto; border-radius: 12px; background: var(--black); }
+    .banner figcaption { margin-top: 0.4rem; font-weight: 600; }
+    .job-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .job-grid figure { margin: 0; }
+    .job-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; }
+    .job-grid figcaption { margin-top: 0.35rem; font-weight: 600; font-size: 0.92rem; }
+    .garden {
+      margin-top: 0.9rem; background: var(--tint); border-radius: 14px; padding: 1rem;
+      display: grid; grid-template-columns: 220px 1fr; gap: 1rem; align-items: center;
+    }
+    .garden svg { width: 100%; height: auto; }
+    .garden p { font-weight: 600; font-size: 1.15rem; }
+
+    .how { background: var(--black); color: #fff; }
+    .how h2 { color: #fff; }
+    .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    .how-card h3 { margin: 0.3rem 0; color: #fff; font-family: var(--body); font-weight: 600; font-size: 1.15rem; }
+    .how-card p { color: #d9e2d2; }
+    .step-num { color: var(--leaf); font-size: 2.1rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem; background: #fff; border-radius: 14px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.75rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 600; overflow-wrap: anywhere; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: var(--head); font-weight: 700; font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--green); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--black); color: #e6eee4; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--leaf); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .quotes, .groups, .how-grid, .contact-grid, .garden { grid-template-columns: 1fr; }
+      .hero-photo img { aspect-ratio: 4 / 3; object-position: center 40%; }
+      .job-grid { grid-template-columns: 1fr 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .wordmark { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; color: #fff; }
+      .dock .go { background: var(--green); }
+      .dock .text { background: var(--black); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .job-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.78rem; }
+      .brand img { height: 56px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Tree service &amp; landscape design · Sarasota, FL</span>
+      <a href="tel:+19415659115">Call or text (941) 565-9115</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" alt="Lon's Tree Services &amp; Landscape Design" width="310" height="280">
+        <span class="wordmark">Lon's Tree Services<small>Landscape Design</small></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19415659115">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <svg class="branch" viewBox="0 0 520 220" aria-hidden="true">
+        <path d="M10 180 C 80 170, 120 80, 210 90 S 320 40, 420 70" fill="none" stroke="currentColor" stroke-width="3"/>
+        <path d="M150 110 c 10 18 8 30 -4 40 M240 78 c 16 10 18 26 6 38 M330 62 c 12 16 8 30 -6 36" fill="none" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Tree service · Landscape design · Sarasota</p>
+          <h1 id="hero-heading">Tree trimming, removals and landscaping in Sarasota.</h1>
+          <p class="hero-lead">Quick response, fair prices, and we clean up before we leave.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19415659115">Call or text (941) 565-9115</a>
+            <a class="btn btn-line" href="sms:+19415659115?&amp;body=Hi%20Lon%2C%20I%27d%20like%20a%20free%20estimate%20for%3A%20">Text a photo of your tree</a>
+          </div>
+          <p class="fave-line">Neighborhood Favorite on Nextdoor: 2021, 2023, 2024 &amp; 2025</p>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/hero-pine.jpg" alt="A leaning pine coming down beside a crane" width="528" height="960">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block tint" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="reviews-heading">What Sarasota neighbors say</h2>
+        <div class="quotes">
+          <blockquote>
+            <p>Lon did a great job in cutting down a tree with a super quick response! Thank you!</p>
+            <footer>R.L., Sarasota, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>Came to my house took down one of my trees for a fair price cleaned up was very happy</p>
+            <footer>K.M., Sarasota, Nextdoor, Jul 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>Lon's tree service did a great job trimming my sable palms and my large Canary Island Date Palm. They did a great job and cleaned up the area before they left. Lon really tries to make you happy.</p>
+            <footer>G.P., Sarasota, Nextdoor, May 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Neighborhood Favorite on Nextdoor in 2021, 2023, 2024 and 2025. <a href="https://nextdoor.com/pages/lons-tree-and-landscaping-sarasota-fl/" target="_blank" rel="noopener">Read more on Nextdoor</a></p>
+      </div>
+    </section>
+
+    <section class="block" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="services-heading">Tree work and landscaping</h2>
+        <div class="groups">
+          <div class="group">
+            <h3>Tree work</h3>
+            <ul class="svc-list">
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 22 h12 l-2-6 h6 L14 6 8 16 h5 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg> Tree trimming &amp; pruning</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 6 v14 M10 26 h12 M12 20 h8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 14 l8-8 8 8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Tree removal</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="18" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 14 l7-7 M22 6 h5 v5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Stump grinding</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 26 V12 M10 14 c2-6 12-6 12 0 M12 18 c2-4 8-4 8 0" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Palm trimming (sabal and date palms)</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 h20 M8 22 l4-10 4 6 3-8 5 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Storm damage clean-up</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20 h14 v-5 h5 l4 4 v1 h-2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="10" cy="22" r="2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="22" cy="22" r="2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg> Lot clearing &amp; hauling</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Landscaping</h3>
+            <ul class="svc-list">
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 c4-10 8-12 10-12 s6 2 10 12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 24 h24" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Landscape design &amp; installation</li>
+              <li><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 24 l6-14 4 8 6-10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 24 h18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg> Yard clean-ups</li>
+            </ul>
+          </div>
+        </div>
+        <p class="svc-note">Residential and commercial. Free estimates.</p>
+      </div>
+    </section>
+
+    <section class="block tint" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="work-heading">Recent jobs</h2>
+        <figure class="banner">
+          <img src="images/truck.jpg" alt="The lettered tailgate of the tree service truck" width="1600" height="248">
+          <figcaption>The truck</figcaption>
+        </figure>
+        <div class="job-grid">
+          <figure>
+            <img src="images/stump-grinder.jpg" alt="Stump grinder at work" width="1068" height="640">
+            <figcaption>Stump grinder</figcaption>
+          </figure>
+          <figure>
+            <img src="images/tree-trunk.jpg" alt="A tree taken down to the trunk" width="528" height="960">
+            <figcaption>Taken down to the trunk</figcaption>
+          </figure>
+          <figure>
+            <img src="images/brush.jpg" alt="Cleared brush and debris" width="528" height="960">
+            <figcaption>Cleared brush and debris</figcaption>
+          </figure>
+          <figure>
+            <img src="images/trimmed-trunks.jpg" alt="Trunks after trimming" width="500" height="1000">
+            <figcaption>Trunks after trimming</figcaption>
+          </figure>
+        </div>
+        <div class="garden">
+          <svg viewBox="0 0 240 160" aria-hidden="true">
+            <rect width="240" height="160" rx="12" fill="#F4F1EA"/>
+            <path d="M16 120 C 60 90, 90 130, 140 100 S 200 70, 224 96" fill="none" stroke="#7A4E2D" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="58" cy="58" r="22" fill="#2F6B2A"/>
+            <rect x="52" y="78" width="12" height="28" fill="#7A4E2D"/>
+            <ellipse cx="150" cy="72" rx="28" ry="16" fill="#9CCB5A"/>
+            <ellipse cx="186" cy="84" rx="22" ry="12" fill="#2F6B2A"/>
+            <path d="M170 40 c8 16 4 28 -2 34" fill="none" stroke="#2F6B2A" stroke-width="3"/>
+          </svg>
+          <p>Ask to see recent landscape projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <h2 id="how-heading">How it works</h2>
+        <div class="how-grid">
+          <article class="how-card">
+            <p class="step-num">01</p>
+            <h3>Call or text.</h3>
+            <p>Send a photo of the tree or yard if you can.</p>
+          </article>
+          <article class="how-card">
+            <p class="step-num">02</p>
+            <h3>Free estimate.</h3>
+            <p>Lon takes a look and gives you a fair price.</p>
+          </article>
+          <article class="how-card">
+            <p class="step-num">03</p>
+            <h3>Done and cleaned up.</h3>
+            <p>We leave the area clean before we go.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="area-heading">Where we work</h2>
+        <p>Sarasota and nearby.</p>
+      </div>
+    </section>
+
+    <section class="block tint" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Get a free estimate</h2>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19415659115">(941) 565-9115</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:lonslandscapeandtreeservices@gmail.com">lonslandscapeandtreeservices@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Sarasota, FL</dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Call or text to schedule.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19415659115">(941) 565-9115</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19415659115">Call</a>
+              <a class="btn btn-ghost" href="sms:+19415659115?&amp;body=Hi%20Lon%2C%20I%27d%20like%20a%20free%20estimate%20for%3A%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:lonslandscapeandtreeservices@gmail.com?subject=Tree%20%2F%20landscape%20estimate">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Lon's Tree Services &amp; Landscape Design · Sarasota, FL · <a href="tel:+19415659115">(941) 565-9115</a></p>
+      <p><a href="https://nextdoor.com/pages/lons-tree-and-landscaping-sarasota-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19415659115">Call</a>
+    <a class="text" href="sms:+19415659115?&amp;body=Hi%20Lon%2C%20I%27d%20like%20a%20free%20estimate%20for%3A%20">Text</a>
+  </div>
+</body>
+</html>
