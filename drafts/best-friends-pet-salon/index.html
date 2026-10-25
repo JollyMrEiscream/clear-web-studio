@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Friends Pet Salon | Dog Grooming in Ellenton, FL</title>
+  <meta name="description" content="Dog grooming in Ellenton on US 301: full grooms, baths, nail clipping, teeth brushing and a Monthly Bath Membership. Mon–Thu 9–4, Fri 9–5. Call or text 941-479-4974.">
+  <meta name="theme-color" content="#1C3F8F">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Best Friends Pet Salon",
+    "telephone": "+1-941-479-4974",
+    "email": "bestfriendspetsalon@icloud.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3412 US Highway 301 N, Suite 102",
+      "addressLocality": "Ellenton",
+      "addressRegion": "FL",
+      "postalCode": "34222",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": "https://nextdoor.com/pages/best-friends-pet-salon-ellenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FFF9F0;
+      --tint: #FDEFD9;
+      --ink: #1E2333;
+      --navy: #1C3F8F;
+      --orange: #B9520C;
+      --yellow: #F5C518;
+      --muted: #5A5F6E;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Nunito, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--orange); }
+    h1, h2, .sec-num, .card h3 {
+      font-family: Fredoka, system-ui, sans-serif;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--yellow); color: var(--ink); padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    section { scroll-margin-top: 88px; }
+
+    .utility-bar { background: var(--navy); color: #fff; font-size: 0.9rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #f0e2cc; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.4rem 0; }
+    .brand img { height: 78px; width: auto; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.15rem; border-radius: 999px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--navy); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #163476; color: #fff; }
+    .btn-line { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-line:hover { background: var(--navy); color: #fff; }
+    .btn-solid { background: var(--navy); color: #fff; }
+    .btn-solid:hover { background: #163476; color: #fff; }
+    .btn-ghost { background: #fff; color: var(--navy); border-color: var(--navy); }
+    .btn-ghost:hover { background: var(--navy); color: #fff; }
+    .header-inner .btn-solid { min-height: 44px; }
+
+    .hero { position: relative; overflow: hidden; padding: 2.2rem 0 2.6rem; }
+    .paws { position: absolute; inset: 0; pointer-events: none; opacity: 0.1; color: var(--navy); }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { color: var(--orange); font-weight: 700; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.3rem, 4.6vw, 3.5rem); color: var(--ink); }
+    .hero-lead { max-width: 44ch; margin: 0.8rem 0 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--muted); font-size: 0.92rem; font-weight: 700; }
+    .blob-wrap { position: relative; }
+    .blob-back { position: absolute; inset: 8% -4% -6% 8%; background: var(--yellow); border-radius: 58% 42% 48% 52%; z-index: 0; }
+    .blob-wrap img {
+      position: relative; z-index: 1; width: 100%; aspect-ratio: 1;
+      object-fit: cover; border-radius: 60% 40% 55% 45%;
+    }
+
+    section.block { padding: 3rem 0; }
+    .tint { background: var(--tint); }
+    .sec-num { color: var(--orange); font-size: 0.95rem; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--navy); margin-bottom: 1rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+    .card { background: var(--tint); border-radius: 18px; padding: 1rem; }
+    .tint .card { background: #fff; }
+    .ico { width: 42px; height: 42px; color: var(--orange); margin-bottom: 0.4rem; }
+    .ico svg { width: 34px; height: 34px; }
+    .card h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+    .card p { color: var(--muted); }
+
+    .member { background: var(--yellow); color: var(--ink); padding: 2.4rem 0; }
+    .member h2 { color: var(--ink); }
+    .member .sec-num { color: var(--navy); }
+    .member-inner { display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center; }
+    .member svg { width: 72px; height: 72px; }
+    .member .btn { margin-top: 0.8rem; background: var(--navy); color: #fff; }
+
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .gallery figure { margin: 0; }
+    .gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 18px; }
+    .gallery figcaption { margin-top: 0.35rem; font-weight: 700; font-size: 0.92rem; }
+
+    .band { background: var(--navy); color: #fff; padding: 3rem 0; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--yellow); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step { border: 1px solid rgba(245, 197, 24, 0.45); border-radius: 16px; padding: 1rem; }
+    .step .num { font-family: Fredoka, sans-serif; color: var(--yellow); font-size: 1.6rem; }
+    .step h3 { margin: 0.15rem 0 0.3rem; color: #fff; font-size: 1.15rem; }
+    .step p { color: #e6ecff; }
+
+    .reviews { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .reviews blockquote { margin: 0; background: #fff; border-radius: 16px; padding: 1rem; }
+    .reviews footer { margin-top: 0.65rem; color: var(--muted); font-weight: 700; font-size: 0.9rem; }
+    .fave { margin-top: 0.9rem; font-weight: 700; }
+
+    .visit { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem; align-items: center; }
+    .visit-photos { position: relative; }
+    .visit-photos img.store { width: 100%; border-radius: 18px; aspect-ratio: 4 / 3; object-fit: cover; }
+    .visit-photos img.inset { position: absolute; width: 42%; right: -4%; bottom: -8%; border-radius: 14px; border: 4px solid var(--bg); aspect-ratio: 4 / 3; object-fit: cover; }
+    .visit address { font-style: normal; font-weight: 700; margin-bottom: 0.6rem; }
+    .visit .hours { color: var(--muted); margin-bottom: 0.8rem; }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem;
+      background: #fff; border-radius: 18px; padding: 1.3rem;
+    }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: Fredoka, sans-serif; font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--navy); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--navy); color: #e7edff; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--yellow); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .svc-grid, .steps, .reviews, .visit, .contact-grid, .member-inner { grid-template-columns: 1fr; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .blob-wrap { max-width: 420px; margin-inline: auto; }
+      .hero-grid .blob-wrap { order: -1; }
+      .visit-photos img.inset { position: static; width: 70%; margin-top: 0.6rem; border-color: var(--tint); }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--navy); color: #fff; }
+      .dock .text { background: var(--bg); color: var(--orange); border-top: 2px solid var(--orange); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      .meta-row { flex-direction: column; gap: 0.2rem; }
+      .utility-bar { font-size: 0.78rem; }
+      .brand img { height: 64px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Dog grooming in Ellenton · Mon–Thu 9–4 · Fri 9–5</span>
+      <a href="tel:+19414794974">Call or text 941-479-4974</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" alt="Best Friends Pet Salon" width="495" height="700">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#membership">Membership</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#visit">Visit</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-solid" href="tel:+19414794974">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="paws" aria-hidden="true">
+        <svg viewBox="0 0 800 400" width="100%" height="100%">
+          <g fill="currentColor">
+            <circle cx="80" cy="60" r="10"/><circle cx="100" cy="48" r="7"/><circle cx="118" cy="60" r="7"/><circle cx="96" cy="78" r="12"/>
+            <circle cx="700" cy="90" r="12"/><circle cx="724" cy="76" r="8"/><circle cx="746" cy="92" r="8"/><circle cx="720" cy="112" r="14"/>
+            <circle cx="180" cy="320" r="9"/><circle cx="198" cy="308" r="6"/><circle cx="214" cy="322" r="6"/><circle cx="196" cy="338" r="11"/>
+          </g>
+        </svg>
+      </div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Dog grooming · Ellenton · US 301</p>
+          <h1 id="hero-heading">Fresh cuts, happy tails.</h1>
+          <p class="hero-lead">Full grooming, baths, nails and teeth brushing at our Ellenton salon, plus a Monthly Bath Membership to keep your best friend fresh.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414794974">Call or text · 941-479-4974</a>
+            <a class="btn btn-line" href="sms:+19414794974?&amp;body=Hi%21%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20dog%3A%20">Text to book</a>
+          </div>
+          <p class="meta-row">
+            <span>Mon–Thu 9–4 · Fri 9–5</span>
+            <span>3412 US 301 N, Suite 102, Ellenton</span>
+            <span>Nextdoor Neighborhood Favorite 8 years</span>
+          </p>
+        </div>
+        <div class="blob-wrap">
+          <div class="blob-back" aria-hidden="true"></div>
+          <img src="images/hero-doodle.jpg" alt="Freshly groomed doodle with a bandana on the blue grooming table" width="900" height="1200">
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Our services</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="18" r="4"/><circle cx="22" cy="12" r="4"/><path d="M13 15 L19 9"/></svg></div>
+            <h3>Full Grooming</h3>
+            <p>Bath, haircut and finish.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 16c0-6 4-10 8-10s8 4 8 10v8H8z"/><path d="M12 24h8"/></svg></div>
+            <h3>Bath</h3>
+            <p>A fresh, clean coat between cuts.</p>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 8h4l8 16h-4z"/><path d="M14 12h6"/></svg></div>
+            <h3>Nail Clipping</h3>
+          </article>
+          <article class="card">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6c6 2 8 8 6 14-4 1-8-1-10-6 0-4 1-7 4-8z"/><path d="M18 10c4 1 6 4 6 8"/></svg></div>
+            <h3>Teeth Brushing</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="member" id="membership" aria-labelledby="membership-heading">
+      <div class="wrap member-inner">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#1E2333" stroke-width="2.2" aria-hidden="true">
+          <rect x="10" y="14" width="44" height="38" rx="4"/>
+          <path d="M10 24h44M22 8v10M42 8v10"/>
+          <circle cx="32" cy="40" r="6"/>
+          <circle cx="26" cy="36" r="2" fill="#1E2333"/><circle cx="38" cy="36" r="2" fill="#1E2333"/>
+        </svg>
+        <div>
+          <p class="sec-num">02</p>
+          <h2 id="membership-heading">Monthly Bath Membership</h2>
+          <p>Keep your dog clean all month long. Ask us how the membership works.</p>
+          <a class="btn" href="sms:+19414794974?&amp;body=Hi%21%20Can%20you%20tell%20me%20about%20the%20Monthly%20Bath%20Membership%3F">Ask about the membership</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="gallery" aria-labelledby="gallery-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="gallery-heading">Fresh from the table</h2>
+        <div class="gallery">
+          <figure>
+            <img src="images/halloween-mohawk.jpg" alt="Dog with a Halloween mohawk haircut" width="900" height="1200">
+            <figcaption>Halloween Mohawk! 🎃</figcaption>
+          </figure>
+          <figure>
+            <img src="images/husky.jpg" alt="Husky wearing a bandana after grooming" width="900" height="1200">
+            <figcaption>Husky in a bandana</figcaption>
+          </figure>
+          <figure>
+            <img src="images/three-dogs.jpg" alt="Three dogs after their baths" width="1400" height="1107">
+            <figcaption>Three friends after their baths</figcaption>
+          </figure>
+          <figure>
+            <img src="images/terrier.jpg" alt="Terrier with a yellow bow" width="900" height="1200">
+            <figcaption>Terrier in a yellow bow</figcaption>
+          </figure>
+          <figure>
+            <img src="images/teddy-bear.jpg" alt="Dog in a teddy-bear trim" width="720" height="960">
+            <figcaption>Teddy-bear trim</figcaption>
+          </figure>
+          <figure>
+            <img src="images/poodle.jpg" alt="Groomed poodle" width="900" height="1200">
+            <figcaption>Poodle</figcaption>
+          </figure>
+          <figure>
+            <img src="images/shih-tzu.jpg" alt="Shih tzu ready to go home" width="900" height="1200">
+            <figcaption>Shih tzu ready to go home</figcaption>
+          </figure>
+          <figure>
+            <img src="images/schnauzer.jpg" alt="Schnauzer trim" width="900" height="1200">
+            <figcaption>Schnauzer trim</figcaption>
+          </figure>
+          <figure>
+            <img src="images/groomed-doodle.jpg" alt="Freshly groomed doodle" width="900" height="1200">
+            <figcaption>Freshly groomed doodle</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="how-heading">Booking is easy</h2>
+        <div class="steps">
+          <article class="step">
+            <p class="num">01</p>
+            <h3>Call or text</h3>
+            <p>941-479-4974 — tell us your dog's name, breed and what they need.</p>
+          </article>
+          <article class="step">
+            <p class="num">02</p>
+            <h3>Drop off</h3>
+            <p>Bring your pup to our Ellenton salon.</p>
+          </article>
+          <article class="step">
+            <p class="num">03</p>
+            <h3>Pick up a happy dog</h3>
+            <p>Fresh, fluffy and ready for photos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="reviews">
+          <blockquote>
+            <p>Took my Maltese to Best Friends for years. Everyone is so friendly, professional, great communication, loves all the dogs, does an amazing job! Highly recommend!!!!</p>
+            <footer>C.M., Palmetto, Nextdoor, Sep 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>I go to  Friends Pet Salon they do a good job and price is right for sm dog</p>
+            <footer>L.B., Parrish, Nextdoor, May 2025</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2026, 2024, 2023, 2022, 2021, 2019, 2018 and 2017.</p>
+      </div>
+    </section>
+
+    <section class="block" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap visit">
+        <div class="visit-photos">
+          <img class="store" src="images/storefront.jpg" alt="Best Friends Pet Salon storefront on US 301 in Ellenton" width="1200" height="900">
+          <img class="inset" src="images/front-desk.jpg" alt="Front desk inside Best Friends Pet Salon" width="1200" height="900">
+        </div>
+        <div>
+          <p class="sec-num">06</p>
+          <h2 id="visit-heading">Visit the salon</h2>
+          <address>3412 US Highway 301 N, Suite 102<br>Ellenton, FL 34222</address>
+          <p class="hours">Mon–Thu 9 AM–4 PM · Fri 9 AM–5 PM · Sat–Sun closed</p>
+          <a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&amp;query=3412+US+Highway+301+N+Suite+102+Ellenton+FL+34222" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">07</p>
+        <h2 id="contact-heading">Book a groom</h2>
+        <div class="contact-grid">
+          <div>
+            <a class="phone-xl" href="tel:+19414794974">941-479-4974</a>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19414794974">941-479-4974</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:bestfriendspetsalon@icloud.com">bestfriendspetsalon@icloud.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Thu 9 AM–4 PM · Fri 9 AM–5 PM · Sat–Sun closed</dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>3412 US Highway 301 N, Suite 102, Ellenton, FL 34222</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <div class="row">
+              <a class="btn btn-solid" href="tel:+19414794974">Call</a>
+              <a class="btn btn-ghost" href="sms:+19414794974?&amp;body=Hi%21%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20dog%3A%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:bestfriendspetsalon@icloud.com?subject=Grooming%20appointment">Email</a>
+            </div>
+            <p><a href="https://nextdoor.com/pages/best-friends-pet-salon-ellenton-fl/" target="_blank" rel="noopener">See us on Nextdoor</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Best Friends Pet Salon · 3412 US Highway 301 N, Suite 102, Ellenton, FL 34222 · <a href="tel:+19414794974">941-479-4974</a></p>
+      <p><a href="https://nextdoor.com/pages/best-friends-pet-salon-ellenton-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p>Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414794974">Call</a>
+    <a class="text" href="sms:+19414794974?&amp;body=Hi%21%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20dog%3A%20">Text</a>
+  </nav>
+</body>
+</html>
