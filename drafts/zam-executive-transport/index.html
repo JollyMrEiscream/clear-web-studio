@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZAM Executive Transport | Airport &amp; Private Car Service in Lakewood Ranch, FL</title>
+  <meta name="description" content="Private car service from Lakewood Ranch to Sarasota, Tampa, St. Pete, Punta Gorda and Fort Myers airports, cruise ports, medical appointments, date nights and errands. Text or call Leo: (941) 245-9721.">
+  <meta name="theme-color" content="#0E0E10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "ZAM Executive Transport",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "ZAM Executive Transport",
+      "legalName": "ZAM Executive Transport LLC",
+      "telephone": "+1-941-245-9721",
+      "email": "zamexecutivetransport@gmail.com",
+      "logo": "images/logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lakewood Ranch",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "areaServed": ["Lakewood Ranch, FL", "Bradenton, FL", "Parrish, FL", "Sarasota, FL"],
+      "sameAs": "https://nextdoor.com/pages/zam-executive-transport-lakewood-ranch-fl/"
+    },
+    "areaServed": ["Lakewood Ranch, FL", "Bradenton, FL", "Parrish, FL", "Sarasota, FL"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F6F5F2;
+      --ink: #1B1B1D;
+      --black: #0E0E10;
+      --gold: #E8B23A;
+      --goldtx: #8A6110;
+      --silver: #B9B5AC;
+      --muted: #5D5A55;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Lato, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--goldtx); }
+    h1, h2, h3, .step-num, .sec-num, .airports p.codes {
+      font-family: Montserrat, system-ui, sans-serif;
+      font-weight: 800;
+      line-height: 1.15;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--gold); color: var(--black); padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--black); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #e4e1da; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.5rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; text-decoration: none; background: #fff; border-radius: 10px; padding: 0.25rem 0.4rem; }
+    .brand img { height: 64px; width: auto; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 6px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--gold); color: var(--black); min-height: 56px; }
+    .btn-primary:hover { background: #d09a22; color: var(--black); }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--black); }
+    .btn-ghost { background: #fff; color: var(--ink); border-color: var(--ink); }
+    .btn-ghost:hover { background: var(--black); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; background: var(--black); color: #fff; overflow: hidden; }
+    .road { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .road .dash { stroke-dasharray: 14 18; animation: drive 2.6s linear infinite; }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.5rem; align-items: center; padding: 2.6rem 0; }
+    .eyebrow { color: var(--gold); font-weight: 700; letter-spacing: 0.1em; font-size: 0.78rem; margin: 0 0 0.7rem; font-family: Montserrat, sans-serif; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3.05rem); color: #fff; margin-bottom: 0.75rem; }
+    .hero-lead { color: var(--silver); max-width: 46ch; margin-bottom: 1.15rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .reserve {
+      background: #fff; color: var(--ink); border-radius: 12px; padding: 1.1rem 1.1rem 1rem;
+      box-shadow: 0 16px 40px rgba(0,0,0,.28);
+    }
+    .reserve h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    .fields { display: grid; gap: 0.55rem; }
+    label { font-weight: 700; font-size: 0.82rem; display: grid; gap: 0.25rem; }
+    input {
+      font: inherit; min-height: 48px; padding: 0.45rem 0.65rem; border-radius: 8px;
+      border: 1px solid #d9d5cc; background: #fff; color: var(--ink); width: 100%;
+    }
+    .reserve .row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.75rem; }
+    .fine { color: var(--muted); font-size: 0.85rem; margin-top: 0.55rem; }
+    .form-note { color: var(--goldtx); font-weight: 700; min-height: 1.2em; margin-top: 0.4rem; }
+
+    .block { padding: 3rem 0; }
+    .sec-num { color: var(--goldtx); letter-spacing: 0.14em; font-size: 0.85rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.8rem, 3.3vw, 2.5rem); color: var(--ink); margin-bottom: 1rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.7rem; }
+    .card { background: #fff; border-radius: 12px; padding: 1rem; }
+    .card svg { width: 32px; height: 32px; color: var(--goldtx); margin-bottom: 0.4rem; }
+    .card h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); }
+
+    .airports { background: var(--black); color: #fff; }
+    .airports h2, .airports .sec-num { color: #fff; }
+    .airports .sec-num { color: var(--gold); }
+    .codes { font-size: clamp(1.15rem, 2.4vw, 1.7rem); letter-spacing: 0.06em; margin: 0.4rem 0 0.8rem; }
+    .codes span { color: var(--gold); }
+    .airports .line { color: var(--silver); }
+    .plane { width: 36px; height: 36px; color: var(--gold); margin-bottom: 0.4rem; }
+
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step-num { color: var(--goldtx); font-size: 1.7rem; }
+    .step h3 { font-size: 1.05rem; margin: 0.25rem 0; font-weight: 800; }
+    .step p { color: var(--muted); }
+
+    .leo { border-left: 4px solid var(--gold); padding: 0.2rem 0 0.2rem 1rem; max-width: 62ch; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    blockquote.review { margin: 0; background: #fff; border-top: 4px solid var(--gold); border-radius: 10px; padding: 1rem; }
+    blockquote.review footer { margin-top: 0.7rem; font-weight: 700; font-size: 0.88rem; color: var(--muted); }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: #fff; border-radius: 14px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: Montserrat, sans-serif; font-weight: 800; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--ink); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .contact-cta .row, .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--black); color: var(--silver); text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer .tile { display: inline-block; background: #fff; border-radius: 10px; padding: 0.3rem; margin-bottom: 0.7rem; }
+    .site-footer img { height: 64px; width: auto; }
+    .site-footer a { color: var(--gold); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @keyframes drive { to { stroke-dashoffset: -64; } }
+    @media (max-width: 800px) {
+      .hero-grid, .svc-grid, .steps, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .road { display: none; }
+      .hero h1 {
+        background-image: repeating-linear-gradient(90deg, var(--gold) 0 14px, transparent 14px 24px);
+        background-size: 100% 3px;
+        background-repeat: no-repeat;
+        background-position: left calc(100% - 0.15rem);
+        padding-bottom: 0.85rem;
+      }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; }
+      .dock .go { background: var(--gold); color: var(--black); }
+      .dock .call { background: #fff; color: var(--black); border-top: 1px solid #e4e1da; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+      .codes { letter-spacing: 0.03em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .road .dash { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Private car service · Lakewood Ranch</span>
+      <span>Text, email or call</span>
+      <a href="tel:+19412459721">(941) 245-9721</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.jpg" alt="ZAM Executive Transport" width="800" height="800">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#rides">Rides</a>
+        <a class="nav-link" href="#airports">Airports</a>
+        <a class="nav-link" href="#leo">Meet Leo</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="sms:+19412459721">Text</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <svg class="road" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M600 40 L80 640" fill="none" stroke="#B9B5AC" stroke-width="2"/>
+        <path d="M600 40 L1120 640" fill="none" stroke="#B9B5AC" stroke-width="2"/>
+        <path class="dash" d="M600 40 L600 640" fill="none" stroke="#E8B23A" stroke-width="3"/>
+      </svg>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PRIVATE CAR SERVICE · LAKEWOOD RANCH, FL</p>
+          <h1 id="hero-heading">Your ride to the airport, the cruise port and everywhere in between.</h1>
+          <p class="hero-lead">Locally owned car service with exceptional customer care — airports, cruise ports, medical appointments, date nights and errands. Safety first.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sms:+19412459721">Text Leo · (941) 245-9721</a>
+            <a class="btn btn-line" href="tel:+19412459721">Call</a>
+          </div>
+        </div>
+        <form class="reserve" id="reserve" action="#" method="post">
+          <h3>Reserve your ride</h3>
+          <div class="fields">
+            <label>Pickup (address or area)
+              <input name="pickup" type="text" autocomplete="street-address" required>
+            </label>
+            <label>Drop-off (airport, port, or address)
+              <input name="dropoff" type="text" autocomplete="off" required>
+            </label>
+            <label>Date
+              <input name="date" type="date" required>
+            </label>
+            <label>Time
+              <input name="time" type="time" required>
+            </label>
+            <label>Passengers
+              <input name="passengers" type="text" inputmode="numeric" required>
+            </label>
+            <label>Flight # (optional)
+              <input name="flight" type="text" autocomplete="off">
+            </label>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary" type="button" id="send-text">Send by text</button>
+            <button class="btn btn-ghost" type="button" id="send-email">Send by email</button>
+          </div>
+          <p class="form-note" id="form-note" role="status"></p>
+          <p class="fine">Leo will confirm your ride and price.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="block" id="rides" aria-labelledby="rides-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="rides-heading">Where can we take you?</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 18 h8 l6-8 h4 l2 8 h8 v3 H4 Z M14 18 V10 M20 10 v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <h3>Airport rides</h3>
+            <p>On time for your flight, and there when you land.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20 h24 l-3 6 H7 Z M8 20 V14 h16 v6 M12 14 V10 h8 v4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Cruise ports</h3>
+            <p>Start the trip relaxed.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M14 6 h4 v8 h8 v4 h-8 v8 h-4 v-8 H6 v-4 h8 Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Medical appointments</h3>
+            <p>Getting there and back, without the stress.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 10 h4 l1 5 h-6 Z M8 15 h6 v3 a3 3 0 0 1-6 0 Z M18 10 h4 l1 5 h-6 Z M18 15 h6 v3 a3 3 0 0 1-6 0 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <h3>Date nights</h3>
+            <p>Dinner and a show — leave the driving to us.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 12 h16 l-2 12 H10 Z M12 12 V9 a4 4 0 0 1 8 0 v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Errands</h3>
+            <p>Shopping, pickups, the to-do list.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block airports" id="airports" aria-labelledby="airports-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <svg class="plane" viewBox="0 0 32 32" aria-hidden="true"><path d="M2 18 L14 16 L14 8 L18 10 L18 16 L30 18 L30 21 L18 19 L18 26 L14 24 L14 19 L2 21 Z" fill="currentColor"/></svg>
+        <h2 id="airports-heading">Airport runs</h2>
+        <p class="codes">SARASOTA <span>·</span> TAMPA <span>·</span> ST. PETE <span>·</span> PUNTA GORDA <span>·</span> FORT MYERS</p>
+        <p class="line">Text your flight time and Leo will plan the pickup.</p>
+      </div>
+    </section>
+
+    <section class="block" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="how-heading">Reserve in three steps</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">01</div>
+            <h3>Text, email or call</h3>
+            <p>Send pickup, drop-off, date and time.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">02</div>
+            <h3>Leo confirms</h3>
+            <p>You'll get your ride confirmed and priced.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">03</div>
+            <h3>Ride</h3>
+            <p>Sit back — safety first.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="leo" aria-labelledby="leo-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="leo-heading">Meet Leo</h2>
+        <p class="leo">ZAM Executive Transport is locally owned and run by Leo Sanchez. Neighbors in Lakewood Ranch and Parrish ride with him again and again for one reason: exceptional customer care.</p>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="reviews-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="reviews-heading">Neighbors ride with Leo</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <p>Exceptional service, safe driver and very reasonable prices! Many of us in Star Farms have used him exclusively!</p>
+            <footer>J.K. · Lakewood Ranch · Nextdoor, Jul 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Leo is the best !</p>
+            <footer>S.B. · Parrish · Nextdoor, Sep 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Great service</p>
+            <footer>A.B. · Parrish · Nextdoor, Jul 2026</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Reserve your ride</h2>
+            <dl>
+              <div>
+                <dt>Text or call</dt>
+                <dd><a href="tel:+19412459721">(941) 245-9721</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:zamexecutivetransport@gmail.com">zamexecutivetransport@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Based in</dt>
+                <dd>Lakewood Ranch, FL</dd>
+              </div>
+              <div>
+                <dt>Booking</dt>
+                <dd>By reservation</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="sms:+19412459721">(941) 245-9721</a>
+            <div class="row">
+              <a class="btn btn-primary" href="sms:+19412459721">Text</a>
+              <a class="btn btn-ghost" href="tel:+19412459721">Call</a>
+              <a class="btn btn-ghost" href="mailto:zamexecutivetransport@gmail.com?subject=Ride%20request">Email</a>
+            </div>
+            <a href="https://nextdoor.com/pages/zam-executive-transport-lakewood-ranch-fl/" target="_blank" rel="noopener">See us on Nextdoor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="tile"><img src="images/logo.jpg" alt="" width="800" height="800"></span>
+      <p>ZAM Executive Transport LLC · Lakewood Ranch, FL · <a href="tel:+19412459721">(941) 245-9721</a></p>
+      <p><a href="https://nextdoor.com/pages/zam-executive-transport-lakewood-ranch-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="sms:+19412459721">Text</a>
+    <a class="call" href="tel:+19412459721">Call</a>
+  </div>
+  <script>
+    (function () {
+      var form = document.getElementById("reserve");
+      var note = document.getElementById("form-note");
+      function field(name) {
+        return (form.elements[name].value || "").trim();
+      }
+      function body() {
+        return [
+          "Ride request:",
+          "Pickup: " + field("pickup"),
+          "Drop-off: " + field("dropoff"),
+          "Date: " + field("date"),
+          "Time: " + field("time"),
+          "Passengers: " + field("passengers"),
+          "Flight: " + (field("flight") || "n/a")
+        ].join("\n");
+      }
+      function ready() {
+        var missing = ["pickup", "dropoff", "date", "time", "passengers"].filter(function (name) {
+          return !field(name);
+        });
+        if (missing.length) {
+          note.textContent = "Add pickup, drop-off, date, time, and passengers first.";
+          form.elements[missing[0]].focus();
+          return false;
+        }
+        note.textContent = "";
+        return true;
+      }
+      document.getElementById("send-text").addEventListener("click", function () {
+        if (!ready()) return;
+        window.location.href = "sms:+19412459721?&body=" + encodeURIComponent(body());
+      });
+      document.getElementById("send-email").addEventListener("click", function () {
+        if (!ready()) return;
+        window.location.href = "mailto:zamexecutivetransport@gmail.com?subject=" + encodeURIComponent("Ride request") + "&body=" + encodeURIComponent(body());
+      });
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+      });
+    })();
+  </script>
+</body>
+</html>

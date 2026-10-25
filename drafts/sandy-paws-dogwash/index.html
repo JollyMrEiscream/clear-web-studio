@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandy Paws Grooming &amp; Dogwash | Dog Grooming in Downtown Bradenton, FL</title>
+  <meta name="description" content="Full-service dog washes, de-shedding and grooming at 624 14th Street West, Bradenton. Natural shampoos, raised tubs, warm water. Tue–Fri 9–4:30, Sat 8–4. Call (941) 462-0538 to book.">
+  <meta name="theme-color" content="#0A3346">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Sandy Paws Grooming & Dogwash",
+    "telephone": "+1-941-462-0538",
+    "email": "jeffplittle@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "624 14th Street West",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL",
+      "postalCode": "34205",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "16:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "16:00"
+      }
+    ],
+    "sameAs": [
+      "https://nextdoor.com/pages/sandy-paws-groming-and-dogwash-bradenton-fl/",
+      "https://www.facebook.com/selfdogwash1"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FBF4E6;
+      --sand: #F1E2C2;
+      --ink: #2B2118;
+      --sea: #0E5A7A;
+      --deep: #0A3346;
+      --sun: #F6B93B;
+      --coral: #B23A22;
+      --muted: #6B5B4B;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Nunito Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    svg { max-width: 100%; display: block; }
+    a { color: var(--sea); }
+    h1, h2, .wordmark, .step-num, .sec-num, .badge {
+      font-family: Sniglet, "Nunito Sans", system-ui, sans-serif;
+      font-weight: 800;
+      line-height: 1.1;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sea); color: #fff; padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--deep); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #eadcbe; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.55rem 0; flex-wrap: wrap; }
+    .brand { text-decoration: none; color: var(--sea); display: flex; align-items: center; gap: 0.4rem; }
+    .brand .wordmark { font-size: 1.55rem; }
+    .brand small { display: block; font-family: "Nunito Sans", sans-serif; font-weight: 700; letter-spacing: 0.14em; font-size: 0.68rem; color: var(--ink); }
+    .paw { width: 22px; height: 22px; color: var(--sun); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 999px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--sea); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #0a4660; color: #fff; }
+    .btn-coral { background: var(--coral); color: #fff; min-height: 56px; }
+    .btn-coral:hover { background: #8e2e1b; color: #fff; }
+    .btn-ghost { background: transparent; color: var(--sea); border-color: var(--sea); border-radius: 999px; }
+    .btn-ghost:hover { background: var(--sea); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; background: var(--sand); overflow: hidden; }
+    .hero-grid { position: relative; z-index: 1; padding: 2.8rem 0 5.5rem; }
+    .hero-grid > div { padding-right: 140px; }
+    .badge { position: absolute; top: 2.4rem; right: 0; }
+    .eyebrow { color: var(--coral); font-weight: 700; letter-spacing: 0.1em; font-size: 0.78rem; margin: 0 0 0.55rem; }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 3.8rem); color: var(--ink); margin-bottom: 0.7rem; max-width: 16ch; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1.15rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--muted); font-weight: 700; font-size: 0.92rem; }
+    .badge {
+      width: 118px; height: 118px; border-radius: 50%;
+      background: var(--sun); color: var(--deep);
+      display: grid; place-items: center; text-align: center;
+      font-size: 1.05rem; line-height: 1.05; transform: rotate(8deg);
+      box-shadow: 0 8px 0 rgba(10, 51, 70, 0.12);
+    }
+    .paws { position: absolute; inset: 0; pointer-events: none; }
+    .paws svg { position: absolute; width: 36px; height: 36px; }
+    .wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px; z-index: 1; }
+    .wave path { transform-box: fill-box; }
+    .w1 { animation: drift 8s ease-in-out infinite; }
+    .w2 { animation: drift 8s ease-in-out infinite reverse; }
+
+    .block { padding: 3rem 0; }
+    .sec-num { color: var(--sea); letter-spacing: 0.08em; font-size: 1rem; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); color: var(--sea); margin-bottom: 1rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .card { background: var(--sand); border-radius: 16px; padding: 1rem 1rem 1.15rem; }
+    .card svg { width: 36px; height: 36px; color: var(--sea); margin-bottom: 0.4rem; }
+    .card h3 { margin: 0 0 0.35rem; font-family: "Nunito Sans", sans-serif; font-weight: 700; font-size: 1.08rem; }
+    .card p { color: var(--ink); }
+    .price-line { margin-top: 0.95rem; font-weight: 700; }
+    .status { color: var(--muted); margin-top: 0.45rem; font-size: 0.92rem; }
+
+    .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1.2rem; list-style: none; margin: 0; padding: 0; }
+    .checks li { display: flex; gap: 0.55rem; align-items: flex-start; font-weight: 700; }
+    .checks svg { width: 22px; height: 22px; color: var(--coral); flex: none; margin-top: 0.15rem; }
+    .instore { background: var(--sand); border-radius: 14px; padding: 0.9rem 1rem; margin-top: 1rem; }
+
+    .band { background: var(--deep); color: #fff; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--sun); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step-num { color: var(--sun); font-size: 2rem; }
+    .step h3 { margin: 0.2rem 0; color: #fff; font-family: "Nunito Sans", sans-serif; font-size: 1.05rem; }
+    .step p { color: #d5e4ea; }
+
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    blockquote.review { margin: 0; background: var(--sand); border-radius: 16px; padding: 1rem 1rem 0.9rem; position: relative; }
+    blockquote.review .corner { position: absolute; top: 10px; right: 10px; width: 22px; height: 22px; color: var(--sun); }
+    blockquote.review footer { margin-top: 0.75rem; font-weight: 700; font-size: 0.88rem; color: var(--muted); }
+    .plain-note { margin-top: 1rem; font-weight: 700; }
+
+    .visit-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1rem; align-items: start; }
+    .panel { background: #fff; border-radius: 16px; padding: 1.15rem; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    table.hours { width: 100%; border-collapse: collapse; margin-top: 0.3rem; }
+    table.hours th, table.hours td { text-align: left; padding: 0.45rem 0.35rem; border-bottom: 1px dashed #eadcbe; font-weight: 400; }
+    table.hours th { font-weight: 700; }
+    table.hours tr.is-today th, table.hours tr.is-today td { font-weight: 700; background: #F6B93B; color: var(--deep); }
+    table.hours tr.closed td { color: var(--muted); }
+    .minimap {
+      display: block; position: relative; min-height: 280px; border-radius: 16px; overflow: hidden;
+      background: #e7d3a4; text-decoration: none; color: var(--deep);
+    }
+    .streets {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(#c9b07a, #c9b07a) 50% 42% / 78% 14px no-repeat,
+        linear-gradient(#c9b07a, #c9b07a) 38% 50% / 12px 86% no-repeat,
+        linear-gradient(#d8c08a, #d8c08a) 68% 20% / 8px 70% no-repeat,
+        linear-gradient(rgba(14, 90, 122, 0.18), rgba(14, 90, 122, 0.18)) 18% 70% / 46% 10px no-repeat;
+    }
+    .pin { position: absolute; left: 46%; top: 36%; width: 42px; height: 42px; color: var(--coral); filter: drop-shadow(0 2px 0 rgba(43,33,24,.2)); }
+    .map-label { position: absolute; left: 0.8rem; bottom: 0.8rem; background: #fff; border-radius: 10px; padding: 0.45rem 0.65rem; font-weight: 700; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.9rem; }
+    .phone-xl { font-family: Sniglet, sans-serif; font-weight: 800; font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--sea); text-decoration: none; }
+
+    .site-footer { background: var(--deep); color: #d5e4ea; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--sun); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @keyframes drift {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-28px); }
+    }
+    @media (max-width: 800px) {
+      .hero-grid { padding-bottom: 4.5rem; }
+      .hero-grid > div { padding-right: 0; }
+      .badge { position: static; margin: 0.15rem 0 0.85rem; width: 96px; height: 96px; font-size: 0.92rem; }
+      .svc-grid, .steps, .quotes, .visit-grid { grid-template-columns: 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .paws svg:nth-child(n+5) { display: none; }
+      .wave { height: 64px; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 60% 40%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; color: #fff; }
+      .dock .go { background: var(--sea); }
+      .dock .dir { background: var(--coral); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .checks { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .w1, .w2 { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>624 14th St W, Bradenton</span>
+      <span>Tue–Fri 9–4:30 · Sat 8–4</span>
+      <a href="tel:+19414620538">Call (941) 462-0538</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span>
+          <span class="wordmark">Sandy Paws</span>
+          <small>GROOMING &amp; DOGWASH</small>
+        </span>
+        <svg class="paw" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#visit">Every visit</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#visit-us">Hours &amp; map</a>
+        <a class="btn btn-primary" href="tel:+19414620538">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="paws" aria-hidden="true">
+        <svg style="left:6%; bottom:18%; transform:rotate(-18deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="left:18%; bottom:38%; width:28px; height:28px; transform:rotate(8deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="left:32%; top:22%; transform:rotate(-12deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="left:48%; top:12%; width:26px; height:26px; transform:rotate(16deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="right:28%; top:28%; transform:rotate(-8deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="right:16%; top:14%; width:30px; height:30px; transform:rotate(20deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+        <svg style="right:6%; bottom:30%; transform:rotate(-14deg)" viewBox="0 0 32 32"><circle cx="10" cy="10" r="3" fill="#F6B93B"/><circle cx="16" cy="7" r="3" fill="#F6B93B"/><circle cx="22" cy="10" r="3" fill="#F6B93B"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="#B23A22"/></svg>
+      </div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="wordmark" style="color:var(--sea); font-size:2rem">Sandy Paws</p>
+          <p style="font-weight:700; letter-spacing:0.16em; font-size:0.78rem; margin:0.15rem 0 0.8rem">GROOMING &amp; DOGWASH</p>
+          <p class="eyebrow">DOWNTOWN BRADENTON · SINCE 2010</p>
+          <h1 id="hero-heading">Great grooming at great prices!</h1>
+          <div class="badge">OPEN<br>TUE–SAT</div>
+          <p class="hero-lead">Full-service washes, de-shedding and grooming at 624 14th Street West. Call ahead to book your appointment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414620538">Call to book · (941) 462-0538</a>
+            <a class="btn btn-coral" href="https://www.google.com/maps/search/?api=1&amp;query=Sandy+Paws+Grooming+%26+Dogwash+624+14th+Street+West%2C+Bradenton%2C+FL+34205" target="_blank" rel="noopener">Get directions</a>
+          </div>
+          <p class="meta-row">
+            <span>Tue–Fri 9–4:30 · Sat 8–4</span>
+            <span>Nextdoor Neighborhood Favorite 2021–2024</span>
+          </p>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="w2" fill="#0E5A7A" opacity="0.35" d="M0 60 Q180 20 360 60 T720 60 T1080 60 T1440 60 V120 H0 Z"/>
+        <path class="w1" fill="#0E5A7A" d="M0 78 Q180 40 360 78 T720 78 T1080 78 T1440 78 V120 H0 Z"/>
+      </svg>
+    </section>
+
+    <section class="block" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Our services</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="20" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="22" cy="20" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            <h3>Full Service Wash</h3>
+            <p>Like a visit to the spa! We massage natural shampoo deep into the coat, then dry, trim nails and clean ears.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 8 c6 2 8 8 8 8 s2-6 8-8 c-2 8-4 12-8 16 c-4-4-6-8-8-16 Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 24 h12" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            <h3>Professional De-Shed</h3>
+            <p>Constantly cleaning up hair? Our de-shedding can remove 90% of the dull, dead under-coat. Includes bath, warm dry, nails and ears.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6 h4 l2 6 h6 l-2 14 H12 Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 6 V4 M18 6 V4" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+            <h3>Full Service Grooming</h3>
+            <p>A sanitary shave and style, cut to your choice. Every groom includes bath, dry, nail trimming and ear cleaning.</p>
+          </article>
+        </div>
+        <p class="price-line">Please call for our affordable pricing. <a href="tel:+19414620538">Call</a></p>
+        <p class="status">Self-serve tubs are currently unavailable — grooming is by appointment.</p>
+      </div>
+    </section>
+
+    <section class="block" id="visit" aria-labelledby="visit-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="visit-heading">What every pup gets</h2>
+        <ul class="checks">
+          <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>Raised tubs with gentle stairs or ramp</li>
+          <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>Warm water</li>
+          <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>All-natural shampoos and conditioners</li>
+          <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>Professional air dryers</li>
+          <li><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>Expert nail trimming and grinding</li>
+        </ul>
+        <p class="instore"><strong>In store:</strong> natural flea &amp; tick control (food-grade diatomaceous earth) and raw dog food.</p>
+      </div>
+    </section>
+
+    <section class="block band" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="how-heading">Booking is easy</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">01</div>
+            <h3>Call ahead</h3>
+            <p>(941) 462-0538, Tue–Sat.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">02</div>
+            <h3>Drop off</h3>
+            <p>624 14th Street West, downtown Bradenton.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">03</div>
+            <h3>Pick up a happy dog</h3>
+            <p>Clean, dry, nails trimmed, ears cleaned.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">The dog whisperers</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <svg class="corner" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>Sandy Paws in downtown Bradenton. I call them the dog whisperers. Clean, friendly, reasonably priced and the grooming is excellent!</p>
+            <footer>H.G. · Bradenton · Nextdoor, Oct 2025</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="corner" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>Our old and blind Chihuahua Cody has been going for years and Jeff and staff take such good care of Cody and he looks, smells and feels absolutely wonderful!</p>
+            <footer>J.O. · Bradenton · Nextdoor, Jun 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <svg class="corner" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>
+            <p>the caring and the price!!</p>
+            <footer>V.G. · Bradenton · Nextdoor, Jun 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2021, 2022, 2023 and 2024.</p>
+      </div>
+    </section>
+
+    <section class="block" id="visit-us" aria-labelledby="visit-us-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="visit-us-heading">Come see us</h2>
+        <div class="visit-grid">
+          <div class="panel">
+            <dl>
+              <div>
+                <dt>Address</dt>
+                <dd>624 14th Street West, Bradenton, FL 34205</dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19414620538">(941) 462-0538</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:jeffplittle@gmail.com">jeffplittle@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Booking</dt>
+                <dd>Call ahead</dd>
+              </div>
+            </dl>
+            <table class="hours">
+              <caption class="sec-num" style="caption-side:top; text-align:left; margin:0.9rem 0 0.3rem">Hours</caption>
+              <tbody>
+                <tr data-day="1" class="closed"><th scope="row">Monday</th><td>Closed</td></tr>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>9:00 AM–4:30 PM</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>9:00 AM–4:30 PM</td></tr>
+                <tr data-day="4"><th scope="row">Thursday</th><td>9:00 AM–4:30 PM</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>9:00 AM–4:30 PM</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>8:00 AM–4:00 PM</td></tr>
+                <tr data-day="0" class="closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+            <p class="phone-xl" style="margin-top:0.8rem"><a href="tel:+19414620538">(941) 462-0538</a></p>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19414620538">Call</a>
+              <a class="btn btn-coral" href="https://www.google.com/maps/search/?api=1&amp;query=Sandy+Paws+Grooming+%26+Dogwash+624+14th+Street+West%2C+Bradenton%2C+FL+34205" target="_blank" rel="noopener">Directions</a>
+              <a class="btn btn-ghost" href="mailto:jeffplittle@gmail.com?subject=Grooming%20appointment">Email</a>
+            </div>
+            <p style="margin-top:0.8rem">
+              <a href="https://nextdoor.com/pages/sandy-paws-groming-and-dogwash-bradenton-fl/" target="_blank" rel="noopener">See us on Nextdoor</a>
+              · <a href="https://www.facebook.com/selfdogwash1" target="_blank" rel="noopener">Facebook</a>
+            </p>
+          </div>
+          <a class="minimap" href="https://www.google.com/maps/search/?api=1&amp;query=Sandy+Paws+Grooming+%26+Dogwash+624+14th+Street+West%2C+Bradenton%2C+FL+34205" target="_blank" rel="noopener">
+            <span class="streets" aria-hidden="true"></span>
+            <svg class="pin" viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><circle cx="16" cy="7" r="3" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/><ellipse cx="16" cy="20" rx="7" ry="6" fill="currentColor"/></svg>
+            <span class="map-label">624 14th Street West<br>Open in Google Maps</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Sandy Paws Grooming &amp; Dogwash · 624 14th Street West, Bradenton, FL 34205 · <a href="tel:+19414620538">(941) 462-0538</a></p>
+      <p><a href="https://nextdoor.com/pages/sandy-paws-groming-and-dogwash-bradenton-fl/" target="_blank" rel="noopener">Nextdoor</a> · <a href="https://www.facebook.com/selfdogwash1" target="_blank" rel="noopener">Facebook</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414620538">Call</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Sandy+Paws+Grooming+%26+Dogwash+624+14th+Street+West%2C+Bradenton%2C+FL+34205">Directions</a>
+  </div>
+  <script>
+    (function () {
+      var day = new Date().getDay();
+      var row = document.querySelector('tr[data-day="' + day + '"]');
+      if (row) row.classList.add("is-today");
+    })();
+  </script>
+</body>
+</html>
