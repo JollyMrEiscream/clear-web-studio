@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Small Paul And Poseidon's Pools | Weekly Pool Service in Sarasota, FL</title>
+  <meta name="description" content="Owner-operated weekly pool cleaning and green-to-clean recovery in Sarasota. Tile, brushing, vacuum, chemistry, baskets and monthly filter cleans. Call or text Paul at (941) 350-6323.">
+  <meta name="theme-color" content="#0A2E3D">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Small Paul And Poseidon's Pools",
+    "alternateName": "SP3",
+    "telephone": "+1-941-350-6323",
+    "email": "iPaul223@icloud.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": "Sarasota",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "15:00"
+    },
+    "sameAs": "https://nextdoor.com/pages/small-paul-and-poseidons-pools-sarasota-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F3FAFB;
+      --tint: #DDF1F3;
+      --ink: #0F2730;
+      --deep: #0A2E3D;
+      --teal: #0B6E78;
+      --aqua: #7FDCE6;
+      --orange: #F26B21;
+      --orangetx: #B8460B;
+      --muted: #4E6670;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--teal); }
+    h1, h2, .wordmark, .sec-num, .pull {
+      font-family: "Baloo 2", system-ui, sans-serif;
+      font-weight: 800;
+      line-height: 1.1;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--aqua); color: var(--deep); padding: 0.6rem 1rem; z-index: 80; font-weight: 600; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--aqua); outline-offset: 3px; }
+    section { scroll-margin-top: 88px; }
+
+    .utility-bar { background: var(--deep); color: #fff; font-size: 0.9rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 600; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #cfe4e8; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.5rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: var(--deep); }
+    .brand img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; background: #fff; }
+    .wordmark { font-size: 1.15rem; max-width: 16ch; font-weight: 800; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.15rem; border-radius: 999px;
+      font-weight: 600; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--teal); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #085860; color: #fff; }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--deep); }
+    .btn-solid { background: var(--teal); color: #fff; }
+    .btn-solid:hover { background: #085860; color: #fff; }
+    .btn-ghost { background: #fff; color: var(--teal); border-color: var(--teal); }
+    .btn-ghost:hover { background: var(--teal); color: #fff; }
+    .header-inner .btn-solid { min-height: 44px; }
+
+    .hero { position: relative; color: #fff; min-height: 560px; display: flex; align-items: flex-end; }
+    .hero-bg { position: absolute; inset: 0; background: url("images/hero-pool.jpg") center/cover no-repeat; }
+    .hero-bg::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(10,46,61,.94) 0%, rgba(10,46,61,.82) 46%, rgba(10,46,61,.25) 72%, rgba(10,46,61,.12) 100%);
+    }
+    .hero-copy { position: relative; z-index: 1; padding: 3rem 0 3.4rem; max-width: 38rem; }
+    .eyebrow { color: var(--aqua); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); color: #fff; }
+    .hero-lead { margin: 0.8rem 0 1.1rem; max-width: 42ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.92rem; }
+    .wave { position: relative; z-index: 1; display: block; margin-top: -1px; }
+    .wave svg { width: 100%; height: 64px; display: block; }
+
+    section.block { padding: 3rem 0; }
+    .tint { background: var(--tint); }
+    .sec-num { color: var(--teal); font-size: 1rem; margin: 0 0 0.25rem; font-weight: 600; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); color: var(--deep); margin-bottom: 0.8rem; }
+    .lead { margin-bottom: 1rem; max-width: 62ch; }
+    .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1.2rem; list-style: none; padding: 0; margin: 0; }
+    .checks li { display: flex; gap: 0.65rem; align-items: flex-start; background: #fff; border-radius: 12px; padding: 0.65rem 0.75rem; font-weight: 600; }
+    .tick {
+      flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: var(--aqua);
+      color: var(--deep); display: grid; place-items: center; font-family: "Baloo 2", sans-serif; font-size: 0.95rem;
+    }
+    .pull { color: var(--orangetx); font-size: clamp(1.35rem, 2.5vw, 1.8rem); margin-top: 1.1rem; max-width: 28ch; }
+    .pull span { display: block; font-family: Inter, sans-serif; font-weight: 600; font-size: 1rem; color: var(--muted); margin-top: 0.25rem; }
+
+    .ba { position: relative; aspect-ratio: 960 / 473; border-radius: 16px; overflow: hidden; --p: 54%; background: var(--deep); }
+    .ba-layer { position: absolute; inset: 0; background-image: url("images/green-slider.jpg"); background-repeat: no-repeat; background-size: 200% 100%; }
+    .ba-after { background-position: right center; }
+    .ba-before { background-position: left center; clip-path: inset(0 calc(100% - var(--p)) 0 0); }
+    .ba-handle { position: absolute; top: 0; bottom: 0; left: var(--p); width: 3px; background: #fff; transform: translateX(-50%); pointer-events: none; }
+    .ba-handle::after {
+      content: "↔"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 40px; height: 40px; border-radius: 50%; background: var(--orange); color: #fff;
+      display: grid; place-items: center; font-weight: 700; border: 3px solid #fff;
+    }
+    .ba input[type="range"] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+    .ba-tags { position: absolute; left: 0.6rem; right: 0.6rem; top: 0.6rem; display: flex; justify-content: space-between; pointer-events: none; }
+    .ba-tags span { background: var(--deep); color: #fff; font-size: 0.78rem; font-weight: 600; padding: 0.2rem 0.45rem; border-radius: 6px; }
+    .ba-tags .after { background: var(--orange); }
+    .pairs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 0.9rem; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+    .half { min-height: 160px; border-radius: 12px; background-size: 200% 100%; background-repeat: no-repeat; position: relative; }
+    .half span { position: absolute; left: 0.45rem; bottom: 0.45rem; background: var(--deep); color: #fff; font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.4rem; border-radius: 5px; }
+    .half.after span { background: var(--orange); }
+    .seq { margin-top: 0.9rem; }
+    .seq img { width: 100%; border-radius: 12px; }
+    .seq figcaption { margin-top: 0.35rem; font-weight: 600; }
+    .green-cta { margin-top: 1rem; }
+
+    .pool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .pool-grid figure { margin: 0; }
+    .pool-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; }
+    .pool-grid figcaption { margin-top: 0.3rem; font-weight: 600; font-size: 0.92rem; }
+
+    .band { background: var(--deep); color: #fff; padding: 3rem 0; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--orange); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step { border: 1px solid rgba(127, 220, 230, 0.35); border-radius: 14px; padding: 1rem; }
+    .step .num { font-family: "Baloo 2", sans-serif; color: var(--orange); font-size: 1.7rem; }
+    .step h3 { margin: 0.15rem 0 0.3rem; color: #fff; font-family: Inter, sans-serif; font-weight: 600; font-size: 1.05rem; }
+    .step p { color: #d5e8ee; }
+
+    .about { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 1.3rem; align-items: center; }
+    .about img { width: min(100%, 280px); margin-inline: auto; border-radius: 16px; }
+
+    .reviews { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .reviews blockquote { margin: 0; background: #fff; border-radius: 14px; padding: 1rem; }
+    .reviews footer { margin-top: 0.65rem; color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+    .fave { margin-top: 0.9rem; font-weight: 600; }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem;
+      background: #fff; border-radius: 16px; padding: 1.3rem;
+    }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "Baloo 2", sans-serif; font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--teal); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--deep); color: #e5f4f6; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--aqua); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-bg::after { background: rgba(10, 46, 61, 0.72); }
+      .checks, .reviews, .steps, .about, .contact-grid, .pool-grid { grid-template-columns: 1fr; }
+      .pool-grid { grid-template-columns: 1fr 1fr; }
+      .pairs { grid-template-columns: 1fr; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; color: #fff; }
+      .dock .go { background: var(--teal); }
+      .dock .text { background: var(--deep); color: var(--orange); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2.2rem; }
+      .checks, .pool-grid, .pair { grid-template-columns: 1fr; }
+      .pair .half { min-height: 200px; }
+      .utility-bar { font-size: 0.78rem; }
+      .wordmark { font-size: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Pool service · Sarasota · Owner-operated</span>
+      <a href="tel:+19413506323">Call or text (941) 350-6323</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.jpg" alt="Poseidon mascot with a trident and pool net" width="900" height="675">
+        <span class="wordmark">Small Paul &amp; Poseidon's Pools</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#weekly">Weekly service</a>
+        <a class="nav-link" href="#green">Green-to-clean</a>
+        <a class="nav-link" href="#about">About Paul</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-solid" href="tel:+19413506323">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-bg" role="img" aria-label="Sparkling Sarasota pool and spa under a cloudy sky"></div>
+      <div class="wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekly pool service · Green-to-clean · Sarasota</p>
+          <h1 id="hero-heading">The SP3 Clean Standard.</h1>
+          <p class="hero-lead">Weekly pool care and green-to-clean recoveries in Sarasota — and the owner cleans every pool himself.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19413506323">Call or text Paul · (941) 350-6323</a>
+            <a class="btn btn-line" href="sms:+19413506323?&amp;body=Hi%20Paul%2C%20I%27d%20like%20a%20quote%20for%20my%20pool%20in%20">Text a photo of your pool</a>
+          </div>
+          <p class="meta-row">
+            <span>Mon–Fri 7–3</span>
+            <span>Nextdoor Neighborhood Favorite 2025</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+        <path d="M0 32 C 150 64 250 0 400 24 C 560 50 680 8 840 28 C 980 46 1080 16 1200 30 V64 H0 Z" fill="#F3FAFB"/>
+      </svg>
+    </div>
+
+    <section class="block tint" id="weekly" aria-labelledby="weekly-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="weekly-heading">What every weekly visit includes</h2>
+        <p class="lead">“Integrity and Communication are top priorities when achieving the 'SP3 Clean Standard'.” — Paul</p>
+        <ol class="checks">
+          <li><span class="tick" aria-hidden="true">1</span> Tile scrubbing</li>
+          <li><span class="tick" aria-hidden="true">2</span> Brushing</li>
+          <li><span class="tick" aria-hidden="true">3</span> Vacuuming</li>
+          <li><span class="tick" aria-hidden="true">4</span> Initial and final skimming</li>
+          <li><span class="tick" aria-hidden="true">5</span> Water chemistry testing</li>
+          <li><span class="tick" aria-hidden="true">6</span> Water chemistry balancing</li>
+          <li><span class="tick" aria-hidden="true">7</span> Skimmer basket cleaning</li>
+          <li><span class="tick" aria-hidden="true">8</span> Pump basket cleaning</li>
+          <li><span class="tick" aria-hidden="true">9</span> Monthly filter deep clean</li>
+          <li><span class="tick" aria-hidden="true">10</span> Monthly phosphate removal</li>
+          <li><span class="tick" aria-hidden="true">11</span> Customer support calls — anytime</li>
+        </ol>
+        <p class="pull">If You 'Splash And Dash'.. It Will NEVER Last.. <span>— Small Paul</span></p>
+      </div>
+    </section>
+
+    <section class="block" id="green" aria-labelledby="green-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="green-heading">Green-to-Clean</h2>
+        <p class="lead">From swamp to swim-ready — back to your pool in just 4 days.</p>
+        <div class="ba">
+          <div class="ba-after ba-layer"></div>
+          <div class="ba-before ba-layer"></div>
+          <div class="ba-tags" aria-hidden="true"><span>Before</span><span class="after">After</span></div>
+          <div class="ba-handle" aria-hidden="true"></div>
+          <input type="range" min="0" max="100" value="54" aria-label="Drag to compare the green pool and the clear pool" oninput="this.parentElement.style.setProperty('--p', this.value + '%')">
+        </div>
+        <div class="pairs">
+          <div class="pair">
+            <div class="half" style="background-image:url('images/green-pair.jpg'); background-position: right center;" role="img" aria-label="Before: green pool">
+              <span>Before</span>
+            </div>
+            <div class="half after" style="background-image:url('images/green-pair.jpg'); background-position: left center;" role="img" aria-label="After: clear pool">
+              <span>After</span>
+            </div>
+          </div>
+          <figure class="seq">
+            <img src="images/recovery-steps.jpg" alt="Four-step green-to-clean recovery sequence" width="1000" height="750">
+            <figcaption>A four-step recovery</figcaption>
+          </figure>
+        </div>
+        <p class="green-cta"><a class="btn btn-solid" href="sms:+19413506323?&amp;body=Hi%20Paul%2C%20my%20pool%20is%20green.%20Here%27s%20a%20photo%3A%20">Text Paul a photo of your green pool</a></p>
+      </div>
+    </section>
+
+    <section class="block tint" id="pools" aria-labelledby="pools-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="pools-heading">Pools on my route</h2>
+        <div class="pool-grid">
+          <figure>
+            <img src="images/lap-pool.jpg" alt="Long lap pool under a screen cage" width="1200" height="886">
+            <figcaption>Lap pool under a cage</figcaption>
+          </figure>
+          <figure>
+            <img src="images/freeform-pool.jpg" alt="Freeform pool with a stone deck" width="900" height="1200">
+            <figcaption>Freeform pool with a stone deck</figcaption>
+          </figure>
+          <figure>
+            <img src="images/kidney-pool.jpg" alt="Kidney-shaped pool by the water" width="900" height="1200">
+            <figcaption>Kidney pool by the water</figcaption>
+          </figure>
+          <figure>
+            <img src="images/palm-planter.jpg" alt="Pool with a palm planter" width="1200" height="681">
+            <figcaption>Pool with a palm planter</figcaption>
+          </figure>
+          <figure>
+            <img src="images/lanai-spa.jpg" alt="Lanai pool and spa" width="1200" height="675">
+            <figcaption>Lanai pool and spa</figcaption>
+          </figure>
+          <figure>
+            <img src="images/dark-to-clear.jpg" alt="The same pool, dark water beside clear water" width="1600" height="830">
+            <figcaption>Dark to clear</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="how-heading">Getting on the route</h2>
+        <div class="steps">
+          <article class="step">
+            <p class="num">01</p>
+            <h3>Call or text Paul</h3>
+            <p>Tell him your neighborhood and pool size; a photo helps.</p>
+          </article>
+          <article class="step">
+            <p class="num">02</p>
+            <h3>Quote</h3>
+            <p>Pricing that fits your pool and your budget.</p>
+          </article>
+          <article class="step">
+            <p class="num">03</p>
+            <h3>Weekly SP3 Clean</h3>
+            <p>Same guy, every visit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="about" aria-labelledby="about-heading">
+      <div class="wrap about">
+        <img src="images/paul-cartoon.jpg" alt="Cartoon of Small Paul in an orange shirt with a pool net" width="366" height="800">
+        <div>
+          <p class="sec-num">05</p>
+          <h2 id="about-heading">Meet Small Paul</h2>
+          <p>Hello my name is Paul and I built this company so I could make a living doing what I love which is being a pool tech! I have a deep understanding and appreciation for the chemistry side of being a pool tech! And since I'm a former strength and conditioning coach/nutritionist, I can also appreciate the physical side… You will never see me cleaning pools in a grumpy mood thats for sure!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="reviews">
+          <blockquote>
+            <p>If you're looking for a great pool service look no more. We have been using Paul. Small paul at poseidon pools. He owns the business and does all the work himself. Great price and always shows up. Pool never looked better.</p>
+            <footer>C.Y., Sarasota, Nextdoor, Jul 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>Great guy, awesome price. Owner does all the work.</p>
+            <footer>C.Y., Sarasota, Nextdoor, Aug 2026</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2025.</p>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">07</p>
+        <h2 id="contact-heading">Get on the route</h2>
+        <div class="contact-grid">
+          <div>
+            <a class="phone-xl" href="tel:+19413506323">(941) 350-6323</a>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19413506323">(941) 350-6323</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:iPaul223@icloud.com">iPaul223@icloud.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Fri 7 AM–3 PM</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Sarasota</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <div class="row">
+              <a class="btn btn-solid" href="tel:+19413506323">Call</a>
+              <a class="btn btn-ghost" href="sms:+19413506323?&amp;body=Hi%20Paul%2C%20I%27d%20like%20a%20quote%20for%20my%20pool%20in%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:iPaul223@icloud.com?subject=Pool%20service%20quote">Email</a>
+            </div>
+            <p><a href="https://nextdoor.com/pages/small-paul-and-poseidons-pools-sarasota-fl/" target="_blank" rel="noopener">See us on Nextdoor</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Small Paul And Poseidon's Pools · Sarasota, FL · <a href="tel:+19413506323">(941) 350-6323</a></p>
+      <p>SP3Clean.com</p>
+      <p><a href="https://nextdoor.com/pages/small-paul-and-poseidons-pools-sarasota-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p>Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19413506323">Call</a>
+    <a class="text" href="sms:+19413506323?&amp;body=Hi%20Paul%2C%20I%27d%20like%20a%20quote%20for%20my%20pool%20in%20">Text</a>
+  </nav>
+</body>
+</html>

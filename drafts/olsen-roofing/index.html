@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olsen Roofing | Licensed Roofer in Venice, FL — Shingle, Metal, Tile &amp; Flat</title>
+  <meta name="description" content="Erik L. Olsen, Florida certified roofing contractor CCC057816. New roofs and repairs — shingle, metal, tile and flat — across Sarasota, Charlotte and Manatee counties. Free estimates: (941) 493-6903.">
+  <meta name="theme-color" content="#23272D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Olsen Roofing",
+    "telephone": "+1-941-493-6903",
+    "email": "Eolsenroofing@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Venice",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Sarasota County", "Charlotte County", "Manatee County"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    "sameAs": "https://nextdoor.com/pages/olsen-roofing-venice-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F7F3EE;
+      --tint: #EDE4D9;
+      --ink: #22262B;
+      --char: #23272D;
+      --terra: #A3401F;
+      --sand: #E9C9A3;
+      --muted: #5F5A55;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Open Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--terra); }
+    h1, h2, .wordmark, .sec-num, .license-pill strong {
+      font-family: "Roboto Slab", Georgia, serif;
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sand); color: var(--char); padding: 0.6rem 1rem; z-index: 80; font-weight: 600; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--sand); outline-offset: 3px; }
+    section { scroll-margin-top: 88px; }
+
+    .utility-bar { background: var(--char); color: #fff; font-size: 0.9rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 600; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #e2d8cc; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.65rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; color: var(--char); }
+    .brand svg { width: 42px; height: 28px; }
+    .wordmark { font-size: 1.15rem; letter-spacing: 0.04em; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.15rem; border-radius: 8px;
+      font-weight: 600; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--terra); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #8a3519; color: #fff; }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--char); }
+    .btn-solid { background: var(--terra); color: #fff; }
+    .btn-solid:hover { background: #8a3519; color: #fff; }
+    .btn-ghost { background: transparent; color: var(--char); border-color: var(--char); }
+    .btn-ghost:hover { background: var(--char); color: #fff; }
+    .header-inner .btn-solid { min-height: 44px; }
+
+    .hero { background: var(--char); color: #fff; }
+    .hero-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; min-height: 540px; }
+    .hero-copy { padding: 2.5rem 0 2.2rem; }
+    .eyebrow { color: var(--sand); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 2.9rem); color: #fff; }
+    .hero-lead { max-width: 46ch; margin: 0.85rem 0 1rem; }
+    .license-pill {
+      display: inline-block; border: 2px solid var(--sand); color: var(--sand);
+      border-radius: 999px; padding: 0.55rem 0.9rem; margin-bottom: 1rem; text-decoration: none; max-width: 100%;
+    }
+    .license-pill strong { display: block; font-size: 0.98rem; color: var(--sand); }
+    .license-pill span { display: block; font-size: 0.82rem; color: #fff; margin-top: 0.15rem; }
+    .license-pill em { font-style: normal; font-size: 0.78rem; text-decoration: underline; }
+    .license-pill:hover { background: rgba(233, 201, 163, 0.12); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.92rem; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; min-height: 400px; }
+    .scallop {
+      height: 22px;
+      background: radial-gradient(circle at 12px 0, transparent 11px, rgba(163, 64, 31, 0.3) 12px) left bottom / 24px 22px repeat-x;
+    }
+
+    section.block { padding: 3rem 0; }
+    .tint { background: var(--tint); }
+    .sec-num { color: var(--terra); font-size: 0.95rem; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--char); margin-bottom: 1rem; }
+    .roof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+    .roof-card { background: var(--tint); border-radius: 12px; padding: 1rem; position: relative; overflow: hidden; }
+    .roof-card.tile { background: #efe6dc; }
+    .roof-card.tile::before {
+      content: ""; position: absolute; inset: 0;
+      background: url("images/tile-roof.jpg") center/cover;
+      opacity: 0.15;
+    }
+    .roof-card > * { position: relative; }
+    .roof-card svg { width: 100%; height: 64px; color: var(--terra); margin-bottom: 0.45rem; }
+    .roof-card h3 { margin: 0 0 0.25rem; font-family: "Roboto Slab", serif; font-size: 1.15rem; }
+    .roof-card p { color: var(--muted); }
+    .note { margin-top: 0.9rem; font-weight: 600; }
+
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 1rem; }
+    .why-card { background: #fff; border-radius: 12px; padding: 1rem; border-top: 4px solid var(--terra); }
+    .why-card h3 { margin: 0 0 0.35rem; font-family: "Roboto Slab", serif; font-size: 1.1rem; }
+    .tile-photo { width: 100%; border-radius: 12px; aspect-ratio: 16 / 8; object-fit: cover; }
+    .tile-photo + p { margin-top: 0.4rem; color: var(--muted); font-weight: 600; }
+
+    .band { background: var(--char); color: #fff; padding: 3rem 0; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--sand); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step { border: 1px solid rgba(233, 201, 163, 0.4); border-radius: 12px; padding: 1rem; }
+    .step .num { font-family: "Roboto Slab", serif; color: var(--sand); font-size: 1.5rem; }
+    .step h3 { margin: 0.15rem 0 0.3rem; color: #fff; font-family: "Open Sans", sans-serif; font-weight: 600; font-size: 1.05rem; }
+    .step p { color: #efe6dc; }
+
+    .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .reviews blockquote { margin: 0; background: #fff; border-radius: 12px; padding: 1rem; }
+    .reviews footer { margin-top: 0.65rem; color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+    .fave { margin-top: 0.9rem; font-weight: 600; }
+    .areas { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
+    .areas li { background: var(--tint); border-radius: 999px; padding: 0.45rem 0.85rem; font-weight: 600; }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.2rem;
+      background: #fff; border-radius: 14px; padding: 1.3rem;
+    }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); }
+    .phone-xl { font-family: "Roboto Slab", serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--terra); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.6rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--char); color: #f3ece4; text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--sand); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .roof-grid, .why-grid, .steps, .reviews, .contact-grid { grid-template-columns: 1fr; }
+      .roof-grid { grid-template-columns: 1fr 1fr; }
+      .hero-photo { order: -1; }
+      .hero-photo img { aspect-ratio: 3 / 2; min-height: 0; height: auto; }
+      .hero-copy { padding-top: 1.4rem; }
+      .license-pill { display: block; }
+      nav.site-nav .nav-link { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; }
+      .dock .go { background: var(--terra); color: #fff; }
+      .dock .text { background: var(--bg); color: var(--char); border-top: 2px solid var(--char); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .roof-grid { grid-template-columns: 1fr; }
+      .lic-chip { display: none; }
+      .utility-bar { font-size: 0.78rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Roofing · Venice · Sarasota · Charlotte · Manatee</span>
+      <a class="lic-chip" href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">Lic. CCC057816</a>
+      <a href="tel:+19414936903">Call (941) 493-6903</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 64 40" aria-hidden="true">
+          <path d="M4 28 L32 8 L60 28" fill="none" stroke="#A3401F" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M14 28 V36 H50 V28" fill="none" stroke="#23272D" stroke-width="3"/>
+        </svg>
+        <span class="wordmark">Olsen Roofing</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#roofing">Roofing</a>
+        <a class="nav-link" href="#why">Why Olsen</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-solid" href="tel:+19414936903">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Shingle · Metal · Tile · Flat · Venice</p>
+          <h1 id="hero-heading">Hire local. New roofs and repairs from Erik L. Olsen.</h1>
+          <p class="hero-lead">Shingle, metal, tile and flat roofing across Sarasota, Charlotte and Manatee counties — and when the job's done, we're still in town to answer your call.</p>
+          <a class="license-pill" href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">
+            <strong>Florida Certified Roofing Contractor · CCC057816</strong>
+            <span>Current, Active through 08/31/2028</span>
+            <em>Verify on DBPR</em>
+          </a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414936903">Free estimate · (941) 493-6903</a>
+            <a class="btn btn-line" href="sms:+19414936903?&amp;body=Hi%20Erik%2C%20I%27d%20like%20a%20free%20roof%20estimate%20in%20">Text a photo of your roof</a>
+          </div>
+          <p class="meta-row">
+            <span>Mon–Fri 9–5</span>
+            <span>Nextdoor Neighborhood Favorite 2024 &amp; 2022</span>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="images/hero-sign.jpg" alt="Olsen Roofing yard sign in front of a Florida tile-roof home" width="1280" height="854">
+        </div>
+      </div>
+      <div class="scallop" aria-hidden="true"></div>
+    </section>
+
+    <section class="block tint" id="roofing" aria-labelledby="roofing-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="roofing-heading">Roofs we install and repair</h2>
+        <div class="roof-grid">
+          <article class="roof-card">
+            <svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 50 L60 14 L112 50"/>
+              <path d="M24 44 h72 M28 50 h64 M32 56 h56"/>
+            </svg>
+            <h3>Shingle</h3>
+            <p>Architectural shingle re-roofs and repairs.</p>
+          </article>
+          <article class="roof-card">
+            <svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 50 L60 16 L112 50"/>
+              <path d="M30 40 V54 M46 32 V54 M60 26 V54 M74 32 V54 M90 40 V54"/>
+            </svg>
+            <h3>Metal</h3>
+            <p>Standing-seam and panel metal roofs.</p>
+          </article>
+          <article class="roof-card tile">
+            <svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 48 L60 16 L112 48"/>
+              <path d="M28 46c6-6 10-6 16 0s10 6 16 0 10-6 16 0 10 6 16 0"/>
+              <path d="M28 54c6-6 10-6 16 0s10 6 16 0 10-6 16 0 10 6 16 0"/>
+            </svg>
+            <h3>Tile</h3>
+            <p>Concrete and clay tile, the Florida classic.</p>
+          </article>
+          <article class="roof-card">
+            <svg viewBox="0 0 120 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M10 36 H110"/>
+              <path d="M16 36 V54 H104 V36"/>
+              <path d="M10 36 L16 28 H104 L110 36"/>
+            </svg>
+            <h3>Flat</h3>
+            <p>Low-slope and flat roof systems.</p>
+          </article>
+        </div>
+        <p class="note">New roofs, re-roofs and repairs. Free estimates.</p>
+      </div>
+    </section>
+
+    <section class="block" id="why" aria-labelledby="why-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="why-heading">Why neighbors hire local</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <h3>Licensed in Florida</h3>
+            <p>Certified Roofing Contractor CCC057816 — verify it on the state's site. <a href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">Verify on DBPR</a>.</p>
+          </article>
+          <article class="why-card">
+            <h3>Still in town</h3>
+            <p>When the job's done we're still in town to answer your phone calls.</p>
+          </article>
+          <article class="why-card">
+            <h3>Constant communication</h3>
+            <p>We stay in touch until the job is done.</p>
+          </article>
+        </div>
+        <img class="tile-photo" src="images/tile-roof.jpg" alt="Close-up of a white concrete tile roof" width="1280" height="854">
+        <p>Tile roofing, the Florida classic.</p>
+      </div>
+    </section>
+
+    <section class="band" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="how-heading">Your free estimate</h2>
+        <div class="steps">
+          <article class="step">
+            <p class="num">01</p>
+            <h3>Call or text</h3>
+            <p>(941) 493-6903 — a photo of the roof helps.</p>
+          </article>
+          <article class="step">
+            <p class="num">02</p>
+            <h3>Free estimate</h3>
+            <p>Erik L. Olsen looks at the roof and gives you a written price.</p>
+          </article>
+          <article class="step">
+            <p class="num">03</p>
+            <h3>Roof done right</h3>
+            <p>And we're still in town after.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block tint" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="reviews">
+          <blockquote>
+            <p>Olsen Roofing replaced my roof last July.  They did nice work.  Very reasonable!</p>
+            <footer>D.P., Nokomis, Nextdoor, Jun 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>He replaced my roof in 2022. He's local family wonderful. Family owned and local.</p>
+            <footer>M.W., Venice, Nextdoor, Jun 2026</footer>
+          </blockquote>
+          <blockquote>
+            <p>Does a good job.</p>
+            <footer>J.T., Englewood, Nextdoor, Jul 2026</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2024 and 2022.</p>
+      </div>
+    </section>
+
+    <section class="block" id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="area-heading">Where we work</h2>
+        <ul class="areas">
+          <li>Sarasota County</li>
+          <li>Charlotte County</li>
+          <li>Manatee County</li>
+          <li>Based in Venice</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block tint" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="contact-heading">Get a free estimate</h2>
+        <div class="contact-grid">
+          <div>
+            <a class="phone-xl" href="tel:+19414936903">(941) 493-6903</a>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19414936903">(941) 493-6903</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:Eolsenroofing@gmail.com">Eolsenroofing@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Fri 9 AM–5 PM</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Sarasota, Charlotte &amp; Manatee counties</dd>
+              </div>
+              <div>
+                <dt>License</dt>
+                <dd><a href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">Certified Roofing Contractor CCC057816 — Verify on DBPR</a></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <div class="row">
+              <a class="btn btn-solid" href="tel:+19414936903">Call</a>
+              <a class="btn btn-ghost" href="sms:+19414936903?&amp;body=Hi%20Erik%2C%20I%27d%20like%20a%20free%20roof%20estimate%20in%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:Eolsenroofing@gmail.com?subject=Free%20roof%20estimate">Email</a>
+            </div>
+            <p><a href="https://nextdoor.com/pages/olsen-roofing-venice-fl/" target="_blank" rel="noopener">See us on Nextdoor</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Olsen Roofing · Venice, FL · <a href="tel:+19414936903">(941) 493-6903</a> · Florida Certified Roofing Contractor <a href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">CCC057816</a></p>
+      <p>Current, Active through 08/31/2028 · <a href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/Results?LicNbr=CCC057816&amp;SearchType=SearchByLicenseNumber" target="_blank" rel="noopener">Verify on DBPR</a></p>
+      <p><a href="https://nextdoor.com/pages/olsen-roofing-venice-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p>Draft site by Clear Web Studio</p>
+    </div>
+  </footer>
+  <nav class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414936903">Call</a>
+    <a class="text" href="sms:+19414936903?&amp;body=Hi%20Erik%2C%20I%27d%20like%20a%20free%20roof%20estimate%20in%20">Text</a>
+  </nav>
+</body>
+</html>
