@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Axis Physical Therapy | Tim Loy, PT | Osprey, FL</title>
+  <meta name="description" content="Physical therapy in Osprey, FL with Tim Loy, PT: balance and walking, strength, flexibility, and therapy after injury or surgery. Call (941) 918-2947 to schedule.">
+  <meta name="theme-color" content="#1A2240">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PhysicalTherapy",
+    "name": "Axis Physical Therapy",
+    "legalName": "Tim Loy Physical Therapy, PLLC",
+    "telephone": "+1-941-918-2947",
+    "email": "axisphysicaltherapy@yahoo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Osprey",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Osprey, FL", "Nokomis, FL", "Venice, FL", "Sarasota, FL"],
+    "sameAs": ["https://nextdoor.com/pages/axis-physical-therapy-osprey-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --white: #FFFFFF;
+      --cloud: #F4F6FB;
+      --ink: #1A2240;
+      --blue: #2A3C96;
+      --ember: #B5470F;
+      --glow: #F2A65A;
+      --muted: #556070;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Nunito Sans", system-ui, sans-serif;
+      background: var(--white);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    img, svg { max-width: 100%; height: auto; display: block; }
+    a { color: var(--blue); }
+    a:hover { color: var(--ember); }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.15; margin: 0; font-weight: 700; }
+    h2 { color: var(--blue); }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--blue); color: var(--white); padding: 0.6rem 1rem; font-weight: 700; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--glow); outline-offset: 3px; }
+
+    .utility-bar { background: var(--ink); color: var(--white); font-size: 0.95rem; font-weight: 600; padding: 0.5rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--glow); text-decoration: none; font-weight: 700; }
+    .utility-bar a:hover { color: var(--white); }
+
+    .site-header { background: var(--white); border-bottom: 1px solid #e4e8f2; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.6rem 0; flex-wrap: wrap; }
+    .wordmark { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.05rem; }
+    .wordmark:hover { color: var(--ink); }
+    .wordmark img { width: 48px; height: 48px; object-fit: contain; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1rem; min-height: 48px; display: inline-flex; align-items: center; }
+    nav.site-nav a.nav-link:hover { color: var(--ember); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.75rem 1.2rem; border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: inherit; font-size: 1rem; }
+    .btn-primary { background: var(--blue); color: var(--white); min-height: 56px; }
+    .btn-primary:hover { background: #22327c; color: var(--white); }
+    .btn-line { background: transparent; color: var(--blue); border-color: var(--blue); }
+    .btn-line:hover { background: var(--blue); color: var(--white); }
+    .header-inner .btn-primary { min-height: 48px; }
+
+    .hero { padding: 2.4rem 0 2rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.5rem; align-items: center; }
+    .eyebrow { color: var(--ember); font-weight: 700; letter-spacing: 0.14em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.05rem, 4vw, 3rem); font-weight: 500; color: var(--ink); margin-bottom: 0.75rem; }
+    .hero-lead { max-width: 42ch; margin-bottom: 1.15rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1.1rem; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 0.95rem; font-size: 0.95rem; margin: 0; }
+    .hero-visual { position: relative; min-height: 320px; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, var(--cloud), transparent 68%); }
+    .orbit { position: absolute; width: min(100%, 340px); height: auto; }
+    .spiral {
+      position: absolute; width: 28px; height: 28px; border-radius: 50%; right: 18%; top: 18%;
+      background: conic-gradient(from 30deg, var(--glow), var(--ember), transparent 72%);
+      -webkit-mask: radial-gradient(circle, transparent 42%, #000 46%, #000 72%, transparent 76%);
+      mask: radial-gradient(circle, transparent 42%, #000 46%, #000 72%, transparent 76%);
+    }
+    .hero-visual img { position: relative; width: min(220px, 70%); height: auto; z-index: 1; }
+
+    section { padding: 3rem 0; scroll-margin-top: 88px; }
+    .sec-num { font-family: Fraunces, Georgia, serif; font-weight: 700; color: var(--blue); letter-spacing: 0.06em; margin: 0 0 0.3rem; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 46ch; margin-bottom: 1.1rem; }
+    .focus { background: var(--cloud); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; }
+    .card { background: var(--white); border-radius: 16px; padding: 1.15rem 1.15rem 1.2rem; box-shadow: 0 8px 24px rgba(26, 34, 64, 0.04); }
+    .card .ico { width: 36px; height: 36px; color: var(--blue); margin-bottom: 0.55rem; }
+    .card h3 { font-family: "Nunito Sans", sans-serif; font-size: 1.12rem; font-weight: 700; color: var(--ink); margin-bottom: 0.3rem; }
+    .note { margin-top: 1rem; color: var(--muted); }
+
+    .visits { background: var(--ink); color: var(--white); }
+    .visits h2 { color: var(--white); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .step { background: rgba(255,255,255,0.04); border: 1px solid rgba(242, 166, 90, 0.35); border-radius: 16px; padding: 1.1rem; }
+    .step .num { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 2rem; color: var(--glow); line-height: 1; }
+    .step h3 { color: var(--white); font-size: 1.3rem; margin: 0.4rem 0; }
+    .step p { color: rgba(255,255,255,0.9); }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .quote { margin: 0; background: var(--white); border-left: 4px solid var(--blue); padding: 1.1rem 1.15rem; border-radius: 0 12px 12px 0; }
+    .quote p { font-size: 1.05rem; }
+    .quote figcaption { margin-top: 0.75rem; color: var(--muted); font-weight: 700; font-size: 0.95rem; }
+    .plain-note { margin-top: 1rem; font-weight: 700; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.4rem; background: var(--cloud); border-radius: 18px; padding: 1.4rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.85rem; }
+    dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.12rem 0 0; font-weight: 700; }
+    dd a { text-decoration: none; }
+    dd a:hover { text-decoration: underline; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .phone-xl { font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: clamp(1.5rem, 2.8vw, 2rem); color: var(--ink); text-decoration: none; }
+    .phone-xl:hover { color: var(--ember); }
+    .row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .privacy { margin-top: 0.9rem; color: var(--muted); font-size: 0.95rem; }
+
+    .site-footer { background: var(--ink); color: rgba(255,255,255,0.9); text-align: center; padding: 2rem 0 2.3rem; }
+    .site-footer a { color: var(--glow); }
+    .site-footer a:hover { color: var(--white); }
+    .site-footer p { margin: 0.4rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services-grid, .steps, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .hero-visual { order: -1; min-height: 200px; }
+      .hero-visual img { width: 140px; }
+      .orbit { width: 220px; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 65% 35%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; color: var(--white); }
+      .dock a:hover { color: var(--white); }
+      .dock .go { background: var(--blue); }
+      .dock .alt { background: var(--ink); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.85rem; }
+      .orbit ellipse { stroke-dasharray: 390 900; }
+      .hero-actions .btn { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Axis Physical Therapy · Osprey, FL</span>
+      <a href="tel:+19419182947">(941) 918-2947</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <img src="images/logo.png" width="400" height="400" alt="Axis Physical Therapy logo">
+        Axis Physical Therapy
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#focus">Focus areas</a>
+        <a class="nav-link" href="#visits">Your visits</a>
+        <a class="nav-link" href="#neighbors">Neighbors</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19419182947">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PHYSICAL THERAPY · OSPREY, FL</p>
+          <h1 id="hero-heading">Physical therapy in Osprey, focused on you.</h1>
+          <p class="hero-lead">One practice, one therapist you'll get to know: Tim Loy, PT. Care built around who you are and what you want to get back to.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19419182947">Call to schedule</a>
+            <a class="btn btn-line" href="mailto:axisphysicaltherapy@yahoo.com?subject=Appointment%20request">Email the office</a>
+          </div>
+          <p class="hero-meta">
+            <span>Florida PT license PT23012</span>
+            <span> · </span>
+            <span>Osprey</span>
+            <span> · </span>
+            <span>Nextdoor Neighborhood Favorite 2021, 2022 &amp; 2024</span>
+          </p>
+        </div>
+        <div class="hero-visual">
+          <svg class="orbit" viewBox="0 0 340 300" aria-hidden="true">
+            <ellipse cx="170" cy="150" rx="148" ry="112" fill="none" stroke="#2A3C96" stroke-width="3"/>
+          </svg>
+          <span class="spiral" aria-hidden="true"></span>
+          <img src="images/logo.png" width="400" height="400" alt="Axis Physical Therapy logo">
+        </div>
+      </div>
+    </section>
+
+    <section class="focus" id="focus" aria-labelledby="focus-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="focus-heading">What we work on</h2>
+        <div class="services-grid">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M18 14 v6 M12 28 l6-8 6 8 M10 20 h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Balance &amp; walking</h3>
+            <p>Therapy that works on balance and gait.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 16h6v4H8zM22 16h6v4h-6zM14 18h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M11 16 V12 M25 16 V12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Strength</h3>
+            <p>Exercises matched to you.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M10 24c4-8 8-10 16-8 M12 16c3 2 5 6 4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="24" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Flexibility &amp; mobility</h3>
+            <p>Range-of-motion and stretching work.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="14" width="22" height="9" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M18 14 v9 M14 18.5 h8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>After an injury</h3>
+            <p>Physical therapy as part of your recovery.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="9" y="7" width="18" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13h10M13 18h10M13 23h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>After surgery</h3>
+            <p>Post-operative physical therapy, as prescribed or referred.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="7" y="8" width="22" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 14h22M14 8v6M22 8v6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Ongoing conditions</h3>
+            <p>Therapy for chronic pain and long-term conditions.</p>
+          </article>
+        </div>
+        <p class="note">Not sure if physical therapy is right for you? Call and ask. Your doctor can also help you decide.</p>
+      </div>
+    </section>
+
+    <section class="visits" id="visits" aria-labelledby="visits-heading">
+      <div class="wrap">
+        <h2 id="visits-heading">What to expect</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3>Call</h3>
+            <p>Call (941) 918-2947 to ask questions or schedule.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3>Your first visit</h3>
+            <p>We talk about you: your injury or condition, your daily life and your goals.</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3>A plan that changes with you</h3>
+            <p>Therapy is adjusted as your needs change.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="neighbors" aria-labelledby="neighbors-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="neighbors-heading">What neighbors say</h2>
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>
+              <p>Tim Loy is fantastic! He is better then anyone I know at multi-tasking. When you think he is not watching you he is!</p>
+            </blockquote>
+            <figcaption>R.L. · Nokomis · Nextdoor, May 2026</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              <p>Tim Loy, Axis physical therapy in Osprey</p>
+            </blockquote>
+            <figcaption>D.G. · Osprey · Nextdoor, Oct 2026. A neighbor's recommendation when someone asked for a PT in south Sarasota.</figcaption>
+          </figure>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2021, 2022 and 2024.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Schedule a visit</h2>
+            <p class="lede">Call the office to schedule or ask a question.</p>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19419182947">(941) 918-2947</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:axisphysicaltherapy@yahoo.com?subject=Appointment%20request">axisphysicaltherapy@yahoo.com</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Osprey, FL. Call for directions.</dd>
+              </div>
+              <div>
+                <dt>Therapist</dt>
+                <dd>Tim Loy, PT · FL license PT23012 · <a href="https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthcareProviders/LicenseVerification?LicInd=23724&amp;Procde=5501" target="_blank" rel="noopener">Verify ↗</a></dd>
+              </div>
+              <div>
+                <dt>Insurance</dt>
+                <dd>Call to ask about insurance.</dd>
+              </div>
+            </dl>
+            <p class="privacy">Please don't send medical details by email. Call the office instead.</p>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19419182947">(941) 918-2947</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19419182947">Call</a>
+              <a class="btn btn-line" href="mailto:axisphysicaltherapy@yahoo.com?subject=Appointment%20request">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Axis Physical Therapy (Tim Loy Physical Therapy, PLLC) · Osprey, FL · <a href="tel:+19419182947">(941) 918-2947</a></p>
+      <p><a href="https://nextdoor.com/pages/axis-physical-therapy-osprey-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p>This site is general information, not medical advice.</p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19419182947">Call</a>
+    <a class="alt" href="mailto:axisphysicaltherapy@yahoo.com?subject=Appointment%20request">Email</a>
+  </div>
+</body>
+</html>
