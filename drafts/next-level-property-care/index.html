@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Next Level Property Care | Landscaping, Painting &amp; Property Makeovers in Venice, FL</title>
+  <meta name="description" content="Landscaping, irrigation, painting, pressure washing, tile, fencing and driveway restoration in Venice and surrounding areas. Pre-listing makeovers for homeowners, Realtors and investors. Call (941) 468-6767.">
+  <meta name="theme-color" content="#141414">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Next Level Property Care",
+    "telephone": "+1-941-468-6767",
+    "email": "bbashaw@nextlevelpropertycare.com",
+    "logo": "images/logo.png",
+    "image": "images/hero-garage.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Venice",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Venice, FL", "Nokomis, FL", "Englewood, FL", "North Port, FL"],
+    "sameAs": "https://nextdoor.com/pages/next-level-property-care-venice-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F4F3F0;
+      --white: #FFFFFF;
+      --ink: #1A1A1A;
+      --black: #141414;
+      --red: #C8102E;
+      --redlt: #FF5A6E;
+      --steel: #B8B8B8;
+      --muted: #55534F;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--red); }
+    h1, h2, .ba-label, .step-num, .sec-num {
+      font-family: "Bebas Neue", Impact, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      line-height: 0.95;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--red); color: #fff; padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+
+    .utility-bar { background: var(--black); color: #fff; font-size: 0.88rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.15rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--white); border-bottom: 1px solid #e4e2dc; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.45rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; text-decoration: none; }
+    .brand img { height: 72px; width: 72px; border-radius: 50%; object-fit: cover; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.92rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0.7rem 1.1rem; border-radius: 6px;
+      font-weight: 700; text-decoration: none; border: 2px solid transparent;
+      font-family: inherit; cursor: pointer; font-size: 1rem;
+    }
+    .btn-primary { background: var(--red); color: #fff; min-height: 56px; }
+    .btn-primary:hover { background: #a30d25; color: #fff; }
+    .btn-line { background: transparent; color: #fff; border-color: #fff; }
+    .btn-line:hover { background: #fff; color: var(--black); }
+    .btn-ghost { background: var(--white); color: var(--ink); border-color: var(--ink); }
+    .btn-ghost:hover { background: var(--black); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { background: var(--black); color: #fff; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 2rem; align-items: center; padding: 2.4rem 0 2.6rem; }
+    .hero-logo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
+    .red-rule { display: block; width: 160px; height: 4px; background: var(--red); margin: 0.7rem 0 1rem; }
+    .eyebrow { color: var(--redlt); font-weight: 700; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); color: #fff; margin-bottom: 0.85rem; max-width: 14ch; }
+    .hero-lead { color: var(--steel); max-width: 46ch; margin-bottom: 1.15rem; }
+    .hero-lead strong { color: #fff; font-weight: 600; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--steel); font-weight: 600; font-size: 0.92rem; }
+    .hero-photo { margin: 0; }
+    .hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; }
+
+    .block { padding: 3rem 0; }
+    .sec-num { color: var(--red); font-size: 1.15rem; letter-spacing: 0.14em; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); color: var(--ink); margin-bottom: 1rem; }
+    .lede { margin-bottom: 1rem; max-width: 62ch; }
+
+    .ba { position: relative; overflow: hidden; background: #2a2a2a; --pos: 50%; border-radius: 12px; aspect-ratio: 4 / 5; width: min(100%, 640px); margin-inline: auto; }
+    .ba-layer { position: absolute; inset: 0; }
+    .ba-top { clip-path: inset(0 0 0 var(--pos)); }
+    .ba-layer img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; }
+    .ba-label {
+      position: absolute; top: 12px; z-index: 2; color: #fff; letter-spacing: 0.12em;
+      font-size: 1.35rem; padding: 0.2rem 0.5rem; pointer-events: none;
+    }
+    .ba-label-before { left: 12px; background: var(--black); }
+    .ba-label-after { right: 12px; background: var(--red); }
+    .ba-bar { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 4px; margin-left: -2px; background: var(--red); z-index: 2; pointer-events: none; }
+    .ba-bar::after {
+      content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px;
+      transform: translate(-50%, -50%); border-radius: 50%; background: var(--red);
+      box-shadow: 0 2px 8px rgba(0,0,0,.35);
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8 6 L3 12 L8 18 M16 6 L21 12 L16 18' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round'/></svg>");
+      background-repeat: no-repeat; background-position: center; background-size: 26px;
+    }
+    .ba input[type="range"] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; z-index: 3; }
+    .ba:focus-within { outline: 3px solid var(--red); outline-offset: 3px; }
+    .caption { text-align: center; font-weight: 600; margin: 0.9rem auto 0; max-width: 46ch; }
+    .after-note { text-align: center; color: var(--muted); margin: 0.7rem auto 0.9rem; max-width: 46ch; }
+    .center-btn { display: flex; justify-content: center; }
+
+    .progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; margin-top: 1.4rem; }
+    .progress figure { margin: 0; }
+    .progress img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; }
+    .progress figcaption { margin-top: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--muted); }
+
+    .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+    .card { background: var(--white); border-radius: 12px; padding: 1rem 1rem 1.1rem; }
+    .card svg { width: 32px; height: 32px; color: var(--red); margin-bottom: 0.45rem; }
+    .card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-weight: 700; }
+    .card p { color: var(--muted); }
+    .card-wide { grid-column: 1 / -1; background: var(--black); color: #fff; }
+    .card-wide p { color: var(--steel); }
+    .card-wide h3 { color: #fff; }
+    .fine { color: var(--muted); margin-top: 0.9rem; font-size: 0.92rem; }
+
+    .band { background: var(--black); color: #fff; }
+    .band h2, .band .sec-num { color: #fff; }
+    .band .sec-num { color: var(--redlt); }
+    .band-grid { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; }
+    .house { width: 92px; height: 92px; color: var(--red); }
+    .band p { color: var(--steel); max-width: 58ch; margin-bottom: 1rem; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step .step-num { color: var(--red); font-size: 2.2rem; }
+    .on-black .step-num { color: var(--redlt); }
+    .step h3 { margin: 0.2rem 0; font-size: 1.05rem; }
+    .step p { color: var(--muted); }
+    .on-black .step h3 { color: #fff; }
+    .on-black .step p { color: var(--steel); }
+
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    blockquote.review { margin: 0; background: var(--white); border-top: 4px solid var(--red); border-radius: 10px; padding: 1rem; }
+    blockquote.review footer { margin-top: 0.7rem; font-weight: 600; font-size: 0.88rem; color: var(--muted); }
+    .plain-note { margin-top: 1rem; font-weight: 600; }
+
+    .towns { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.7rem; }
+    .towns span { background: var(--white); border-radius: 999px; padding: 0.45rem 0.8rem; font-weight: 700; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; background: var(--white); border-radius: 14px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: "Bebas Neue", Impact, sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--ink); text-decoration: none; letter-spacing: 0.03em; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.7rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+    .site-footer { background: var(--black); color: var(--steel); text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer img { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 0.7rem; object-fit: cover; }
+    .site-footer a { color: #fff; }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; padding-top: 1.6rem; }
+      .hero-photo { order: 2; }
+      .hero-photo img { aspect-ratio: 4 / 5; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .steps, .quotes, .contact-grid, .band-grid, .progress { grid-template-columns: 1fr; }
+      .progress { grid-template-columns: 1fr 1fr; }
+      .band-grid { grid-template-columns: 1fr; }
+      nav.site-nav .nav-link { display: none; }
+      .ba { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 55% 45%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 700; text-decoration: none; color: #fff; }
+      .dock .go { background: var(--red); }
+      .dock .text { background: var(--black); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid, .progress { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.75rem; }
+      .hero-logo, .red-rule { width: 120px; }
+      .hero-logo { height: 120px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Property transformations · Venice &amp; surrounding areas</span>
+      <a href="tel:+19414686767">Call or text (941) 468-6767</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" alt="Next Level Property Care" width="640" height="640">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#results">Before &amp; After</a>
+        <a class="nav-link" href="#realtors">Realtors</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19414686767">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <img class="hero-logo" src="images/logo.png" alt="" width="640" height="640">
+          <span class="red-rule" aria-hidden="true"></span>
+          <p class="eyebrow">LANDSCAPING · PAINTING · PRESSURE WASHING · TILE · FENCING · VENICE, FL</p>
+          <h1 id="hero-heading">From cluttered chaos to a clean slate.</h1>
+          <p class="hero-lead">Property transformations in Venice and surrounding areas — curb appeal, pre-listing makeovers and projects of all sizes. Honest work, attention to detail, and quality craftsmanship.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414686767">Call Branden · (941) 468-6767</a>
+            <a class="btn btn-line" href="sms:+19414686767?&amp;body=Hi%20Branden%2C%20I%27d%20like%20a%20quote%20for%3A%20">Text photos of your project</a>
+          </div>
+          <p class="meta-row">
+            <span>Nextdoor Neighborhood Favorite 2023–2026</span>
+            <span>Homeowners · Realtors · Investors</span>
+          </p>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/hero-garage.jpg" alt="Finished garage with a speckled epoxy floor, white cabinets, and track lights" width="675" height="1200">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="results" aria-labelledby="results-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="results-heading">Results that speak for themselves</h2>
+        <div class="ba">
+          <div class="ba-layer">
+            <img src="images/before-garage.jpg" alt="Cluttered garage before the floor was cleared and coated" width="675" height="816">
+          </div>
+          <div class="ba-layer ba-top">
+            <img src="images/after-garage.jpg" alt="Cleared garage with a coated floor" width="675" height="1200">
+          </div>
+          <span class="ba-label ba-label-before">BEFORE</span>
+          <span class="ba-label ba-label-after">AFTER</span>
+          <span class="ba-bar" aria-hidden="true"></span>
+          <input type="range" min="0" max="100" value="50" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Compare the garage before and after. Left is before, right is after.">
+        </div>
+        <p class="caption">This garage needed some serious attention. No shortcuts, no excuses.</p>
+        <p class="after-note">Got a garage, driveway, patio, or property project you've been putting off?</p>
+        <div class="center-btn">
+          <a class="btn btn-primary" href="sms:+19414686767?&amp;body=Hi%20Branden%2C%20I%27d%20like%20a%20quote%20for%3A%20">Text photos</a>
+        </div>
+        <div class="progress">
+          <figure>
+            <img src="images/prep.jpg" alt="Garage ceiling and walls prepped before coating" width="562" height="1000">
+            <figcaption>Ceiling and walls prepped</figcaption>
+          </figure>
+          <figure>
+            <img src="images/flake.jpg" alt="Close-up of epoxy floor flakes" width="562" height="1000">
+            <figcaption>Epoxy flake close-up</figcaption>
+          </figure>
+          <figure>
+            <img src="images/floor.jpg" alt="Finished speckled epoxy garage floor" width="562" height="1000">
+            <figcaption>Finished floor</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="services" aria-labelledby="services-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="services-heading">What we do</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28 V14 M16 16 C10 16 8 10 8 8 C12 10 15 12 16 14 C17 12 20 10 24 8 C24 10 22 16 16 16 Z M8 26 h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <h3>Landscaping</h3>
+            <p>Larger landscape projects and makeovers.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 26 V12 M8 12 h8 l2-4 h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="22" cy="8" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 18 h4 M5 22 h5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Irrigation</h3>
+            <p>Sprinkler installs and repairs.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="14" width="14" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 18 h6 v-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Painting</h3>
+            <p>Interior and exterior.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 6 h8 v6 H10 Z M14 12 v4 M8 16 h12 l2 10 H6 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <h3>Pressure washing</h3>
+            <p>Houses, driveways, patios.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 6 h20 v20 H6 Z M6 13 h20 M6 20 h20 M13 6 v20 M20 6 v20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Tile installation</h3>
+            <p>Floors, showers, backsplashes.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26 V8 M12 26 V8 M18 26 V8 M24 26 V8 M6 10 h18 M6 16 h18 M6 22 h18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <h3>Fencing</h3>
+            <p>New fences and repairs.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22 L16 10 L28 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 22 h16 v4 H8 Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            <h3>Driveway restoration</h3>
+            <p>Bring tired driveways back.</p>
+          </article>
+          <article class="card card-wide">
+            <h3>Complete property transformations</h3>
+            <p>Inside and outside the home.</p>
+          </article>
+        </div>
+        <p class="fine">We no longer offer routine lawn mowing — we focus on bigger projects.</p>
+      </div>
+    </section>
+
+    <section class="block band" id="realtors" aria-labelledby="realtors-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <div class="band-grid">
+          <svg class="house" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30 V54 H8 Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M26 54 V38 H38 V54" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M44 18 h8 v14" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M44 24 h8" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+          <div>
+            <h2 id="realtors-heading">Getting a home ready to sell?</h2>
+            <p>Curb appeal, fresh paint, pressure washing, landscaping and repairs — one call before the listing photos. We work with homeowners, agents and investors throughout Venice.</p>
+            <a class="btn btn-primary" href="sms:+19414686767?&amp;body=Pre-listing%20project%3A%20">Text the address and your list</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="how-heading">How it works</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">01</div>
+            <h3>Send photos</h3>
+            <p>Call or text (941) 468-6767 with a few pictures of the project.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">02</div>
+            <h3>Detailed estimate</h3>
+            <p>A clear, quick-turnaround estimate.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">03</div>
+            <h3>Done as scheduled</h3>
+            <p>We communicate throughout and finish on schedule.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="reviews-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <p>Branden was very professional and responsive. He provided a detailed, quick turn around estimate, performed work as scheduled, and communicated throughout process. Would hire again!</p>
+            <footer>S.B. · Englewood · Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Branden does great work all around from home maintenance to lawn maintenance! Very knowledgeable and efficient. Highly recommend him!</p>
+            <footer>M.G. · Venice · Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Prompt &amp; Knowledgable and our personal favorite!</p>
+            <footer>K.R. · Venice · Nextdoor, Sep 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2026 (in 23 neighborhoods), 2025, 2024 and 2023.</p>
+      </div>
+    </section>
+
+    <section class="block" id="area" aria-labelledby="area-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="area-heading">Where we work</h2>
+        <div class="towns">
+          <span>Venice</span>
+          <span>Nokomis</span>
+          <span>Englewood</span>
+          <span>North Port</span>
+        </div>
+        <p>Venice and surrounding areas.</p>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading" style="padding-top:0">
+      <div class="wrap">
+        <p class="sec-num">07</p>
+        <div class="contact-grid">
+          <div>
+            <h2 id="contact-heading">Tell us about your project</h2>
+            <dl>
+              <div>
+                <dt>Phone (call or text)</dt>
+                <dd><a href="tel:+19414686767">(941) 468-6767</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:bbashaw@nextlevelpropertycare.com">bbashaw@nextlevelpropertycare.com</a></dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Venice &amp; surrounding areas</dd>
+              </div>
+              <div>
+                <dt>Best first step</dt>
+                <dd>Text a few photos</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19414686767">(941) 468-6767</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19414686767">Call</a>
+              <a class="btn btn-ghost" href="sms:+19414686767?&amp;body=Hi%20Branden%2C%20I%27d%20like%20a%20quote%20for%3A%20">Text</a>
+              <a class="btn btn-ghost" href="mailto:bbashaw@nextlevelpropertycare.com?subject=Project%20estimate">Email</a>
+            </div>
+            <a href="https://nextdoor.com/pages/next-level-property-care-venice-fl/" target="_blank" rel="noopener">See our projects on Nextdoor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <img src="images/logo.png" alt="" width="640" height="640">
+      <p>Next Level Property Care · Venice, FL · <a href="tel:+19414686767">(941) 468-6767</a></p>
+      <p><a href="https://nextdoor.com/pages/next-level-property-care-venice-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414686767">Call</a>
+    <a class="text" href="sms:+19414686767?&amp;body=Hi%20Branden%2C%20I%27d%20like%20a%20quote%20for%3A%20">Text</a>
+  </div>
+  <script>
+    (function () {
+      document.querySelectorAll(".ba").forEach(function (ba) {
+        var range = ba.querySelector('input[type="range"]');
+        function set(v) {
+          v = Math.max(0, Math.min(100, Number(v)));
+          ba.style.setProperty("--pos", v + "%");
+          range.setAttribute("aria-valuenow", String(Math.round(v)));
+        }
+        range.addEventListener("input", function () { set(range.value); });
+        set(range.value || 50);
+      });
+    })();
+  </script>
+</body>
+</html>
