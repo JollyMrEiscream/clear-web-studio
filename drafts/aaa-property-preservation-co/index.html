@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AAA Property Preservation Co. | Handyman, Remodels, Wells &amp; Irrigation — Bradenton FL</title>
+  <meta name="description" content="Paul Bonanza's Bradenton handyman and home repair company: kitchens and baths, remodels, windows, well pumps and irrigation — roof to driveway. Free estimates. Call (941) 321-7968.">
+  <meta name="theme-color" content="#1F3A5F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;800&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "AAA Property Preservation Co.",
+    "telephone": "+1-941-321-7968",
+    "email": "aaapropertyco@aol.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Bradenton, FL", "Palmetto, FL", "Ellenton, FL", "Manatee County, FL"],
+    "sameAs": "https://nextdoor.com/pages/aaa-property-preservation-co-bradenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F6F4EF;
+      --card: #E9E4D8;
+      --ink: #1C2430;
+      --navy: #1F3A5F;
+      --orange: #B93A0B;
+      --sun: #FDBA74;
+      --sky: #A9C4E4;
+      --muted: #5B6470;
+      --white: #fff;
+      --head: "Roboto Slab", Georgia, serif;
+      --body: "Work Sans", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--body); background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--orange); }
+    h1, h2, h3 { font-family: var(--head); font-weight: 800; line-height: 1.12; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sun); color: var(--ink); padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+    .utility-bar { background: var(--navy); color: var(--white); font-size: 0.84rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--white); font-weight: 600; text-decoration: none; }
+    .site-header { background: var(--bg); border-bottom: 1px solid #ddd6c8; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; }
+    .wordmark { text-decoration: none; color: var(--white); background: var(--navy); padding: 0.35rem 0.7rem 0.4rem; border-radius: 8px; line-height: 1; }
+    .wordmark strong { font-family: var(--head); font-weight: 800; font-size: 1.45rem; color: var(--sun); letter-spacing: 0.04em; display: block; }
+    .wordmark span { font-family: var(--head); font-weight: 600; font-size: 0.62rem; letter-spacing: 0.12em; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.7rem 1.1rem; border-radius: 8px; font-weight: 600; text-decoration: none; border: 2px solid transparent; font-family: inherit; cursor: pointer; }
+    .btn-primary { background: var(--orange); color: var(--white); min-height: 56px; }
+    .btn-primary:hover { background: #9a3009; color: var(--white); }
+    .btn-line { background: transparent; color: var(--white); border-color: var(--white); }
+    .btn-line:hover { background: var(--white); color: var(--navy); }
+    .btn-ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-ghost:hover { background: var(--navy); color: var(--white); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { background: var(--navy); color: var(--white); }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; padding: 2.4rem 0 2.2rem; }
+    .eyebrow { font-family: var(--head); font-weight: 600; letter-spacing: 0.08em; color: var(--sun); font-size: 0.86rem; margin: 0 0 0.65rem; }
+    .hero h1 { font-size: clamp(2.2rem, 4.4vw, 3.3rem); color: var(--white); margin-bottom: 0.7rem; }
+    .hero-lead { color: var(--sky); font-size: 1.06rem; max-width: 46ch; margin-bottom: 1.15rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.88rem; }
+    .cutaway { background: #183252; border-radius: 16px; padding: 0.6rem; }
+    .cutaway .simple { display: none; }
+    .zone-label { font-family: var(--head); font-size: 11px; fill: #FDBA74; }
+
+    section { padding: 2.8rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: var(--head); color: var(--orange); letter-spacing: 0.06em; margin: 0 0 0.25rem; font-weight: 800; }
+    h2 { font-size: clamp(1.75rem, 3vw, 2.4rem); color: var(--navy); margin-bottom: 0.9rem; }
+    .lede { color: var(--muted); max-width: 62ch; margin-top: 0.85rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .card { background: var(--card); border-radius: 12px; padding: 1rem 1rem 1.1rem; }
+    .card .ico { width: 36px; height: 36px; color: var(--orange); margin-bottom: 0.4rem; }
+    .card h3 { font-size: 1.15rem; margin-bottom: 0.3rem; color: var(--navy); }
+    .card p { color: var(--muted); font-size: 0.96rem; }
+
+    .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .project-grid figure { margin: 0; background: var(--white); border-radius: 10px; overflow: hidden; }
+    .project-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .project-grid figcaption { font-size: 0.82rem; padding: 0.45rem 0.6rem 0.6rem; font-weight: 600; color: var(--navy); }
+    .caption { color: var(--muted); margin-top: 0.75rem; font-size: 0.92rem; }
+
+    .how { background: var(--navy); color: var(--white); }
+    .how h2, .how .sec-num { color: var(--white); }
+    .how .sec-num { color: var(--sun); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .step .num { font-family: var(--head); font-weight: 800; font-size: 2.2rem; color: var(--sun); line-height: 1; }
+    .step h3 { color: var(--white); font-size: 1.25rem; margin: 0.25rem 0; }
+    .step p { color: var(--sky); }
+
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .quote { background: var(--white); border-radius: 12px; padding: 1rem 1rem 0.9rem; border-top: 4px solid var(--orange); }
+    .quote p { font-size: 0.98rem; }
+    .quote footer { margin-top: 0.7rem; color: var(--muted); font-size: 0.84rem; font-weight: 600; }
+    .fave { margin-top: 1rem; font-weight: 600; }
+
+    .area-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.3rem; align-items: center; }
+    .signoff { font-family: var(--head); font-size: 1.3rem; color: var(--navy); margin-top: 1rem; }
+    .towns { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+    .towns span { background: var(--card); border-radius: 999px; padding: 0.3rem 0.7rem; font-weight: 600; font-size: 0.9rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.3rem; background: var(--white); border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.4rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: var(--head); font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--navy); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.65rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .site-footer { background: var(--navy); color: var(--sky); text-align: center; padding: 2rem 0 2.3rem; }
+    .site-footer a { color: var(--sun); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services-grid, .steps, .quotes, .area-grid, .contact-grid, .project-grid { grid-template-columns: 1fr 1fr; }
+      .hero-grid, .area-grid, .contact-grid, .quotes { grid-template-columns: 1fr; }
+      .project-grid { grid-template-columns: 1fr 1fr; }
+      .cutaway-full { display: none; }
+      .cutaway .simple { display: block; }
+      .hero-art { order: -1; }
+      .hero-grid { display: grid; }
+      nav.site-nav a.nav-link { display: none; }
+      .hero-actions .btn { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 60% 20% 20%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+      .dock .go { background: var(--orange); color: var(--white); }
+      .dock .text { background: var(--navy); color: var(--white); }
+      .dock .mail { background: var(--white); color: var(--navy); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .services-grid, .steps, .project-grid { grid-template-columns: 1fr; }
+      .project-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 0.7rem; padding-bottom: 0.4rem; }
+      .project-grid figure { flex: 0 0 78%; scroll-snap-align: start; }
+      .utility-bar .extra { display: none; }
+      .zone-label, .simple text { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span class="extra">Handyman &amp; home repair · Bradenton &amp; Manatee</span>
+      <span class="extra">Free estimates</span>
+      <a href="tel:+19413217968">Call Paul (941) 321-7968</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="AAA Property Preservation Co.">
+        <strong>AAA</strong>
+        <span>PROPERTY PRESERVATION CO.</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#area">Area</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19413217968">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">HANDYMAN · REMODELS · WELLS &amp; IRRIGATION · BRADENTON</p>
+          <h1 id="hero-heading">One call, roof to driveway.</h1>
+          <p class="hero-lead">Paul and his crew handle home repairs inside and out — kitchens and baths, windows, remodels, well pumps and irrigation. No job too big or too small.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19413217968">Call Paul (941) 321-7968</a>
+            <a class="btn btn-line" href="mailto:aaapropertyco@aol.com?subject=Free%20estimate%20request">Free estimate by email</a>
+          </div>
+          <p class="meta">
+            <span>Free estimates</span>
+            <span>Bradenton &amp; Manatee County</span>
+            <span>Nextdoor Neighborhood Favorite 2026</span>
+          </p>
+        </div>
+        <div class="cutaway hero-art" aria-hidden="true">
+          <svg class="cutaway-full" viewBox="0 0 360 300">
+            <rect width="360" height="300" rx="12" fill="#183252"/>
+            <path d="M40 120 L180 40 L320 120" fill="none" stroke="#FDBA74" stroke-width="4"/>
+            <path d="M60 120 H300 V230 H60 Z" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <path d="M70 230 H290 V258 H70 Z" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <path d="M90 200 q40 -30 80 0" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <circle cx="250" cy="200" r="10" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <rect x="200" y="150" width="36" height="28" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <text class="zone-label" x="150" y="78">Roof</text>
+            <text class="zone-label" x="78" y="150">Kitchen &amp; bath</text>
+            <text class="zone-label" x="200" y="142">Windows</text>
+            <text class="zone-label" x="70" y="214">Irrigation</text>
+            <text class="zone-label" x="230" y="188">Well pump</text>
+            <text class="zone-label" x="140" y="250">Driveway</text>
+          </svg>
+          <svg class="simple" viewBox="0 0 360 180">
+            <rect width="360" height="180" rx="12" fill="#183252"/>
+            <path d="M30 70 L180 24 L330 70" fill="none" stroke="#FDBA74" stroke-width="4"/>
+            <rect x="50" y="70" width="260" height="60" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <rect x="40" y="138" width="280" height="22" fill="none" stroke="#A9C4E4" stroke-width="2"/>
+            <text class="zone-label" x="150" y="52" text-anchor="middle">Roof</text>
+            <text class="zone-label" x="180" y="106" text-anchor="middle">Walls</text>
+            <text class="zone-label" x="180" y="154" text-anchor="middle">Driveway</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Just one call — we can do it all</h2>
+        <div class="services-grid">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M6 20 L18 8 L30 20 V30 H6 Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Handyman, inside &amp; out</h3>
+            <p>Repairs, fixes and punch lists — from the roof to the driveway.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="6" y="10" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 18 h24" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Kitchen &amp; bath</h3>
+            <p>Updates, repairs, tile, vanities and showers.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 28 V12 h8 v16 M20 28 V8 h8 v20" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Remodels</h3>
+            <p>Complete home remodels, start to finish.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="8" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 8 v20 M8 18 h20" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Windows</h3>
+            <p>Window replacement and repairs.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="16" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 23 v8" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Wells &amp; pumps</h3>
+            <p>Well pump replacement and well drilling.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M6 24 h16 a6 6 0 0 0 0-12 H14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8 q6 6 0 12" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Irrigation</h3>
+            <p>Entire irrigation systems, new or repaired.</p>
+          </article>
+        </div>
+        <p class="lede">No job is too big or too small — call for a free estimate.</p>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="projects-heading">Project photos</h2>
+        <div class="project-grid">
+          <figure>
+            <img src="images/vaulted-framing.jpg" width="600" height="450" alt="Wood framing for a vaulted ceiling" loading="lazy">
+            <figcaption>Vaulted ceiling framing</figcaption>
+          </figure>
+          <figure>
+            <img src="images/drywall.jpg" width="1200" height="675" alt="Drywall sheets going up on interior walls" loading="lazy">
+            <figcaption>Drywall going up</figcaption>
+          </figure>
+          <figure>
+            <img src="images/tile-floor.jpg" width="1200" height="765" alt="A newly laid tile floor" loading="lazy">
+            <figcaption>New tile floor</figcaption>
+          </figure>
+          <figure>
+            <img src="images/roof.jpg" width="450" height="337" alt="Flat roof with skylights" loading="lazy">
+            <figcaption>Roof work</figcaption>
+          </figure>
+          <figure>
+            <img src="images/deck.jpg" width="450" height="450" alt="A newly built wood deck" loading="lazy">
+            <figcaption>New deck</figcaption>
+          </figure>
+          <figure>
+            <img src="images/wood-ceiling.jpg" width="600" height="450" alt="Wood plank ceiling" loading="lazy">
+            <figcaption>Wood plank ceiling</figcaption>
+          </figure>
+          <figure>
+            <img src="images/outdoor-kitchen.jpg" width="600" height="450" alt="Outdoor kitchen under construction" loading="lazy">
+            <figcaption>Outdoor kitchen</figcaption>
+          </figure>
+          <figure>
+            <img src="images/drainage.jpg" width="263" height="350" alt="Drainage pipe at a job site" loading="lazy">
+            <figcaption>Drainage</figcaption>
+          </figure>
+          <figure>
+            <img src="images/chimney.jpg" width="800" height="600" alt="Chimney flashing on a roof" loading="lazy">
+            <figcaption>Chimney flashing</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ceiling-repair.jpg" width="1200" height="675" alt="Open ceiling during a repair" loading="lazy">
+            <figcaption>Open ceiling repair</figcaption>
+          </figure>
+          <figure>
+            <img src="images/wall-framing.jpg" width="1200" height="450" alt="Interior wall framing" loading="lazy">
+            <figcaption>Wall framing</figcaption>
+          </figure>
+        </div>
+        <p class="caption">Real jobs from our Nextdoor page.</p>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="how-heading">How it works</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3>Call Paul</h3>
+            <p>(941) 321-7968 — tell him what needs doing.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3>Free estimate</h3>
+            <p>We look at the job and give you a price.</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3>Done right</h3>
+            <p>One crew for the whole list, inside and out.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Fair and honest. He's done all the work on my home for over 10 years. Many recommendations. A pleasure to work with.</p>
+            <footer>S.J. · Bradenton · Nextdoor · Sep 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>AAA property preservation does a lot of Kitchens and counter tops. They do excellent work with a lot of detail in their design</p>
+            <footer>M.M. · Bradenton · Nextdoor · Sep 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Paul Bonanza. Fair and honest. A pleasure to work with.</p>
+            <footer>S.J. · Bradenton · Nextdoor · Oct 2026</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2026 — and in 2018, 2019, 2021, 2022, 2023, 2024 and 2025.</p>
+      </div>
+    </section>
+
+    <section id="area" aria-labelledby="area-heading">
+      <div class="wrap area-grid">
+        <div>
+          <p class="sec-num">05</p>
+          <h2 id="area-heading">Meet Paul</h2>
+          <p>AAA Property Preservation Co. is Paul Bonanza's home repair and remodeling company in Bradenton. Neighbors have called Paul for everything from small fixes to whole-house projects — some for more than ten years.</p>
+          <p class="lede">Where we work</p>
+          <div class="towns">
+            <span>Bradenton</span>
+            <span>Palmetto</span>
+            <span>Ellenton</span>
+            <span>Cortez</span>
+            <span>Anna Maria Island</span>
+          </div>
+          <p class="signoff">Thank you, Paul</p>
+        </div>
+        <div aria-hidden="true">
+          <svg viewBox="0 0 280 220">
+            <rect width="280" height="220" fill="#E9E4D8" rx="12"/>
+            <path d="M70 30 C120 20 180 40 200 80 C230 90 240 140 190 180 C140 200 80 170 60 130 C40 90 40 50 70 30 Z" fill="none" stroke="#1F3A5F" stroke-width="2"/>
+            <circle cx="120" cy="110" r="4" fill="#B93A0B"/>
+            <text x="128" y="114" font-family="Work Sans, sans-serif" font-size="12" fill="#1C2430">Bradenton</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="sec-num">06</p>
+            <h2 id="contact-heading">Get a free estimate</h2>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+19413217968">(941) 321-7968</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:aaapropertyco@aol.com">aaapropertyco@aol.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Call for availability</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Bradenton &amp; Manatee County</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19413217968">(941) 321-7968</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19413217968">Call</a>
+              <a class="btn btn-ghost" href="sms:+19413217968">Text</a>
+              <a class="btn btn-ghost" href="mailto:aaapropertyco@aol.com?subject=Free%20estimate%20request">Email</a>
+            </div>
+            <a href="https://nextdoor.com/pages/aaa-property-preservation-co-bradenton-fl/">See us on Nextdoor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>AAA Property Preservation Co. · Bradenton, FL · <a href="tel:+19413217968">(941) 321-7968</a> · aaapropertyco@aol.com</p>
+      <p><a href="https://nextdoor.com/pages/aaa-property-preservation-co-bradenton-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19413217968">Call</a>
+    <a class="text" href="sms:+19413217968">Text</a>
+    <a class="mail" href="mailto:aaapropertyco@aol.com?subject=Free%20estimate%20request">Email</a>
+  </div>
+</body>
+</html>

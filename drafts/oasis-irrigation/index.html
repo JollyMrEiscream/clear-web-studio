@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oasis Irrigation | Sprinkler Installation &amp; Repair — Placida, Rotonda West &amp; Englewood</title>
+  <meta name="description" content="Family-owned sprinkler installation, repair and tune-ups in Placida, Rotonda West, Cape Haze and Englewood. Call or text Tyler and Austin at (941) 380-9172.">
+  <meta name="theme-color" content="#0E4D4A">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Oasis Irrigation",
+    "telephone": "+1-941-380-9172",
+    "email": "tylerwholean@yahoo.com",
+    "logo": "images/logo.jpg",
+    "image": "images/sprinkler-spray.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Placida",
+      "addressRegion": "FL"
+    },
+    "areaServed": ["Placida, FL", "Rotonda West, FL", "Cape Haze, FL", "Englewood, FL", "Charlotte County, FL"],
+    "sameAs": "https://nextdoor.com/pages/oasis-irrigation-placida-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F3FAF7;
+      --card: #DFF2EC;
+      --ink: #102A2A;
+      --deep: #0E4D4A;
+      --aqua: #0B6E77;
+      --mist: #A7E3DD;
+      --sun: #F6D365;
+      --muted: #4E6563;
+      --white: #fff;
+      --head: "Outfit", system-ui, sans-serif;
+      --body: "Source Sans 3", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--body); background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.08rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--aqua); }
+    h1, h2, h3 { font-family: var(--head); font-weight: 800; line-height: 1.1; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--sun); color: var(--ink); padding: 0.6rem 1rem; z-index: 80; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+
+    .utility-bar { background: var(--deep); color: var(--white); font-size: 0.9rem; padding: 0.45rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1.2rem; text-align: center; }
+    .utility-bar a { color: var(--white); font-weight: 600; text-decoration: none; }
+    .site-header { background: var(--bg); border-bottom: 1px solid #d3ebe4; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; }
+    .wordmark { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; color: var(--deep); font-family: var(--head); font-weight: 800; letter-spacing: 0.04em; }
+    .wordmark img { width: 48px; height: 48px; object-fit: contain; background: var(--white); border-radius: 50%; border: 1px solid #d3ebe4; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.98rem; min-height: 44px; display: inline-flex; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.7rem 1.1rem; border-radius: 10px; font-weight: 600; text-decoration: none; border: 2px solid transparent; font-family: var(--head); cursor: pointer; }
+    .btn-primary { background: var(--aqua); color: var(--white); min-height: 56px; }
+    .btn-primary:hover { background: #095860; color: var(--white); }
+    .btn-line { background: transparent; color: var(--white); border-color: var(--white); }
+    .btn-line:hover { background: var(--white); color: var(--deep); }
+    .btn-ghost { background: transparent; color: var(--aqua); border-color: var(--aqua); }
+    .btn-ghost:hover { background: var(--aqua); color: var(--white); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { background: var(--deep); color: var(--white); }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; padding: 2.4rem 0; }
+    .eyebrow { font-family: var(--head); font-weight: 600; letter-spacing: 0.08em; color: var(--sun); font-size: 0.86rem; margin: 0 0 0.6rem; }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 0.7rem; }
+    .hero-lead { color: var(--mist); max-width: 44ch; margin-bottom: 1.1rem; font-size: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.9rem; }
+    .fave-hero { color: var(--sun); font-size: 0.92rem; font-weight: 600; }
+    .spray-wrap { position: relative; }
+    .spray-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 20px; }
+    .arcs { position: absolute; inset: 8% 0 auto auto; width: 46%; pointer-events: none; }
+
+    section { padding: 2.7rem 0; scroll-margin-top: 84px; }
+    .sec-num { font-family: var(--head); color: var(--aqua); margin: 0 0 0.2rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); margin-bottom: 0.9rem; color: var(--deep); }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .card { background: var(--card); border-radius: 14px; padding: 1rem; }
+    .card .ico { width: 36px; height: 36px; color: var(--aqua); margin-bottom: 0.35rem; }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); }
+
+    .tune { background: var(--deep); color: var(--white); }
+    .tune h2, .tune .sec-num { color: var(--white); }
+    .tune .sec-num { color: var(--sun); }
+    .tune .intro { color: var(--mist); max-width: 58ch; margin-bottom: 1rem; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+    .step .num { font-family: var(--head); font-size: 1.8rem; color: var(--sun); }
+    .step h3 { color: var(--white); font-size: 1.15rem; margin: 0.2rem 0; }
+    .step p { color: var(--mist); }
+
+    .work-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .work-row figure { margin: 0; }
+    .work-row img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 14px; }
+    .work-row figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.4rem; font-weight: 600; }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .quote { background: var(--white); border-left: 4px solid var(--aqua); border-radius: 10px; padding: 1rem; }
+    .quote footer { margin-top: 0.6rem; color: var(--muted); font-size: 0.88rem; font-weight: 600; }
+    .fave { margin-top: 1rem; font-weight: 600; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.6rem; }
+    .chips span { background: var(--card); border-radius: 999px; padding: 0.35rem 0.75rem; font-weight: 600; }
+    .map { background: var(--card); border-radius: 14px; padding: 0.4rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; background: var(--white); border-radius: 14px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    .phone-xl { font-family: var(--head); font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--deep); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.65rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    form { display: grid; gap: 0.55rem; width: 100%; }
+    label { font-weight: 600; font-size: 0.92rem; display: grid; gap: 0.2rem; }
+    input, textarea { font: inherit; padding: 0.6rem 0.7rem; border: 1px solid #cfe4de; border-radius: 8px; width: 100%; background: var(--bg); }
+    textarea { min-height: 80px; }
+    .site-footer { background: var(--deep); color: var(--mist); text-align: center; padding: 2rem 0 2.3rem; }
+    .site-footer a { color: var(--sun); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .services, .steps, .work-row, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .spray-wrap { order: 2; }
+      .hero-grid { display: grid; }
+      .spray-wrap img { aspect-ratio: 4/3; }
+      nav.site-nav a.nav-link { display: none; }
+      .hero-actions .btn { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 60% 20% 20%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; font-weight: 600; text-decoration: none; font-family: var(--head); }
+      .dock .go { background: var(--aqua); color: var(--white); }
+      .dock .text { background: var(--deep); color: var(--white); }
+      .dock .mail { background: var(--white); color: var(--deep); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .services, .steps { grid-template-columns: 1fr; }
+      .arcs { display: none; }
+      .work-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 0.7rem; }
+      .work-row figure { flex: 0 0 80%; scroll-snap-align: start; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Family owned</span>
+      <span>Placida · Rotonda West · Englewood</span>
+      <a href="tel:+19413809172">Call (941) 380-9172</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <img src="images/logo.jpg" width="48" height="48" alt="Oasis Irrigation palm tree logo">
+        OASIS IRRIGATION
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#tuneup">Tune-ups</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#area">Area</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19413809172">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">FAMILY OWNED · PLACIDA &amp; CHARLOTTE COUNTY</p>
+          <h1 id="hero-heading">Sprinkler installs, repairs and tune-ups — call Tyler and Austin.</h1>
+          <p class="hero-lead">From new systems to a stuck zone, we keep your sprinklers working at full potential, year round.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19413809172">Call (941) 380-9172</a>
+            <a class="btn btn-line" href="sms:+19413809172">Text a photo</a>
+          </div>
+          <p class="fave-hero">Nextdoor Neighborhood Favorite 2021, 2024 &amp; 2025</p>
+        </div>
+        <div class="spray-wrap">
+          <img src="images/sprinkler-spray.jpg" width="750" height="1000" alt="A sprinkler head spraying water across a lawn">
+          <svg class="arcs" viewBox="0 0 160 200" aria-hidden="true">
+            <path d="M20 180 Q80 40 150 20" fill="none" stroke="#A7E3DD" stroke-width="2"/>
+            <path d="M30 180 Q90 70 150 60" fill="none" stroke="#A7E3DD" stroke-width="2"/>
+            <path d="M40 180 Q100 100 150 100" fill="none" stroke="#A7E3DD" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Everything your sprinklers need</h2>
+        <div class="services">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M6 26 h24 M10 26 V14 h6 v12 M20 26 V10 h6 v16" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>New installations</h3>
+            <p>New systems and add-on zones, laid out for your lawn and beds.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><path d="M8 22 l8-12 4 6 8-4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="26" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Repairs</h3>
+            <p>Broken heads, leaks, valves and zones that won't come on.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 36 36" aria-hidden="true"><rect x="8" y="8" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 18 h8 M18 14 v8" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Maintenance &amp; service plans</h3>
+            <p>Full system walk-throughs and service plans to keep your system operating correctly year round.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tune" id="tuneup" aria-labelledby="tuneup-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="tuneup-heading">Get ready for the dry months</h2>
+        <p class="intro">With the winter dry months coming, it's important to have your sprinkler system working at its full potential.</p>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3>Walk-through</h3>
+            <p>We run every zone with you.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3>Adjust</h3>
+            <p>Heads aimed and cleared so water lands on the lawn and beds.</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3>Repair</h3>
+            <p>We fix what we find — with your OK first.</p>
+          </article>
+          <article class="step">
+            <div class="num">04</div>
+            <h3>Plan</h3>
+            <p>Ask about a service plan to keep it that way.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="work-heading">On the job</h2>
+        <div class="work-row">
+          <figure>
+            <img src="images/rotor.jpg" width="1200" height="639" alt="A pop-up rotor sprinkler head in the grass" loading="lazy">
+            <figcaption>Pop-up rotor</figcaption>
+          </figure>
+          <figure>
+            <img src="images/rotor-spraying.jpg" width="1000" height="750" alt="A rotor sprinkler spraying across a lawn" loading="lazy">
+            <figcaption>Rotor spraying</figcaption>
+          </figure>
+          <figure>
+            <img src="images/truck.jpg" width="510" height="480" alt="Oasis Irrigation truck door with the palm tree logo" loading="lazy">
+            <figcaption>Look for the Oasis truck around Placida and Rotonda West.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>Great job by a family run business! Near Rotonda West.</p>
+            <footer>E.K. · Rotonda West area · Nextdoor · Apr 2026</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Oasis irrigation did a great job, reasonable price!</p>
+            <footer>E.K. · Rotonda West area · Nextdoor · Apr 2026</footer>
+          </blockquote>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2021, 2024 &amp; 2025</p>
+      </div>
+    </section>
+
+    <section id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="area-heading">Serving Charlotte County</h2>
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 420 220">
+            <rect width="420" height="220" fill="#DFF2EC"/>
+            <path d="M40 40 C90 20 140 50 160 90 C180 140 150 190 90 180 C40 170 20 120 40 40 Z" fill="#0E4D4A" opacity="0.15"/>
+            <path d="M160 90 C220 70 280 90 320 130 C300 170 230 180 180 150" fill="none" stroke="#0B6E77" stroke-width="3"/>
+            <circle cx="120" cy="110" r="5" fill="#0B6E77"/>
+            <text x="130" y="114" font-family="Source Sans 3, sans-serif" font-size="14" fill="#102A2A">Placida</text>
+            <circle cx="200" cy="140" r="5" fill="#0B6E77"/>
+            <text x="210" y="144" font-family="Source Sans 3, sans-serif" font-size="14" fill="#102A2A">Rotonda West</text>
+            <circle cx="250" cy="118" r="5" fill="#0B6E77"/>
+            <text x="260" y="114" font-family="Source Sans 3, sans-serif" font-size="14" fill="#102A2A">Cape Haze</text>
+            <circle cx="300" cy="150" r="5" fill="#0B6E77"/>
+            <text x="280" y="176" font-family="Source Sans 3, sans-serif" font-size="14" fill="#102A2A">Englewood</text>
+          </svg>
+        </div>
+        <div class="chips">
+          <span>Placida</span>
+          <span>Rotonda West</span>
+          <span>Cape Haze</span>
+          <span>Englewood</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="sec-num">06</p>
+            <h2 id="contact-heading">Call or text Tyler</h2>
+            <dl>
+              <div>
+                <dt>Phone/text</dt>
+                <dd><a href="tel:+19413809172">(941) 380-9172</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:tylerwholean@yahoo.com">tylerwholean@yahoo.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Call or text — we'll get back to you</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Placida &amp; Charlotte County</dd>
+              </div>
+            </dl>
+            <p style="margin-top:0.8rem"><a href="https://nextdoor.com/pages/oasis-irrigation-placida-fl/">See us on Nextdoor</a></p>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl" href="tel:+19413809172">(941) 380-9172</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19413809172">Call</a>
+              <a class="btn btn-ghost" href="sms:+19413809172">Text</a>
+              <a class="btn btn-ghost" href="mailto:tylerwholean@yahoo.com?subject=Sprinkler%20service">Email</a>
+            </div>
+            <form id="note">
+              <label>Name <input name="name" autocomplete="name" required></label>
+              <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+              <label>Town <input name="town" required></label>
+              <label>What's wrong / what you need <textarea name="need" required></textarea></label>
+              <button class="btn btn-primary" type="submit">Email us</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Oasis Irrigation · Family owned · Placida &amp; Charlotte County · <a href="tel:+19413809172">(941) 380-9172</a></p>
+      <p><a href="https://nextdoor.com/pages/oasis-irrigation-placida-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19413809172">Call</a>
+    <a class="text" href="sms:+19413809172">Text</a>
+    <a class="mail" href="mailto:tylerwholean@yahoo.com?subject=Sprinkler%20service">Email</a>
+  </div>
+  <script>
+    document.getElementById("note").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(e.target);
+      var body = [
+        "Name: " + data.get("name"),
+        "Phone: " + data.get("phone"),
+        "Town: " + data.get("town"),
+        "What's wrong / what you need: " + data.get("need")
+      ].join("\n");
+      window.location.href = "mailto:tylerwholean@yahoo.com?subject=" + encodeURIComponent("Sprinkler service") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
