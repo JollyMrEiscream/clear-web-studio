@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Patient Trainer | In-Home Computer &amp; iPhone Help — Sarasota, Lakewood Ranch, Bradenton</title>
+  <meta name="description" content="Patient in-home tech help from a local ex-Apple guy: computers, iPads, phones, printers, Wi-Fi and Sonos. House calls in Sarasota, Lakewood Ranch and Bradenton. Call or text Dave at (941) 404-5585.">
+  <meta name="theme-color" content="#1F4E96">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "The Patient Trainer",
+    "telephone": "+1-941-404-5585",
+    "email": "dave@davidstoltie.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Sarasota, FL", "Lakewood Ranch, FL", "Bradenton, FL"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:30",
+      "closes": "17:00"
+    },
+    "sameAs": "https://nextdoor.com/pages/the-patient-trainer-bradenton-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FAF8F3;
+      --sky: #EAF1FB;
+      --ink: #1F2933;
+      --blue: #1F4E96;
+      --navy: #173A6E;
+      --ice: #CFE0F7;
+      --sun: #FFD58A;
+      --coral: #A33F2B;
+      --muted: #52606D;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 19px;
+    }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--blue); }
+    h1, h2, .brand-name, .btn, .sec-num {
+      font-family: Lexend, system-ui, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+    }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; min-width: 0; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--blue); color: #fff; padding: 0.7rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+    section { scroll-margin-top: 96px; }
+    .nowrap { white-space: nowrap; }
+
+    .utility-bar { background: var(--navy); color: #fff; font-size: 18px; padding: 0.55rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.2rem; text-align: center; }
+    .utility-bar a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    .site-header { background: var(--bg); border-bottom: 1px solid #e4dccd; position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.7rem 0; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; color: var(--blue); }
+    .brand svg { width: 36px; height: 36px; flex: none; }
+    .brand-name { font-size: 1.25rem; }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem 1rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-family: Lexend, sans-serif; font-weight: 500; font-size: 1.05rem; min-height: 48px; display: inline-flex; align-items: center; }
+    nav.site-nav a.nav-link:hover { color: var(--blue); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; text-align: center;
+      min-height: 52px; padding: 0.75rem 1.15rem; border-radius: 8px;
+      text-decoration: none; border: 2px solid transparent; cursor: pointer; font-size: 1.05rem;
+    }
+    .btn-primary { background: var(--blue); color: #fff; min-height: 64px; font-size: 24px; padding: 0.8rem 1.3rem; white-space: normal; line-height: 1.25; text-align: center; max-width: 100%; }
+    .btn-primary:hover { background: var(--navy); color: #fff; }
+    .btn-line { background: transparent; color: var(--blue); border-color: var(--blue); }
+    .btn-line:hover { background: var(--blue); color: #fff; }
+    .header-inner .btn-primary { min-height: 48px; font-size: 1.05rem; }
+
+    .hero { background: var(--bg); padding: 2.2rem 0 1.5rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem; align-items: center; }
+    .eyebrow { color: var(--coral); font-family: Lexend, sans-serif; font-weight: 700; letter-spacing: 0.06em; font-size: 0.85rem; margin: 0 0 0.75rem; }
+    .hero h1 { font-size: clamp(30px, 4vw, 44px); color: var(--ink); margin-bottom: 0.85rem; }
+    .hero-lead { font-size: 1.15rem; max-width: 40ch; margin-bottom: 1.2rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-bottom: 0.9rem; }
+    .fave { color: var(--muted); font-size: 1rem; }
+    .scene svg { width: 100%; height: auto; }
+
+    section.block { padding: 2.8rem 0; }
+    .sec-num { color: var(--coral); font-size: 0.95rem; letter-spacing: 0.08em; margin: 0 0 0.35rem; font-weight: 500; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 1rem; color: var(--ink); }
+    .sky { background: var(--sky); }
+
+    .help-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .help-card {
+      display: flex; flex-direction: column; gap: 0.35rem;
+      background: var(--sky); color: var(--ink); text-decoration: none;
+      border-radius: 12px; padding: 1rem 1rem 1.1rem; min-height: 148px;
+    }
+    .help-card:hover { background: #dce8f8; }
+    .help-card svg { width: 40px; height: 40px; color: var(--blue); }
+    .help-card h3 { font-size: 1.15rem; margin: 0; }
+    .help-card p { color: var(--ink); }
+
+    .band { background: var(--navy); color: #fff; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--sun); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    .step { border: 1px solid rgba(207, 224, 247, 0.4); border-radius: 12px; padding: 1.15rem; }
+    .step .num { font-family: Lexend, sans-serif; font-weight: 700; color: var(--sun); font-size: 2rem; }
+    .step h3 { color: #fff; margin: 0.25rem 0 0.35rem; font-size: 1.25rem; }
+    .step p { color: var(--ice); }
+
+    .meet { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.3rem; align-items: center; background: #fff; border-radius: 16px; padding: 1rem; }
+    .portrait { position: relative; border-radius: 12px; overflow: hidden; background: var(--sky); min-height: 240px; }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; aspect-ratio: 4 / 3; position: relative; z-index: 1; }
+    .fallback {
+      position: absolute; inset: 0; display: grid; place-items: center;
+      font-family: Lexend, sans-serif; font-weight: 700; font-size: 4rem; color: var(--coral);
+    }
+    .fallback span {
+      width: 7rem; height: 7rem; border: 10px solid var(--coral); border-radius: 50%;
+      display: grid; place-items: center; background:
+        repeating-conic-gradient(var(--coral) 0 70deg, transparent 70deg 90deg);
+      color: var(--bg);
+    }
+    .meet h2 { margin-bottom: 0.6rem; }
+    .meet p { font-size: 1.15rem; margin-bottom: 0.8rem; }
+    .meet .own { font-weight: 700; }
+
+    blockquote.review {
+      margin: 0; background: #fff; border-radius: 16px; padding: 1.4rem 1.4rem 1.2rem;
+      font-style: italic; font-size: 22px; max-width: 48rem;
+    }
+    blockquote.review footer { margin-top: 0.9rem; font-style: normal; font-weight: 700; color: var(--muted); font-size: 1rem; }
+    .plain-note { margin-top: 1rem; color: var(--ink); }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem;
+      background: #fff; border-radius: 16px; padding: 1.4rem;
+    }
+    dl { margin: 0.5rem 0 0; display: grid; gap: 0.9rem; }
+    dt { font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 700; font-family: Lexend, sans-serif; }
+    dd { margin: 0.15rem 0 0; font-weight: 700; font-size: 1.25rem; }
+    dd a { color: var(--ink); text-decoration: none; }
+    dd a:hover { color: var(--blue); }
+    .phone-xl { font-family: Lexend, sans-serif; font-weight: 700; font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--blue); text-decoration: none; }
+    .contact-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .row .btn-primary { min-height: 52px; font-size: 1.05rem; }
+    form { display: grid; gap: 0.75rem; width: 100%; }
+    label { font-family: Lexend, sans-serif; font-weight: 500; font-size: 1.05rem; }
+    input, select, textarea {
+      width: 100%; font: inherit; font-size: 19px; color: var(--ink); background: var(--bg);
+      border: 2px solid #d5deea; border-radius: 8px; padding: 0.7rem 0.75rem; min-height: 56px;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    .fine { margin-top: 1rem; font-weight: 700; }
+
+    .site-footer { background: var(--navy); color: var(--ice); text-align: center; padding: 2rem 0 2.2rem; font-size: 17px; }
+    .site-footer a { color: var(--sun); }
+    .site-footer p { margin: 0.4rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .help-grid, .steps, .meet, .contact-grid { grid-template-columns: 1fr; }
+      .help-grid { grid-template-columns: 1fr 1fr; }
+      .scene { max-width: 420px; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 65% 35%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 60px; font-family: Lexend, sans-serif; font-weight: 700; font-size: 1.15rem; text-decoration: none; text-align: center; }
+      .dock .go { background: var(--blue); color: #fff; }
+      .dock .text { background: var(--coral); color: #fff; }
+      body { padding-bottom: 60px; }
+    }
+    @media (max-width: 480px) {
+      .help-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 16px; }
+      .hero h1 { font-size: 30px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>House calls &amp; remote help</span>
+      <span>Mon–Sat 9:30–5</span>
+      <a href="tel:+19414045585">Call or text <span class="nowrap">(941) 404-5585</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 36 36" aria-hidden="true">
+          <circle cx="18" cy="18" r="13" fill="none" stroke="#A33F2B" stroke-width="5" stroke-dasharray="16 6" transform="rotate(20 18 18)"/>
+          <circle cx="18" cy="18" r="6" fill="none" stroke="#1F4E96" stroke-width="1.6"/>
+        </svg>
+        <span class="brand-name">The Patient Trainer</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#help">What I help with</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#dave">Meet Dave</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19414045585">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">IN-HOME TECH HELP · SARASOTA · LAKEWOOD RANCH · BRADENTON</p>
+          <h1 id="hero-heading">Patient, in-home tech help — from a local ex-Apple guy.</h1>
+          <p class="hero-lead">Frustrated with your computer, printer, iPad or smartphone? Call Dave. Training, troubleshooting, even help shopping for the right product.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414045585">Call or text Dave: <span class="nowrap">(941) 404-5585</span></a>
+            <a class="btn btn-line" href="mailto:dave@davidstoltie.com?subject=Tech%20help">Email Dave</a>
+          </div>
+          <p class="fave">Nextdoor Neighborhood Favorite 2023 &amp; 2025</p>
+        </div>
+        <div class="scene" aria-hidden="true">
+          <svg viewBox="0 0 520 420">
+            <ellipse cx="260" cy="360" rx="210" ry="28" fill="#E7DCC8"/>
+            <path d="M70 360 L110 400 H410 L450 360" fill="#E0D2BA"/>
+            <g transform="translate(250 168)">
+              <circle r="86" fill="none" stroke="#A33F2B" stroke-width="16" stroke-dasharray="108 28" transform="rotate(-12)"/>
+              <circle r="62" fill="none" stroke="#A33F2B" stroke-width="2"/>
+            </g>
+            <rect x="176" y="128" width="148" height="96" rx="6" fill="#FAF8F3" stroke="#1F4E96" stroke-width="3"/>
+            <rect x="188" y="140" width="124" height="68" fill="#EAF1FB" stroke="#1F4E96" stroke-width="2"/>
+            <path d="M160 228 H340 L358 252 H142 Z" fill="#FAF8F3" stroke="#1F4E96" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="62" y="196" width="46" height="82" rx="7" fill="#FAF8F3" stroke="#1F4E96" stroke-width="3"/>
+            <circle cx="85" cy="266" r="3" fill="#1F4E96"/>
+            <rect x="378" y="168" width="86" height="118" rx="8" fill="#FAF8F3" stroke="#1F4E96" stroke-width="3"/>
+            <rect x="390" y="182" width="62" height="78" fill="#EAF1FB" stroke="#1F4E96" stroke-width="2"/>
+            <rect x="360" y="312" width="120" height="36" rx="4" fill="#FAF8F3" stroke="#1F4E96" stroke-width="3"/>
+            <path d="M378 312 V300 H462 V312" fill="none" stroke="#1F4E96" stroke-width="3"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="help" aria-labelledby="help-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="help-heading">What can Dave help with?</h2>
+        <div class="help-grid">
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="8" width="28" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 30 H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>Computers — PC &amp; Mac.</h3>
+            <p>Slow, stuck, or just confusing? We'll fix it and show you how.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="6" width="20" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 30 H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>iPads &amp; tablets.</h3>
+            <p>Setup, apps, photos and email.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="13" y="5" width="14" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="30" r="1.4" fill="currentColor"/></svg>
+            <h3>Smartphones.</h3>
+            <p>iPhone or Android — calls, texts, photos, settings.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="14" width="28" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 14 V10 H28 V14" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Printers.</h3>
+            <p>Get it printing again (and keep it that way).</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 24 C8 16 14 12 20 12 C26 12 32 16 32 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 24 C12 19 16 16 20 16 C24 16 28 19 28 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="26" r="2" fill="currentColor"/></svg>
+            <h3>Wi-Fi &amp; networks.</h3>
+            <p>Weak signal, new router, devices that won't connect.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M12 16 H28 L32 28 H8 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 16 V12 H24 V16" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Sonos &amp; home audio.</h3>
+            <p>Sonos app and speaker issues on PC and Mac.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="10" width="30" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 32 H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>TVs &amp; home assistants.</h3>
+            <p>Audio/video gear, smart speakers and streaming.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="10" width="24" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 16 V24 M16 20 H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>New device setup.</h3>
+            <p>Move your files and settings to your new device.</p>
+          </a>
+          <a class="help-card" href="#contact">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 14 H22 L30 20 V30 H10 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M22 14 V20 H30" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Shopping help.</h3>
+            <p>Not sure what to buy? Dave helps you choose the right product.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block band" id="how" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="how-heading">No rushing. No jargon.</h2>
+        <div class="steps">
+          <article class="step">
+            <p class="num">01</p>
+            <h3>Call or text.</h3>
+            <p>Tell Dave what's going on.</p>
+          </article>
+          <article class="step">
+            <p class="num">02</p>
+            <h3>Dave comes to you.</h3>
+            <p>In-home help at your own table — or remote help once you're set up.</p>
+          </article>
+          <article class="step">
+            <p class="num">03</p>
+            <h3>You're confident.</h3>
+            <p>Training as we go, at your pace, so you can do it yourself next time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="dave" aria-labelledby="dave-heading">
+      <div class="wrap">
+        <div class="meet">
+          <div class="portrait">
+            <div class="fallback" aria-hidden="true"><span>D</span></div>
+            <img src="images/dave.jpg" alt="Dave, The Patient Trainer" width="1400" height="994">
+          </div>
+          <div>
+            <p class="sec-num">03</p>
+            <h2 id="dave-heading">Meet Dave</h2>
+            <p class="own">I'm an ex-Apple guy and local who makes house calls.</p>
+            <p>Dave works with both PC and Mac, and he'll explain things in plain English — as many times as you need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block sky" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <blockquote class="review">
+          <p>Fixed my computer in house and set me up for remote access. I was more than pleased. very reasonable</p>
+          <footer>A.T. · Sarasota · Nextdoor · Jan 2026</footer>
+        </blockquote>
+        <p class="plain-note">Nextdoor Neighborhood Favorite 2023 &amp; 2025</p>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <p class="sec-num">05</p>
+            <h2 id="contact-heading">Call Dave — he's patient.</h2>
+            <dl>
+              <div>
+                <dt>Call or text</dt>
+                <dd><a href="tel:+19414045585"><span class="nowrap">(941) 404-5585</span></a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:dave@davidstoltie.com">dave@davidstoltie.com</a></dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon–Sat 9:30 AM–5 PM · Sun closed</dd>
+              </div>
+              <div>
+                <dt>Area</dt>
+                <dd>Sarasota, Lakewood Ranch &amp; Bradenton — house calls; remote help available</dd>
+              </div>
+              <div>
+                <dt>Rates</dt>
+                <dd>Ask Dave for current rates</dd>
+              </div>
+            </dl>
+            <p class="fine"><a href="https://nextdoor.com/pages/the-patient-trainer-bradenton-fl/" target="_blank" rel="noopener">See us on Nextdoor</a></p>
+          </div>
+          <div class="contact-cta">
+            <a class="phone-xl nowrap" href="tel:+19414045585">(941) 404-5585</a>
+            <div class="row">
+              <a class="btn btn-primary" href="tel:+19414045585">Call Dave</a>
+              <a class="btn btn-line" href="sms:+19414045585">Text Dave</a>
+              <a class="btn btn-line" href="mailto:dave@davidstoltie.com?subject=Tech%20help">Email Dave</a>
+            </div>
+            <form id="estimate">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name">
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div>
+                <label for="device">What device?</label>
+                <select id="device" name="device">
+                  <option>Computer — PC</option>
+                  <option>Computer — Mac</option>
+                  <option>iPad or tablet</option>
+                  <option>Smartphone</option>
+                  <option>Printer</option>
+                  <option>Wi-Fi or network</option>
+                  <option>Sonos or home audio</option>
+                  <option>TV or home assistant</option>
+                  <option>New device setup</option>
+                  <option>Shopping help</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div>
+                <label for="happening">What's happening?</label>
+                <textarea id="happening" name="happening"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Email Dave</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>The Patient Trainer · In-home tech help · Sarasota, Lakewood Ranch &amp; Bradenton · <a href="tel:+19414045585"><span class="nowrap">(941) 404-5585</span></a></p>
+      <p><a href="https://nextdoor.com/pages/the-patient-trainer-bradenton-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+
+  <div class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414045585">Call Dave</a>
+    <a class="text" href="sms:+19414045585">Text</a>
+  </div>
+
+  <script>
+    (function () {
+      var pic = document.querySelector(".portrait img");
+      if (pic) pic.addEventListener("error", function () { pic.remove(); });
+      var form = document.getElementById("estimate");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        var body = [
+          "Name: " + (data.get("name") || ""),
+          "Phone: " + (data.get("phone") || ""),
+          "Device: " + (data.get("device") || ""),
+          "",
+          "What's happening:",
+          data.get("happening") || ""
+        ].join("\n");
+        window.location.href = "mailto:dave@davidstoltie.com?subject=" + encodeURIComponent("Tech help") + "&body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>
