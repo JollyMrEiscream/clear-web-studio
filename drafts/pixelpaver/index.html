@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelPaver LLC | Paver Repair, Pool Decks &amp; Driveways in Sarasota, FL</title>
+  <meta name="description" content="Low or sunken pavers? PixelPaver repairs and levels pavers, installs pool decks, patios and driveway extensions, and pressure washes and seals, in Sarasota, Venice, Osprey, North Port and Bradenton. Call or text (941) 879-8566.">
+  <meta name="theme-color" content="#26262B">
+  <meta property="og:image" content="img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "PixelPaver LLC",
+    "slogan": "Your Space. Our Craft.",
+    "telephone": "+1-941-879-8566",
+    "email": "pixelpaver@hotmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Sarasota", "addressRegion": "FL", "addressCountry": "US" },
+    "areaServed": ["Sarasota", "Venice", "Osprey", "North Port", "Bradenton"],
+    "foundingDate": "2025",
+    "sameAs": ["https://nextdoor.com/pages/magalhaes-paver-repair-sarasota-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FFFFFF; --sand-lt: #F5F1EB; --char: #26262B; --sand: #D2AE85;
+      --copper: #8A5A2B; --muted: #55565C;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--char); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--copper); }
+    h1, h2, .word { font-family: Montserrat, system-ui, sans-serif; line-height: 1.12; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--sand); color: var(--char); padding: 0.5rem 0.8rem; z-index: 50; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    .utility-bar { background: var(--char); color: #fff; font-size: 0.9rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.7rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; font-weight: 600; text-decoration: none; }
+    .sq { width: 7px; height: 7px; background: var(--sand); display: inline-block; }
+    .site-header { background: var(--char); color: var(--sand); position: sticky; top: 0; z-index: 30; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.45rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--sand); }
+    .brand svg { width: 42px; height: 42px; }
+    .word { font-weight: 700; font-size: 1.15rem; }
+    .word small { display: block; font-weight: 600; letter-spacing: 0.12em; font-size: 0.58rem; color: var(--sand); }
+    nav { display: flex; gap: 0.75rem; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.65rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 700; border: 2px solid transparent; cursor: pointer; font-family: inherit; }
+    .btn-call { background: var(--sand); color: var(--char); min-height: 56px; }
+    .btn-call:hover { color: var(--char); }
+    .btn-line { color: #fff; border-color: #fff; background: transparent; }
+    .btn-copper { background: var(--copper); color: #fff; }
+    .btn-copper:hover { color: #fff; }
+    .hero { background: var(--char); color: #fff; position: relative; overflow: hidden; }
+    .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(210,174,133,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(210,174,133,.07) 1px, transparent 1px); background-size: 42px 28px; background-position: 0 0, 0 14px; }
+    .pixel { position: absolute; width: 40px; height: 26px; background: rgba(210,174,133,.16); opacity: 0; }
+    .js .pixel { animation: pop 1.2s ease forwards; }
+    @keyframes pop { to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .js .pixel { animation: none; opacity: 0.5; } }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.6rem; align-items: center; padding: 2.6rem 0; }
+    .eyebrow { color: var(--sand); letter-spacing: 0.12em; font-size: 0.75rem; font-weight: 700; }
+    .hero h1 { font-weight: 800; font-size: clamp(2.1rem, 4.6vw, 3.4rem); margin: 0.35rem 0; }
+    .hero .sub { color: rgba(255,255,255,.85); max-width: 46ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; }
+    .proof { color: var(--sand); }
+    .frame { border: 8px solid var(--sand); }
+    .frame img { width: 100%; height: 460px; object-fit: cover; }
+    section { padding: 2.7rem 0; }
+    .kicker { color: var(--copper); font-family: Montserrat, sans-serif; font-weight: 800; letter-spacing: 0.12em; margin: 0; }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.3rem); margin: 0.15rem 0 0.45rem; }
+    .sand { background: var(--sand-lt); }
+    .pavers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--sand); }
+    .paver { background: var(--sand-lt); padding: 1rem 0.9rem 1.1rem; }
+    .paver h3 { margin: 0.3rem 0; font-size: 1.02rem; }
+    .paver svg { width: 32px; height: 32px; }
+    .char { background: var(--char); color: #fff; }
+    .char h2 { color: #fff; }
+    .char .kicker { color: var(--sand); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .step img { width: 100%; height: 240px; object-fit: cover; border-radius: 8px; }
+    .num { font-family: Montserrat, sans-serif; color: var(--sand); font-weight: 800; font-size: 1.4rem; }
+    .mini { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; margin-top: 1rem; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.65rem; }
+    .gallery button { padding: 0; border: 0; background: none; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+    .gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+    .gallery figcaption { font-weight: 600; margin-top: 0.3rem; }
+    .quote { background: #fff; border-radius: 12px; padding: 1rem 1.1rem; margin: 0.4rem 0; font-size: 1.15rem; }
+    cite { display: block; margin-top: 0.45rem; font-style: normal; font-weight: 600; color: var(--copper); }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; list-style: none; padding: 0; margin: 0.6rem 0 0; }
+    .chips li { border: 1px solid #e4d8c8; border-radius: 999px; padding: 0.4rem 0.75rem; font-weight: 600; }
+    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.2rem; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    form { display: grid; gap: 0.5rem; background: var(--sand-lt); padding: 1rem; border-radius: 12px; }
+    label { font-weight: 600; display: grid; gap: 0.2rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem; border-radius: 8px; border: 1px solid #e4d8c8; min-height: 44px; width: 100%; }
+    .check { grid-template-columns: auto 1fr; align-items: center; }
+    .site-footer { background: var(--char); color: #ddd; text-align: center; padding: 2rem 0; }
+    .site-footer a { color: var(--sand); }
+    .dock { display: none; }
+    dialog { border: 0; padding: 0; max-width: min(960px, 94vw); background: transparent; }
+    dialog::backdrop { background: rgba(20,20,24,.86); }
+    dialog img { width: 100%; max-height: 78vh; object-fit: contain; }
+    dialog button, dialog p { color: #fff; }
+    :focus-visible { outline: 3px solid var(--sand); outline-offset: 2px; }
+    @media (max-width: 800px) {
+      nav { display: none; }
+      .word small { display: none; }
+      .hero-grid, .pavers, .steps, .gallery, .contact-grid, .mini { grid-template-columns: 1fr 1fr; }
+      .contact-grid, .mini { grid-template-columns: 1fr; }
+      .pavers { grid-template-columns: 1fr 1fr; }
+      .frame img { height: auto; max-height: 420px; aspect-ratio: 4/5; }
+      .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; }
+      .dock .call { background: var(--sand); color: var(--char); }
+      .dock .text { background: var(--char); color: #fff; border-top: 2px solid #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .pavers, .steps, .gallery, .hero-grid { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.78rem; }
+    }
+  </style>
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Free estimates</span><span class="sq" aria-hidden="true"></span>
+      <span>Call or text <a class="nowrap" href="tel:+19418798566">(941) 879-8566</a></span><span class="sq" aria-hidden="true"></span>
+      <span>Sarasota · Venice · Osprey · North Port · Bradenton</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="PixelPaver home">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path fill="#D2AE85" d="M8 20 L26 8 L36 16 L18 28 Z"/>
+          <path fill="#D2AE85" d="M8 34 L26 22 L42 34 L34 40 L26 34 L18 40 Z"/>
+          <path fill="#D2AE85" d="M8 48 L26 36 L36 44 L18 56 Z"/>
+        </svg>
+        <span class="word">PixelPaver<small>PAVING IDEAS, BLOCK BY BLOCK</small></span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#repairs">Repairs</a>
+        <a href="#work">Work</a>
+        <a href="#area">Area</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19418798566">Call <span class="nowrap">(941) 879-8566</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <span class="pixel" style="left:8%;top:18%;animation-delay:.1s" aria-hidden="true"></span>
+      <span class="pixel" style="left:22%;top:62%;animation-delay:.35s" aria-hidden="true"></span>
+      <span class="pixel" style="left:40%;top:28%;animation-delay:.55s" aria-hidden="true"></span>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">PAVERS · POOL DECKS · DRIVEWAYS · SARASOTA TO BRADENTON</p>
+          <h1 id="hero-heading">Low pavers? I can fix it.</h1>
+          <p class="sub">Paver repair and leveling, new installs, driveway extensions, pool decks, pressure washing and sealing, with over 10 years of experience in pavers and tile.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19418798566">Call or text <span class="nowrap">(941) 879-8566</span></a>
+            <a class="btn btn-line" href="sms:+19418798566?&body=Hi%2C%20I%20have%20pavers%20that%20need%20work%20in%20">Text a photo</a>
+          </div>
+          <p class="proof">Nextdoor Neighborhood Fave 2025 &amp; 2026 · 46 neighbors Fave'd PixelPaver · Free estimates</p>
+        </div>
+        <div class="frame">
+          <picture>
+            <source srcset="img/01.webp" type="image/webp">
+            <img src="img/01.jpg" alt="A finished paver driveway leading to a garage, with palms" width="900" height="1200">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="sand" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="services-heading">Your space. Our craft.</h2>
+        <div class="pavers">
+          <article class="paver"><h3>Paver repair &amp; leveling</h3><p>Sunken or uneven pavers lifted, re-based and relaid flat.</p></article>
+          <article class="paver"><h3>Pool decks &amp; pool areas</h3><p>Repairs and new pool decks, including travertine.</p></article>
+          <article class="paver"><h3>Paver installation</h3><p>New patios, walkways and more.</p></article>
+          <article class="paver"><h3>Driveway extensions</h3><p>More room to park, matched to what you have.</p></article>
+          <article class="paver"><h3>Pressure washing</h3><p>Bring tired pavers back to life.</p></article>
+          <article class="paver"><h3>Sealing &amp; polymeric sand</h3><p>Joint sand and sealer to lock pavers in and keep them looking new.</p></article>
+        </div>
+        <p style="color:var(--copper);font-weight:600;">Paver leveling and preparation done right, block by block.</p>
+        <p hidden>2-year warranty</p>
+      </div>
+    </section>
+
+    <section class="char" id="repairs" aria-labelledby="repairs-heading">
+      <div class="wrap">
+        <p class="kicker">02</p>
+        <h2 id="repairs-heading">From sunken to solid</h2>
+        <p>Low pavers around a pool or on a driveway are the most common call. Here's what a repair looks like.</p>
+        <div class="steps">
+          <article>
+            <p class="num">1 · Lift</p>
+            <picture><source srcset="img/04.webp" type="image/webp"><img src="img/04.jpg" alt="Pavers pulled up along a pool edge" width="900" height="1200" loading="lazy"></picture>
+          </article>
+          <article>
+            <p class="num">2 · Re-base</p>
+            <picture><source srcset="img/06.webp" type="image/webp"><img src="img/06.jpg" alt="The base leveled and prepared beside a pool" width="900" height="1200" loading="lazy"></picture>
+          </article>
+          <article>
+            <p class="num">3 · Relay</p>
+            <picture><source srcset="img/05.webp" type="image/webp"><img src="img/05.jpg" alt="The finished pool deck, flat and clean" width="900" height="1200" loading="lazy"></picture>
+          </article>
+        </div>
+        <div class="mini">
+          <figure>
+            <picture><source srcset="img/12.webp" type="image/webp"><img src="img/12.jpg" alt="A side yard prepared for a new paver walkway" width="1200" height="1600" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:8px;"></picture>
+            <figcaption>Prep</figcaption>
+          </figure>
+          <figure>
+            <picture><source srcset="img/14.webp" type="image/webp"><img src="img/14.jpg" alt="A new paver walkway along the side of a house" width="1120" height="1400" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:8px;"></picture>
+            <figcaption>New walkway</figcaption>
+          </figure>
+        </div>
+        <p><a class="btn btn-call" href="sms:+19418798566?&body=Hi%2C%20I%20have%20pavers%20that%20need%20work%20in%20">Text a photo of your pavers</a></p>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="work-heading">Recent work</h2>
+        <div class="gallery">
+          <figure><button type="button" data-full="img/02.jpg" data-cap="Pool deck, charcoal pavers"><picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.jpg" alt="Pool deck in charcoal pavers" width="900" height="1200" loading="lazy"></picture></button><figcaption>Pool deck, charcoal pavers</figcaption></figure>
+          <figure><button type="button" data-full="img/03.jpg" data-cap="Pool deck in a screened lanai"><picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.jpg" alt="Pool deck inside a screened lanai" width="900" height="1200" loading="lazy"></picture></button><figcaption>Pool deck in a screened lanai</figcaption></figure>
+          <figure><button type="button" data-full="img/09.jpg" data-cap="Travertine pool deck"><picture><source srcset="img/09.webp" type="image/webp"><img src="img/09.jpg" alt="Travertine pool deck" width="900" height="1200" loading="lazy"></picture></button><figcaption>Travertine pool deck</figcaption></figure>
+          <figure><button type="button" data-full="img/11.jpg" data-cap="Gray paver patio"><picture><source srcset="img/11.webp" type="image/webp"><img src="img/11.jpg" alt="Gray paver patio" width="1200" height="1600" loading="lazy"></picture></button><figcaption>Gray paver patio</figcaption></figure>
+          <figure><button type="button" data-full="img/08.jpg" data-cap="Pool deck repair in progress"><picture><source srcset="img/08.webp" type="image/webp"><img src="img/08.jpg" alt="Pool deck repair in progress" width="900" height="1200" loading="lazy"></picture></button><figcaption>Pool deck repair in progress</figcaption></figure>
+          <figure><button type="button" data-full="img/01.jpg" data-cap="Paver driveway"><picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Paver driveway" width="900" height="1200" loading="lazy"></picture></button><figcaption>Paver driveway</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sand" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <blockquote class="quote">
+          <p>This guy did some work for my neighbor… he can guide you in the right direction for free.</p>
+          <cite>L.C. · Nextdoor · Oct 2026</cite>
+        </blockquote>
+        <p>Nextdoor Neighborhood Fave 2025 &amp; 2026 · 46 Faves</p>
+      </div>
+    </section>
+
+    <section id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="kicker">05</p>
+        <h2 id="area-heading">Where we work</h2>
+        <svg viewBox="0 0 320 110" width="320" height="110" aria-hidden="true">
+          <path d="M20 20 C50 30, 40 70, 70 90 C100 110, 80 108, 120 100" fill="none" stroke="#8A5A2B" stroke-width="2.5"/>
+          <text x="80" y="28" fill="#26262B" font-size="13" font-family="Inter, sans-serif">Sarasota</text>
+          <text x="150" y="48" fill="#26262B" font-size="13" font-family="Inter, sans-serif">Osprey · Venice</text>
+          <text x="160" y="78" fill="#26262B" font-size="13" font-family="Inter, sans-serif">North Port</text>
+          <text x="200" y="102" fill="#26262B" font-size="13" font-family="Inter, sans-serif">Bradenton</text>
+        </svg>
+        <ul class="chips">
+          <li>Sarasota</li>
+          <li>Venice</li>
+          <li>Osprey</li>
+          <li>North Port</li>
+          <li>Bradenton</li>
+          <li>&amp; surrounding areas</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">06</p>
+          <h2 id="contact-heading">Get a free estimate</h2>
+          <dl>
+            <div><dt>Call or text</dt><dd><a class="nowrap" href="tel:+19418798566">(941) 879-8566</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:pixelpaver@hotmail.com">pixelpaver@hotmail.com</a></dd></div>
+            <div><dt>Area</dt><dd>Sarasota, Venice, Osprey, North Port, Bradenton &amp; surrounding areas</dd></div>
+          </dl>
+          <p><a href="https://nextdoor.com/pages/magalhaes-paver-repair-sarasota-fl/">Nextdoor</a></p>
+        </div>
+        <form id="estimate-form">
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>Town <input name="town"></label>
+          <label>Job
+            <select name="job">
+              <option>Repair / leveling</option>
+              <option>Pool deck</option>
+              <option>New install</option>
+              <option>Driveway extension</option>
+              <option>Pressure washing</option>
+              <option>Sealing</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Note <textarea name="note" rows="3"></textarea></label>
+          <label class="check"><input type="checkbox" name="photos" value="yes"> I'll text photos</label>
+          <button class="btn btn-call" type="submit">Get a free estimate</button>
+          <p>Photos help. Text them to <a class="nowrap" href="sms:+19418798566">(941) 879-8566</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+        <path fill="#D2AE85" d="M8 20 L26 8 L36 16 L18 28 Z"/>
+        <path fill="#D2AE85" d="M8 34 L26 22 L42 34 L34 40 L26 34 L18 40 Z"/>
+        <path fill="#D2AE85" d="M8 48 L26 36 L36 44 L18 56 Z"/>
+      </svg>
+      <p>PixelPaver LLC · Your Space. Our Craft. · Sarasota, FL area · <a class="nowrap" href="tel:+19418798566">(941) 879-8566</a></p>
+      <p>Paving ideas, block by block.</p>
+      <p><a href="https://nextdoor.com/pages/magalhaes-paver-repair-sarasota-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19418798566">Call</a>
+    <a class="text" href="sms:+19418798566?&body=Hi%2C%20I%20have%20pavers%20that%20need%20work%20in%20">Text a photo</a>
+  </div>
+  <dialog id="lightbox">
+    <form method="dialog"><button type="submit">Close</button></form>
+    <img alt="" id="lb-img">
+    <p id="lb-cap"></p>
+  </dialog>
+  <script>
+    var dlg = document.getElementById("lightbox");
+    document.querySelectorAll("[data-full]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.getElementById("lb-img").src = btn.getAttribute("data-full");
+        document.getElementById("lb-img").alt = btn.getAttribute("data-cap");
+        document.getElementById("lb-cap").textContent = btn.getAttribute("data-cap");
+        dlg.showModal();
+      });
+    });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    document.getElementById("estimate-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = ["Name: " + d.get("name"), "Phone: " + d.get("phone"), "Town: " + d.get("town"), "Job: " + d.get("job"), "I'll text photos: " + (d.get("photos") ? "yes" : "no"), "", d.get("note") || ""].join("\n");
+      window.location.href = "mailto:pixelpaver@hotmail.com?subject=" + encodeURIComponent("Free estimate request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
