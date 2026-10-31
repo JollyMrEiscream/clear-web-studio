@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abbe's Donut Nook | Fresh Donuts &amp; Coffee in Port Charlotte, FL — Charlotte Square</title>
+  <meta name="description" content="Family donut shop in Port Charlotte's Charlotte Square: glazed, apple fritters, crullers and coffee, baked fresh every morning. Opens 5 AM. Call (941) 979-5086.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Abbe's Donut Nook",
+    "legalName": "Abbes Donut Nook Inc",
+    "telephone": "+1-941-979-5086",
+    "servesCuisine": ["Donuts", "Coffee"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2150 Tamiami Trail #25",
+      "addressLocality": "Port Charlotte",
+      "addressRegion": "FL",
+      "postalCode": "33948",
+      "addressCountry": "US"
+    },
+    "sameAs": ["https://nextdoor.com/pages/abbes-donut-nook-inc-port-charlotte-fl-1/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FFF8EE;
+      --cream: #F7E9D3;
+      --ink: #2A1A12;
+      --choc: #4A2C1D;
+      --glaze: #F4A6C4;
+      --glazetext: #B0305F;
+      --sprinkle1: #E8B04B;
+      --sprinkle2: #7CC6B2;
+      --muted: #6B5446;
+      --dough: #D9A066;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Nunito, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+    img, svg { max-width: 100%; }
+    a { color: var(--glazetext); }
+    a:hover { text-decoration-thickness: 2px; }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.15; font-weight: 900; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip {
+      position: absolute; left: -999px; top: 0.5rem; background: var(--glaze); color: var(--choc);
+      padding: 0.5rem 0.8rem; z-index: 20; font-weight: 800;
+    }
+    .skip:focus { left: 0.5rem; }
+    .utility-bar { background: var(--choc); color: var(--cream); font-size: 0.86rem; font-weight: 700; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.85rem; padding: 0.5rem 0; text-align: center; }
+    .utility-bar a { color: var(--cream); text-decoration: none; }
+    .dot { color: var(--glaze); }
+    .site-header { background: var(--choc); color: var(--cream); border-bottom: 1px solid rgba(247,233,211,0.15); position: sticky; top: 0; z-index: 10; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.7rem 0; }
+    .wordmark { text-decoration: none; color: var(--cream); display: flex; flex-direction: column; line-height: 1; }
+    .wordmark .abbes { font-family: Fraunces, serif; font-weight: 900; font-size: 1.55rem; color: var(--glaze); }
+    .wordmark .nook { font-weight: 800; letter-spacing: 0.16em; font-size: 0.78rem; margin-top: 0.15rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.7rem 1rem; align-items: center; }
+    nav a { color: var(--cream); text-decoration: none; font-weight: 800; font-size: 0.92rem; }
+    nav a:hover { color: var(--glaze); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;
+      min-height: 48px; padding: 0.7rem 1.15rem; border-radius: 999px; text-decoration: none;
+      font-family: Nunito, sans-serif; font-weight: 800; border: 2px solid transparent;
+    }
+    .btn-call { background: var(--glaze); color: var(--choc); min-height: 56px; font-size: 1.05rem; }
+    .btn-call:hover { filter: brightness(1.05); color: var(--choc); }
+    .btn-ghost { background: transparent; color: var(--cream); border-color: var(--cream); }
+    .btn-ghost:hover { background: var(--cream); color: var(--choc); }
+    .btn-ink { background: var(--choc); color: var(--cream); }
+    .btn-ink:hover { color: var(--cream); }
+    .awning {
+      height: 42px;
+      background: repeating-linear-gradient(90deg, var(--glaze) 0 26px, var(--cream) 26px 52px);
+      position: relative;
+    }
+    .awning::after {
+      content: "";
+      position: absolute; left: 0; right: 0; bottom: -14px; height: 16px;
+      background: radial-gradient(circle at 13px 0, transparent 12px, var(--choc) 13px) left top / 26px 16px repeat-x;
+    }
+    .hero { background: var(--choc); color: var(--cream); padding: 0 0 3rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; align-items: center; padding-top: 2.4rem; }
+    .eyebrow { font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; color: var(--glaze); margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2rem, 4.4vw, 3.15rem); color: var(--cream); margin: 0 0 0.8rem; }
+    .hero .sub { color: rgba(247,233,211,0.88); font-size: 1.12rem; max-width: 42ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.2rem 0 0.9rem; }
+    .chip { display: inline-block; background: var(--cream); color: var(--choc); font-weight: 800; border-radius: 999px; padding: 0.35rem 0.8rem; }
+    .fave { color: var(--glaze); font-weight: 800; margin: 0.85rem 0 0; }
+    .donut-wrap { justify-self: center; }
+    .donut-wrap svg { width: min(320px, 100%); height: auto; }
+    .sprinkle { transform-box: fill-box; transform-origin: center; animation: drift 3.2s ease-in-out infinite alternate; }
+    .s2 { animation-delay: 0.4s; } .s3 { animation-delay: 0.8s; }
+    @keyframes drift { from { transform: translateY(0); } to { transform: translateY(7px); } }
+    section { padding: 3.2rem 0; }
+    .kicker { font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--glazetext); font-size: 0.78rem; margin: 0 0 0.4rem; }
+    .kicker span { margin-right: 0.4rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 1.1rem; }
+    .menu { background: var(--cream); position: relative; }
+    .scallop-top { height: 18px; background: radial-gradient(circle at 16px 18px, var(--cream) 16px, transparent 17px) left top / 32px 18px repeat-x; margin-top: -18px; }
+    .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; }
+    .tile { background: var(--bg); border-radius: 18px; padding: 1.1rem 1rem 1.2rem; text-align: center; }
+    .tile h3 { font-size: 1.2rem; margin: 0.4rem 0 0.3rem; }
+    .tile p { margin: 0; color: var(--muted); }
+    .note { color: var(--glazetext); font-weight: 800; margin: 1.2rem 0 0; }
+    .hours-card { background: var(--cream); border-radius: 24px; padding: 2rem; display: grid; grid-template-columns: auto 1fr; gap: 1.4rem; align-items: center; }
+    .big { font-family: Fraunces, serif; font-weight: 900; font-size: clamp(2rem, 4vw, 3rem); margin: 0; }
+    .story { background: var(--choc); color: var(--cream); }
+    .story h2, .story .kicker { color: var(--cream); }
+    .story .kicker { color: var(--glaze); }
+    .story-grid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 2rem; align-items: start; }
+    .timeline { list-style: none; margin: 0; padding: 0; }
+    .timeline li { position: relative; padding: 0 0 1.2rem 1.4rem; }
+    .timeline li::before { content: ""; position: absolute; left: 0; top: 0.4rem; width: 12px; height: 12px; border-radius: 50%; background: var(--cream); }
+    .timeline strong { display: block; font-family: Fraunces, serif; font-size: 1.2rem; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .sticker {
+      background: var(--cream); border-radius: 50%; min-height: 260px; aspect-ratio: 1;
+      display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+      padding: 1.6rem; position: relative;
+    }
+    .sticker q { font-family: Fraunces, serif; font-weight: 700; font-size: 1.15rem; }
+    .sticker q::before { content: "“"; color: var(--glaze); font-size: 2rem; display: block; line-height: 1; }
+    .sticker cite { font-style: normal; font-weight: 800; color: var(--glazetext); margin-top: 0.6rem; }
+    .visit-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.5rem; align-items: start; }
+    dl { margin: 0; display: grid; gap: 0.85rem; }
+    dt { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    .plaza { background: var(--cream); border-radius: 20px; padding: 1.4rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.1rem; }
+    .small { font-size: 0.92rem; color: var(--muted); font-weight: 700; }
+    .site-footer { background: var(--choc); color: var(--cream); padding: 2rem 0 2.4rem; text-align: center; }
+    .site-footer a { color: var(--glaze); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+    @media (max-width: 800px) {
+      .awning { height: 24px; background-size: 24px; }
+      .hero-grid, .story-grid, .visit-grid, .hours-card { grid-template-columns: 1fr; }
+      .donut-wrap { order: -1; }
+      .donut-wrap svg { width: 120px; }
+      .hero h1 { font-size: clamp(1.85rem, 8vw, 2.5rem); }
+      .tiles { grid-template-columns: 1fr 1fr; }
+      .quotes { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock {
+        display: grid; grid-template-columns: 1.5fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+      }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 800; }
+      .dock .call { background: var(--glaze); color: var(--choc); }
+      .dock .dir { background: var(--choc); color: var(--cream); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .tiles { grid-template-columns: 1fr; }
+      .sticker { border-radius: 22px; aspect-ratio: auto; min-height: 0; }
+      .utility-bar { font-size: 0.78rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .sprinkle { animation: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Charlotte Square · 2150 Tamiami Trail #25</span>
+      <span class="dot" aria-hidden="true">●</span>
+      <span>Opens 5 AM</span>
+      <span class="dot" aria-hidden="true">●</span>
+      <a href="tel:+19419795086">Call <span class="nowrap">(941) 979-5086</span></a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">
+        <span class="abbes">Abbe's</span>
+        <span class="nook">DONUT NOOK</span>
+      </a>
+      <nav aria-label="On this page">
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#story">Our story</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19419795086">Call <span class="nowrap">(941) 979-5086</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="awning" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Family donut shop · Charlotte Square, Port Charlotte</p>
+          <h1 id="hero-heading">Fresh donuts, the old-fashioned way — right here in Port Charlotte.</h1>
+          <p class="sub">Glazed, fritters, crullers and a hot cup of coffee — from the Abbe's family of donut shops, baking for Southwest Florida since the '70s.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19419795086">Call <span class="nowrap">(941) 979-5086</span></a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Abbe%27s+Donut+Nook+2150+Tamiami+Trail+%2325+Port+Charlotte+FL+33948">Get directions</a>
+          </div>
+          <p class="chip">Opens 5 AM · Call for today's hours</p>
+          <p class="fave">Nextdoor Neighborhood Favorite 2017–2024 &amp; 2026 · 691 neighbor Faves</p>
+        </div>
+        <div class="donut-wrap" aria-hidden="true">
+          <svg viewBox="0 0 280 260" role="img">
+            <title>Glazed donut and coffee</title>
+            <ellipse cx="78" cy="168" rx="34" ry="8" fill="#3a2216"/>
+            <path d="M62 120 h28 v40 a18 18 0 0 1-28 0z" fill="#F7E9D3"/>
+            <path d="M90 128 h12 a10 14 0 0 1 0 24 h-12" fill="none" stroke="#F7E9D3" stroke-width="4"/>
+            <path class="sprinkle" d="M70 108 q8-16 16-4" fill="none" stroke="#E8B04B" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="176" cy="128" r="78" fill="#D9A066"/>
+            <circle cx="176" cy="128" r="62" fill="#F4A6C4"/>
+            <circle cx="176" cy="128" r="26" fill="#4A2C1D"/>
+            <rect class="sprinkle" x="150" y="78" width="8" height="16" rx="3" fill="#E8B04B" transform="rotate(-20 154 86)"/>
+            <rect class="sprinkle s2" x="200" y="90" width="8" height="16" rx="3" fill="#7CC6B2" transform="rotate(25 204 98)"/>
+            <rect class="sprinkle s3" x="132" y="120" width="8" height="14" rx="3" fill="#fff" transform="rotate(-40 136 127)"/>
+            <rect class="sprinkle" x="210" y="140" width="8" height="14" rx="3" fill="#E8B04B" transform="rotate(15 214 147)"/>
+            <rect class="sprinkle s2" x="160" y="168" width="8" height="14" rx="3" fill="#7CC6B2" transform="rotate(-10 164 175)"/>
+            <rect class="sprinkle s3" x="188" y="78" width="7" height="13" rx="3" fill="#fff"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="scallop-top" aria-hidden="true"></div>
+    <section class="menu" id="menu" aria-labelledby="menu-heading">
+      <div class="wrap">
+        <p class="kicker"><span>01</span> From the case</p>
+        <h2 id="menu-heading">From the case</h2>
+        <div class="tiles">
+          <article class="tile">
+            <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="20" fill="#F4A6C4"/><circle cx="27" cy="27" r="8" fill="#FFF8EE"/></svg>
+            <h3>Glazed &amp; yeast-raised</h3>
+            <p>Light, fluffy and glazed fresh every morning.</p>
+          </article>
+          <article class="tile">
+            <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true"><ellipse cx="27" cy="30" rx="18" ry="12" fill="#D9A066"/><ellipse cx="27" cy="26" rx="14" ry="8" fill="#E8B04B"/></svg>
+            <h3>Apple fritters</h3>
+            <p>Big enough to share — or not.</p>
+          </article>
+          <article class="tile">
+            <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="18" fill="#7CC6B2"/><circle cx="27" cy="27" r="7" fill="#FFF8EE"/></svg>
+            <h3>Cake &amp; crullers</h3>
+            <p>Old-fashioned cake donuts and light, crispy crullers.</p>
+          </article>
+          <article class="tile">
+            <svg width="54" height="54" viewBox="0 0 54 54" aria-hidden="true"><rect x="8" y="20" width="38" height="16" rx="8" fill="#F4A6C4"/></svg>
+            <h3>Long johns, filled &amp; more</h3>
+            <p>Plus hot coffee to go with it.</p>
+          </article>
+        </div>
+        <p class="note">Need a few dozen for the office or a party? Call ahead — <a class="nowrap" href="tel:+19419795086">(941) 979-5086</a>.</p>
+      </div>
+    </section>
+
+    <section id="hours" aria-labelledby="hours-heading">
+      <div class="wrap">
+        <p class="kicker"><span>02</span> Hours</p>
+        <h2 id="hours-heading">Up before the sun</h2>
+        <div class="hours-card">
+          <svg width="84" height="84" viewBox="0 0 84 84" aria-hidden="true">
+            <circle cx="42" cy="46" r="16" fill="#E8B04B"/>
+            <path d="M42 14 v10 M42 68 v8 M14 46 h10 M60 46 h10 M22 26 l7 7 M55 51 l7 7 M62 26 l-7 7 M29 51 l-7 7" stroke="#4A2C1D" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <p class="big">Opens 5 AM</p>
+            <p>Closes when the case is empty — call for today's hours.</p>
+          </div>
+        </div>
+        <!-- HOURS CONFLICT: confirm with shop -->
+        <table hidden>
+          <caption>Hours not shown until the shop confirms which listing is right.</caption>
+          <thead>
+            <tr><th>Listing</th><th>Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Option A</td><td>Mon–Sun 5 AM–3 PM</td></tr>
+            <tr><td>Option B</td><td>Mon closed · Sun 5 AM–12 PM · other days call to confirm</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="story" id="story" aria-labelledby="story-heading">
+      <div class="wrap story-grid">
+        <div>
+          <p class="kicker"><span>03</span> Our story</p>
+          <h2 id="story-heading">A family donut tradition</h2>
+          <ol class="timeline">
+            <li><strong>'70s</strong> The first Abbe's opens in Englewood.</li>
+            <li><strong>'80s</strong> North Port follows.</li>
+            <li><strong>2011</strong> Abbe's Donut Nook opens in Port Charlotte's Charlotte Square.</li>
+          </ol>
+        </div>
+        <p>Every Abbe's shop bakes from scratch, every day. Ours has been feeding Port Charlotte's early risers since 2011 — the same donuts neighbors grew up on.</p>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker"><span>04</span> Reviews</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <figure class="sticker">
+            <q>Just like they were 50 years ago!! ❤️</q>
+            <cite>S.G.</cite>
+          </figure>
+          <figure class="sticker">
+            <q>Wouldn't go anywhere else — and I've had donuts all over the world.</q>
+            <cite>Nextdoor neighbor</cite>
+          </figure>
+          <figure class="sticker">
+            <q>We have been going for about 11 years.</q>
+            <cite>D.G.</cite>
+          </figure>
+        </div>
+        <p class="note">Nextdoor Neighborhood Favorite 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 &amp; 2026 · 691 neighbors Fave'd us</p>
+      </div>
+    </section>
+
+    <section id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <p class="kicker"><span>05</span> Visit</p>
+        <h2 id="visit-heading">Find us in Charlotte Square</h2>
+        <div class="visit-grid">
+          <dl>
+            <div>
+              <dt>Address</dt>
+              <dd>2150 Tamiami Trail #25, Port Charlotte, FL 33948<br><span class="small">Charlotte Square plaza</span></dd>
+            </div>
+            <div>
+              <dt>Call</dt>
+              <dd><a class="nowrap" href="tel:+19419795086">(941) 979-5086</a></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Opens 5 AM — call for today's hours</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd class="small"><a href="mailto:abbesnook@comcast.net">abbesnook@comcast.net</a></dd>
+            </div>
+          </dl>
+          <aside class="plaza" aria-label="Charlotte Square">
+            <svg viewBox="0 0 280 140" width="100%" height="120" aria-hidden="true">
+              <rect x="20" y="50" width="240" height="60" rx="6" fill="#4A2C1D"/>
+              <rect x="36" y="64" width="36" height="30" fill="#F4A6C4"/>
+              <rect x="84" y="64" width="36" height="30" fill="#F7E9D3"/>
+              <rect x="132" y="64" width="36" height="30" fill="#F4A6C4"/>
+              <rect x="180" y="64" width="36" height="30" fill="#F7E9D3"/>
+              <path d="M20 50 Q160 18 260 50" fill="#F4A6C4"/>
+              <text x="20" y="132" fill="#6B5446" font-family="Nunito, sans-serif" font-size="14">Tamiami Trail · Charlotte Square</text>
+            </svg>
+            <div class="actions">
+              <a class="btn btn-call" href="tel:+19419795086">Call <span class="nowrap">(941) 979-5086</span></a>
+              <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=Abbe%27s+Donut+Nook+2150+Tamiami+Trail+%2325+Port+Charlotte+FL+33948">Get directions</a>
+            </div>
+            <p><a href="https://nextdoor.com/pages/abbes-donut-nook-inc-port-charlotte-fl-1/">Nextdoor</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Abbes Donut Nook Inc · Family donut shop &amp; bakery · Charlotte Square, Port Charlotte, FL · <a class="nowrap" href="tel:+19419795086">(941) 979-5086</a></p>
+      <p><a href="https://nextdoor.com/pages/abbes-donut-nook-inc-port-charlotte-fl-1/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick actions">
+    <a class="call" href="tel:+19419795086">Call</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Abbe%27s+Donut+Nook+2150+Tamiami+Trail+%2325+Port+Charlotte+FL+33948">Directions</a>
+  </div>
+</body>
+</html>
