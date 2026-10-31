@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peeples Pet Care | In-Home Dog Boarding &amp; Grooming in Sarasota</title>
+  <meta name="description" content="Small-group dog boarding in a real Sarasota home with a large shaded, fenced yard, plus grooming. Over 25 years in the pet industry. Call or text (941) 376-7566 to book a meet-and-greet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Peeples Pet Care",
+    "telephone": "+1-941-376-7566",
+    "email": "peeplespetcare@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": "Sarasota, FL",
+    "sameAs": [
+      "https://www.facebook.com/peeplespetcare",
+      "https://nextdoor.com/pages/peeples-pet-care-sarasota-fl/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FFF8FB;
+      --blush: #FFE3F1;
+      --ink: #2A1F33;
+      --pink: #D81B7A;
+      --cyan: #1BA9D9;
+      --sun: #FFE14D;
+      --plum: #4A1640;
+      --grass: #2E7D32;
+      --link: #0E6E91;
+      --muted: #6B5E73;
+      --petal: #F7C6DF;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Nunito, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--link); }
+    h1, h2, .btn, .wordmark { font-family: Fredoka, sans-serif; font-weight: 700; line-height: 1.15; }
+    .hand { font-family: Caveat, cursive; font-weight: 700; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--pink); color: #fff; padding: 0.5rem 0.8rem; z-index: 50; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    :focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+    .utility-bar { background: var(--plum); color: #fff; font-size: 0.92rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.35rem 0.7rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 700; }
+    .paw { width: 16px; height: 16px; }
+    .site-header { background: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 3px solid var(--cyan); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.45rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; color: var(--ink); }
+    .wordmark { font-size: 1.25rem; }
+    .wordmark em { font-style: normal; color: var(--pink); }
+    nav { display: flex; gap: 0.7rem; align-items: center; flex-wrap: wrap; }
+    nav a { color: var(--ink); text-decoration: none; font-weight: 700; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.65rem 1.15rem; border-radius: 999px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-size: 1.125rem; font-weight: 700; }
+    .btn-call { background: var(--pink); color: #fff; min-height: 56px; font-weight: 700; }
+    .btn-call:hover { color: #fff; }
+    .btn-text { background: var(--cyan); color: var(--ink); font-weight: 700; }
+    .btn-text:hover { color: var(--ink); }
+    .hero { position: relative; padding: 2.4rem 0 4.2rem; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.4rem; align-items: center; }
+    .eyebrow { color: var(--grass); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 0.4rem; font-size: 0.86rem; }
+    .hero h1 { font-size: clamp(2rem, 4.4vw, 3.35rem); margin: 0.15rem 0 0.6rem; }
+    .hero h1 em { font-style: normal; color: var(--pink); }
+    .sub { color: var(--muted); margin: 0; max-width: 46ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; }
+    .sun-chip { display: inline-block; background: var(--sun); color: var(--ink); font-weight: 700; border-radius: 999px; padding: 0.35rem 0.75rem; }
+    .polaroids { position: relative; height: 380px; max-width: 460px; margin-inline: auto; }
+    .polaroid { position: absolute; background: #fff; padding: 10px 10px 28px; box-shadow: 0 12px 28px rgba(74,22,64,0.16); }
+    .polaroid img { width: 100%; height: 250px; object-fit: cover; }
+    .polaroid.back { width: 230px; right: 0; top: 30px; transform: rotate(4deg); }
+    .polaroid.front { width: 280px; left: 0; top: 0; transform: rotate(-3deg); z-index: 1; }
+    .paws { position: absolute; right: 4%; bottom: 18%; opacity: 0.35; }
+    .wave { position: absolute; left: 0; right: 0; bottom: -1px; height: 54px; }
+    .wave svg { width: 100%; height: 54px; display: block; }
+    section { padding: 2.6rem 0; }
+    .kicker { color: var(--pink); font-family: Fredoka, sans-serif; letter-spacing: 0.08em; margin: 0; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0.15rem 0 0.7rem; }
+    .blush { background: var(--blush); }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .card { background: #fff; border-radius: 18px; padding: 1rem 1.1rem; }
+    .card h3 { margin: 0.3rem 0; font-family: Fredoka, sans-serif; }
+    .note { color: var(--link); font-weight: 700; }
+    .mosaic { display: grid; grid-template-columns: 1.35fr 0.85fr; gap: 0.65rem; }
+    .stack { display: grid; gap: 0.65rem; }
+    .shot { margin: 0; position: relative; }
+    .shot img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; min-height: 220px; }
+    .shot figcaption { position: absolute; left: 12px; bottom: 10px; color: var(--plum); font-size: 1.45rem; text-shadow: 0 1px 0 #fff; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .step h3 { margin: 0.4rem 0 0.25rem; font-family: Fredoka, sans-serif; }
+    .step p { margin: 0; color: var(--petal); }
+    .num { width: 42px; height: 42px; border-radius: 50%; background: var(--pink); color: var(--sun); display: grid; place-items: center; font-family: Fredoka, sans-serif; font-size: 1.2rem; }
+    .band { background: var(--plum); color: #fff; }
+    .band h2 { color: #fff; }
+    .groom { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem; align-items: center; }
+    .groom img { width: 100%; height: 360px; object-fit: cover; border-radius: 24px; }
+    .menu { background: #fff; border-radius: 18px; padding: 1rem 1.15rem; }
+    .menu ul { margin: 0.4rem 0 0.8rem; padding-left: 1.1rem; }
+    .review-wrap { max-width: 720px; margin-inline: auto; }
+    .quote { position: relative; background: #fff; border-radius: 18px; padding: 1.3rem 1.2rem 1.1rem; margin: 0; box-shadow: 0 8px 0 var(--blush); }
+    .quote .mark { font-family: Fredoka, sans-serif; color: var(--pink); font-size: 2.6rem; line-height: 0.7; }
+    .tape { position: absolute; width: 54px; height: 16px; background: var(--sun); opacity: 0.9; }
+    .tape.l { left: 18px; top: -8px; transform: rotate(-8deg); }
+    .tape.r { right: 22px; top: -6px; transform: rotate(7deg); }
+    .quote cite { display: block; margin-top: 0.6rem; font-style: normal; font-weight: 700; color: var(--pink); }
+    .meet { display: grid; grid-template-columns: 240px 1fr; gap: 1.2rem; align-items: center; }
+    .avatar { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 6px solid #fff; box-shadow: 0 8px 0 var(--blush); }
+    .hi { color: var(--pink); font-size: 2.2rem; margin: 0; }
+    .strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.55rem; margin-top: 1.2rem; }
+    .strip figure { margin: 0; }
+    .strip img { width: 100%; height: 180px; object-fit: cover; border-radius: 14px; }
+    .strip figcaption { font-size: 1.35rem; color: var(--pink); }
+    details { background: #fff; border-radius: 14px; padding: 0.35rem 0.9rem; margin: 0.45rem 0; }
+    summary { cursor: pointer; font-weight: 700; min-height: 44px; display: flex; align-items: center; }
+    details p { margin: 0.2rem 0 0.7rem; color: var(--muted); }
+    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.1rem; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    form { display: grid; gap: 0.55rem; background: #fff; padding: 1rem; border-radius: 18px; }
+    label { font-weight: 700; display: grid; gap: 0.25rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem 0.65rem; border-radius: 12px; border: 1px solid #f3c3dd; width: 100%; min-height: 44px; background: var(--bg); }
+    .site-footer { background: var(--plum); color: var(--petal); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: #fff; }
+    .bye { color: var(--sun); font-size: 2rem; margin: 0.2rem 0; }
+    .dock { display: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .polaroid.back, .polaroid.front, .tape.l, .tape.r { transform: none; }
+      html { scroll-behavior: auto; }
+    }
+    @media (max-width: 800px) {
+      nav { display: none; }
+      .hero-grid, .cards, .mosaic, .groom, .meet, .contact-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .strip { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: clamp(2rem, 8vw, 3.2rem); }
+      .polaroids { height: 320px; max-width: 320px; }
+      .polaroid.front { width: 210px; }
+      .polaroid.back { width: 170px; }
+      .polaroid img { height: 180px; }
+      .meet { justify-items: center; text-align: left; }
+      .avatar { width: 200px; height: 200px; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: Fredoka, sans-serif; font-weight: 700; }
+      .dock .call { background: var(--pink); color: #fff; }
+      .dock .text { background: var(--cyan); color: var(--ink); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .steps, .strip { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>By appointment</span>
+      <svg class="paw" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="2.2" fill="#FFE14D"/><circle cx="12" cy="5.5" r="2.2" fill="#FFE14D"/><circle cx="17" cy="8" r="2.2" fill="#FFE14D"/><ellipse cx="12" cy="15" rx="4.2" ry="3.2" fill="#FFE14D"/></svg>
+      <a href="tel:+19413767566">Call or text <span class="nowrap">(941) 376-7566</span></a>
+      <svg class="paw" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="2.2" fill="#FFE14D"/><circle cx="12" cy="5.5" r="2.2" fill="#FFE14D"/><circle cx="17" cy="8" r="2.2" fill="#FFE14D"/><ellipse cx="12" cy="15" rx="4.2" ry="3.2" fill="#FFE14D"/></svg>
+      <span>Sarasota</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Peeples Pet Care home">
+        <svg class="paw" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="2.2" fill="#D81B7A"/><circle cx="12" cy="5.5" r="2.2" fill="#D81B7A"/><circle cx="17" cy="8" r="2.2" fill="#D81B7A"/><ellipse cx="12" cy="15" rx="4.2" ry="3.2" fill="#D81B7A"/></svg>
+        <span class="wordmark"><em>Peeples</em> Pet Care</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#boarding">Boarding</a>
+        <a href="#yard">The yard</a>
+        <a href="#grooming">Grooming</a>
+        <a href="#about">Meet Nichole</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19413767566">Call <span class="nowrap">(941) 376-7566</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">In-home dog boarding · Daycare · Grooming · Sarasota</p>
+          <h1 id="hero-heading">Small-group dog boarding in a <em>real home</em>.</h1>
+          <p class="sub">A personalized stay in Nichole's home, with a large fenced yard with shade, plus grooming, from someone with over 25 years in the pet industry.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19413767566">Call <span class="nowrap">(941) 376-7566</span></a>
+            <a class="btn btn-text" href="sms:+19413767566?&amp;body=Hi%20Nichole%2C%20I%27d%20like%20to%20set%20up%20a%20meet-and-greet%20for%20my%20dog%20">Text to book a meet-and-greet</a>
+          </div>
+          <p class="sub">Nextdoor Neighborhood Fave 2017, 2018, 2019 &amp; 2024 · 71 Faves</p>
+          <p><span class="sun-chip">Book direct, no app fees</span></p>
+        </div>
+        <div class="polaroids" aria-hidden="false">
+          <figure class="polaroid back">
+            <img src="img/yard-fence.jpg" alt="Dogs playing in a fenced yard beside a shed" width="900" height="1160">
+          </figure>
+          <figure class="polaroid front">
+            <img src="img/poodles.jpg" alt="Two poodles with pink and teal creative grooming" width="2048" height="1536">
+          </figure>
+          <svg class="paws" viewBox="0 0 80 40" aria-hidden="true">
+            <g fill="#D81B7A"><circle cx="8" cy="10" r="3"/><circle cx="16" cy="6" r="3"/><circle cx="24" cy="10" r="3"/><ellipse cx="16" cy="18" rx="6" ry="4"/></g>
+            <g fill="#1BA9D9" transform="translate(40,8)"><circle cx="8" cy="10" r="3"/><circle cx="16" cy="6" r="3"/><circle cx="24" cy="10" r="3"/><ellipse cx="16" cy="18" rx="6" ry="4"/></g>
+          </svg>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true">
+        <svg viewBox="0 0 1200 54" preserveAspectRatio="none"><path fill="#1BA9D9" d="M0 28c80 18 160-18 240-8s160 28 240 12 160-30 240-12 160 26 240 10 160-24 240-8v32H0Z"/></svg>
+      </div>
+    </section>
+
+    <section id="boarding" class="blush" aria-labelledby="boarding-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="boarding-heading">A stay that feels like home</h2>
+        <div class="cards">
+          <article class="card">
+            <svg class="paw" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="2.2" fill="#D81B7A"/><circle cx="12" cy="5.5" r="2.2" fill="#D81B7A"/><circle cx="17" cy="8" r="2.2" fill="#D81B7A"/><ellipse cx="12" cy="15" rx="4.2" ry="3.2" fill="#D81B7A"/></svg>
+            <h3>Boarding</h3>
+            <p>Small-group boarding within my home, so your dog gets real attention, not a kennel run. Couch time, yard time, and a quiet place to sleep.</p>
+          </article>
+          <article class="card">
+            <svg class="paw" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="8" r="2.2" fill="#D81B7A"/><circle cx="12" cy="5.5" r="2.2" fill="#D81B7A"/><circle cx="17" cy="8" r="2.2" fill="#D81B7A"/><ellipse cx="12" cy="15" rx="4.2" ry="3.2" fill="#D81B7A"/></svg>
+            <h3>Daycare</h3>
+            <p>Need a day out? Daytime stays for dogs who already know us.</p>
+          </article>
+        </div>
+        <p class="note">Every new dog starts with a meet-and-greet. Call or text to set one up.</p>
+      </div>
+    </section>
+
+    <section id="yard" aria-labelledby="yard-heading">
+      <div class="wrap">
+        <p class="kicker">02</p>
+        <h2 id="yard-heading">A large fenced yard, with shade</h2>
+        <p>Room to run, sniff and nap in the shade, all inside a fenced yard.</p>
+        <div class="mosaic">
+          <figure class="shot">
+            <img src="img/yard-shade.jpg" alt="Two small dogs on the grass under a shade sail, inside a fenced yard" width="900" height="1040">
+            <figcaption class="hand">Shade for Florida afternoons</figcaption>
+          </figure>
+          <div class="stack">
+            <figure class="shot">
+              <img src="img/yard-fence.jpg" alt="Dogs playing on the lawn inside a white fence" width="900" height="1160">
+              <figcaption class="hand">Fenced all the way around</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="img/yard-plants.jpg" alt="A cream dog sitting among potted palms" width="830" height="1200">
+              <figcaption class="hand">Lots to sniff</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="band" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="how-heading">How a stay works</h2>
+        <div class="steps">
+          <article class="step"><div class="num">1</div><h3>Call or text.</h3><p>Tell Nichole your dates and a bit about your dog.</p></article>
+          <article class="step"><div class="num">2</div><h3>Meet-and-greet.</h3><p>Come by so your dog can meet Nichole and the group first.</p></article>
+          <article class="step"><div class="num">3</div><h3>Drop-off.</h3><p>Bring food, meds and a favorite toy. Drop-off details come by text.</p></article>
+          <article class="step"><div class="num">4</div><h3>Pickup.</h3><p>A happy, tired dog, and a groom before pickup if you'd like.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="grooming" class="blush" aria-labelledby="grooming-heading">
+      <div class="wrap groom">
+        <img src="img/poodles.jpg" alt="Two creatively groomed poodles with pink and teal ears" width="2048" height="1536">
+        <div>
+          <p class="kicker">04</p>
+          <h2 id="grooming-heading">Grooming, too</h2>
+          <p>Nichole is a groomer as well as a sitter. Book a groom on its own or add one to a stay.</p>
+          <div class="menu">
+            <ul>
+              <li>Bath &amp; brush</li>
+              <li>Full groom &amp; haircut</li>
+              <li>Nails</li>
+              <li>Creative color</li>
+            </ul>
+            <a class="btn btn-text" href="sms:+19413767566?&amp;body=Hi%20Nichole%2C%20I%27d%20like%20a%20grooming%20appointment%20for%20my%20dog%20">Text for a grooming appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap review-wrap">
+        <p class="kicker">05</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <blockquote class="quote">
+          <span class="tape l" aria-hidden="true"></span>
+          <span class="tape r" aria-hidden="true"></span>
+          <div class="mark" aria-hidden="true">“</div>
+          <p>Excellent, beautiful large home and yard, very clean and loving environment. Best place for your precious fur baby!</p>
+          <cite>B.L. · Nextdoor</cite>
+        </blockquote>
+        <p>Nextdoor Neighborhood Fave 2017, 2018, 2019 &amp; 2024 · 71 neighbors Fave'd Peeples Pet Care</p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="meet">
+          <img class="avatar" src="img/nichole.jpg" alt="Nichole in a sun hat with a white poodle" width="628" height="912">
+          <div>
+            <p class="kicker">06</p>
+            <h2 id="about-heading">Meet Nichole</h2>
+            <p class="hand hi">Hi, I'm Nichole!</p>
+            <p>I've spent over 25 years in the pet industry, and I'm also a groomer. I keep boarding small so every dog gets a personalized stay in my home, with a big shaded yard to play in.</p>
+          </div>
+        </div>
+        <div class="strip">
+          <figure><img src="img/nap.jpg" alt="Small dog resting in a bed" width="900" height="1200"><figcaption class="hand">Nap time</figcaption></figure>
+          <figure><img src="img/friends.jpg" alt="Dogs together indoors" width="900" height="1200"><figcaption class="hand">Best friends</figcaption></figure>
+          <figure><img src="img/groomed.jpg" alt="Small white dog after grooming" width="900" height="1200"><figcaption class="hand">Fresh from the groom</figcaption></figure>
+          <figure><img src="img/couch.jpg" alt="Dogs piled on a couch" width="900" height="1200"><figcaption class="hand">Couch crew</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="blush" aria-labelledby="faq-heading">
+      <div class="wrap">
+        <p class="kicker">07</p>
+        <h2 id="faq-heading">Good to know</h2>
+        <details>
+          <summary>What vaccinations do you need?</summary>
+          <p>Up-to-date vaccinations are required. Nichole will tell you which ones at the meet-and-greet.</p>
+        </details>
+        <details>
+          <summary>What sizes do you take?</summary>
+          <p>Ask! Small-group boarding means Nichole picks a group that gets along.</p>
+        </details>
+        <details>
+          <summary>Do I need a meet-and-greet first?</summary>
+          <p>Yes, every new dog starts with one.</p>
+        </details>
+        <details>
+          <summary>Where are you?</summary>
+          <p>In Sarasota. Nichole sends drop-off and pickup details by text once you're booked.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>Call or text for rates.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="kicker">08</p>
+        <h2 id="contact-heading">Book a meet-and-greet</h2>
+        <div class="contact-grid">
+          <dl>
+            <div><dt>Call or text</dt><dd><a class="nowrap" href="tel:+19413767566">(941) 376-7566</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:peeplespetcare@outlook.com">peeplespetcare@outlook.com</a></dd></div>
+            <div><dt>Hours</dt><dd>By appointment</dd></div>
+            <div><dt>Where</dt><dd>Sarasota (details by text)</dd></div>
+            <div><dt>Find Nichole</dt><dd><a href="https://www.facebook.com/peeplespetcare" rel="noopener">Facebook @peeplespetcare</a> · <a href="https://nextdoor.com/pages/peeples-pet-care-sarasota-fl/">Nextdoor</a></dd></div>
+          </dl>
+          <form id="request-form">
+            <label>Name <input name="name" required autocomplete="name"></label>
+            <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+            <label>Dog's name <input name="dog" required></label>
+            <label>Breed / size <input name="breed"></label>
+            <label>What do you need?
+              <select name="need">
+                <option>Boarding</option>
+                <option>Daycare</option>
+                <option>Grooming</option>
+                <option>Meet-and-greet</option>
+              </select>
+            </label>
+            <label>Dates <input name="dates"></label>
+            <label>Note <textarea name="note" rows="3"></textarea></label>
+            <button class="btn btn-call" type="submit">Email Nichole</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Peeples Pet Care · In-home dog boarding &amp; grooming · Sarasota, FL · <a class="nowrap" href="tel:+19413767566">(941) 376-7566</a></p>
+      <p class="hand bye">See you soon!</p>
+      <p><a href="https://www.facebook.com/peeplespetcare" rel="noopener">Facebook</a> · <a href="https://nextdoor.com/pages/peeples-pet-care-sarasota-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19413767566">Call</a>
+    <a class="text" href="sms:+19413767566?&amp;body=Hi%20Nichole%2C%20I%27d%20like%20to%20set%20up%20a%20meet-and-greet%20for%20my%20dog%20">Text</a>
+  </div>
+  <script>
+    document.getElementById("request-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = [
+        "Name: " + d.get("name"),
+        "Phone: " + d.get("phone"),
+        "Dog: " + d.get("dog"),
+        "Breed / size: " + (d.get("breed") || ""),
+        "Need: " + d.get("need"),
+        "Dates: " + (d.get("dates") || ""),
+        "",
+        d.get("note") || ""
+      ].join("\n");
+      window.location.href = "mailto:peeplespetcare@outlook.com?subject=" + encodeURIComponent("Boarding or grooming request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

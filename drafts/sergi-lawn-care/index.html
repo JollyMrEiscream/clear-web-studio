@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sergi Lawn Care | Lawn Mowing &amp; Yard Care in Venice, FL</title>
+  <meta name="description" content="Reliable lawn mowing, edging, trimming and weeding in Venice, South Venice and Venice East. Neighborhood Fave owner Dominick Sergi. Call or text (941) 275-3388 for a quote.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "additionalType": "https://schema.org/HomeAndConstructionBusiness",
+    "name": "Sergi Lawn Care",
+    "telephone": "+1-941-275-3388",
+    "email": "sergihomeimprovement@gmail.com",
+    "founder": { "@type": "Person", "name": "Dominick Sergi" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Venice",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Venice", "South Venice", "Venice East"],
+    "sameAs": ["https://nextdoor.com/pages/sergi-lawn-care-venice-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F7F9F5;
+      --mint: #E6F0DC;
+      --ink: #1E2420;
+      --char: #2B2F2E;
+      --grass: #8DC63F;
+      --green: #3D7A1F;
+      --mist: #C3CCC5;
+      --muted: #59615B;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--green); }
+    h1, h2, .wordmark, .stat strong { font-family: Outfit, sans-serif; font-weight: 800; line-height: 1.08; }
+    .btn, .eyebrow, .kicker, nav a { font-family: Outfit, sans-serif; font-weight: 600; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--grass); color: var(--char); padding: 0.5rem 0.8rem; z-index: 50; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    :focus-visible { outline: 3px solid var(--grass); outline-offset: 2px; }
+    .utility-bar { background: var(--char); color: #fff; font-size: 0.92rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.35rem 0.7rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .sep { color: var(--grass); }
+    .site-header { background: var(--char); color: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 4px solid var(--grass); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.45rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; color: #fff; }
+    .brand svg { width: 48px; height: 48px; }
+    .wordmark { font-size: 1.25rem; letter-spacing: 0.04em; }
+    .wordmark small { display: block; font-size: 0.68rem; letter-spacing: 0.14em; color: var(--grass); font-weight: 600; }
+    nav { display: flex; gap: 0.8rem; align-items: center; }
+    nav a { color: #fff; text-decoration: none; letter-spacing: 0.02em; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.65rem 1.05rem; border-radius: 6px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-size: 1rem; }
+    .btn-call { background: var(--grass); color: var(--char); min-height: 56px; }
+    .btn-call:hover { color: var(--char); }
+    .btn-text { background: var(--green); color: #fff; }
+    .btn-text:hover { color: #fff; }
+    .hero { position: relative; min-height: 78vh; color: #fff; display: grid; align-items: end; background: var(--char) url("img/hero-lawn.jpg") 50% 40% / cover no-repeat; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(200deg, rgba(43,47,46,0.1), rgba(43,47,46,0.85)); }
+    .hero .wrap { position: relative; z-index: 1; padding: 3rem 0 2.2rem; max-width: 740px; }
+    .eyebrow { color: var(--grass); letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.4rem; font-size: 0.86rem; }
+    .hero h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); margin: 0.15rem 0 0.6rem; }
+    .sub { color: var(--mist); margin: 0; max-width: 46ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; }
+    .stripes { height: 24px; background: repeating-linear-gradient(115deg, var(--grass) 0 14px, #7CB536 14px 28px); }
+    .thin { height: 8px; }
+    section { padding: 2.7rem 0; }
+    .kicker { color: var(--green); letter-spacing: 0.12em; margin: 0; }
+    .band .kicker { color: var(--grass); }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.45rem); margin: 0.15rem 0 0.7rem; }
+    .mint { background: var(--mint); }
+    .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .tile { background: var(--bg); border-radius: 12px; padding: 0.9rem; background-image: repeating-linear-gradient(115deg, var(--grass) 0 8px, #7CB536 8px 16px); background-size: 100% 8px; background-repeat: no-repeat; }
+    .tile .pad { padding-top: 0.45rem; }
+    .tile h3 { margin: 0.3rem 0 0.2rem; font-size: 1.15rem; font-family: Outfit, sans-serif; }
+    .tile p { margin: 0; color: var(--muted); }
+    .ico { width: 34px; height: 34px; }
+    .help { display: grid; grid-template-columns: 260px 1fr; gap: 1rem; align-items: center; }
+    .help img { width: 100%; max-width: 260px; border-radius: 12px; background: #fff; }
+    .inline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+    .pill { background: var(--mint); border-radius: 12px; padding: 0.85rem; }
+    .pill h3 { margin: 0; font-family: Outfit, sans-serif; font-size: 1.05rem; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step h3 { margin: 0.3rem 0; font-family: Outfit, sans-serif; color: #fff; }
+    .step p { margin: 0; color: var(--mist); }
+    .num { font-family: Outfit, sans-serif; font-weight: 800; color: var(--grass); font-size: 2rem; line-height: 1; }
+    .band { background: var(--char); color: #fff; }
+    .band h2 { color: #fff; }
+    .review { max-width: 720px; margin-inline: auto; text-align: center; }
+    .stat { margin: 0.2rem 0 0.6rem; }
+    .stat strong { display: block; font-size: clamp(4rem, 10vw, 6rem); color: var(--green); line-height: 0.9; }
+    .quote { background: #fff; border-radius: 16px; padding: 1.1rem; margin: 0.6rem 0 0; text-align: left; }
+    .quote .mark { font-family: Outfit, sans-serif; color: var(--green); font-size: 2.4rem; line-height: 0.7; font-weight: 800; }
+    .quote cite { display: block; margin-top: 0.5rem; font-style: normal; font-weight: 600; color: var(--green); }
+    .about { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.1rem; align-items: center; }
+    .about img { width: 100%; height: 320px; object-fit: cover; border-radius: 16px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.45rem; list-style: none; padding: 0; margin: 0.6rem 0 0; }
+    .chips li { background: var(--bg); color: var(--ink); font-weight: 600; border-radius: 999px; padding: 0.4rem 0.8rem; }
+    .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center; }
+    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.1rem; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.12rem 0 0; font-weight: 600; }
+    form { display: grid; gap: 0.55rem; background: var(--mint); padding: 1rem; border-radius: 12px; }
+    label { font-weight: 600; display: grid; gap: 0.22rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem 0.65rem; border-radius: 8px; border: 1px solid #c9d7bc; width: 100%; min-height: 44px; background: #fff; }
+    .check { grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .site-footer { background: var(--char); color: var(--mist); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: #fff; }
+    .dock { display: none; }
+    @media (max-width: 800px) {
+      nav { display: none; }
+      .tiles { grid-template-columns: 1fr 1fr; }
+      .help, .steps, .about, .area-grid, .contact-grid { grid-template-columns: 1fr; }
+      .inline { grid-template-columns: 1fr; }
+      .hero h1 { font-size: clamp(2.1rem, 8vw, 3.4rem); }
+      .about img { height: 220px; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1.5fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: Outfit, sans-serif; font-weight: 600; }
+      .dock .call { background: var(--grass); color: var(--char); }
+      .dock .text { background: var(--green); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .tiles { grid-template-columns: 1fr; }
+      .help img { display: none; }
+      .hero { background-position: 50% 40%; min-height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <a href="tel:+19412753388">Call or text <span class="nowrap">(941) 275-3388</span></a>
+      <span class="sep" aria-hidden="true">●</span>
+      <span>Venice · South Venice · Venice East</span>
+      <span class="sep" aria-hidden="true">●</span>
+      <span>Quotes by phone</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Sergi Lawn Care home">
+        <svg viewBox="0 0 64 64" role="img" aria-label="Sergi house monogram">
+          <path fill="#2B2F2E" stroke="#8DC63F" stroke-width="2.4" stroke-linejoin="round" d="M32 6 50 18v8H14v-8L32 6z"/>
+          <path fill="#2B2F2E" stroke="#8DC63F" stroke-width="2.4" d="M14 26h28c8 0 12 4 12 10v4H22V30H14v-4z"/>
+          <path fill="#2B2F2E" stroke="#8DC63F" stroke-width="2.4" d="M18 40h32v8c0 6-6 10-14 10H14v-8c0-6 2-10 4-10z"/>
+          <rect x="28" y="10" width="8" height="12" rx="1" fill="#E6F0DC" stroke="#8DC63F" stroke-width="1.4"/>
+          <circle cx="30.5" cy="16" r="1" fill="#3D7A1F"/>
+        </svg>
+        <span class="wordmark">SERGI<small>Lawn Care</small></span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#lawn">Lawn care</a>
+        <a href="#home-help">Home help</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#area">Area</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19412753388">Call <span class="nowrap">(941) 275-3388</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <p class="eyebrow">Lawn care · Mowing · Edging · Trimming · Venice, FL</p>
+        <h1 id="hero-heading">Reliable lawn care in Venice.</h1>
+        <p class="sub">Weekly or every-other-week mowing, edging, trimming and weeding from Dominick Sergi.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call" href="tel:+19412753388">Call <span class="nowrap">(941) 275-3388</span></a>
+          <a class="btn btn-text" href="sms:+19412753388?&amp;body=Hi%20Dominick%2C%20I%27d%20like%20a%20lawn%20care%20quote%20in%20">Text for a quote</a>
+        </div>
+        <p class="sub">Nextdoor Neighborhood Fave 2025 · 21 Faves</p>
+      </div>
+    </section>
+    <div class="stripes" aria-hidden="true"></div>
+
+    <section id="lawn" class="mint" aria-labelledby="lawn-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="lawn-heading">Lawn care, done on schedule</h2>
+        <div class="tiles">
+          <article class="tile"><div class="pad"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30h32M8 24h32M8 18h24" stroke="#3D7A1F" stroke-width="2.4" stroke-linecap="round"/></svg><h3>Mowing</h3><p>Weekly or every other week, front and back.</p></div></article>
+          <article class="tile"><div class="pad"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34h28M14 34V16l10 8 10-8v18" fill="none" stroke="#3D7A1F" stroke-width="2.4"/></svg><h3>Edging</h3><p>Clean lines on drives and walks.</p></div></article>
+          <article class="tile"><div class="pad"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V22M16 26c4-8 12-8 16 0M24 22c-2-8 2-14 6-16" fill="none" stroke="#3D7A1F" stroke-width="2.4" stroke-linecap="round"/></svg><h3>Trimming</h3><p>Shrubs and hedges kept tidy.</p></div></article>
+          <article class="tile"><div class="pad"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 36c2-8 4-14 8-20M24 36c0-8 2-14 6-18M20 36h16" fill="none" stroke="#3D7A1F" stroke-width="2.4" stroke-linecap="round"/></svg><h3>Weeding</h3><p>Beds weeded by hand.</p></div></article>
+        </div>
+        <p><a href="sms:+19412753388?&amp;body=Hi%20Dominick%2C%20I%27d%20like%20a%20lawn%20care%20quote%20in%20">Text your address area and lot size for a quote.</a></p>
+      </div>
+    </section>
+    <div class="stripes thin" aria-hidden="true"></div>
+
+    <section id="home-help" aria-labelledby="help-heading">
+      <div class="wrap">
+        <p class="kicker">02</p>
+        <h2 id="help-heading">Home help, too</h2>
+        <div class="help">
+          <img src="img/yard-sign.jpg" alt="Sergi yard sign: Home Improvements, Lawncare and Maintenance" width="727" height="1200">
+          <div>
+            <p>Dominick also runs Sergi Home Improvement, so one call can cover more than the lawn.</p>
+            <div class="inline">
+              <article class="pill"><h3>Handyman work</h3></article>
+              <article class="pill"><h3>Screen replacement</h3></article>
+              <article class="pill"><h3>Power washing</h3></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="band" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="how-heading">Getting on the schedule</h2>
+        <div class="steps">
+          <article class="step"><div class="num">1</div><h3>Call or text.</h3><p>Tell Dominick where you are and what the yard needs.</p></article>
+          <article class="step"><div class="num">2</div><h3>Get a quote.</h3><p>A fair, simple price.</p></article>
+          <article class="step"><div class="num">3</div><h3>Set your day.</h3><p>A regular day on the schedule.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="mint" aria-labelledby="reviews-heading">
+      <div class="wrap review">
+        <p class="kicker">04</p>
+        <h2 id="reviews-heading">Neighbors Fave Sergi</h2>
+        <p class="stat"><strong>21</strong> Nextdoor Faves</p>
+        <p>Neighborhood Fave 2025</p>
+        <blockquote class="quote">
+          <div class="mark" aria-hidden="true">“</div>
+          <p>I highly recommend them. I have used them for a year and a half. Extremely reliable, well priced.</p>
+          <cite>S.T. · Nextdoor</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap about">
+        <img src="img/about-lawn.jpg" alt="Aerial view of a freshly striped lawn around a pool cage" width="1080" height="399">
+        <div>
+          <p class="kicker">05</p>
+          <h2 id="about-heading">Meet Dominick</h2>
+          <p>Sergi Lawn Care is owned by Dominick Sergi, who has run Sergi Home Improvement in Venice since 2018. He does a wonderful job and he's reliable, and neighbors keep saying so.</p>
+        </div>
+      </div>
+    </section>
+    <div class="stripes thin" aria-hidden="true"></div>
+
+    <section id="area" class="mint" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="kicker">06</p>
+        <h2 id="area-heading">Where we mow</h2>
+        <div class="area-grid">
+          <svg viewBox="0 0 420 260" role="img" aria-label="Venice area outline with town names and no pins">
+            <rect width="420" height="260" rx="16" fill="#F7F9F5"/>
+            <path d="M40 40c40 10 70 8 110-6 30 20 40 50 30 80-20 10-10 40 20 60 40 10 90 8 140-10 10 30-10 50-40 60-80 20-180 10-230-20-30-20-40-70-30-110 8-30 20-50 40-54z" fill="#E6F0DC" stroke="#2B2F2E" stroke-width="3"/>
+            <path d="M30 200c80 20 180 16 280-20" fill="none" stroke="#8DC63F" stroke-width="6" stroke-linecap="round"/>
+            <text x="150" y="78" text-anchor="middle" fill="#1E2420" font-family="Outfit, sans-serif" font-size="18" font-weight="800">Venice</text>
+            <text x="120" y="130" text-anchor="middle" fill="#1E2420" font-family="Outfit, sans-serif" font-size="15">South Venice</text>
+            <text x="250" y="118" text-anchor="middle" fill="#1E2420" font-family="Outfit, sans-serif" font-size="15">Venice East</text>
+            <text x="300" y="70" text-anchor="middle" fill="#59615B" font-family="Outfit, sans-serif" font-size="14">Nokomis</text>
+            <text x="90" y="170" text-anchor="middle" fill="#59615B" font-family="Outfit, sans-serif" font-size="14">Osprey</text>
+            <text x="250" y="176" text-anchor="middle" fill="#59615B" font-family="Outfit, sans-serif" font-size="14">Englewood</text>
+          </svg>
+          <ul class="chips">
+            <li>Venice</li>
+            <li>South Venice</li>
+            <li>Venice East</li>
+            <li>Nokomis</li>
+            <li>Osprey</li>
+            <li>Englewood</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="kicker">07</p>
+        <h2 id="contact-heading">Get a lawn care quote</h2>
+        <div class="contact-grid">
+          <dl>
+            <div><dt>Call or text</dt><dd><a class="nowrap" href="tel:+19412753388">(941) 275-3388</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:sergihomeimprovement@gmail.com">sergihomeimprovement@gmail.com</a></dd></div>
+            <div><dt>Hours</dt><dd>Call or text to schedule</dd></div>
+            <div><dt>Area</dt><dd>Venice, South Venice, Venice East</dd></div>
+            <div><dt>Nextdoor</dt><dd><a href="https://nextdoor.com/pages/sergi-lawn-care-venice-fl/">Sergi Lawn Care on Nextdoor</a></dd></div>
+          </dl>
+          <form id="request-form">
+            <label>Name <input name="name" required autocomplete="name"></label>
+            <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+            <label>Area
+              <select name="area">
+                <option>Venice</option>
+                <option>South Venice</option>
+                <option>Venice East</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Service
+              <select name="service">
+                <option>Mowing</option>
+                <option>Edging</option>
+                <option>Trimming</option>
+                <option>Weeding</option>
+                <option>Handyman</option>
+                <option>Screens</option>
+                <option>Power washing</option>
+              </select>
+            </label>
+            <label>How often
+              <select name="often">
+                <option>Weekly</option>
+                <option>Every other week</option>
+                <option>One-time</option>
+              </select>
+            </label>
+            <label>Note <textarea name="note" rows="3"></textarea></label>
+            <label class="check"><input type="checkbox" name="photos"> I'll text photos</label>
+            <p>Text yard photos to <a class="nowrap" href="sms:+19412753388">(941) 275-3388</a>.</p>
+            <button class="btn btn-call" type="submit">Email for a quote</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Sergi Lawn Care · Venice, FL · <a class="nowrap" href="tel:+19412753388">(941) 275-3388</a></p>
+      <!-- Confirm before showing: a Sergi Home Improvement, LLC company -->
+      <p><a href="https://nextdoor.com/pages/sergi-lawn-care-venice-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19412753388">Call</a>
+    <a class="text" href="sms:+19412753388?&amp;body=Hi%20Dominick%2C%20I%27d%20like%20a%20lawn%20care%20quote%20in%20">Text</a>
+  </div>
+  <script>
+    document.getElementById("request-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = [
+        "Name: " + d.get("name"),
+        "Phone: " + d.get("phone"),
+        "Area: " + d.get("area"),
+        "Service: " + d.get("service"),
+        "How often: " + d.get("often"),
+        "I'll text photos: " + (d.get("photos") ? "yes" : "no"),
+        "",
+        d.get("note") || ""
+      ].join("\n");
+      window.location.href = "mailto:sergihomeimprovement@gmail.com?subject=" + encodeURIComponent("Lawn care quote") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

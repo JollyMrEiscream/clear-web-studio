@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick's Mobile Automotive &amp; Truck Repair | Mobile Mechanic North Port, Port Charlotte &amp; Punta Gorda</title>
+  <meta name="description" content="Mobile mechanic for cars and trucks, gas and diesel, in North Port, Port Charlotte and Punta Gorda. Diagnostics, brakes, AC, electrical, tune-ups and welding in your driveway. Open 7 days. Call or text (941) 920-9423.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Patrick's Mobile Automotive & Truck Repair",
+    "legalName": "Patrick's Mobile Truck and Auto Repair LLC",
+    "telephone": "+1-941-920-9423",
+    "email": "patricksmobilerepair01@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "North Port",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["North Port", "Port Charlotte", "Punta Gorda"],
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "17:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "15:00"}
+    ],
+    "sameAs": [
+      "https://www.facebook.com/patricksautomotiveandtruckrepair",
+      "https://nextdoor.com/pages/patricks-mobile-repair-north-port-fl/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F5F5F4;
+      --steel: #E4E7EB;
+      --ink: #16181C;
+      --black: #0E0F12;
+      --sunset: #F28C28;
+      --red: #C62828;
+      --chrome: #C9CED6;
+      --blue: #1F5FAF;
+      --muted: #5B616B;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Barlow, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--blue); }
+    h1, h2 { font-family: Anton, sans-serif; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1.05; }
+    .cond { font-family: "Barlow Condensed", sans-serif; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--sunset); color: var(--black); padding: 0.5rem 0.8rem; z-index: 50; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    :focus-visible { outline: 3px solid var(--sunset); outline-offset: 2px; }
+    .utility-bar { background: var(--black); color: #fff; font-size: 0.92rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.35rem 0.7rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .sep { color: var(--sunset); }
+    .site-header { background: var(--black); color: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 3px solid var(--sunset); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.35rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: #fff; }
+    .brand img { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; }
+    .brand strong { font-family: Anton, sans-serif; font-weight: 400; letter-spacing: 0.03em; font-size: 1.15rem; line-height: 1; }
+    .brand strong span { display: block; font-family: "Barlow Condensed", sans-serif; font-size: 0.78rem; letter-spacing: 0.08em; color: var(--sunset); }
+    nav { display: flex; gap: 0.75rem; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-family: "Barlow Condensed", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.98rem; font-weight: 600; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.6rem 1rem; border-radius: 4px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-family: "Barlow Condensed", sans-serif; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; font-size: 1.05rem; }
+    .btn-call { background: var(--sunset); color: var(--black); min-height: 56px; }
+    .btn-call:hover { color: var(--black); }
+    .btn-text { background: var(--red); color: #fff; }
+    .btn-text:hover { color: #fff; }
+    .hero { position: relative; min-height: 78vh; background: var(--black); color: #fff; display: grid; align-items: center; overflow: hidden; }
+    .hero-photo { position: absolute; inset: 0; background: url("img/hero-tacoma.jpg") 60% 60% / cover no-repeat; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,15,18,0.88), rgba(14,15,18,0.15)); z-index: 1; }
+    .hero .wrap { position: relative; z-index: 2; padding: 3rem 0 5.5rem; max-width: 720px; }
+    .eyebrow { color: var(--sunset); margin: 0 0 0.45rem; font-size: 0.95rem; }
+    .hero h1 { font-size: clamp(2.1rem, 5vw, 3.75rem); margin: 0.2rem 0 0.7rem; color: #fff; }
+    .sub { color: var(--chrome); margin: 0; max-width: 48ch; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.1rem 0; }
+    .chip { display: inline-block; border: 1px solid var(--chrome); color: var(--chrome); padding: 0.35rem 0.7rem; border-radius: 999px; margin-bottom: 0.7rem; }
+    .horizon { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; height: 78px; pointer-events: none; }
+    .horizon svg { width: 100%; height: 78px; }
+    section { padding: 2.8rem 0; }
+    .kicker { color: var(--red); margin: 0; font-size: 1rem; }
+    .band .kicker { color: var(--sunset); }
+    h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin: 0.15rem 0 0.75rem; color: var(--ink); }
+    .steel { background: var(--steel); }
+    .band { background: var(--black); color: #fff; }
+    .band h2 { color: #fff; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .card { background: #fff; border-radius: 10px; padding: 0.95rem; }
+    .card h3 { margin: 0.35rem 0 0.25rem; font-size: 1.15rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .ico { width: 36px; height: 36px; }
+    .ask { color: var(--blue); font-weight: 600; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+    .step h3 { margin: 0.45rem 0 0.3rem; font-size: 1.2rem; color: #fff; }
+    .step p { margin: 0; color: var(--chrome); }
+    .num { font-family: Anton, sans-serif; color: var(--sunset); font-size: 2rem; line-height: 1; }
+    .fine { color: var(--chrome); font-size: 0.92rem; }
+    .work { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .work figure { margin: 0; background: #fff; border-radius: 10px; overflow: hidden; }
+    .work img { width: 100%; height: 220px; object-fit: cover; }
+    .pair-photos { display: grid; grid-template-columns: 1fr 1fr; }
+    .pair-photos img { height: 220px; }
+    .work figcaption { padding: 0.65rem 0.75rem 0.8rem; font-weight: 600; }
+    .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .quote { background: #fff; border-radius: 12px; padding: 1rem; margin: 0; }
+    .quote .mark { font-family: Anton, sans-serif; color: var(--red); font-size: 2rem; line-height: 0.8; }
+    .quote cite { display: block; margin-top: 0.55rem; font-style: normal; font-weight: 600; color: var(--red); }
+    .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 1.2rem; align-items: center; }
+    .about-grid img { width: 100%; max-width: 280px; height: auto; background: #fff; border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--steel); }
+    th { font-family: "Barlow Condensed", sans-serif; letter-spacing: 0.04em; text-transform: uppercase; }
+    tr.today { background: #fff4e8; }
+    tr.today th, tr.today td { box-shadow: inset 3px 0 0 var(--sunset); }
+    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.2rem; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.12rem 0 0; font-weight: 600; }
+    form { display: grid; gap: 0.55rem; background: var(--steel); padding: 1rem; border-radius: 12px; }
+    label { font-weight: 600; display: grid; gap: 0.25rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem 0.65rem; border-radius: 8px; border: 1px solid #cfd3d8; width: 100%; min-height: 44px; background: #fff; }
+    .check { grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .site-footer { background: var(--black); color: var(--chrome); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: #fff; }
+    .site-footer .legal { font-size: 0.85rem; }
+    .dock { display: none; }
+    @media (max-width: 800px) {
+      nav { display: none; }
+      .hero { align-items: end; }
+      .hero::before { background: linear-gradient(180deg, rgba(14,15,18,0.2), rgba(14,15,18,0.9) 58%); }
+      .hero-photo { background-position: 70% 45%; }
+      .hero h1 { font-size: clamp(2.1rem, 8vw, 3.4rem); }
+      .cards, .work, .quotes { grid-template-columns: 1fr 1fr; }
+      .steps, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1.5fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: "Barlow Condensed", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; }
+      .dock .call { background: var(--sunset); color: var(--black); }
+      .dock .text { background: var(--red); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .cards, .steps { grid-template-columns: 1fr; }
+      .hero { min-height: 0; display: flex; flex-direction: column; }
+      .hero::before { display: none; }
+      .hero .wrap { order: 1; padding: 1.6rem 0 1.2rem; }
+      .hero-photo { position: relative; inset: auto; order: 2; width: 100%; height: 240px; background: url("img/hero-tacoma.jpg") 50% 42% / cover no-repeat; }
+      .horizon { position: relative; order: 3; }
+      .work { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 0.7rem; padding-bottom: 0.4rem; }
+      .work figure { min-width: 82%; scroll-snap-align: start; }
+      .brand strong { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Mon–Fri 7–6 · Sat 7–5 · Sun 8–3</span>
+      <span class="sep" aria-hidden="true">●</span>
+      <a href="tel:+19419209423">Call or text <span class="nowrap">(941) 920-9423</span></a>
+      <span class="sep" aria-hidden="true">●</span>
+      <span>We come to you</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Patrick's Mobile home">
+        <img src="img/logo.jpg" alt="" width="64" height="64">
+        <strong>Patrick's Mobile<span>Automotive &amp; Truck Repair</span></strong>
+      </a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#work">Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#hours">Hours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19419209423">Call <span class="nowrap">(941) 920-9423</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-photo" role="img" aria-label="Black first-generation Tacoma parked on a customer's lawn, hood up for an AC job"></div>
+      <div class="wrap">
+        <p class="eyebrow cond">Mobile mechanic · Gas &amp; diesel · Cars &amp; trucks · North Port · Port Charlotte · Punta Gorda</p>
+        <h1 id="hero-heading">Don't leave home. We come to you.</h1>
+        <p class="sub">Diagnostics, brakes, AC, electrical, tune-ups and welding for all makes and models, in your driveway. Over 20 years of experience and good old-fashioned service.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call" href="tel:+19419209423">Call <span class="nowrap">(941) 920-9423</span></a>
+          <a class="btn btn-text" href="sms:+19419209423">Text Patrick</a>
+        </div>
+        <p class="chip cond">Open 7 days · Sun 8–3</p>
+        <p class="sub">Nextdoor Neighborhood Fave 2023 &amp; 2024 · 116 Faves</p>
+      </div>
+      <div class="horizon" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <line x1="0" y1="10" x2="1200" y2="10" stroke="#F28C28" stroke-width="3"/>
+          <path fill="#0E0F12" d="M70 78c8-28 14-28 18-40 2 8 8 18 16 22-10-18-8-34 2-48 8 16 6 32-2 46 10-6 16-16 18-24 6 14 12 40 16 44H70z"/>
+          <rect x="86" y="48" width="4" height="30" fill="#0E0F12"/>
+          <path fill="#0E0F12" d="M560 78c10-32 16-34 22-48 2 10 10 20 18 24-12-20-8-38 4-54 8 18 6 36-4 52 12-6 18-18 20-26 8 16 14 46 18 52H560z"/>
+          <rect x="580" y="42" width="5" height="36" fill="#0E0F12"/>
+          <path fill="#0E0F12" d="M1040 78c8-26 14-28 18-38 2 8 8 16 14 20-10-16-6-32 2-44 6 14 5 28-2 40 8-4 14-14 16-20 6 12 10 36 14 42h-62z"/>
+          <rect x="1056" y="50" width="4" height="28" fill="#0E0F12"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="services" class="steel" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="kicker cond">01</p>
+        <h2 id="services-heading">All makes and models. Gas and diesel.</h2>
+        <div class="cards">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="8" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6" stroke="#C62828" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <h3 class="cond">Diagnostics</h3>
+            <p>Check-engine lights and no-starts, found and fixed.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="12" fill="none" stroke="#C62828" stroke-width="2.4"/><circle cx="24" cy="24" r="4" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M24 8v6" stroke="#C62828" stroke-width="2.4"/></svg>
+            <h3 class="cond">Brakes</h3>
+            <p>Pads, rotors and more.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 30c0-8 4-14 8-18 4 4 8 10 8 18" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M14 34h20" stroke="#C62828" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <h3 class="cond">AC repair</h3>
+            <p>Back to ice-cold AC.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 14 26h8l-2 16 14-22h-8l2-14z" fill="none" stroke="#C62828" stroke-width="2.4" stroke-linejoin="round"/></svg>
+            <h3 class="cond">Electrical</h3>
+            <p>Electrical diagnosis, starters, charging.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="10" width="20" height="28" rx="3" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M20 10V6h8v4M20 28h8" stroke="#C62828" stroke-width="2.4"/></svg>
+            <h3 class="cond">Batteries</h3>
+            <p>Tested and replaced where the vehicle sits.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 30c6-10 10-10 14-4s8 6 14-6" fill="none" stroke="#C62828" stroke-width="2.4" stroke-linecap="round"/><path d="M14 36h20" stroke="#C62828" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <h3 class="cond">Tune-ups &amp; fluid flushes</h3>
+            <p>The service that keeps it starting and shifting.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 34 28 14l6 6L18 40h-6v-6z" fill="none" stroke="#C62828" stroke-width="2.4" stroke-linejoin="round"/></svg>
+            <h3 class="cond">Welding &amp; fabrication</h3>
+            <p>Metal work, on site.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="18" width="22" height="12" rx="2" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M30 22h8l4 4v4H30" fill="none" stroke="#C62828" stroke-width="2.4"/><circle cx="16" cy="34" r="3" fill="none" stroke="#C62828" stroke-width="2.2"/><circle cx="34" cy="34" r="3" fill="none" stroke="#C62828" stroke-width="2.2"/></svg>
+            <h3 class="cond">Trailer repair</h3>
+            <p>Lights, wiring, and what the trailer needs to roll.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="30" r="6" fill="none" stroke="#C62828" stroke-width="2.4"/><circle cx="32" cy="30" r="6" fill="none" stroke="#C62828" stroke-width="2.4"/><path d="M16 24V14h12l6 10" fill="none" stroke="#C62828" stroke-width="2.4"/></svg>
+            <h3 class="cond">Equipment repair</h3>
+            <p>Mowers and other equipment.</p>
+          </article>
+        </div>
+        <p class="ask">Not sure if it can be done in the driveway? Call or text and ask.</p>
+      </div>
+    </section>
+
+    <section id="how" class="band" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="kicker cond">02</p>
+        <h2 id="how-heading">How it works</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="num">1</div>
+            <h3 class="cond">Call or text.</h3>
+            <p>Tell Patrick the year, make and model and what it's doing.</p>
+          </article>
+          <article class="step">
+            <div class="num">2</div>
+            <h3 class="cond">He comes to you.</h3>
+            <p>Home or work, at a set time.</p>
+          </article>
+          <article class="step">
+            <div class="num">3</div>
+            <h3 class="cond">Fixed on the spot.</h3>
+            <p>Most jobs are done the same day, right where it's parked.</p>
+          </article>
+        </div>
+        <p class="fine">Bigger jobs that need a lift or a shop? He'll tell you up front.</p>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="kicker cond">03</p>
+        <h2 id="work-heading">From the driveway</h2>
+        <div class="work">
+          <figure class="pair">
+            <div class="pair-photos">
+              <img src="img/evaporator-old.jpg" alt="Old air-conditioning evaporator removed from a first-generation Tacoma" width="1536" height="2048">
+              <img src="img/evaporator-new.jpg" alt="New evaporator going into the Tacoma" width="1536" height="2048">
+            </div>
+            <figcaption class="cond">A/C evaporator replacement on a 1st-gen Tacoma. Back to ice-cold AC.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/driveway-suv.jpg" alt="Hood up on a customer's driveway" width="1000" height="720">
+            <figcaption class="cond">Under the hood on a customer's driveway.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/diesel.jpg" alt="White Chevy diesel pickup with the hood up" width="736" height="1000">
+            <figcaption class="cond">Diesel trucks too.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/jeep.jpg" alt="Hood up with a fender cover on" width="561" height="960">
+            <figcaption class="cond">Hood up, fender cover on.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/mercedes.jpg" alt="Classic Mercedes on ramps in a driveway" width="1080" height="1440">
+            <figcaption class="cond">Classic Mercedes, on ramps in the driveway.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/classic.jpg" alt="Purple classic car with the hood up" width="1000" height="750">
+            <figcaption class="cond">Classics welcome.</figcaption>
+          </figure>
+        </div>
+        <p><a href="https://www.facebook.com/patricksautomotiveandtruckrepair" rel="noopener">More on Facebook</a></p>
+      </div>
+    </section>
+
+    <section id="reviews" class="steel" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker cond">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">
+            <div class="mark" aria-hidden="true">“</div>
+            <p>He can come to you and usually will have it fixed the same day!! He is honest, friendly and reasonable!!</p>
+            <cite>P.M. · Nextdoor</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="mark" aria-hidden="true">“</div>
+            <p>Awesome guy and exceptional work! Patrick got my Caddy back on the road for me and I appreciate it so much!</p>
+            <cite>L.R. · Nextdoor</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="mark" aria-hidden="true">“</div>
+            <p>Did excellent work on my 2003 Toyota Highlander a few weeks ago.</p>
+            <cite>J.R. · Nextdoor</cite>
+          </blockquote>
+        </div>
+        <p>Nextdoor Neighborhood Fave 2023 &amp; 2024 · 116 neighbors Fave'd Patrick</p>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <img src="img/logo-hex.jpg" alt="Patrick's Mobile red-truck logo" width="800" height="600">
+        <div>
+          <p class="kicker cond">05</p>
+          <h2 id="about-heading">Good old-fashioned service</h2>
+          <p>Patrick's Mobile is a local, family-run mobile mechanic serving North Port, Port Charlotte and Punta Gorda. Over 20 years of experience on cars and trucks, gas and diesel, all makes and models. Don't leave home when we can come to you.</p>
+          <!-- Optional, off until he shows an ASE certificate and which areas (A1–A8, T-series). Never a badge or logo.
+          <p>ASE-certified technician.</p>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section id="hours" class="steel" aria-labelledby="hours-heading">
+      <div class="wrap">
+        <p class="kicker cond">06</p>
+        <h2 id="hours-heading">Hours</h2>
+        <table>
+          <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+          <tbody>
+            <tr data-days="1,2,3,4,5"><th scope="row">Monday–Friday</th><td>7:00 AM–6:00 PM</td></tr>
+            <tr data-days="6"><th scope="row">Saturday</th><td>7:00 AM–5:00 PM</td></tr>
+            <tr data-days="0"><th scope="row">Sunday</th><td>8:00 AM–3:00 PM</td></tr>
+          </tbody>
+        </table>
+        <p>Yes, Sundays too.</p>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="kicker cond">07</p>
+        <h2 id="contact-heading">Tell Patrick what it's doing</h2>
+        <div class="contact-grid">
+          <dl>
+            <div><dt>Call or text</dt><dd><a class="nowrap" href="tel:+19419209423">(941) 920-9423</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:patricksmobilerepair01@gmail.com">patricksmobilerepair01@gmail.com</a></dd></div>
+            <div><dt>Hours</dt><dd>Mon–Fri 7–6 · Sat 7–5 · Sun 8–3</dd></div>
+            <div><dt>Area</dt><dd>North Port · Port Charlotte · Punta Gorda</dd></div>
+            <div><dt>Find him</dt><dd><a href="https://www.facebook.com/patricksautomotiveandtruckrepair" rel="noopener">Facebook</a> · <a href="https://nextdoor.com/pages/patricks-mobile-repair-north-port-fl/">Nextdoor</a></dd></div>
+          </dl>
+          <form id="request-form">
+            <label>Name <input name="name" required autocomplete="name"></label>
+            <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+            <label>Town
+              <select name="town">
+                <option>North Port</option>
+                <option>Port Charlotte</option>
+                <option>Punta Gorda</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Year, make and model <input name="vehicle" required></label>
+            <label>Gas or diesel
+              <select name="fuel">
+                <option>Gas</option>
+                <option>Diesel</option>
+              </select>
+            </label>
+            <label>What's it doing? <textarea name="symptom" rows="3" required></textarea></label>
+            <label>Where is the vehicle?
+              <select name="where">
+                <option>Home</option>
+                <option>Work</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Best time <input name="when"></label>
+            <label class="check"><input type="checkbox" name="photos"> I can text photos</label>
+            <button class="btn btn-call" type="submit">Email Patrick</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Patrick's Mobile Automotive &amp; Truck Repair · Mobile mechanic · North Port, Port Charlotte &amp; Punta Gorda, FL · <a class="nowrap" href="tel:+19419209423">(941) 920-9423</a></p>
+      <p class="legal">Patrick's Mobile Truck and Auto Repair LLC</p>
+      <p><a href="https://www.facebook.com/patricksautomotiveandtruckrepair" rel="noopener">Facebook</a> · <a href="https://nextdoor.com/pages/patricks-mobile-repair-north-port-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19419209423">Call</a>
+    <a class="text" href="sms:+19419209423">Text</a>
+  </div>
+  <script>
+    (function () {
+      var today = new Date().getDay();
+      document.querySelectorAll("#hours tbody tr").forEach(function (row) {
+        var days = row.getAttribute("data-days").split(",").map(Number);
+        if (days.indexOf(today) !== -1) row.classList.add("today");
+      });
+    })();
+    document.getElementById("request-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = [
+        "Name: " + d.get("name"),
+        "Phone: " + d.get("phone"),
+        "Town: " + d.get("town"),
+        "Vehicle: " + d.get("vehicle"),
+        "Fuel: " + d.get("fuel"),
+        "What's it doing: " + d.get("symptom"),
+        "Where: " + d.get("where"),
+        "Best time: " + (d.get("when") || ""),
+        "Can text photos: " + (d.get("photos") ? "yes" : "no")
+      ].join("\n");
+      window.location.href = "mailto:patricksmobilerepair01@gmail.com?subject=" + encodeURIComponent("Mobile repair request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
