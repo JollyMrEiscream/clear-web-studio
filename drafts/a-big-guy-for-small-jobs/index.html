@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Big Guy For Small Jobs | Handyman &amp; Home Watch, Sarasota &amp; Manatee | Honey-Do Maintenance Plan</title>
+  <meta name="description" content="Husband-and-wife handyman &amp; home watch team serving Sarasota and Manatee Counties since 2020. Repairs, installs, hurricane prep, and a $99/month Honey-Do Home Maintenance Plan. Call or text (941) 321-2577.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "A Big Guy For Small Jobs, LLC",
+    "telephone": "+1-941-321-2577",
+    "email": "abigguyforsmalljobs@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Sarasota", "addressRegion": "FL", "addressCountry": "US" },
+    "areaServed": ["Sarasota County", "Manatee County"],
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" },
+    "foundingDate": "2020",
+    "founder": [{ "@type": "Person", "name": "Ryan Hansen" }, { "@type": "Person", "name": "Jennifer Hansen" }],
+    "makesOffer": { "@type": "Offer", "name": "Honey-Do Home Maintenance Plan", "price": "99", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "99", "priceCurrency": "USD", "unitText": "MONTH" } },
+    "sameAs": ["https://nextdoor.com/pages/a-big-guy-for-small-jobs-llc-sarasota-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F7F8FB; --sky: #E8EEF7; --ink: #1A2433; --navy: #0F2340; --cape: #C8202F;
+      --gold: #F5C542; --blue: #1E5FA8; --mist: #B9C8E0; --muted: #5A6573;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--blue); }
+    h1, h2, .btn, .price { font-family: "Archivo Black", Impact, sans-serif; font-weight: 400; letter-spacing: 0; line-height: 1.12; }
+    .script { font-family: Kalam, cursive; font-weight: 700; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--gold); color: var(--navy); padding: 0.5rem 0.75rem; z-index: 50; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    .utility-bar { background: var(--navy); color: #fff; font-size: 0.88rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.75rem; padding: 0.5rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .sep { color: var(--gold); }
+    .site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(245,197,66,.25); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; padding: 0.4rem 0; }
+    .brand { display: flex; align-items: center; text-decoration: none; }
+    .brand img { height: 64px; width: auto; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.45rem 0.85rem; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.92rem; }
+    nav a:hover { color: var(--gold); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.7rem 1.05rem; border-radius: 8px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-size: 0.98rem; }
+    .btn-call { background: var(--cape); color: #fff; min-height: 56px; }
+    .btn-call:hover { color: #fff; }
+    .btn-text { background: transparent; color: var(--gold); border-color: var(--gold); }
+    .btn-text:hover { color: var(--gold); }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { color: var(--navy); }
+    .hero { background: var(--navy); color: #fff; padding: 2.4rem 0 2.8rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.6rem; align-items: center; }
+    .eyebrow { color: var(--gold); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2rem, 4.6vw, 3.15rem); margin: 0.45rem 0 0.55rem; color: #fff; }
+    .hero .script { color: var(--gold); font-size: 1.35rem; display: block; margin-bottom: 0.35rem; }
+    .sub { color: var(--mist); font-size: 1.05rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.1rem 0 0.8rem; }
+    .chip { display: inline-block; background: var(--gold); color: var(--navy); text-decoration: none; font-weight: 600; border-radius: 999px; padding: 0.45rem 0.85rem; }
+    .fave { color: var(--mist); margin: 0.75rem 0 0; }
+    .work-card { background: #fff; color: var(--ink); border-radius: 12px; padding: 0.7rem; transform: rotate(-2deg); position: relative; box-shadow: 0 16px 40px rgba(0,0,0,.28); }
+    .work-card img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }
+    .tape { position: absolute; top: -10px; right: 28px; width: 74px; height: 26px; background: var(--gold); transform: rotate(8deg); opacity: .95; }
+    .work-card figcaption { font-size: 0.85rem; color: var(--muted); padding: 0.45rem 0.2rem 0.15rem; }
+    section { padding: 2.9rem 0; }
+    .kicker { font-family: "Archivo Black", sans-serif; color: var(--cape); letter-spacing: 0.08em; font-size: 0.85rem; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); margin: 0.15rem 0 0.8rem; }
+    .sky { background: var(--sky); }
+    .group-label { color: var(--blue); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.78rem; margin: 1rem 0 0.45rem; }
+    .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+    .tile { background: #fff; border-radius: 12px; padding: 0.85rem 0.8rem; min-height: 88px; display: flex; gap: 0.55rem; align-items: flex-start; }
+    .tile svg { flex: 0 0 auto; margin-top: 0.1rem; }
+    .tile strong { display: block; font-size: 0.95rem; }
+    .ask { color: var(--blue); font-weight: 600; }
+    .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; margin-top: 1.3rem; background: #fff; border-radius: 14px; padding: 0.8rem; }
+    .ba img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; }
+    .ba figcaption { grid-column: 1 / -1; color: var(--ink); }
+    .plan { background: var(--navy); color: #fff; }
+    .plan h2, .plan .price { color: #fff; }
+    .plan-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.4rem; align-items: start; }
+    .price { color: var(--gold); font-size: clamp(2.2rem, 4vw, 3.2rem); margin: 0.2rem 0 0; }
+    .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; padding: 0; list-style: none; margin: 1rem 0; }
+    .checks li { display: flex; gap: 0.4rem; align-items: flex-start; }
+    .record { background: var(--sky); color: var(--ink); border-radius: 14px; padding: 1rem; }
+    form { display: grid; gap: 0.55rem; }
+    label { font-weight: 600; font-size: 0.92rem; display: grid; gap: 0.25rem; }
+    input, select, textarea { font: inherit; padding: 0.6rem 0.65rem; border-radius: 8px; border: 1px solid #c5d0e2; width: 100%; min-height: 44px; background: #fff; color: var(--ink); }
+    .checks-form { display: grid; gap: 0.15rem; }
+    .checks-form label { font-weight: 500; grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .fine { color: var(--mist); font-size: 0.88rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .card { background: #fff; border-radius: 14px; padding: 1rem; }
+    .card h3 { margin: 0.35rem 0; font-size: 1.05rem; }
+    .about-grid, .contact-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 1.3rem; align-items: center; }
+    .about-grid img { width: min(100%, 320px); border-radius: 14px; }
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .quote { background: #fff; border-radius: 14px; padding: 1.1rem 1.1rem 1rem; font-size: 1.05rem; }
+    .quote::before { content: "“"; font-family: "Archivo Black", sans-serif; color: var(--cape); font-size: 2rem; line-height: 1; display: block; }
+    .quote cite { display: block; margin-top: 0.6rem; font-style: normal; font-weight: 600; color: var(--blue); font-size: 0.9rem; }
+    .map-wrap { display: grid; grid-template-columns: 180px 1fr; gap: 1rem; align-items: center; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .chips span { background: var(--sky); border-radius: 999px; padding: 0.4rem 0.75rem; font-weight: 600; }
+    dl { margin: 0; display: grid; gap: 0.7rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    .jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.15rem 0.6rem; }
+    .jobs label { font-weight: 500; grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .site-footer { background: var(--navy); color: var(--mist); text-align: center; padding: 2rem 0 2.4rem; }
+    .site-footer a { color: var(--gold); }
+    .site-footer p { margin: 0.35rem 0; }
+    .dock { display: none; }
+    .photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin-top: 1rem; }
+    .photos img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+    @media (max-width: 800px) {
+      .hero-grid, .plan-grid, .about-grid, .contact-grid, .map-wrap, .quotes, .ba { grid-template-columns: 1fr; }
+      .work-card { transform: none; }
+      .work-card img { height: 280px; }
+      .hero h1 { font-size: clamp(1.85rem, 8vw, 2.6rem); }
+      .tiles { grid-template-columns: 1fr 1fr; }
+      .cards, .photos { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .checks { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 2fr 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: "Archivo Black", sans-serif; font-size: 0.85rem; }
+      .dock .call { background: var(--cape); color: #fff; }
+      .dock .text { background: var(--navy); color: #fff; }
+      .dock .plan { background: var(--gold); color: var(--navy); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .tiles, .jobs { grid-template-columns: 1fr; }
+      .utility-bar { font-size: 0.78rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .work-card { transform: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Mon–Sat 9–6</span><span class="sep">·</span>
+      <a href="tel:+19413212577">Call or text <span class="nowrap">(941) 321-2577</span></a><span class="sep">·</span>
+      <span>Sarasota &amp; Manatee Counties</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="A Big Guy For Small Jobs home">
+        <img src="img/logo.png" alt="A Big Guy For Small Jobs, LLC" width="200" height="164">
+      </a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#honey-do-plan">Maintenance plan</a>
+        <a href="#home-watch">Home watch</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19413212577">Call <span class="nowrap">(941) 321-2577</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Handyman · Home watch · Sarasota &amp; Manatee · Since 2020</p>
+          <p class="script">Get your honey-do list done!</p>
+          <h1 id="hero-heading">Get your honey-do list done.</h1>
+          <p class="sub">Repairs, installs and home watch from Ryan and Jennifer, a local husband-and-wife team. Quality work at fair prices, inside and out.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19413212577">Call <span class="nowrap">(941) 321-2577</span></a>
+            <a class="btn btn-text" href="sms:+19413212577">Text us</a>
+          </div>
+          <a class="chip" href="#honey-do-plan">NEW: Honey-Do Maintenance Plan, $99/mo →</a>
+          <p class="fave">Nextdoor Neighborhood Fave 2025 &amp; 2026</p>
+        </div>
+        <figure class="work-card">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="img/hero-platform.jpg" alt="Finished custom wooden entry platform at a shed" width="900" height="1200">
+          <figcaption>Custom wooden entry platform, built by Ryan.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="services-heading">Small jobs, done right</h2>
+        <p>Ryan is capable of completing any interior or exterior task. If it's on your list, ask.</p>
+        <p class="group-label">Inside</p>
+        <div class="tiles">
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M14 6l4 4-8 8H6v-4l8-8z"/><path d="M4 20h6"/></svg><strong>Small repairs</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M4 16c4-1 6-6 8-10 2 4 4 6 8 6-2 4-6 6-10 6-2-1-4-1-6-2z"/></svg><strong>Painting &amp; touch-ups</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M4 16l8-8 4 4-8 8H4v-4z"/><path d="M14 6l2-2 4 4-2 2"/></svg><strong>Carpentry &amp; trim</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 12h16M12 4v16"/></svg><strong>Drywall patches</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><rect x="5" y="6" width="14" height="12" rx="1"/><path d="M12 6v-2"/></svg><strong>Hanging heavy pictures &amp; mirrors</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M4 16h16v4H4zM6 16V8h4v8M14 16V6h4v10"/></svg><strong>Furniture assembly</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M4 10h16v10H4zM4 10V6h6"/></svg><strong>Cabinet repairs</strong></article>
+          <article class="tile"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M5 5h6v14H5zM13 5h6v14h-6"/></svg><strong>Closet doors</strong></article>
+        </div>
+        <p class="group-label">Outside</p>
+        <div class="tiles">
+          <article class="tile"><strong>Custom entry platforms &amp; steps</strong></article>
+          <article class="tile"><strong>Shed bases &amp; small builds</strong></article>
+          <article class="tile"><strong>Gutter cleaning</strong></article>
+          <article class="tile"><strong>Hurricane prep</strong></article>
+          <article class="tile"><strong>Home maintenance</strong></article>
+        </div>
+        <p class="ask">Not sure if it's a small job? Text a photo to <a class="nowrap" href="sms:+19413212577">(941) 321-2577</a>.</p>
+        <div class="photos">
+          <img src="img/platform-frame.jpg" alt="Entry platform frame going in" width="900" height="1200">
+          <img src="img/porch-steps.jpg" alt="New porch steps with a white railing" width="640" height="480">
+          <img src="img/porch-paint.jpg" alt="Painted porch and skirting" width="480" height="640">
+        </div>
+        <div class="ba">
+          <figure>
+            <img src="img/cabinet-before.jpg" alt="Water-damaged cabinet bottom before repair" width="497" height="332">
+          </figure>
+          <figure>
+            <img src="img/cabinet-after.jpg" alt="Cabinet bottom rebuilt and ready to use" width="505" height="355">
+          </figure>
+          <figcaption>Repaired a water-damaged cabinet bottom under the sink. Now it's clean, sturdy and ready for years of use!</figcaption>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan" id="honey-do-plan" aria-labelledby="plan-heading">
+      <div class="wrap plan-grid">
+        <div>
+          <p class="kicker" style="color:var(--gold)">02 · New for 2026</p>
+          <h2 id="plan-heading">The Honey-Do Home Maintenance Plan</h2>
+          <p class="price">$99/month</p>
+          <p>One monthly visit · Up to 60 minutes on site</p>
+          <p class="sub">Routine upkeep, seasonal tasks and small maintenance items to help keep your home in great shape.</p>
+          <ul class="checks">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Maintain HVAC filters</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Maintain refrigerator filters</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Check and replace interior &amp; exterior light bulbs</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Check and clean aerators</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Clean accessible vents and registers</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Complete seasonal tasks</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Check caulking, seals and weatherstripping</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Complete small maintenance items as time allows</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Keep a personalized home maintenance log</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" fill="none" stroke="#F5C542" stroke-width="2.4"/></svg> Provide a recommended-repairs list when needed</li>
+          </ul>
+          <p><a class="btn btn-text" href="tel:+19413212577">Call or text Ryan <span class="nowrap">(941) 321-2577</span></a></p>
+        </div>
+        <div>
+          <article class="record">
+            <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+            <h3>Your home maintenance record</h3>
+            <p>We track completed tasks like filter changes, smoke detector batteries and recurring maintenance dates so your home stays on schedule.</p>
+          </article>
+          <form id="plan-form" style="margin-top:0.8rem">
+            <label>Name <input name="name" required autocomplete="name"></label>
+            <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+            <label>Town <input name="town" autocomplete="address-level2"></label>
+            <label>Best day of the month <input name="day" placeholder="Example: the first Tuesday"></label>
+            <label>Anything on your list already? <textarea name="note" rows="3"></textarea></label>
+            <button class="btn btn-gold" type="submit">Sign me up</button>
+            <p class="fine">Jennifer will call to set your first visit.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-watch" aria-labelledby="watch-heading">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="watch-heading">Away for the season? We'll watch the house.</h2>
+        <p>We listened to our customers and recognized a need for home watch: scheduled inspections, concierge services, hurricane preparation and unexpected handyman needs while your home is unoccupied or vacant.</p>
+        <div class="cards">
+          <article class="card">
+            <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M8 12l2 2 4-4"/></svg>
+            <h3>Scheduled inspections</h3>
+            <p>Regular walk-throughs while you're away.</p>
+          </article>
+          <article class="card">
+            <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><circle cx="8" cy="14" r="3"/><path d="M11 14h8l2 2v2h-6"/><path d="M14 11V8h3"/></svg>
+            <h3>Concierge help</h3>
+            <p>Let in a delivery or a contractor, or get the house ready before you're back.</p>
+          </article>
+          <article class="card">
+            <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E5FA8" stroke-width="1.7"><path d="M4 14h16M6 14V8l6-4 6 4v6"/><path d="M9 18v-4h6v4"/></svg>
+            <h3>Hurricane prep</h3>
+            <p>Getting your home ready when a storm is coming, and checking on it after.</p>
+          </article>
+        </div>
+        <p>And if something breaks while you're gone, the handyman is already on the team.</p>
+        <p><a class="btn btn-call" href="mailto:abigguyforsmalljobs@gmail.com?subject=Home%20watch">Ask about home watch</a></p>
+      </div>
+    </section>
+
+    <section class="sky" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <img src="img/ryan.jpg" alt="Ryan, owner of A Big Guy For Small Jobs" width="320" height="400">
+        <div>
+          <p class="kicker">04</p>
+          <h2 id="about-heading">Hi, we're <span class="script" style="color:var(--cape)">Ryan &amp; Jennifer</span></h2>
+          <p>We're Ryan and Jennifer Hansen, a husband-and-wife team. We started our family business, A Big Guy For Small Jobs, in 2020. Ryan is 'The' Big Guy For Small Jobs, a skilled and trusted handyman who can handle any interior or exterior task. He strives to keep customers happy with quality work at fair prices. Jennifer, a Sarasota local for more than 40 years, handles scheduling and customer care.</p>
+          <p class="script" style="color:var(--cape);font-size:1.45rem">Small jobs make a big difference!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker">05</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">My go-to handyman! This company is owned by a lovely local couple/family and they have a great work ethic. Reasonable and reliable! Definitely recommend.<cite>K.P., Sarasota · Nextdoor</cite></blockquote>
+          <blockquote class="quote">He did a great job with a very fair price!<cite>S.G. · Nextdoor</cite></blockquote>
+        </div>
+        <p>Nextdoor Neighborhood Fave 2025 &amp; 2026 · 21 neighbors Fave'd us</p>
+      </div>
+    </section>
+
+    <section class="sky" id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="kicker">06</p>
+        <h2 id="area-heading">Where we work</h2>
+        <div class="map-wrap">
+          <svg viewBox="0 0 160 180" width="160" height="180" role="img" aria-label="Simple outline of Sarasota and Manatee counties">
+            <path d="M40 20c20-8 50-6 70 12 12 14 18 30 14 52-6 28-8 40 6 58-18 18-40 22-62 16-20-6-36-22-42-44-8-28-4-70 14-94z" fill="#1E5FA8" fill-opacity="0.2" stroke="#1E5FA8"/>
+            <path d="M48 96c18 4 34 2 52 12 8 18-2 36-20 42-22 4-40-8-46-24-4-12 2-26 14-30z" fill="#1E5FA8" fill-opacity="0.2" stroke="#1E5FA8"/>
+          </svg>
+          <div>
+            <p>Sarasota and Manatee Counties. No shop address — Ryan comes to you.</p>
+            <div class="chips">
+              <span>Sarasota</span><span>Bradenton</span><span>Lakewood Ranch</span><span>Palmetto</span><span>Osprey</span><span>Venice</span><span>North Port</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">07</p>
+          <h2 id="contact-heading">Send us your list</h2>
+          <dl>
+            <div><dt>Call or text</dt><dd><a class="nowrap" href="tel:+19413212577">(941) 321-2577</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:abigguyforsmalljobs@gmail.com">abigguyforsmalljobs@gmail.com</a></dd></div>
+            <div><dt>Hours</dt><dd>Mon–Sat 9 AM–6 PM · Sun closed</dd></div>
+            <div><dt>Area</dt><dd>Sarasota &amp; Manatee Counties</dd></div>
+          </dl>
+          <p><a href="https://nextdoor.com/pages/a-big-guy-for-small-jobs-llc-sarasota-fl/">Nextdoor</a></p>
+        </div>
+        <form id="request-form">
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>Town <input name="town"></label>
+          <div class="jobs">
+            <label><input type="checkbox" name="job" value="Repair"> Repair</label>
+            <label><input type="checkbox" name="job" value="Install"> Install</label>
+            <label><input type="checkbox" name="job" value="Paint/touch-up"> Paint / touch-up</label>
+            <label><input type="checkbox" name="job" value="Carpentry"> Carpentry</label>
+            <label><input type="checkbox" name="job" value="Home watch"> Home watch</label>
+            <label><input type="checkbox" name="job" value="Maintenance plan"> Maintenance plan</label>
+            <label><input type="checkbox" name="job" value="Other"> Other</label>
+          </div>
+          <label>When <input name="when"></label>
+          <label>Note <textarea name="note" rows="3"></textarea></label>
+          <label class="checks-form"><input type="checkbox" name="photos" value="yes"> I can text photos</label>
+          <button class="btn btn-call" type="submit">Email the list</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>A Big Guy For Small Jobs, LLC · Handyman &amp; home watch · Sarasota &amp; Manatee Counties, FL · <a class="nowrap" href="tel:+19413212577">(941) 321-2577</a></p>
+      <p><a href="https://nextdoor.com/pages/a-big-guy-for-small-jobs-llc-sarasota-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19413212577">Call</a>
+    <a class="text" href="sms:+19413212577">Text</a>
+    <a class="plan" href="#honey-do-plan">Plan</a>
+  </div>
+  <script>
+    document.getElementById("plan-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = ["Name: " + d.get("name"), "Phone: " + d.get("phone"), "Town: " + d.get("town"), "Best day of the month: " + d.get("day"), "", d.get("note") || ""].join("\n");
+      window.location.href = "mailto:abigguyforsmalljobs@gmail.com?subject=" + encodeURIComponent("Honey-Do Plan sign-up") + "&body=" + encodeURIComponent(body);
+    });
+    document.getElementById("request-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = ["Name: " + d.get("name"), "Phone: " + d.get("phone"), "Town: " + d.get("town"), "Jobs: " + d.getAll("job").join(", "), "When: " + d.get("when"), "Can text photos: " + (d.get("photos") ? "yes" : "no"), "", d.get("note") || ""].join("\n");
+      window.location.href = "mailto:abigguyforsmalljobs@gmail.com?subject=" + encodeURIComponent("Handyman request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
