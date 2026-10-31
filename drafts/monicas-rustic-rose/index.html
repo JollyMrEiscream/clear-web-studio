@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monica's Rustic Rose | Home Decor, Silk Flowers &amp; Gifts in Parrish, FL</title>
+  <meta name="description" content="Boutique home decor, high-end silk flowers, coastal art, fashion jewelry and gifts on US 301 in Parrish. Open Tue–Sat 10–5. Call (941) 479-4912.">
+  <meta name="theme-color" content="#2B211C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeGoodsStore",
+    "name": "Monica's Rustic Rose",
+    "telephone": "+1-941-479-4912",
+    "email": "monicasrusticrose@hotmail.com",
+    "image": "img/storefront.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9027 US Highway 301 N",
+      "addressLocality": "Parrish",
+      "addressRegion": "FL",
+      "postalCode": "34219",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "10:00",
+      "closes": "17:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/monicasrusticrose",
+      "https://nextdoor.com/pages/rustic-rose-parrish-fl/"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FBF7F2;
+      --blush: #F3E6E0;
+      --ink: #1E1E1E;
+      --teal: #0F6E6A;
+      --teal-bright: #3BB7AE;
+      --rose: #B5122B;
+      --espresso: #2B211C;
+      --sage: #7E9A86;
+      --muted: #5E5651;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Lato, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--teal); }
+    h1, h2, .word { font-family: "Playfair Display", Georgia, serif; font-weight: 700; line-height: 1.15; margin: 0; }
+    h3 { font-family: "Playfair Display", Georgia, serif; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--rose); color: #fff; padding: 0.6rem 1rem; z-index: 80; font-weight: 700; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--teal-bright); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+    .nowrap { white-space: nowrap; }
+
+    .utility-bar { background: var(--espresso); color: #fff; font-size: 0.9rem; font-weight: 700; padding: 0.48rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1rem; text-align: center; }
+    .utility-bar a { color: #fff; text-decoration: none; }
+
+    .site-header { background: var(--bg); position: sticky; top: 0; z-index: 30; border-bottom: 1px solid #eadfd6; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.4rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; color: var(--ink); }
+    .brand img { height: 56px; width: 56px; border-radius: 50%; }
+    .word { font-size: 1.15rem; line-height: 1; }
+    .word em { font-style: italic; color: var(--teal); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+    nav.site-nav a.nav-link:hover { color: var(--rose); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.6rem 1rem; border-radius: 999px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-weight: 700; font-family: inherit; font-size: 1rem; }
+    .btn-primary { background: var(--teal); color: #fff; min-height: 56px; }
+    .btn-primary:hover { filter: brightness(1.08); color: #fff; }
+    .btn-line { background: transparent; color: var(--teal); border-color: var(--teal); }
+    .btn-line:hover { background: var(--teal); color: #fff; }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.5rem; align-items: center; padding: 2.4rem 0; }
+    .eyebrow { color: var(--rose); font-weight: 700; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.6rem; }
+    .hero h1 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin-bottom: 0.7rem; }
+    .hero-lead { color: var(--muted); max-width: 46ch; margin-bottom: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.7rem; }
+    .open-line { font-weight: 700; color: var(--teal); }
+    .fave { color: var(--rose); font-size: 0.9rem; font-weight: 700; margin-top: 0.6rem; }
+    .arch { position: relative; }
+    .arch img { width: 100%; border-radius: 999px 999px 16px 16px; border: 2px solid var(--teal-bright); aspect-ratio: 5/4; object-fit: cover; object-position: center 30%; }
+    .rose-mark { position: absolute; left: -8px; bottom: 18px; width: 72px; height: 72px; }
+
+    section.block { padding: 3rem 0; }
+    .sec-num { color: var(--rose); font-family: "Playfair Display", serif; letter-spacing: 0.12em; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(1.8rem, 3.4vw, 2.45rem); margin-bottom: 0.7rem; }
+    .lede { color: var(--muted); max-width: 58ch; margin-bottom: 1rem; }
+    .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .tile { position: relative; margin: 0; }
+    .tile img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 8px; }
+    .tile figcaption { position: absolute; left: 0; right: 0; bottom: 0; background: rgba(43, 33, 28, 0.85); color: #fff; padding: 0.55rem 0.7rem; font-family: "Playfair Display", serif; border-radius: 0 0 8px 8px; }
+    .fine { margin-top: 0.8rem; color: var(--muted); }
+
+    .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.3rem; align-items: center; }
+    .about-grid img { width: 100%; border-radius: 12px; }
+    .sign { font-family: "Playfair Display", serif; font-style: italic; color: var(--rose); font-size: 1.4rem; margin-top: 0.8rem; }
+
+    .band { background: var(--espresso); color: #fff; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--teal-bright); }
+    .visit { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .visit article { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 1.1rem; }
+    .visit h3 { color: var(--teal-bright); margin-bottom: 0.6rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 0.45rem 0.2rem; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    tr.today { color: var(--teal-bright); font-weight: 700; }
+    .visit p { margin-top: 0.6rem; color: #f3e6e0; }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .blush { background: var(--blush); }
+    blockquote.review { margin: 0; background: #fff; border-radius: 12px; padding: 1.05rem; }
+    blockquote.review footer { margin-top: 0.65rem; font-weight: 700; color: var(--teal); }
+    .aside { font-family: "Playfair Display", serif; font-style: italic; color: var(--rose); margin-top: 1rem; }
+    .plain { margin-top: 0.7rem; font-weight: 700; color: var(--muted); }
+
+    .event { background: #fff; border: 1px dashed var(--rose); border-radius: 12px; padding: 1rem 1.1rem; }
+    .event strong { color: var(--rose); }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; background: #fff; border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.75rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+    dd { margin: 0.1rem 0 0; font-weight: 700; }
+    dd a { color: var(--ink); text-decoration: none; }
+    form { display: grid; gap: 0.6rem; }
+    label { font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+    input, textarea { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid #eadfd6; border-radius: 8px; padding: 0.65rem 0.7rem; min-height: 48px; }
+    textarea { min-height: 90px; resize: vertical; }
+    .links { display: flex; gap: 1rem; margin-top: 0.8rem; font-weight: 700; }
+
+    .site-footer { background: var(--espresso); color: #f3e6e0; text-align: center; padding: 2.1rem 0; }
+    .site-footer a { color: var(--teal-bright); }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .hero-grid, .about-grid, .visit, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      .tiles { grid-template-columns: 1fr 1fr; }
+      nav.site-nav a.nav-link { display: none; }
+      .arch { order: -1; max-width: 70vw; }
+      .arch img { max-height: 60vh; object-fit: cover; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 45% 40% 15%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; text-decoration: none; font-weight: 700; text-align: center; }
+      .dock .go { background: var(--teal); color: #fff; }
+      .dock .dir { background: var(--espresso); color: #fff; }
+      .dock .hrs { background: var(--blush); color: var(--espresso); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .tiles { grid-template-columns: 1fr 1fr; }
+      .utility-bar { font-size: 0.78rem; }
+      .brand img { height: 48px; width: 48px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Tue–Sat 10–5 · Sun–Mon closed</span>
+      <span>9027 US Hwy 301 N, Parrish</span>
+      <a href="tel:+19414794912">Call <span class="nowrap">(941) 479-4912</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Monica's Rustic Rose, home">
+        <img src="img/logo.png" alt="Monica's Rustic Rose logo" width="410" height="410">
+        <span class="word"><em>Monica's</em><br>Rustic Rose</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#shop">Shop</a>
+        <a class="nav-link" href="#visit">Visit</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19414794912">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">HOME DECOR · SILK FLOWERS · BOUTIQUE · GIFTS</p>
+          <h1 id="hero-heading">Silk flowers, coastal decor, boutique fashion &amp; gifts — right on 301 in Parrish.</h1>
+          <p class="hero-lead">A peaceful little shop where you'll find new treasures every visit. All new stock, friendly faces, reasonable prices.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+19414794912">Call <span class="nowrap">(941) 479-4912</span></a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Monica%27s+Rustic+Rose+Parrish+FL">Get directions</a>
+          </div>
+          <p class="open-line" id="open-line">Tue–Sat 10–5</p>
+          <p class="fave">Nextdoor Neighborhood Favorite · 2020, 2023, 2024, 2025 &amp; 2026</p>
+        </div>
+        <div class="arch">
+          <img src="img/storefront.jpg" alt="Storefront sign: Monica's Rustic Rose, Home Decor and Gifts" width="1400" height="1125">
+          <svg class="rose-mark" viewBox="0 0 72 72" aria-hidden="true">
+            <circle cx="36" cy="36" r="34" fill="#FBF7F2"/>
+            <path d="M36 50 C28 40, 18 36, 22 26 C28 30, 32 24, 36 18 C40 24, 44 30, 50 26 C54 36, 44 40, 36 50 Z" fill="#B5122B"/>
+            <path d="M36 50 C30 44, 22 48, 20 56" fill="none" stroke="#7E9A86" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="shop" aria-labelledby="shop-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="shop-heading">Something new on every visit</h2>
+        <p class="lede">Come browse — here's a peek at what's on the shelves right now.</p>
+        <div class="tiles">
+          <figure class="tile"><img src="img/silk.jpg" alt="Blue silk florals and vases" width="900" height="1124" loading="lazy"><figcaption>Silk florals</figcaption></figure>
+          <figure class="tile"><img src="img/coastal.jpg" alt="Coastal wall art in the shop" width="900" height="1125" loading="lazy"><figcaption>Coastal wall art</figcaption></figure>
+          <figure class="tile"><img src="img/bowls.jpg" alt="Wood bowls and home decor" width="900" height="1125" loading="lazy"><figcaption>Home decor</figcaption></figure>
+          <figure class="tile"><img src="img/apparel.jpg" alt="Boutique apparel on display" width="900" height="1125" loading="lazy"><figcaption>Boutique apparel</figcaption></figure>
+          <figure class="tile"><img src="img/jewelry.jpg" alt="Fashion jewelry on a table" width="900" height="1125" loading="lazy"><figcaption>Fashion jewelry</figcaption></figure>
+          <figure class="tile"><img src="img/gifts.jpg" alt="Gift baskets and small gifts" width="900" height="1124" loading="lazy"><figcaption>Gifts &amp; baskets</figcaption></figure>
+        </div>
+        <p class="fine">Stock changes often — call to ask if we still have it.</p>
+      </div>
+    </section>
+
+    <section class="block blush" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <div>
+          <p class="sec-num">02</p>
+          <h2 id="about-heading">Welcome to Monica's</h2>
+          <p>Monica's Rustic Rose is a little Parrish shop full of high-end silk flowers, charming decor, boutique fashion and stylish jewelry — picked out to inspire and delight. Take your time, look around and find something you love.</p>
+          <p class="sign">— Monica</p>
+        </div>
+        <img src="img/about.jpg" alt="Coastal art and silk florals inside the shop" width="1200" height="1024" loading="lazy">
+      </div>
+    </section>
+
+    <section class="block band" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="visit-heading">Come see us in Parrish</h2>
+        <div class="visit">
+          <article>
+            <h3>Hours</h3>
+            <table>
+              <tbody>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>10 AM–5 PM</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>10 AM–5 PM</td></tr>
+                <tr data-day="4"><th scope="row">Thursday</th><td>10 AM–5 PM</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>10 AM–5 PM</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>10 AM–5 PM</td></tr>
+                <tr data-day="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+                <tr data-day="1"><th scope="row">Monday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h3>Find us</h3>
+            <p>9027 US Highway 301 N, Parrish, FL 34219</p>
+            <p style="margin-top:0.9rem"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Monica%27s+Rustic+Rose+Parrish+FL">Get directions</a></p>
+            <p>Plenty to see — allow a little time to browse.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">What neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <p>Monica and her staff are friendly and helpful. Best place to get gifts and home decor.</p>
+            <footer>B.M., Palmetto, Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Love her shop. Prices are reasonable too.</p>
+            <footer>H.V., Parrish, Nextdoor, Oct 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain">Nextdoor Neighborhood Favorite 2020, 2023, 2024, 2025 &amp; 2026 · 102 neighbors Fave'd us</p>
+        <p class="aside">“So happy you enjoy our store! That makes my day to hear that!” — Monica</p>
+      </div>
+    </section>
+
+    <section class="block blush" id="events" aria-labelledby="events-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="events-heading">Sales &amp; happenings</h2>
+        <article class="event">
+          <p><strong>Placeholder.</strong> Holiday shopping &amp; Small Business Saturday — watch this space.</p>
+        </article>
+        <p style="margin-top:0.9rem"><a href="https://www.facebook.com/monicasrusticrose" target="_blank" rel="noopener">Follow us on Facebook for new arrivals</a></p>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="contact-heading">Questions? Call the shop</h2>
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Phone</dt><dd><a href="tel:+19414794912"><span class="nowrap">(941) 479-4912</span></a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:monicasrusticrose@hotmail.com">monicasrusticrose@hotmail.com</a></dd></div>
+              <div><dt>Address</dt><dd>9027 US Highway 301 N, Parrish, FL 34219</dd></div>
+              <div><dt>Hours</dt><dd>Tue–Sat 10–5 · Sun–Mon closed</dd></div>
+            </dl>
+            <p class="links">
+              <a href="https://www.facebook.com/monicasrusticrose" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://nextdoor.com/pages/rustic-rose-parrish-fl/" target="_blank" rel="noopener">Nextdoor</a>
+            </p>
+          </div>
+          <form id="ask">
+            <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"></div>
+            <div><label for="looking">What are you looking for?</label><textarea id="looking" name="looking" required></textarea></div>
+            <p class="fine">A photo helps — mention it in your note and we can follow up.</p>
+            <button class="btn btn-primary" type="submit">Ask about an item</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Monica's Rustic Rose · Home decor &amp; gifts · 9027 US Hwy 301 N, Parrish, FL · <a href="tel:+19414794912"><span class="nowrap">(941) 479-4912</span></a></p>
+      <p><a href="https://www.facebook.com/monicasrusticrose" target="_blank" rel="noopener">Facebook</a> · <a href="https://nextdoor.com/pages/rustic-rose-parrish-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19414794912">Call</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Monica%27s+Rustic+Rose+Parrish+FL">Directions</a>
+    <a class="hrs" href="#visit">Hours</a>
+  </nav>
+
+  <script>
+    (function () {
+      var line = document.getElementById("open-line");
+      var day = new Date().getDay();
+      if (day === 0 || day === 1) line.textContent = "Closed today — open Tuesday 10 AM";
+      else line.textContent = "Open today 10–5";
+      var row = document.querySelector('tr[data-day="' + day + '"]');
+      if (row) row.classList.add("today");
+
+      document.getElementById("ask").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var data = new FormData(e.target);
+        var body = ["Name: " + (data.get("name") || ""), "Phone: " + (data.get("phone") || ""), "", "Looking for:", data.get("looking") || ""].join("\n");
+        window.location.href = "mailto:monicasrusticrose@hotmail.com?subject=" + encodeURIComponent("Question for the shop") + "&body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

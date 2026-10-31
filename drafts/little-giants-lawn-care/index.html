@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Giants Lawn Care | Lawn Care &amp; Landscaping in Sarasota, Bradenton &amp; Palmetto</title>
+  <meta name="description" content="BIG service, little price. Sarasota-born lawn maintenance, landscaping and plant know-how from a former Selby Gardens pro. Nextdoor Fave 2021–2026. Call or text (941) 536-1305.">
+  <meta name="theme-color" content="#163A22">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapingBusiness",
+    "name": "Little Giants Lawn Care",
+    "telephone": "+1-941-536-1305",
+    "email": "dlglcs26@gmail.com",
+    "slogan": "BIG service, little price",
+    "image": "img/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarasota",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Sarasota, FL", "Bradenton, FL", "Palmetto, FL"],
+    "sameAs": "https://nextdoor.com/pages/little-giants-lawn-care-sarasota-fl/"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F7F8F2;
+      --leaf: #E6EEDB;
+      --ink: #111A12;
+      --forest: #163A22;
+      --green: #2E7D32;
+      --lime: #8BC34A;
+      --mint: #BFE3C0;
+      --orchid: #B0307E;
+      --muted: #4F5A50;
+      --white: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; font-size: 1.05rem; }
+    img, svg { max-width: 100%; display: block; }
+    a { color: var(--green); }
+    h1, h2, .mark-name { font-family: Fraunces, Georgia, serif; font-weight: 900; line-height: 1.05; margin: 0; }
+    h3 { font-family: Inter, sans-serif; margin: 0; }
+    p { margin: 0; }
+    .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--lime); color: var(--forest); padding: 0.6rem 1rem; z-index: 80; font-weight: 600; }
+    .skip:focus { left: 0.75rem; top: 0.75rem; }
+    :focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; }
+    section { scroll-margin-top: 84px; }
+    .nowrap { white-space: nowrap; }
+
+    .utility-bar { background: var(--forest); color: #fff; font-size: 0.9rem; font-weight: 600; padding: 0.48rem 0; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 1rem; text-align: center; }
+    .utility-bar a { color: #fff; text-decoration: none; }
+
+    .site-header { background: var(--bg); position: sticky; top: 0; z-index: 30; border-bottom: 1px solid #d7e2c8; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.4rem 0; }
+    .brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--ink); }
+    .brand svg { width: 52px; height: 52px; flex: none; }
+    .mark-name { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 0.85; }
+    .mark-name small { display: block; font-family: Fraunces, serif; font-weight: 700; font-size: 0.62rem; letter-spacing: 0.18em; }
+    .mark-name em { display: block; font-family: Inter, sans-serif; font-style: normal; font-weight: 600; font-size: 0.72rem; letter-spacing: 0.04em; color: var(--green); }
+    nav.site-nav { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+    nav.site-nav a.nav-link { color: var(--ink); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    nav.site-nav a.nav-link:hover { color: var(--green); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-weight: 600; font-family: inherit; font-size: 1rem; }
+    .btn-primary { background: var(--green); color: #fff; min-height: 56px; }
+    .btn-primary:hover { filter: brightness(1.08); color: #fff; }
+    .btn-lime { background: var(--lime); color: var(--forest); }
+    .btn-lime:hover { filter: brightness(1.05); color: var(--forest); }
+    .header-inner .btn-primary { min-height: 44px; }
+
+    .hero { position: relative; color: #fff; min-height: 520px; display: flex; align-items: center; background: var(--forest) center/cover no-repeat; background-image: linear-gradient(90deg, rgba(22,58,34,0.88) 0%, rgba(22,58,34,0.45) 55%, rgba(22,58,34,0) 100%), url("img/hero.jpg"); }
+    .hero-copy { padding: 3rem 0; max-width: 640px; }
+    .eyebrow { color: var(--lime); font-weight: 600; letter-spacing: 0.08em; font-size: 0.78rem; margin: 0 0 0.7rem; }
+    .hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); color: #fff; margin-bottom: 0.7rem; }
+    .hero h1 .big { font-size: 1.4em; }
+    .hero h1 .little { font-size: 0.7em; font-style: italic; font-weight: 700; }
+    .hero-lead { color: var(--mint); max-width: 42ch; margin-bottom: 1.1rem; font-size: 1.08rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.8rem; }
+    .fave { color: var(--lime); font-size: 0.88rem; font-weight: 600; }
+
+    section.block { padding: 3rem 0; }
+    .sec-num { color: var(--green); font-family: Fraunces, serif; font-weight: 700; letter-spacing: 0.14em; margin: 0 0 0.25rem; }
+    h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom: 0.9rem; }
+    .leaf { background: var(--leaf); }
+    .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+    .card { background: #fff; border-radius: 12px; padding: 1rem; }
+    .ico { width: 40px; height: 40px; color: var(--green); margin-bottom: 0.45rem; }
+    .card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+    .card p { color: var(--muted); font-size: 0.98rem; }
+
+    .work { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; }
+    .work figure { margin: 0; }
+    .work img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; }
+    .work figcaption { margin-top: 0.4rem; font-weight: 600; }
+
+    .band { background: var(--forest); color: #fff; }
+    .band h2 { color: #fff; }
+    .band .sec-num { color: var(--lime); }
+    .band .story { color: var(--mint); max-width: 62ch; margin-bottom: 1rem; }
+    .blooms { display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.3rem; }
+    .blooms figure { margin: 0; flex: 0 0 180px; scroll-snap-align: start; }
+    .blooms img { width: 180px; height: 225px; object-fit: cover; border-radius: 12px; }
+    .blooms figcaption { color: var(--lime); font-weight: 600; font-size: 0.85rem; margin-top: 0.3rem; }
+
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    blockquote.review { margin: 0; background: #fff; border-radius: 12px; padding: 1.05rem; }
+    blockquote.review .q { color: var(--orchid); font-family: Fraunces, serif; font-size: 2rem; line-height: 1; }
+    blockquote.review footer { margin-top: 0.7rem; font-weight: 600; color: var(--orchid); font-size: 0.9rem; }
+    .plain { margin-top: 0.9rem; color: var(--muted); font-weight: 600; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0.8rem 0 0; }
+    .chips li { background: var(--leaf); border-radius: 999px; padding: 0.45rem 0.9rem; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+    .coast { width: min(100%, 320px); }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; background: #fff; border-radius: 12px; padding: 1.3rem; }
+    dl { margin: 0.3rem 0 0; display: grid; gap: 0.75rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    dd a { color: var(--ink); text-decoration: none; }
+    form { display: grid; gap: 0.6rem; }
+    label { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+    input, select, textarea { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid #d5e0c8; border-radius: 8px; padding: 0.65rem 0.7rem; min-height: 48px; }
+    textarea { min-height: 90px; resize: vertical; }
+
+    .site-footer { background: var(--forest); color: var(--mint); text-align: center; padding: 2.1rem 0; }
+    .site-footer a { color: var(--lime); }
+    .site-footer p { margin: 0.3rem 0; }
+    .dock { display: none; }
+
+    @media (max-width: 800px) {
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .work, .quotes, .contact-grid { grid-template-columns: 1fr; }
+      nav.site-nav a.nav-link { display: none; }
+      .hero { background-image: linear-gradient(180deg, rgba(22,58,34,0.15) 0%, rgba(22,58,34,0.88) 70%), url("img/hero.jpg"); background-position: 40% 60%; align-items: flex-end; }
+      .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 50% 35% 15%; position: fixed; inset: auto 0 0 0; z-index: 40; }
+      .dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; text-decoration: none; font-weight: 600; text-align: center; padding: 0.2rem; }
+      .dock .go { background: var(--green); color: #fff; }
+      .dock .text { background: var(--lime); color: var(--forest); }
+      .dock .mail { background: var(--forest); color: #fff; }
+      body { padding-bottom: 56px; }
+      .work { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+      .work figure { flex: 0 0 82%; scroll-snap-align: start; }
+    }
+    @media (max-width: 480px) {
+      .svc-grid { grid-template-columns: 1fr; }
+      .hero h1 .big { font-size: 44px; }
+      .utility-bar { font-size: 0.78rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Sarasota · Bradenton · Palmetto</span>
+      <span>Owner-operated</span>
+      <a href="tel:+19415361305">Call or text <span class="nowrap">(941) 536-1305</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Little Giants Lawn Care, home">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="40" cy="22" r="12" fill="#2E7D32"/>
+          <path d="M40 34 V54" stroke="#163A22" stroke-width="3"/>
+          <path d="M18 50 c2-14 6-20 8-28" fill="none" stroke="#111A12" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="24" cy="18" r="4" fill="#111A12"/>
+          <path d="M14 48 h16 l4 6 H12 z" fill="#8BC34A"/>
+          <circle cx="16" cy="54" r="3" fill="#163A22"/>
+          <circle cx="30" cy="54" r="3" fill="#163A22"/>
+        </svg>
+        <span class="mark-name"><small>LITTLE</small>GIANTS<em>Lawn Care</em></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#plants">Plant know-how</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#area">Area</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="tel:+19415361305">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-copy">
+        <p class="eyebrow">LAWN CARE &amp; LANDSCAPING · SARASOTA · BRADENTON · PALMETTO</p>
+        <h1 id="hero-heading"><span class="big">BIG</span> service, <span class="little">little</span> price.</h1>
+        <p class="hero-lead">Sarasota-born lawn and landscape care from a former Selby Gardens maintenance pro who knows his plants.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+19415361305">Call <span class="nowrap">(941) 536-1305</span></a>
+          <a class="btn btn-lime" href="sms:+19415361305">Text a photo of your yard</a>
+        </div>
+        <p class="fave">Nextdoor Neighborhood Favorite 2021 · 2024 · 2025 · 2026</p>
+      </div>
+    </section>
+
+    <section class="block leaf" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="sec-num">01</p>
+        <h2 id="services-heading">Yard care, done right</h2>
+        <div class="svc-grid">
+          <article class="card">
+            <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 28 h28 l-4 6 H10 z M8 28 V22 h8 l4-8 h8" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Lawn maintenance</h3>
+            <p>Regular mowing, edging and clean-up so your yard always looks cared for.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M10 28 h20 M14 28 V18 h8 v10 M12 18 l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Landscaping &amp; beds</h3>
+            <p>Fresh mulch, new beds, rock borders and plantings.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 30 V16 M20 18 c-6-2-10 2-8-4 4 1 6-2 6-2 s2 3 6 2 c2 6-2 2-4 4" fill="currentColor"/></svg>
+            <h3>Plant advice &amp; installs</h3>
+            <p>The right plant in the right spot — so it thrives in Florida sun.</p>
+          </article>
+          <article class="card">
+            <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 30 h24" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Stump grinding</h3>
+            <p>Old stump in the way? Ask about grinding.</p>
+          </article>
+        </div>
+        <p style="margin-top:1rem"><a class="btn btn-primary" href="#contact">Get a free quote</a></p>
+      </div>
+    </section>
+
+    <section class="block" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="sec-num">02</p>
+        <h2 id="work-heading">Recent yards</h2>
+        <div class="work">
+          <figure>
+            <img src="img/mulch.jpg" alt="Fresh mulch under oak trees" width="960" height="1199" loading="lazy">
+            <figcaption>Fresh mulch under the oaks</figcaption>
+          </figure>
+          <figure>
+            <img src="img/color.jpg" alt="Colorful shrubs in a mulched bed beside a house" width="960" height="1199" loading="lazy">
+            <figcaption>Color by the house</figcaption>
+          </figure>
+          <figure>
+            <img src="img/pergola.jpg" alt="A planted garden with a pergola" width="960" height="1200" loading="lazy">
+            <figcaption>A garden that feels like a getaway</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="block band" id="plants" aria-labelledby="plants-heading">
+      <div class="wrap">
+        <p class="sec-num">03</p>
+        <h2 id="plants-heading">A plant guy, not just a mow guy</h2>
+        <p class="story">Before lawn care was my business, I kept the grounds at Selby Gardens. I still love growing things — plumeria, orchids, tropicals — and I'm happy to tell you what will thrive in your yard.</p>
+        <div class="blooms">
+          <figure><img src="img/plumeria-white.jpg" alt="White plumeria blooms" width="960" height="1199" loading="lazy"><figcaption>Plumeria</figcaption></figure>
+          <figure><img src="img/plumeria-pink.jpg" alt="Pink plumeria blooms" width="960" height="1199" loading="lazy"><figcaption>Pink plumeria</figcaption></figure>
+          <figure><img src="img/orchid-1.jpg" alt="An orchid in bloom" width="960" height="1199" loading="lazy"><figcaption>Orchid</figcaption></figure>
+          <figure><img src="img/orchid-2.jpg" alt="Another orchid in bloom" width="960" height="1199" loading="lazy"><figcaption>Orchid</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="sec-num">04</p>
+        <h2 id="reviews-heading">Neighbors keep coming back</h2>
+        <div class="quotes">
+          <blockquote class="review">
+            <div class="q" aria-hidden="true">“</div>
+            <p>He's responsive and professional. He's given me great suggestions on what plants to plant and where they'd thrive. He definitely saved me from making some expensive mistakes.</p>
+            <footer>T.H., Nextdoor, Oct 2026</footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="q" aria-hidden="true">“</div>
+            <p>Has been with us for about 5 years. Thank you, David.</p>
+            <footer>A.P., Nextdoor, Aug 2026</footer>
+          </blockquote>
+        </div>
+        <p class="plain">Nextdoor Neighborhood Favorite 2021, 2024, 2025 &amp; 2026 · 274 neighbors Fave'd Little Giants</p>
+      </div>
+    </section>
+
+    <section class="block leaf" id="area" aria-labelledby="area-heading">
+      <div class="wrap">
+        <p class="sec-num">05</p>
+        <h2 id="area-heading">Where we work</h2>
+        <svg class="coast" viewBox="0 0 320 180" aria-hidden="true">
+          <path d="M40 10 C70 40, 50 80, 80 110 C60 140, 90 170, 70 180" fill="none" stroke="#2E7D32" stroke-width="3"/>
+          <circle cx="78" cy="48" r="7" fill="#163A22"/>
+          <circle cx="92" cy="100" r="7" fill="#163A22"/>
+          <circle cx="70" cy="150" r="7" fill="#163A22"/>
+          <text x="96" y="52" fill="#111A12" font-size="14" font-family="Inter, sans-serif">Bradenton</text>
+          <text x="108" y="104" fill="#111A12" font-size="14" font-family="Inter, sans-serif">Sarasota</text>
+          <text x="86" y="154" fill="#111A12" font-size="14" font-family="Inter, sans-serif">Palmetto</text>
+        </svg>
+        <ul class="chips">
+          <li>Sarasota</li>
+          <li>Bradenton</li>
+          <li>Palmetto</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <p class="sec-num">06</p>
+        <h2 id="contact-heading">Get a quote from David</h2>
+        <div class="contact-grid">
+          <div>
+            <dl>
+              <div><dt>Call or text</dt><dd><a href="tel:+19415361305"><span class="nowrap">(941) 536-1305</span></a></dd></div>
+              <div><dt>Email</dt><dd><a href="mailto:dlglcs26@gmail.com">dlglcs26@gmail.com</a></dd></div>
+              <div><dt>Area</dt><dd>Sarasota · Bradenton · Palmetto</dd></div>
+            </dl>
+            <p style="margin-top:0.8rem">Photos help — text a picture of your yard.</p>
+            <p style="margin-top:0.6rem"><a href="https://nextdoor.com/pages/little-giants-lawn-care-sarasota-fl/" target="_blank" rel="noopener">See us on Nextdoor</a></p>
+          </div>
+          <form id="quote">
+            <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+            <div><label for="town">Town</label><input id="town" name="town"></div>
+            <div>
+              <label for="job">What do you need?</label>
+              <select id="job" name="job">
+                <option>Mowing</option>
+                <option>Beds &amp; mulch</option>
+                <option>Plantings</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div><label for="note">Note</label><textarea id="note" name="note"></textarea></div>
+            <button class="btn btn-primary" type="submit">Email this note</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Little Giants Lawn Care · BIG service, little price · Sarasota, FL · <a href="tel:+19415361305"><span class="nowrap">(941) 536-1305</span></a></p>
+      <p><a href="https://nextdoor.com/pages/little-giants-lawn-care-sarasota-fl/" target="_blank" rel="noopener">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Quick contact">
+    <a class="go" href="tel:+19415361305">Call</a>
+    <a class="text" href="sms:+19415361305">Text photo</a>
+    <a class="mail" href="mailto:dlglcs26@gmail.com?subject=Lawn%20care%20quote">Email</a>
+  </nav>
+
+  <script>
+    document.getElementById("quote").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(e.target);
+      var body = ["Name: " + (data.get("name") || ""), "Phone: " + (data.get("phone") || ""), "Town: " + (data.get("town") || ""), "Need: " + (data.get("job") || ""), "", data.get("note") || ""].join("\n");
+      window.location.href = "mailto:dlglcs26@gmail.com?subject=" + encodeURIComponent("Lawn care quote") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
