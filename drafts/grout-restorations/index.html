@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grout Restorations | Grout Cleaning, Color Sealing &amp; Travertine Polishing | Sarasota, Manatee &amp; Charlotte</title>
+  <meta name="description" content="Grout cleaning and color sealing, re-grouting, travertine and marble honing, and tile repair and installation from a 3rd-generation tile installer. Sarasota, Manatee and Charlotte Counties. Call (941) 929-3137.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Grout Restorations",
+    "telephone": "+1-941-929-3137",
+    "email": "groutrestorations101@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Sarasota", "addressRegion": "FL", "addressCountry": "US" },
+    "areaServed": ["Sarasota County", "Manatee County", "Charlotte County"],
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grout cleaning & color sealing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Re-grouting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stone honing & polishing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tile repair & installation" } }
+    ],
+    "sameAs": ["https://www.facebook.com/share/1A26bhfJ1B/", "https://nextdoor.com/pages/grout-restorations-sarasota-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #FAF7F2; --stone: #EFE7DB; --ink: #2A2622; --grout: #2E3A3D; --teal: #1E6B6B;
+      --trav: #D9C3A5; --cream: #F2E6D3; --muted: #6B635A;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--teal); }
+    h1, h2, .num { font-family: Fraunces, Georgia, serif; font-weight: 700; font-optical-sizing: auto; }
+    h1, h2 { line-height: 1.12; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--trav); color: var(--ink); padding: 0.5rem; z-index: 40; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    .utility-bar { background: var(--grout); color: var(--cream); font-size: 0.9rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.75rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .sep { color: var(--trav); }
+    .site-header { background: var(--grout); color: var(--cream); position: sticky; top: 0; z-index: 20; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.5rem 0; }
+    .word { color: var(--cream); text-decoration: none; font-family: Fraunces, serif; font-weight: 700; font-size: 1.25rem; display: inline-flex; align-items: center; gap: 0.45rem; }
+    nav { display: flex; gap: 0.8rem; align-items: center; }
+    nav a { color: var(--cream); text-decoration: none; font-weight: 600; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.65rem 1rem; border-radius: 8px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-weight: 600; font-family: Inter, sans-serif; }
+    .btn-call { background: var(--teal); color: #fff; min-height: 56px; }
+    .btn-call:hover { color: #fff; }
+    .btn-line { color: var(--cream); border-color: var(--trav); background: transparent; }
+    .hero { background: var(--grout); color: #fff; }
+    .hero-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1.2rem; align-items: center; padding: 2.2rem 0; }
+    .eyebrow { color: var(--trav); letter-spacing: 0.1em; font-size: 0.78rem; font-weight: 600; }
+    .hero h1 { font-size: clamp(2.1rem, 4vw, 3.2rem); margin: 0.35rem 0; color: #fff; }
+    .sub { color: var(--cream); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; }
+    .ba-stage { position: relative; height: 460px; overflow: hidden; border-radius: 12px; touch-action: pan-y; background: #111; }
+    .ba-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .ba-before { clip-path: inset(0 50% 0 0); }
+    .ba-stage input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; margin: 0; cursor: ew-resize; z-index: 3; }
+    .ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 44px; transform: translateX(-50%); z-index: 2; pointer-events: none; }
+    .ba-handle::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: var(--trav); }
+    .ba-handle span { position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; border-radius: 50%; background: var(--trav); color: var(--grout); display: grid; place-items: center; transform: translate(-50%, -50%); font-weight: 700; }
+    .chip { position: absolute; top: 10px; z-index: 2; background: var(--trav); color: var(--grout); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; padding: 0.25rem 0.5rem; border-radius: 999px; }
+    .chip.b { left: 10px; } .chip.a { right: 10px; }
+    .ba-fallback { display: none; grid-template-columns: 1fr 1fr; gap: 0.4rem; }
+    html:not(.js) .ba-stage { display: none; }
+    html:not(.js) .ba-fallback { display: grid; }
+    .ba-fallback img { height: 280px; width: 100%; object-fit: cover; border-radius: 8px; }
+    section { padding: 2.7rem 0; }
+    .kicker { color: var(--teal); font-weight: 600; letter-spacing: 0.12em; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin: 0.15rem 0 0.7rem; }
+    .stone { background: var(--stone); background-image: linear-gradient(rgba(217,195,165,.35) 1px, transparent 1px), linear-gradient(90deg, rgba(217,195,165,.35) 1px, transparent 1px); background-size: 64px 64px; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; }
+    .card { background: var(--bg); border-radius: 12px; padding: 1rem; }
+    .card h3 { margin: 0.4rem 0; font-size: 1.05rem; }
+    .dark { background: var(--grout); color: #fff; }
+    .dark h2 { color: #fff; }
+    .case { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; align-items: start; }
+    .grid4 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; }
+    .grid4 img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+    ol.steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.7rem; }
+    ol.steps li { display: grid; grid-template-columns: auto 1fr; gap: 0.6rem; }
+    .num { color: var(--trav); font-size: 1.6rem; line-height: 1; }
+    .grit { display: flex; height: 14px; border-radius: 999px; overflow: hidden; margin: 0.8rem 0; }
+    .grit span { flex: 1; }
+    .grit span:nth-child(1) { background: #c4ad90; }
+    .grit span:nth-child(2) { background: #d9c3a5; }
+    .grit span:nth-child(3) { background: #eadcc8; }
+    .grit span:nth-child(4) { background: #fff; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+    .gallery button { border: 0; padding: 0; background: none; cursor: pointer; text-align: left; color: inherit; font: inherit; width: 100%; }
+    .gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; }
+    .gallery figcaption { font-weight: 600; margin-top: 0.3rem; font-size: 0.92rem; }
+    .smalltile img { height: 140px; object-fit: cover; }
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+    .quote { background: #fff; border-radius: 12px; padding: 1rem; margin: 0; }
+    .quote::before { content: "“"; font-family: Fraunces, serif; color: var(--teal); font-size: 2rem; line-height: 1; display: block; }
+    .quote cite { display: block; margin-top: 0.5rem; font-style: normal; font-weight: 600; color: var(--teal); }
+    .pull { font-family: Fraunces, serif; font-size: clamp(1.35rem, 2.5vw, 1.8rem); color: var(--grout); }
+    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.2rem; }
+    dl { margin: 0; display: grid; gap: 0.65rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    form { display: grid; gap: 0.5rem; background: #fff; padding: 1rem; border-radius: 12px; }
+    label { font-weight: 600; display: grid; gap: 0.2rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem; border-radius: 8px; border: 1px solid #e0d6c8; width: 100%; min-height: 44px; }
+    .jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.15rem; }
+    .jobs label { font-weight: 500; grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .site-footer { background: var(--grout); color: var(--cream); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: var(--trav); }
+    .dock { display: none; }
+    dialog { border: 0; padding: 0; background: transparent; max-width: min(960px, 94vw); }
+    dialog::backdrop { background: rgba(20,18,16,.84); }
+    dialog img { width: 100%; max-height: 78vh; object-fit: contain; }
+    dialog p, dialog button { color: #fff; }
+    @media (max-width: 800px) {
+      .hero-grid, .case, .contact-grid, .quotes { grid-template-columns: 1fr; }
+      .ba-stage { order: -1; height: 320px; }
+      .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .gallery { grid-template-columns: 1fr 1fr; }
+      nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1.1fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 30; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; }
+      .dock .call { background: var(--teal); color: #fff; }
+      .dock .text { background: var(--trav); color: var(--grout); }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .cards, .gallery, .jobs { grid-template-columns: 1fr; }
+      .grid4 { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+      .grid4 img { min-width: 70%; height: 200px; scroll-snap-align: start; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Mon–Fri 7 AM–7 PM</span><span class="sep">·</span>
+      <a href="tel:+19419293137">Call <span class="nowrap">(941) 929-3137</span></a><span class="sep">·</span>
+      <span>Sarasota · Manatee · Charlotte</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="word" href="#top">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9" height="9" fill="#1E6B6B"/><rect x="13" y="2" width="9" height="9" fill="#D9C3A5"/><rect x="2" y="13" width="9" height="9" fill="#D9C3A5"/><rect x="13" y="13" width="9" height="9" fill="#F2E6D3"/></svg>
+        Grout Restorations
+      </a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#travertine">Travertine</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote">Quote</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19419293137">Call <span class="nowrap">(941) 929-3137</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Grout · Tile · Stone · Sarasota · Manatee · Charlotte</p>
+          <h1 id="hero-heading">Your tile isn't ruined. It's dirty.</h1>
+          <p class="sub">Grout cleaning and color sealing, re-grouting, stone honing and tile repair from a 3rd-generation tile installer with 20 years of floors and showers behind him.</p>
+          <div class="hero-actions">
+            <a class="btn btn-call" href="tel:+19419293137">Call <span class="nowrap">(941) 929-3137</span></a>
+            <a class="btn btn-line" href="sms:+19419293137">Text a photo for a quote</a>
+          </div>
+          <p class="sub">Nextdoor Neighborhood Fave 2025</p>
+        </div>
+        <div class="ba" data-ba>
+          <div class="ba-stage">
+            <img class="after" src="img/floor-after.jpg" alt="Tile floor after grout cleaning" width="500" height="920">
+            <img class="before ba-before" src="img/floor-before.jpg" alt="Same tile floor with dark, dirty grout" width="500" height="920">
+            <span class="chip b">Before</span>
+            <span class="chip a">After</span>
+            <span class="ba-handle" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+          </div>
+          <div class="ba-fallback">
+            <figure><img src="img/floor-before.jpg" alt="Before: dirty grout"><figcaption>Before</figcaption></figure>
+            <figure><img src="img/floor-after.jpg" alt="After: cleaned grout"><figcaption>After</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stone" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="services-heading">What I do</h2>
+        <div class="cards">
+          <article class="card"><h3>Grout cleaning &amp; color sealing</h3><p>Deep-clean the grout, then color-seal it so it looks new and stays that way.</p></article>
+          <article class="card"><h3>Re-grouting</h3><p>Cracked, missing or stained grout ground out and replaced in showers and high-traffic floors.</p></article>
+          <article class="card"><h3>Stone honing &amp; polishing</h3><p>Travertine and marble cleaned, filled, honed and polished back to a shine.</p></article>
+          <article class="card"><h3>Tile repair &amp; installation</h3><p>Cracked tiles replaced, new showers, floors, backsplashes and fireplaces set by a 3rd-generation installer.</p></article>
+        </div>
+        <p style="color:var(--teal);font-weight:600">Most floors look like the after photo with cleaning and sealing alone, with no replacement needed.</p>
+      </div>
+    </section>
+
+    <section class="dark" id="travertine" aria-labelledby="trav-heading">
+      <div class="wrap case">
+        <div class="grid4">
+          <img src="img/travertine-window.jpg" alt="Polished travertine floor by a window" width="900" height="1200">
+          <img src="img/travertine-hall.jpg" alt="Honored travertine hallway" width="900" height="1200">
+          <img src="img/travertine-kitchen.jpg" alt="Polished travertine in a kitchen" width="900" height="1200">
+          <img src="img/travertine-entry.jpg" alt="Travertine entry by the doors" width="900" height="1200">
+        </div>
+        <div>
+          <p class="kicker" style="color:var(--trav)">02</p>
+          <h2 id="trav-heading">How we brought back a travertine floor</h2>
+          <p class="sub">This travertine floor was in very rough shape: fill popped out, pores packed with dirt and grime, and a dull, scratched finish.</p>
+          <ol class="steps">
+            <li><span class="num">1</span><div><strong>Deep clean.</strong> Orbital machine and a neutral-pH cleaner.</div></li>
+            <li><span class="num">2</span><div><strong>Re-grout &amp; fill.</strong> Re-grouted all traffic areas and filled the holes with epoxy stone filler.</div></li>
+            <li><span class="num">3</span><div><strong>Hone.</strong> 200-grit diamond resin discs on a 17-inch honing machine, then 400, 800 and 1500 grit.</div></li>
+            <li><span class="num">4</span><div><strong>Polish.</strong> Finished and polished with Diaglo and a hog's hair pad.</div></li>
+          </ol>
+          <div class="grit" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <p class="sub">200 → 400 → 800 → 1500</p>
+          <p><a class="btn btn-call" href="#quote">Ask about your stone floor</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <p class="kicker">03</p>
+        <h2 id="projects-heading">Showers, floors &amp; fireplaces</h2>
+        <div class="gallery">
+          <figure><button type="button" data-full="img/shower-pebble.jpg" data-cap="Walk-in shower with grab bars and pebble floor"><img src="img/shower-pebble.jpg" alt="Walk-in shower with grab bars and a pebble floor" width="903" height="1200"></button><figcaption>Walk-in shower with grab bars and pebble floor</figcaption></figure>
+          <figure><button type="button" data-full="img/marble-bath.jpg" data-cap="Marble bath with circle-mosaic floor"><img src="img/marble-bath.jpg" alt="Marble bath with a circle-mosaic floor" width="594" height="792"></button><figcaption>Marble bath with circle-mosaic floor</figcaption></figure>
+          <figure><button type="button" data-full="img/outdoor-kitchen.jpg" data-cap="Outdoor kitchen tile backsplash"><img src="img/outdoor-kitchen.jpg" alt="Outdoor kitchen tile backsplash" width="1200" height="900"></button><figcaption>Outdoor kitchen tile backsplash</figcaption></figure>
+          <figure><button type="button" data-full="img/fireplace-stacked.jpg" data-cap="Stacked-stone fireplace"><img src="img/fireplace-stacked.jpg" alt="Stacked-stone fireplace" width="960" height="1200"></button><figcaption>Stacked-stone fireplace</figcaption></figure>
+          <figure><button type="button" data-full="img/fireplace-two.jpg" data-cap="Two-sided stone fireplace"><img src="img/fireplace-two.jpg" alt="Two-sided stone fireplace" width="960" height="1200"></button><figcaption>Two-sided stone fireplace</figcaption></figure>
+          <figure class="smalltile"><button type="button" data-full="img/travertine-shower.jpg" data-cap="Travertine shower"><img src="img/travertine-shower.jpg" alt="Travertine shower" width="398" height="400"></button><figcaption>Travertine shower</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker">04</p>
+        <h2 id="reviews-heading">Neighbors say</h2>
+        <div class="quotes">
+          <blockquote class="quote">I highly recommend Brett @ Grout Restorations… He cleaned and color sealed my floors…<cite>B.H. · Nextdoor</cite></blockquote>
+          <blockquote class="quote">Brett with Grout Restorations is great.<cite>M.G. · Nextdoor</cite></blockquote>
+        </div>
+        <p>Nextdoor Neighborhood Fave 2025 · 27 neighbors Fave'd Grout Restorations</p>
+      </div>
+    </section>
+
+    <section class="stone" id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <p class="kicker">05</p>
+        <h2 id="about-heading">Three generations of tile</h2>
+        <p class="pull">“3rd generation tile installer! I have restored thousands of floors and showers in Sarasota, Manatee and Charlotte Counties over the last 20 years.”</p>
+        <p>Grout cleaning and tile repair is all I do. I'll tell you honestly whether your floor needs cleaning, sealing, re-grouting or replacing, and do the work myself.</p>
+      </div>
+    </section>
+
+    <section id="quote" aria-labelledby="quote-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">06</p>
+          <h2 id="quote-heading">Get a quote</h2>
+          <p>The fastest way: text 2–3 photos of the floor or shower to <a class="nowrap" href="sms:+19419293137">(941) 929-3137</a>.</p>
+          <dl>
+            <div><dt>Call</dt><dd><a class="nowrap" href="tel:+19419293137">(941) 929-3137</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:groutrestorations101@gmail.com">groutrestorations101@gmail.com</a></dd></div>
+            <div><dt>Hours</dt><dd>Mon–Fri 7 AM–7 PM · Sat &amp; Sun closed</dd></div>
+            <div><dt>Area</dt><dd>Sarasota, Manatee &amp; Charlotte Counties</dd></div>
+          </dl>
+          <p><a href="https://www.facebook.com/share/1A26bhfJ1B/">Facebook</a> · <a href="https://nextdoor.com/pages/grout-restorations-sarasota-fl/">Nextdoor</a></p>
+        </div>
+        <form id="quote-form">
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>Town <input name="town"></label>
+          <label>Surface
+            <select name="surface">
+              <option>Floor</option><option>Shower</option><option>Backsplash</option>
+              <option>Stone / travertine</option><option>Marble</option><option>Other</option>
+            </select>
+          </label>
+          <label>Approx. sq ft <input name="sqft"></label>
+          <div class="jobs">
+            <label><input type="checkbox" name="issue" value="Dirty grout"> Dirty grout</label>
+            <label><input type="checkbox" name="issue" value="Cracked/missing grout"> Cracked / missing grout</label>
+            <label><input type="checkbox" name="issue" value="Dull stone"> Dull stone</label>
+            <label><input type="checkbox" name="issue" value="Cracked tile"> Cracked tile</label>
+            <label><input type="checkbox" name="issue" value="New install"> New install</label>
+          </div>
+          <label>Note <textarea name="note" rows="3"></textarea></label>
+          <label class="jobs"><input type="checkbox" name="photos" value="yes"> I'll text photos</label>
+          <button class="btn btn-call" type="submit">Email a quote request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Grout Restorations · Grout cleaning, stone restoration &amp; tile · Sarasota, Manatee &amp; Charlotte Counties, FL · <a class="nowrap" href="tel:+19419293137">(941) 929-3137</a></p>
+      <p><a href="https://www.facebook.com/share/1A26bhfJ1B/">Facebook</a> · <a href="https://nextdoor.com/pages/grout-restorations-sarasota-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19419293137">Call</a>
+    <a class="text" href="sms:+19419293137">Text photo</a>
+  </div>
+  <dialog id="lightbox">
+    <form method="dialog"><button>Close</button></form>
+    <img alt="" id="lb-img">
+    <p id="lb-cap"></p>
+  </dialog>
+  <script>
+    document.documentElement.classList.add("js");
+    document.querySelectorAll("[data-ba]").forEach(function (box) {
+      var input = box.querySelector("input");
+      var before = box.querySelector(".ba-before");
+      var handle = box.querySelector(".ba-handle");
+      function set(v) {
+        before.style.clipPath = "inset(0 " + (100 - v) + "% 0 0)";
+        handle.style.left = v + "%";
+      }
+      input.addEventListener("input", function () { set(Number(input.value)); });
+      set(50);
+    });
+    var dlg = document.getElementById("lightbox");
+    document.querySelectorAll("[data-full]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.getElementById("lb-img").src = btn.getAttribute("data-full");
+        document.getElementById("lb-img").alt = btn.getAttribute("data-cap");
+        document.getElementById("lb-cap").textContent = btn.getAttribute("data-cap");
+        dlg.showModal();
+      });
+    });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    document.getElementById("quote-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = ["Name: " + d.get("name"), "Phone: " + d.get("phone"), "Town: " + d.get("town"), "Surface: " + d.get("surface"), "Sq ft: " + d.get("sqft"), "What's wrong: " + d.getAll("issue").join(", "), "Will text photos: " + (d.get("photos") ? "yes" : "no"), "", d.get("note") || ""].join("\n");
+      window.location.href = "mailto:groutrestorations101@gmail.com?subject=" + encodeURIComponent("Quote request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

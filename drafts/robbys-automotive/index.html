@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robby's Automotive | Family-Owned Auto Repair in Lakewood Ranch, FL | A/C, Brakes, Tires</title>
+  <meta name="description" content="Family-owned auto repair by SR 64 &amp; Rye Rd in Lakewood Ranch. A/C diagnostics and repair, brakes, tires, steering &amp; suspension, check-engine lights and maintenance. Extended warranties accepted. Call (941) 812-7102.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Robby's Automotive, LLC",
+    "telephone": "+1-941-812-7102",
+    "email": "robbysautomotivellc@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "17605 Water Line Srv Rd",
+      "addressLocality": "Bradenton",
+      "addressRegion": "FL",
+      "postalCode": "34212",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:30"
+    },
+    "areaServed": ["Lakewood Ranch", "Bradenton"],
+    "sameAs": ["https://nextdoor.com/pages/robbys-automotive-bradenton-fl/"]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F5F6F8; --fog: #E6E9F0; --ink: #1B2235; --navy: #1E2A4A; --red: #C2272D;
+      --pink: #FFB4B7; --steel: #C9D1E3; --muted: #5A6070;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    img { max-width: 100%; display: block; }
+    a { color: var(--navy); }
+    h1, h2, .btn, th { font-family: Oswald, sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.1; }
+    .btn { font-weight: 500; letter-spacing: 0.04em; }
+    .wrap { width: min(1100px, 92vw); margin-inline: auto; }
+    .nowrap { white-space: nowrap; }
+    .skip { position: absolute; left: -999px; background: var(--red); color: #fff; padding: 0.5rem; z-index: 40; }
+    .skip:focus { left: 0.5rem; top: 0.5rem; }
+    .utility-bar { background: var(--navy); color: #fff; font-size: 0.9rem; }
+    .utility-bar .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.35rem 0.75rem; padding: 0.48rem 0; }
+    .utility-bar a { color: #fff; text-decoration: none; font-weight: 600; }
+    .sep { color: var(--pink); }
+    .site-header { background: #fff; position: sticky; top: 0; z-index: 20; border-bottom: 3px solid var(--navy); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 0.7rem; padding: 0.35rem 0; }
+    .brand img { height: 56px; width: auto; }
+    nav { display: flex; gap: 0.75rem; align-items: center; }
+    nav a { color: var(--navy); text-decoration: none; font-family: Oswald, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; font-size: 0.92rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0.6rem 1rem; border-radius: 6px; text-decoration: none; border: 2px solid transparent; cursor: pointer; font-size: 1rem; }
+    .btn-call { background: var(--red); color: #fff; min-height: 56px; }
+    .btn-call:hover { color: #fff; }
+    .btn-line { color: #fff; border-color: #fff; background: transparent; }
+    .hero { min-height: 72vh; background: #1E2A4A url("img/hero-shop.jpg") center/cover no-repeat; color: #fff; display: grid; align-items: center; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30,42,74,.9), rgba(30,42,74,.35) 65%); }
+    .hero .wrap { position: relative; z-index: 1; padding: 3rem 0; max-width: 680px; }
+    .eyebrow { color: var(--pink); font-family: Oswald, sans-serif; letter-spacing: 0.12em; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin: 0.3rem 0; color: #fff; }
+    .sub { color: var(--steel); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; }
+    .stripes { height: 10px; background: repeating-linear-gradient(115deg, var(--red) 0 14px, #fff 14px 22px, var(--navy) 22px 36px); }
+    section { padding: 2.6rem 0; }
+    .kicker { color: var(--red); font-family: Oswald, sans-serif; letter-spacing: 0.12em; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); color: var(--navy); margin: 0.15rem 0 0.8rem; }
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+    .card { background: #fff; border-radius: 10px; padding: 0.9rem; border-top: 4px solid var(--navy); }
+    .card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-family: Oswald, sans-serif; text-transform: uppercase; }
+    .ac { background: var(--navy); color: #fff; }
+    .ac h2 { color: #fff; }
+    .ac-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1rem; align-items: center; }
+    .collage { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; }
+    .collage figure:first-child { grid-column: 1 / -1; }
+    .collage img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+    .collage figcaption { color: #fff; font-weight: 600; font-size: 0.88rem; }
+    .warranty { background: var(--red); color: #fff; text-align: center; position: relative; }
+    .warranty h2 { color: #fff; }
+    .fog { background: var(--fog); }
+    .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+    .quote { background: #fff; border-radius: 12px; padding: 1rem; margin: 0; }
+    .quote::before { content: "“"; font-family: Oswald, sans-serif; color: var(--red); font-size: 2rem; line-height: 1; display: block; }
+    .quote cite { display: block; margin-top: 0.5rem; font-style: normal; font-weight: 600; color: var(--red); }
+    .strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.55rem; }
+    .strip img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; }
+    .visit { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1rem; align-items: start; }
+    dl { margin: 0; display: grid; gap: 0.65rem; }
+    dt { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    dd { margin: 0.1rem 0 0; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { text-align: left; padding: 0.55rem 0.65rem; border-bottom: 1px solid var(--fog); }
+    form { display: grid; gap: 0.5rem; background: var(--fog); padding: 1rem; border-radius: 12px; }
+    label { font-weight: 600; display: grid; gap: 0.2rem; }
+    input, select, textarea { font: inherit; padding: 0.55rem; border-radius: 8px; border: 1px solid #d5dae6; width: 100%; min-height: 44px; }
+    .jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.15rem; }
+    .jobs label { font-weight: 500; grid-template-columns: auto 1fr; align-items: center; min-height: 44px; }
+    .site-footer { background: var(--navy); color: var(--steel); text-align: center; padding: 2rem 0; }
+    .site-footer a { color: #fff; }
+    .dock { display: none; }
+    @media (max-width: 800px) {
+      .hero { align-items: end; }
+      .hero::before { background: linear-gradient(180deg, rgba(30,42,74,.2), rgba(30,42,74,.92) 55%); }
+      .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .ac-grid, .quotes, .visit { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+    @media (max-width: 600px) {
+      .dock { display: grid; grid-template-columns: 1.4fr 1fr; position: fixed; inset: auto 0 0 0; z-index: 30; }
+      .dock a { min-height: 56px; display: flex; align-items: center; justify-content: center; text-decoration: none; font-family: Oswald, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
+      .dock .call { background: var(--red); color: #fff; }
+      .dock .dir { background: var(--navy); color: #fff; }
+      body { padding-bottom: 56px; }
+    }
+    @media (max-width: 480px) {
+      .cards, .strip, .jobs { grid-template-columns: 1fr; }
+      .collage { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+      .collage figure { min-width: 78%; scroll-snap-align: start; }
+      .collage figure:first-child { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="utility-bar">
+    <div class="wrap">
+      <span>Mon–Fri 8:00–5:30</span><span class="sep">·</span>
+      <a href="tel:+19418127102">Call <span class="nowrap">(941) 812-7102</span></a><span class="sep">·</span>
+      <span>By SR 64 &amp; Rye Rd, Lakewood Ranch</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Robby's Automotive home"><img src="img/logo.png" alt="Robby's Automotive" width="160" height="71"></a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#ac">A/C</a>
+        <a href="#warranty">Warranty</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Hours &amp; directions</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+19418127102">Call <span class="nowrap">(941) 812-7102</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <p class="eyebrow">Family-owned auto repair · Lakewood Ranch</p>
+        <h1 id="hero-heading">Dealer-level know-how. Hometown prices.</h1>
+        <p class="sub">A/C, brakes, tires, steering &amp; suspension, check-engine lights and routine maintenance, right by SR 64 &amp; Rye Road. Extended warranty companies accepted.</p>
+        <div class="hero-actions">
+          <a class="btn btn-call" href="tel:+19418127102">Call <span class="nowrap">(941) 812-7102</span></a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=17605+Water+Line+Rd+Bradenton+FL+34212">Get directions</a>
+        </div>
+        <p class="sub">Nextdoor Neighborhood Fave 2024 &amp; 2025 · 129 neighbors Fave Robby's</p>
+      </div>
+    </section>
+    <div class="stripes" aria-hidden="true"></div>
+
+    <section id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <p class="kicker">01</p>
+        <h2 id="services-heading">What we fix</h2>
+        <div class="cards">
+          <article class="card"><h3>Routine maintenance</h3><p>Oil changes, fluids, filters and inspections.</p></article>
+          <article class="card"><h3>Dealer-recommended services</h3><p>Your scheduled maintenance, done to the book.</p></article>
+          <article class="card"><h3>A/C diagnostics &amp; repair</h3><p>Warm air? We find out why.</p></article>
+          <article class="card"><h3>Brakes</h3><p>Brake inspections and repairs.</p></article>
+          <article class="card"><h3>Steering &amp; suspension</h3><p>Clunks, pulls and worn parts.</p></article>
+          <article class="card"><h3>Tires</h3><p>Mounting and balancing.</p><img src="img/tires.jpg" alt="Tire balancing at the shop" width="1069" height="732" style="margin-top:.5rem;border-radius:8px;height:90px;object-fit:cover;width:100%"></article>
+          <article class="card"><h3>Cooling system</h3><p>Coolant system services.</p></article>
+          <article class="card"><h3>Check-engine &amp; fuel leaks</h3><p>Check-engine lights and fuel-system leak diagnosis and repair.</p></article>
+        </div>
+        <p style="color:var(--muted)">…and much more. If it's not on the list, call.</p>
+      </div>
+    </section>
+
+    <section class="ac" id="ac" aria-labelledby="ac-heading">
+      <div class="wrap ac-grid">
+        <div class="collage">
+          <figure><img src="img/evaporator.jpg" alt="Old evaporator next to a new one" width="900" height="1200"><figcaption>Old evaporator vs. new</figcaption></figure>
+          <figure><img src="img/cabin-filter.jpg" alt="Cabin filter pulled from a car, full of leaves" width="900" height="1200"><figcaption>A cabin filter we pulled. Yes, those are leaves.</figcaption></figure>
+          <figure><img src="img/condenser.jpg" alt="Condenser swap on a Toyota" width="900" height="1200"><figcaption>Condenser swap on a Toyota</figcaption></figure>
+        </div>
+        <div>
+          <p class="kicker" style="color:var(--pink)">02</p>
+          <h2 id="ac-heading">Is your A/C blowing warm?</h2>
+          <p class="sub">In Florida, that's an emergency. We diagnose the whole system (refrigerant, compressor, condenser, evaporator and cabin filter) and show you what we find.</p>
+          <p><a class="btn btn-call" href="tel:+19418127102">Book an A/C check</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="warranty" id="warranty" aria-labelledby="warranty-heading">
+      <div class="stripes" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="kicker" style="color:#fff">03</p>
+        <h2 id="warranty-heading">Extended warranty companies accepted</h2>
+        <p>Bring your warranty info and we'll work with your provider.</p>
+      </div>
+    </section>
+
+    <section class="fog" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <p class="kicker">04</p>
+        <h2 id="reviews-heading">Ex-dealership experience, local shop prices</h2>
+        <div class="quotes">
+          <blockquote class="quote">All three of them used to work at dealerships… their experience and training is second to none… He charges a fair price for quality work.<cite>R.B. · Nextdoor</cite></blockquote>
+          <blockquote class="quote">He and his team are very knowledgeable, efficient, and they work on getting you the best price and your car back ASAP!<cite>L.D. · Nextdoor</cite></blockquote>
+        </div>
+        <p>Nextdoor Neighborhood Fave 2024 &amp; 2025 · 129 neighbors Fave'd Robby's</p>
+      </div>
+    </section>
+
+    <section id="shop" aria-labelledby="shop-heading">
+      <div class="wrap">
+        <p class="kicker">05</p>
+        <h2 id="shop-heading">Family-owned, in Lakewood Ranch</h2>
+        <div class="strip">
+          <img src="img/ford-van.jpg" alt="Ford van on the lift with the hood up" width="900" height="1200">
+          <img src="img/work-van.jpg" alt="Work van on the lift" width="900" height="1200">
+          <img src="img/tires.jpg" alt="Tire balancing" width="1069" height="732">
+        </div>
+        <p>We're a family-owned and operated shop proudly serving the Lakewood Ranch community. Robby and the team bring dealership training to every car, truck and van that rolls in, and we'll tell you straight what it needs.</p>
+      </div>
+    </section>
+
+    <section class="fog" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap visit">
+        <div>
+          <p class="kicker">06</p>
+          <h2 id="visit-heading">Hours &amp; directions</h2>
+          <dl>
+            <div><dt>Address</dt><dd>17605 Water Line Rd, Lakewood Ranch (Bradenton), FL 34212</dd></div>
+            <div><dt>Landmark</dt><dd>By State Road 64 &amp; Rye Road</dd></div>
+            <div><dt>Phone</dt><dd><a class="nowrap" href="tel:+19418127102">(941) 812-7102</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:robbysautomotivellc@gmail.com">robbysautomotivellc@gmail.com</a></dd></div>
+          </dl>
+          <table>
+            <caption class="kicker" style="text-align:left">Shop hours</caption>
+            <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Monday–Friday</th><td>8:00 AM–5:30 PM</td></tr>
+              <tr><th scope="row">Saturday</th><td>Closed</td></tr>
+              <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p><a class="btn btn-call" href="https://www.google.com/maps/search/?api=1&amp;query=17605+Water+Line+Rd+Bradenton+FL+34212">Get directions</a></p>
+        </div>
+        <svg viewBox="0 0 360 280" role="img" aria-label="Simple map of State Road 64 crossing Rye Road">
+          <rect width="360" height="280" fill="#1E2A4A"/>
+          <path d="M20 150h320" stroke="#C9D1E3" stroke-width="8"/>
+          <path d="M200 20v240" stroke="#C9D1E3" stroke-width="8"/>
+          <text x="28" y="140" fill="#FFB4B7" font-family="Oswald, sans-serif" font-size="16">SR 64</text>
+          <text x="210" y="40" fill="#FFB4B7" font-family="Oswald, sans-serif" font-size="16">RYE RD</text>
+          <circle cx="200" cy="150" r="9" fill="#C2272D"/>
+          <text x="150" y="190" fill="#fff" font-family="Oswald, sans-serif" font-size="18">ROBBY'S</text>
+        </svg>
+      </div>
+    </section>
+
+    <section id="appointment" aria-labelledby="appt-heading">
+      <div class="wrap">
+        <p class="kicker">07</p>
+        <h2 id="appt-heading">Request an appointment</h2>
+        <p>Or call and we'll get you in.</p>
+        <form id="appt-form">
+          <label>Name <input name="name" required autocomplete="name"></label>
+          <label>Phone <input name="phone" type="tel" required autocomplete="tel"></label>
+          <label>Year, make and model <input name="vehicle"></label>
+          <label>Service
+            <select name="service">
+              <option>Maintenance</option>
+              <option>A/C</option>
+              <option>Brakes</option>
+              <option>Tires</option>
+              <option>Steering / suspension</option>
+              <option>Check engine</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Extended-warranty provider (optional) <input name="warranty"></label>
+          <label>Preferred day <input name="day"></label>
+          <label>Note <textarea name="note" rows="3"></textarea></label>
+          <button class="btn btn-call" type="submit">Request an appointment</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Robby's Automotive, LLC · 17605 Water Line Rd, Lakewood Ranch, FL 34212 · <a class="nowrap" href="tel:+19418127102">(941) 812-7102</a></p>
+      <p><a href="https://nextdoor.com/pages/robbys-automotive-bradenton-fl/">Nextdoor</a></p>
+      <p><a href="../../">Draft site by Clear Web Studio</a></p>
+    </div>
+  </footer>
+  <div class="dock" aria-label="Quick contact">
+    <a class="call" href="tel:+19418127102">Call</a>
+    <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=17605+Water+Line+Rd+Bradenton+FL+34212">Directions</a>
+  </div>
+  <script>
+    document.getElementById("appt-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var d = new FormData(e.target);
+      var body = ["Name: " + d.get("name"), "Phone: " + d.get("phone"), "Vehicle: " + d.get("vehicle"), "Service: " + d.get("service"), "Warranty provider: " + (d.get("warranty") || ""), "Preferred day: " + d.get("day"), "", d.get("note") || ""].join("\n");
+      window.location.href = "mailto:robbysautomotivellc@gmail.com?subject=" + encodeURIComponent("Appointment request") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
